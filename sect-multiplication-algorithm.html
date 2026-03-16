@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Multiplication Algorithms</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Mathematics for Elementary Educators">
+<meta property="book:author" content="You">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.19';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="math-elementary-educators.html"><span class="title">Mathematics for Elementary Educators</span> <span class="subtitle">The foundational mathematics for future teachers</span></a></h1>
+<p class="byline">You</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sect-subtraction-algorithm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-algorithms.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sect-long-division.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-preliminary.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminary Material</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-preliminary-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Mathematical Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Mathematical Equations and Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Mathematical Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Using the Equals Sign correctly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-preliminary-4.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Counterexamples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers: the essence of mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Hindu-Arabic Numbers and Models for Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Counting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Model and Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-ha-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Hindu-Arabic Number System, Egyptian numbers and the Place Value System</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition-subtraction.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition and Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-3" class="internal"><span class="codenumber">2.2.4.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-4" class="internal"><span class="codenumber">2.2.4.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-5" class="internal"><span class="codenumber">2.2.4.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-6" class="internal"><span class="codenumber">2.2.4.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-7" class="internal"><span class="codenumber">2.2.4.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-8" class="internal"><span class="codenumber">2.2.4.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-9" class="internal"><span class="codenumber">2.2.4.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication-division.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Multiplication and Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-3" class="internal"><span class="codenumber">2.3.1.1</span> <span class="title">Properties of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-4" class="internal"><span class="codenumber">2.3.1.2</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-5" class="internal"><span class="codenumber">2.3.1.3</span> <span class="title">Multiplying by tens or multiples of 10s</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-3" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Set Model for partitive and measurement</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-4" class="internal"><span class="codenumber">2.3.2.2</span> <span class="title">Division Interpretation and Word Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-5" class="internal"><span class="codenumber">2.3.2.3</span> <span class="title">Division with Remainders</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-6" class="internal"><span class="codenumber">2.3.2.4</span> <span class="title">Division by Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Alternative Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Tallies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Egyptian Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-roman-numbers" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-babylonian" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Babylonian Number System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-mayan-system" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Mayan Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-base-five" class="internal"><span class="codenumber">2.4.6</span> <span class="title">Base-5 Numbers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">3</span> <span class="title">Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-diagrams-models.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Diagrams and Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-set-diagram" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Set Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-word-problems.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Word Problems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Writing Good Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Covering All Interpretations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-teachers-solutions.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Teacher’s Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Solving Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-4" class="internal"><span class="codenumber">3.3.2</span> <span class="title">The Unitary Method and Multi-step problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-thinking-strategies.html" class="internal"><span class="codenumber">4</span> <span class="title">Thinking Strategies and Mental Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-thinking-strategies.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Thinking Strategies</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Thinking Strategies for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-6" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Thinking Strategies for Division</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-mental-math.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Mental Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Writing Mental Math</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mimicking the Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-5" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Rearranging and Compatible Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-6" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Compensation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-rounding.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Estimation and Rounding</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Rounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-estimation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">What is a good estimation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Range Estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-7" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Teaching Estimates</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-algorithms.html" class="internal"><span class="codenumber">5</span> <span class="title">Algorithms</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition-algorithms.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Prerequisite for Column Addition with Bundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-4" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Chip Models For Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-5" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Lattice Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-6" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Base-5 Addition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-subtraction-algorithm.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-3" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Coin Model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-4" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Chip Model for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-5" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-6" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Chip Model of Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-7" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Base-5 Subtraction</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#basics-s-sample-exercises" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sect-multiplication-algorithm.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-3" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Stages to Learning Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-4" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expanded Form of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-5" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Box Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-6" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Chip Models with Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-7" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Lattice Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-8" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Base-5 multiplication</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-long-division.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Long Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-3" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long Division with 1-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-4" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Measurement approach</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-5" class="internal"><span class="codenumber">5.4.3</span> <span class="title">The long division algorithm and the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-6" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Extending the Long Division method to multiple-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-7" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Long Division using estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-8" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Base-5 Long Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-primes.html" class="internal"><span class="codenumber">6</span> <span class="title">Factors, Primes and Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-even-odd.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Even and Odd Numbers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-even-odd-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-tests.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Tests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-3" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Primality Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-gcf-lcm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Greatest Common Factors and Least Common Multiples</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-3" class="internal"><span class="codenumber">6.4.1.1</span> <span class="title">Euclid’s Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-4" class="internal"><span class="codenumber">6.4.1.2</span> <span class="title">Relationship between LCM and GCF</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-proofs.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Prime Number and Divisibility Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-3" class="internal"><span class="codenumber">6.5.1</span> <span class="title">The Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-4" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Divisibility Test Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-5" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Prime Number Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-6" class="internal"><span class="codenumber">6.5.4</span> <span class="title">How many primes are there?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-7" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Proof by Contradiction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-8" class="internal"><span class="codenumber">6.5.6</span> <span class="title">The Greatest Common Factors and Lowest Common Multiples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-decimals.html" class="internal"><span class="codenumber">8</span> <span class="title">Decimals</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-integers.html" class="internal"><span class="codenumber">9</span> <span class="title">Integers</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sect-multiplication-algorithm"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Multiplication Algorithms</span>
+</h2>
+<section class="introduction" id="sect-multiplication-algorithm-2"><div class="para" id="sect-multiplication-algorithm-2-1">The goal of the multiplication algorithm is to multiply numbers that are difficult to do with mental math.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-multiplication-algorithm-2-2">Consider first, a multiplication like <span class="process-math">\(7 \times 64\text{.}\)</span> This doesn’t fit into any mental math problem, so we will develop an algorithm to solve this. In short, this will include:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-2-3">
+<ul class="disc" id="sect-multiplication-algorithm-2-3-1">
+<li id="sect-multiplication-algorithm-2-3-1-1">
+<div class="para" id="sect-multiplication-algorithm-2-3-1-1-1">writing the second factor in expanded form, <span class="process-math">\(64 = 60 + 4\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-multiplication-algorithm-2-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-multiplication-algorithm-2-3-1-2">
+<div class="para" id="sect-multiplication-algorithm-2-3-1-2-1">using the distributive property, <span class="process-math">\(7 \times (60 + 4) = 7 \times 60 + 7 \times 4\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-multiplication-algorithm-2-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-multiplication-algorithm-2-3-1-3">
+<div class="para" id="sect-multiplication-algorithm-2-3-1-3-1">shifting place values when multiplying by 10,<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-multiplication-algorithm-2-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-multiplication-algorithm-2-3-1-4">
+<div class="para" id="sect-multiplication-algorithm-2-3-1-4-1">using the 1-digit multiplication facts,<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-multiplication-algorithm-2-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-multiplication-algorithm-2-3-1-5">
+<div class="para" id="sect-multiplication-algorithm-2-3-1-5-1">bundling with the addition algorithm.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-multiplication-algorithm-2-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="sect-multiplication-algorithm-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Stages to Learning Multiplication</span>
+</h3>
+<div class="para logical" id="sect-multiplication-algorithm-3-2">
+<dl class="description-list">
+<dt id="sect-multiplication-algorithm-3-2-1-1">Multiplication Facts<div class="autopermalink" data-description="Item: Multiplication Facts"><a href="#sect-multiplication-algorithm-3-2-1-1" title="Copy heading and permalink for Item: Multiplication Facts" aria-label="Copy heading and permalink for Item: Multiplication Facts">🔗</a></div>
+</dt>
+<dd><div class="para" id="sect-multiplication-algorithm-3-2-1-1-2">As discussed, the multiplication table up to <span class="process-math">\(9 \times 9\)</span> must be known. This was seen in <a href="ch-numbers.html" class="internal" title="Chapter 2: Numbers: the essence of mathematics">Chapter 2</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-3-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-multiplication-algorithm-3-2-1-2">Mental Multiplication<div class="autopermalink" data-description="Item: Mental Multiplication"><a href="#sect-multiplication-algorithm-3-2-1-2" title="Copy heading and permalink for Item: Mental Multiplication" aria-label="Copy heading and permalink for Item: Mental Multiplication">🔗</a></div>
+</dt>
+<dd><div class="para" id="sect-multiplication-algorithm-3-2-1-2-2">This helps bypass the more-complicated general multiplication algorithm.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-3-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-multiplication-algorithm-3-2-1-3">1-digit Multiplication with no Rebundling<div class="autopermalink" data-description="Item: 1-digit Multiplication with no Rebundling"><a href="#sect-multiplication-algorithm-3-2-1-3" title="Copy heading and permalink for Item: 1-digit Multiplication with no Rebundling" aria-label="Copy heading and permalink for Item: 1-digit Multiplication with no Rebundling">🔗</a></div>
+</dt>
+<dd><div class="para" id="sect-multiplication-algorithm-3-2-1-3-2">We can start with an example like <span class="process-math">\(3 \times 13\)</span> and recall that this is the same as <span class="process-math">\(13+13+13\)</span> and can be examined with coin, chip or DLB models.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-3-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-multiplication-algorithm-3-2-1-4">1-digit Multiplication with no Bundling<div class="autopermalink" data-description="Item: 1-digit Multiplication with no Bundling"><a href="#sect-multiplication-algorithm-3-2-1-4" title="Copy heading and permalink for Item: 1-digit Multiplication with no Bundling" aria-label="Copy heading and permalink for Item: 1-digit Multiplication with no Bundling">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sect-multiplication-algorithm-3-2-1-4-2">We first start with examples like <span class="process-math">\(4 \times 23\)</span> or <span class="process-math">\(6 \times 25\text{.}\)</span> This can be done with both chip models and the expand form as shown below.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-3-2-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-3-2-1-4-3">
+<div class="para">What we’ve done here is use the distributive property of numbers in the following way:</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-3-2-1-4-3-1">
+\begin{equation*}
+\begin{aligned} 4 \times 13 \amp = 4 \times (10 + 3) = 4 \times 10 + 4 \times 3 \\ \amp = 40 + 12 = 52.
+\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-3-2-1-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sect-multiplication-algorithm-3-2-1-5">The Full Algorithm<div class="autopermalink" data-description="Item: The Full Algorithm"><a href="#sect-multiplication-algorithm-3-2-1-5" title="Copy heading and permalink for Item: The Full Algorithm" aria-label="Copy heading and permalink for Item: The Full Algorithm">🔗</a></div>
+</dt>
+<dd><div class="para" id="sect-multiplication-algorithm-3-2-1-5-2">We will soon look at the problem <span class="process-math">\(32 \times 27\text{.}\)</span> The main idea behind the full algorithm is to break up one of the factors into its basic bundles. That is <span class="process-math">\(27 = 20 + 7\text{.}\)</span> Then we will perform the operation <span class="process-math">\(32 \times 20\)</span> and add it to <span class="process-math">\(32 \times 7\text{.}\)</span> The only difference here is that we need to recall that <span class="process-math">\(32 \times 20=32 \times 2 \times 10\)</span> and multiplying by 10 shifts the value by including a 0 at the end.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-3-2-1-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.3.1: Stages to Learning Multiplication"><a href="#sect-multiplication-algorithm-3" title="Copy heading and permalink for Subsection 5.3.1: Stages to Learning Multiplication" aria-label="Copy heading and permalink for Subsection 5.3.1: Stages to Learning Multiplication">🔗</a></div></section><section class="subsection" id="sect-multiplication-algorithm-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Expanded Form of Multiplication</span>
+</h3>
+<div class="para logical" id="sect-multiplication-algorithm-4-2">
+<div class="para">We won’t use a chip model for this because of the size of the numbers makes for a larger number of chips. Instead, we will modify the column addition algorithm.</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-4-2-1">
+\begin{equation*}
+\begin{aligned}\begin{array}{rrl}\amp 3 2 \\ \times \amp 2 7 \\ \hline \amp 14 \amp \text{ $\leftarrow 7 \times 2$} \\ \amp 210 \amp \text{$\leftarrow 7 \times 30$} \\ \amp 40 \amp \text{ $\leftarrow 20 \times 2$} \\ + \amp 600 \amp \text{ $\leftarrow 20 \times 30$} \\ \hline \amp 864\end{array}\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-multiplication-algorithm-4-3">Notice that in this case, there are 4 single-digit multiplications (that you should do with math facts). Some of them include a multiply by 10 as well. Then the result is that these four numbers need to be added.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-4-4">
+<div class="para">The reason this method works is due to the distributive property written out in a different form.</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-4-4-1">
+\begin{equation*}
+\begin{aligned}32 \times 27\amp= (30+2) \times (20 + 7)\amp\amp\text{distribute over second term}\\\amp= (30 +2 ) \times 20 + (30 + 2) \times 7\amp\amp\text{distribute over first term}\\\amp= 30 \times 20 + 2 \times 20 + 30 \times 7 + 2 \times 7 \\\amp= 600 + 40 + 210 + 14 = 864\end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-multiplication-algorithm-4-5">The two distributive properties in the first two steps are also commonly known as FOILing for (First-Outer-Inner-Last) that can be done in one step.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.3.2: Expanded Form of Multiplication"><a href="#sect-multiplication-algorithm-4" title="Copy heading and permalink for Subsection 5.3.2: Expanded Form of Multiplication" aria-label="Copy heading and permalink for Subsection 5.3.2: Expanded Form of Multiplication">🔗</a></div></section><section class="subsection" id="sect-multiplication-algorithm-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Box Model of Multiplication</span>
+</h3>
+<div class="para logical" id="sect-multiplication-algorithm-5-2">
+<div class="para">An alternative way to look at the expanded form of multiplication is called the <em class="emphasis">box model</em> in which the numbers are written outside the a grid. For example:</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-5-2-2">
+\begin{equation*}
+\begin{matrix} \amp \begin{matrix} 30 \amp 2 \end{matrix} \amp \\ \begin{matrix} 20 \\ 7 \end{matrix} \amp \begin{array}{|c|c|}\hline \phantom{600}  \amp \phantom{40}  \\ \hline \phantom{210} \amp \phantom{45} \\ \hline \end{array} \amp \begin{matrix}  \\  \end{matrix} \end{matrix}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-5-3">
+<div class="para">Then the products are place inside the grid:</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-5-3-1">
+\begin{equation*}
+\begin{matrix} \amp \begin{matrix} 30 \amp 2 \end{matrix} \amp \\ \begin{matrix} 20 \\ 7 \end{matrix} \amp \begin{array}{|c|c|}\hline 600 \amp 40 \\ \hline 210 \amp 14\\ \hline \end{array} \amp \begin{matrix}  \\  \end{matrix} \end{matrix}
+\end{equation*}
+</div>
+<div class="para">and notice that the 4 numbers inside the grid are the same 4 products in the expanded form about in the sum section.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-5-4">
+<div class="para">We now just total all four numbers. If this is too much, you can add across first</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-5-4-1">
+\begin{equation*}
+\begin{matrix} \amp \begin{matrix} 30 \amp 2 \end{matrix} \amp \\ \begin{matrix} 20 \\ 7 \end{matrix} \amp \begin{array}{|c|c|}\hline 600 \amp 40 \\ \hline 210 \amp 14\\ \hline \end{array} \amp \begin{matrix} 640 \\ 224 \end{matrix} \end{matrix}
+\end{equation*}
+</div>
+<div class="para">and then add down to get the result 864.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.3.3: Box Model of Multiplication"><a href="#sect-multiplication-algorithm-5" title="Copy heading and permalink for Subsection 5.3.3: Box Model of Multiplication" aria-label="Copy heading and permalink for Subsection 5.3.3: Box Model of Multiplication">🔗</a></div></section><section class="subsection" id="sect-multiplication-algorithm-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chip Models with Multiplication</span>
+</h3>
+<div class="para" id="sect-multiplication-algorithm-6-2">Chip models are helpful in understanding how the column algorithm works and since multiplication is just repeated addition, an understanding of the chip model of addition is all that is needed. The following example shows a relatively simple multiplication problem:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-multiplication-algorithm-6-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-multiplication-algorithm-6-3-1-1">Show a chip model of <span class="process-math">\(4 \times 13\text{.}\)</span> Also show the column algorithm and explain the connection between them.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sect-multiplication-algorithm-6-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sect-multiplication-algorithm-6-3-2-1">We will start with a simple 1-digit multiplication problem, <span class="process-math">\(4 \times 13\text{,}\)</span> which will show as <span class="process-math">\(13+13+13+13\)</span> with the following. First start with 4 groups of 13 on the chart:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-6-3-2-2.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-6-3-2-3">As with the chip model in addition, we need to bundle 10 of the ones into 1 ten chip.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-6-3-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-6-3-2-5">and this shows that there are 5 tens and 2 ones or 52.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-3-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-6-3-2-6">
+<div class="para">Next, we examine this using column addition.</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-6-3-2-6-1">
+\begin{equation*}
+\begin{array}{rrr}\amp 1 \amp 3 \\ \times \amp \amp 4 \\ \hline\end{array}
+\end{equation*}
+</div>
+<div class="para">First multiply the 3 and the 4. The result, $12$ and put the ones digit below the line (in the ones column) and the tens digit above the top number.</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-6-3-2-6-2">
+\begin{equation*}
+\begin{array}{rrr}\amp {\scriptstyle 1} \amp \\ \amp 1 \amp 3 \\ \times \amp \amp 4 \\ \hline \amp \amp 2\end{array}
+\end{equation*}
+</div>
+<div class="para">Next, multiply the 4 and the 1 to get a 4. Add the 1 from the attic to get a total of 5.</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-6-3-2-6-3">
+\begin{equation*}
+\begin{array}{rrr}\amp {\scriptstyle 1} \amp \\ \amp 1 \amp 3 \\ \times \amp \amp 4 \\ \hline \amp 5 \amp 2\end{array}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-3-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.3.1.1"><a href="#sect-multiplication-algorithm-6-3-2" title="Copy heading and permalink for Solution 5.3.1.1" aria-label="Copy heading and permalink for Solution 5.3.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.3.1"><a href="#sect-multiplication-algorithm-6-3" title="Copy heading and permalink for Example 5.3.1" aria-label="Copy heading and permalink for Example 5.3.1">🔗</a></div></article><div class="para" id="sect-multiplication-algorithm-6-4">The next chip model example shows a more complicated chip model.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-multiplication-algorithm-6-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-multiplication-algorithm-6-5-1-1">Show the chip model for <span class="process-math">\(6 \times 367\)</span> as well as the column algorithm and explain the connection.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sect-multiplication-algorithm-6-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sect-multiplication-algorithm-6-5-2-1">First start with 6 groups of 367:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-6-5-2-2.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-6-5-2-3">and now we need to bundle ones, tens and hundreds. We’ll do this in steps starting with ones:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-6-5-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-6-5-2-5">Now we’ll bundle the tens:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-5-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-6-5-2-6.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-6-5-2-7">and next we bundle the 100s:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-5-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-6-5-2-8.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-6-5-2-9">And this shows that the result is 2 thousands, 2 hundreds, 0 tens and 2 ones or 2,202.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-5-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-6-5-2-10">
+<div class="para">Now let’s look at the column algorithm for this. Start with 6 on the bottom row and 367 on the top row:</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-6-5-2-10-1">
+\begin{equation*}
+\begin{array}{rrrrr} \amp\amp3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \end{array}
+\end{equation*}
+</div>
+<div class="para">the first steps is to do <span class="process-math">\(6 \times 7=42\text{,}\)</span> write the ones digits (2) below the line and the tens digit (4) above the top row,</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-6-5-2-10-3">
+\begin{equation*}
+\begin{array}{rrrrr} \amp\amp\amp {\scriptstyle 4} \amp \\ \amp\amp 3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \amp\amp\amp\amp 2 \end{array}
+\end{equation*}
+</div>
+<div class="para">Next, do the tens column or <span class="process-math">\(6 \times 6=36\)</span> and add the 4 above the top line to get <span class="process-math">\(40\text{.}\)</span> Write the ones digits (0) below the line in the tens digit and the 4 above the 3 in the hundreds digit.</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-6-5-2-10-6">
+\begin{equation*}
+\begin{array}{rrrrr} \amp\amp{\scriptstyle 4} \amp{\scriptstyle 4} \amp \\ \amp\amp 3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \amp\amp\amp0 \amp 2 \end{array}
+\end{equation*}
+</div>
+<div class="para">Next, do the hundreds column <span class="process-math">\(6 \times 3 = 18\)</span> and add 4 to get 22. Since this is the last step, write 22 below the line</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-6-5-2-10-8">
+\begin{equation*}
+\begin{array}{rrrrr} \amp\amp{\scriptstyle 4} \amp{\scriptstyle 4} \amp \\ \amp\amp 3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \amp2 \amp 2 \amp0 \amp 2 \end{array}
+\end{equation*}
+</div>
+<div class="para">And the result is the same.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-6-5-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.3.2.1"><a href="#sect-multiplication-algorithm-6-5-2" title="Copy heading and permalink for Solution 5.3.2.1" aria-label="Copy heading and permalink for Solution 5.3.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.3.2"><a href="#sect-multiplication-algorithm-6-5" title="Copy heading and permalink for Example 5.3.2" aria-label="Copy heading and permalink for Example 5.3.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 5.3.4: Chip Models with Multiplication"><a href="#sect-multiplication-algorithm-6" title="Copy heading and permalink for Subsection 5.3.4: Chip Models with Multiplication" aria-label="Copy heading and permalink for Subsection 5.3.4: Chip Models with Multiplication">🔗</a></div></section><section class="subsection" id="sect-multiplication-algorithm-7"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lattice Model of Multiplication</span>
+</h3>
+<div class="para" id="sect-multiplication-algorithm-7-2">We will look at the lattice model, used above for addition, to perform the multiplication <span class="process-math">\(173 \times 68\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-multiplication-algorithm-7-3">First start with a grid of the size according to the number of digits in each factor, write the numbers on the top and left as follows:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-multiplication-algorithm-7-4.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-7-5">And then next, fill in the 1-digit multiplications in the grid for each row/column of the grid where the tens digit goes above the diagonal line, and the ones below the diagonal as follows:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-7-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-multiplication-algorithm-7-6.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-7-7">And the last step, draw diagonal lines like for the addition lattice and add down the diagonals as this shows.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-7-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-7-8.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-7-9">and the two 1s that are blue are the result of bundling a ten from the addition down the diagonals.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-7-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.3.5: Lattice Model of Multiplication"><a href="#sect-multiplication-algorithm-7" title="Copy heading and permalink for Subsection 5.3.5: Lattice Model of Multiplication" aria-label="Copy heading and permalink for Subsection 5.3.5: Lattice Model of Multiplication">🔗</a></div></section><section class="subsection" id="sect-multiplication-algorithm-8"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Base-5 multiplication</span>
+</h3>
+<div class="para" id="sect-multiplication-algorithm-8-2">As before, we’ll start with base-5 multiplication’s coin model. As with base-10 multiplication, it is important to know 1-digit math facts in base-5. We will build up a multiplication table:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\times\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">   </td>
+<td class="c m b1 r1 l0 t0 lines">   </td>
+<td class="c m b1 r1 l0 t0 lines">   </td>
+<td class="c m b1 r1 l0 t0 lines">   </td>
+<td class="c m b1 r1 l0 t0 lines">   </td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="para" id="sect-multiplication-algorithm-8-4">and first, multiplication by 0 and 1 is quite simple:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\times\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="para" id="sect-multiplication-algorithm-8-6">Next, multiplying by 2 is skip counting and remembering in base-5, think pennies and nickels:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\times\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">11</td>
+<td class="c m b1 r1 l0 t0 lines">13</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">11</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">13</td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+<td class="c m b1 r1 l0 t0 lines"></td>
+</tr>
+</table></div>
+<div class="para" id="sect-multiplication-algorithm-8-8">and the last 4 can also be done with skip counting:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b1 r1 l0 t0 lines"><span class="process-math">\(\times\)</span></td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">1</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">2</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">11</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">3</td>
+<td class="c m b1 r1 l0 t0 lines">11</td>
+<td class="c m b1 r1 l0 t0 lines">14</td>
+<td class="c m b1 r1 l0 t0 lines">22</td>
+</tr>
+<tr>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">0</td>
+<td class="c m b1 r1 l0 t0 lines">4</td>
+<td class="c m b1 r1 l0 t0 lines">13</td>
+<td class="c m b1 r1 l0 t0 lines">22</td>
+<td class="c m b1 r1 l0 t0 lines">31</td>
+</tr>
+</table></div>
+<div class="para" id="sect-multiplication-algorithm-8-10">Now we use this table to perform more complicated multiplications.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-multiplication-algorithm-8-11"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-multiplication-algorithm-8-11-1-1">Calculate <span class="process-math">\(324_{\text{5}}\times 3_{\text{5}}\)</span> first using a chip model and then using the column algorithm.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sect-multiplication-algorithm-8-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para" id="sect-multiplication-algorithm-8-11-2-1">First, put 3 copies of <span class="process-math">\(324_{\text{5}}\)</span> on the chart:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-8-11-2-2.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-8-11-2-3">And now bundle the ones, remembering to group in size 5.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-8-11-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-8-11-2-5">Next, we bundle the fives:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-8-11-2-6.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-8-11-2-7">And then bundle the 25s:<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-multiplication-algorithm-8-11-2-8.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-multiplication-algorithm-8-11-2-9">and the result is 2 fiftoons, 0 quarters, 3 nickels and 2 pennies or <span class="process-math">\(2032_{5}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-multiplication-algorithm-8-11-2-10">
+<div class="para">We can also find the product using the column algorithm. Pull out the multiplication table that you made. We’ll use the expanded version to make things a bit easier:</div>
+<div class="displaymath process-math" id="sect-multiplication-algorithm-8-11-2-10-1">
+\begin{equation*}
+\begin{array}{rrrrrl} \amp\amp3 \amp 2 \amp 4\amp  \\ \times\amp\amp  \amp \amp 3 \amp \\ \hline \amp\amp\amp2\amp 2  \amp \to 3 \times 4 \\ \amp\amp1 \amp 1 \amp 0 \amp\to 3\times 20 \\ \amp1\amp4 \amp 0 \amp 0 \amp\to 3\times 300 \\ \hline \amp 2\amp 0 \amp 3 \amp 2 \end{array}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-2-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-multiplication-algorithm-8-11-2-11">where the only bundling in this case needed to occur in the third column (25s) in which 5 twenty-fives became a 125.<div class="autopermalink" data-description="Paragraph"><a href="#sect-multiplication-algorithm-8-11-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.3.3.1"><a href="#sect-multiplication-algorithm-8-11-2" title="Copy heading and permalink for Solution 5.3.3.1" aria-label="Copy heading and permalink for Solution 5.3.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 5.3.3"><a href="#sect-multiplication-algorithm-8-11" title="Copy heading and permalink for Example 5.3.3" aria-label="Copy heading and permalink for Example 5.3.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection 5.3.6: Base-5 multiplication"><a href="#sect-multiplication-algorithm-8" title="Copy heading and permalink for Subsection 5.3.6: Base-5 multiplication" aria-label="Copy heading and permalink for Subsection 5.3.6: Base-5 multiplication">🔗</a></div></section><div class="autopermalink" data-description="Section 5.3: Multiplication Algorithms"><a href="#sect-multiplication-algorithm" title="Copy heading and permalink for Section 5.3: Multiplication Algorithms" aria-label="Copy heading and permalink for Section 5.3: Multiplication Algorithms">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sect-subtraction-algorithm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sect-long-division.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
