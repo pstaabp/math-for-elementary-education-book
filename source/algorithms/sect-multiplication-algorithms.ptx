@@ -1,0 +1,1106 @@
+<section xml:id="sect-multiplication-algorithm">
+  <title>Multiplication Algorithms</title>
+
+  <introduction>
+    <p>
+      The goal of the multiplication algorithm is to multiply numbers that are difficult to do with mental math.
+    </p>
+
+    <p>
+      Consider first, a multiplication like <m>7 \times 64</m>.
+      This doesn’t fit into any mental math problem, so we will develop an algorithm to solve this.
+      In short, this will include:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            writing the second factor in expanded form, <m>64 = 60 + 4</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            using the distributive property, <m>7 \times (60 + 4) = 7 \times 60 + 7 \times 4</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            shifting place values when multiplying by 10,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            using the 1-digit multiplication facts,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            bundling with the addition algorithm.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Stages to Learning Multiplication</title>
+
+    <p>
+      <dl>
+      <li>
+        <title>Multiplication Facts</title>
+
+        <p>
+          As discussed, the multiplication table up to <m>9 \times 9</m> must be known.
+          This was seen in <xref ref="ch-numbers"/>.
+        </p>
+      </li>
+
+      <li>
+        <title>Mental Multiplication</title>
+
+        <p>
+          This helps bypass the more-complicated general multiplication algorithm.
+        </p>
+      </li>
+
+      <li>
+        <title>1-digit Multiplication with no Rebundling</title>
+
+        <p>
+          We can start with an example like <m>3 \times 13</m> and recall that this is the same as <m>13+13+13</m> and can be examined with coin, chip or DLB models.
+        </p>
+      </li>
+
+      <li>
+        <title>1-digit Multiplication with no Bundling</title>
+
+        <p>
+          We first start with examples like <m>4 \times 23</m> or <m>6 \times 25</m>.
+          This can be done with both chip models and the expand form as shown below.
+        </p>
+
+        <p>
+          What we’ve done here is use the distributive property of numbers in the following way:
+          <me>
+            \begin{aligned} 4 \times 13 \amp = 4 \times (10 + 3) = 4 \times 10 + 4 \times 3 \\ \amp = 40 + 12 = 52.
+            \end{aligned}
+          </me>
+        </p>
+      </li>
+
+      <li>
+        <title>The Full Algorithm</title>
+
+        <p>
+          We will soon look at the problem <m>32 \times 27</m>.
+          The main idea behind the full algorithm is to break up one of the factors into its basic bundles.
+          That is <m>27 = 20 + 7</m>.
+          Then we will perform the operation <m>32 \times 20</m> and add it to <m>32 \times 7</m>.
+          The only difference here is that we need to recall that <m>32 \times 20=32 \times 2 \times 10</m> and multiplying by 10 shifts the value by including a 0 at the end.
+        </p>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Expanded Form of Multiplication</title>
+
+    <p>
+      We won’t use a chip model for this because of the size of the numbers makes for a larger number of chips.
+      Instead, we will modify the column addition algorithm.
+      <me>
+        \begin{aligned}\begin{array}{rrl}\amp 3 2 \\ \times \amp 2 7 \\ \hline \amp 14 \amp \text{ $\leftarrow 7 \times 2$} \\ \amp 210 \amp \text{$\leftarrow 7 \times 30$} \\ \amp 40 \amp \text{ $\leftarrow 20 \times 2$} \\ + \amp 600 \amp \text{ $\leftarrow 20 \times 30$} \\ \hline \amp 864\end{array}\end{aligned}
+      </me>
+    </p>
+
+    <p>
+      Notice that in this case, there are 4 single-digit multiplications (that you should do with math facts).
+      Some of them include a multiply by 10 as well.
+      Then the result is that these four numbers need to be added.
+    </p>
+
+    <p>
+      The reason this method works is due to the distributive property written out in a different form.
+      <me>
+        \begin{aligned}32 \times 27\amp= (30+2) \times (20 + 7)\amp\amp\text{distribute over second term}\\\amp= (30 +2 ) \times 20 + (30 + 2) \times 7\amp\amp\text{distribute over first term}\\\amp= 30 \times 20 + 2 \times 20 + 30 \times 7 + 2 \times 7 \\\amp= 600 + 40 + 210 + 14 = 864\end{aligned}
+      </me>
+    </p>
+
+    <p>
+      The two distributive properties in the first two steps are also commonly known as FOILing for (First-Outer-Inner-Last) that can be done in one step.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Box Model of Multiplication</title>
+
+    <p>
+      An alternative way to look at the expanded form of multiplication is called the <em>box model</em> in which the numbers are written outside the a grid.
+      For example:
+      <me>
+        \begin{matrix} \amp \begin{matrix} 30 \amp 2 \end{matrix} \amp \\ \begin{matrix} 20 \\ 7 \end{matrix} \amp \begin{array}{|c|c|}\hline \phantom{600}  \amp \phantom{40}  \\ \hline \phantom{210} \amp \phantom{45} \\ \hline \end{array} \amp \begin{matrix}  \\  \end{matrix} \end{matrix}
+      </me>
+    </p>
+
+    <p>
+      Then the products are place inside the grid:
+      <me>
+        \begin{matrix} \amp \begin{matrix} 30 \amp 2 \end{matrix} \amp \\ \begin{matrix} 20 \\ 7 \end{matrix} \amp \begin{array}{|c|c|}\hline 600 \amp 40 \\ \hline 210 \amp 14\\ \hline \end{array} \amp \begin{matrix}  \\  \end{matrix} \end{matrix}
+      </me>
+      and notice that the 4 numbers inside the grid are the same 4 products in the expanded form about in the sum section.
+    </p>
+
+    <p>
+      We now just total all four numbers.
+      If this is too much, you can add across first
+      <me>
+        \begin{matrix} \amp \begin{matrix} 30 \amp 2 \end{matrix} \amp \\ \begin{matrix} 20 \\ 7 \end{matrix} \amp \begin{array}{|c|c|}\hline 600 \amp 40 \\ \hline 210 \amp 14\\ \hline \end{array} \amp \begin{matrix} 640 \\ 224 \end{matrix} \end{matrix}
+      </me>
+      and then add down to get the result 864.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chip Models with Multiplication</title>
+
+    <p>
+      Chip models are helpful in understanding how the column algorithm works and since multiplication is just repeated addition, an understanding of the chip model of addition is all that is needed.
+      The following example shows a relatively simple multiplication problem:
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Show a chip model of <m>4 \times 13</m>.
+          Also show the column algorithm and explain the connection between them.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          We will start with a simple 1-digit multiplication problem, <m>4 \times 13</m>, which will show as <m>13+13+13+13</m> with the following.
+          First start with 4 groups of 13 on the chart:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,0) rectangle (6,3); 
+            \draw (2,2.5)--(6,2.5);
+            \foreach \x in {4} \draw (\x,0) -- (\x,3);
+            \foreach \x/\lab in {3/10s,5/1s} \draw (\x,2.75) node {\lab};
+            \foreach \y in {1,2,3} \draw[dashed] (2,{0.625*\y}) -- (6,{0.625*\y}); 
+            \foreach \y in {0,1,2,3} {
+              \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y*0.625+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*0.625+0.3}) circle[radius=2.5pt];
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          As with the chip model in addition, we need to bundle 10 of the ones into 1 ten chip.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,0) rectangle (6,3); 
+            \draw (2,2.5)--(6,2.5);
+            \foreach \x in {4} \draw (\x,0) -- (\x,3);
+            \foreach \x/\lab in {3/10s,5/1s} \draw (\x,2.75) node {\lab};
+            \foreach \y in {1,2,3} \draw[dashed] (2,{0.625*\y}) -- (6,{0.625*\y}); 
+            \foreach \y in {0,1,2,3} {
+              \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y*0.625+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*0.625+0.3}) circle[radius=2.5pt];
+            }
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,0.1) -- (4.1,2.4) -- (5.1,2.4) -- (5.1,1.3) -- (4.75,1.3) -- (4.75,0.1) -- cycle; 
+            %% cross out ones
+            \foreach \y in {0,1,2,3} {
+              \foreach \x in {1,2} \draw[thick] ({4+0.3*\x-0.1},{\y*0.625+0.2}) --({4+0.3*\x+0.1},{\y*0.625+0.4});
+            }
+            \foreach \y in {2,3} {
+              \foreach \x in {3} \draw[thick] ({4+0.3*\x-0.1},{\y*0.625+0.2}) --({4+0.3*\x+0.1},{\y*0.625+0.4});
+            }
+            \fill[MaterialRed900](3.5,0.3) circle[radius=2.5pt];
+            %
+            \draw[->] (4.1,0.3) -- (3.6,0.3); 
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and this shows that there are 5 tens and 2 ones or 52.
+        </p>
+
+        <p>
+          Next, we examine this using column addition.
+          <me>
+            \begin{array}{rrr}\amp 1 \amp 3 \\ \times \amp \amp 4 \\ \hline\end{array}
+          </me>
+          First multiply the 3 and the 4.
+          The result, $12$ and put the ones digit below the line (in the ones column) and the tens digit above the top number.
+          <me>
+            \begin{array}{rrr}\amp {\scriptstyle 1} \amp \\ \amp 1 \amp 3 \\ \times \amp \amp 4 \\ \hline \amp \amp 2\end{array}
+          </me>
+          Next, multiply the 4 and the 1 to get a 4.
+          Add the 1 from the attic to get a total of 5.
+          <me>
+            \begin{array}{rrr}\amp {\scriptstyle 1} \amp \\ \amp 1 \amp 3 \\ \times \amp \amp 4 \\ \hline \amp 5 \amp 2\end{array}
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The next chip model example shows a more complicated chip model.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Show the chip model for <m>6 \times 367</m> as well as the column algorithm and explain the connection.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First start with 6 groups of 367:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,6.5); 
+            \draw (0,6)--(8,6);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,6.5);
+            \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+            \foreach \y in {1,2,3,4,5} \draw[dashed] (0,{1*\y}) -- (8,{1*\y}); 
+            \foreach \y in {0,1,2,3,4,5} {
+              % hundreds
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and now we need to bundle ones, tens and hundreds.
+          We'll do this in steps starting with ones:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,6.5); 
+            \draw (0,6)--(8,6);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,6.5);
+            \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+            \foreach \y in {1,2,3,4,5} \draw[dashed] (0,{1*\y}) -- (8,{1*\y}); 
+            \foreach \y in {0,1,2,3,4,5} {
+              % hundreds
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+            }
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,0.1) -- (6.1,1.45) -- (7.05,1.45) -- (7.05,0.5) -- (7.4,0.5) -- (7.4,0.1) -- cycle;
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,1.5) rectangle (7.4,2.75);
+            \draw[dashed,rounded corners, MaterialRed900] (6.1,4.5) rectangle (7.4,5.75);
+            \draw[dashed,rounded corners, MaterialRed900] (6.1,3.1) -- (6.1,4.45) -- (7.4,4.45) -- (7.4,3.8) -- (7.05,3.8) -- (7.05,3.1) -- cycle;
+            \foreach \y in {0,1,3,4} {
+              \fill[MaterialRed900](5.5,{\y+1.3}) circle[radius=2.5pt];
+              \draw[->] (6.1,{\y+1.3}) -- (5.6,{\y+1.3}); 
+              }
+            %cross out the ones
+            \foreach \y in {0,1,2,3,4,5} {
+              \foreach \x in {1,2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.5}) -- ({6+0.3*\x+0.1},{\y+0.7});
+              \foreach \x in {1,2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.2}) -- ({6+0.3*\x+0.1},{\y+0.4});
+            }
+            \foreach \y in {0,2,4,5} {
+              \foreach \x in {4} \draw[thick] ({6+0.3*\x-0.1},{\y+0.2}) -- ({6+0.3*\x+0.1},{\y+0.4});
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          Now we'll bundle the tens:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,6.5); 
+            \draw (0,6)--(8,6);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,6.5);
+            \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+            \foreach \y in {1,2,3,4,5} \draw[dashed] (0,{1*\y}) -- (8,{1*\y}); 
+            \foreach \y in {0,1,2,3,4,5} {
+              % hundreds
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+            }
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,0.1) -- (6.1,1.45) -- (7.05,1.45) -- (7.05,0.5) -- (7.4,0.5) -- (7.4,0.1) -- cycle;
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,1.5) rectangle (7.4,2.75);
+            \draw[dashed,rounded corners, MaterialRed900] (6.1,4.5) rectangle (7.4,5.75);
+            \draw[dashed,rounded corners, MaterialRed900] (6.1,3.1) -- (6.1,4.45) -- (7.4,4.45) -- (7.4,3.8) -- (7.05,3.8) -- (7.05,3.1) -- cycle;
+            \foreach \y in {0,1,3,4} {
+              \fill[MaterialRed900](5.5,{\y+1.3}) circle[radius=2.5pt];
+              \draw[->] (6.1,{\y+1.3}) -- (5.6,{\y+1.3}); 
+              }
+            %cross out the ones
+            \foreach \y in {0,1,2,3,4,5} {
+              \foreach \x in {1,2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.5}) -- ({6+0.3*\x+0.1},{\y+0.7});
+              \foreach \x in {1,2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.2}) -- ({6+0.3*\x+0.1},{\y+0.4});
+            }
+            \foreach \y in {0,2,4,5} {
+              \foreach \x in {4} \draw[thick] ({6+0.3*\x-0.1},{\y+0.2}) -- ({6+0.3*\x+0.1},{\y+0.4});
+            }
+            % bundle the tens
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,4.5) rectangle (5.6,5.75);
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,3.1) rectangle (5.6,4.45);
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,1.5) rectangle (5.6,2.75);
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,0.1) rectangle (5.6,1.45);
+            \foreach \y in {0,1,3,4} {
+              \fill[MaterialRed900](3.5,{\y+1.3}) circle[radius=2.5pt];
+              \draw[->] (4.1,{\y+1.3}) -- (3.6,{\y+1.3}); 
+              }
+            % cross out the tens
+            \foreach \y in {0,1,2,3,4,5} {
+              \foreach \x in {1,2,3} \draw[thick] ({4+0.3*\x-0.1},{\y+0.5}) -- ({4+0.3*\x+0.1},{\y+0.7});
+              \foreach \x in {1,2,3} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+            }
+            \foreach \y in {1,2,4,5} {
+              \foreach \x in {5} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and next we bundle the 100s:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,6.5); 
+            \draw (0,6)--(8,6);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,6.5);
+            \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+            \foreach \y in {1,2,3,4,5} \draw[dashed] (0,{1*\y}) -- (8,{1*\y}); 
+            \foreach \y in {0,1,2,3,4,5} {
+              % hundreds
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+            }
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,0.1) -- (6.1,1.45) -- (7.05,1.45) -- (7.05,0.5) -- (7.4,0.5) -- (7.4,0.1) -- cycle;
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,1.5) rectangle (7.4,2.75);
+            \draw[dashed,rounded corners, MaterialRed900] (6.1,4.5) rectangle (7.4,5.75);
+            \draw[dashed,rounded corners, MaterialRed900] (6.1,3.1) -- (6.1,4.45) -- (7.4,4.45) -- (7.4,3.8) -- (7.05,3.8) -- (7.05,3.1) -- cycle;
+            \foreach \y in {0,1,3,4} {
+              \fill[MaterialRed900](5.5,{\y+1.3}) circle[radius=2.5pt];
+              \draw[->] (6.1,{\y+1.3}) -- (5.6,{\y+1.3}); 
+              }
+            %cross out the ones
+            \foreach \y in {0,1,2,3,4,5} {
+              \foreach \x in {1,2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.5}) -- ({6+0.3*\x+0.1},{\y+0.7});
+              \foreach \x in {1,2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.2}) -- ({6+0.3*\x+0.1},{\y+0.4});
+            }
+            \foreach \y in {0,2,4,5} {
+              \foreach \x in {4} \draw[thick] ({6+0.3*\x-0.1},{\y+0.2}) -- ({6+0.3*\x+0.1},{\y+0.4});
+            }
+            % bundle the tens
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,4.5) rectangle (5.6,5.75);
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,3.1) rectangle (5.6,4.45);
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,1.5) rectangle (5.6,2.75);
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,0.1) rectangle (5.6,1.45);
+            \foreach \y in {0,1,3,4} {
+              \fill[MaterialRed900](3.5,{\y+1.3}) circle[radius=2.5pt];
+              \draw[->] (4.1,{\y+1.3}) -- (3.6,{\y+1.3}); 
+              }
+            % cross out the tens
+            \foreach \y in {0,1,2,3,4,5} {
+              \foreach \x in {1,2,3} \draw[thick] ({4+0.3*\x-0.1},{\y+0.5}) -- ({4+0.3*\x+0.1},{\y+0.7});
+              \foreach \x in {1,2,3} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+            }
+            \foreach \y in {1,2,4,5} {
+              \foreach \x in {5} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+            }
+            % bundle the 100s
+            \foreach \y in {0,3} {
+              \draw[dashed,rounded corners, MaterialRed900] (2.1,{\y+0.1}) -- (2.1,{\y+2.5}) -- (3.1,{\y+2.5}) -- (3.1,{\y+1.5}) -- (3.8,{\y+1.5}) -- (3.8,{\y+0.1}) -- cycle;
+              \fill[MaterialRed900](1.5,{\y+1.3}) circle[radius=2.5pt];
+              \draw[->] (2.1,{\y+1.3}) -- (1.6,{\y+1.3}); 
+            }
+            % cross out the tens
+            \foreach \y in {0,1,2,3,4,5} {
+              \foreach \x in {1,2,3} \draw[thick] ({2+0.3*\x-0.1},{\y+0.2}) -- ({2+0.3*\x+0.1},{\y+0.4});
+            }
+            \foreach \y in {0,3} {
+              \foreach \x in {5} \draw[thick] ({2+0.3*\x-0.1},{\y+1.2}) -- ({2+0.3*\x+0.1},{\y+1.4});
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And this shows that the result is 2 thousands, 2 hundreds, 0 tens and 2 ones or 2,202.
+        </p>
+
+        <p>
+          Now let's look at the column algorithm for this.
+          Start with 6 on the bottom row and 367 on the top row:
+          <me>
+            \begin{array}{rrrrr} \amp\amp3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \end{array}
+          </me>
+          the first steps is to do <m>6 \times 7=42</m>, write the ones digits (2) below the line and the tens digit (4) above the top row,
+          <me>
+            \begin{array}{rrrrr} \amp\amp\amp {\scriptstyle 4} \amp \\ \amp\amp 3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \amp\amp\amp\amp 2 \end{array}
+          </me>
+          Next, do the tens column or <m>6 \times 6=36</m> and add the 4 above the top line to get <m>40</m>.
+          Write the ones digits (0) below the line in the tens digit and the 4 above the 3 in the hundreds digit.
+          <me>
+            \begin{array}{rrrrr} \amp\amp{\scriptstyle 4} \amp{\scriptstyle 4} \amp \\ \amp\amp 3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \amp\amp\amp0 \amp 2 \end{array}
+          </me>
+          Next, do the hundreds column <m>6 \times 3 = 18</m> and add 4 to get 22.
+          Since this is the last step, write 22 below the line
+          <me>
+            \begin{array}{rrrrr} \amp\amp{\scriptstyle 4} \amp{\scriptstyle 4} \amp \\ \amp\amp 3 \amp 6 \amp 7 \\ \times\amp \amp \amp \amp 6 \\ \hline \amp2 \amp 2 \amp0 \amp 2 \end{array}
+          </me>
+          And the result is the same.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Lattice Model of Multiplication</title>
+
+    <p>
+      We will look at the lattice model, used above for addition, to perform the multiplication <m>173 \times 68</m>.
+    </p>
+
+    <p>
+      First start with a grid of the size according to the number of digits in each factor, write the numbers on the top and left as follows:
+    </p>
+
+    <image width="50%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) grid (3,2); 
+            \draw (0.5,2) node [above] {1};
+            \draw (1.5,2) node [above] {7};
+            \draw (2.5,2) node [above] {3}; 
+            \draw (3,0.5) node [right] {6}; \draw (3,1.5) node [right] {8}; 
+            \begin{scope}
+            \clip (0,0) rectangle (3,2);
+            \foreach \x in {-1,0,1,2} {\draw (\x,0) -- ({\x+2},2);} 
+            \end{scope}
+            \end{tikzpicture}
+            ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And then next, fill in the 1-digit multiplications in the grid for each row/column of the grid where the tens digit goes above the diagonal line, and the ones below the diagonal as follows:
+    </p>
+
+    <image width="50%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+            \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) grid (3,2); 
+            \draw (0.5,2) node [above] {1};
+            \draw (1.5,2) node [above] {7};
+            \draw (2.5,2) node [above] {3}; 
+            \draw (3,0.5) node [right] {6}; \draw (3,1.5) node [right] {8}; 
+            \draw(0.5,0.5) node [above left]{0}; \draw (0.5,0.5) node [below right] {6};
+            \draw(1.5,0.5) node [above left]{4}; \draw (1.5,0.5) node [below right] {2}; 
+            \draw(2.5,0.5) node [above left]{1}; \draw (2.5,0.5) node [below right] {8}; 
+            \draw(0.5,1.5) node [above left]{0}; \draw (0.5,1.5) node [below right] {8};
+            \draw(1.5,1.5) node [above left]{5}; \draw (1.5,1.5) node [below right] {6}; 
+            \draw(2.5,1.5) node [above left]{2}; \draw (2.5,1.5) node [below right] {4}; 
+            \begin{scope}
+            \clip (0,0) rectangle (3,2);
+            \foreach \x in {-1,0,1,2} {\draw (\x,0) -- ({\x+2},2);} 
+            \end{scope}
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And the last step, draw diagonal lines like for the addition lattice and add down the diagonals as this shows.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1]
+            \draw (0,0) grid (3,2); 
+            \draw (0.5,2) node [above] {1};
+            \draw (1.5,2) node [above] {7};
+            \draw (2.5,2) node [above] {3}; 
+            \draw (3,0.5) node [right] {6}; \draw (3,1.5) node [right] {8}; 
+            \draw(0.5,0.5) node [above left]{0}; \draw (0.5,0.5) node [below right] {6};
+            \draw(1.5,0.5) node [above left]{4}; \draw (1.5,0.5) node [below right] {2}; 
+            \draw(2.5,0.5) node [above left]{1}; \draw (2.5,0.5) node [below right] {8}; 
+            \draw(0.5,1.5) node [above left]{0}; \draw (0.5,1.5) node [below right] {8};
+            \draw(1.5,1.5) node [above left]{5}; \draw (1.5,1.5) node [below right] {6}; 
+            \draw(2.5,1.5) node [above left]{2}; \draw (2.5,1.5) node [below right] {4}; 
+            \begin{scope}
+            \clip (0,0) rectangle (3,2);
+            \foreach \x in {-1,0,1,2} {\draw (\x,0) -- ({\x+2},2);} 
+            \end{scope}
+            \begin{scope}
+            \clip (-3,-1) -- (-3,2) -- (0,2) -- (0,0) -- (3,0) -- (3,-1) -- cycle; 
+            \foreach \x in {-3,-2,...,2} {\draw[dashed] (\x,-1) -- ({\x+3},2);} 
+            \end{scope}
+            \draw (-0.5,-0.5) node[above left, scale=0.8] {\color{MaterialRed800} \small 1}; 
+            \draw (-1.5,-0.5) node[above left, scale=0.8] {\color{MaterialRed800} \small 1}; 
+            \draw (2,-1) node [above left] {8};
+            \draw (1,-1) node [above left] {7};
+            \draw (0,-1) node [above left] {8};
+            \draw (-1,-1) node [above left] {4};
+            \draw (-2,-1) node [above left] {1}; 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and the two 1s that are blue are the result of bundling a ten from the addition down the diagonals.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Base-5 multiplication</title>
+
+    <p>
+      As before, we’ll start with base-5 multiplication’s coin model.
+      As with base-10 multiplication, it is important to know 1-digit math facts in base-5.
+      We will build up a multiplication table:
+    </p>
+
+    <tabular>
+      <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" />
+      <row bottom="minor">
+        <cell> <m>\times</m> </cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>0</cell>
+        <cell>   </cell>
+        <cell>   </cell>
+        <cell>   </cell>
+        <cell>   </cell>
+        <cell>   </cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>1</cell>
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+      </row>
+
+      <row bottom="minor">
+        <cell>2</cell>
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+      </row>
+
+      <row bottom="minor">
+        <cell>3</cell>
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+      </row>
+
+      <row bottom="minor">
+        <cell>4</cell>
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+        <cell />
+      </row>
+    </tabular>
+
+    <p>
+      and first, multiplication by 0 and 1 is quite simple:
+    </p>
+
+    <tabular>
+      <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" />
+      <row bottom="minor">
+        <cell> <m>\times</m> </cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>2</cell>
+        <cell>0</cell>
+        <cell>2</cell>
+        <cell />
+        <cell />
+        <cell />
+      </row>
+
+      <row bottom="minor">
+        <cell>3</cell>
+        <cell>0</cell>
+        <cell>3</cell>
+        <cell />
+        <cell />
+        <cell />
+      </row>
+
+      <row bottom="minor">
+        <cell>4</cell>
+        <cell>0</cell>
+        <cell>4</cell>
+        <cell />
+        <cell />
+        <cell />
+      </row>
+    </tabular>
+
+    <p>
+      Next, multiplying by 2 is skip counting and remembering in base-5, think pennies and nickels:
+    </p>
+
+    <tabular>
+      <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" />
+      <row bottom="minor">
+        <cell> <m>\times</m> </cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>2</cell>
+        <cell>0</cell>
+        <cell>2</cell>
+        <cell>4</cell>
+        <cell>11</cell>
+        <cell>13</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>3</cell>
+        <cell>0</cell>
+        <cell>3</cell>
+        <cell>11</cell>
+        <cell />
+        <cell />
+      </row>
+
+      <row bottom="minor">
+        <cell>4</cell>
+        <cell>0</cell>
+        <cell>4</cell>
+        <cell>13</cell>
+        <cell />
+        <cell />
+      </row>
+    </tabular>
+
+    <p>
+      and the last 4 can also be done with skip counting:
+    </p>
+
+    <tabular>
+      <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" />
+      <row bottom="minor">
+        <cell> <m>\times</m> </cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>2</cell>
+        <cell>0</cell>
+        <cell>2</cell>
+        <cell>4</cell>
+        <cell>11</cell>
+        <cell>14</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>3</cell>
+        <cell>0</cell>
+        <cell>3</cell>
+        <cell>11</cell>
+        <cell>14</cell>
+        <cell>22</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>4</cell>
+        <cell>0</cell>
+        <cell>4</cell>
+        <cell>13</cell>
+        <cell>22</cell>
+        <cell>31</cell>
+      </row>
+    </tabular>
+
+    <p>
+      Now we use this table to perform more complicated multiplications.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Calculate <m>324_{\text{5}}\times 3_{\text{5}}</m> first using a chip model and then using the column algorithm.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First, put 3 copies of <m>324_{\text{5}}</m> on the chart:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,3.5); 
+            \draw (0,3)--(8,3);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,3.5);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,3.25) node {\lab};
+            \foreach \y in {1,2} \draw[dashed] (0,\y)--(8,\y);
+            \foreach \y in {0,1,2} {
+              % ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              % 5s
+              \foreach \x in {1,2} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];
+              % 25s
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.3}) circle[radius=2.5pt];  
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And now bundle the ones, remembering to group in size 5.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,3.5); 
+            \draw (0,3)--(8,3);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,3.5);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,3.25) node {\lab};
+            \foreach \y in {1,2} \draw[dashed] (0,\y)--(8,\y);
+            \foreach \y in {0,1,2} {
+              % ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];
+              % 5s
+              \foreach \x in {1,2} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];
+              % 25s
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];  
+            }
+            % cross out 1s
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,0.3) -- (7.4,0.3) -- (7.4,1.7) -- (7,1.7) -- (7,0.8) -- (6.1,0.8) -- cycle; 
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,1.3) -- (6.1,2.7) -- (7.4,2.7) -- (7.4,1.8) -- (6.45,1.8) -- (6.45,1.3) -- cycle; 
+            \foreach \y in {0,2} {
+              \fill[MaterialRed900](5.5,{\y+0.5}) circle[radius=2.5pt];
+              \draw[->] (6.1,{\y+0.5}) -- (5.6,{\y+0.5}); 
+            }
+            % cross out the ones:
+            \foreach \y in {0,1,2} {
+              \foreach \x in {1,4} \draw[thick] ({6+0.3*\x-0.1},{\y+0.4}) -- ({6+0.3*\x+0.1},{\y+0.6});
+            }
+            \foreach \y in {0,2} {
+  \foreach \x in {2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.4}) -- ({6+0.3*\x+0.1},{\y+0.6});
+}
+\end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          Next, we bundle the fives:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+            \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,3.5); 
+            \draw (0,3)--(8,3);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,3.5);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,3.25) node {\lab};
+            \foreach \y in {1,2} \draw[dashed] (0,\y)--(8,\y);
+            \foreach \y in {0,1,2} {
+              % ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];
+              % 5s
+              \foreach \x in {1,2} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];
+              % 25s
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];  
+            }
+            % bundle the 1s
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,0.3) -- (7.4,0.3) -- (7.4,1.7) -- (7,1.7) -- (7,0.8) -- (6.1,0.8) -- cycle; 
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,1.3) -- (6.1,2.7) -- (7.4,2.7) -- (7.4,1.8) -- (6.45,1.8) -- (6.45,1.3) -- cycle; 
+            \foreach \y in {0,2} {
+              \fill[MaterialRed900](5.5,{\y+0.5}) circle[radius=2.5pt];
+              \draw[->] (6.1,{\y+0.5}) -- (5.6,{\y+0.5}); 
+            }
+            % cross out the ones:
+            \foreach \y in {0,1,2} {
+              \foreach \x in {1,4} \draw[thick] ({6+0.3*\x-0.1},{\y+0.4}) -- ({6+0.3*\x+0.1},{\y+0.6});
+            }
+            \foreach \y in {0,2} {
+              \foreach \x in {2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.4}) -- ({6+0.3*\x+0.1},{\y+0.6});
+            }
+            % bundle the fives:
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,0.2) -- (4.1,2.8) -- (5.7,2.8) -- (5.7,2.3) -- (4.45,2.3) -- (4.45,0.2) -- cycle; 
+            \fill[MaterialRed900] (3.5,1.5) circle[radius=2.5pt];
+            \draw[->] (4.1,1.5) -- (3.6,1.5);
+            % cross out the fives
+            \foreach \x in {1,2,5} \draw[thick] ({4+0.3*\x-0.1},2.4) -- ({4+0.3*\x+0.1},2.6);
+            \foreach \y in {0,1} {
+            \foreach \x in {1} \draw[thick] ({4+0.3*\x-0.1},{\y+0.4}) -- ({4+0.3*\x+0.1},{\y+0.6});
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And then bundle the 25s:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,3.5); 
+            \draw (0,3)--(8,3);
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,3.5);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,3.25) node {\lab};
+            \foreach \y in {1,2} \draw[dashed] (0,\y)--(8,\y);
+            \foreach \y in {0,1,2} {
+              % ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];
+              % 5s
+              \foreach \x in {1,2} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];
+              % 25s
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},{\y*1+0.5}) circle[radius=2.5pt];  
+            }
+            % bundle the 1s
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,0.3) -- (7.4,0.3) -- (7.4,1.7) -- (7,1.7) -- (7,0.8) -- (6.1,0.8) -- cycle; 
+            \draw[dashed,rounded corners,MaterialRed900] (6.1,1.3) -- (6.1,2.7) -- (7.4,2.7) -- (7.4,1.8) -- (6.45,1.8) -- (6.45,1.3) -- cycle; 
+            \foreach \y in {0,2} {
+              \fill[MaterialRed900](5.5,{\y+0.5}) circle[radius=2.5pt];
+              \draw[->] (6.1,{\y+0.5}) -- (5.6,{\y+0.5}); 
+            }
+            % cross out the ones:
+            \foreach \y in {0,1,2} {
+              \foreach \x in {1,4} \draw[thick] ({6+0.3*\x-0.1},{\y+0.4}) -- ({6+0.3*\x+0.1},{\y+0.6});
+            }
+            \foreach \y in {0,2} {
+              \foreach \x in {2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.4}) -- ({6+0.3*\x+0.1},{\y+0.6});
+            }
+            % bundle the fives:
+            \draw[dashed,rounded corners, MaterialRed900] (4.1,0.2) -- (4.1,2.8) -- (5.7,2.8) -- (5.7,2.3) -- (4.45,2.3) -- (4.45,0.2) -- cycle; 
+            \fill[MaterialRed900] (3.5,1.5) circle[radius=2.5pt];
+            \draw[->] (4.1,1.5) -- (3.6,1.5);
+            % cross out the fives
+            \foreach \x in {1,2,5} \draw[thick] ({4+0.3*\x-0.1},2.4) -- ({4+0.3*\x+0.1},2.6);
+            \foreach \y in {0,1} {
+            \foreach \x in {1} \draw[thick] ({4+0.3*\x-0.1},{\y+0.4}) -- ({4+0.3*\x+0.1},{\y+0.6});
+            }
+            % bundle the 25s:
+            \draw[dashed,rounded corners, MaterialRed900] (2.1,1.2) -- (2.1,2.8) -- (3.1,2.8) -- (3.1,2.3) -- (2.7,2.3) -- (2.7,1.2) -- cycle; 
+            \draw[dashed,rounded corners, MaterialRed900] (2.1,0.1) -- (3.7,0.1) -- (3.7,1.7) -- (2.7,1.7) -- (2.7,0.7) -- (2.1,0.7) -- cycle;
+            \foreach \y in {0,1} {
+              \fill[MaterialRed900] (1.5,{\y+0.5}) circle[radius=2.5pt];
+              \draw[->] (2.1,{\y+0.5}) -- (1.6,{\y+0.5});
+            }
+            % cross out the 25s
+            \foreach \y in {0,1,2}
+            \foreach \x in {1,2,3} \draw[thick] ({2+0.3*\x-0.1},{\y+0.4}) -- ({2+0.3*\x+0.1},{\y+0.6});
+            \foreach \y in {1} {
+            \foreach \x in {5} \draw[thick] ({2+0.3*\x-0.1},{\y+0.4}) -- ({2+0.3*\x+0.1},{\y+0.6});
+            }
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and the result is 2 fiftoons, 0 quarters, 3 nickels and 2 pennies or <m>2032_{5}</m>.
+        </p>
+
+        <p>
+          We can also find the product using the column algorithm.
+          Pull out the multiplication table that you made.
+          We'll use the expanded version to make things a bit easier:
+          <me>
+            \begin{array}{rrrrrl} \amp\amp3 \amp 2 \amp 4\amp  \\ \times\amp\amp  \amp \amp 3 \amp \\ \hline \amp\amp\amp2\amp 2  \amp \to 3 \times 4 \\ \amp\amp1 \amp 1 \amp 0 \amp\to 3\times 20 \\ \amp1\amp4 \amp 0 \amp 0 \amp\to 3\times 300 \\ \hline \amp 2\amp 0 \amp 3 \amp 2 \end{array}
+          </me>
+        </p>
+
+        <p>
+          where the only bundling in this case needed to occur in the third column (25s) in which 5 twenty-fives became a 125.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+</section>

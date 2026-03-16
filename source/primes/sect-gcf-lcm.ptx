@@ -1,0 +1,423 @@
+<section xml:id="sect-gcf-lcm">
+  <title>Greatest Common Factors and Least Common Multiples</title>
+
+  <introduction>
+    <definition>
+      <statement>
+        <p>
+          The <alert>Greatest Common Factor</alert> of two whole numbers <m>a</m> and <m>b</m>, written <m>GCF(a,b)</m>, is the largest whole number which is a factor of both <m>a</m> and <m>b</m>
+        </p>
+      </statement>
+    </definition>
+
+    <example>
+      <statement>
+        <p>
+          Find <m>GCF(24,60)</m>.
+        </p>
+
+        <p />
+          <p>
+            We can list all of the factors of both 24 and 60:
+            <me>
+              \begin{aligned}\text{Factors of 24:}\amp \qquad \qquad 1,2,3,4,6,8,12,24\\ \text{Factors of 60:}\amp \qquad \qquad 1,2,3,4,5,6,10,12,15,20,30,60\end{aligned}
+            </me>
+            and looking at the list, the largest common factor is 12.
+            Therefore <m>GCF(24,60)=12</m>.
+          </p>
+        </statement>
+      </example>
+
+      <example>
+        <statement>
+          <p>
+            Calculate <m>GCF(144,180)</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            In this case, it awfully difficult to write down all of the factors.
+            Instead, another technique is to write out the prime factorization of both:
+            <me>
+              \begin{aligned}144\amp = 2\cdot 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3 \\ 180\amp = 2 \cdot 2 \cdot 3 \cdot 3 \cdot 5\end{aligned}
+            </me>
+            and looking at the common prime factors:
+            <me>
+              \begin{aligned}GCF(144,180)\amp = 2 \cdot 2 \cdot 3 \cdot 3 = 36\end{aligned}
+            </me>
+          </p>
+        </solution>
+      </example>
+
+      <example>
+        <statement>
+          <p>
+            Calculate <m>GCF(2400,450)</m>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            In this case, it awfully difficult to write down all of the factors.
+            Instead, another technique is to write out the prime factorization of both:
+            <me>
+              \begin{aligned}2400\amp = 2^{5} \cdot 3 \cdot 5^{2} \\ 450\amp = 2 \cdot 3^{2} \cdot 5^{2}\end{aligned}
+            </me>
+            and looking at the common prime factors:
+            <me>
+              \begin{aligned}GCF(2400,450)\amp = 2 \cdot 3 \cdot 5^{2} = 3 \cdot 50 = 150\end{aligned}
+            </me>
+          </p>
+        </solution>
+      </example>
+    </introduction>
+
+
+    <subsection>
+      <title>Least Common Multiple</title>
+
+      <introduction>
+        <p>
+          Recall that to find the sum of two fractions, we need a common denominator.
+          The reasons why and details are in <xref ref="ch-fractions" />, but consider
+          <me>
+            \begin{aligned}\frac{1}{18}+ \frac{5}{12}\end{aligned}
+          </me>
+        </p>
+
+        <p>
+          One way to to get a common denominator is to just multiply the denominators, however, it generally desirable to have a smaller one.
+          A nice denominator is the least common multiple or LCM.
+          In the example above the least common multiple of 18 and 12 is 36.
+          For example:
+          <me>
+            \begin{aligned}\frac{1}{18}+ \frac{5}{12}\amp = \frac{2}{36}+ \frac{5\cdot 3}{36}= \frac{17}{36}\end{aligned}
+          </me>
+        </p>
+
+        <p>
+          Note: many people use the term <em>least common denominator</em> for the LCM because of this.
+        </p>
+
+        <definition>
+          <statement>
+            <p>
+              The <alert>Least Common Multiple</alert> of two nonzero whole numbers <m>a</m> and <m>b</m>, written <m>LCM(a,b)</m> is the smallest whole number (other than zero) that is a multiple of both <m>a</m> and <m>b</m>.
+            </p>
+          </statement>
+        </definition>
+
+        <example>
+          <statement>
+            <p>
+              Find
+              <ul>
+                <li>
+                  <p>
+                    <m>LCM(12,18)</m>
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <m>LCM(24,64)</m>
+                  </p>
+                </li>
+              </ul>
+              by writing down enough multiples until the smallest one is found.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    Write a few multiples of each:
+                    <me>
+                      \begin{aligned}\text{Multiples of 12}\amp \qquad \qquad 12,24,36,48,60,72, \ldots \\ \text{Multiples of 18}\amp \qquad \qquad 18,36,54,72, \dots\end{aligned}
+                    </me>
+                  </p>
+
+                  <p>
+                    and since the smallest common multiple is 36, <m>LCM(12,18)=36</m>.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    And for <m>LCM(24,64)</m>
+                    <me>
+                      \begin{aligned}\text{Multiples of 24:}\amp \quad 24, 48, 72, 96, 120, 144, 168, 192 \\ \text{Multiples of 64:}\amp \quad 64, 128, 192, 256,\end{aligned}
+                    </me>
+                  </p>
+
+                  <p>
+                    and you can see that 192 is the smallest multiple common to both, so <m>LCM(24,64)=192</m>.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </solution>
+        </example>
+
+        <p>
+          There is a nice way to visualize the LCM using a number line.
+          Consider <m>LCM(24,30)</m>.
+          We need multiples of both numbers, which we can plot on a number line:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw[->] (-0.1,0) -- (13,0);
+            \foreach \x in {0,24,48,...,120} \draw ({\x/10},0.1)--({\x/10},-0.1) node [below] {\x};
+            \foreach \x in {0,24,48,...,96} \draw[->,MaterialBlue] ({\x/10},0.15) .. controls ({(\x+8)/10},0.5) and ({(\x+16)/10},0.5) .. ({(\x+24)/10},0.15);
+            \foreach \x in {0,30,60,...,120} \draw ({\x/10},0.1)--({\x/10},-0.1) node [below] {\x};
+            \foreach \x in {0,30,60,90} \draw[->,MaterialRed900] ({\x/10},0.15) .. controls ({(\x+10)/10},0.5) and ({(\x+20)/10},0.5) .. ({(\x+30)/10},0.15);
+            \end{tikzpicture}
+      ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and the LCM will be the point on the number line where the hops first land on the same value.
+        </p>
+
+        <p>
+          Similar to the GCF, when the the numbers get larger, finding the LCM using this method is difficult and therefore, it’s easy to miss the lowest common multiple.
+          We will, like we did for the GCF, use the prime factorization to find the LCM.
+          The following is an example.
+        </p>
+
+        <example>
+          <statement>
+            <p>
+              Find <m>LCM(72,150)</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              In this case, we will write the prime factorization of both
+              <me>
+                \begin{aligned}72\amp = 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3 \\ 150\amp = 2 \cdot 3 \cdot 5 \cdot 5\end{aligned}
+              </me>
+            </p>
+
+            <p>
+              Note: to find these, you probably need to use a factor tree to find them.
+            </p>
+
+            <p>
+              A common multiple is to multiple all factors together, but the least one is the one in which the common factors are only written once:
+              <me>
+                \begin{aligned}LCM(72,150)\amp = \underbrace{2 \cdot 3}_{\text{common factors}}\cdot \underbrace{2 \cdot 2 \cdot 3}_{\text{other factors of 72}}\cdot \underbrace{5 \cdot 5}_{\text{other factors of 150}}= 1800\end{aligned}
+              </me>
+            </p>
+          </solution>
+        </example>
+
+        <p>
+          We can summarize finding the LCM and GCF as follows.
+        </p>
+
+        <note>
+          <title></title>
+
+          <p>
+            Consider two whole numbers <m>m</m> and <m>n</m> that can be written as their prime factorization:
+            <me>
+              \begin{aligned}m\amp = 2^{i}3^{j} \cdots \\ n\amp = 2^{k}3^{\ell}\cdots \\\end{aligned}
+            </me>
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  To find the GCF, find the smaller power of all common terms.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  To find the LCM, find the larger power of all common terms and include all terms that are in each number <m>m</m> and <m>n</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </note>
+
+        <p>
+          The following example shows this technique to find the LCM and GCF.
+        </p>
+
+        <example>
+          <statement>
+            <p>
+              Find both the LCM and GCF of <m>80,36</m> using this technique.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              Use a factor tree, you can show that
+              <me>
+                \begin{aligned}80\amp = 2^{4} \cdot 5 \\ 36\amp = 2^{2} \cdot 3^{2}\end{aligned}
+              </me>
+            </p>
+
+            <p>
+              The GCF is the smallest power of all common terms.
+              Since only powers of <m>2</m> are common then <m>GCF(80,36) = 2^{2}=4</m>, the smaller power of 2.
+            </p>
+
+            <p>
+              The LCM is the larger power of all terms, making sure that all terms are included:
+              <me>
+                \begin{aligned}LCM(36,80)\amp = 2^{4} \cdot 3^{2} \cdot 5 = 720\end{aligned}
+              </me>
+            </p>
+          </solution>
+        </example>
+      </introduction>
+
+      <subsubsection>
+        <title>Euclid’s Algorithm</title>
+
+        <p>
+          What if we need to find <m>GCF(18000,96525)</m>? Using the techniques above, we either 1) find all factors and then find the greatest common one or 2) find the prime factorization of each.
+          In either case, this sounds ugly.
+          Fortunately, there is another way called Euclid’s Algorithm that isn’t too difficult.
+        </p>
+
+        <lemma>
+          <statement>
+            <p>
+              Euclid’s Algorithm
+            </p>
+
+            <p>
+              If <m>a = bq +r</m> then <m>GCF(a,b)=GCF(b,r)</m>.
+            </p>
+          </statement>
+        </lemma>
+
+        <p>
+          What this allows us to do is to reduce the size of the problem.
+          As written <m>a</m> is the dividend, <m>b</m> is the divisor and <m>r</m> the remainder.
+          Since <m>b</m> is less than <m>a</m> and <m>r</m> is less than <m>b</m> (why? Think Quotient-Remainder Theorem), the sizes of the number reduces when you do this.
+        </p>
+
+        <p>
+          To use Euclid’s algorithm, we will find <m>r</m>, the remainder of <m>a \div b</m> (or <m>b \div a</m>).
+          We then repeat.
+          The following shows an example
+        </p>
+
+        <example>
+          <statement>
+            <p>
+              Find the GCF using Euclid’s Algorithm Find <m>GCF(144,180)</m> using Euclid’s Algorithm:
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              First, show that <m>180 \div 144 = 1 R\;36</m> (if you need to do long division on this, go ahead).
+              Therefore,
+              <me>
+                \begin{aligned}GCF(180,144) = GCF(144,36)\end{aligned}
+              </me>
+            </p>
+
+            <p>
+              Next, we will repeat and do <m>144 \div 36</m>, which is <m>4</m> and no remainder.
+              This shows that
+              <me>
+                GCF(144,36)\amp = GCF(36,0)
+              </me>
+              and the greatest common factor between 36 and 0 is 36.
+              This shows that <m>GCF(180,144) = 36</m>.
+            </p>
+          </solution>
+        </example>
+
+        <p>
+          Let’s look at another example.
+        </p>
+
+        <example>
+          <statement>
+            <p>
+              Find <m>GCF(3315,135)</m>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              First find <m>3315 \div 135</m> using long division:
+            </p>
+
+            <p>
+              3315135
+            </p>
+
+            <p>
+              Since <m>3315 \div 135=24 R75</m>
+              <me>
+                \begin{aligned}GCF(3315,135)\amp =GCF(135,75) \intertext{and since $135 \div 75 = 1 R 60$}\amp = GCF(75,60), \intertext{and since $75 \div 60 = 1 R 15$}\amp = GCF(60,15), \intertext{and since $60 \div 15 = 4 R 0$}\amp = GCF(15,0) = 15\end{aligned}
+              </me>
+            </p>
+
+            <p>
+              This shows that the original problem <m>GCF(3315,135)=15</m>.
+            </p>
+          </solution>
+        </example>
+      </subsubsection>
+
+      <subsubsection>
+        <title>Relationship between LCM and GCF</title>
+
+        <p>
+          <me>
+            \begin{aligned}LCM(a,b)\amp = \frac{ab}{GCF(a,b)}\end{aligned}
+          </me>
+        </p>
+
+        <example>
+          <statement>
+            <p>
+              First find <m>GCF(360,135)</m> using Euclid’s Algorithm.
+              Then use the above expression to find <m>LCM(360,135)</m>.
+            </p>
+
+            <p>
+              360135
+            </p>
+
+            <p>
+              Since <m>360 \div 135=2 R90</m>
+              <me>
+                \begin{aligned}GCF(360,135)\amp =GCF(135,90) \quad  \text{and since $135 \div 90 = 1 R 45$} \\
+                \amp = GCF(90,45) = 45\end{aligned}
+              </me>
+            </p>
+
+            <p>
+              Therefore,
+              <me>
+                \begin{aligned}LCM(360,135) = \frac{ 360 \cdot 135}{45}= 360 \cdot 3 = 1080\end{aligned}
+              </me>
+            </p>
+          </statement>
+        </example>
+      </subsubsection>
+    </subsection>
+  </section>

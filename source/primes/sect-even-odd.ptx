@@ -1,0 +1,416 @@
+<section xml:id="sect-even-odd">
+  <title>Even and Odd Numbers</title>
+
+  <introduction>
+    <p>
+      Let’s look at this through a lens of even and odd numbers.
+      There are a few ways to describe an <alert>even number</alert> including:
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            An even number is any number that you can get by skip counting by twos.
+            For example <m>2,4,6,8,10, \ldots</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            An even number of objects can always be paired up (and none left unpaired).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A number which is twice a whole number.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            A number whose last digit is 0,2,4,6, or 8.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      On the surface, these are all reasonable possibilities, and they seem be consistent with what we think of with even numbers.
+      However, from a mathematical point of view in order to prove properties of even numbers, it is important that we have a simple <alert>mathematical definition</alert> that will be useful.
+    </p>
+
+    <p>
+      Therefore, we will use the following definition:
+    </p>
+
+    <definition>
+      <statement>
+        <p>
+          An <term>even number</term> is number which is twice a whole number.
+          An <term>odd number </term> is one which is 1 more than twice a whole number.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      The main reason for choosing this as a definition over others is that is it easier to use to show or prove the other statements.
+      For example, we will use this definition to show that if a number’s last digit is 0, 2, 4, 6 or 8 then the number is even.
+    </p>
+
+    <p>
+      Before getting proofs, we can also examine some diagrams of even and odd numbers.
+      Since the notion of even numbers is twice a whole number (or the equivalent of pairing of objects), the following diagrams for 6 and 18 are helpful:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+\draw (0,0) grid (3,2); \draw (5,0) grid (14,2);
+          \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and the important notation is that there are 2 rows of boxes, indicating that it is even.
+    </p>
+
+    <remark>
+      <p>
+        Why doesn't the following diagram show that 18 is even?
+      </p>
+
+      <image width="50%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+\draw(0,0) grid (6,3);
+\end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </remark>
+
+    <p>
+      How can we show that 78 is even? We could do a diagram with 78 boxes, however, 1) it would be hard to get it accurate–you’d probably need to double or triple count to make sure, and 2) it’s easier to not have to count.
+      We can take a lead from writing bar diagrams with multiplication that we saw in <xref ref="ch-models" /> as
+    </p>
+
+    <image width="50%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=0.6]
+\draw (0,0) rectangle (10,2);
+\foreach \x in {1,2,9} \draw (\x,0)--(\x,2);
+\draw (0,1) -- (2.2,1); \draw (8.8,1) -- (10,1);
+\draw (5.5,1) node {$\cdots \; 78 \; \cdots$}; 
+\end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and note that it is clear that there are two equal rows of boxes.
+      We can also show odd numbers by adding an extra box to the end.
+      First, consider some small odd numbers.
+      The following diagrams show 7 and 15:
+    </p>
+
+    <image width="50%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+          \draw (0,0) grid (3,2);
+          \draw (3,1) rectangle (4,2);
+          \draw (6,0) grid (13,2); 
+          \draw (13,1) rectangle(14,2);
+          \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And the following shows the odd number 37:
+    </p>
+
+    <image width="50%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+      <![CDATA[ 
+      \begin{tikzpicture}[scale=0.5]
+      \draw (0,0) rectangle (10,2);
+      \foreach \x in {1,2,9} \draw (\x,0)--(\x,2);
+      \draw (0,1) -- (2.2,1); \draw (8.8,1) -- (10,1);
+      \draw (5.5,1) node {$\cdots \; 37 \; \cdots$}; 
+      \draw (10,1) rectangle (11,2); 
+      \end{tikzpicture}
+      ]]>
+      </latex-image>
+    </image>
+  </introduction>
+
+
+  <subsection>
+    <title>Lemmas, Theorems and Proofs</title>
+
+    <p>
+      We have seen a few theorems and lemmas in this text.
+      For example, the Quotient-Remainder theorem is key to handling integer division.
+      We call the result a <alert>theorem</alert> because it is a provable statement with an important result.
+      For more minor results, we call such a statement a <alert>lemma</alert>.
+    </p>
+
+    <definition>
+      <statement>
+        <p>
+          A <alert>proof</alert> of a statement is a detailed explanation of how that statement follows logically from other statements accepted as true.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      The proofs that we will see in this section will be approached from two different avenues: a diagram proof and an algebraic proof.
+    </p>
+
+
+    <paragraphs>
+      <title>Diagram Proof</title>
+
+      <p>
+        We will use diagrams to illustrate the argument.
+        For example, we can show an even number and an odd number using the following two diagrams:
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \y in {0,0.5,1} {\draw (0,\y) -- (4.5,\y);}
+            \foreach \x in {0,0.5,1,4,4.5} {\draw (\x,0) -- (\x,1);}
+            \draw (2.5,0) node [above] {$\cdots$};
+            \draw (2.5,1) node [below] {$\cdots$};
+            \draw (2.5,-0.25) node [below] {An even number};
+            \foreach \y in {0,0.5,1} {\draw (6,\y) -- (11,\y);}
+            \foreach \x in {6,6.5,7,10.5,11} {\draw (\x,0) -- (\x,1);}
+            \draw (8.25,0) node [above] {$\cdots$};
+            \draw (8.25,1) node [below] {$\cdots$};
+            \draw (11,0) rectangle (11.5,0.5); 
+            \draw (8.25,-0.25) node [below] {An odd number};
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        The <m>\cdots</m> keep these diagrams very general.
+        They work for any even or odd number.
+      </p>
+
+      <p>
+        We will use such diagrams below to prove statements about even and odd numbers.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Algebraic Proofs</title>
+
+      <p>
+        In these proofs, we use letters to denote even and odd numbers.
+        Typically, we will say “Let <m>k</m> be a whole number.
+        Then <m>2k</m> is an even number and <m>2k+1</m> is an odd number.”
+      </p>
+
+      <p>
+        We will the use statements we know to be true about whole numbers to prove things.
+      </p>
+    </paragraphs>
+
+    <p>
+      We will see how a proof is presented using even and odd numbers.
+      We will soon prove the following theorem:
+    </p>
+
+    <theorem>
+      <statement>
+        <p>
+          The sum of any two even numbers is even.
+        </p>
+      </statement>
+
+
+      <proof>
+        <p>
+          First, we will show a <alert>diagram proof</alert>.
+        </p>
+
+        <p>
+          Consider two even numbers as shown in the diagram below:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \fill[MaterialGreen200] (0,0) rectangle (4.5,1); 
+            \fill[MaterialBlue200] (6,0) rectangle (11,1); 
+            \foreach \y in {0,0.5,1} {\draw (0,\y) -- (4.5,\y);}
+            \foreach \x in {0,0.5,1,4,4.5} {\draw (\x,0) -- (\x,1);}
+            \draw (2.5,0) node [above] {$\cdots$};
+            \draw (2.5,1) node [below] {$\cdots$};
+            \draw (2.5,1.25) node [above] {An even number};
+            \foreach \y in {0,0.5,1} {\draw (6,\y) -- (11,\y);}
+            \foreach \x in {6,6.5,7,10.5,11} {\draw (\x,0) -- (\x,1);}
+            \draw (8.25,0) node [above] {$\cdots$};
+            \draw (8.25,1) node [below] {$\cdots$};
+            \draw (8.25,1.25) node [above] {Another even number};
+            \draw[decorate,decoration={brace,amplitude=5}] (11,-0.2) -- (0,-0.2) node [midway, below=2pt+3pt] {?};
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+          \fill[MaterialGreen200] (0,0) rectangle (4.5,1); 
+          \fill[MaterialBlue200] (4.5,0) rectangle (8,1); 
+          \foreach \y in {0,0.5,1} \draw (0,\y) -- (8,\y);
+          \foreach \x in {0,0.5,1,4,4.5,5,7.5,8} \draw (\x,0) -- (\x,1);
+          \draw (2.5,0) node [above] {$\cdots$};
+          \draw (2.5,1) node [below] {$\cdots$};
+          \draw (6.25,0) node [above] {$\cdots$};
+          \draw (6.25,1) node [below] {$\cdots$};
+          \draw[decorate,decoration={brace,amplitude=5}] (8,-0.2) -- (0,-0.2) node [midway, below=2pt+3pt] {The result is also even};
+          \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          There are many important parts of this diagram proof.
+          First, the two numbers (in light green and blue) are general even numbers.
+          We don’t shows specifically the sizes of these numbers with the <m>\cdots</m>.
+          The result is even because there two rows of the same size.
+          This also clearly shows that the result is the sum of the two numbers.
+          Note: the colors help, but could be done with shading.
+        </p>
+
+        <p>
+          Next, we’ll show an <alert>algebraic proof.</alert>
+        </p>
+
+        <p>
+          Let <m>m</m> be any whole number.
+          Then <m>2m</m> is an even number.
+          Let <m>k</m> be another whole number, with <m>2k</m> another even number.
+          Since <m>2k+2m=2(k+m)</m> by the distributive property, <m>k+m</m> is a whole number and <m>2(k+m)</m> is twice a whole number, the result <m>2k+2m</m> is an even number.
+        </p>
+      </proof>
+    </theorem>
+
+    <p>
+      Next, we will show that the sum of an even number and an odd number is odd.
+    </p>
+
+    <theorem xml:id="thm-even-plus-odd">
+      <statement>
+        <p>
+          The sum of an even number and a odd number is an odd number.
+        </p>
+      </statement>
+
+
+      <proof>
+        <p>
+          <alert>Diagram Proof:</alert>
+        </p>
+
+        <p>
+          Consider an even and odd number:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+\fill[MaterialGreen200] (0,0) rectangle (4.5,1); 
+\fill[MaterialBlue200] (6,0) rectangle (11,1); 
+\fill[MaterialBlue200] (11,0) rectangle (11.5,0.5); 
+\foreach \y in {0,0.5,1} {\draw (0,\y) -- (4.5,\y);}
+\foreach \x in {0,0.5,1,4,4.5} {\draw (\x,0) -- (\x,1);}
+\draw (2.5,0) node [above] {$\cdots$};
+\draw (2.5,1) node [below] {$\cdots$};
+\draw (2.5,1) node [above] {An even number};
+\foreach \y in {0,0.5,1} {\draw (6,\y) -- (11,\y);}
+\foreach \x in {6,6.5,7,10.5,11} {\draw (\x,0) -- (\x,1);}
+\draw (8.25,0) node [above] {$\cdots$};
+\draw (8.25,1) node [below] {$\cdots$};
+\draw (11,0) rectangle (11.5,0.5); 
+\draw (8.25,1) node [above] {An odd number};
+\draw[decorate,decoration={brace,amplitude=5}] (11.5,-0.2) -- (0,-0.2) node [midway, below=2pt+3pt] {?};
+\end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <image width="70%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \fill[MaterialGreen200](0,0) rectangle (4.5,1); 
+            \fill[MaterialBlue200]  (4.5,0) rectangle (8,1); 
+            \fill[MaterialBlue200]  (8,0) rectangle (8.5,0.5); 
+            \foreach \y in {0,0.5,1} {\draw (0,\y) -- (8,\y);}
+            \foreach \x in {0,0.5,1,4,4.5,5,7.5,8} {\draw (\x,0) -- (\x,1);}
+            \draw (8,0) rectangle (8.5,0.5); 
+            \draw (2.5,0) node [above] {$\cdots$};
+            \draw (2.5,1) node [below] {$\cdots$};
+            \draw (6.25,0) node [above] {$\cdots$};
+            \draw (6.25,1) node [below] {$\cdots$};
+\end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          <alert>Algebraic Proof:</alert>
+        </p>
+
+        <p>
+          Let <m>k</m> be a whole number, then <m>2k</m> is an even number.
+          Let <m>m</m> be a whole number and <m>2m+1</m> be an odd number.
+          The sum is
+          <me>
+            \begin{aligned}S = 2k+(2m+1)\amp= 2k+2m+1\amp\amp\text{by the associative property}\\ \amp = 2(k+m)+1\amp\amp\text{by the distributive property}\\\end{aligned}
+          </me>
+          The term <m>k+m</m> in the parentheses is whole, because the sum of two whole number is whole.
+          And lastly, <m>2(k+m)+1</m> is an odd number.
+        </p>
+      </proof>
+    </theorem>
+  </subsection>
+</section>

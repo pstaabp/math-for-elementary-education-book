@@ -1,0 +1,1418 @@
+<section xml:id="sect-long-division">
+  <title>Long Division</title>
+
+  <introduction>
+    <p>
+      In the time of calculators everywhere, why do we need to learn the long division algorithm to perform a calculation that can take a long time? Well there are three key reasons:
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            It relates fractions and decimals (we'll see this in detail in Chapter <xref ref="ch-decimals" text="global" />).
+            It's key in understanding irrational numbers.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            It illustrates the notion of a successive approximation and an iterative algorithm.
+            We will see that each step of long division gets closer to the solution.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            It is used in Precalculus to factor polynomials finding partial fractions.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      The curriculum sequence for division clearly starts with 1-digit divisors before 2 or more digit divisors.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Long Division with 1-digit divisors</title>
+
+    <paragraphs>
+      <title>Prerequisites</title>
+
+      <p>
+        The following are needed for long division by a 1-digit whole number:
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              A solid understanding of place value.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              A solid knowledge of the meaning of multiplication and the basic multiplication facts to <m>10 \times 10</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              A solid understanding of the meaning of division (both partitive and measurement).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Multi-digit subtraction with regrouping.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Understanding that [stage=0]153 means <m>15 \div 3</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>The Partitive Approach</title>
+
+      <p>
+        We start with a partitive-division word problem to explain the steps.
+        As we will see, coin models and examples are helpful for starting.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            José wants to put 71 cents into 3 separate jars so each jar has the same number of candies.
+            How many candies go in each? How many candies are left over?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            Let's start with a coin model of 7 dimes and 1 penny, which will look like this:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+\foreach \x in {0,1,...,6} \draw (\x,1) node[draw, circle, inner sep=1pt] {10};
+\foreach \x in {8} \draw (\x,1) node[draw, circle, inner sep=1pt] {1}; 
+\end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            We'll put the dimes into 3 equal piles:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x in {0, 1, 3, 4, 6, 7, 9} \draw (\x,1) node[draw, circle, inner sep=1pt] {10};
+            \foreach \x in {0,3,6} \draw[MaterialRed900,rounded corners,dashed] ({\x-0.5},0.5) rectangle ({\x+1.5},1.5); 
+            \foreach \x in {10} \draw (\x,1) node[draw, circle, inner sep=1pt] {1}; 
+            \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            now we unbundle the remaining dime into 10 pennies:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+            \begin{tikzpicture}
+            \foreach \x in {0,1, 3,4, 6,7, 9} \draw (\x,1) node[draw, circle, inner sep=1pt] {10};
+            \foreach \x in {0,3,6} \draw[MaterialRed900,rounded corners,dashed] ({\x-0.5},0.6) rectangle ({\x+1.5},1.4); 
+            \foreach \x in {10} \draw (\x,1) node[draw, circle, inner sep=1pt] {1}; 
+            \foreach \x in {9} \draw[thick]({\x-0.4},0.7) -- ({\x+0.4},1.3); 
+            \draw[thick,->] (8.7,0.5) -- (8.7,0.1); 
+            \foreach \x in {-1,3,7} {
+              \foreach \i in {0,1,2} {
+                \draw ({\x+\i-1},-0.5) node[draw, circle, inner sep=1pt] {1}; 
+                }
+                \draw[MaterialRed900,rounded corners, dashed] ({\x-1.5},-0.9) rectangle ({\x+1.5},-0.1); 
+              }
+            \foreach \x in {10} \draw ({\x-0.5},-0.5) node[draw, circle, inner sep=1pt] {1}; 
+            \draw[MaterialBlue,rounded corners, dashed] (-2.7,-1) rectangle (10,0); 
+            \end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            And this shows that there are 3 groups of 2 dimes and 3 pennies with 2 pennies left over.
+            This shows that <m>71 \div 3 = 23 R 2</m>.
+          </p>
+
+          <p>
+            We now look at this in look at the long division version of this.
+          </p>
+
+          <p>
+            <dl>
+            <li>
+              <title>Step 1:</title>
+
+              <p>
+                First,  we do the same first step as the coin model above.
+                Determine the number of dimes in each pile.
+                This is 2 and we place the 2 above the 7.
+                <me>
+                  \begin{aligned} 2\;\;\phantom{3} \; \; \amp \; \;\text{number of dimes in each pile}\\ 3 \; |\overline{\; 7 \; \; 1\; \;} \amp \; \; \\ \underline{\; 6 \; \; \phantom{8} \; \; } \amp \; \;\text{total number of dimes in the 3 jars} \end{aligned}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <title>Step 2:</title>
+
+              <p>
+                Next, we subtract <m>7-6</m> and bring down the 1 (pennies):
+                <me>
+                  \begin{aligned} 2\;\;\phantom{3} \; \; \amp \; \; \text{number of dimes in each pile} \\ 3 \; |\overline{\; 7 \; \; 1\; \;} \amp \; \; \\ \underline{\; 6 \; \; \phantom{8} \; \; } \amp \; \; \text{total number of dimes in the 3 jars} \\ 1 \; \; 1 \; \; \amp \;\;\text{total number of pennies after unbundling} \end{aligned}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <title>Step 3:</title>
+
+              <p>
+                Next, we determine the number of pennies that can be put in each pile or 3.
+                This goes in the ones column in the diagram:
+                <me>
+                  \begin{aligned} 2\;\;3 \; \; \amp \; \; \text{number of dimes in each pile} \\ 3 \; |\overline{\; 7 \; \; 1\; \;} \amp \; \; \\ \underline{\; 6 \; \; \phantom{8} \; \; } \amp \; \; \text{total number of dimes in the 3 piles} \\ 1 \; \; 1 \; \; \amp \;\;\text{total number of pennies after unbundling} \\ 9 \; \; \amp \; \;\text{total number of pennies in the 3 piles} \end{aligned}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <title>Step 4:</title>
+
+              <p>
+                Lastly, just subtract.
+                <me>
+                  \begin{aligned} 3 \; |\overline{\; 7 \; \; 1\; \;} \amp \; \; \\ \underline{\; 6 \; \; \phantom{8} \; \; } \amp \; \; \text{total number of dimes in the 3 piles} \\ 1 \; \; 1 \; \; \amp \;\;\text{total number of pennies after unbundling} \\ \underline{9 \; \;} \amp \; \;\text{total number of pennies in the 3 piles} \\ 2 \; \; \amp \; \;\text{number of pennies left in no piles} \end{aligned}
+                </me>
+              </p>
+            </li>
+            </dl>
+          </p>
+
+          <p>
+            In short this the long division is the shorthand version of the coin model.
+          </p>
+        </solution>
+      </example>
+
+      <p>
+        The following is another example, however, we will use a chip model instead:
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            Find <m>735 \div 4</m> using a chip model and the corresponding long division.
+            That is think of 7 dollar coins , 3 dimes and 5 pennies divided between 4 people.
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            First, we'll put the chips on the chart.
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,4) rectangle (8,6.5); 
+            \draw (2,6)--(8,6);
+            \foreach \x in {4,6} \draw (\x,4) -- (\x,6.5);
+            \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+              % hundreds
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.3) circle[radius=2.5pt];
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},5.6) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},5.3) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4,5} \fill[MaterialBlue] ({6+0.3*\x},5.3) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            Since we are dividing these into 4 groups, we'll make 4 rows in the chart to move the chips:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,1) rectangle (8,6.5); 
+            \draw (2,6)--(8,6);
+            \foreach \x in {4,6} \draw (\x,1) -- (\x,6.5);
+            \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+            \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+            \foreach \y in {2,3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+              % hundreds
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},5.3) circle[radius=2.5pt];
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.6) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},5.3) circle[radius=2.5pt];
+              %ones
+                \foreach \x in {1,2,3,4,5} \fill[MaterialBlue] ({6+0.3*\x},5.3) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            The next step is to move 100s chips into the rows below.
+            Only 1 will fit in each and we'll cross out the results:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,1) rectangle (8,6.5); 
+            \draw (2,6)--(8,6);
+            \foreach \x in {4,6} \draw (\x,1) -- (\x,6.5);
+            \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+            \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+            \foreach \y in {2,3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+              % hundreds
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},5.3) circle[radius=2.5pt];
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.6) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},5.3) circle[radius=2.5pt];
+              %ones
+            \foreach \x in {1,2,3,4,5} \fill[MaterialBlue] ({6+0.3*\x},5.3) circle[radius=2.5pt];
+              \foreach \y in {1,2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+              % cross out hundreds in the top row:
+              \foreach \y in {5} {
+            \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.5}) -- ({2+0.3*\x+0.1},{\y+0.7});
+            }
+            \end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            Then we need to unbundle the remaining three 100s chips and move into the 10s columns to equally spread.
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+                \draw (2,1) rectangle (8,6.5); 
+                \draw (2,6)--(8,6);
+                \foreach \x in {4,6} \draw (\x,1) -- (\x,6.5);
+                \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+                \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+                \foreach \y in {2,3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+                  % hundreds
+                  \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},5.3) circle[radius=2.5pt];
+                  \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.6) circle[radius=2.5pt];
+                  %tens
+                  \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},5.3) circle[radius=2.5pt];
+                  %ones
+                    \foreach \x in {1,2,3,4,5} \fill[MaterialBlue] ({6+0.3*\x},5.3) circle[radius=2.5pt];
+                % move the hundreds 
+                  \foreach \y in {1,2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                  % cross out hundreds in the top row:
+                  \foreach \y in {5} 
+                  \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.5}) -- ({2+0.3*\x+0.1},{\y+0.7});
+                  % unbundle the hundreds 
+                  \foreach \y in {1,2,3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.6}) circle[radius=2.5pt];
+                  \foreach \y in {3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                  \foreach \y in {1,2} \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                  % cross out hundreds in the top row:
+                  \foreach \y in {5} {
+                  \foreach \x in {1,2,3} \draw[thick] ({2+0.3*\x-0.1},{\y+0.2}) -- ({2+0.3*\x+0.1},{\y+0.4});
+                }
+                % show the unbundled chips
+                \draw[MaterialRed900,dashed, rounded corners] (4.1, 4.8) -- (5.4,4.8) -- (5.4,3.1) -- (5.08,3.1) -- (5.08, 4.1) -- (4.1,4.1) -- cycle;
+                \draw[MaterialRed900,dashed, rounded corners] (4.48, 3.8) -- (5.02,3.8) -- (5.02,2.8) -- (5.4,2.8) -- (5.4,1.1) -- (4.78,1.1) -- (4.78,3.1) -- (4.48,3.1) --  cycle; 
+                \draw[MaterialRed900,dashed, rounded corners] (4.1,1.1) -- (4.1, 3.8) -- (4.42,3.8) -- (4.42, 2.8) -- (4.72,2.8) -- (4.72,1.1) --  cycle; 
+                \draw[->, thick] (2.3,5.1) -- (4.05,3.1); 
+                \draw[->, thick] (2.7,5.05) -- (4.6,3.8); 
+                \draw[->, thick] (3.1,5.2) -- (4.05,4.8); 
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            For the next step, we move two chips from the top row of the 10s column into the bottom two rows to make equal sized rows:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+              <![CDATA[ 
+              \begin{tikzpicture}[scale=1.3]
+                \draw (2,1) rectangle (8,6.5); 
+                \draw (2,6)--(8,6);
+                \foreach \x in {4,6} \draw (\x,1) -- (\x,6.5);
+                \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+                \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+                \foreach \y in {2,3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+                  % hundreds
+                  \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},5.3) circle[radius=2.5pt];
+                  \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.6) circle[radius=2.5pt];
+                  %tens
+                  \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},5.3) circle[radius=2.5pt];
+                %  \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+                  %ones
+                    \foreach \x in {1,2,3,4,5} \fill[MaterialBlue] ({6+0.3*\x},5.3) circle[radius=2.5pt];
+                % move the hundreds 
+                  \foreach \y in {1,2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                  % cross out hundreds in the top row:
+                  \foreach \y in {5} 
+                \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.5}) -- ({2+0.3*\x+0.1},{\y+0.7});
+                % unbundle the hundreds 
+                  \foreach \y in {1,2,3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.6}) circle[radius=2.5pt];
+                    \foreach \y in {3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    \foreach \y in {1,2} \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                  % cross out hundreds in the top row:
+                  \foreach \y in {5} {
+                \foreach \x in {1,2,3} \draw[thick] ({2+0.3*\x-0.1},{\y+0.2}) -- ({2+0.3*\x+0.1},{\y+0.4});
+                }
+                % show the unbundled chips
+                \draw[MaterialRed900,dashed, rounded corners] (4.1, 4.8) -- (5.4,4.8) -- (5.4,3.1) -- (5.08,3.1) -- (5.08, 4.1) -- (4.1,4.1) -- cycle;
+                \draw[MaterialRed900,dashed, rounded corners] (4.48, 3.8) -- (5.02,3.8) -- (5.02,2.8) -- (5.4,2.8) -- (5.4,1.1) -- (4.78,1.1) -- (4.78,3.1) -- (4.48,3.1) --  cycle; 
+                \draw[MaterialRed900,dashed, rounded corners] (4.1,1.1) -- (4.1, 3.8) -- (4.42,3.8) -- (4.42, 2.8) -- (4.72,2.8) -- (4.72,1.1) --  cycle; 
+                \draw[->, thick] (2.3,5.1) -- (4.05,3.1); 
+                \draw[->, thick] (2.7,5.05) -- (4.6,3.8); 
+                \draw[->, thick] (3.1,5.2) -- (4.05,4.8); 
+                % move 10s chips from the top row
+                \foreach \y in {1,2}  \foreach \x in {5.25} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                  % cross out tens in the top row:
+                  \foreach \y in {5} 
+                \foreach \x in {1,2} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            Next, we unbundle the remaining tens chip to the ones column to equally space into the rows:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+              <![CDATA[ 
+                \begin{tikzpicture}[scale=1.3]
+                  \draw (2,1) rectangle (8,6.5); 
+                  \draw (2,6)--(8,6);
+                  \foreach \x in {4,6} \draw (\x,1) -- (\x,6.5);
+                  \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+                  \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+                  \foreach \y in {2,3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+                    % hundreds
+                    \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},5.3) circle[radius=2.5pt];
+                    \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.6) circle[radius=2.5pt];
+                    %tens
+                    \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},5.3) circle[radius=2.5pt];
+                  %  \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+                    %ones
+                      \foreach \x in {1,2,3,4,5} \fill[MaterialBlue] ({6+0.3*\x},5.3) circle[radius=2.5pt];
+                  % move the hundreds 
+                    \foreach \y in {1,2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out hundreds in the top row:
+                    \foreach \y in {5} 
+                  \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.5}) -- ({2+0.3*\x+0.1},{\y+0.7});
+                  % unbundle the hundreds 
+                    \foreach \y in {1,2,3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.6}) circle[radius=2.5pt];
+                      \foreach \y in {3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                      \foreach \y in {1,2} \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out hundreds in the top row:
+                    \foreach \y in {5} {
+                  \foreach \x in {1,2,3} \draw[thick] ({2+0.3*\x-0.1},{\y+0.2}) -- ({2+0.3*\x+0.1},{\y+0.4});
+                  }
+                  % show the unbundled chips
+                  \draw[MaterialRed900,dashed, rounded corners] (4.1, 4.8) -- (5.4,4.8) -- (5.4,3.1) -- (5.08,3.1) -- (5.08, 4.1) -- (4.1,4.1) -- cycle;
+                  \draw[MaterialRed900,dashed, rounded corners] (4.48, 3.8) -- (5.02,3.8) -- (5.02,2.8) -- (5.4,2.8) -- (5.4,1.1) -- (4.78,1.1) -- (4.78,3.1) -- (4.48,3.1) --  cycle; 
+                  \draw[MaterialRed900,dashed, rounded corners] (4.1,1.1) -- (4.1, 3.8) -- (4.42,3.8) -- (4.42, 2.8) -- (4.72,2.8) -- (4.72,1.1) --  cycle; 
+                  \draw[->, thick] (2.3,5.1) -- (4.05,3.1); 
+                  \draw[->, thick] (2.7,5.05) -- (4.6,3.8); 
+                  \draw[->, thick] (3.1,5.2) -- (4.05,4.8); 
+                  % move 10s chips from the top row
+                  \foreach \y in {1,2}  \foreach \x in {5.25} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out tens in the top row:
+                    \foreach \y in {5} 
+                  \foreach \x in {1,2} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+                  % unbundle the tens 
+                  \foreach \y in {1,2,3,4} {
+                    \foreach \x in {1,2} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.6}) circle[radius=2.5pt];
+                    \foreach \x in {1,2} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    }
+                      \foreach \y in {3,4} \foreach \x in {3} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out tens in the top row:
+                    \foreach \y in {5} {
+                  \foreach \x in {3} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+                  }
+                  \draw[MaterialRed900,dashed, rounded corners] (6.1, 1.1) rectangle (7.1,4.8); 
+                  \draw[->,thick] (5.1,5.2) -- (6.05,4.8); 
+                  \end{tikzpicture}
+                ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            The last step is to move 2 of the chips in the ones column on the top row to the bottom two rows:
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+              <![CDATA[ 
+                \begin{tikzpicture}[scale=1.3]
+                  \draw (2,1) rectangle (8,6.5); 
+                  \draw (2,6)--(8,6);
+                  \foreach \x in {4,6} \draw (\x,1) -- (\x,6.5);
+                  \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,6.25) node {\lab};
+                  \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+                  \foreach \y in {2,3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+                    % hundreds
+                    \foreach \x in {1,2,3} \fill[MaterialBlue] ({2+0.3*\x},5.3) circle[radius=2.5pt];
+                    \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.6) circle[radius=2.5pt];
+                    %tens
+                    \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},5.3) circle[radius=2.5pt];
+                  %  \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y*1+0.6}) circle[radius=2.5pt];
+                    %ones
+                      \foreach \x in {1,2,3,4,5} \fill[MaterialBlue] ({6+0.3*\x},5.3) circle[radius=2.5pt];
+                  % move the hundreds 
+                    \foreach \y in {1,2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out hundreds in the top row:
+                    \foreach \y in {5} 
+                  \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.5}) -- ({2+0.3*\x+0.1},{\y+0.7});
+                  % unbundle the hundreds 
+                    \foreach \y in {1,2,3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.6}) circle[radius=2.5pt];
+                      \foreach \y in {3,4} \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                      \foreach \y in {1,2} \foreach \x in {1,2,3} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out hundreds in the top row:
+                    \foreach \y in {5} {
+                  \foreach \x in {1,2,3} \draw[thick] ({2+0.3*\x-0.1},{\y+0.2}) -- ({2+0.3*\x+0.1},{\y+0.4});
+                  }
+                  % show the unbundled chips
+                  \draw[MaterialRed900,dashed, rounded corners] (4.1, 4.8) -- (5.4,4.8) -- (5.4,3.1) -- (5.08,3.1) -- (5.08, 4.1) -- (4.1,4.1) -- cycle;
+                  \draw[MaterialRed900,dashed, rounded corners] (4.48, 3.8) -- (5.02,3.8) -- (5.02,2.8) -- (5.4,2.8) -- (5.4,1.1) -- (4.78,1.1) -- (4.78,3.1) -- (4.48,3.1) --  cycle; 
+                  \draw[MaterialRed900,dashed, rounded corners] (4.1,1.1) -- (4.1, 3.8) -- (4.42,3.8) -- (4.42, 2.8) -- (4.72,2.8) -- (4.72,1.1) --  cycle; 
+                  \draw[->, thick] (2.3,5.1) -- (4.05,3.1); 
+                  \draw[->, thick] (2.7,5.05) -- (4.6,3.8); 
+                  \draw[->, thick] (3.1,5.2) -- (4.05,4.8); 
+                  % move 10s chips from the top row
+                  \foreach \y in {1,2}  \foreach \x in {5} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out tens in the top row:
+                    \foreach \y in {5} 
+                  \foreach \x in {1,2} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+                  % unbundle the tens 
+                  \foreach \y in {1,2,3,4} {
+                    \foreach \x in {1,2} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.6}) circle[radius=2.5pt];
+                    \foreach \x in {1,2} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    }
+                      \foreach \y in {3,4} \foreach \x in {3} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    % cross out tens in the top row:
+                    \foreach \y in {5} {
+                  \foreach \x in {3} \draw[thick] ({4+0.3*\x-0.1},{\y+0.2}) -- ({4+0.3*\x+0.1},{\y+0.4});
+                  }
+                  \draw[MaterialRed900,dashed, rounded corners] (6.1, 1.1) rectangle (7.1,4.8); 
+                  \draw[->,thick] (5.1,5.2) -- (6.05,4.8); 
+                  % move the ones down 
+                  \foreach \y in {1,2} {
+                    \foreach \x in {5} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.3}) circle[radius=2.5pt];
+                    }
+                    % cross out ones in the top row:
+                    \foreach \y in {5} {
+                  \foreach \x in {1,2} \draw[thick] ({6+0.3*\x-0.1},{\y+0.2}) -- ({6+0.3*\x+0.1},{\y+0.4});
+                  }
+                  \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            And now we are done.
+            We have successfully moved the chips from the top row to the bottom four rows so each of the bottom four rows have an equal number in each, which has 1 hundreds chip, 8 tens chips and 5 ones chips.
+            There are 3 ones chips left.
+            This shows that <m>735 \div 4 = 185 \; R3</m>.
+          </p>
+
+          <p>
+            We now show the long division and make the connections between the chip model and the long division.
+            First, we'll start with the basic setup of the long division:
+            <me>
+              \begin{aligned} \phantom{1} \; \; \phantom{0} \; \; \phantom{9} \; \; \amp \; \;  \\ 4 \; | \overline{\; 7 \; \; 3 \; \; 5 \; \; } \amp \\ \end{aligned}
+            </me>
+            Just the first step in the chip model, we move 1 hundreds chip into each of each of the 4 rows below it.
+            This one (in the hundreds place of the quotient in blue) represents this.
+            <me>
+              \begin{aligned} {\color{MaterialBlue}1} \; \; \phantom{0} \; \; \phantom{9} \; \; \amp \; \;  \\ 4 \; | \overline{\; 7 \; \; 3 \; \; 5 \; \; } \amp  \\ \underline{\; 4 \; \; \phantom{0} \; \; \phantom{0} \; \;} \amp \qquad \text{total number of hundreds chips in the four rows} \\ {\color{MaterialRed900}3} \; \; \phantom{0} \; \; \phantom{0} \; \; \amp  \\ \end{aligned}
+            </me>
+            Also, shown is the next step in long division is the subtraction of <m>7-4=3</m> in the hundreds column and is in red above.
+            This represents the remainder in <m>7 \div 4</m> and is the chips remaining in the hundreds column couldn't be equally divided into the four rows.
+          </p>
+
+          <p>
+            This is repeated now for the tens column.
+            The substeps here are:
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  The 3 from the tens column of the dividend is brought down next to the remainder from the hundreds chips.
+                  This is in orange and represents the total number of tens chips after unbundling the remaining hundreds chips.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Then <m>33 \div 4 = 8 \; R\;1</m> is done.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The quotient 8 (in blue) is written on the top line in the tens columns.
+                  The product <m>4 \times 8 = 32</m> is written below the 33 and the 1 (in red) is the remainder.
+                </p>
+              </li>
+            </ol>
+          </p>
+
+          <p>
+            <me>
+              \begin{aligned} {1} \; \; {\color{MidnightBlue}8} \; \; \phantom{9} \; \; \amp \qquad\text{The 8 is the number of groups of size 4} \\ 4 \; | \overline{\; 7 \; \; 3 \; \; 5 \; } \amp  \\ \underline{\; 4 \;} \; \phantom{0} \; \; \phantom{0} \;  \amp \\ {\color{BurntOrange}3} \; \; {\color{BurntOrange}3} \; \; \phantom{0} \;  \amp \qquad\text{total number of tens chips after unbundling} \\ \underline{\; 3 \; \; 2 \; }\;\phantom{0} \; \amp \qquad \text{total number of tens chips in groups of 4.
+              } \\ {\color{BrickRed} 1} \;\;\phantom{0}\;\amp \end{aligned}
+            </me>
+          </p>
+
+          <p>
+            This is now repeated for the ones column:
+            <me>
+              \begin{aligned} {1} \; \; 8 \; \; {\color{MidnightBlue} 3} \; \; \amp \qquad\text{The 3 is the number of groups of size 4} \\ 4 \; | \overline{\; 7 \; \; 3 \; \; 5 \; \; } \amp  \\ \underline{\; 4 \; }\; \phantom{0} \; \; \phantom{0} \; \; \amp \\ 3 \; \; 3 \; \; \phantom{0} \; \; \amp \\ \underline{\; 3 \; \; 2 \; \;\phantom{0} \;\;} \amp \\ {\color{BurntOrange}1} \;\;{\color{BurntOrange}5}\;\;\amp \qquad\text{total number of ones chips after unbundling} \\ \underline{\; 1\;\;2\;\;} \amp \qquad \text{total number of ones chips in groups of 4.
+              } \\ 3 \; \; \amp \end{aligned}
+            </me>
+          </p>
+        </solution>
+      </example>
+    </paragraphs>
+  </subsection>
+
+
+  <subsection>
+    <title>Measurement approach</title>
+
+    <p>
+      Above we examine division using the partitive interpretation.
+      We also can examine long division using the <em>measurement interpretation</em>.
+      Let's first start with a simple example in which long division is a bit overkill to illustrate the point.
+    </p>
+
+    <p>
+      Consider <m>20 \div 6</m>, which is interpreted in the measurement sense, as 20 items put in groups of size 6.
+      The following diagram uses the number line to demonstrate this:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw[->] (-0.5,0) -- (11,0);
+            \draw (0,1) rectangle (9,1.5);
+            \draw (3,1) -- (3,1.5);
+            \draw (6,1) -- (6,1.5);  
+            \foreach \x in {0,0.5,1,...,10} {\draw (\x,0.1) -- (\x,-0.1);} 
+            \foreach \x in {0,6,12,18,20} {\draw ({\x/2},-0.1) node[below] {\x};}
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      One can think of a rope of length 20 inches and need to be cut into pieces of length 6.
+      The long division algorithm:
+      <me>
+        \begin{aligned} 3 \;\; \amp \; \; \text{number of segments} \\ 6\; |\overline{\;2 \; \; 0}\;\;\amp \; \; \\ \underline{1 \; \; 8 \; \;} \amp \; \; \text{total lengths of 3 segments of length 6} \\ 2 \; \; \amp \; \; \text{distance remaining} \end{aligned}
+      </me>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find <m>665 \div 5</m> using the measurement approach.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Since it is near impossible to write the number of segments of length 5 that go into 665, we will take another approach.
+          We'll use some mental math first.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                We know that <m>5 \times 100 = 500</m>, so one hundred segments of length 5 makes it to 500.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There is 165 left over.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                We know that <m>5 \times 30 = 150</m> so another 30 segments of length 5 goes another 150.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                There is 15 left over.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>5 \times 3 = 15</m>, so it takes another 3 segments. Nothing is left over.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                The total number of segments is 133.
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          <me>
+            \begin{aligned} 1 \; \; 3 \; \; 3 \; \; \amp  \\ 5 \; | \overline{\; 6 \; \; 6 \; \; 5 \;} \;  \amp  \\ \underline{ \; 5 \; \; 0 \; \; 0 \; \; } \amp \; \; \text{total length of 1 hundred segments} \\ \; 1 \; \; 6 \; \; 5 \; \; \amp \; \; \text{165 units left over} \\ \underline{\; 1 \; \; 5 \; \; 0 \; \;} \amp \; \; \text{total length of 30 segments of length 5} \\ 1 \; \; 5 \; \; \amp \; \; \text{15 units left over} \\ \underline{\; 1 \; \; 5 \; \; } \amp \; \; \text{3 segments of length 5} \\ 0 \; \; \amp \; \; \text{nothing left} \end{aligned}
+          </me>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>The long division algorithm and the Quotient Remainder Theorem</title>
+
+    <p>
+      This section should also be titled, <em>Why Does Long Division Work?</em>.
+      As discussed earlier in this text, as teachers, we need to know the why things work, not just how they work.
+      Let's look at the example above: <m>735 \div 4</m>, which again, we can write using long division as
+    </p>
+
+    <p>
+      In short, the why this works is a combination of place value and the Quotient Remainder Theorem.
+    </p>
+
+    <p>
+      LONG DIVISION of 735 div 4
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            We first do the division on the hundreds digit: <m>7 \div 4 = 1 \; R\;3</m>.
+            From the QR theorem, this implies that <m>1 \times 4 +3 = 7</m>.
+            Multiplying this through by 100
+            <me>
+              100 \times 4 + 300 = 700
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Then we look at the tens step which is <m>33 \div 4 = 8 \; R\;1</m> or
+            <me>
+              \begin{aligned} 8 \times 4 + 1\amp= 33\amp\amp\text{multiply through by 10}\\ 80 \times 4 + 10\amp= 330 \end{aligned}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Lastly, the ones step is <m>15 \div 4 = 3 \; R 3</m> which can be written:
+            <me>
+              \begin{aligned}4 \times 3 + 1\amp= 15\end{aligned}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Combine these
+            <me>
+              \begin{aligned}735\amp= (400 + 335) \\\amp= 4 \times 100 + (320 + 15) \\\amp= 4 \times 100 + 4 \times 80 + 4 \times 3 + 3\end{aligned}
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Extending the Long Division method to multiple-digit divisors</title>
+
+    <p>
+      There isn't anything different with the long division method for larger divisors.
+      It just gets a bit more difficult.
+      Often to make it easier, one can develop a table of multiples of the divisor.
+      The following example shows this.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find <m>12989 \div 21</m> by first finding a table of multiples of 21 and then using the table.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First consider the table of multiples of 21.
+          And this can be generated reasonably easier by successively adding 21 to the previous value.
+        </p>
+
+        <image width="20%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x in {1,2,...,9} {\draw(0,{0.5*(10-\x)}) node[right] {$\x \times 21 =  \pgfmathparse{int(\x*21)} \pgfmathresult$};}
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          Next, we'll walk through the long division algorithm using the table.
+          First, we are looking for <m>129 \div 21</m> and looking at the table we given that <m>6\times 21=126</m>, so we put 6 in the hundreds column of the quotient and the product (126) below the 129 and then also find the remainder.
+          <me>
+            \begin{aligned} 6\;\;\phantom{7}\;\;\phantom{4} \; \amp \\ 21 \; |\overline{1\;\; 2 \; \; 9 \; \; 8\; \; 9\;} \amp \\ \underline{\;1 \; \; 2 \;\;6\;} \; \phantom{2}\;\; \phantom{6}\; \amp  \\ 3 \; \; \phantom{5} \; \; \phantom{6} \; \amp \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          The next step, we'll bring the 8 from the tens column of the dividend down and then we want to do $38 \div 21$.
+          From the table, this is 1 and the remainder will be 14.
+          Put the quotient (1) on the top in the tens column, the product $1 \times 21$ below the 35 and the remainder below that.
+          <me>
+            \begin{aligned} 6\;\;1\;\;\phantom{4} \; \amp \\ 21 \; |\overline{1\;\; 2 \; \; 9 \; \; 8\; \; 9\;} \amp \\ \underline{\;1 \; \; 2 \;\;6\;} \; \phantom{2}\;\; \phantom{6}\; \amp  \\ 3 \; \; 8 \; \; \phantom{6} \; \amp \\ \underline{\; 2 \; \; 1 \; } \; \phantom{0} \; \amp \\ 1 \; \; 7 \; \; \phantom{0} \; \amp \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          Just bring the 9 (ones digit of the dividend) down:
+          <me>
+            \begin{aligned} 6\;\;1\;\;\phantom{8} \; \amp \\ 21 \; |\overline{1\;\; 2 \; \; 9 \; \; 8\; \; 9\;} \amp \\ \underline{\;1 \; \; 2 \;\;6\;} \; \phantom{2}\;\; \phantom{6}\; \amp  \\ 3 \; \; 8 \; \; \phantom{6} \; \amp \\ \underline{\; 2 \; \; 1 \; } \; \phantom{0} \; \amp \\ 1 \; \; 7 \; \; 9 \; \amp  \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          For the last step (the ones), we seek <m>179 \div 21</m>.
+          Using the table, since 179 is not a product in the table, go to the lower one and find <m>21 \times 8 = 168</m>.
+          Thus the quotient of <m>179 \div 21</m> is 8 and the remainder is <m>179-168=11</m>.
+          These all go on the long division diagram.
+          <me>
+            \begin{aligned} 6\;\;1\;\;8 \; \amp \\ 21 \; |\overline{1\;\; 2 \; \; 9 \; \; 8\; \; 9\;} \amp \\ \underline{\;1 \; \; 2 \;\;6\;} \; \phantom{2}\;\; \phantom{6}\; \amp  \\ 3 \; \; 8 \; \; \phantom{6} \; \amp \\ \underline{\; 2 \; \; 1 \; } \; \phantom{0} \; \amp \\ 1 \; \; 7 \; \; 9 \; \amp  \\ \underline{\; 1 \; \; 6 \; \; 8} \; \amp \\ 1 \; \; 1 \; \amp \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          This is done because there is nothing left to bring down from the dividend.
+          This shows that <m>12989 \div 21 = 618 \; R \; 11</m>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Long Division using estimation</title>
+
+    <p>
+      Although this is nice, it requires that we create a multiplication table (of size 9).
+      This may take longer than actually performing the division.
+    </p>
+
+    <p>
+      Instead, we will use estimation to do this.
+      Consider <m>8923 \div 49</m>.
+      This one is particularly nice in that the divisor is close to 50 and it is fairly easy to estimate dividing by 50.
+    </p>
+
+    <p>
+      <me>
+        \begin{aligned} \phantom{1}\;\;\phantom{8}\;\;\phantom{5} \;\;\phantom{0} \; \amp \\ 49 \; |\overline{\;9\;\; 0 \; \; 8 \; \; 2\; \; 0\;} \amp \\ \end{aligned}
+      </me>
+    </p>
+
+    <p>
+      The first step will be to determine how many 49 go into 90 and two 49s is too many, so 1 is correct.
+    </p>
+
+    <p>
+      <me>
+        \begin{aligned} 1\;\;\phantom{8}\;\;\phantom{5} \;\;\phantom{0} \; \amp \\ 49 \; |\overline{\;9\;\; 0 \; \; 8 \; \; 2\; \; 0\;} \amp \\ \underline{\;4 \; \; 9 \;} \; \phantom{2}\;\; \phantom{6}\;\; \phantom{6}\; \amp  \\ 4 \;\; 1 \; \; 8 \;\;\phantom{0}\;\;\phantom{0}\; \amp \\ \end{aligned}
+      </me>
+    </p>
+
+    <p>
+      And the subtraction <m>90-49</m> has been shown.
+      Then next, the <m>8</m> is combined with the <m>41</m>, so the next step is <m>418 \div 49</m>.
+      From Section <xref ref="sect-rounding" text="global" />, we handled problems like this.
+      Since <m>418 \div 49 \approx 400 \div 50 = 800 \div 100 = 8</m>, where the last step is compensation.
+      <me>
+        \begin{aligned} 1\;\;8\;\;\phantom{5} \;\;\phantom{0} \; \amp \\ 49 \; |\overline{\;9\;\; 0 \; \; 8 \; \; 2\; \; 0\;} \amp \\ \underline{\;4 \; \; 9 \;} \; \phantom{2}\;\; \phantom{6}\;\; \phantom{6}\; \amp  \\ 4 \;\; 1 \; \; 8 \;\;\phantom{0}\;\;\phantom{0}\; \amp \\ \underline{\;3\;\;9\;\;2\;} \; \phantom{0} \; \; \phantom{0} \; \amp \\ 2 \; \; 6 \; \;2 \; \; \phantom{0} \; \amp  \\ \end{aligned}
+      </me>
+    </p>
+
+    <p>
+      and again a little mental math for <m>5 \times 49 = 245</m> is used.
+      The last step will bring the 0 down to result in the problem <m>170 \div 49</m>, which you can find to have the quotient 3.
+      <me>
+        \begin{aligned} 1\;\;8\;\;5 \;\;3 \; \amp \\ 49 \; |\overline{\;9\;\; 0 \; \; 8 \; \; 2\; \; 0\;} \amp \\ \underline{\;4 \; \; 9 \;} \; \phantom{2}\;\; \phantom{6}\;\; \phantom{6}\; \amp  \\ 4 \;\; 1 \; \; 8 \;\;\phantom{0}\;\;\phantom{0}\; \amp \\ \underline{\;3\;\;9\;\;2\;} \; \phantom{0} \; \; \phantom{0} \; \amp \\ 2 \; \; 6 \; \;2 \; \; \phantom{0} \; \amp  \\ \underline{\; 2 \;\; 4 \; \; 5\;} \;\phantom{0}\; \amp \\ 1 \;\;7\;\;\phantom{0}\; \amp \\ \underline{\;1\;\;4\;\;7\;} \amp \\ 2\;\;3\; \amp \end{aligned}
+      </me>
+    </p>
+
+    <p>
+      The next example is a little more complicated, but uses the same skills.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find <m>195894 \div 721</m> using estimation.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Start with the basics of the long division.
+        </p>
+
+        <p>
+          <me>
+            \begin{aligned} \phantom{2}\;\;\phantom{1}\;\;\phantom{0} \; \amp \\ 721 \; |\overline{\;1\;\; 9 \; \; 5 \; \; 8\; \; 9\;\;4\;} \amp \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          To determine the first quotient, we seek a number larger than the divisor.
+          This number is 1958.
+          We seek a approximation for <m>1958 \div 721 \approx 2000 \div 700</m>.
+          It appears that 3 is too large and we'll try 2.
+          <me>
+            \begin{aligned} 2\;\;\phantom{1}\;\;\phantom{0} \; \amp \\ 721 \; |\overline{\;1\;\; 9 \; \; 5 \; \; 8\; \; 9\;\;4\;} \amp \\ \underline{\;1 \; \; 4 \;\;4\;\;2\;} \; \phantom{2}\;\; \phantom{6}\;\amp  \\ 5 \;\; 1 \; \; 6 \;\;\phantom{0}\;\;\phantom{0}\; \amp \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          and recall that when we perform the subtraction note that 516 is smaller than 721, so the 2 in the quotient was correct.
+          (If the bottom number was larger than 721, the 3 should be done.) Bring down the 9:
+          <me>
+            \begin{aligned} 2\;\;\phantom{1}\;\;\phantom{0} \; \amp \\ 721 \; |\overline{\;1\;\; 9 \; \; 5 \; \; 8\; \; 9\;\;4\;} \amp \\ \underline{\;1 \; \; 4 \;\;4\;\;2\;} \; \phantom{2}\;\; \phantom{6}\;\amp  \\ 5 \;\; 1 \; \; 6 \;\;9\;\;\phantom{0}\; \amp \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          And now we do <m>5169 \div 721 \approx 5200 \div 700</m> which is about 7.
+          Let's try that.
+          <me>
+            \begin{aligned} 2\;\;7\;\;\phantom{0} \; \amp \\ 721 \; |\overline{\;1\;\; 9 \; \; 5 \; \; 8\; \; 9\;\;4\;} \amp \\ \underline{\;1 \; \; 4 \;\;4\;\;2\;} \; \phantom{2}\;\; \phantom{6}\;\amp  \\ 5 \;\; 1 \; \; 6 \;\;9\;\;\phantom{0}\; \amp \\ \underline{5\;\;0\;\; 4 \; \; 7 \; } \; \phantom{0} \; \amp \\ 1\;\;2 \; \; 2 \; \; \phantom{9} \; \amp  \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          And since 122 is smaller than 721, the 7 was the correct choice.
+          Bring down the 4:
+          <me>
+            \begin{aligned} 2\;\;7\;\;\phantom{0} \; \amp \\ 721 \; |\overline{\;1\;\; 9 \; \; 5 \; \; 8\; \; 9\;\;4\;} \amp \\ \underline{\;1 \; \; 4 \;\;4\;\;2\;} \; \phantom{2}\;\; \phantom{6}\;\amp  \\ 5 \;\; 1 \; \; 6 \;\;9\;\;\phantom{0}\; \amp \\ \underline{5\;\;0\;\; 4 \; \; 7 \; } \; \phantom{0} \; \amp \\ 1\;\;2 \; \; 2 \; \; 4 \; \amp  \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          And we look for <m>1224 \div 721</m> and this is 1.
+          Recall that above we did <m>2 \times 721 = 1442</m> which is larger than 1224.
+          <me>
+            \begin{aligned} 2\;\;7\;\;1 \; \amp \\ 721 \; |\overline{\;1\;\; 9 \; \; 5 \; \; 8\; \; 9\;\;4\;} \amp \\ \underline{\;1 \; \; 4 \;\;4\;\;2\;} \; \phantom{2}\;\; \phantom{6}\;\amp  \\ 5 \;\; 1 \; \; 6 \;\;9\;\;\phantom{0}\; \amp \\ \underline{5\;\;0\;\; 4 \; \; 7 \; } \; \phantom{0} \; \amp \\ 1\;\;2 \; \; 2 \; \; 4 \; \amp  \\ \underline{7 \;\; 2 \;\; 1\;} \amp  \\ 5\;\;0\;\;3\; \amp \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          This shows that <m>195894 \div 721 = 271 \; R\; 503</m>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Base-5 Long Division</title>
+
+    <p>
+      We lastly look at base-5 long division.
+      We'll start by doing a chip model of a division problem.
+      Consider <m>414_5\div 3_5</m>.
+      We can write this as
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,4) rectangle (8,6.5); 
+            \draw (2,6)--(8,6);
+            \foreach \x in {4,6} \draw (\x,4) -- (\x,6.5);
+            \foreach \x/\lab in {3/25s,5/5s,7/1s} \draw (\x,6.25) node {\lab};
+              % 25s
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.5) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},5.5) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},5.5) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      Since we are dividing these into 3 groups, we'll make 3 rows in the chart to move the chips:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,2) rectangle (8,6.5); 
+            \draw (2,6)--(8,6);
+            \foreach \x in {4,6} \draw (\x,2) -- (\x,6.5);
+            \foreach \x/\lab in {3/25s,5/5s,7/1s} \draw (\x,6.25) node {\lab};
+            \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+            \foreach \y in {3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+              % 25s
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.5) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},5.5) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},5.5) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      We move 3 of the chips in the top row of the 25s column down:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,2) rectangle (8,6.5); 
+            \draw (2,6)--(8,6);
+            \foreach \x in {4,6} \draw (\x,2) -- (\x,6.5);
+            \foreach \x/\lab in {3/25s,5/5s,7/1s} \draw (\x,6.25) node {\lab};
+            \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+            \foreach \y in {3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+              % 25s
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.5) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},5.5) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},5.5) circle[radius=2.5pt];
+            % distributed down below evenly:
+              \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+            % cross out 25s in the top row:
+              \foreach \y in {5} {
+            \foreach \x in {1,2,3} \draw[thick] ({2+0.3*\x-0.1},{\y+0.4}) -- ({2+0.3*\x+0.1},{\y+0.6});
+            }
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      For the last chip in the top row of the 25s column, we unbundle (as 5 five-chips) and spread them evenly
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,2) rectangle (8,6.5); 
+            \draw (2,6)--(8,6);
+            \foreach \x in {4,6} \draw (\x,2) -- (\x,6.5);
+            \foreach \x/\lab in {3/25s,5/5s,7/1s} \draw (\x,6.25) node {\lab};
+            \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+            \foreach \y in {3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+              % 25s
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.5) circle[radius=2.5pt];
+              %tens
+              \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},5.5) circle[radius=2.5pt];
+              %ones
+              \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},5.5) circle[radius=2.5pt];
+            % distributed 25s down below evenly:
+              \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+            % cross out 25s in the top row:
+              \foreach \y in {5} {
+            \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.4}) -- ({2+0.3*\x+0.1},{\y+0.6});
+            }
+            % unbundle the 25 chips:
+              \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+              \foreach \y in {3,4} \foreach \x in {2} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+            \draw[MaterialRed900,dashed, rounded corners] (4.1,2.2) -- (4.1, 4.8) -- (4.7,4.8) -- (4.7,3.2) -- (4.45,3.2) -- (4.45,2.2) -- cycle;
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      Next, we move the remaining fives chips down below to make the rows even:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+              \draw (2,2) rectangle (8,6.5); 
+              \draw (2,6)--(8,6);
+              \foreach \x in {4,6} \draw (\x,2) -- (\x,6.5);
+              \foreach \x/\lab in {3/25s,5/5s,7/1s} \draw (\x,6.25) node {\lab};
+              \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+              \foreach \y in {3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+                % 25s
+                \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.5) circle[radius=2.5pt];
+                %tens
+                \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},5.5) circle[radius=2.5pt];
+                %ones
+                \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},5.5) circle[radius=2.5pt];
+              % distributed 25s down below evenly:
+                \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+              % cross out 25s in the top row:
+                \foreach \y in {5} {
+              \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.4}) -- ({2+0.3*\x+0.1},{\y+0.6});
+              }
+              % unbundle the 25 chips:
+                \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+                \foreach \y in {3,4} \foreach \x in {2} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+              % cross out 5s in the top row:
+                \foreach \y in {5} {
+              \foreach \x in {1} \draw[thick] ({4+0.3*\x-0.1},{\y+0.4}) -- ({4+0.3*\x+0.1},{\y+0.6});
+              }
+                \foreach \y in {2} \foreach \x in {3} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+              \draw[MaterialRed900,dashed, rounded corners] (4.1,2.2) -- (4.1, 4.8) -- (4.7,4.8) -- (4.7,3.2) -- (4.45,3.2) -- (4.45,2.2) -- cycle;
+              \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And lastly, we move 3 of the ones into the rows evenly:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+              \draw (2,2) rectangle (8,6.5); 
+              \draw (2,6)--(8,6);
+              \foreach \x in {4,6} \draw (\x,2) -- (\x,6.5);
+              \foreach \x/\lab in {3/25s,5/5s,7/1s} \draw (\x,6.25) node {\lab};
+              \draw[MaterialGreen800,dashed] (2,5) -- (8,5); 
+              \foreach \y in {3,4} \draw[dashed] (2,{1*\y}) -- (8,{1*\y}); 
+                % 25s
+                \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({2+0.3*\x},5.5) circle[radius=2.5pt];
+                %tens
+                \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},5.5) circle[radius=2.5pt];
+                %ones
+                \foreach \x in {1,2,3,4} \fill[MaterialBlue] ({6+0.3*\x},5.5) circle[radius=2.5pt];
+              % distributed 25s down below evenly:
+                \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({2+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+              % cross out 25s in the top row:
+                \foreach \y in {5} {
+              \foreach \x in {1,2,3,4} \draw[thick] ({2+0.3*\x-0.1},{\y+0.4}) -- ({2+0.3*\x+0.1},{\y+0.6});
+              }
+              % unbundle the 25 chips:
+                \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+                \foreach \y in {3,4} \foreach \x in {2} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+              % cross out 5s in the top row:
+                \foreach \y in {5} \foreach \x in {1} \draw[thick] ({4+0.3*\x-0.1},{\y+0.4}) -- ({4+0.3*\x+0.1},{\y+0.6});
+                \foreach \y in {2} \foreach \x in {3} \fill[MaterialBlue] ({4+0.3*\x},{\y+0.5}) circle[radius=2.5pt];
+              \draw[MaterialRed900,dashed, rounded corners] (4.1,2.2) -- (4.1, 4.8) -- (4.7,4.8) -- (4.7,3.2) -- (4.45,3.2) -- (4.45,2.2) -- cycle;
+              % Cross out the 1s in the top row:
+                 \foreach \y in {5} \foreach \x in {1,2,3} \draw[thick] ({6+0.3*\x-0.1},{\y+0.4}) -- ({6+0.3*\x+0.1},{\y+0.6});
+              % Move the ones down into the other rows
+              \foreach \y in {2,3,4} \foreach \x in {1} \fill[MaterialBlue] ({6+0.3*\x},{\y+0.5}) circle (2.5pt);
+              \end{tikzpicture}  
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And since each row now has 1 quarter (25), 2 nickels (5s) and 1 penny (1s) with 1 penny leftover this shows that
+      <me>
+        414_5 \div 3_5 = 121_5 \; R \; 1_5
+      </me>
+    </p>
+
+    <p>
+      Let's look at this in long division style.
+      First, as you probably realize, it is key to have 1-digit multiplication.
+      Recall the base-5 multiplication table:
+    </p>
+
+    <tabular>
+      <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" /> <col halign="center" right="minor" />
+      <row bottom="minor">
+        <cell> <m>\times</m> </cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+        <cell>0</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>1</cell>
+        <cell>0</cell>
+        <cell>1</cell>
+        <cell>2</cell>
+        <cell>3</cell>
+        <cell>4</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>2</cell>
+        <cell>0</cell>
+        <cell>2</cell>
+        <cell>4</cell>
+        <cell>11</cell>
+        <cell>14</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>3</cell>
+        <cell>0</cell>
+        <cell>3</cell>
+        <cell>11</cell>
+        <cell>14</cell>
+        <cell>22</cell>
+      </row>
+
+      <row bottom="minor">
+        <cell>4</cell>
+        <cell>0</cell>
+        <cell>4</cell>
+        <cell>13</cell>
+        <cell>22</cell>
+        <cell>31</cell>
+      </row>
+    </tabular>
+
+    <p>
+      We'll write down the steps to solve <m>414_5\div 3_5</m> in a manner similar to that for base-10:
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Start with the long division for <m>414_5\div 3_5</m> or
+          </p>
+
+          <p>
+            <me>
+              \begin{aligned} \phantom{2}\;\;\phantom{1}\;\;\phantom{0} \; \amp \\ 3\; \overline{)\;4\;\; 1 \; \; 4 \;} \amp \\ \end{aligned}
+            </me>
+          </p>
+
+          <p>
+            The first step will be to determine <m>4 \div 3</m>, which has a quotient of 1, so
+            <me>
+              \begin{aligned} 1\;\;\phantom{1}\;\;\phantom{0} \; \amp \\ 3\; \overline{)\;4\;\; 1 \; \; 4 \;} \amp \\ \underline{3\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \;\phantom{0}\;\;\phantom{0}\; \amp \\ \end{aligned}
+            </me>
+          </p>
+
+          <p>
+            and then we bring the 1 from the dividend down:
+            <me>
+              \begin{aligned} 1\;\;\phantom{1}\;\;\phantom{0} \; \amp \\ 3\; \overline{)\;4\;\; 1 \; \; 4 \;} \amp \\ \underline{3\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \;1\;\;\phantom{0}\; \amp \\ \end{aligned}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Next, find <m>11 \div 3</m> (base-5) which looking at the multiplication table is 2.
+            Add that to the top of the long division and add the product <m>3 \times 2 = 11</m> and subtract:
+            <me>
+              \begin{aligned} 1\;\;2\;\;\phantom{0} \; \amp \\ 3\; \overline{)\;4\;\; 1 \; \; 4 \;} \amp \\ \underline{3\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \;1\;\;\phantom{0}\; \amp \\ \underline{1 \; \;1\;\;\phantom{0}}\; \amp \\ 0 \; \; \phantom{4} \; \amp \end{aligned}
+            </me>
+          </p>
+
+          <p>
+            Next, bring the 4 down from the dividend:
+            <me>
+              \begin{aligned} 1\;\;2\;\;\phantom{0} \; \amp \\ 3\; \overline{)\;4\;\; 1 \; \; 4 \;} \amp \\ \underline{3\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \;1\;\;\phantom{0}\; \amp \\ \underline{1 \; \;1\;\;\phantom{0}}\; \amp \\ 0 \; \; 4 \; \amp \end{aligned}
+            </me>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Lastly, do the division <m>4 \div 3</m>, which again is 1:
+            <me>
+              \begin{aligned} 1\;\;2\;\;\phantom{0} \; \amp \\ 3\; \overline{)\;4\;\; 1 \; \; 4 \;} \amp \\ \underline{3\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \;1\;\;\phantom{0}\; \amp \\ \underline{1 \; \;1\;\;\phantom{0}}\; \amp \\ 0 \; \; 4 \; \amp \\ \underline{\;3 \;} \amp \\ 1 \; \amp \end{aligned}
+            </me>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      Showing the results are <m>414_5 \div 3_5 = 121_5 \; R \; 1_5</m>.
+    </p>
+
+    <p>
+      We now show how to think about performing long division with a 2-digit divisor:
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find <m>4241_5\div 21_5</m> using long division:
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First, let's make this a bit easier and build a table of products of 21 which can be fairly easier found by successive addition:
+          <me>
+            \begin{aligned} 1 \times 21 \amp = 21 \amp 2 \times 21 \amp = 42 \amp 3 \times 21 \amp = 113 \amp 4 \times 21 \amp = 134 \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          Start the long division:
+          <me>
+            \begin{aligned} \phantom{1}\;\;\phantom{2}\;\;\phantom{0} \; \amp \\ 21\; \overline{)\;4\;\; 3 \; \; 4 \;\; 1\;} \amp \\ \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          Our first task is <m>43 \div 21</m>, which from the table is <m>2</m> (<m>43</m> is between 42 and 113, so round down):
+        </p>
+
+        <p>
+          <me>
+            \begin{aligned} 2\;\;\phantom{2}\;\;\phantom{0} \; \amp \\ 21\; \overline{)\;4\;\; 3 \; \; 4 \;\; 1\;} \amp \\ \underline{\;4\;\;2\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \; \phantom{0}\;\;\phantom{0}\; \amp \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          bring the 4 down from the dividend:
+          <me>
+            \begin{aligned} 2\;\;\phantom{2}\;\;\phantom{0} \; \amp \\ 21\; \overline{)\;4\;\; 3 \; \; 4 \;\; 1\;} \amp \\ \underline{\;4\;\;2\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \; 4\;\;\phantom{0}\; \amp \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          and then we do <m>14 \div 21</m>, which is 0, so include that above the line and bring down the 1 from the dividend:
+          <me>
+            \begin{aligned} 2\;\;0\;\;\phantom{0} \; \amp \\ 21\; \overline{)\;4\;\; 3 \; \; 4 \;\; 1\;} \amp \\ \underline{\;4\;\;2\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \; 4\;\;1\; \amp \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          and now we do <m>141 \div 21</m>, which from the table is 4:
+          <me>
+            \begin{aligned} 2\;\;0\;\;4 \; \amp \\ 21\; \overline{)\;4\;\; 3 \; \; 4 \;\; 1\;} \amp \\ \underline{\;4\;\;2\;}\;\phantom{0}\;\;\phantom{0}\; \amp \\ 1 \; \; 4\;\;1\; \amp \\ \underline{\; 1 \; \; 3 \; \; 4 \; } \amp \\ 2 \; \amp \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          where recall that the subtraction <m>141-134=2</m> is in base-<m>5</m>.
+          The result shows that <m>4341_5\div 21_{\text{5}}= 204_{\text{5}}\; R \; 2_5</m>.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+</section>

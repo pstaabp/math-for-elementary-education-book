@@ -1,0 +1,1245 @@
+<section xml:id="sect-addition-subtraction">
+  <title>Addition and Subtraction</title>
+
+  <introduction>
+    <p>
+      Addition is the mathematical operation that combines two numbers, called the <alert>summands</alert> or <alert>addends</alert>.
+      The result is called the <alert>sum</alert>.
+      For example,
+      <me>
+        \underbrace{3}_{\text{addend}}+ \underbrace{5}_{\text{addend}}= \underbrace{8}_{\text{sum}}
+      </me>
+    </p>
+
+    <p>
+      A number line shows this quite nicely.
+      If one starts at 3 and makes 5 hops to the right, results in 8 as shown:
+    </p>
+
+    <figure xml:id="fig-number-line-addition">
+      <caption></caption>
+      <image>
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}[decoration=brace]
+                \draw[->] (-0.5,0) -- (10.5,0);
+                \foreach \x in {0,1,2,...,10} {\draw (\x,0.1) -- (\x,-0.1) node [below] {\x};}
+                \foreach \x in {3,4,...,7} {\draw[<-,thick] ({\x+1},0.2) .. controls ({\x+0.5},0.45) .. (\x,0.2); }
+              \end{tikzpicture}
+            ]]>
+        </latex-image>
+      </image>
+    </figure>
+
+
+    <paragraphs>
+      <title>Set Model </title>
+
+      <p>
+        Addition in the set model usually entails if there are two collections of objects and one wants the total number of objects.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            You have 8 apples and your friend has 5 apples.
+            How many apples do you have together?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            The answer is the sum and a model of this could be
+          </p>
+
+          <image>
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}
+                    \foreach \x in {0,1.5,3,4.5,7.75,9.25} \draw (\x,0) pic[scale=0.5] {apple};
+                    \foreach \x in {0,1.5,3,4.5,7,8.5,10} \draw (\x,1.5) pic[scale=0.5] {apple};
+                    \draw[dashed,rounded corners, thin] (-0.75,-1) rectangle (5.5,2.25);
+                    \draw[dashed,rounded corners, thin] (6.25,-1) rectangle (10.75,2.25);
+                    \end{tikzpicture}
+                  ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            But of course, as the student's abstraction increases, using circles or stars would be fine as well.
+          </p>
+        </solution>
+      </example>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Measurement Model </title>
+
+      <p>
+        Addition in the measurement model involves two measurements and you want to know the total measurement of the two.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            A recipe for cookies calls for 4 cups of flour.
+            A recipe for cake calls for 3 cups of flour.
+            How much flour do you need to for both recipes?
+          </p>
+        </statement>
+
+        <solution>
+          <image>
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+            <![CDATA[ 
+            \begin{tikzpicture}[decoration=brace]
+              \draw[->] (-0.5,0) -- (10.5,0);
+              \foreach \x in {0,1,2,...,10} {\draw (\x,0.1) -- (\x,-0.1) node [below] {\x};}
+              \foreach \x in {4,5,6} {\draw[->,thick] ({\x},0.2) .. controls ({\x+0.5},0.45) .. ({\x+1},0.2); }
+              \end{tikzpicture}
+            ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            and the result is 7, so you would need 7 cups of flour in total.
+          </p>
+        </solution>
+      </example>
+    </paragraphs>
+  </introduction>
+
+
+  <subsection xml:id="sect-add-props">
+    <title>Properties of Addition</title>
+
+    <p>
+      There are three properties of addition that you probably <em>know</em> just by understanding addition.
+    </p>
+
+    <axiom xml:id="prop-addition">
+      <statement>
+        <p>
+          For any whole numbers, <m>a, b, c</m>, each of the following hold:
+        </p>
+
+        <p>
+          <dl>
+          <li>
+            <title>Additive Identity</title>
+
+            <p>
+              <me>
+                a+0=a
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <title>Commutative Property</title>
+
+            <p>
+              <me>
+                a+b = b+a
+              </me>
+            </p>
+          </li>
+
+          <li>
+            <title>Associative Property</title>
+
+            <p>
+              <me>
+                (a+b) + c = a + (b+c)
+              </me>
+            </p>
+          </li>
+          </dl>
+        </p>
+      </statement>
+    </axiom>
+
+    <p>
+      The additive identity property shows that adding 0 to any number doesn't change the number.
+      This make a lot of sense after understanding the concept of 0.
+      The commutative property shows that the sum of two numbers is independent of the order of the two numbers.
+      The associative property relies on recalling that when parentheses are present, that one must do the operation inside the parentheses first.
+      This shows if you add the first two then add the result to the 3, the sum is the same as adding the last two, then adding to the first.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          What property is being used in each of the following?
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>(6+2)+4 = (2+6) + 4</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>(2+6)+4 = 2+(6+4)</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>7+0=7</m>.
+              </p>
+            </li>
+          </ol>
+        </p>
+
+        <p />
+          <p>
+            <ol>
+              <li>
+                <p>
+                  This is the <em>commutative property</em>.
+                  Notice that there are three numbers, but the first two swap places.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  This is the <em>associative property</em>.
+                  Notice that we have changed the order of operations.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  This is the additive identity.
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </example>
+
+      <lemma xml:id="lem-any-order-add">
+        <title>Any-Order Property of Addition</title>
+
+        <statement>
+          <p>
+            The sum <m>a+b+c</m> can be done in any order.
+          </p>
+        </statement>
+      </lemma>
+
+      <p>
+        We won't present a formal proof here, but this is a consequence of the the commutative and associative properties.
+      </p>
+
+      <corollary xml:id="cor-extended-any-order-add">
+        <title>Extended Any-Order Property</title>
+
+        <statement>
+          <p>
+            The sum of any number of addends can be done in any order.
+          </p>
+        </statement>
+      </corollary>
+
+      <p>
+        Again, no formal proof will be done here but this is a consequence of a number of applications of the commutative and associative properties.
+        The following show an example.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            The numbers: <m>3+2+4+7</m> can be added in any order.
+            For example:
+            <me>
+              \begin{aligned} (3+2)+(4+7) \amp = 5 + 11 = 16\\ (7+3) + (2+4) \amp = 10 + 6 = 16\\ (3+4) + (2+7) \amp = 7 + 9 = 16 \end{aligned}
+            </me>
+            are all valid ways to add the 4 numbers.
+          </p>
+        </statement>
+      </example>
+
+      <p>
+        In Chapter <xref ref="ch-thinking-strategies" text="global" />, we will use this property to our advantage to rearrange the sum of numbers to pair up number that we call <em>compatible</em> in which the result is “nice.”
+      </p>
+    </subsection>
+
+
+    <subsection xml:id="sect-add-strategies">
+      <title>Thinking Strategies for Addition</title>
+
+      <p>
+        It is a good skill to have different ways of thinking about mathematical operations.
+        In this section we present some ways to think about addition.
+      </p>
+
+
+      <paragraphs>
+        <title>Number Bonds</title>
+
+        <p>
+          A number bond is useful for showing the relationship between two addends (the ends) and the sum (in the center).
+          The following shows <m>7=3+4</m>.
+        </p>
+
+        <image width="20%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+              <![CDATA[ 
+                \begin{tikzpicture}
+                  \draw (0,1) node[draw,rectangle,fill=MaterialBlue300]  (A) {7};
+                  \draw (1,2) node[draw,rectangle,fill=MaterialBlue300]  (B) {3};
+                  \draw (1,0) node[draw,rectangle,fill=MaterialBlue300]  (C) {4};
+                  \draw [-] (A)--(B);
+                  \draw [-] (A)--(C);
+                \end{tikzpicture}
+              ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          This is a nice way to visualize addition and we will see this below with four-fact families.
+        </p>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Counting On</title>
+
+        <p>
+          When beginning to add, like <m>5+2</m>, the answer is easily found by starting at the number 5 (in the counting sequence), then counting two more, ”6,7” arriving at the answer 7.
+          This can be done with young students using fingers, but also works well with the number line, like:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+              <![CDATA[ 
+                \begin{tikzpicture}[scale=0.75]
+                  \draw[->] (-0.5,0) -- (10.5,0);
+                  \foreach \x in {0,1,2,...,10} {\draw (\x,0.1) -- (\x,-0.1) node [below] {\x};}
+                  \foreach \x in {5,6} {\draw[->,thick] (\x,0.1) .. controls ({\x+0.25},0.25) and ({\x+0.75},0.25) .. ({\x+1},0.1); }
+                \end{tikzpicture}
+              ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          This works fine with adding 1,2,3, just a few to a number, but can be extended by counting by tens as well.
+          Consider <m>13 + 24</m>.
+          We can start at <m>13</m>, add two 10s to get to 33, then add 4 to get to 37.
+          This can be seen with the following number line:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+              <![CDATA[ 
+                \begin{tikzpicture}[scale=2]
+                  \draw[->] (-0.1,0) -- (4.5,0);
+                  \foreach \x in {0,10,13,20,23,30,33,40} {\draw ({0.1*\x},0.1) -- ({0.1*\x},-0.1) node [below] {\x};}
+                  \foreach \x in {1,...,40} \draw ({\x/10},0.05) -- ({\x/10},-0.05); 
+                  %\draw[<-] (3,0.2) .. controls (5,0.75) and (6,0.75) .. (8,0.2) node[midway, above] {?};  
+                  \foreach \x in {1.3,2.3} {\draw[->,thick] (\x,0.1) .. controls ({\x+0.25},0.25) and ({\x+0.75},0.25) .. ({\x+1},0.1); }
+                  \foreach \x in {3.3,3.4,3.5,3.6} {\draw[->,thick] (\x,0.1) .. controls ({\x+0.025},0.15) and ({\x+0.075},0.15) .. ({\x+0.1},0.1); }
+                \end{tikzpicture}
+              ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And from the number line, you can see the result is 37.
+        </p>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Tens Combination</title>
+
+        <p>
+          Two numbers whose sum is 10 is crucial to do arithmetic operations at all levels.
+          For example, since <m>4+6=10</m> the numbers 4 and 6 are a <term>tens combination</term> and is shown in the number bond
+        </p>
+
+        <image width="20%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+              <![CDATA[ 
+                \begin{tikzpicture}
+                  \draw (0,1) node[draw,rectangle,fill=MaterialBlue300]  (A) {10};
+                  \draw (1,2) node[draw,rectangle,fill=MaterialBlue300]  (B) {6};
+                  \draw (1,0) node[draw,rectangle,fill=MaterialBlue300]  (C) {4};
+                  \draw [-] (A)--(B);
+                  \draw [-] (A)--(C);
+                \end{tikzpicture}
+              ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          How many pairs are there that add to 10?
+        </p>
+      </paragraphs>
+    </subsection>
+
+
+    <subsection>
+      <title>Addition and Place Value</title>
+
+      <p>
+        There are multiple approaches to understanding addition and place value.
+        First, using the expanded form of a number, then a chip model and finally the DLB model.
+      </p>
+
+
+      <paragraphs>
+        <title>Expanded Form:</title>
+
+        <p>
+          As seen above, an addition like <m>13+24</m> is relatively straightforward once a student understands place value.
+          If we used expanded form on these:
+        </p>
+
+        <p>
+          <me>
+            \begin{aligned} 13+24\amp= (10+3)+(20+4) \qquad\text{use any-order property}\\ \amp= (10+20) + (3+4) \\ \amp= 30 + 7 = 37\end{aligned}
+          </me>
+        </p>
+
+        <p>
+          This gets a bit more more complicated when the total number of ones (pennies) exceeds 9.
+          For example, <m>25 + 37</m> can be written as
+          <me>
+            \begin{aligned} 25 + 37\amp= (20 + 5) + (30 + 7) \qquad \text{ Use the any-order property,}\\ \amp= (20 + 30) + (5+7) \\ \amp= 50 + 12 \\ \amp= 50 + 10 + 2 \\ \amp= 60 + 2 = 62 \end{aligned}
+          </me>
+        </p>
+
+        <p>
+          The writing of <m>5+7=12=10+2</m> is called <term>composing a ten</term> or <term>bundling</term> as we will see with models below.<fn>Notice the way that we write these operations.
+          We start with the original problem, and link each step with an equals sign.
+          This is an important skill to develop and we will work on this in Chapter \html-tag:xref{\html-attr:ref{"ch:mental:math"}\html-attr:text{"global"}}.
+          Until we get there, pay attention to the steps and how they are written.
+          </fn>
+        </p>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Coin Model </title>
+
+        <p>
+          We can use a coin model to find <m>13+24</m> as
+        </p>
+
+        <image>
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+                \draw (0,0) node[draw, circle] {10};
+                \foreach \x in {-1,0,1} \draw (\x,1) node[draw, circle] {1}; 
+                \foreach \x in {5,6} \draw(\x,0) node [draw,circle] {10}; 
+                \foreach \x in {4,5,6,7} \draw(\x,1) node [draw,circle] {1};
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          which can be interpreted as 1 dime (10 cents) and 3 pennies (each 1 cent) plus 2 dimes and 4 pennies.
+          The result is 3 dimes and 7 pennies or 37¢.
+        </p>
+
+        <p>
+          Again, as we saw above, within one denomination, once you exceed 9, you must bundle.
+          The coin model for <m>25+37</m> is:
+        </p>
+
+        <image>
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+            \begin{tikzpicture}
+              \foreach \x in {0,1} \draw (\x,0) node[draw, circle] {10};
+              \foreach \x in {-2,-1,0,1,2} \draw (\x,1) node[draw, circle] {1}; 
+              \foreach \x in {6,7,8} \draw(\x,0) node [draw,circle] {10}; 
+              \foreach \x in {4,...,10} \draw(\x,1) node [draw,circle] {1};
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          The bundling occurs when we take 10 pennies and exchange them for a dime.
+          That is we \emph{bundle} 10 pennies for a higher denomination coin (a dime).
+        </p>
+
+        <image>
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x in {0,1} \draw (\x,0) node[draw, circle] {10};
+            \foreach \x in {-2,-1,0,1,2} \draw (\x,1) node[draw, circle] {1}; 
+            \foreach \x in {6,7,8} \draw(\x,0) node [draw,circle] {10}; 
+            \foreach \x in {4,...,10} \draw(\x,1) node [draw,circle] {1};
+            \draw[rounded corners] (-0.5,0.5) rectangle (10.5,1.5);
+            \foreach \x in {0,1,2,4,5,...,10} \draw[thick,MaterialIndigo] ({\x-0.4},0.6) -- ({\x+0.4},1.4); 
+            \draw[->,thick] (9,0.6) -- (9.4,0.3);
+            \draw (9.7,-0.2) node[draw, circle] {10}; 
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And it should be clear to see that what is left (not crossed out) is 6 dimes and 2 pennies or 62.
+        </p>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Dots Lines and Boxes (DLB) Model </title>
+
+        <p>
+          Alternatively, we can use the DLB (dots, lines and boxes) model seen above.
+          We can write 25 as two lines and 5 dots and 37 as 3 lines and 7 dots.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+            \begin{tikzpicture}
+              \foreach \x in {0,0.2} \draw[thick] (\x,0)--(\x,1);
+              \foreach \y in {0.1,0.3,...,0.9} \fill (0.5,\y) circle[radius=2pt];  
+              \foreach \x in {2,2.2,2.4} \draw[thick] (\x,0)--(\x,1);
+              \foreach \y in {0.1,0.3,...,0.9} \fill (2.6,\y) circle[radius=2pt];
+              \foreach \y in {0.1,0.3} \fill (2.8,\y) circle[radius=2pt];  
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and we can rearrange the lines and dots to get:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x in {0,0.2,...,0.8} \draw[thick] (\x,0)--(\x,1);
+            \foreach \y in {0.1,0.3,...,0.9} \fill (1.2,\y) circle[radius=2pt];
+            \foreach \y in {0.1,0.3,...,0.9} \fill (1.4,\y) circle[radius=2pt];  
+            \foreach \y in {0.1,0.3} \fill (2,\y) circle[radius=2pt];
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and in this case, we bundle ten dots to get a line or
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+            \begin{tikzpicture}
+              \foreach \x in {0,0.2,...,1} \draw[thick] (\x,0)--(\x,1);
+              \foreach \y in {0.1,0.3} \fill (2,\y) circle[radius=2pt];
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          which again shows 6 lines and 2 dots or 62.
+        </p>
+
+        <p>
+          These two models are equivalent, however crossing out and bundling is hard to see visually with the DLB model, however they are equivalent.
+        </p>
+      </paragraphs>
+    </subsection>
+
+
+    <subsection>
+      <title>Subtraction</title>
+
+      <introduction>
+        <p>
+          We now turn to subtraction, which is closely tied to addition.
+        </p>
+
+        <definition>
+          <statement>
+            <p>
+              Subtraction is defined as a missing addend.
+              That is
+              <me>
+                c = a-b
+              </me>
+              is the number <m>c</m> such that <m>a = b+ c</m>.
+              The number <m>a</m> is called the <alert>minuend</alert>, the number <m>b</m> is the <alert>subtrahend</alert> and the number <m>c</m> is called the <alert>difference</alert>.
+            </p>
+          </statement>
+        </definition>
+
+        <p>
+          As an example, the number <m>12-7</m> is the number that fits the box:
+          <me>
+            7 + \boxed{\; \rule{0pt}{9pt}} =12
+          </me>
+          or 5.
+          Using the terminology above:
+          <me>
+            \underbrace{12}_{\text{minuend}}- \underbrace{7}_{\text{subtrahend}} = \underbrace{5}_{\text{difference}}
+          </me>
+        </p>
+      </introduction>
+
+      <subsubsection>
+        <title>Subtraction Interpretations:</title>
+
+        <p>
+          There are a few standard diagrams associated with subtractions, however we need to define some interpretations before diagrams.
+          Subtraction is used in many ways to solve different types of problems and it is important to understand all of the types with examples.
+          The following show the standard 3 ways of interpreting subtraction with examples from both set and measurement models.
+        </p>
+
+
+        <paragraphs>
+          <title>Part-Whole Interpretation</title>
+
+          <p>
+            A part of a set or quantity is specified and we want to know how much is needed to make it whole.
+            Find the missing part.
+          </p>
+
+          <p>
+            <dl>
+            <li>
+              <title>Set Model</title>
+
+              <p>
+                There are 12 pieces of fruit (apples and oranges).
+                If 5 are apples, then how many are oranges?
+              </p>
+            </li>
+
+            <li>
+              <title>Measurement Model </title>
+
+              <p>
+                It takes 19 miles to drive to school.
+                After 7 miles, you stop for gas.
+                How many miles are left in your trip?
+              </p>
+            </li>
+            </dl>
+          </p>
+        </paragraphs>
+
+
+        <paragraphs>
+          <title>Takeaway Interpretation</title>
+
+          <p>
+            Remove objects from a set or decrease the measurement by a specified amount.
+          </p>
+
+          <p>
+            <dl>
+            <li>
+              <title>Set Model</title>
+
+              <p>
+                Eve has a basket of 15 pieces of candy.
+                She gives 6 pieces of candy to a friend.
+                How many pieces of candy does Eve have left?
+              </p>
+            </li>
+
+            <li>
+              <title>Measurement Model </title>
+
+              <p>
+                There are 10 gallons of punch for a party.
+                The guests drank 8 gallons of punch.
+                How many gallons of punch are left?
+              </p>
+            </li>
+            </dl>
+          </p>
+        </paragraphs>
+
+
+        <paragraphs>
+          <title>Comparison Interpretation</title>
+
+          <p>
+            Compare two different sets or measurements and ask how much more or less or fewer is one than the other.
+          </p>
+
+          <p>
+            <dl>
+            <li>
+              <title>Set Model</title>
+
+              <p>
+                Zoë has 8 balls and Abby has 5 balls.
+                How many more balls does Zoë have than Abby?
+              </p>
+            </li>
+
+            <li>
+              <title>Measurement Model </title>
+
+              <p>
+                José is 56 inches tall and Julia is 53 inches tall.
+                How much taller is José?
+              </p>
+            </li>
+            </dl>
+          </p>
+        </paragraphs>
+
+        <p>
+          For each of these the answer is the difference between the larger and smaller numbers.
+        </p>
+      </subsubsection>
+
+      <subsubsection>
+        <title>Subtraction Diagrams for Set Models</title>
+
+        <p>
+          Using diagrams to understand subtraction is quite helpful.
+          We first start with set model versions of the three interpretations above:
+        </p>
+
+        <p>
+          <dl>
+          <li>
+            <title>Part-Whole</title>
+
+            <p>
+              For the part-whole interpretation, we can draw the two different objects.
+              The following shows <m>13-5</m>.
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}
+                    \foreach \x in {0,1.5,3,4.5} \draw (\x,0) pic[scale=0.5] {orange}; 
+                    \foreach \x in {7.75,9.25} \draw (\x,0) pic[scale=0.5] {apple};
+                    \foreach \x in {0,1.5,3,4.5} \draw (\x,1.5) pic[scale=0.5] {orange};
+                    \foreach \x in {7,8.5,10} \draw (\x,1.5) pic[scale=0.5] {apple}; 
+                    %\draw[rounded corners, thin] (-0.75,-0.75) rectangle (5.5,2.5);
+                    %\draw[rounded corners, thin] (6.25,-0.75) rectangle (10.75,2.5);
+                    \end{tikzpicture}
+                  ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              This is a bit hard to envision for part-whole because you need to draw the minuend first and then rest you need to calculate, which is not in the spirit of diagrams.
+            </p>
+          </li>
+
+          <li>
+            <title>Takeaway</title>
+
+            <p>
+              For the take-way interpretation, we draw the total number of objects (minuend) and cross out the subtrahend.
+              An example of <m>12-5</m> is
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}
+                      \foreach \x in {0,1.5,...,8.5} \draw (\x,0) pic[scale=0.5] {lemon}; 
+                      \foreach \x in {0,1.5,...,8.5} \draw (\x,1.5) pic[scale=0.5] {lemon}; 
+                      \foreach \x in {0,1.5,...,7} \draw[very thick] ({\x-0.5},0.5) -- ({\x+0.5},-0.5); 
+                      \end{tikzpicture}
+                  ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              And note that the difference (answer) is the number of objects that are not crossed out.
+            </p>
+          </li>
+
+          <li>
+            <title>Comparison</title>
+
+            <p>
+              For the comparison interpretation, you need to be careful to ensure that the diagram shows “how many more”.
+              Here’s another example with fruit showing <m>9-6</m>, which would be <em>how many more cherries than apples do you have?</em>
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \x in {0,1.5,...,13} \draw (\x,1.5) pic[scale=0.5] {cherry}; 
+                  \foreach \x in {0,1.5,...,8} \draw (\x,0) pic[scale=0.5] {apple}; 
+                  \draw[rounded corners] (8.5,0.9) rectangle (12.5,2.4);
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </li>
+          </dl>
+        </p>
+      </subsubsection>
+
+      <subsubsection>
+        <title>Subtraction Diagrams for Measurement Models</title>
+
+        <p>
+          Since measurement model is applicable to problems with non-integer numbers, we'll use appropriate diagrams for such numbers.
+          This includes number lines and bar diagrams.
+          The following are such model for the three subtraction interpretations.
+        </p>
+
+        <p>
+          <dl>
+          <li>
+            <title>Part-Whole</title>
+
+            <p>
+              <m>8-3</m>. As an example, consider the example: <em>Alice has 8 total pounds of sugar (white and brown). 3 pounds of that are brown sugar. How much is white sugar? </em>
+            </p>
+
+            <p>
+              Recall that this means the “whole” is 8 and the part is 3 and we are looking for the remainder.
+              We can draw this with the following:
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \draw[->] (-0.5,0) -- (10.5,0);
+                  \foreach \x in {0,1,2,...,10} {\draw (\x,0.1) -- (\x,-0.1) node [below] {\x};}
+                  \filldraw[fill=MaterialIndigo,draw=black] (0,0.3) rectangle (3,1); 
+                  \filldraw[fill=MaterialAmber,draw=black] (3,0.3) rectangle (8,1); 
+                  \draw[brace] (3,1.2) -- (8,1.2) node [bracelabel=above] {?}; 
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              Alternatively, you one can just use the bar diagram without the number line as:
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \filldraw[fill=MaterialIndigo,draw=black] (0,0.3) rectangle (3,1); 
+                  \filldraw[fill=MaterialAmber,draw=black] (3,0.3) rectangle (8,1); 
+                  \draw[brace] (3,1.2) -- (8,1.2) node [bracelabel=above] {?}; 
+                  \draw[brace] (0,1.2) -- (3,1.2) node [bracelabel=above] {3};
+                  \draw[brace] (8,0.1) -- (0,0.1) node [bracelabel=below] {8}; 
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </li>
+
+          <li>
+            <title>Takeaway</title>
+
+            <p>
+              The operation <m>8-3</m> with the take-away interpretation can be thought of starting with the whole (as measurement) and remove the minuend.
+              Consider the example: <em>If you have a rope of length 8 meters and cut off a piece 3 meters in length, what is the remaining part?</em>
+            </p>
+
+            <p>
+              We can do this on a number line with
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[decoration=brace]
+                  \draw[->] (-0.5,0) -- (10.5,0);
+                  \foreach \x in {0,1,2,...,10} {\draw (\x,0.1) -- (\x,-0.1) node [below] {\x};}
+                  \draw[<-,thick] (5,0.2) .. controls (6,0.75) and (7,0.75) .. (8,0.2) node[midway, above] {3};  
+                  %\foreach \x in {3,4,...,7} {\draw[->] ({\x+1},0.1) .. controls ({\x+0.5},0.25) .. (\x,0.1); }
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              and the number that you land on is 5 (the difference).
+            </p>
+          </li>
+
+          <li>
+            <title>Comparison</title>
+
+            <p>
+              Again, we will show <m>8-3</m>.
+              For comparison, two different measurements are given and we are asked how much larger, longer, smaller, etc.
+              one is than the other.
+              Consider the example: <em>Joey's cat weighs 8 pounds and Jill's kitten weight 3 pounds.
+              How much more does Joey's cat weigh than Jill's?</em>.
+            </p>
+
+            <p>
+              Stacked bar diagrams work quite well for these, with the two quantities as the length of the two bars:
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \filldraw[fill=MaterialGreen600,draw=black] (0,1) rectangle (8,1.5); 
+                  \filldraw[fill=MaterialGreen300,draw=black] (0,0) rectangle (3,0.5); 
+                  \draw[brace] (0,1.6) -- (8,1.6) node[bracelabel=above] {8};
+                  \draw[brace] (3,-0.1) -- (0,-0.1) node[bracelabel = below] {3};
+                  \draw[brace] (8,-0.1) -- (3,-0.1) node[bracelabel = below] {?};
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </li>
+          </dl>
+        </p>
+      </subsubsection>
+
+      <subsubsection>
+        <title>Thinking Strategies</title>
+
+        <p>
+          We consider some basic thinking strategies when performing subtraction.
+          Many of these fall into the realm of mental math, in which one does the operation in one's head.
+        </p>
+
+        <p>
+          <dl>
+          <li>
+            <title>Counting Down</title>
+
+            <p>
+              If the subtrahend is a small number, then counting down is an effective way to calculate a subtraction.
+              For example, <m>7-2</m> starts at the number 7, counts backwards two spots to arrive at 5.
+              One can think of counting down on fingers or better yet, on a number line, like
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[decoration=brace]
+                  \draw[->] (-0.5,0) -- (10.5,0);
+                  \foreach \x in {0,1,2,...,10} {\draw (\x,0.1) -- (\x,-0.1) node [below] {\x};}
+                  %\draw[<-] (3,0.2) .. controls (5,0.75) and (6,0.75) .. (8,0.2) node[midway, above] {?};  
+                  \foreach \x in {5,6} {\draw[<-,thick] (\x,0.1) .. controls ({\x+0.25},0.25) and ({\x+0.75},0.25) .. ({\x+1},0.1); }
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              When the numbers get larger (especially the subtrahend),  there are some additional strategies.
+              Consider <m>58-24</m>.
+              Instead of counting down 24 individual numbers, one can first count down by two 10s and then count down by 4 ones.
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=3]
+                  \draw[->] (2.5,0) -- (6.5,0);
+                  \foreach \x in {30,38,40,50,58,60} {\draw ({0.1*\x},0.1) -- ({0.1*\x},-0.1) node [below] {\x};}
+                  \foreach \x in {30,...,60} \draw ({\x/10},0.05) -- ({\x/10},-0.05); 
+                  %\draw[<-] (3,0.2) .. controls (5,0.75) and (6,0.75) .. (8,0.2) node[midway, above] {?};  
+                  \foreach \x in {4.8,3.8} {\draw[<-,thick] (\x,0.1) .. controls ({\x+0.25},0.25) and ({\x+0.75},0.25) .. ({\x+1},0.1); }
+                  \foreach \x in {3.4,3.5,3.6,3.7} {\draw[<-,thick] (\x,0.1) .. controls ({\x+0.025},0.15) and ({\x+0.075},0.15) .. ({\x+0.1},0.1); }
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              Resulting in 34 for the answer.
+              This is also helps with the introduction of place value and chip models.
+            </p>
+          </li>
+
+          <li>
+            <title>Counting Up</title>
+
+            <p>
+              When the subtrahend is larger but close in value to the minuend, \emph{counting up} is a better strategy.
+              For example, <m>17-14</m> can be found by starting at 14 and counting up to 17, with the result of 3 steps.
+              is to count up from 14 to 17 (for 3), the answer
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[decoration=brace]
+                  \draw[->] (9.5,0) -- (20.5,0);
+                  \foreach \x in {10,...,20} \draw (\x,0.1) -- (\x,-0.1) node [below] {\x};
+                  %\draw[<-] (3,0.2) .. controls (5,0.75) and (6,0.75) .. (8,0.2) node[midway, above] {?};  
+                  \foreach \x in {14,15,16} \draw[->,thick] (\x,0.1) .. controls ({\x+0.25},0.25) and ({\x+0.75},0.25) .. ({\x+1},0.1); 
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              Similar to counting down, if we have a problem like <m>27-15</m>, we start at 15 and count up to 27.
+              However, first count up by 10 to 25, then up 2 to 27.
+              The answer is 12.
+              Visually, we can see this with:
+            </p>
+
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=3]
+                  \draw[->] (-0.1,0) -- (3.1,0);
+                  \foreach \x in {0,10,15,20,25,30} {\draw ({0.1*\x},0.05) -- ({0.1*\x},-0.05) node [below] {\x};}
+                  \foreach \x in {0,...,30} \draw ({\x/10},0.02) -- ({\x/10},-0.02); 
+                  \foreach \x in {1.5} {\draw[->,thick] (\x,0.1) .. controls ({\x+0.25},0.25) and ({\x+0.75},0.25) .. ({\x+1},0.1); }
+                  \foreach \x in {2.5,2.6} {\draw[->,thick] (\x,0.1) .. controls ({\x+0.025},0.15) and ({\x+0.075},0.15) .. ({\x+0.1},0.1); }
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </li>
+
+          <li>
+            <title>Four-Fact Families</title>
+
+            <p>
+              Combining the relationship between addition, subtraction and the commutative property of addition, results in what are termed <term>four-fact families</term>.
+              For example,
+              <me>
+                \begin{aligned} 3+5 \amp = 8 \amp 8-3 \amp = 5 \\ 5 + 3 \amp = 8 \amp 8-5 \amp = 3 \end{aligned}
+              </me>
+            </p>
+
+            <p>
+              and the number bond that shows all 4 of these:
+            </p>
+
+            <image width="30%">
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+\draw (0,1) node [draw,rectangle,fill=MaterialBlue300](A) {8};
+\draw (1,2) node [draw,rectangle,fill=MaterialBlue300] (B) {3};
+\draw (1,0) node [draw,rectangle,fill=MaterialBlue300] (C) {5};
+\draw [-] (A)--(B);
+\draw [-] (A)--(C);
+\end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+          </li>
+          </dl>
+        </p>
+      </subsubsection>
+
+      <subsubsection>
+        <title>Subtraction and Place Value</title>
+
+        <p>
+          Although we just saw that compensation can often make subtraction problems easier, in general with larger numbers, we need to understand how place value works with subtraction.
+          Some problems, like <m>67 - 42</m> is straightforward in that if we write this in expanded form as
+          <me>
+            67 - 42 = (60 + 7) - (40 + 2) = (60-40) + (7-2) = 20 + 5 = 25
+          </me>
+          where basically the tens are subtracted and the ones are subtracted.
+          However, consider the example <m>63 - 37</m> doesn't work so well because the ones results in a negative number.
+          In this case, we need to <alert>decompose a ten</alert> like:
+        </p>
+
+        <p>
+          <me>
+            \begin{aligned} 63 - 37\amp= (60 + 3) - (30 + 7)\amp\amp\text{\color{MaterialIndigo} write $60 = 50 + 10$}\\\amp= (50 + 10 + 3) - (30 + 7) \\\amp= (50 + 13) - (30 +7) \\\amp= (50 - 30) + (13 -7) \\\amp= 20 + 6 = 26\end{aligned}
+          </me>
+        </p>
+      </subsubsection>
+
+      <subsubsection>
+        <title>Subtraction with the chip/coin model</title>
+
+        <p>
+          We will see <m>63-37</m> in a chip/coin model as a take-away model in that the minuend is drawn as coins/chips:
+        </p>
+
+        <image>
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \x in {1,...,6} \draw (\x,1) node[draw, circle,inner sep=2pt] {\small 10};
+                  \foreach \x in {1,2,3} \draw (\x,0) node[draw, circle,inner sep=2pt] {\small 1}; 
+                \end{tikzpicture}
+                ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and we'd like take-away 3 tens and 7 ones, however, there are not each ones.
+          To show decomposing a ten or <alert>unbundling</alert> a 10, cross out one 10 and write 10 ones:
+        </p>
+
+        <image>
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=0.8]
+                  \foreach \x in {1,...,6} \draw (\x,1) node[draw, circle,inner sep=2pt] {\small 10};
+                  \foreach \x in {1,2,3} \draw (\x,0) node[draw, circle,inner sep=2pt] {\small 1}; 
+                  \draw[thick] (5.6,0.6) -- (6.4,1.4);
+                  \foreach \x in {8,...,17} \draw (\x,0) node[draw, circle,inner sep=2pt] {\small 1}; 
+                  \draw[dashed, rounded corners] (7.5,-0.5) rectangle (17.5,0.5); 
+                  \draw[->,thick] (6.4,0.5) -- (7.2,0.3);
+                  \end{tikzpicture}
+                ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and note that this unbundling process shows that a ten has been changed for 10 ones.
+          The total number in the diagram is still 63.
+          Now, we subtract 37 by taking-away 3 tens and 7 ones.
+          We do this by crossing out this.
+        </p>
+
+        <image>
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=0.8]
+                  \foreach \x in {1,...,6} \draw (\x,1) node[draw, circle,inner sep=2pt] {\small 10};
+                  \foreach \x in {1,2,3} \draw (\x,0) node[draw, circle,inner sep=2pt] {\small 1}; 
+                  \draw[thick] (5.6,0.6) -- (6.4,1.4);
+                  \foreach \x in {8,...,17} \draw (\x,0) node[draw, circle,inner sep=2pt] {\small 1}; 
+                  \draw[dashed, rounded corners] (7.5,-0.5) rectangle (17.5,0.5); 
+                  \draw[->,thick] (6.4,0.5) -- (7.2,0.3);
+                  \foreach \x in {1,2,3} \draw[-,thick] ({\x-0.4},0.6)--({\x+0.4},1.4);
+                  \foreach \x in {8,...,14} \draw[-,thick] ({\x-0.4},-0.4)--({\x+0.4},0.4);
+                \end{tikzpicture}
+                ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          which shows 2 tens and 6 ones or 26.
+        </p>
+      </subsubsection>
+
+      <subsubsection>
+        <title>Subtraction with the DLB model</title>
+
+        <p>
+          We can also use the DLB model to do subtraction.
+          Much like the chip model above, we use a <em>take-away</em> interpretation and cross out the number in the subtrahend.
+          The first example is <m>67-42</m> and we start with writing the DLB model for the minuend:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \x in {0,0.25,0.5,0.75,1,1.25} \draw[thick] (\x,0)--(\x,0.8); 
+                  \foreach \y in {0,0.15,0.3,0.45,0.6} \fill (1.5,{\y+0.1}) circle[radius=1.5pt]; 
+                  \foreach \y in {0,0.15} \fill (1.75,{\y+0.1}) circle[radius=1.5pt]; 
+                  \end{tikzpicture}
+                ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and then we cross out 4 lines and 2 dots.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \x in {0,0.25,0.5,0.75,1,1.25} \draw[thick] (\x,0)--(\x,0.8); 
+                  \foreach \x in {0,0.25,0.5,0.75} \draw[MaterialIndigo]({\x-0.1},0.2) -- ({\x+0.1},0.3);
+                  \foreach \y in {0,0.15,0.3,0.45,0.6} \fill (1.5,{\y+0.1}) circle[radius=1.5pt]; 
+                  \foreach \y in {0,0.15} \fill (1.75,{\y+0.1}) circle[radius=1.5pt]; 
+                  \foreach \y in {0,0.15} \draw[MaterialIndigo] (1.65,{\y+0.05}) -- (1.85,{\y+0.15}); 
+                  \end{tikzpicture}
+                ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And the remaining is 2 lines and 5 dots which represents 25.
+        </p>
+      </subsubsection>
+    </subsection>
+  </section>

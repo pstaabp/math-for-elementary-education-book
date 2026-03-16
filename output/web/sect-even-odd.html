@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Even and Odd Numbers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Mathematics for Elementary Educators">
+<meta property="book:author" content="You">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.19';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="math-elementary-educators.html"><span class="title">Mathematics for Elementary Educators</span> <span class="subtitle">The foundational mathematics for future teachers</span></a></h1>
+<p class="byline">You</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-primes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-primes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sect-divisibility-tests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-preliminary.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminary Material</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-preliminary-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Mathematical Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Mathematical Equations and Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Mathematical Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Using the Equals Sign correctly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-preliminary-4.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Counterexamples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers: the essence of mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Hindu-Arabic Numbers and Models for Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Counting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Model and Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-ha-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Hindu-Arabic Number System, Egyptian numbers and the Place Value System</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition-subtraction.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition and Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-3" class="internal"><span class="codenumber">2.2.4.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-4" class="internal"><span class="codenumber">2.2.4.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-5" class="internal"><span class="codenumber">2.2.4.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-6" class="internal"><span class="codenumber">2.2.4.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-7" class="internal"><span class="codenumber">2.2.4.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-8" class="internal"><span class="codenumber">2.2.4.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-9" class="internal"><span class="codenumber">2.2.4.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication-division.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Multiplication and Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-3" class="internal"><span class="codenumber">2.3.1.1</span> <span class="title">Properties of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-4" class="internal"><span class="codenumber">2.3.1.2</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-5" class="internal"><span class="codenumber">2.3.1.3</span> <span class="title">Multiplying by tens or multiples of 10s</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-3" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Set Model for partitive and measurement</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-4" class="internal"><span class="codenumber">2.3.2.2</span> <span class="title">Division Interpretation and Word Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-5" class="internal"><span class="codenumber">2.3.2.3</span> <span class="title">Division with Remainders</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-6" class="internal"><span class="codenumber">2.3.2.4</span> <span class="title">Division by Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Alternative Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Tallies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Egyptian Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-roman-numbers" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-babylonian" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Babylonian Number System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-mayan-system" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Mayan Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-base-five" class="internal"><span class="codenumber">2.4.6</span> <span class="title">Base-5 Numbers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">3</span> <span class="title">Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-diagrams-models.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Diagrams and Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-set-diagram" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Set Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-word-problems.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Word Problems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Writing Good Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Covering All Interpretations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-teachers-solutions.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Teacher’s Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Solving Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-4" class="internal"><span class="codenumber">3.3.2</span> <span class="title">The Unitary Method and Multi-step problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-thinking-strategies.html" class="internal"><span class="codenumber">4</span> <span class="title">Thinking Strategies and Mental Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-thinking-strategies.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Thinking Strategies</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Thinking Strategies for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-6" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Thinking Strategies for Division</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-mental-math.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Mental Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Writing Mental Math</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mimicking the Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-5" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Rearranging and Compatible Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-6" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Compensation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-rounding.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Estimation and Rounding</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Rounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-estimation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">What is a good estimation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Range Estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-7" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Teaching Estimates</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-algorithms.html" class="internal"><span class="codenumber">5</span> <span class="title">Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition-algorithms.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Prerequisite for Column Addition with Bundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-4" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Chip Models For Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-5" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Lattice Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-6" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Base-5 Addition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-subtraction-algorithm.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-3" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Coin Model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-4" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Chip Model for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-5" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-6" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Chip Model of Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-7" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Base-5 Subtraction</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#basics-s-sample-exercises" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication-algorithm.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-3" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Stages to Learning Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-4" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expanded Form of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-5" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Box Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-6" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Chip Models with Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-7" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Lattice Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-8" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Base-5 multiplication</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-long-division.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Long Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-3" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long Division with 1-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-4" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Measurement approach</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-5" class="internal"><span class="codenumber">5.4.3</span> <span class="title">The long division algorithm and the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-6" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Extending the Long Division method to multiple-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-7" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Long Division using estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-8" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Base-5 Long Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-primes.html" class="internal"><span class="codenumber">6</span> <span class="title">Factors, Primes and Proofs</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sect-even-odd.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Even and Odd Numbers</span></a></div>
+<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-even-odd-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-tests.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Tests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-3" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Primality Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-gcf-lcm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Greatest Common Factors and Least Common Multiples</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-3" class="internal"><span class="codenumber">6.4.1.1</span> <span class="title">Euclid’s Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-4" class="internal"><span class="codenumber">6.4.1.2</span> <span class="title">Relationship between LCM and GCF</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-proofs.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Prime Number and Divisibility Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-3" class="internal"><span class="codenumber">6.5.1</span> <span class="title">The Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-4" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Divisibility Test Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-5" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Prime Number Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-6" class="internal"><span class="codenumber">6.5.4</span> <span class="title">How many primes are there?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-7" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Proof by Contradiction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-8" class="internal"><span class="codenumber">6.5.6</span> <span class="title">The Greatest Common Factors and Lowest Common Multiples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-decimals.html" class="internal"><span class="codenumber">8</span> <span class="title">Decimals</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-integers.html" class="internal"><span class="codenumber">9</span> <span class="title">Integers</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sect-even-odd"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Even and Odd Numbers</span>
+</h2>
+<section class="introduction" id="sect-even-odd-2"><div class="para" id="sect-even-odd-2-1">Let’s look at this through a lens of even and odd numbers. There are a few ways to describe an <em class="alert">even number</em> including:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-even-odd-2-2">
+<ol class="decimal" id="sect-even-odd-2-2-1">
+<li id="sect-even-odd-2-2-1-1">
+<div class="para" id="sect-even-odd-2-2-1-1-1">An even number is any number that you can get by skip counting by twos. For example <span class="process-math">\(2,4,6,8,10, \ldots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-even-odd-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-even-odd-2-2-1-2">
+<div class="para" id="sect-even-odd-2-2-1-2-1">An even number of objects can always be paired up (and none left unpaired).<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-even-odd-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sect-even-odd-2-2-1-3">
+<div class="para" id="sect-even-odd-2-2-1-3-1">A number which is twice a whole number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sect-even-odd-2-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sect-even-odd-2-2-1-4">
+<div class="para" id="sect-even-odd-2-2-1-4-1">A number whose last digit is 0,2,4,6, or 8.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sect-even-odd-2-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-2-3">On the surface, these are all reasonable possibilities, and they seem be consistent with what we think of with even numbers. However, from a mathematical point of view in order to prove properties of even numbers, it is important that we have a simple <em class="alert">mathematical definition</em> that will be useful.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-2-4">Therefore, we will use the following definition:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sect-even-odd-2-5"><h3 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sect-even-odd-2-5-1-1">An <dfn class="terminology">even number</dfn> is number which is twice a whole number. An <dfn class="terminology">odd number</dfn> is one which is 1 more than twice a whole number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 6.1.1"><a href="#sect-even-odd-2-5" title="Copy heading and permalink for Definition 6.1.1" aria-label="Copy heading and permalink for Definition 6.1.1">🔗</a></div></article><div class="para" id="sect-even-odd-2-6">The main reason for choosing this as a definition over others is that is it easier to use to show or prove the other statements. For example, we will use this definition to show that if a number’s last digit is 0, 2, 4, 6 or 8 then the number is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-2-7">Before getting proofs, we can also examine some diagrams of even and odd numbers. Since the notion of even numbers is twice a whole number (or the equivalent of pairing of objects), the following diagrams for 6 and 18 are helpful:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-2-8.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-even-odd-2-9">and the important notation is that there are 2 rows of boxes, indicating that it is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="remark remark-like" id="sect-even-odd-2-10"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="sect-even-odd-2-10-1">Why doesn’t the following diagram show that 18 is even?<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-10-2.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Remark 6.1.2"><a href="#sect-even-odd-2-10" title="Copy heading and permalink for Remark 6.1.2" aria-label="Copy heading and permalink for Remark 6.1.2">🔗</a></div></article><div class="para" id="sect-even-odd-2-11">How can we show that 78 is even? We could do a diagram with 78 boxes, however, 1) it would be hard to get it accurate–you’d probably need to double or triple count to make sure, and 2) it’s easier to not have to count. We can take a lead from writing bar diagrams with multiplication that we saw in <a href="ch-models.html" class="internal" title="Chapter 3: Models">Chapter 3</a> as<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-12.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-even-odd-2-13">and note that it is clear that there are two equal rows of boxes. We can also show odd numbers by adding an extra box to the end. First, consider some small odd numbers. The following diagrams show 7 and 15:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-14.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-even-odd-2-15">And the following shows the odd number 37:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-16.svg" role="img" class="contained" alt=""></div></section><section class="subsection" id="sect-even-odd-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lemmas, Theorems and Proofs</span>
+</h3>
+<div class="para" id="sect-even-odd-3-2">We have seen a few theorems and lemmas in this text. For example, the Quotient-Remainder theorem is key to handling integer division. We call the result a <em class="alert">theorem</em> because it is a provable statement with an important result. For more minor results, we call such a statement a <em class="alert">lemma</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sect-even-odd-3-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-even-odd-3-3-1-1">A <em class="alert">proof</em> of a statement is a detailed explanation of how that statement follows logically from other statements accepted as true.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 6.1.3"><a href="#sect-even-odd-3-3" title="Copy heading and permalink for Definition 6.1.3" aria-label="Copy heading and permalink for Definition 6.1.3">🔗</a></div></article><div class="para" id="sect-even-odd-3-4">The proofs that we will see in this section will be approached from two different avenues: a diagram proof and an algebraic proof.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="sect-even-odd-3-5"><h4 class="heading"><span class="title">Diagram Proof.</span></h4>
+<div class="para" id="sect-even-odd-3-5-2">We will use diagrams to illustrate the argument. For example, we can show an even number and an odd number using the following two diagrams:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-3-5-3.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-even-odd-3-5-4">The <span class="process-math">\(\cdots\)</span> keep these diagrams very general. They work for any even or odd number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-3-5-5">We will use such diagrams below to prove statements about even and odd numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Diagram Proof"><a href="#sect-even-odd-3-5" title="Copy heading and permalink for Paragraphs: Diagram Proof" aria-label="Copy heading and permalink for Paragraphs: Diagram Proof">🔗</a></div></section><section class="paragraphs" id="sect-even-odd-3-6"><h4 class="heading"><span class="title">Algebraic Proofs.</span></h4>
+<div class="para" id="sect-even-odd-3-6-2">In these proofs, we use letters to denote even and odd numbers. Typically, we will say “Let <span class="process-math">\(k\)</span> be a whole number. Then <span class="process-math">\(2k\)</span> is an even number and <span class="process-math">\(2k+1\)</span> is an odd number.”<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-3-6-3">We will the use statements we know to be true about whole numbers to prove things.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Algebraic Proofs"><a href="#sect-even-odd-3-6" title="Copy heading and permalink for Paragraphs: Algebraic Proofs" aria-label="Copy heading and permalink for Paragraphs: Algebraic Proofs">🔗</a></div></section><div class="para" id="sect-even-odd-3-7">We will see how a proof is presented using even and odd numbers. We will soon prove the following theorem:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="sect-even-odd-3-8"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-even-odd-3-8-1-1">The sum of any two even numbers is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 6.1.4"><a href="#sect-even-odd-3-8" title="Copy heading and permalink for Theorem 6.1.4" aria-label="Copy heading and permalink for Theorem 6.1.4">🔗</a></div></article><details id="sect-even-odd-3-8-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sect-even-odd-3-8-2-1">First, we will show a <em class="alert">diagram proof</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-3-8-2-2">Consider two even numbers as shown in the diagram below:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-3-8-2-3.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-3-8-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-even-odd-3-8-2-5">There are many important parts of this diagram proof. First, the two numbers (in light green and blue) are general even numbers. We don’t shows specifically the sizes of these numbers with the <span class="process-math">\(\cdots\text{.}\)</span> The result is even because there two rows of the same size. This also clearly shows that the result is the sum of the two numbers. Note: the colors help, but could be done with shading.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-3-8-2-6">Next, we’ll show an <em class="alert">algebraic proof.</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-even-odd-3-8-2-7">Let <span class="process-math">\(m\)</span> be any whole number. Then <span class="process-math">\(2m\)</span> is an even number. Let <span class="process-math">\(k\)</span> be another whole number, with <span class="process-math">\(2k\)</span> another even number. Since <span class="process-math">\(2k+2m=2(k+m)\)</span> by the distributive property, <span class="process-math">\(k+m\)</span> is a whole number and <span class="process-math">\(2(k+m)\)</span> is twice a whole number, the result <span class="process-math">\(2k+2m\)</span> is an even number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 6.1.4.1"><a href="#sect-even-odd-3-8-2" title="Copy heading and permalink for Proof 6.1.4.1" aria-label="Copy heading and permalink for Proof 6.1.4.1">🔗</a></div></article></details><div class="para" id="sect-even-odd-3-9">Next, we will show that the sum of an even number and an odd number is odd.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="theorem theorem-like" id="thm-even-plus-odd"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="thm-even-plus-odd-1-1">The sum of an even number and a odd number is an odd number.<div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Theorem 6.1.5"><a href="#thm-even-plus-odd" title="Copy heading and permalink for Theorem 6.1.5" aria-label="Copy heading and permalink for Theorem 6.1.5">🔗</a></div></article><details id="thm-even-plus-odd-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="thm-even-plus-odd-2-1">
+<em class="alert">Diagram Proof:</em><div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="thm-even-plus-odd-2-2">Consider an even and odd number:<div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/thm-even-plus-odd-2-3.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/thm-even-plus-odd-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="thm-even-plus-odd-2-5">
+<em class="alert">Algebraic Proof:</em><div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="thm-even-plus-odd-2-6">
+<div class="para">Let <span class="process-math">\(k\)</span> be a whole number, then <span class="process-math">\(2k\)</span> is an even number. Let <span class="process-math">\(m\)</span> be a whole number and <span class="process-math">\(2m+1\)</span> be an odd number. The sum is</div>
+<div class="displaymath process-math" id="thm-even-plus-odd-2-6-5">
+\begin{equation*}
+\begin{aligned}S = 2k+(2m+1)\amp= 2k+2m+1\amp\amp\text{by the associative property}\\ \amp = 2(k+m)+1\amp\amp\text{by the distributive property}\\\end{aligned}
+\end{equation*}
+</div>
+<div class="para">The term <span class="process-math">\(k+m\)</span> in the parentheses is whole, because the sum of two whole number is whole. And lastly, <span class="process-math">\(2(k+m)+1\)</span> is an odd number.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Proof 6.1.5.1"><a href="#thm-even-plus-odd-2" title="Copy heading and permalink for Proof 6.1.5.1" aria-label="Copy heading and permalink for Proof 6.1.5.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 6.1.1: Lemmas, Theorems and Proofs"><a href="#sect-even-odd-3" title="Copy heading and permalink for Subsection 6.1.1: Lemmas, Theorems and Proofs" aria-label="Copy heading and permalink for Subsection 6.1.1: Lemmas, Theorems and Proofs">🔗</a></div></section><div class="autopermalink" data-description="Section 6.1: Even and Odd Numbers"><a href="#sect-even-odd" title="Copy heading and permalink for Section 6.1: Even and Odd Numbers" aria-label="Copy heading and permalink for Section 6.1: Even and Odd Numbers">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-primes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sect-divisibility-tests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

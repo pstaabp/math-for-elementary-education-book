@@ -1,0 +1,541 @@
+<section xml:id="sect-mental-math">
+  <title>Mental Math</title>
+
+  <introduction>
+    <p>
+      As discussed earlier, mental math plays an important role in development the understanding of arithmetic.
+      It is important to have an understanding
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            of the place value system,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            of the properties of addition, subtraction, multiplication and division,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            that answers can be arrived at in different ways with some much easier than others.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      In short, educators should have a firm grasp of number sense and arithmetic operations.
+      Practicing these techniques can help you get better at all of these and building a strong mathematical foundation.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Writing Mental Math</title>
+
+    <p>
+      This section seems to be self-contradictory.
+      Mental math means doing math in your head and writing the steps down seems to be the antithesis of what we want.
+      There are two main reasons for becoming adept at writing mental math:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            From an educator's point of view, knowing the students thinking is important, so as you learn this, writing down the steps means you are able to show your thinking.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Writing the steps down emphasizes the mathematical logic of your steps.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Written Mental MathThe following aspects show good mental math steps:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Start with the original problem, that is all parts.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            For each step, use an <m>=</m> to the next step.
+            The left and right sides must be equal.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            You can work left to right or top to bottom or a little bit of both.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Some mental math methods can be helped with annotations (examples shown below), however it should be clear what you are doing on each step.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      First, here is a nice example showing how to solving a mental math problem.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find the following using mental math and show your steps:
+          <ol>
+            <li>
+              <p>
+                <m>13 + 8 + 27 + 14 + 12</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>86-29</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>86 \times 5</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <me>
+                  13 + 8 + 27 + 14 + 12 = (13 + 27) + (8+12) + 14 = 40 + 20 + 14 = 74
+                </me>
+              </p>
+
+              <p>
+                Although this is sufficient to show work.
+                If you don't quite follow, here's what we did:
+                <ol>
+                  <li>
+                    <p>
+                      For the first step (from the left side to the right side of the first =), we have used the additive any-order property and put parentheses around terms to be added.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      For step two, add the terms in the parentheses.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      For the last step, add the three terms.
+                      Adding multiples of 10 are fairly straightforward.
+                    </p>
+                  </li>
+                </ol>
+                Alternatively, you can stack the steps vertically like:
+                <me>
+                  \begin{aligned} 13 + 8 + 27 + 14 + 12 \amp = (13 + 27) + (8+12) + 14 \\ \amp = 40 + 20 + 14 \\ \amp = 74 \end{aligned}
+                </me>
+              </p>
+
+              <p>
+                and notice that the first steps (first line) shows an equation.
+                The remaining steps mean that the line above it is equal to the current line.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  86 - 29 = \stackrel{+1}{86}- \stackrel{+1}{29}= 87 - 30 = 57
+                </me>
+              </p>
+
+              <p>
+                This is a compensation problem and we'll add 1 to both the minuend and subtrahend to get an easier problem.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  86 \times 5 = (43 \times 2) \times 5 = 43 \times (2 \times 5) = 43 \times 10 = 430
+                </me>
+              </p>
+
+              <p>
+                This is a compensation problem using multiplication and in short transfer a 2 from the 86 to the 5.
+                The above steps shows this clearly.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The reason for writing mental math this way is that what this shows is that the original problem is linked to the last step by equal signs so that it is clear what the original problem's answer is.
+    </p>
+
+    <p>
+      A common way that student's often solve this before learning the details of why writing these are important would look like this:
+      <me>
+        13+8+27+14+12
+      </me>
+    </p>
+
+    <p>
+      <me>
+        \begin{aligned}13+27 \amp = 40 \quad 8+12 = 20 \\ 40 + 20 \amp = 60 + 14 = 74\end{aligned}
+      </me>
+      and the spirit of the problem is there in that the student sees the terms <m>13+27</m> and <m>8+12</m> are compatible numbers.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Mimicking the Algorithms</title>
+
+    <p>
+      If you are really good at the arithmetical algorithms (column algorithms or long division) that we will see in <xref ref="ch-algorithms" />, perhaps you wonder why you can’t just do these in you head.
+      The answer is, you can.
+      Here are a few examples on how to write these out.
+      Notice with these that you use the expanded form of the number for the first step.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use Mental Math to show the following operations:
+          <ol>
+            <li>
+              <p>
+                <m>234+745</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>983-241</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>102 \times 80</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>96 \div 3</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          For this, notice that we are using the distributive property to write these out:
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                For <m>234+745</m>
+              </p>
+
+              <p>
+                <me>
+                  \begin{aligned}234+745\amp = (200+30+4)+(700+40+5) \\\amp = (200+700)+(30+40)+(4+5) \\\amp = 900 + 70+9 = 979\end{aligned}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>983-241</m>
+              </p>
+
+              <p>
+                <me>
+                  \begin{aligned}983-241\amp = (900+80+3) - (200+40+1) \\\amp = (900-200) + (80-40) +(3-1)\\\amp = 700 +40 +2 \\\amp = 742\end{aligned}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>102 \times 80</m>
+              </p>
+
+              <p>
+                <me>
+                  \begin{aligned}102 \times 80\amp = (100 +2) \times 80\amp \amp \text{Use the Distributive Property}\\\amp = 100 \times 80 + 2 \times 80 \\\amp =8000+160 = 8160\end{aligned}
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>96 \div 3</m>
+              </p>
+
+              <p>
+                <me>
+                  \begin{aligned}96 \div 3\amp = (90 + 6) \div 3\amp \amp \text{Use the Distributive Property}\\\amp = 90 \div 3 + 6 \div 3 \\\amp = 30 + 2 = 32\end{aligned}
+                </me>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Rearranging and Compatible Numbers</title>
+
+    <p>
+      Rearranging often helps if one can identify compatible numbers, that is pairs or groups of numbers that combine advantageously.
+      These can be tricky and you need to be able to identify pairs of numbers that add or multiply to “nice” number.
+      The following shows some examples that rearrange to perform compatible numbers first.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find the following using mental math:
+          <ol>
+            <li>
+              <p>
+                <m>83 + 26 + 17 + 14 + 45</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>2 \times 21 \times 5 \times 3</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>17 + 28 + 43 + 22 + 19</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>4 \times 3 \times 8 \times 25</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <me>
+                  \begin{aligned}83 + 26 + 17 + 14 + 45\amp = (83+17) +(26+14)+45 \\ \amp = 100 + 40 + 45\\ \amp = 185\end{aligned}
+                </me>
+              </p>
+
+              <p>
+                Notice that we rearranged to move the compatible numbers <m>83+17</m> and <m>26+14</m>, the first is 100 and the second is a multiple of 10.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  \begin{aligned}2 \times 21 \times 5 \times 3\amp = (2 \times 5) \times (21 \times 3) \\\amp = 10 \times 63 = 630\end{aligned}
+                </me>
+              </p>
+
+              <p>
+                In this case, we rearranged to move the 2 and 5 to multiply first, since this is 10 and it’s easy to multiply by 10.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  \begin{aligned}17 + 28 + 43 + 22 + 19\amp = (17 + 43) + (28 + 22) + 19 \\\amp = 60 + 50 + 19 \\\amp = 110 + 19 = 129\end{aligned}
+                </me>
+              </p>
+
+              <p>
+                In this case, there are 5 numbers, so try to identity terms that add nicely, so look for tens combinations.
+                Note that since we’re looking for tens combinations, the result requires a bundling.
+                So the tens on <m>17+43</m> can be thought of as <m>(10+7)+(40+3) = 10+40+10=60</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <me>
+                  \begin{aligned}4 \times 3 \times 8 \times 25 = (4 \times 25) \times (3 \times 8) = 100 \times 24 = 2400\end{aligned}
+                </me>
+              </p>
+
+              <p>
+                In this case, note that the product of <m>4</m> and <m>25</m> is 100, so we combine those and combine the remaining terms.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Compensation</title>
+
+    <p>
+      We covered compensation Compensation can be used with all 4 arithmetics operations, but remember that each one works a little differently.
+      If you need, Recall:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            For addition, shift a number from one addend to the other:
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>99+46 = 100+45 = 145</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>410 + 997 = 407 + 1000 = 1407</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            For subtraction, add or subtract the same number to both subtrahend and minuend:
+            <ol>
+              <li>
+                <p>
+                  <m>47 - 13 = 44-10=34</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>169 - 52 = 167-50 = 117</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>423 - 97 = 426-100=326</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+          <p>
+          We could have <m>47-13=50-16</m>.
+          Why did we do the above? </p>
+        </li>
+
+        <li>
+          <p>
+            For division, multiply or divide by the divisor and dividend by the same number.
+          </p>
+
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>305 \div 5 = 610 \div 10 = 61</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>1300 \div 25 = 5200 \div 100 = 52</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Other examples:
+          <ol>
+            <li>
+              <p>
+                <m>99 + 46 = 99+1-1+46 =100 +45 = 145</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>47 - 19 = 47+1-1-19 = 48 -20 = 28</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>50 \times 18 = 50 \times 2 \times 9 = 100 \times 9 = 900</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>125 \div 5 = 250 \div 10 = 25</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+    </example>
+  </subsection>
+</section>

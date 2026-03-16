@@ -1,0 +1,390 @@
+<section xml:id="sect-divisibility-proofs">
+  <title>Prime Number and Divisibility Proofs</title>
+
+  <introduction>
+    <p>
+      This section dives deeper into many of the proofs in this chapter.
+    </p>
+
+    <p>
+      This Chapter covers more properties of numbers, specifically integers.
+      In <xref ref="ch-numbers"/> many properties like the distributive and associative were seen.
+      Technically, these are actually <em>mathematical axioms</em> or statements that we assume are true.
+      We show that they hold true using diagrams, however there is no formal mathematical proof of these, but we assume them to hold.
+    </p>
+
+    <p>
+      This chapter is all about prime numbers and factoring whole numbers.
+      And we will see in <xref ref="ch-fractions"/> that these play an important role for understanding fractions.
+      We also want to build some theorems based on these ideas.
+      As a review, formal mathematics has some key components:
+    </p>
+
+    <p>
+      <dl>
+      <li>
+        <title>Axioms</title>
+
+        <p>
+          When constructing an argument, we use a sequence of known facts to make those arguments.
+          Many times, these are properties of arithmetic like the distributive and commutative properties.
+          Other times these are other theorems or lemmas that have been proven.
+        </p>
+      </li>
+
+      <li>
+        <title>Definitions</title>
+
+        <p>
+          Because of the precise nature of mathematics, defining our terms is crucial.
+          We all need to agree that we are thinking of the same things.
+        </p>
+      </li>
+
+      <li>
+        <title>Theorems and Lemmas</title>
+
+        <p>
+          A theorem (important result) or a lemma (minor result) allows us to make a general statement.
+          It is proved using mathematical facts and logic.
+        </p>
+      </li>
+      </dl>
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>The Divisibility Lemma</title>
+
+    <p>
+      Recall that the <xref ref="lem-divisibility"/> take a number and splits it into the sum of two numbers to help determine if a number is divisible by another.  The following is the proof of that lemma. 
+    </p>
+
+    <proof>
+      <title>Proof of the Divisibility Lemma</title>
+
+      <p>
+        First, we will show that if <m>B</m> is divisible by <m>k</m>, then <m>A+B</m> is divisible by <m>k</m>.
+        We know that <m>k</m> divides <m>A</m>, so that means that <m>A</m> can be written <m>A=a\cdot k</m>.
+        Also, since <m>k</m> divides <m>B</m>, that <m>B</m> can be written <m>B=b\cdot k</m>.
+        We will see if <m>k</m> divides <m>A+B</m>.
+        <me>
+          \begin{aligned}A+B\amp = a\cdot k + b\cdot k\amp \amp \text{by divisibility}\\\amp = (a+b) \cdot k\amp \amp \text{by distributive}\\\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        This means that <m>A+B</m> is divisible by <m>k</m>.
+      </p>
+
+      <p>
+        Next, we will show that if <m>A+B</m> is divisible by <m>k</m>, then <m>B</m> is divisible by <m>k</m>.
+        Since <m>A+B</m> is divisible by <m>k</m>, then means that <m>A+B</m> can be written as <m>A+B = c\cdot k</m> for some whole number <m>c</m>, where <m>c</m> is larger than <m>a</m>.
+        Next, we want to show that <m>B</m> is divisible by <m>k</m>.
+      </p>
+
+      <p>
+        The number <m>B</m> can be written as
+        <me>
+          \begin{aligned}B\amp = (A+B) - A \\\amp = c \cdot k - a \cdot k \\\amp = (c-a) \cdot k\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        since <m>c</m> and <m>a</m> are whole numbers with <m>c</m> larger than <m>a</m>, then <m>B</m> is divisible by <m>k</m>.
+      </p>
+    </proof>
+  </subsection>
+
+
+  <subsection>
+    <title>Divisibility Test Proofs</title>
+
+    <p>
+      Next, we revisiting the divisibility tests of 3, 4, 9 and 11 that are stated in <xref ref="thm-divisibility-tests"/>.
+    </p>
+
+    <proof>
+      <title>Proof of the Divisibility Test by 4</title>
+
+      <p>
+        Let a whole number <m>N</m> be written as
+        <me>
+          \begin{aligned}N\amp = 100 a + b\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        (why can it be written this way?) Since <m>100a</m> can be written as <m>4 \cdot (25a)</m>, it is divisible by 4.
+        In addition, <m>b</m> is divisible by 2 if and only if <m>b</m> is divisible by 4.
+        By the divisibility theorem, <m>N</m> is divisible by 2 if and only if <m>100a</m> and <m>b</m> are divisible by 4.
+      </p>
+    </proof>
+
+
+    <proof>
+      <title>Proof of the Divisibility of a 3-digit number by 3 and 9</title>
+
+      <p>
+        Let <m>N</m> be a three-digit number and let it be written:
+        <me>
+          \begin{aligned}N\amp = 100 a + 10 b + c.\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        Write <m>100a=99a+a</m> and <m>10b=9b+b</m> or
+        <me>
+          \begin{aligned}N\amp = 99a + 9b + (a+b+c)\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        The term <m>99a=9b=9(11a+b)</m> is divisible by both 3 and 9.
+        By the Divisibility lemma, <m>N</m> is divisible by 3 (or 9) if and only if <m>a+b+c</m> is divisible by 3 (or 9).
+      </p>
+    </proof>
+
+
+    <proof>
+      <title>Proof of the divisibility test by 11</title>
+
+      <p>
+        Consider a six-digit number (other sized numbers are similar), <m>N</m>.
+        Write <m>N</m> as
+        <me>
+          \begin{aligned}N\amp = 100,000a + 10, 000 b + 1,000c + 100d + 10 e + f\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        Rewrite <m>N</m> as follows:
+        <me>
+          \begin{aligned}N\amp = 100,001a + 1,001c + 11e + 9999b + 99d + (b+d+f) - (a+c+e) \intertext{which can be written}\amp = 11 (9091a+91c+e) + 11(9090b+9d) + (b+c+f)- (a+c+e)\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        By the divisibility theorem, since the first two terms are divisible by 11, <m>N</m> is divisible by 11 if and only if
+        <me>
+          \begin{aligned}(b+c+f)-(a+c+e)\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        is divisible by 11, which is the same as the statement of the theorem.
+      </p>
+    </proof>
+  </subsection>
+
+
+  <subsection>
+    <title>Prime Number Proofs</title>
+
+    <lemma xml:id="lem-multiple-prime">
+      <statement>
+        <p>
+          Every whole number <m>N \gt 1</m> is a multiple of a prime.
+        </p>
+      </statement>
+    </lemma>
+
+    <example>
+      <statement>
+        <p>
+          Let’s try this with <m>N=56</m>.
+          All of its factors are <m>\{1,2,4,7,8,28,56\}</m>.
+          We note that 2 is a prime factor (also 7 is).
+          We will use this in the proof below.
+        </p>
+      </statement>
+    </example>
+
+
+    <proof>
+      <p>
+        List all of the factors of <m>N</m> and call <m>p</m> the smallest factor greater than <m>1</m>.
+        We will show that <m>p</m> is prime and therefore <m>N</m> is a multiple of a prime.
+      </p>
+
+      <p>
+        This will be shown by a technique called proof by contradiction.
+        In short, we make an assumption that contradicts what we are trying to show, resulting in an absurd statement, thus the original statement must be correct.
+      </p>
+
+      <p>
+        Assume that <m>p</m> is not prime.
+        Then we can write <m>p=rs</m>, however both <m>r&#x3C;p</m> and <m>s&#x3C;p</m>, but this is not possible because <m>p</m> is the smallest factor greater than 1, which contradicts the fact that <m>p</m> is smallest factor.
+      </p>
+    </proof>
+
+
+    <proof>
+      <p>
+        (of the fundamental theorem of arithmetic)
+      </p>
+
+      <p>
+        By <xref ref="lem-multiple-prime"/>, write
+        <me>
+          N\amp = p_{1} n_{1}
+        </me>
+      </p>
+
+      <p>
+        where <m>p_{1}</m> is prime.
+        If <m>n_{1}=1</m>, then <m>N</m> is prime and the factors are <m>1</m> and <m>p_{1}</m> and this is the unique result.
+      </p>
+
+      <p>
+        If <m>n_{1}</m> is not prime, then use <xref ref="lem-multiple-prime" /> to write
+        <me>
+          n_{1} = p_{2} n_{2}
+        </me>
+      </p>
+
+      <p>
+        where <m>p_{2}</m> is prime and thus
+        <me>
+          N = p_{1} p_{2} n_{2}
+        </me>
+      </p>
+
+      <p>
+        if <m>n_{2}=1</m>, then the above is the prime factorization.
+        If not, repeat these steps and write
+        <me>
+          N = p_{1} p_{2} p_{3} \cdots p_{k} n_{k}
+        </me>
+      </p>
+
+      <p>
+        with <m>n_{k}=1</m>.
+        Since the numbers <m>n_{1}, n_{2}, \ldots, n_{k}</m> are always decreasing, this process must end.
+        Thus we can write
+        <me>
+          N = p_{1} p_{2} p_{3} \cdots p_{k}
+        </me>
+      </p>
+
+      <p>
+        To prove that this is a unique factorization, we need a little more background and thus will see this in 5.5.
+      </p>
+    </proof>
+
+    <p />
+      <proof>
+        <title>Of the Largest Factor Lemma</title>
+
+        <p>
+          Let <m>N=pn</m>, where <m>p</m> is prime by the Smallest Factor Lemma.
+          The Since <m>p \leq n</m> and therefore <m>p^{2} \leq np=N</m>.
+          Thus <m>p \leq \sqrt{N}</m>.
+        </p>
+      </proof>
+    </subsection>
+
+
+    <subsection>
+      <title>How many primes are there?</title>
+
+      <theorem>
+        <statement>
+          <p>
+            There are an infinite number of prime numbers.
+          </p>
+        </statement>
+      </theorem>
+
+
+      <proof>
+        <p>
+          Assume that there are a finite number of primes and let <m>P</m> be the largest.
+          Define the number <m>N</m> to be
+          <me>
+            N = 2 \cdot 3 \cdot 5 \cdot 7 \cdots P+1
+          </me>
+        </p>
+
+        <p>
+          Since <m>N</m> is not divisible by any prime between 2 and <m>P</m>, it must also be prime and is obviously larger than <m>P</m>, so there’s a contradiction.
+          Since this violates the assumption that there are a finite number and <m>P</m> is the largest, the result is that there must be an infinite number of primes.
+        </p>
+      </proof>
+    </subsection>
+
+
+    <subsection>
+      <title>Proof by Contradiction</title>
+
+      <p>
+        The following steps shows the logic for proof by contradiction.
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              Either a statement or its negative is true, but not both.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Assume that the negative of a statement is true.
+              Show how that assumption leads to a logical contradiction.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Since there is a contradiction, we conclude that the original assumption is incorrect, thus the original statement is true.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        In the proof above,
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              We started with the original statement that we were trying to prove, “There is an infinite number of prime numbers.”
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We assumed the negative of the statement: “There is a finite number of primes” and showed that this resulted in a prime larger than the largest of the finite number.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Since there is a contradiction, the original assumption that there is only a finite number of primes, leading to the result that there is an infinite number of primes.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </subsection>
+
+
+    <subsection>
+      <title>The Greatest Common Factors and Lowest Common Multiples</title>
+
+      <proof>
+        <p>
+          (of Euclid’s Algorithm:) Assume that <m>n</m> is a common factor of both <m>a</m> and <m>b</m>.
+          Since <m>a=bq+r</m>, and <m>r=a-bq</m>, then <m>n</m> also a common factor of <m>r</m>.
+          Let <m>N</m> be the largest common factor of both then
+          <me>
+            \begin{aligned}N\amp = GCF(a,b) = GCF(b,r)\end{aligned}
+          </me>
+        </p>
+      </proof>
+    </subsection>
+  </section>

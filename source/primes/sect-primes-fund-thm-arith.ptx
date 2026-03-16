@@ -1,0 +1,626 @@
+<section xml:id="sect-fundamental-theorem-arithmetic">
+  <title>Primes and the Fundamental Theorem of Arithmetic</title>
+
+  <introduction>
+    <p>
+      We can write often whole numbers as products of other whole numbers.
+      For example
+      <me>
+        30 = 6 \cdot 5
+      </me>
+      and we can further write <m>6=2 \cdot 3</m>, therefore
+      <me>
+        30  = 2 \cdot 3 \cdot 5
+      </me>
+    </p>
+
+    <p>
+      The number 2, 3 and 5 can no longer be written as multiples of other numbers and thus called <alert>prime numbers.</alert>
+    </p>
+
+    <definition>
+      <statement>
+        <p>
+          A <term>prime number</term> is a whole number <m>P \gt 1</m> whose only factors are 1 and <m>P</m>.
+          Whole numbers <m>N\geq 2</m> that are not prime are called <term>composite</term>.
+        </p>
+      </statement>
+    </definition>
+  </introduction>
+
+
+  <subsection>
+    <title>The Sieve of Eratosthenes</title>
+
+    <p>
+      There are a variety of ways to find prime numbers.
+      One such way is called the sieve of Eratosthenes, a Greek scholar c.
+      275 – 195 B.C.E.
+      The sieve can be used for finding prime numbers up to any number and the following shows how to find them up to 60.
+      First start with a grid of numbers where the lowest number 2 is written:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=0.75]
+            \foreach \y in {0} \foreach \x in {2,3,...,12} \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};
+            \foreach \y in {1,...,4} \foreach \x in {1,2,3,...,12} {
+            \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};}
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      Each step has two parts:
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Circle the smallest number not crossed out.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Cross out all multiples of that number.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      In this first step, nothing is crossed out, so we circle the number 2 and then cross out multiples of 2.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=0.75]
+            \foreach \y in {0} \foreach \x in {2,3,...,12} \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};
+            \foreach \y in {1,...,4} \foreach \x in {1,2,3,...,12} {
+            \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};}
+            % circle the 2 
+            \foreach \y in {0} \foreach \x in {2} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            % cross out multiples of 2:
+            \foreach \y in {0} \foreach \x in {4,6,...,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {1,...,4} \foreach \x in {2,4,...,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      For the next step, circle the 3 and cross out multiple of 3 (shown in red).
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \y in {0} \foreach \x in {2,3,...,12} \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};
+            \foreach \y in {1,...,4} \foreach \x in {1,2,3,...,12} {
+            \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};}
+            % circle the 2 
+            \foreach \y in {0} \foreach \x in {2} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            % cross out multiples of 2:
+            \foreach \y in {0} \foreach \x in {4,6,...,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {1,...,4} \foreach \x in {2,4,...,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            % circle the 3
+            \foreach \y in {0} \foreach \x in {3} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            % cross out multiples of 3:
+            \foreach \y in {0} \foreach \x in {6,9,12} \draw[thick,MaterialRed900] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {1,...,4} \foreach \x in {3,6,9,12} \draw[thick,MaterialRed900] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and notice that some of those crossed out were already crossed out.
+      (What property did the number crossed out twice have?).
+    </p>
+
+    <p>
+      The next step will circle the 5 and cross out multiple of 5 (shown in blue):
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \y in {0} \foreach \x in {2,3,...,12} \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};
+            \foreach \y in {1,...,4} \foreach \x in {1,2,3,...,12} {
+            \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};}
+            % circle the 2 
+            \foreach \y in {0} \foreach \x in {2} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            % cross out multiples of 2:
+            \foreach \y in {0} \foreach \x in {4,6,...,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {1,...,4} \foreach \x in {2,4,...,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            % circle the 3
+            \foreach \y in {0} \foreach \x in {3} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            % cross out multiples of 3:
+            \foreach \y in {0} \foreach \x in {6,9,12} \draw[thick,MaterialRed900] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {1,...,4} \foreach \x in {3,6,9,12} \draw[thick,MaterialRed900] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            % circle the 5
+            \foreach \y in {0} \foreach \x in {5} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            % cross out multiples of 5:
+            \foreach \y in {0} \foreach \x in {10} \draw[thick,MaterialBlue] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {1} \foreach \x in {3,8} \draw[thick,MaterialBlue] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {2} \foreach \x in {1,6,11} \draw[thick,MaterialBlue] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {3} \foreach \x in {4,9} \draw[thick,MaterialBlue] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {4} \foreach \x in {2,7,12} \draw[thick,MaterialBlue] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      This continues until all numbers are either circled or crossed out, however it is an interesting question to determine when you can stop the process, knowing that the uncrossed ones should all be circled.
+    </p>
+
+    <p>
+      The result shows:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \y in {0} \foreach \x in {2,3,...,12} \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};
+            \foreach \y in {1,...,4} \foreach \x in {1,2,3,...,12} {
+            \draw ({\x-1},{(8-\y)*0.75}) node {\pgfmathparse{int(\x+12*\y)} \pgfmathresult};}
+            % circle the primes:
+            \foreach \y in {0} \foreach \x in {2,3,5,7,11} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            \foreach \y in {1} \foreach \x in {1,5,7,11} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            \foreach \y in {2} \foreach \x in {5,7} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            \foreach \y in {3} \foreach \x in {1,5,7,11} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            \foreach \y in {4} \foreach \x in {5,11} \draw({\x-1},{(8-\y)*0.75}) circle[radius=8pt]; 
+            % cross out the composites
+            \foreach \y in {0} \foreach \x in {4,6,8,9,10,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {1} \foreach \x in {2,3,4,6,8,9,10,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {2} \foreach \x in {1,2,3,4,6,8,9,10,11,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {3} \foreach \x in {2,3,4,6,8,9,10,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \foreach \y in {4} \foreach \x in {1,2,3,4,6,7,8,9,10,12} \draw[thick] ({\x-1.2},{(8-\y)*0.75-0.2})--({\x-0.8},{(8-\y)*0.75+0.2});
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      The circled numbers are prime and the crossed out ones are composite.
+      This shows that the following numbers less than 60 are prime: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59.
+    </p>
+
+    <remark>
+      <title>Sieve of Eratosthenes</title>
+
+      <p>
+        To find a list of prime below a number, <m>N</m> using the sieve of Eratosthenes,
+        <ol>
+          <li>
+            <p>
+              Write a grid of numbers starting at 2 and up to <m>N</m>.
+              It is nice to use rows of 12 as shown above, and rows of 15 or 18 are nice too, but neither is a requirement.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Circle the lowest uncrossed out number.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Cross out all multiples of that number.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Repeat steps 2 and 3 until all numbers are circled or cross out
+            </p>
+          </li>
+        </ol>
+        The circled numbers are prime.
+      </p>
+    </remark>
+
+    <theorem>
+      <statement>
+        <p>
+          Fundamental Theorem of Arithmetic Every whole number <m>N \gt 1</m>, can be written as a product of primes and this can only be done one way (except for reordering).
+        </p>
+      </statement>
+    </theorem>
+
+    <example>
+      <statement>
+        <p>
+          Find the prime factorization of <m>56</m>, <m>288</m> and <m>14025</m>.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          We will use factor trees to do this efficiently:
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                First, note that <m>56=7\cdot 8</m>, So we write:
+              </p>
+
+              <image width="30%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=0.75]
+          \node{56}
+              child { node {8}}
+              child[missing]
+              child {node {7} };
+          \end{tikzpicture}
+          ]]>
+                </latex-image>
+              </image>
+
+              <p>
+                and then note that <m>8=2\cdot 2 \cdot 2</m> so we can write the diagram as:
+              </p>
+
+              <image width="45%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}[scale=0.75]
+                    \node{56}
+                        child { node {8}
+                          child { node{2}}
+                          child { node{2}}
+                          child { node{2}}
+                        }
+                        child[missing]
+                        child {node {7} };
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+
+              <p>
+                And now all of the ends of the branches are prime and this shows that
+                <me>
+                  56 = 2 \cdot 2 \cdot 2 \cdot 7 = 2^3 \cdot 7
+                </me>
+                and recall that repeated multiplication can be written in exponential form, so this can be written more compactly as
+                <me>
+                  56 = 2^3 \cdot 7
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                For <m>288</m>, we'll start with a tree and recognize using the divisibility rules that 8 is a factor of 288.
+              </p>
+
+              <image width="25%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                    <![CDATA[ 
+                        \begin{tikzpicture} \node{288} child { node {8}} child {node {36} }; \end{tikzpicture}
+                    ]]>
+                </latex-image>
+              </image>
+
+              <p>
+                and then factor 8 and 36 as well:
+              </p>
+
+              <image width="60%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \node{288}
+                child { node {8}
+                  child {node{2}}
+                  child {node{2}}
+                  child {node{2}}            
+                }
+                child[missing]
+                child {node {36} 
+                  child {node{6}}
+                  child {node{6}}  
+                };
+            \end{tikzpicture}
+          ]]>
+                </latex-image>
+              </image>
+
+              <p>
+                and finally factor the 6.
+              </p>
+
+              <image width="80%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}[scale=0.75]
+                    \node{288}
+                        child { node {8}
+                          child {node{2}}
+                          child {node{2}}
+                          child {node{2}}            
+                        }
+                        child[missing]
+                        child[missing]
+                        child {node {36} 
+                          child {node{6} 
+                            child{node{2}}
+                            child{node{3}}
+                          }
+                        child[missing]
+                      child {node{6} 
+                            child{node{2}}
+                            child{node{3}}
+                          }      
+                        };
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+
+              <p>
+                And all of the ends are prime now and this shows that
+                <me>
+                  288 = 2^5 \cdot 3^2
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                To find the prime factors of <m>14025</m>, we will take a less visual approach, but in the same spirit.
+                First, recognize that 25 is a factor and you can use long division to find the other factor therefore
+                <me>
+                  14025 = 25 \cdot 561 = 5^2 \cdot 561
+                </me>
+              </p>
+
+              <p>
+                Next, we seek a factor of 561 and using divisibility rules, 11 is a factor and we can write <m>561 = 11 \cdot 51 </m>.
+                Lastly, note that 51 is divisible by 3 and <m>51 = 3 \cdot 17</m>.
+                Putting all of this together, we get:
+                <me>
+                  14025 = 5^2 \cdot 561 = 5^2 \cdot 11 \cdot 51 = 5^2 \cdot 11 \cdot 3 \cdot 17
+                </me>
+              </p>
+            </li>
+          </ul>
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Primality Test</title>
+
+    <p>
+      From the last section, we saw using the Sieve of Eratosthenes that we can find the first handful of prime numbers.
+      This is great for finding the first few primes, but what if we want to determine if 1151 is prime? We still need to determine if the only factors are 1 and itself, but we can use the following theorem:
+    </p>
+
+    <theorem>
+      <title>Primality Test</title>
+
+      <statement>
+        <p>
+          A whole number <m>N>1</m> is prime unless it has a prime factor <m>p \leq \sqrt{N}</m>.
+          Thus to test whether <m>N</m> is prime one need only check divisibility by the primes <m>p=2,3,5,\ldots</m> that satisfy <m>p^{2}\leq N</m>.
+        </p>
+      </statement>
+    </theorem>
+
+    <note>
+      <title>Algorithm to Test a Number for Primality</title>
+
+      <p>
+        This basically gives use a recipe (called an algorithm) for determining if a number <m>N</m> is prime:
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              Check if 2 is a factor (use the divisibility test).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Check if 3 is a factor (use the divisibility test).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Check if 5 is a factor (use the divisibility test).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Check if 7 is a factor (there is no divisibility test, so use the divisibility lemma or long division).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Check if 11 is a factor (use the divisibility test).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Continue for <m>p=13, 17, \ldots</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If any of the primes are a factor, stop, the number <m>N</m> is not prime.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              If you reach <m>p^{2}>N</m>, then stop, the number is prime.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </note>
+
+    <p>
+      Let's see how this works with an example.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Is 203 prime?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First of all the square root of 203 is between 14 and 15 (since <m>14^{2}=196</m> and <m>15^{2}=225</m>), so we need to check if 203 is divisible by 2,3,5,7,11, and 13.
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                203 isn't divisible by 2 (ends in a 3)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                203 is not divisible by 3 (sum of digits is 5)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                203 is not divisible by 5 (doesn't end in 0 or 5)
+              </p>
+            </li>
+
+            <li>
+              <p>
+                203 is divisible by 7: 2037
+              </p>
+            </li>
+          </ul>
+        </p>
+
+        <p>
+          This shows that <m>203=7 \cdot 29</m>, so this isn't prime.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Here's another example
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Is 293 prime?
+        </p>
+      </statement>
+
+      <solution>
+        <p />
+          <p>
+            First, let's determine which primes we need to check.
+            Since <m>17^{2}=289</m> and <m>23^{2}=529</m>, we can check up through 17.
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  293 isn't divisible by 2 (ends in a 3)
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  293 is not divisible by 3 (sum of digits is 14, not a multiple of 3)
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  293 is not divisible by 5 (doesn't end in 0 or 5)
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  293 is not divisible by 7: 2937
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  293 is not divisible by 11.
+                  Use the divisibility test <m>2+3-9 = 5-9=-4</m>, which is not a multiple of 11.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Check if 293 is divisible by 13.
+                  29313 and since there is a nonzero remainder, it is not divisible by 13.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Check if 293 is divisible by 17.
+                  29317 and since there is a nonzero remainder, it is not divisible by 17.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </solution>
+      </example>
+    </subsection>
+  </section>

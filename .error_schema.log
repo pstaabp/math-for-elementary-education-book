@@ -1,0 +1,5 @@
+<string>:512:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element cell has extra content: image
+<string>:511:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element row has extra content: cell
+<string>:497:0:ERROR:RELAXNGV:RELAXNG_ERR_EXTRACONTENT: Element tabular has extra content: row
+<string>:492:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element table failed to validate content
+<string>:492:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element table there

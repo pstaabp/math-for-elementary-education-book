@@ -1,0 +1,76 @@
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : converting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx to svg graphics for placement in /Users/pstaab/code/informal-number-theory-book/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.37', 'publisher': '/Users/pstaab/code/informal-number-theory-book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : converting fig-pencils-2.tex to fig-pencils-2.pdf
+ERROR   : LaTeX compilation of fig-pencils-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-pencils-2.tex failed
+ERROR   : Unable to generate some latex-image assets:
+ LaTeX compilation failed for 1 "latex-image"(s).
+Review the log for error messages, and LaTeX transcripts.
+Images are:
+  fig-pencils-2.tex
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-xusv49w5
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /Users/pstaab/code/informal-number-theory-book/output/web.
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.11.17
+INFO    : Downloading Runestone Services, version 7.11.17
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /Users/pstaab/code/informal-number-theory-book/source/main.ptx to HTML in /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-52ovldgo
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+WARNING : * PTX:WARNING: Unstructured content within a list item is being ignored ("[->] (-0.5,0) – (5.5,0) / in 0/0,1/100,2/200,3/300,4/400,5/500 (\x,0.1) – (\x,-0.1) node [below] {$\lab$}")
+INFO    : *              located within: "Number Lines" (title)
+ERROR   : * PTX:ERROR:   a cross-reference ("xref") uses references [sect:rounding] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+INFO    : *              located within: "Number Lines" (title)
+WARNING : * PTX:WARNING: Unstructured content within a list item is being ignored ("[->,very thick] (-0.5,0) – (8.5,0) in 1,2,...,7 (\x,0.1) – (\x,-0.1) node [below] {$\frac{\x}{5}$} (0,0) node [below] {0}")
+INFO    : *              located within: "Number Lines" (title)
+ERROR   : * PTX:ERROR:   a cross-reference ("xref") uses references [section-diagrams-models] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+INFO    : *              located within: "Bar Diagrams" (title)
+WARNING : * PTX:WARNING: Unstructured content within a list item is being ignored ("in 0,0.75,1.5,2.25 (\x,0) rectangle ({\x+0.5},0.5) in 3,3.2,3.4 [thick] (\x,0)–(\x,0.5) in 0.1,0.25,0.4,0.55,0.7 (3.6,\y) circle[radius=1.5pt] in 0.1,0.25,0.4 (3.8,\y) circle[radius=1.5pt]")
+INFO    : *              located within: "The Dots-Line-and-Boxes (DLB) model" (title)
+WARNING : * PTX:WARNING: Unstructured content within a list item is being ignored ("in 0,0.75 (\x,0) rectangle ({\x+0.5},0.5) in 1.5,1.7,...,3.2 [thick] (\x,0)–(\x,0.5) in 0.1,0.25 (3.4,\y) circle[radius=1.5pt]")
+INFO    : *              located within: "The Dots-Line-and-Boxes (DLB) model" (title)
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-52ovldgo
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-p2nwtn0x
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+CRITICAL: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

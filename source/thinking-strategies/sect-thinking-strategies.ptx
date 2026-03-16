@@ -1,0 +1,983 @@
+<section xml:id="sect-thinking-strategies">
+  <title>Thinking Strategies</title>
+
+  <introduction>
+    <p>
+      First, recall that there are three addition properties that were introduced in  <xref ref="sect-add-props" />.
+      Let <m>a, b</m> and <m>c</m> be any whole number.
+      Then
+    </p>
+
+    <p>
+      <dl width="wide">
+      <li>
+        <title>Additive Identity</title>
+
+        <p>
+          <men xml:id="prop-add-identity">
+            a+ 0 = a
+          </men>
+        </p>
+      </li>
+
+      <li>
+        <title>Additive Commutative</title>
+
+        <p>
+          <men xml:id="prop-add-commutative">
+            a+b = b+ a
+          </men>
+        </p>
+      </li>
+
+      <li>
+        <title>Additive Associative</title>
+
+        <p>
+          <men xml:id="prop-add-associative">
+            a+(b+c) = (a+b)+c
+          </men>
+        </p>
+      </li>
+      </dl>
+    </p>
+
+    <p>
+      as well as the Any Order Addition Lemma (<xref ref="lem-any-order-add" />)
+    </p>
+
+    <p>
+      Often with the following thinking strategies, we will cite these properties.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Thinking Strategies for Addition</title>
+
+    <p>
+      This section discusses good ways to think about adding numbers using the properties above.
+    </p>
+
+
+    <paragraphs>
+      <title>Counting-on</title>
+
+      <p>
+        This uses the idea of starting at the first addend and then counting on the second addend.
+        For example
+        <me>
+          7+2=9
+        </me>
+        starts with 7 and then adds on 2 to get to 9.
+      </p>
+
+      <p>
+        When the second addend is small the counting-on method is a good thinking strategy.
+        In addition, an example like <m>130 + 20</m> can be thought of as counting on if you count by 10s.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Commutativity</title>
+
+      <p>
+        One can use the additive commutative property (<xref ref="prop-add-commutative" />) to help in other operation.
+        For example, <m>2+6</m> can be thought-of in the “counting-on” method, that is start at 2 and count up 6 more to get to 8.
+        However, if we use the commutative property, then <m>2+6 = 6+2</m> is easier to use the counting-on method.
+        In short, if either addend is small, count on with that number.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Doubles</title>
+
+      <p>
+        The double <m>2+2, 3+3,\ldots</m> are important to know and will help when getting to multiplication.
+        See the next section.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Tens Combinations</title>
+
+      <p>
+        Recall that the tens combinations are pairs of numbers that add to 10 or <m>5+5, \; 4+6,\; 3+7,\; 2+8,\; 1+9,\;</m>.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Adding Ten or One Hundred</title>
+
+      <p>
+        Consider <m>6+10</m>.
+        As we saw above, we can think of this using commutative and counting on to get <m>6+10 = 10 + 6</m> and count up from 10 to 6 to get 16.
+        After that is natural, one should be able to add multiples of ten easily.
+        For example in <m>28+30</m>, recall place value to get:
+        <me>
+          28 + 30  = (20+8) + 30 = 8 + (20 + 30) = 8 + 50 = 58
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Compatible Numbers</title>
+
+      <p>
+        Compatible numbers are those that add to a resulting “nice” number.
+        This result is often a multiple of 10 or 100 and are helpful in thinking strategies.
+        The following are example of compatible numbers with respect to addition: <m>17+23</m>, <m>82 +38</m>, <m>46+34</m>, <m>170 + 230</m>, <m>480 + 220</m>.
+      </p>
+
+      <p>
+        Notice in the first 3 pairs, the ones digits form a tens combination and in the latter 2 pairs, the tens digits form a tens combination.
+      </p>
+
+      <p>
+        Consider a problem like <m>34 + 48 + 16 + 32 +7</m>.
+        Perhaps you might think to do the following:
+        <me>
+          \begin{aligned} 34 + 48 + 16 + 32 + 7 \amp = 82 + 16 + 32 +7 \\ \amp = 98 + 32 + 7 \\ \amp = 130 +7\\ \amp = 137 \end{aligned}
+        </me>
+      </p>
+
+      <p>
+        Many of these steps are challenging to do mentally mainly because there is bundling that needs to occur.
+        Instead, we might use the any-order corollary, we can add these in any way and
+        <me>
+          34 + 48 + 16 + 32 + 7 = (34 + 16) + (48+32) + 7
+        </me>
+        These pairs are compatible
+        <me>
+          \phantom{34 + 48 + 16 + 32 + 7}  =  50 + 80 + 7 = 137 \phantom{777777}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Compensation</title>
+
+      <p>
+        The method of compensation is a way to add larger numbers in a more efficient way by changing the addends.
+        An example is <m>48 + 34</m>.
+        We will see below how to think about place value with this, however if we write this as
+        <me>
+          48 + 34 = 48 + (2 +32) = (48+2) + 32
+        </me>
+        Using the Associative Property
+        <me>
+          = 50 + 32 = 82 \phantom{77777777}
+        </me>
+      </p>
+
+      <p>
+        This works by transferring any number from one addend to the other.
+        We can also write this as
+      </p>
+
+      <image width="50%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=2.25]
+            \draw (0,0.28) node {\scriptsize $+2$};
+            \draw[<-](-0.2,0.1) .. controls (0.0,0.2) .. (0.2,0.1); 
+            \draw(0,0) node {$48 + 34$};
+            \draw(0.25,0) node [right] {$=50+32=82$};
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </paragraphs>
+
+    <p>
+      We now look at a few examples of using these thinking strategies.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use compensation to find the following addition problems:
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>67 + 38</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>98 + 23</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>993 + 231</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                One way to think about <m>67+38</m> is to think about transferring 3 from the second addend to the first.
+              </p>
+
+              <image width="50%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}
+                    \draw (0,0.7) node {\scriptsize $+3$};
+                    \draw[<-](-0.3,0.3) .. controls (0.0,0.5) .. (0.3,0.3); 
+                    \draw(0,0) node {$67 + 38$};
+                    \draw(0.55,0) node [right] {$=70+35=105$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+
+              <p>
+                alternatively, we transfer 2 from the first to the second addend or:
+              </p>
+
+              <image width="50%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}
+                    \draw (0,0.7) node {\scriptsize $+2$};
+                    \draw[->](-0.3,0.3) .. controls (0.0,0.5) .. (0.3,0.3); 
+                    \draw(0,0) node {$67 + 38$};
+                    \draw(0.55,0) node [right] {$=65+40=105$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </li>
+
+            <li>
+              <p>
+                One way to tackle <m>98+23</m> one is to transfer 2 from the second addend to the first:
+              </p>
+
+              <image width="50%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}
+                    \draw (0,0.7) node {\scriptsize $+2$};
+                    \draw[<-](-0.3,0.3) .. controls (0.0,0.5) .. (0.3,0.3); 
+                    \draw(0,0) node {$98+23$};
+                    \draw(0.55,0) node [right] {$=100+21=121$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </li>
+
+            <li>
+              <p>
+                One way to approach <m>993+231</m> is to transfer 7 from the second addend to the first:
+              </p>
+
+              <image width="50%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                  \begin{tikzpicture}
+                    \draw (0,0.7) node {\scriptsize $+7$};
+                    \draw[<-](-0.3,0.3) .. controls (0.0,0.5) .. (0.3,0.3); 
+                    \draw(0,0) node {$993+231$};
+                    \draw(0.6,0) node [right] {$=1000+224=1224$};
+                    \end{tikzpicture}
+                  ]]>
+                </latex-image>
+              </image>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Compensation is the most difficult, but perhaps the most important thinking strategy for addition.
+      We show an algebraic as well as a diagram that shows this.
+      First, let's say that we want to find <m>a+b</m> and we can write <m>a=k+j</m>, then
+      <me>
+        a + b = (k+j) +b = k + (j+b)
+      </me>
+      the compensation is the transfer of <m>k</m> from <m>a</m> to <m>b</m>.
+    </p>
+
+    <p>
+      A bar diagram leads nicely to this.
+      We will use the example <m>43 + 56</m>, but this works for any pair of addends.
+      First, we will draw a bar diagram for <m>43+56</m>
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (8,0.5); 
+            \draw (3.5,0)--(3.5,0.5);
+            \draw[brace] (3.5,-0.1) -- (0,-0.1) node[bracelabel=below] {43}; 
+            \draw[brace] (8,-0.1) -- (3.5,-0.1) node[bracelabel=below] {56}; 
+            \draw[brace] (0,0.6) -- (8,0.6) node[bracelabel=above] {?}; 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      Next, let's consider the compensation <m>43+56=40+59</m> where <m>3</m> has been transferred from the first addend to the second one.
+      This can be drawn as another above:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (8,0.5); 
+            \draw (3.5,0)--(3.5,0.5);
+            \draw[dashed] (3,0) -- (3,0.5); 
+            \draw[brace] (3.5,-0.1) -- (0,-0.1) node[bracelabel=below] {43}; 
+            \draw[brace] (8,-0.1) -- (3.5,-0.1) node[bracelabel=below] {56}; 
+            \draw (0,1.5) rectangle (8,2);
+            \draw (3,1.5) -- (3,2);
+            \draw[brace] (3,1.4) -- (0,1.4) node[bracelabel=below] {40}; 
+            \draw[brace] (8,1.4) -- (3,1.4) node[bracelabel=below] {59}; 
+            \draw[brace] (0,2.1) -- (8,2.1) node[bracelabel=above] {?}; 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+  </subsection>
+
+
+  <subsection>
+    <title>Thinking Strategies for Subtraction</title>
+
+    <p>
+      This covers some ways to think about subtraction problems.
+      We saw the <em>counting down</em> and <em>counting up</em> in <xref ref="ch-numbers" />, but we will explain this with some larger numbers.
+      The <em>compensation</em> method is similar to that of addition, but works a bit differently.
+    </p>
+
+
+    <paragraphs>
+      <title>Counting Down</title>
+
+      <p>
+        If we are thinking of a problem like <m>65 - 23</m>, you can use <em>counting down</em> as starting at 65 and counting down 23.
+        However, it's easier to count first by 2 tens, then by 3 ones.
+        The number line below shows this:
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=2.25]
+            \draw[->] (3.5,0) -- (7.5,0);
+            \foreach \x in {40,45,50,55,60,65,70} {\draw ({0.1*\x},0.1) -- ({0.1*\x},-0.1) node [below] {\x};}
+            \foreach \x in {40,...,70} \draw ({\x/10},0.05) -- ({\x/10},-0.05); 
+            %\draw[<-] (3,0.2) .. controls (5,0.75) and (6,0.75) .. (8,0.2) node[midway, above] {?};  
+            \foreach \x in {5.5,4.5} {\draw[<-,thick] (\x,0.1) .. controls ({\x+0.25},0.25) and ({\x+0.75},0.25) .. ({\x+1},0.1); }
+            \foreach \x in {4.4,4.3,4.2} {\draw[<-,thick] (\x,0.1) .. controls ({\x+0.025},0.15) and ({\x+0.075},0.15) .. ({\x+0.1},0.1); }
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Counting Up</title>
+
+      <p>
+        Similar to counting down, if we have a problem like <m>65-23</m>, we start at 23 and count up to 65.
+        However, first count up by tens to 63, then up 2 to 65.
+        Visually, we can see this with:
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.75]
+            \draw[->] (1.5,0) -- (7.5,0);
+            \foreach \x in {20,23,30,33,40,43,50,53,60,63,70} {\draw ({0.1*\x},0.1) -- ({0.1*\x},-0.1) node [below] {\x};}
+            \foreach \x in {20,...,70} \draw ({\x/10},0.05) -- ({\x/10},-0.05); 
+            \foreach \x in {2.3,3.3,4.3,5.3} {\draw[->,thick] (\x,0.2) .. controls ({\x+0.25},0.5) and ({\x+0.75},0.5) .. ({\x+1},0.2); }
+            \foreach \x in {6.3,6.4} {\draw[-,thick] (\x,0.2) .. controls ({\x+0.025},0.25) and ({\x+0.075},0.25) .. ({\x+0.1},0.2); }
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        and this shows that the result (difference) is the total number of hops or 42.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Compensation</title>
+
+      <p>
+        Similar to that of compensation with addition, we can simplify calculations involving subtraction.
+        Consider the following:
+        <me>
+          \begin{aligned} 34 - 18 \amp = 34 - 18 + (2-2) \qquad \text{using the additive identity property} \\ \amp = (34+2)-18-2 \qquad \text{using the any-order property} \\ \amp = 36 - 20 = 16 \end{aligned}
+        </me>
+      </p>
+
+      <p>
+        Note: since one can add any number, typically it's best to add or subtract a number to make the subtrahend a multiple of 10 (or as we will see later a multiple of 100).
+        Note that if we subtract 4 from each like:
+        <me>
+          \stackrel{-4}{34} - \stackrel{-4}{18} = 30 -14 = 16
+        </me>
+      </p>
+
+      <p>
+        is correct, however the calculation <m>36-20</m> is easier to do than <m>30-14</m>.
+        Why?
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Compatible Numbers</title>
+
+      <p>
+        Similar to that of compatible numbers for addition, compatible numbers for subtraction are those that are easier to do or result in “nice” numbers, like those with multiples of 10 or 100.
+        The following are compatibles <m>93-23</m>, <m>67-17</m>, <m>120-30</m>, <m>138-18</m>.
+        This allows us to do some operations like <m>97 + 28 -17 - 8</m>.
+        If we work this from left to right:
+        <me>
+          \begin{aligned} 97 + 28 -17 - 8 \amp = 125 - 17-8 \amp\amp\text{Add the first two numbers} \\ \amp = 108 - 8 \amp\amp\text{now subtract $125-17$}\\ \amp = 100 \end{aligned}
+        </me>
+      </p>
+
+      <p>
+        and you should notice that the last operation was easy to do, but the first was not.
+        Instead we can rearrange things as:
+        <me>
+          \begin{aligned} 97 + 28 -17 - 8 \amp = (97-17)+(28-8) \amp\amp\text{rearrange for compatible numbers} \\ \amp = 80 +20 \\ \amp = 100 \end{aligned}
+        </me>
+      </p>
+
+      <p>
+        and all of these operations are relatively easy to do.
+      </p>
+    </paragraphs>
+
+    <example>
+      <statement>
+        <p>
+          Evaluate the following subtraction problems using compensation:
+          <ol>
+            <li>
+              <p>
+                <m>54 - 37</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>92 - 43</m>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                <m>54-37</m>
+                <me>
+                  \stackrel{+3}{54} - \stackrel{+3}{37}= 57-40 = 17
+                </me>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>92-43</m>
+                <me>
+                  \stackrel{-3}{92} - \stackrel{-3}{43} = 89 - 40 = 49
+                </me>
+              </p>
+
+              <p>
+                Notice that this one requires <m>92-3</m> to be done which isn't too bad using counting down.
+                However, alternatively, one can do this problem using:
+                <me>
+                  \stackrel{+7}{92} - \stackrel{+7}{43} = 99 - 50 = 49
+                </me>
+                with the same result and this doesn't require an unbundling.
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Let's look at a diagram to show why this works.
+      We'll consider the last problem<m>92-43</m> and will add 7 to both the minuend and subtrahend.
+      To see this most easily, we'll use a stacked bar diagram like:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (5,0.5);
+            \draw (0,1.5) rectangle (8,2); 
+            \draw[brace] (5,-0.1) -- (0,-0.1) node[bracelabel=below] {43};
+            \draw[brace] (8,-0.1) -- (5,-0.1) node[bracelabel=below] {?}; 
+            \draw[brace] (0,2.1) -- (8,2.1) node[bracelabel=above] {92}; 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      To demonstrate the compensation, we'll add 7 to the end of both bars.
+      Visually, this will be easier if we do so on the left end:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (-1,0) rectangle (5,0.5); \draw (0,0) -- (0,0.5);
+            \draw (-1,1.5) rectangle (8,2); \draw (0,1.5) -- (0,2); 
+            \draw[brace] (0,-0.1) -- (-1,-0.1) node[bracelabel=below] {7}; 
+            \draw[brace] (5,-0.1) -- (0,-0.1) node[bracelabel=below] {43};
+            \draw[brace] (8,-0.1) -- (5,-0.1) node[bracelabel=below] {?}; 
+            \draw[brace] (-1,2.1) -- (0,2.1) node[bracelabel=above] {7}; 
+            \draw[brace] (0,2.1) -- (8,2.1) node[bracelabel=above] {92}; 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And the reason this works is because the difference (the ?) hasn't changed by adding the same amount to each end of the bars.
+    </p>
+
+    <p>
+      Subtraction compensation allows for subtracting the same amount as well.
+      This would be seen visually by removing the same amount off each bar.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Thinking Strategies for Multiplication</title>
+
+    <p>
+      Recall that there are three properties of multiplication that we saw in <xref ref="sect-multiplication-division"/> as well as the distributive property.
+      If <m>a,b</m> and <m>c</m> are whole numbers then
+    </p>
+
+    <p>
+      <dl width="wide">
+      <li>
+        <title>Multiplicative Identity</title>
+
+        <p>
+          <men xml:id="prop-multiplicative-identity">
+            1 \times a = a
+          </men>
+        </p>
+      </li>
+
+      <li>
+        <title>Multiplicative Commutative</title>
+
+        <p>
+          <men xml:id="prop-multiplicative-commutative">
+            a \times b = b \times a
+          </men>
+        </p>
+      </li>
+
+      <li>
+        <title>Multiplicative Associative</title>
+
+        <p>
+          <men xml:id="prop-multiplicative-Associative">
+            (a \times b) \times c = a \times (b \times c)
+          </men>
+        </p>
+      </li>
+
+      <li>
+        <title>Distributive Property</title>
+
+        <p>
+          <men xml:id="prop-distributive">
+            (a+b) \times c = a \times c + b \times c
+          </men>
+        </p>
+      </li>
+      </dl>
+    </p>
+
+    <p>
+      There are 3 standard stages for teaching mathematics which we will cover.
+      Before this, a student should be proficient at:
+      <ul>
+        <li>
+          <p>
+            counting to 100,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            addition doubles from <m>1+1</m> to <m>10 + 10</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            skip counting by 2, 3, 5 and 10.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+
+    <paragraphs>
+      <title>Compatible Numbers and Any-Order Multiplication</title>
+
+      <p>
+        Similar to that of addition, we can use any-order multiplication to do operations.
+        Consider <m>3 \times 5 \times 7 \times 4</m>.
+        Although we can go left to right in multiplication, it is simpler if we collect by compatible numbers.
+        In this case, note that <m>5 \times 4=20</m>, which is an easy number to multiply.
+        <me>
+          \begin{aligned} 3 \times 5 \times 7 \times 4 \amp = (4 \times 5) \times (3 \times 7) \amp\amp\text{Use any-order property} \\ \amp = 20 \times 21 = 420 \amp\amp\text{think of doubling 21 then multiply by 10} \ \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Compensation with Multiplication</title>
+
+      <p>
+        Compensation is a good thinking strategy for pairs of numbers that can be done easier in a little different form.
+        For example, if have <m>36 \times 15</m>, we can write <m>36 = 18 \times 2</m> and then use the associative property.
+        <me>
+          24 \times 15 = 12 \times 2 \times 15 = 12 \times 30 = 360
+        </me>
+      </p>
+
+      <p>
+        The following show a few other examples:
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            Find the following using compensation:
+            <ol>
+              <li>
+                <p>
+                  <m>50 \times 14</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>555 \times 6</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <me>
+                    50 \times 14 = 50 \times 2 \times 7 = 100 \times 7 = 700
+                  </me>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <me>
+                    555 \times 6 = 111 \times 5 \times 6 = 111 \times 30 = 3330
+                  </me>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </solution>
+      </example>
+
+      <p>
+        Why does compensation work for multiplication? It is basically the associative multiplicative property.
+        In general, if we have the number <m>n</m> and <m>m</m> such that <m>n \cdot m = p</m>,<fn>Note that since we are using variables here, we use a <m>\cdot</m> to denote multiplication instead of the <m>\times</m> symbol.</fn> then
+        <me>
+          n \cdot m = (j \cdot k) \cdot m = j \cdot (k \cdot m)
+        </me>
+      </p>
+
+      <p>
+        The following diagram also shows compensation for multiplication of <m>5 \times 14 = 10 \times 7</m>.
+        We first start with a grid showing <m>5 \times 14</m>.
+        We'll color half as orange and half as blue.
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \fill[MaterialBlue200] (0,0) rectangle (7,5);
+            \fill[MaterialOrange800] (7,0) rectangle (14,5); 
+            \draw (0,0) grid (14,5);
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        Restacking the blocks as:
+      </p>
+
+      <image width="40%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+          \fill[MaterialBlue200] (0,0) rectangle (7,5);
+            \fill[MaterialOrange800] (0,5) rectangle (7,10); 
+            \draw (0,0) grid (7,10);
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        results a grid of lengths 7 and 10, showing that <m>14 \times 5 = 7 \times 10</m>.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiplying by 4,5,8,9,10,25,100</title>
+
+      <p>
+        The numbers 4,5,8,9,10,25,100 are easier to multiply than other numbers.
+        When you see these, take advantage of the following strategies.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiply by 4</title>
+
+      <p>
+        Just double the number twice.
+        For example,
+        <me>
+          \begin{aligned} 4 \times 14 \amp= 2 \times 28 = 56 \\ 4 \times 130 \amp = 2 \times 260 = 520 \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiply by 5</title>
+
+      <p>
+        Take the number and halve then multiply by 10 (or flip the order of this).
+        For example,
+        <me>
+          \begin{aligned} 18 \times 5 \amp = 9 \times 10 = 90 \\ 540 \times 5 \amp = 270 \times 10 = 2700 \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiply by 9</title>
+
+      <p>
+        Use the rule <m>9x=10x-x</m>.
+        That is multiply by 10 then subtract the number.
+        For example,
+        <me>
+          \begin{aligned} 35 \times 9 \amp = 350 - 35 = 315 \\ 87 \times 9 \amp = \stackrel{+13}{870} - \stackrel{13}{87}\amp\amp\text{Use compensation} \\ \amp = 883-100 = 783 \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiply by 10</title>
+
+      <p>
+        Append a 0 to the end of the number.
+        For example,
+        <me>
+          \begin{aligned} 91 \times 10 \amp = 910 \\ 87392 \times 10 \amp = 873920 \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiply by 25</title>
+
+      <p>
+        Multiply the number by 100 and divide by 4 (or flip the order).
+        Note: we will see division by 4 below, but you can divide by 2 twice.
+        For example,
+        <me>
+          \begin{aligned} 44 \times 25 \amp = 11 \times 100 = 1100\amp\amp\text{Recall $44\div 4 = 22 \div 2 = 11$}\\ 164 \times 25 \amp = 41 \times 100 = 4100\amp\amp\text{Note that $164\div 4 = 82 \div 2 = 41$} \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiply by 100</title>
+
+      <p>
+        Append two zeros to the end of the number.
+        For example,
+        <me>
+          \begin{aligned} 25 \times 100 \amp = 2500 \\ 5836 \times 100 \amp = 583600 \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+  </subsection>
+
+
+  <subsection>
+    <title>Thinking Strategies for Division</title>
+
+    <paragraphs>
+      <title>Compensation</title>
+
+      <p>
+        Compensation for division uses properties of division and we’ll assume that the result of the division has no remainder.
+        Let <m>n = k \cdot a</m>, that is that <m>n</m> is a multiple of <m>a</m>, the divisor.
+        Also, assume that <m>n</m> and <m>a</m> have a common factor, <m>m</m>, that is <m>n=i \cdot m</m> and <m>a = j \cdot m</m>, therefore we can write:
+        <me>
+          n \div a = (i \cdot m) \div (j \cdot m)  = i \div j
+        </me>
+      </p>
+
+      <p>
+        There are a number of common places where compensation is nice to do with division as the following examples show.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Divide by 4</title>
+
+      <p>
+        Halve twice.
+        For example,
+        <me>
+          48 \div 4 = 24 \div 2 = 12
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Divide by 5</title>
+
+      <p>
+        Double then divide by 10.
+        For example,
+        <me>
+          \begin{aligned} 270 \div 5 = 540 \div 10 = 54 \\ 405 \div 5 = 810 \div 10 = 81 \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Divide by 10</title>
+
+      <p>
+        Remove a zero from the end of the number.
+        For example,
+        <me>
+          \begin{aligned} 1850 \div 10 = 185 \\ 2840 \div 10 = 284 \end{aligned}
+        </me>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Divide by 25</title>
+
+      <p>
+        Multiply by 4 then divide by 100.
+        This is generally easiest to think of doubling twice.
+        The following examples show an good way to think about this.
+        <me>
+          175 \div 25 = 350 \div 50 = 700 \div 100 = 7
+        </me>
+        or
+        <me>
+          2050 \div 25 = 4100 \div 50 = 8200 \div 100 = 82
+        </me>
+      </p>
+    </paragraphs>
+  </subsection>
+</section>

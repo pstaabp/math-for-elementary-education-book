@@ -1,0 +1,14 @@
+<chapter xml:id="ch-models" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Models</title>
+
+  <introduction>
+    <p>
+      As noted in the previous chapter, abstraction is an important part of mathematics.  This chapter continues with understanding diagrams and the related models and then discusses in depth the role of word problems in understanding mathematics.  Finally, these are all pulled together in a Teacher's solution which is a comprehensive way of solving, showing and explaining a word problem.  
+
+    </p>
+  </introduction>
+
+  <xi:include href="./sect-diagrams-models.ptx" />
+  <xi:include href="./sect-word-problems.ptx" />
+  <xi:include href="./sect-teachers-solutions.ptx" />
+</chapter>

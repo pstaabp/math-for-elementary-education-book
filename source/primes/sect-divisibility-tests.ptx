@@ -1,0 +1,613 @@
+<section xml:id="sect-divisibility-tests">
+  <title>Divisibility Tests</title>
+
+  <introduction>
+    <p>
+      There are a number of cases when it is advantageous to know if numbers divide other numbers evenly.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            You would wonder if there were 23 gloves in a box near a classroom.
+            Which glove is missing its pair?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Why isn't 568 a reasonable answer if a student multiplied another number by 3?
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      For the first, example, you know that 2 does not divide 23 evenly because of the divisibility test that an even number ends in 0,2,4,6 or 8.
+      (We will prove this soon).
+      For the second example, we use use a divisibility by 3 test to show that a number is only divisible by 3 if the sum of its digits is also divisible by 3.
+      (What is the sum of the digits in 568?)
+    </p>
+
+    <p>
+      We will also develop divisibility tests for 4,5,8,9,10 and 11.
+    </p>
+
+    <definition>
+      <statement>
+        <p>
+          We say “<m>A</m> is divisible by <m>k</m>” whenever <m>A</m> is a multiple of <m>k</m>, that if <m>A=k \cdot a</m> for some whole number <m>a</m>.
+          In addition, the following phrases have the same meaning:
+        </p>
+
+        <p>
+          <ul>
+            <li>
+              <p>
+                <m>A</m> is divisible by <m>k</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>k</m> divides <m>A</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>A</m> is a multiple of <m>k</m>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                <m>k</m> is a factor of <m>A</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      Recall that the Quotient-Remainder theorem states that for any pair of whole numbers <m>A</m> and <m>k</m> that there exist unique numbers <m>a</m> and <m>r</m> such that <m>A=a\cdot k+r</m>, which we often think of as <m>A \div k= a\;R\;r</m>.
+    </p>
+
+    <p>
+      Divisibility, in short, means that <m>r=0</m>, that there is no remainder.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Grid Diagrams for Divisibility</title>
+
+    <p>
+      Divisibility can be seen in a rectangular grid diagram.
+      We know that 3 divides 15 and can see it in the following diagram:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) grid (5,3);
+            \draw[decorate,decoration={brace,amplitude=5}] (0,0) -- (0,3) node [midway, left=2pt+3pt] {3};
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      There are 15 squares and there are 3 rows with the same number of squares per row (5).
+    </p>
+
+    <p>
+      In contrast, 4 does not divide 15.
+      In the following diagram:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \fill[MaterialBlue300] (3,0) rectangle (4,3); 
+            \draw (0,0) grid (3,4);
+            \draw[decorate,decoration={brace,amplitude=5}] (0,0) -- (0,4) node [midway, left=2pt+3pt] {4};
+            \draw (3,0) -- (4,0) -- (4,3) -- (3,3);  \draw (3,1) -- (4,1); \draw (3,2) -- (4,2); 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      The remainder is not 0.
+    </p>
+
+    <p>
+      We can show this in general with the following plot.
+      If <m>k</m> divides <m>A</m>, then
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=0.4]
+            \draw (0,0) rectangle (15,10); 
+            \draw (0,0) grid (1,4); 
+            \node at (0.5,5) {$\vdots$};
+            \draw (0,6) grid (1,10); 
+            \draw (1,0) grid (4,1); 
+            \node at (7.5,0.5) {$\cdots$};
+            \draw (11,0) grid (15,1); 
+            \draw (1,9) grid (4,10);
+            \draw (11,9) grid (15,10); 
+            \draw (14,1) grid (15,4);
+            \draw (14,6) grid (15,9);
+            \draw (14.5,5) node {$\vdots$}; 
+            \draw (7.5,5) node {$A$};
+            \draw[brace] (-0.5,0) -- (-0.5,10) node[bracelabel=left] {$k$};
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+  </subsection>
+
+
+  <subsection>
+    <title>Long Division and Divisibility</title>
+
+    <p>
+      Recall as discussed above, a number <m>A</m> is divisible by <m>k</m>, if under division, there is no remainder.
+      For larger numbers, we can use long division to do this and check the remainder.
+      The following example shows this.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Does 9 divide 4725?
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          We can use long division to determine this.
+        </p>
+
+        <p>
+          47259 And since the remainder is 0, this means that yes, 9 divides 4725.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The next two examples shows that we can use our mental math skills to check divisibility in some cases relatively easily.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use mental math to determine if 3 divides 912.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          We can do this first recognizing that <m>912=900+12</m> so
+          <me>
+            912 \div 3 = (900 + 12) \div 3 = 900 \div 3 + 12 \div 3 = 300 + 4 = 304.
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Use mental math to determine if 6 divides 1240.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Similar to the example above, recognize that <m>1240 = 1200 + 40</m> so
+          <me>
+            1240 \div = (1200+40) \div 6 = 1200 \div 6 + 40 \div 6 = 200 + (6 \; R \; 6)
+          </me>
+        </p>
+
+        <p>
+          So 6 does not divide 1240.
+        </p>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>Divisibility Lemma</title>
+
+    <p>
+      In each of the two examples above, notice that we have taken a relatively large number and written it as the sum of two number, the first of which is divisible.
+      The following lemma generalizes this idea:
+    </p>
+
+    <lemma xml:id="lem-divisibility">
+      <statement>
+        <p>
+          Divisibility Lemma Suppose <m>A</m> is a number divisible by <m>k</m>.
+          Then
+          <ul>
+            <li>
+              <p>
+                If <m>B</m> is divisible by <m>k</m>, then <m>A+B</m> is divisible by <m>k</m>.
+              </p>
+            </li>
+
+            <li>
+              <p>
+                If <m>B</m> is not divisible by <m>k</m>, then <m>A+B</m> is not divisible by <m>k</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </statement>
+    </lemma>
+
+    <p>
+      Above we showed that <m>1240</m> is not divisible by <m>6</m>.
+      The following example uses the divisibility lemma to do this.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the divisibility lemma to show that <m>1240</m> is not divisible by <m>6</m>.
+        </p>
+
+        <p />
+          <p>
+            First, notice that we can write <m>1240=1200+40</m>, so this will be <m>A=1200</m> and <m>B=40</m>.
+            It is important that the first number is divisible by <m>k</m>, in this case <m>6</m>.
+            Because <m>B=40</m> is not divisible by 6, the divisibility lemmas shows that <m>1240</m> is not divisible by 6.
+          </p>
+        </statement>
+      </example>
+
+      <example>
+        <statement>
+          <p>
+            Is <m>4235</m> divisible by 7?
+          </p>
+        </statement>
+
+        <solution>
+          <p>
+            We will use the divisibility lemma to show this and write <m>4235=4200+35</m>, noting that the first number, <m>A=4200</m> is divisible by 7 because <m>A=7\cdot 600</m> and <m>B=35</m> is also divisible by 7, so <m>4235</m> is divisible by 7.
+          </p>
+        </solution>
+      </example>
+
+      <p>
+        Now, we tackle the proof of the divisibility lemma.
+      </p>
+
+
+      <proof>
+        <title>Picture Proof of the Divisibility Lemma</title>
+
+        <p>
+          Recall that the theorem assumption is that <m>A</m> is divisible by <m>k</m>.
+        </p>
+
+        <p>
+          First, we will show that if <m>B</m> is divisible by <m>k</m> then <m>(A+B)</m> is divisible by <m>k</m>.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (4,4); \draw (2,2) node {$A$};
+            \draw (4,0) rectangle (7,4); \draw (5.5,2) node {$B$}; 
+            \draw[decorate,decoration={brace,amplitude=5}] (0,0) -- (0,4) node [midway, left=2pt+3pt] {$k$};
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          The picture shows that <m>A</m> is evenly <m>k</m> rows of some number as well as <m>B</m> is evenly <m>k</m> rows of some (maybe different) number.
+          The result shows that <m>A+B</m> (the total of <m>A</m> and <m>B</m>) is divisible by <m>k</m>.
+        </p>
+
+        <p>
+          The same picture shows the result that if <m>A+B</m> is divisible by <m>k</m> (indicated by <m>A+B</m> is <m>k</m> rows of some number).
+          Then <m>B</m> is divisible by <m>k</m>.
+          (indicated that <m>B</m> is <m>k</m> rows of some number).
+        </p>
+      </proof>
+
+      <p>
+        Note: many of the lemmas and divisibility theorems in this chapter are proven in <xref ref="sect-divisibility-proofs" /> later in this chapter and the algebraic proof of the Divisibility Lemma is one of these.
+      </p>
+
+      <theorem xml:id="thm-divisibility-tests">
+        <statement>
+          <p>
+            Divisibility Test for 2,4,5,8,10 A number is divisible
+            <ul>
+              <li>
+                <p>
+                  by 10 if and only if its last digit is 0,
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  by 5 if and only if its last digit is 0 or 5,
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  by 2 if and only if its last digits is 0,2,4,6 or 8,
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  by 4 if and only if its last two digits are a number divisible by 4,
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  by 8 if and only if its last three digits are a number divisible by 8.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </theorem>
+
+      <example>
+        <statement>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  5,280 is divisible by 10 because its last digit is 0.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  5,280 is divisible by 5 because its last digit is 0.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  5,280 is divisible by 2 because its last digit is 0.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  5,280 is divisible by 4 because its last two digits (80) are divisible by 4.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  5,280 is divisible by 8 because its last three digits are divisible by 8.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </example>
+
+
+      <proof>
+        <title>Of the Divisible by 2</title>
+
+        <p>
+          Let a whole number <m>N</m> be written as
+          <me>
+            \begin{align*}N&#x26;= 10 a + b\end{align*}
+          </me>
+        </p>
+
+        <p>
+          (why can it be written this way?) Since <m>10a</m> can be written as <m>2 \cdot (5a)</m>, it is divisible by 2.
+          In addition, <m>b</m> is divisible by 2 if and only if <m>b</m> is 0, 2, 4, 6, or 8.
+          By the divisibility theorem, <m>N</m> is divisible by 2 if and only if <m>10a</m> and <m>b</m> are divisible by 2.
+        </p>
+      </proof>
+
+      <theorem>
+        <statement>
+          <p>
+            Divisibility Test for 3 and 9 A number is divisible
+            <ul>
+              <li>
+                <p>
+                  by 3 if and only if the sum of the digits is divisible by 3,
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  by 9 if and only if the sum of the digits is divisible by 9,
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </theorem>
+
+      <example>
+        <statement>
+          <p>
+            Using the Divisibility Test for 3 Determine if the following are divisible by 3:
+            <ol>
+              <li>
+                <p>
+                  18,390
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  293,456
+                </p>
+              </li>
+            </ol>
+          </p>
+
+          <p />
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Since <m>1+8+3+9+0 = 21</m>, since 21 is divisible by 3, then 18,390 is divisible by 3.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since <m>2+9+3+4+5+6 = 29</m>, since 29 is not divisible by 3, then 293,456 is not divisible by 3.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </example>
+
+        <example>
+          <statement>
+            <p>
+              Using the Divisibility Test for 9 Determine if the following are divisible by 9:
+              <ol>
+                <li>
+                  <p>
+                    18,390
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    293,454
+                  </p>
+                </li>
+              </ol>
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    Since <m>1+8+3+9+0 = 21</m>, since 21 is not divisible by 9, then 18,390 is not divisible by 9.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    Since <m>2+9+3+4+5+4 = 27</m>, since 27 is divisible by 9, then 293,456 is divisible by 9.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+        </example>
+      </subsection>
+
+
+      <subsection>
+        <title>Divisibility Test for 11</title>
+
+        <theorem>
+          <statement>
+            <p>
+              Divisibility Test for 11 A number is divisible by 11 if and only if the number formed by
+              <me>
+                \text{(sum of odd-position digits)}-\text{(sum of even-position digits)}
+              </me>
+            </p>
+
+            <p>
+              is a multiple (whether positive, negative or 0) of 11.
+            </p>
+          </statement>
+        </theorem>
+
+        <remark>
+          <p>
+            Make sure that you carefully read the test for 11.
+            Note that the sum is the odd-positioned digits, like the first, third, fifth, etc.
+            and the even-positioned digits, like the 2nd, 4th, etc.It is common to mix this up with adding even and odd digits, but this is not what the test says.
+          </p>
+        </remark>
+
+        <example>
+          <statement>
+            <p>
+              Divisibility Test for 11 Determine if the following are divisible by 11:
+            </p>
+
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    93,412
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    208,273
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              <ol>
+                <li>
+                  <p>
+                    <me>
+                      (9+4+2) - (3+1) = 15-4=11
+                    </me>
+                    so 93,412 is divisible by 11.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    <me>
+                      (2+8+7) - (0+2+3) = 17-5 = 12
+                    </me>
+                    which is not divisible by 11, so 208,273 is not divisible by 11.
+                  </p>
+                </li>
+              </ol>
+            </p>
+          </solution>
+        </example>
+      </subsection>
+    </section>

@@ -1,0 +1,470 @@
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : converting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx to svg graphics for placement in /Users/pstaab/code/informal-number-theory-book/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.37', 'publisher': '/Users/pstaab/code/informal-number-theory-book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : converting sect-addition-subtraction-5-4-8.tex to sect-addition-subtraction-5-4-8.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-5-4-8.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-5-4-8.tex failed
+INFO    : converting fig-dlb-02-2.tex to fig-dlb-02-2.pdf
+ERROR   : LaTeX compilation of fig-dlb-02-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-dlb-02-2.tex failed
+INFO    : converting sect-addition-subtraction-6-9-5.tex to sect-addition-subtraction-6-9-5.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-9-5.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-9-5.tex failed
+INFO    : converting fig-asdf-2.tex to fig-asdf-2.pdf
+ERROR   : LaTeX compilation of fig-asdf-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-asdf-2.tex failed
+INFO    : converting fig-number-line-2.tex to fig-number-line-2.pdf
+ERROR   : LaTeX compilation of fig-number-line-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-number-line-2.tex failed
+INFO    : converting sect-multiplication-division-3-3-4-1-2-2.tex to sect-multiplication-division-3-3-4-1-2-2.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-3-4-1-2-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-3-4-1-2-2.tex failed
+INFO    : converting sect-addition-subtraction-6-5-3-1-2-4.tex to sect-addition-subtraction-6-5-3-1-2-4.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-5-3-1-2-4.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-5-3-1-2-4.tex failed
+INFO    : converting sect-addition-subtraction-6-6-3-1-1-3.tex to sect-addition-subtraction-6-6-3-1-1-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-6-3-1-1-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-6-3-1-1-3.tex failed
+INFO    : converting sect-addition-subtraction-2-5-3-2-1.tex to sect-addition-subtraction-2-5-3-2-1.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-2-5-3-2-1.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-2-5-3-2-1.tex failed
+INFO    : converting sect-addition-subtraction-6-9-3.tex to sect-addition-subtraction-6-9-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-9-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-9-3.tex failed
+INFO    : converting sect-addition-subtraction-6-6-3-1-3-4.tex to sect-addition-subtraction-6-6-3-1-3-4.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-6-3-1-3-4.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-6-3-1-3-4.tex failed
+INFO    : converting sect-multiplication-division-3-3-4-1-2-4.tex to sect-multiplication-division-3-3-4-1-2-4.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-3-4-1-2-4.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-3-4-1-2-4.tex failed
+INFO    : converting sect-addition-subtraction-6-6-3-1-1-5.tex to sect-addition-subtraction-6-6-3-1-1-5.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-6-3-1-1-5.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-6-3-1-1-5.tex failed
+INFO    : converting fig-dots-2.tex to fig-dots-2.pdf
+ERROR   : LaTeX compilation of fig-dots-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-dots-2.tex failed
+INFO    : converting sect-addition-subtraction-6-5-3-1-1-4.tex to sect-addition-subtraction-6-5-3-1-1-4.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-5-3-1-1-4.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-5-3-1-1-4.tex failed
+INFO    : converting sect-division-5-7.tex to sect-division-5-7.pdf
+ERROR   : LaTeX compilation of sect-division-5-7.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-division-5-7.tex failed
+INFO    : converting fig-dlb-01-2.tex to fig-dlb-01-2.pdf
+ERROR   : LaTeX compilation of fig-dlb-01-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-dlb-01-2.tex failed
+INFO    : converting sect-addition-subtraction-6-8-7.tex to sect-addition-subtraction-6-8-7.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-8-7.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-8-7.tex failed
+INFO    : converting sect-addition-subtraction-2-4-3-2-2.tex to sect-addition-subtraction-2-4-3-2-2.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-2-4-3-2-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-2-4-3-2-2.tex failed
+INFO    : converting sect-addition-subtraction-6-8-5.tex to sect-addition-subtraction-6-8-5.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-8-5.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-8-5.tex failed
+INFO    : converting sect-division-5-4.tex to sect-division-5-4.pdf
+ERROR   : LaTeX compilation of sect-division-5-4.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-division-5-4.tex failed
+INFO    : converting sect-addition-subtraction-6-5-3-1-1-6.tex to sect-addition-subtraction-6-5-3-1-1-6.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-5-3-1-1-6.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-5-3-1-1-6.tex failed
+INFO    : converting sect-multiplication-division-3-3-4-1-3-2.tex to sect-multiplication-division-3-3-4-1-3-2.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-3-4-1-3-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-3-4-1-3-2.tex failed
+INFO    : converting sect-addition-subtraction-6-5-3-1-3-4.tex to sect-addition-subtraction-6-5-3-1-3-4.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-5-3-1-3-4.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-5-3-1-3-4.tex failed
+INFO    : converting sect-division-3-3.tex to sect-division-3-3.pdf
+ERROR   : LaTeX compilation of sect-division-3-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-division-3-3.tex failed
+INFO    : converting sect-addition-subtraction-6-6-3-1-2-3.tex to sect-addition-subtraction-6-6-3-1-2-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-6-3-1-2-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-6-3-1-2-3.tex failed
+INFO    : converting sect-multiplication-division-3-2-6-3-2.tex to sect-multiplication-division-3-2-6-3-2.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-2-6-3-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-2-6-3-2.tex failed
+INFO    : converting sect-addition-subtraction-6-8-3.tex to sect-addition-subtraction-6-8-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-8-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-8-3.tex failed
+INFO    : converting sect-multiplication-division-3-2-6-3-1.tex to sect-multiplication-division-3-2-6-3-1.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-2-6-3-1.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-2-6-3-1.tex failed
+INFO    : converting sect-multiplication-division-3-3-4-1-3-4.tex to sect-multiplication-division-3-3-4-1-3-4.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-3-4-1-3-4.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-3-4-1-3-4.tex failed
+INFO    : converting sect-division-3-5.tex to sect-division-3-5.pdf
+ERROR   : LaTeX compilation of sect-division-3-5.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-division-3-5.tex failed
+INFO    : converting sect-addition-subtraction-6-6-3-1-2-5.tex to sect-addition-subtraction-6-6-3-1-2-5.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-6-3-1-2-5.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-6-3-1-2-5.tex failed
+INFO    : converting fig-number-line-02-2.tex to fig-number-line-02-2.pdf
+ERROR   : LaTeX compilation of fig-number-line-02-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-number-line-02-2.tex failed
+INFO    : converting sect-addition-subtraction-5-5-3.tex to sect-addition-subtraction-5-5-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-5-5-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-5-5-3.tex failed
+INFO    : converting fig-ha-coin-model-2.tex to fig-ha-coin-model-2.pdf
+ERROR   : LaTeX compilation of fig-ha-coin-model-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-ha-coin-model-2.tex failed
+INFO    : converting sect-addition-subtraction-6-4-3-1-2-3.tex to sect-addition-subtraction-6-4-3-1-2-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-4-3-1-2-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-4-3-1-2-3.tex failed
+INFO    : converting fig-fish-2.tex to fig-fish-2.pdf
+ERROR   : LaTeX compilation of fig-fish-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-fish-2.tex failed
+INFO    : converting sect-alt-numbers-4-3-2-1-2-1.tex to sect-alt-numbers-4-3-2-1-2-1.pdf
+ERROR   : LaTeX compilation of sect-alt-numbers-4-3-2-1-2-1.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-alt-numbers-4-3-2-1-2-1.tex failed
+INFO    : converting sect-addition-subtraction-4-3-3.tex to sect-addition-subtraction-4-3-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-4-3-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-4-3-3.tex failed
+INFO    : converting fig-bar-diagram-01-2.tex to fig-bar-diagram-01-2.pdf
+ERROR   : LaTeX compilation of fig-bar-diagram-01-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-bar-diagram-01-2.tex failed
+INFO    : converting fig-measuring-cup-2.tex to fig-measuring-cup-2.pdf
+ERROR   : LaTeX compilation of fig-measuring-cup-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-measuring-cup-2.tex failed
+INFO    : converting sect-multiplication-division-3-2-4-3.tex to sect-multiplication-division-3-2-4-3.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-2-4-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-2-4-3.tex failed
+INFO    : converting sect-addition-subtraction-5-5-5.tex to sect-addition-subtraction-5-5-5.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-5-5-5.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-5-5-5.tex failed
+INFO    : converting fig-bar-diagram-simple-2.tex to fig-bar-diagram-simple-2.pdf
+ERROR   : LaTeX compilation of fig-bar-diagram-simple-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-bar-diagram-simple-2.tex failed
+INFO    : converting fig-pencils-2.tex to fig-pencils-2.pdf
+ERROR   : LaTeX compilation of fig-pencils-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-pencils-2.tex failed
+INFO    : converting sect-addition-subtraction-5-5-7.tex to sect-addition-subtraction-5-5-7.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-5-5-7.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-5-5-7.tex failed
+INFO    : converting fig-number-line-addition-2.tex to fig-number-line-addition-2.pdf
+ERROR   : LaTeX compilation of fig-number-line-addition-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-number-line-addition-2.tex failed
+INFO    : converting sect-addition-subtraction-4-5-3.tex to sect-addition-subtraction-4-5-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-4-5-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-4-5-3.tex failed
+INFO    : converting fig-number-line-fractions-2.tex to fig-number-line-fractions-2.pdf
+ERROR   : LaTeX compilation of fig-number-line-fractions-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-number-line-fractions-2.tex failed
+INFO    : converting sect-addition-subtraction-4-4-5.tex to sect-addition-subtraction-4-4-5.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-4-4-5.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-4-4-5.tex failed
+INFO    : converting sect-addition-subtraction-6-4-3-1-3-3.tex to sect-addition-subtraction-6-4-3-1-3-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-4-3-1-3-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-4-3-1-3-3.tex failed
+INFO    : converting sect-addition-subtraction-6-4-3-1-1-3.tex to sect-addition-subtraction-6-4-3-1-1-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-6-4-3-1-1-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-6-4-3-1-1-3.tex failed
+INFO    : converting sect-alt-numbers-4-3-2-1-1-1.tex to sect-alt-numbers-4-3-2-1-1-1.pdf
+ERROR   : LaTeX compilation of sect-alt-numbers-4-3-2-1-1-1.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-alt-numbers-4-3-2-1-1-1.tex failed
+INFO    : converting sect-addition-subtraction-5-4-3.tex to sect-addition-subtraction-5-4-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-5-4-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-5-4-3.tex failed
+INFO    : converting sect-addition-subtraction-4-4-3.tex to sect-addition-subtraction-4-4-3.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-4-4-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-4-4-3.tex failed
+INFO    : converting sect-addition-subtraction-5-4-6.tex to sect-addition-subtraction-5-4-6.pdf
+ERROR   : LaTeX compilation of sect-addition-subtraction-5-4-6.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-addition-subtraction-5-4-6.tex failed
+INFO    : converting fig-dlb-2.tex to fig-dlb-2.pdf
+ERROR   : LaTeX compilation of fig-dlb-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-dlb-2.tex failed
+INFO    : converting sect-multiplication-division-3-2-5-3.tex to sect-multiplication-division-3-2-5-3.pdf
+ERROR   : LaTeX compilation of sect-multiplication-division-3-2-5-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-multiplication-division-3-2-5-3.tex failed
+INFO    : converting sect-ha-numbers-10-5-4-1-1.tex to sect-ha-numbers-10-5-4-1-1.pdf
+ERROR   : LaTeX compilation of sect-ha-numbers-10-5-4-1-1.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-ha-numbers-10-5-4-1-1.tex failed
+ERROR   : Unable to generate some latex-image assets:
+ LaTeX compilation failed for 59 "latex-image"(s).
+Review the log for error messages, and LaTeX transcripts.
+Images are:
+  sect-addition-subtraction-5-4-8.tex
+  fig-dlb-02-2.tex
+  sect-addition-subtraction-6-9-5.tex
+  fig-asdf-2.tex
+  fig-number-line-2.tex
+  sect-multiplication-division-3-3-4-1-2-2.tex
+  sect-addition-subtraction-6-5-3-1-2-4.tex
+  sect-addition-subtraction-6-6-3-1-1-3.tex
+  sect-addition-subtraction-2-5-3-2-1.tex
+  sect-addition-subtraction-6-9-3.tex
+  sect-addition-subtraction-6-6-3-1-3-4.tex
+  sect-multiplication-division-3-3-4-1-2-4.tex
+  sect-addition-subtraction-6-6-3-1-1-5.tex
+  fig-dots-2.tex
+  sect-addition-subtraction-6-5-3-1-1-4.tex
+  sect-division-5-7.tex
+  fig-dlb-01-2.tex
+  sect-addition-subtraction-6-8-7.tex
+  sect-addition-subtraction-2-4-3-2-2.tex
+  sect-addition-subtraction-6-8-5.tex
+  sect-division-5-4.tex
+  sect-addition-subtraction-6-5-3-1-1-6.tex
+  sect-multiplication-division-3-3-4-1-3-2.tex
+  sect-addition-subtraction-6-5-3-1-3-4.tex
+  sect-division-3-3.tex
+  sect-addition-subtraction-6-6-3-1-2-3.tex
+  sect-multiplication-division-3-2-6-3-2.tex
+  sect-addition-subtraction-6-8-3.tex
+  sect-multiplication-division-3-2-6-3-1.tex
+  sect-multiplication-division-3-3-4-1-3-4.tex
+  sect-division-3-5.tex
+  sect-addition-subtraction-6-6-3-1-2-5.tex
+  fig-number-line-02-2.tex
+  sect-addition-subtraction-5-5-3.tex
+  fig-ha-coin-model-2.tex
+  sect-addition-subtraction-6-4-3-1-2-3.tex
+  fig-fish-2.tex
+  sect-alt-numbers-4-3-2-1-2-1.tex
+  sect-addition-subtraction-4-3-3.tex
+  fig-bar-diagram-01-2.tex
+  fig-measuring-cup-2.tex
+  sect-multiplication-division-3-2-4-3.tex
+  sect-addition-subtraction-5-5-5.tex
+  fig-bar-diagram-simple-2.tex
+  fig-pencils-2.tex
+  sect-addition-subtraction-5-5-7.tex
+  fig-number-line-addition-2.tex
+  sect-addition-subtraction-4-5-3.tex
+  fig-number-line-fractions-2.tex
+  sect-addition-subtraction-4-4-5.tex
+  sect-addition-subtraction-6-4-3-1-3-3.tex
+  sect-addition-subtraction-6-4-3-1-1-3.tex
+  sect-alt-numbers-4-3-2-1-1-1.tex
+  sect-addition-subtraction-5-4-3.tex
+  sect-addition-subtraction-4-4-3.tex
+  sect-addition-subtraction-5-4-6.tex
+  fig-dlb-2.tex
+  sect-multiplication-division-3-2-5-3.tex
+  sect-ha-numbers-10-5-4-1-1.tex
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-p5zqm9yv
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /Users/pstaab/code/informal-number-theory-book/output/web.
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.11.18
+INFO    : Downloading Runestone Services, version 7.11.18
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /Users/pstaab/code/informal-number-theory-book/source/main.ptx to HTML in /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-65mumqmt
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-65mumqmt
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-xun2hv07
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+CRITICAL: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

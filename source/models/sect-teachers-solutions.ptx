@@ -1,0 +1,443 @@
+<section xml:id="sect-teachers-solutions">
+  <title>Teacher's Solutions</title>
+
+  <introduction>
+    <p>
+      Understanding word problems from an educator's side is a crucial skill and it requires understanding a problem at a deep level.
+      Because of this, a common task to ensure that the word problems is known well is to develop a Teacher's Solution, which require three specific parts:
+    </p>
+
+    <note>
+      <title>Steps for a Teacher's Solution</title>
+
+      <p>
+        A Teacher’s Solution is a solution to a word problem with the following.
+        <ol>
+          <li>
+            <p>
+              A diagram of the word problem.
+              The diagram should show all numerical parts of the problem (and only those in the problem) as well as a ? indicating the quantity that is sought.
+              Most of the Teacher’s solution in this text will show bar diagrams because of the flexibility involved.
+              However, other diagrams may be helpful.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              A detailed solution with steps explained as necessary.
+              The level of detailed needed should be compatible with the level of the problem.
+              For example if you solving a 3rd grade problem, don’t include algebra, but at the same time a problem at the fifth grade level shouldn’t need to show details that you would require at 2nd grade.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Answer the question as a full sentence.
+              This is just a good habit to get into.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </note>
+  </introduction>
+
+
+  <subsection>
+    <title>Solving Word Problems</title>
+
+    <p>
+      As discussed above, solving word problems is difficult and there is algorithmic (step-by-step) way to do this will any word problem.
+      Here’s a few ideas about this.
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            Converting the word problem to an arithmetic or algebra problem.
+            Often a diagram can help this.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Solving the arithmetic or algebra problem.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Interpreting the solution to obtain the answer to the question asked.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      In this text, we will concentrate on techniques that do not use algebra, although often problems can be done in a simpler way with algebra.
+      The main reason for this is that we are concentrating on Elementary Education here and all the word problems presented should be solvable without algebra and it is important to know how to tackle them.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Develop a Teacher’s Solution for the following: <em>Patrick has 12 marbles.
+          He gives away 5 of them? How many does he have left?</em>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First we need a diagram.
+          Since the numbers are small, a set diagram may be the right thing to do here.
+          Since this is a take-away interpretation, we will draw 12 marbles and then cross out 5.
+          In this case, this is simple enough not to need a ?.
+          The following is a possible Teacher's Solution:
+        </p>
+
+        <assemblage>
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x in {1,...,12} \fill[red] (\x, 0) circle[radius=0.25];
+            \foreach \x in {1,...,5} \draw ({\x-0.3},{-0.3})--({\x+0.3},{0.3});
+            \end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            The answer is <m>12-5=7</m>.
+            Patrick has 7 marbles left.
+          </p>
+        </assemblage>
+
+        <p>
+          Alternatively, we could have used the following as a Teacher's solution:
+        </p>
+
+        <assemblage>
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+\draw (0,0) rectangle (6,0.5); \draw(2.5,0) -- (2.5,0.5); 
+\draw[brace] (0,0.6) -- (6,0.6) node[bracelabel=above] {12};
+\draw[brace] (2.5,-0.1) -- (0,-0.1) node[bracelabel=below] {5};
+\draw[brace] (6,-0.1) -- (2.5,-0.1) node[bracelabel=below] {?};
+\end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            Which shows that Patrick has <m>12-5</m> or 7 marbles left.
+          </p>
+        </assemblage>
+
+        <p>
+          This would have been preferable if the number of marbles were larger<mdash/>that is if it tedious to draw or difficult to count.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Develop a Teacher’s Solution for the following: <em>A bakery made 60 muffins on Monday and 50 on Tuesday.
+          How many did they make altogether?</em>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          For this since the numbers are larger, use a bar diagram instead of a set diagram.
+          Also, the context of this problem is important.
+          It is probable that students are learning how to add multiples of 10 and that this should be done with some mental math (see <xref ref="ch-thinking-strategies"/> for details), so the column algorithm (see <xref ref="ch-algorithms"/> for details) would not be needed.
+        </p>
+
+        <p>
+          The following is a possible Teacher's Solution:
+        </p>
+
+        <assemblage>
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=0.7]
+\draw (0,0) rectangle (11,0.5); \draw(6,0) -- (6,0.5); 
+\draw[brace] (0,0.6) -- (11,0.6) node[bracelabel=above] {?};
+\draw[brace] (6,-0.1) -- (0,-0.1) node[bracelabel=below] {60};
+\draw[brace] (11,-0.1) -- (6,-0.1) node[bracelabel=below] {50};
+\end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            There are a total of <m>50+60=110</m> muffins.
+            The bakery make 110 muffins on Monday and Tuesday.
+          </p>
+        </assemblage>
+
+        <p>
+          Note: this could have been done with a stacked bar diagram and labelled Monday and Tuesday like:
+        </p>
+
+        <assemblage>
+          <image width="60%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (5,0.5); \draw (-0.1,0.25) node [left] {Tuesday}; 
+            \draw (0,1) rectangle (6,1.5); \draw (-0.1,1.25) node [left] {Monday}; 
+            \draw[brace] (6.2,1.5) -- (6.2,0) node[bracelabel=right] {?};
+            \draw[brace] (5,-0.1) -- (0,-0.1) node[bracelabel=below] {50};
+            \draw[brace] (0,1.6) -- (6,1.6) node[bracelabel=above] {60};
+            \end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            This shows that there are <m>50+60=110</m> muffins made.
+          </p>
+        </assemblage>
+
+        <p>
+          The second solution shows the same result and is a bit nicer that it includes the days.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The next example shows a Teacher's solution involving division.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find a Teacher's Solution to<em>Margaret has 80 muffins and puts them in packages of 5.
+          How many packages can she make?</em>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          Although this may seem straightforward, we first need a diagram.
+          This happens to be a measurement division problem because we know the size of the groups (packages) and are looking for the number of groups (packages):
+        </p>
+
+        <assemblage>
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+          \draw (0,0) rectangle (8,0.5); 
+            \foreach \x in {1,2,7} \draw (\x,0)--(\x,0.5); 
+            \draw[brace] (0,0.6) -- (8,0.6) node[bracelabel=above] {80};
+            \draw[brace] (1,-0.1) -- (0,-0.1) node[bracelabel=below] {5}; 
+            \node at (4.5,0.25) {$\cdots\;?\;\cdots$}; 
+            \end{tikzpicture}
+          ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            The number of packages is <m>80 \div 5 = 16</m>.
+            Margaret can make 16 packages of muffins.
+          </p>
+        </assemblage>
+      </solution>
+    </example>
+  </subsection>
+
+
+  <subsection>
+    <title>The Unitary Method and Multi-step problems</title>
+
+    <p>
+      Multi-step problems are important for developing students mathematical skills in that it requires the ability to think about more complex problems.
+      This section goes over some techniques of solving harder word problems.
+    </p>
+
+    <p>
+      We desire to construct a Teacher’s Solution to the following: <em>A school has 120 students.
+      Each student is wearing either a blue or a red t-shirt.
+      If there are 4 times more blue t-shirts than red t-shirts, how many students are wearing a red t-shirt?</em>
+    </p>
+
+    <p>
+      We first start with a diagram.
+      We don’t know the total length of either the number of students wearing blue or red, but we do know that the length of the blue diagram should be 4 times the length of the red one.
+      We can show this with:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+          \draw (0,0) rectangle (8,0.5); \draw (-0.1,0.25) node [left] {blue}; 
+            \foreach \x in {2,4,6} \draw (\x,0)--(\x,0.5); 
+            \draw (0,1) rectangle (2,1.5); \draw (-0.1,1.25) node [left] {red}; 
+            \draw[brace] (8.2,1.5) -- (8.2,0) node[bracelabel=right] {120};
+            \draw[brace] (0,1.6) -- (2,1.6) node[bracelabel=above] {?};
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      First, note that this diagram is helpful whenever we know the relationship between two groups.
+      As in the case above, it says that one group is some number times larger than the other group.
+      In later chapters, we'll see these diagrams with fractions and ratios.
+    </p>
+
+
+    <paragraphs>
+      <title>Unitary Method</title>
+
+      <p>
+        Anytime a problem has a diagram with boxes of the same size including above where one is 4 times larger than the other, we can use the <em>unitary method</em> in which we use information in the problem to build equations with the number of units involved.
+        The above problem will lead to
+        <me>
+          \text{5 units} = 120
+        </me>
+        and we got 5 units because the total number of students (120) represents 5 of the boxes.
+        Next, we divide by 5 to get:
+        <me>
+          \text{1 unit} = 120 \div 5 = 24
+        </me>
+        and since the number of students wearing red is 1 unit, the answer is 24.
+      </p>
+
+      <p>
+        The other way to solve this problem is with algebra.
+        If the number of students wearing red is <m>x</m>, then the number of students wearing blue is <m>4x</m>.
+        The total number of students would be <m>x+4x=5x</m>, so
+        <me>
+          \begin{aligned}5x \amp  =120 \\ x \amp = 120 \div 5 = 24\end{aligned}
+        </me>
+        so there were 24 students wearing red.
+      </p>
+
+      <p>
+        Note that the unitary method does the same steps as the algebraic method, so in a way it is a prealgebra type method.
+        It visually builds up the relationship instead of algebraically.
+        Knowing which method with the appropriate age group is important.
+      </p>
+    </paragraphs>
+
+    <example>
+      <statement>
+        <p>
+          Find a Teacher's solution to the following problem using the Unitary method: <em>Jordan weighs 7 pounds less than Charlie.
+          Albert weighs twice that of Charlie, if they weigh 193 pounds altogether, how much does Jordan weigh?</em>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First a diagram.
+          Since there are three people in this problem we'll do a stacked bar diagram with 3 bars.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (3,0.5); \draw (-0.1,0.25) node [left] {Jordan}; 
+            \draw (0,1) rectangle (4,1.5); \draw (-0.1,1.25) node [left] {Charlie}; 
+            \draw (0,2) rectangle (8,2.5); \draw (-0.1,2.25) node [left] {Albert}; 
+            \draw (4,2) -- (4,2.5);
+            \draw[brace] (8.2,2.5) -- (8.2,0) node[bracelabel=right] {193};
+            \draw[brace] (4,-0.1) -- (3,-0.1) node[bracelabel=below] {7};
+            \draw[brace] (3,-0.1) -- (0,-0.1) node[bracelabel=below] {?};
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          To find the solution, note that if Jordan weighed 7 more pounds then there would be 4 equal units in the diagram and the total weight would be <m>193+7=200</m>.
+          Thus,
+          <me>
+            \begin{aligned} \text{4 units} \amp = 200 \amp \amp \text{divide by 4} \\ \text{1 unit} \amp  = 200 \div 4 = 50 \end{aligned}
+          </me>
+          So this means that Charlie weighs 50 pounds.
+          Jordan weighs <m>50-7=43</m> pounds.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Note in the solution above, we added some to make 4 equivalent boxes (units) and then performed steps with the units.
+      The following shows an similar type solution:
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Find a Teacher’s solution to the following problem.
+          Use the Unitary method: <em>José has $240 and Maria has $180.
+          How much should José give to Maria so then each have the same amount?</em>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We'll start with a stacked bar diagram: 
+        </p>
+              <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (6,0.5); \draw (-0.1,0.25) node [left] {Maria}; 
+            \draw (0,1) rectangle (8,1.5); \draw (-0.1,1.25) node [left] {Jos\'e}; 
+            \foreach \x in {6,7} \draw[dashed] (\x,1) -- (\x,1.5); 
+
+            \draw[brace] (0,1.6) -- (8,1.6) node[bracelabel=above] {\$240};
+            \draw[brace] (6,-0.1) -- (0,-0.1) node[bracelabel=below] {\$180};
+
+            \draw[brace] (8,0.9) -- (7,0.9) node[bracelabel=below] {?}; 
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+      <p>
+        and note that the amount that José should give to Maria is half of the difference between them.  One can think of moving that part to Maria's bar, so they are the same. 
+
+      </p>
+      <p>
+        The difference is <m>240-180=60</m>, so
+<me>
+  \begin{aligned}\text{2 units}\amp= 60 \amp\amp \text{divide by 2}\\
+  \text{1 unit}\amp= 60 \div 2 = 30\end{aligned}
+</me>
+So José should give Maria $30 so they each have the same amount of money.
+      </p>
+      </solution>
+    </example>
+    <p>
+      Note that in this example, you needed to understand that the difference in their money needs to be divided by 2.  This makes two equal sized boxes (units) and hence the unitary method works. 
+
+
+    </p>
+  </subsection>
+</section>

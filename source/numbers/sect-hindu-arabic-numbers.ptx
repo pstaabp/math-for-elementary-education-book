@@ -1,0 +1,841 @@
+<section xml:id="sect-hindu-arabic-numbers">
+  <title>Hindu-Arabic Numbers and Models for Arithmetic</title>
+
+  <introduction>
+    <p>
+      The number system primarily used throughout the world is what is called the <em>Hindu-Arabic Number System</em>.
+      It uses the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 (hence it is a decimal or base-10) and is a place-value system in that the location of a digit in the number represents the value of the number.
+      We will discuss this in detail below.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Counting</title>
+
+    <definition>
+      <statement>
+        <p>
+          The <alert>counting numbers</alert> are the numbers that we count things with, that is, <m>1,2,3,\ldots</m>.
+          The <alert>whole numbers</alert> are the counting numbers together with 0 or <m>0,1,2,3,\ldots</m>.
+        </p>
+      </statement>
+    </definition>
+
+    <p>
+      As children learn the beginnings of numbers, they use the counting number to count things (strawberries, peas on a plate, coins).
+      Clearly, as one progresses through school, the whole numbers are just as important and are still used to count things, but they get larger (number of candies in a jar–we'll talk about this later, your monthly salary, number of packages delivered by the post office).
+      In this book, we'll discuss the counting number from small number to large numbers and adapt the arithmetic as needed.
+    </p>
+
+
+    <paragraphs>
+      <title>Abstraction of Numbers</title>
+
+      <p>
+        A overall goal in mathematics at all levels is that of abstraction and go back to the Preface in the text and reread the section on <em>abstraction and mathematics</em>, which we will see this throughout this book.
+        It is important to understand that as children learn numbers that they first understand numbers as counting real objects, to counting pictures of objects to just numbers themselves.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Set and Measurement Model</title>
+
+      <p>
+        There are two contexts in which young children (and most of the rest of us) use numbers: 1) counting objects, 2) measuring things.
+        These two contexts are different and are called the set model and measurement model.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              The <alert>set model</alert> of numbers is used to count discrete objects.
+              The number of objects must be a whole number.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The <alert>measurement model</alert> is useful for measuring distances, weights, time, lengths, etc.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        These models are mainly used in the idea of word problems, which will be discussed more in-depth in Chapter <xref ref="ch-models" text="global" />.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            The following are examples of <em>set models</em>.
+            The number of
+            <ul>
+              <li>
+                <p>
+                  marbles
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  stickers
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  toy cars
+                </p>
+              </li>
+            </ul>
+          </p>
+
+          <p>
+            And the following are example of <em>measurement models</em>.
+            <ul>
+              <li>
+                <p>
+                  The length of a piece of string
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The height of your sister
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The amount (volume) of juice in that glass
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The weight of this bag of potatoes
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </example>
+
+      <p>
+        Another important note of difference between examples of set models and measurement models is that set models are for things that can only be whole numbers–you can't (reasonable) cut a marble in half.
+        Those in the measurement model can take on non-whole number (fractional or decimal) values.
+        I drank 6 1/2 ounces of water with lunch.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Less versus Fewer</title>
+
+      <p>
+        This gives me the opportunity to talk a little grammar.
+        Most people use “less” and “fewer” interchangeably.
+        However, less should pertain only to numbers in the measurement model (I have less milk in my glass than Charlie does) and fewer should pertain only to numbers in the set model (I have 10 fewer cookies than Amanda).
+      </p>
+    </paragraphs>
+  </subsection>
+
+
+  <subsection>
+    <title>Model and Diagrams</title>
+
+    <p>
+      As we just discussed models above, I have assumed that we know what a model is.
+      Although there are many different types of models in the world (are you thinking of fashion models?), from a mathematical point of view, a model is a simplified version of a real thing or a representation of that thing.
+    </p>
+
+
+    <paragraphs>
+      <title>Set Models</title>
+
+      <p>
+        Let's return to the set model above.
+        If we are thinking of 7 pencils, we could draw:
+      </p>
+
+      <figure xml:id="fig-pencils">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \tikzset{pencil/.pic={
+                \pgftransformrotate{-30}
+                \fill[MaterialAmber] (0.1,0) rectangle (-0.1,1);
+                \draw (-0.1,0) -- (0,-0.15) -- (0.1,0); 
+                \draw (0.1,0) rectangle (-0.1,1); 
+                \fill[MaterialDeepOrange900] (-0.1,1) rectangle (0.1,1.1);
+                \draw (-0.1,1) rectangle (0.1,1.1);
+                \draw (0,0) -- (0,1); 
+                \pgftransformrotate{30}
+                }
+              }
+             \begin{tikzpicture}
+                \foreach \x in {1,...,7} \draw ({1.1*\x},0) pic {pencil};
+              \end{tikzpicture}
+              ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        which look quite fancy.
+        In grades K-2, this might appear in a math book, because students at this level would need more concrete examples.
+        As students get more comfortable with abstraction, you could draw
+      </p>
+
+      <figure xml:id="fig-dots">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}[scale=0.75]
+                \foreach \x in {0,2,4,6} \fill[fill=MaterialGreen800](\x,0) circle[radius=8pt]; 
+                \foreach \x in {1,3,5} \fill[fill=MaterialGreen800](\x,1) circle[radius=8pt]; 
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        to represent the same thing.
+        With abstraction, however, the actual object doesn't matter and we can represent anything from a set model with dots or stars or other objects that are easier to draw.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Measurement Model Diagrams</title>
+
+      <p>
+        Numbers in the measurement model, however, do not fit well with objects.
+        If you drank 10 ounces of juice, it doesn't make sense to draw 10 objects.
+        A great way to represent these is the number line, such as
+      </p>
+
+      <figure xml:id="fig-number-line">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+                \draw[->] (-0.5,0) -- (6,0);
+                \foreach \x in {0,...,5} {\draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        and recall that by convection the numbers increase from left to right.
+      </p>
+
+      <p>
+        For example, we could measure the length of a fish <fn>found on \html-tag:url{\html-attr:href{"https://tex.stackexchange.com/questions/361547/how-to-draw-a-fish"}https://tex.stackexchange.com/questions/361547/how-to-draw-a-fish}</fn>
+      </p>
+
+      <figure xml:id="fig-fish">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}[scale=2]
+                \draw[fill=red] (1,1) to[bend left=50] (3,1) to[bend left=50] (1,1);
+                \draw[fill=red] (3,1) -- (3.5,1.5) -- (3.3,1) -- (3.5,.5) -- cycle;
+                \draw[fill=white] (1.6,1.1) circle (.15cm); 
+                \draw[fill=blue] (1.55,1.1) circle (.05cm);         
+                \draw[->] (0.9,0) -- (4.8,0);
+                \foreach \x in {0,1,...,7} {\draw ({1+\x/2},0.1) -- ({1+\x/2},-0.1) node [below] {$\x$};}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        If we are measuring liquid, it often nice to show as a measuring cup or graduated cylinder like:
+      </p>
+
+      <figure xml:id="fig-measuring-cup">
+        <caption></caption>
+        <image width="40%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+              \fill[MaterialBlue200]  (-2,0.0) arc[start angle = 180, end angle = 360, x radius=2, y radius=0.5] --
+                (2,3.1) arc[start angle = 0, end angle = 180,  x radius=2, y radius=0.5] -- cycle; 
+              \draw[thin, blue] (-2,3.13) arc[start angle = 180, end angle = 360, x radius=2, y radius=0.5]; 
+              \draw (-2,0.0) arc[start angle = 155, end angle = 385, x radius=2.2,y radius=0.55];
+              \draw (-2,0.0) arc[start angle = 180, end angle = 360, x radius=2, y radius=0.5]; 
+              \draw (2,0) -- (2,5);
+              \draw (-2,0) -- (-2,5);
+              \draw (0,5) ellipse [x radius = 2, y radius =0.5 ];
+              \foreach \y in {1,2,3,4} {
+                \draw[thick] (-1,{\y-0.3}) arc [start angle = 240, end angle = 300, x radius=2, y radius=0.5]; 
+                \draw (1,{\y-0.2}) node [right] {$\y \ell$}; 
+              }
+              \end{tikzpicture}              
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        which is similar to a number line in the vertical direction.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Number Lines</title>
+
+      <p>
+        Number lines are a powerful model.
+        They are introduced early in Elementary School, generally when measuring length arises.
+        However, they are useful in college-level mathematics, including Calculus and beyond.
+        Here's a few things:
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              They can be shown horizontally or vertically as we saw with the liquid above.
+              The classic cartesian plane (also called the <m>xy</m>-plane) is really both a horizontal and vertical number line that cross when both are 0.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The number lines don't need to have units of 1.
+              For example:
+            </p>
+
+            <figure xml:id="fig-asdf">
+              <caption></caption>
+              <image width="80%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                    \begin{tikzpicture}[xscale=1.5]
+                    \draw[->] (-0.5,0) -- (5.5,0);
+                    \foreach \x/\lab in {0/0,1/100,2/200,3/300,4/400,5/500} \draw (\x,0.1) -- (\x,-0.1) node [below] {$\lab$};
+                    \end{tikzpicture}              
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+
+            <p>
+              would be a way to show numbers in the hundreds.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To understand the order of numbers (especially with Place value, see page place:value), one often uses number lines.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To introduce rounding (see section <xref ref="sect-rounding" text="global" />), it is helpful to use a number line.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              One can show negative numbers (see Chapter <xref ref="ch-integers" text="global" />) by continuing them to the left.
+              Thus the number line stretching in both directions represents the <alert>integers</alert>, which include the whole number and the negative counting numbers.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The number line leads easily to the notion of a fraction as will be seen in Chapter <xref ref="ch-fractions" text="global" />.
+              For example, we can use the number line:
+            </p>
+
+            <figure xml:id="fig-number-line-fractions">
+              <caption></caption>
+              <image width="80%">
+                <shortdescription>
+                </shortdescription>
+                <latex-image>
+                  <![CDATA[ 
+                    \begin{tikzpicture}
+                      \draw[->,very thick] (-0.5,0) -- (8.5,0); 
+                      \foreach \x in {1,2,...,7} \draw (\x,0.1) -- (\x,-0.1) node [below] {$\frac{\x}{5}$};
+                      \draw (0,0) node [below] {0};
+                    \end{tikzpicture}              
+                  ]]>
+                </latex-image>
+              </image>
+            </figure>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Bar Diagrams</title>
+
+      <p>
+        Another important model is that of a <alert>bar diagram</alert>.
+        For example, the fish above can be abstracted further as the following:
+      </p>
+
+      <figure xml:id="fig-bar-diagram-simple">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+                \draw (0,0.5) rectangle (5,1); 
+                \draw[->] (-0.5,0) -- (7.5,0);
+                \foreach \x in {0,...,7} {\draw (\x,0.1) -- (\x,-0.1) node [below] {$\x$};}
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        and we can also just provide the bar and the length of the bar with:
+      </p>
+
+      <figure xml:id="fig-bar-diagram-01">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+                \draw (0,0) rectangle (5,0.5);
+                \draw[brace](5,-0.1) -- (0,-0.1) node[bracelabel=below] {5};  
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        Bar diagrams are powerful visual models.
+        We will use these often in this book starting in section <xref ref="sect-diagrams-models" text="global" />.
+        In fact, with many word problems we will be able to solve some tricky problems with a diagram that typically would need algebra to solve.
+        Bar diagrams appear in all four arithmetic operations as well as with fractions, ratios and percents.
+        In short, they are the work horse of visual diagrams and models.
+      </p>
+    </paragraphs>
+  </subsection>
+
+
+  <subsection xml:id="sect-ha-numbers">
+    <title>The Hindu-Arabic Number System, Egyptian numbers and the Place Value System</title>
+
+    <p>
+      So far in this text we have already used numbers in this book, but need to pause a second to explain what we mean.
+      The number system that we in the United States (and pretty much throughout the world) is called the Hindu-Arabic system and its history is fascinating.
+      We will also learn later in this chapter that there are other number systems.
+    </p>
+
+    <p>
+      The <alert>Hindu-Arabic</alert> number system uses the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 and is what is called a <alert>place-value</alert> system in that the digit represents different values depending on its location.
+      For example 352 means 3 hundreds, 5 tens and 2 ones.
+    </p>
+
+    <p>
+      This means in the decimal example that the 3 in 532 means “thirty” while the 3 in 352 means “three hundred”.
+      Another way to look at this, is the <alert>expanded form</alert> of the number or
+      <me>
+        532 = 500 + 30 + 2
+      </me>
+      and we will often use this form in the arithmetic algorithms in Chapter <xref ref="ch-algorithms" text="global" />.
+    </p>
+
+
+    <paragraphs>
+      <title>Egyptian Numbers</title>
+
+      <p>
+        There are a lot of other number systems that have been used by humans throughout known history.
+        We'll talk briefly here about Egyptian numbers and section <xref ref="sect-alt-numbers" text="global" /> will go over a few more.
+        The Egyptian system dates to about 3000 BCE and uses symbols for powers of 10.
+        For example:
+      </p>
+
+      <table>
+        <title>Egyptian Numbers</title>
+
+        <tabular>
+          <row><cell halign="center"/><cell halign="center"/><cell halign="center"/></row>
+          <row header="yes">
+            <cell>Name</cell>
+            <cell>Symbol/Glyph</cell>
+            <cell>Decimal value</cell>
+          </row>
+
+          <row>
+            <cell halign="center">Stroke</cell>
+            <cell>|</cell>
+            <cell>1</cell>
+          </row>
+
+          <row>
+            <cell>Heel</cell>
+            <cell>
+            <image width="25%">
+              <shortdescription>
+                Glyph in the shape of an upside down U.
+              </shortdescription>
+              <latex-image> \begin{tikzpicture} \draw(0,0) pic{egy10}; \end{tikzpicture} </latex-image>
+            </image>
+            </cell>
+            <cell>10</cell>
+          </row>
+          <row>
+            <cell>Coil</cell>
+            <cell>
+            <image width="25%">
+              <shortdescription>
+                Glyph in the shape of an coil opening counterclockwise finishing with a tail pointing down. 
+              </shortdescription>
+              <latex-image> \begin{tikzpicture} \draw(0,0) pic[scale=0.5]{egy100}; \end{tikzpicture} </latex-image>
+            </image>
+            </cell>
+            <cell>100</cell>
+          </row>
+          <row>
+            <cell>Lotus</cell>
+            <cell>
+            <image width="25%">
+              <shortdescription>
+                Glyph in the shape of an upside down U.
+              </shortdescription>
+              <latex-image> \begin{tikzpicture} \draw(0,0) pic{egy1000}; \end{tikzpicture} </latex-image>
+            </image>
+            </cell>
+            <cell>1000</cell>
+          </row>
+          <row>
+            <cell>Finger</cell>
+            <cell>
+            <image width="25%">
+              <shortdescription>
+                Glyph in the shape of an upright finger with a slight bend.
+              </shortdescription>
+              <latex-image> \begin{tikzpicture} \draw(0,0) pic{egy10000}; \end{tikzpicture} </latex-image>
+            </image>
+            </cell>
+            <cell>1000</cell>
+          </row>
+        </tabular>
+      </table>
+
+      <p>
+        To construct a number, like 4,372 (in Hindu-Arabic), we write 4 1000 symbols, 3 0100 symbols, 7 0001 symbols and 2 0001 symbols or
+      </p>
+      4337
+      <p>
+        and the spatial relationship between the symbols doesn't matter.
+        They can go left to right or stacked on top.
+        We'll look at adding and subtracting with Egyptian later.
+        Because the positioning doesn't matter in Egyptian, this is not a place-value system.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Place Value and Ordering</title>
+
+      <p>
+        One aspect of place value that can be challenging is that of order numbers.
+        If we have the problem, <em>order the numbers 523, 325, 352, 532 from smallest to largest</em>, it's important to understand place-value.
+        For this, the smallest numbers have the smallest leading digit (representing the hundreds) and then for equal values in the hundreds, determine the same for the tens.
+        In this case, the order from smallest to largest is
+        <me>
+          325, 352, 523, 532
+        </me>
+      </p>
+
+      <p>
+        A number line is a good way to also order numbers.
+        Once all of the numbers are on the line:
+      </p>
+
+      <figure xml:id="fig-number-line-02">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}[scale=2]
+                \draw[->] (2.9,0) -- (6.1,0);
+                \foreach \x in {3,3.1,...,6} \draw (\x,0.1) -- (\x,-0.1); 
+                \foreach \x/\lab in {3/300,4/400,5/500,6/600} \draw (\x,0.2) -- (\x,-0.2) node[below]{\lab};
+                \foreach \x/\lab in {3.25/325,3.52/352,5.23/523} \draw[<-] (\x,-0.1) -- (\x,-0.5) node [below] {\color{MaterialIndigo}\lab}; 
+                \foreach \x/\lab in {5.32/532} \draw[<-] (\x,-0.1) -- (\x,-1) node [below] {\color{MaterialIndigo}\lab}; 
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        and then it is clear looking at the number line that the numbers from smallest to largest are those from left to right.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Multiplying by powers of ten</title>
+
+      <p>
+        Multiplying a number by 10 in the Hindu-Arabic is quite easy.
+        We will define multiplication later, but recall that multiplying by 10, is simply adding a zero to the end of the number.
+        That is <m>234 \times 10 = 2340</m>.
+        We will also be able to explain this using the chip model.
+        Multiplying by 100 or 1000 is just repeating this rule as needed and dividing works nicely as well<mdash/>and we'll see this in depth in Chapter <xref ref="ch-decimals" text="global" />.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Advantages of Place Value Systems</title>
+
+      <p>
+        We're all familiar with a place-value system, so it may seem strange to think about other systems, but we just saw Egyptian numbers.
+        Another common non-place-value number system is that of Roman Numbers, that we will see in section <xref ref="sect-alt-numbers" text="global" />, which uses I for 1, V for 5, X for 10, etc.
+      </p>
+
+      <p>
+        There are many reasons why nearly everyone in modern times uses the decimal place-value system, the Hindu-Arabic numbers.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              Equivalent numbers are written using fewer symbols.
+              For example, all numbers less than ten thousand can be written down with 4 or few symbols.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              This extends to decimals (we'll see later in the course), such as 123.45678
+            </p>
+          </li>
+
+          <li>
+            <p>
+              We can reasonably write down large numbers like 123,456,789,012,345,678.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Easy methods exist to do addition/subtraction.
+              It is <em>much</em> easier methods to do multiplication, division in place-value systems than others.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Multiplying and Dividing by powers of 10 are easy to do.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              It's ubiquitous.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>The Coin Model for Hindu-Arabic Numbers</title>
+
+      <p>
+        The following is an example of the coin model of Hindu-Arabic numbers.
+        At first, one can think of using coins (pennies, dimes, dollar) to represent 1, 10, 100 (powers of 10).
+        For example, the following denotes 317:
+      </p>
+
+      <figure xml:id="fig-ha-coin-model">
+        <caption></caption>
+        <image width="60%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+                \foreach \x in {0,1,2} \draw (\x,1.5) node [draw,circle,inner sep=1pt] {\small 100};
+                \foreach \x in {4} \draw (\x,1.5) node [draw,circle,inner sep=1pt] {\small 10};
+                \foreach \x in {6,7,...,12} \draw (\x,1.5) node [draw,circle,inner sep=1pt] {\small 1};
+              \end{tikzpicture}
+            ]]>
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        After developing this model where coins are thought of (or actually used as manipulatives), we can abstract to a chip model.
+        We will do some addition and subtraction with this in the next section and the expand in Chapter <xref ref="ch-algorithms" text="global" /> which develops the standard algorithms for arithmetic.
+        The chip model will give a nice way to understand the algorithms.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>The Dots-Line-and-Boxes (DLB) model</title>
+
+      <p>
+        A standard introduction to place value in base-10 is to use manipulatives that are similar to the following:
+      </p>
+
+      <image width="70%" source="images/base10.jpg" />
+        <p>
+          where the small blocks, called a unit represents 1, the sticks (called a 10-frame) with length of 10 units, represent ten, the yellow squares represent 100 and the green block represents 1000.
+          The smallest can be represented as
+        </p>
+
+        <tabular>
+          <col halign="center" /> <col halign="center" /> <col halign="center" />
+          <row>
+            <cell>
+            <image>
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                  \begin{tikzpicture}
+                    \draw (0,0) rectangle (1,1);
+                  \end{tikzpicture}
+              </latex-image>
+            </image>
+            </cell>
+            <cell>(0,0) grid (1,10)</cell>
+            <cell>(0,0) grid (10,10)</cell>
+          </row>
+
+          <row>
+            <cell>unit</cell>
+            <cell>ten-frame</cell>
+            <cell>hundred-frame</cell>
+          </row>
+        </tabular>
+
+        <p>
+          However, as a student gets older they can abstract these with symbols that are easier to write.
+          The result is often is the dots-lines-and-boxes (DLB) model:
+        </p>
+
+        <figure xml:id="fig-dlb">
+          <caption></caption>
+          <image width="60%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+                \fill (0,0) circle[radius=2pt] node[below] {1};
+                \draw[very thick] (2,0.5) -- (2,0) node [below] {10};
+                \draw (4,0) rectangle (4.5,0.5); 
+                \draw (4.25,0) node [below] {100}; 
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <example>
+          <statement>
+            <p>
+              Write 438 and 292 in the DLB model
+            </p>
+
+            <p />
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      <m>438</m>. This means draw 4 boxes, 3 lines, and 8 dots or
+                    </p>
+
+                    <figure xml:id="fig-dlb-01">
+                      <caption></caption>
+                      <image width="60%">
+                        <shortdescription>
+                        </shortdescription>
+                        <latex-image>
+                          <![CDATA[ 
+                            \begin{tikzpicture}
+                              \foreach \x in {0,0.75,1.5,2.25} \draw (\x,0) rectangle ({\x+0.5},0.5); 
+                              \foreach \x in {3,3.2,3.4} \draw[thick] (\x,0)--(\x,0.5); 
+                              \foreach \y in {0.1,0.25,0.4,0.55,0.7} \fill (3.6,\y) circle[radius=1.5pt]; 
+                              \foreach \y in {0.1,0.25,0.4} \fill (3.8,\y) circle[radius=1.5pt]; 
+                            \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                      </image>
+                    </figure>
+                  </li>
+
+                  <li>
+                    <p>
+                      <m>292</m>. Draw 2 boxes 9 lines and 2 dots.
+                    </p>
+
+                    <figure xml:id="fig-dlb-02">
+                      <caption></caption>
+                      <image width="60%">
+                        <shortdescription>
+                        </shortdescription>
+                        <latex-image>
+                          <![CDATA[ 
+                            \begin{tikzpicture}
+                              \foreach \x in {0,0.75} \draw (\x,0) rectangle ({\x+0.5},0.5); 
+                              \foreach \x in {1.5,1.7,...,3.2} \draw[thick] (\x,0)--(\x,0.5); 
+                              \foreach \y in {0.1,0.25} \fill (3.4,\y) circle[radius=1.5pt]; 
+                            \end{tikzpicture}
+                          ]]>
+                        </latex-image>
+                      </image>
+                    </figure>
+                  </li>
+                </ul>
+              </p>
+            </statement>
+          </example>
+        </paragraphs>
+      </subsection>
+    </section>

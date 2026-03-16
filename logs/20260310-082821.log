@@ -1,0 +1,39 @@
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : converting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx to svg graphics for placement in /Users/pstaab/code/informal-number-theory-book/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'publisher': '/Users/pstaab/code/informal-number-theory-book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : converting sect-set-diagram-6-1-1-3.tex to sect-set-diagram-6-1-1-3.pdf
+ERROR   : LaTeX compilation of sect-set-diagram-6-1-1-3.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of sect-set-diagram-6-1-1-3.tex failed
+ERROR   : Unable to generate some latex-image assets:
+ LaTeX compilation failed for 1 "latex-image"(s).
+Review the log for error messages, and LaTeX transcripts.
+Images are:
+  sect-set-diagram-6-1-1-3.tex
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-t9vrcj0a
+INFO    : Finished generating assets.
+
+CRITICAL: There were errors during the generate process.  See above.
+INFO    : ------------------------
+CRITICAL: Generating assets as failed.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------

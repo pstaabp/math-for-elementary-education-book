@@ -1,0 +1,478 @@
+<section xml:id="sect-alt-numbers">
+  <title>Alternative Number Systems</title>
+
+  <introduction>
+    <p>
+      For nearly everything that one does in mathematics will be done using the Hindu-Arabic system, we look at some alternative number systems.
+      There are a few reasons for this.
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            A little history is always good, so you know a little bit about how numbers developed.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            It is good to step outside your comfort zone, especially as a teacher.
+            This gives you good perspective.
+          </p>
+        </li>
+      </ul>
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Tallies</title>
+
+    <p>
+      A tally is a system where a vertical line (stroke) represents 1.
+      After five strokes you bundle with a slash: <m>\cancel{||||}\;\cancel{||||}\; ||| = 13</m>.
+    </p>
+
+    <p>
+      This is a nice system for counting a relatively short number of things and is often used in counting in games.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Egyptian Numbers</title>
+
+    <p>
+      Recall that we saw Egyptian numbers above in section <xref ref="sect-ha-numbers" text="global" />.
+      It wasn't discussed above, but it is not a place-value system, but is base-10.
+      Also, as discussed above, the DLB model is identical this system with different symbols and we can add and subtract in Egyptian in much the same way as the DLB model.
+      Consider <m>348 + 475</m> in Egyptian.
+      We will stack them to make bundling easier:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+        <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \i in {1,...,3} \draw ({0.5*\i},1) pic[scale=0.5]{egy100};
+            \foreach \i in {1,...,4} \draw ({5+0.5*\i},1) pic{egy10};
+            \foreach \i in {1,...,8} \draw ({10+0.25*\i},1) pic{egy1};
+            \foreach \i in {1,...,4} \draw ({0.5*\i},0) pic[scale=0.5]{egy100};
+            \foreach \i in {1,...,7} \draw ({5+0.5*\i},0) pic{egy10};
+            \foreach \i in {1,...,5} \draw ({10+0.25*\i},0) pic{egy1};
+          \end{tikzpicture}
+        ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      One can clearly see there are 7 coils, 11 heels and 13 strokes.
+      Since it is standard in a similar manner to our base-10 system to have a maximum of 9 symbols, we bundle 10 strokes to get a heel, resulting in 12 heels and 3 strokes.
+      Then 10 of the heels can be bundled into a coil, resulting in 8 coils  and 2 heels.
+      The resulting number would be
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+        <![CDATA[ 
+        \begin{tikzpicture}
+          \foreach \i in {1,...,8} \draw ({0.4*\i},0) pic[scale=0.5]{egy100};
+            \foreach \i in {1,...,2} \draw ({5+0.5*\i},0) pic{egy10};
+            \foreach \i in {1,...,3} \draw ({10+0.25*\i},0) pic{egy1};
+        \end{tikzpicture}
+        ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And this would show in our base-10 system, the number is 823.
+      Subtraction can be done similarly, where unbundling may need to occur.
+    </p>
+  </subsection>
+
+
+  <subsection xml:id="sect-roman-numbers">
+    <title>Roman Numerals</title>
+
+    <p>
+      Another non-standard number system that is quite common is that of <alert>Roman Numbers</alert>.
+      Similar to Egyptian numbers, there are different symbols for different values and the symbols used are typically the UPPER-CASE roman alphabetic numbers as:
+    </p>
+
+    <tabular>
+      <col right="minor"/> <col halign="center"/> <col halign="center"/> <col halign="center"/> <col halign="center"/> <col halign="center"/> <col halign="center"/> <col halign="center"/> <col halign="center" />
+      <row bottom="minor">
+        <cell>symbol</cell>
+        <cell>I</cell>
+        <cell>V</cell>
+        <cell>X</cell>
+        <cell>L</cell>
+        <cell>C</cell>
+        <cell>D</cell>
+        <cell>M</cell>
+      </row>
+
+      <row>
+        <cell />
+      </row>
+
+      <row>
+        <cell>value</cell>
+        <cell>1</cell>
+        <cell>5</cell>
+        <cell>10</cell>
+        <cell>50</cell>
+        <cell>100</cell>
+        <cell>500</cell>
+        <cell>1000</cell>
+      </row>
+
+      <row>
+        <cell />
+      </row>
+    </tabular>
+
+    <p>
+      Because of the 5s, 50s and 500s, this system is a little more complicated than the Egyptian one especially when converting from Hindu-Arabic numbers to Roman and if you do operations in Roman.
+      For example, we can write <m>56</m> as LVI and 375 as CCCLXXV.
+    </p>
+
+    <p>
+      One wrinkle is how 4s, 9s, 40s, 90s, 400s and 900s are dealt with and that is for 4, 40 or 400, instead of writing IIII, XXXX, or CCCC, write IV, XL or CD.
+      Similarly, 9, 90 and 900 is written as IX, XC and CM.
+      Note that the relative position of the symbols is important.
+      For example, VI is 6 and IV is 4.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Write 2437, 3046 and 994 in roman numbers:
+        </p>
+
+        <p />
+          <p>
+            <ul>
+              <li>
+                <p>
+                  <me>
+                    2437 = 2000 + 400 + 30 + 7
+                  </me>
+                  so this is MM then CD then XXX then VII.
+                  Merge them together for MMCDXXXVII.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <me>
+                    3046 = 3000 + 40 + 6
+                  </me>
+                  so this is MMM then XL then VI, then this becomes MMMXLVI
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <me>
+                    994 = 900 + 90 + 4
+                  </me>
+                  which is CM then XC then IV, then together this becomes: CMXCIV
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </example>
+
+      <p>
+        And the following converts from Roman Numbers to Hindu-Arabic.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            Write MMDCCXXXVI, MMMCDLXXIV, DCCCLXXXVIII in roman numbers:
+          </p>
+
+          <p />
+            <p>
+              <ul>
+                <li>
+                  <p>
+                    For MMDCCXXXVI split into chunks that correspond to multiples of tens, hundreds and thousands.
+                    <me>
+                      \begin{aligned} \text{MM}\amp\qquad 2000 \\ \text{DCC}\amp\qquad 700 \\ \text{XXX}\amp\qquad 30 \\ \text{VI}\amp\qquad 6 \end{aligned}
+                    </me>
+                    and adding these up results in 2736.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    For MMMCDLXXIV, split into chunks that correspond to multiples of tens, hundreds and thousands.
+                    <me>
+                      \begin{aligned} \text{MMM}\amp\qquad 3000 \\ \text{CD}\amp\qquad 900 \\ \text{LXX}\amp\qquad 70 \\ \text{IV}\amp\qquad 4 \end{aligned}
+                    </me>
+                    and adding these up results in 3974.
+                  </p>
+                </li>
+
+                <li>
+                  <p>
+                    For DCCCLXXXVIII, split into chunks that correspond to multiples of tens, hundreds and thousands.
+                    <me>
+                      \begin{aligned} \text{DCCC}\amp\qquad 800 \\ \text{LXXX}\amp\qquad 80 \\ \text{VIII}\amp\qquad 8 \end{aligned}
+                    </me>
+                    and adding these up results in 888.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </statement>
+        </example>
+
+        <p>
+          The next couple of examples shows how to do subtraction with Roman Numbers.
+        </p>
+
+        <example>
+          <statement>
+            <p>
+              Find <m>\text{MMDCCLXIV}-\text{MCCCXXXVII}</m> by staying in Roman numbers and not switching to Hindu-Arabic.
+            </p>
+          </statement>
+
+          <solution>
+            <p>
+              The easiest way to do this is to break these up into common symbols/values.
+            </p>
+
+            <p>
+              <me>
+                \begin{aligned} \text{MM} - \text{M} \amp = \text{M} \\ \amp \quad \text{for the next values, rewrite the D as 5 Cs and the recombine,} \\ \text{DCC} - \text{CCC} \amp = \text{CCCCCCC} - \text{CCC} = \text{CCCC} = \text{CD} \\ \amp \quad\text{Look at Ls and X} \\ \text{LX} - \text{XXX} \amp = \text{XXXXXX}- \text{XXX} = \text{XXX} \\ \end{aligned}
+              </me>
+              and now for the numerals less than 10, notice that the first number is smaller than the second, so we unbundle a X:
+              <me>
+                \text{XIV} - \text{VII} = \text{VVIIII} - \text{VII} = \text{VII}
+              </me>
+              and the result is MCDXXVII.
+            </p>
+          </solution>
+        </example>
+
+        <p>
+          From the previous examples, arithmetic in roman numerals is difficult.
+          Although there some features of place value, due to the fact that are both tens, hundreds and thousands values as well as the half values means there is a lot of bundling/unbundling needed for even simple operations.
+        </p>
+      </subsection>
+
+
+      <subsection xml:id="sect-babylonian">
+        <title>Babylonian Number System</title>
+
+        <p>
+          The Babylonian Number system is a base-60 or sexagesimal system which has 59 non-zero digits in multiple positions.
+          It is a blend of a positional system (like the Hindu-Arabic numbers) with different symbols for ones and tens (up to 59).
+        </p>
+
+        <p>
+          EXAMPLE?
+        </p>
+
+        <p>
+          In two main cases, this system still exists today in that our hour and minutes are subdivided into 60 minutes and 60 seconds.
+          Additionally, breaking the circle in <m>360^{\circ}</m> is a result of this as well.
+        </p>
+      </subsection>
+
+
+      <subsection xml:id="sect-mayan-system">
+        <title>Mayan Numbers</title>
+
+        <p>
+          The Mayan number system is another non-decimal number system.
+          The Mayan numbers use base-20 (vigesimal) where there are digits 0 to 19 as shown below:
+        </p>
+
+        <p>
+          Numbers are written vertically.
+          For example:
+        </p>
+
+        <figure xml:id="fig-mayan">
+          <caption></caption>
+          <image width="25%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+            <![CDATA[ 
+              \begin{tikzpicture}
+                \draw (0,0) rectangle (2,3);
+                \draw (0,1) -- (2,1); \draw (0,2) -- (2,2); 
+                \foreach \x in {0.5,1,1.5} {\fill (\x,2.5) circle (3pt);}
+                \foreach \y in {1.1,1.3,1.5} {\fill (0.25,\y) rectangle (1.75,{\y+0.08});} 
+                \fill (0.75,1.75) circle (3pt); \fill (1.25,1.75) circle (3pt);
+                \fill (0.25,0.5) rectangle (1.75,0.6);
+                \end{tikzpicture}
+              ]]>
+            </latex-image>
+          </image>
+        </figure>
+
+        <p>
+          where the bottom box is the ones, the middle box is the number of 20s (remember that's the base) and the top is the number of 400s ($20^2$).
+        </p>
+
+        <p>
+          which is <m>3 \cdot 20^{2} + 17 \cdot 20 + 5</m> which is <m>1200+340+5=1545</m> in Hindu-Arabic numbers.
+        </p>
+
+        <p>
+          It's also interesting that the Maya's have a zero digits, which predates the Hindu-Arabic zero by a few hundred years.
+        </p>
+
+
+        <paragraphs>
+          <title>Convert to Mayan</title>
+
+          <p>
+            Write 1045 in Mayan
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  There are 2 400s.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The remainder is 245.
+                  There are 12 20s in here.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  The remainder is 5.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </paragraphs>
+      </subsection>
+
+
+      <subsection xml:id="sect-base-five">
+        <title>Base-5 Numbers</title>
+
+        <p>
+          We will also spend some time this semester talking about base-5 arithmetic.
+          The first question should be why? Nobody uses base-5 at all.
+          There's one reason for doing this and that is to understand our decimal (base-10) system at a deeper level.
+          Before jumping into this section, make sure you understand the coin/chip model seen in Section <xref ref="sect-ha-numbers" text="global" />.
+          For decimal numbers, recall that we use chips or coins with denominations of 1, 10, 100, 1000 (powers of 10).
+        </p>
+
+
+        <paragraphs>
+          <title>Base-5 coin models</title>
+
+          <p>
+            Now, let's say instead we have a set of coins (pennies, nickels-worth 5 cents, quarters-worth 25 cents and a fiftoon<fn>As far as I can tell this is a completely fictional coin.
+            It's important that it is worth 125 cents, because <m>5^{3}=125</m>, so it is the value of the 4th place value in base-5-worth 125 cents</fn>
+            We will also write combinations of this with a 5 subscript.
+            If we have 3 pennies, 2 nickels, 4 quarters and 1 fiftoon, which we could draw as
+          </p>
+
+          <image width="80%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \x in {1,2,3} \draw (\x,1.5) node [draw,circle,inner sep=1pt] {\small 1};
+                  \foreach \x in {5,6} \draw (\x,1.5) node [draw,circle,inner sep=1pt] {\small 5};
+                  \foreach \x in {8,9,10,11} \draw (\x,1.5) node [draw,circle,inner sep=1pt] {\small 25};
+                  \foreach \x in {13} \draw (\x,1.5) node [draw,circle,inner sep=1pt] {\small 125};
+                  \end{tikzpicture}
+                ]]>
+            </latex-image>
+          </image>
+
+          <p>
+            and like decimal numbers, we write the result as
+            <me>
+              1423_{\text{five}}
+            </me>
+            where we write the number like in decimal from left to right as largest place value (coin value) to smallest.
+            Note, the base is written out as a subscript.
+          </p>
+        </paragraphs>
+
+
+        <paragraphs>
+          <title>Converting from base-5 to base-10</title>
+
+          <p>
+            The conversion from base-5 to base-10 is relatively straightforward if you think of money.
+            Consider <m>1023_{\text{five}}</m> and write it in decimal.
+            We just need to recall the amount of each coin.
+            This number represents 1 fiftoon, 2 nickels and 3 pennies or
+            <me>
+              1 (125) + 0 (25) + 2 (5) + 3 = 125+10+3 = 138
+            </me>
+          </p>
+        </paragraphs>
+
+
+        <paragraphs>
+          <title>Converting from base-10 to base-5</title>
+
+          <p>
+            This direction is a little bit more complicated.
+            Let's write the number 486 in base-5.
+          </p>
+
+          <p>
+            <ul>
+              <li>
+                <p>
+                  We first determine the number of fiftoons to use.
+                  We can use long division (see Chapter <xref ref="ch-algorithms" text="global" />) as 486125 and the quotient is the number of fiftoons or 3.
+                  Then we need the remainder or 111 as well.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  Next find the number of quarters in 111 and use long division: 11125 which shows it takes 4 quarters with a remainder of 11.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  There are 2 nickels in 11, with 1 left over, so 1 penny.
+                </p>
+              </li>
+            </ul>
+          </p>
+
+          <p>
+            Overall, there are 3 fiftoons, 4 quarters, 2 nickels and 1 penny.
+            Thus the number 486 in base-5 is
+            <me>
+              3421_{\text{five}}
+            </me>
+          </p>
+        </paragraphs>
+      </subsection>
+    </section>

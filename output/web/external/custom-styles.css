@@ -1,0 +1,4 @@
+.egyptian-num {
+    font-size: 1.5em; /* Makes it 50% larger than surrounding text */
+    vertical-align: middle; /* Aligns it better with Latin letters */
+}

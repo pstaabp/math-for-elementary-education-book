@@ -1,0 +1,15 @@
+<chapter xml:id="ch-thinking-strategies" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Thinking Strategies and Mental Math</title>
+
+  <introduction>
+    <p>
+      We saw all of the arithmetic operations in <xref ref="ch-numbers"/>.
+      We continue with many of the ideas there to improve the thinking strategies.
+      The ability to do mathematical operations in one’s head is an important skill and is often called <em>Mental Math</em>.
+    </p>
+  </introduction>
+
+  <xi:include href="./sect-thinking-strategies.ptx" />
+  <xi:include href="./sect-mental-math.ptx" />
+  <xi:include href="./sect-rounding.ptx" />
+</chapter>

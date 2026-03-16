@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Thinking Strategies</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Mathematics for Elementary Educators">
+<meta property="book:author" content="You">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.11.19';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="math-elementary-educators.html"><span class="title">Mathematics for Elementary Educators</span> <span class="subtitle">The foundational mathematics for future teachers</span></a></h1>
+<p class="byline">You</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-thinking-strategies.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-thinking-strategies.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sect-mental-math.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-preliminary.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminary Material</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-preliminary-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Mathematical Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Mathematical Equations and Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Mathematical Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Using the Equals Sign correctly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-preliminary-4.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Counterexamples</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers: the essence of mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Hindu-Arabic Numbers and Models for Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Counting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Model and Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-ha-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Hindu-Arabic Number System, Egyptian numbers and the Place Value System</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition-subtraction.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition and Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-3" class="internal"><span class="codenumber">2.2.4.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-4" class="internal"><span class="codenumber">2.2.4.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-5" class="internal"><span class="codenumber">2.2.4.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-6" class="internal"><span class="codenumber">2.2.4.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-7" class="internal"><span class="codenumber">2.2.4.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-8" class="internal"><span class="codenumber">2.2.4.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-9" class="internal"><span class="codenumber">2.2.4.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication-division.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Multiplication and Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-3" class="internal"><span class="codenumber">2.3.1.1</span> <span class="title">Properties of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-4" class="internal"><span class="codenumber">2.3.1.2</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-5" class="internal"><span class="codenumber">2.3.1.3</span> <span class="title">Multiplying by tens or multiples of 10s</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-3" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Set Model for partitive and measurement</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-4" class="internal"><span class="codenumber">2.3.2.2</span> <span class="title">Division Interpretation and Word Problems</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-5" class="internal"><span class="codenumber">2.3.2.3</span> <span class="title">Division with Remainders</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-6" class="internal"><span class="codenumber">2.3.2.4</span> <span class="title">Division by Zero</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Alternative Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Tallies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Egyptian Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-roman-numbers" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-babylonian" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Babylonian Number System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-mayan-system" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Mayan Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-base-five" class="internal"><span class="codenumber">2.4.6</span> <span class="title">Base-5 Numbers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">3</span> <span class="title">Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-diagrams-models.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Diagrams and Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-set-diagram" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Set Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-word-problems.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Word Problems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-3" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Writing Good Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-4" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Covering All Interpretations</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-teachers-solutions.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Teacher’s Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-3" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Solving Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-4" class="internal"><span class="codenumber">3.3.2</span> <span class="title">The Unitary Method and Multi-step problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-thinking-strategies.html" class="internal"><span class="codenumber">4</span> <span class="title">Thinking Strategies and Mental Math</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sect-thinking-strategies.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Thinking Strategies</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-3" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-4" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Thinking Strategies for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-5" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-6" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Thinking Strategies for Division</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-mental-math.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Mental Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-3" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Writing Mental Math</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-4" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mimicking the Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-5" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Rearranging and Compatible Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-6" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Compensation</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-rounding.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Estimation and Rounding</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Rounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-estimation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">What is a good estimation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Range Estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-7" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Teaching Estimates</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-algorithms.html" class="internal"><span class="codenumber">5</span> <span class="title">Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition-algorithms.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Prerequisite for Column Addition with Bundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-4" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Chip Models For Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-5" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Lattice Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-6" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Base-5 Addition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-subtraction-algorithm.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-3" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Coin Model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-4" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Chip Model for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-5" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-6" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Chip Model of Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-7" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Base-5 Subtraction</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#basics-s-sample-exercises" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication-algorithm.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-3" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Stages to Learning Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-4" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expanded Form of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-5" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Box Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-6" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Chip Models with Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-7" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Lattice Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-8" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Base-5 multiplication</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-long-division.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Long Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-3" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long Division with 1-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-4" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Measurement approach</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-5" class="internal"><span class="codenumber">5.4.3</span> <span class="title">The long division algorithm and the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-6" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Extending the Long Division method to multiple-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-7" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Long Division using estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-8" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Base-5 Long Division</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-primes.html" class="internal"><span class="codenumber">6</span> <span class="title">Factors, Primes and Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-even-odd.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Even and Odd Numbers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-even-odd-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-tests.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Tests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-3" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for 11</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Primality Test</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-gcf-lcm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Greatest Common Factors and Least Common Multiples</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Least Common Multiple</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-3" class="internal"><span class="codenumber">6.4.1.1</span> <span class="title">Euclid’s Algorithm</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-4" class="internal"><span class="codenumber">6.4.1.2</span> <span class="title">Relationship between LCM and GCF</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-proofs.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Prime Number and Divisibility Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-3" class="internal"><span class="codenumber">6.5.1</span> <span class="title">The Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-4" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Divisibility Test Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-5" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Prime Number Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-6" class="internal"><span class="codenumber">6.5.4</span> <span class="title">How many primes are there?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-7" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Proof by Contradiction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-8" class="internal"><span class="codenumber">6.5.6</span> <span class="title">The Greatest Common Factors and Lowest Common Multiples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-decimals.html" class="internal"><span class="codenumber">8</span> <span class="title">Decimals</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-integers.html" class="internal"><span class="codenumber">9</span> <span class="title">Integers</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sect-thinking-strategies"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thinking Strategies</span>
+</h2>
+<section class="introduction" id="sect-thinking-strategies-2"><div class="para" id="sect-thinking-strategies-2-1">First, recall that there are three addition properties that were introduced in  <a href="sect-addition-subtraction.html#sect-add-props" class="internal" title="Subsection 2.2.1: Properties of Addition">Subsection 2.2.1</a>. Let <span class="process-math">\(a, b\)</span> and <span class="process-math">\(c\)</span> be any whole number. Then<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-2-2">
+<dl class="description-list wide">
+<dt id="sect-thinking-strategies-2-2-1-1">Additive Identity<div class="autopermalink" data-description="Item: Additive Identity"><a href="#sect-thinking-strategies-2-2-1-1" title="Copy heading and permalink for Item: Additive Identity" aria-label="Copy heading and permalink for Item: Additive Identity">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sect-thinking-strategies-2-2-1-1-2">
+<div class="displaymath process-math" id="prop-add-identity">
+\begin{equation}
+a+ 0 = a\tag{4.1.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-thinking-strategies-2-2-1-2">Additive Commutative<div class="autopermalink" data-description="Item: Additive Commutative"><a href="#sect-thinking-strategies-2-2-1-2" title="Copy heading and permalink for Item: Additive Commutative" aria-label="Copy heading and permalink for Item: Additive Commutative">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sect-thinking-strategies-2-2-1-2-2">
+<div class="displaymath process-math" id="prop-add-commutative">
+\begin{equation}
+a+b = b+ a\tag{4.1.2}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-thinking-strategies-2-2-1-3">Additive Associative<div class="autopermalink" data-description="Item: Additive Associative"><a href="#sect-thinking-strategies-2-2-1-3" title="Copy heading and permalink for Item: Additive Associative" aria-label="Copy heading and permalink for Item: Additive Associative">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sect-thinking-strategies-2-2-1-3-2">
+<div class="displaymath process-math" id="prop-add-associative">
+\begin{equation}
+a+(b+c) = (a+b)+c\tag{4.1.3}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-2-2-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-2-3">as well as the Any Order Addition Lemma (<a href="sect-addition-subtraction.html#lem-any-order-add" class="xref" data-knowl="./knowl/xref/lem-any-order-add.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 2.2.6: Any-Order Property of Addition">Lemma 2.2.6</a>)<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-2-4">Often with the following thinking strategies, we will cite these properties.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section><section class="subsection" id="sect-thinking-strategies-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thinking Strategies for Addition</span>
+</h3>
+<div class="para" id="sect-thinking-strategies-3-2">This section discusses good ways to think about adding numbers using the properties above.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="sect-thinking-strategies-3-3"><h4 class="heading"><span class="title">Counting-on.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-3-3-2">
+<div class="para">This uses the idea of starting at the first addend and then counting on the second addend. For example</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-3-2-1">
+\begin{equation*}
+7+2=9
+\end{equation*}
+</div>
+<div class="para">starts with 7 and then adds on 2 to get to 9.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-3-3-3">When the second addend is small the counting-on method is a good thinking strategy. In addition, an example like <span class="process-math">\(130 + 20\)</span> can be thought of as counting on if you count by 10s.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Counting-on"><a href="#sect-thinking-strategies-3-3" title="Copy heading and permalink for Paragraphs: Counting-on" aria-label="Copy heading and permalink for Paragraphs: Counting-on">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-3-4"><h4 class="heading"><span class="title">Commutativity.</span></h4>
+<div class="para" id="sect-thinking-strategies-3-4-2">One can use the additive commutative property (<a href="sect-thinking-strategies.html#prop-add-commutative" class="xref" data-knowl="./knowl/xref/prop-add-commutative.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.1.2">(4.1.2)</a>) to help in other operation. For example, <span class="process-math">\(2+6\)</span> can be thought-of in the “counting-on” method, that is start at 2 and count up 6 more to get to 8. However, if we use the commutative property, then <span class="process-math">\(2+6 = 6+2\)</span> is easier to use the counting-on method. In short, if either addend is small, count on with that number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Commutativity"><a href="#sect-thinking-strategies-3-4" title="Copy heading and permalink for Paragraphs: Commutativity" aria-label="Copy heading and permalink for Paragraphs: Commutativity">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-3-5"><h4 class="heading"><span class="title">Doubles.</span></h4>
+<div class="para" id="sect-thinking-strategies-3-5-2">The double <span class="process-math">\(2+2, 3+3,\ldots\)</span> are important to know and will help when getting to multiplication. See the next section.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Doubles"><a href="#sect-thinking-strategies-3-5" title="Copy heading and permalink for Paragraphs: Doubles" aria-label="Copy heading and permalink for Paragraphs: Doubles">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-3-6"><h4 class="heading"><span class="title">Tens Combinations.</span></h4>
+<div class="para" id="sect-thinking-strategies-3-6-2">Recall that the tens combinations are pairs of numbers that add to 10 or <span class="process-math">\(5+5, \; 4+6,\; 3+7,\; 2+8,\; 1+9,\;\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Tens Combinations"><a href="#sect-thinking-strategies-3-6" title="Copy heading and permalink for Paragraphs: Tens Combinations" aria-label="Copy heading and permalink for Paragraphs: Tens Combinations">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-3-7"><h4 class="heading"><span class="title">Adding Ten or One Hundred.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-3-7-2">
+<div class="para">Consider <span class="process-math">\(6+10\text{.}\)</span> As we saw above, we can think of this using commutative and counting on to get <span class="process-math">\(6+10 = 10 + 6\)</span> and count up from 10 to 6 to get 16. After that is natural, one should be able to add multiples of ten easily. For example in <span class="process-math">\(28+30\text{,}\)</span> recall place value to get:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-7-2-4">
+\begin{equation*}
+28 + 30  = (20+8) + 30 = 8 + (20 + 30) = 8 + 50 = 58
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Adding Ten or One Hundred"><a href="#sect-thinking-strategies-3-7" title="Copy heading and permalink for Paragraphs: Adding Ten or One Hundred" aria-label="Copy heading and permalink for Paragraphs: Adding Ten or One Hundred">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-3-8"><h4 class="heading"><span class="title">Compatible Numbers.</span></h4>
+<div class="para" id="sect-thinking-strategies-3-8-2">Compatible numbers are those that add to a resulting “nice” number. This result is often a multiple of 10 or 100 and are helpful in thinking strategies. The following are example of compatible numbers with respect to addition: <span class="process-math">\(17+23\text{,}\)</span> <span class="process-math">\(82 +38\text{,}\)</span> <span class="process-math">\(46+34\text{,}\)</span> <span class="process-math">\(170 + 230\text{,}\)</span> <span class="process-math">\(480 + 220\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-3-8-3">Notice in the first 3 pairs, the ones digits form a tens combination and in the latter 2 pairs, the tens digits form a tens combination.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-8-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-3-8-4">
+<div class="para">Consider a problem like <span class="process-math">\(34 + 48 + 16 + 32 +7\text{.}\)</span> Perhaps you might think to do the following:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-8-4-2">
+\begin{equation*}
+\begin{aligned} 34 + 48 + 16 + 32 + 7 \amp = 82 + 16 + 32 +7 \\ \amp = 98 + 32 + 7 \\ \amp = 130 +7\\ \amp = 137 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-8-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-3-8-5">
+<div class="para">Many of these steps are challenging to do mentally mainly because there is bundling that needs to occur. Instead, we might use the any-order corollary, we can add these in any way and</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-8-5-1">
+\begin{equation*}
+34 + 48 + 16 + 32 + 7 = (34 + 16) + (48+32) + 7
+\end{equation*}
+</div>
+<div class="para">These pairs are compatible</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-8-5-2">
+\begin{equation*}
+\phantom{34 + 48 + 16 + 32 + 7}  =  50 + 80 + 7 = 137 \phantom{777777}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Compatible Numbers"><a href="#sect-thinking-strategies-3-8" title="Copy heading and permalink for Paragraphs: Compatible Numbers" aria-label="Copy heading and permalink for Paragraphs: Compatible Numbers">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-3-9"><h4 class="heading"><span class="title">Compensation.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-3-9-2">
+<div class="para">The method of compensation is a way to add larger numbers in a more efficient way by changing the addends. An example is <span class="process-math">\(48 + 34\text{.}\)</span> We will see below how to think about place value with this, however if we write this as</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-9-2-2">
+\begin{equation*}
+48 + 34 = 48 + (2 +32) = (48+2) + 32
+\end{equation*}
+</div>
+<div class="para">Using the Associative Property</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-9-2-3">
+\begin{equation*}
+= 50 + 32 = 82 \phantom{77777777}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-3-9-3">This works by transferring any number from one addend to the other. We can also write this as<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-9-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-thinking-strategies-3-9-4.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Paragraphs: Compensation"><a href="#sect-thinking-strategies-3-9" title="Copy heading and permalink for Paragraphs: Compensation" aria-label="Copy heading and permalink for Paragraphs: Compensation">🔗</a></div></section><div class="para" id="sect-thinking-strategies-3-10">We now look at a few examples of using these thinking strategies.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-thinking-strategies-3-11"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-thinking-strategies-3-11-1-1">Use compensation to find the following addition problems:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="sect-thinking-strategies-3-11-1-2">
+<ol class="decimal" id="sect-thinking-strategies-3-11-1-2-1">
+<li id="sect-thinking-strategies-3-11-1-2-1-1">
+<div class="para" id="sect-thinking-strategies-3-11-1-2-1-1-1">
+<span class="process-math">\(\displaystyle 67 + 38\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-thinking-strategies-3-11-1-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-3-11-1-2-1-2">
+<div class="para" id="sect-thinking-strategies-3-11-1-2-1-2-1">
+<span class="process-math">\(\displaystyle 98 + 23\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-thinking-strategies-3-11-1-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-3-11-1-2-1-3">
+<div class="para" id="sect-thinking-strategies-3-11-1-2-1-3-1">
+<span class="process-math">\(\displaystyle 993 + 231\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sect-thinking-strategies-3-11-1-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sect-thinking-strategies-3-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-thinking-strategies-3-11-2-1">
+<ol class="decimal" id="sect-thinking-strategies-3-11-2-1-1">
+<li id="sect-thinking-strategies-3-11-2-1-1-1">
+<div class="para" id="sect-thinking-strategies-3-11-2-1-1-1-1">One way to think about <span class="process-math">\(67+38\)</span> is to think about transferring 3 from the second addend to the first.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-thinking-strategies-3-11-2-1-1-1-2.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-thinking-strategies-3-11-2-1-1-1-3">alternatively, we transfer 2 from the first to the second addend or:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-2-1-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-thinking-strategies-3-11-2-1-1-1-4.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-thinking-strategies-3-11-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-3-11-2-1-1-2">
+<div class="para" id="sect-thinking-strategies-3-11-2-1-1-2-1">One way to tackle <span class="process-math">\(98+23\)</span> one is to transfer 2 from the second addend to the first:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-thinking-strategies-3-11-2-1-1-2-2.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-thinking-strategies-3-11-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-3-11-2-1-1-3">
+<div class="para" id="sect-thinking-strategies-3-11-2-1-1-3-1">One way to approach <span class="process-math">\(993+231\)</span> is to transfer 7 from the second addend to the first:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-2-1-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-thinking-strategies-3-11-2-1-1-3-2.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Item 3"><a href="#sect-thinking-strategies-3-11-2-1-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.1.1.1"><a href="#sect-thinking-strategies-3-11-2" title="Copy heading and permalink for Solution 4.1.1.1" aria-label="Copy heading and permalink for Solution 4.1.1.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.1.1"><a href="#sect-thinking-strategies-3-11" title="Copy heading and permalink for Example 4.1.1" aria-label="Copy heading and permalink for Example 4.1.1">🔗</a></div></article><div class="para logical" id="sect-thinking-strategies-3-12">
+<div class="para">Compensation is the most difficult, but perhaps the most important thinking strategy for addition. We show an algebraic as well as a diagram that shows this. First, let’s say that we want to find <span class="process-math">\(a+b\)</span> and we can write <span class="process-math">\(a=k+j\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-3-12-3">
+\begin{equation*}
+a + b = (k+j) +b = k + (j+b)
+\end{equation*}
+</div>
+<div class="para">the compensation is the transfer of <span class="process-math">\(k\)</span> from <span class="process-math">\(a\)</span> to <span class="process-math">\(b\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-3-13">A bar diagram leads nicely to this. We will use the example <span class="process-math">\(43 + 56\text{,}\)</span> but this works for any pair of addends. First, we will draw a bar diagram for <span class="process-math">\(43+56\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-thinking-strategies-3-14.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-thinking-strategies-3-15">Next, let’s consider the compensation <span class="process-math">\(43+56=40+59\)</span> where <span class="process-math">\(3\)</span> has been transferred from the first addend to the second one. This can be drawn as another above:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-3-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-thinking-strategies-3-16.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Subsection 4.1.1: Thinking Strategies for Addition"><a href="#sect-thinking-strategies-3" title="Copy heading and permalink for Subsection 4.1.1: Thinking Strategies for Addition" aria-label="Copy heading and permalink for Subsection 4.1.1: Thinking Strategies for Addition">🔗</a></div></section><section class="subsection" id="sect-thinking-strategies-4"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thinking Strategies for Subtraction</span>
+</h3>
+<div class="para" id="sect-thinking-strategies-4-2">This covers some ways to think about subtraction problems. We saw the <em class="emphasis">counting down</em> and <em class="emphasis">counting up</em> in <a href="ch-numbers.html" class="internal" title="Chapter 2: Numbers: the essence of mathematics">Chapter 2</a>, but we will explain this with some larger numbers. The <em class="emphasis">compensation</em> method is similar to that of addition, but works a bit differently.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="sect-thinking-strategies-4-3"><h4 class="heading"><span class="title">Counting Down.</span></h4>
+<div class="para" id="sect-thinking-strategies-4-3-2">If we are thinking of a problem like <span class="process-math">\(65 - 23\text{,}\)</span> you can use <em class="emphasis">counting down</em> as starting at 65 and counting down 23. However, it’s easier to count first by 2 tens, then by 3 ones. The number line below shows this:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-thinking-strategies-4-3-3.svg" role="img" class="contained" alt=""></div>
+<div class="autopermalink" data-description="Paragraphs: Counting Down"><a href="#sect-thinking-strategies-4-3" title="Copy heading and permalink for Paragraphs: Counting Down" aria-label="Copy heading and permalink for Paragraphs: Counting Down">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-4-4"><h4 class="heading"><span class="title">Counting Up.</span></h4>
+<div class="para" id="sect-thinking-strategies-4-4-2">Similar to counting down, if we have a problem like <span class="process-math">\(65-23\text{,}\)</span> we start at 23 and count up to 65. However, first count up by tens to 63, then up 2 to 65. Visually, we can see this with:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-thinking-strategies-4-4-3.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-thinking-strategies-4-4-4">and this shows that the result (difference) is the total number of hops or 42.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Counting Up"><a href="#sect-thinking-strategies-4-4" title="Copy heading and permalink for Paragraphs: Counting Up" aria-label="Copy heading and permalink for Paragraphs: Counting Up">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-4-5"><h4 class="heading"><span class="title">Compensation.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-4-5-2">
+<div class="para">Similar to that of compensation with addition, we can simplify calculations involving subtraction. Consider the following:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-4-5-2-1">
+\begin{equation*}
+\begin{aligned} 34 - 18 \amp = 34 - 18 + (2-2) \qquad \text{using the additive identity property} \\ \amp = (34+2)-18-2 \qquad \text{using the any-order property} \\ \amp = 36 - 20 = 16 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-4-5-3">
+<div class="para">Note: since one can add any number, typically it’s best to add or subtract a number to make the subtrahend a multiple of 10 (or as we will see later a multiple of 100). Note that if we subtract 4 from each like:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-4-5-3-1">
+\begin{equation*}
+\stackrel{-4}{34} - \stackrel{-4}{18} = 30 -14 = 16
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-4-5-4">is correct, however the calculation <span class="process-math">\(36-20\)</span> is easier to do than <span class="process-math">\(30-14\text{.}\)</span> Why?<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Compensation"><a href="#sect-thinking-strategies-4-5" title="Copy heading and permalink for Paragraphs: Compensation" aria-label="Copy heading and permalink for Paragraphs: Compensation">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-4-6"><h4 class="heading"><span class="title">Compatible Numbers.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-4-6-2">
+<div class="para">Similar to that of compatible numbers for addition, compatible numbers for subtraction are those that are easier to do or result in “nice” numbers, like those with multiples of 10 or 100. The following are compatibles <span class="process-math">\(93-23\text{,}\)</span> <span class="process-math">\(67-17\text{,}\)</span> <span class="process-math">\(120-30\text{,}\)</span> <span class="process-math">\(138-18\text{.}\)</span> This allows us to do some operations like <span class="process-math">\(97 + 28 -17 - 8\text{.}\)</span> If we work this from left to right:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-4-6-2-6">
+\begin{equation*}
+\begin{aligned} 97 + 28 -17 - 8 \amp = 125 - 17-8 \amp\amp\text{Add the first two numbers} \\ \amp = 108 - 8 \amp\amp\text{now subtract $125-17$}\\ \amp = 100 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-4-6-3">
+<div class="para">and you should notice that the last operation was easy to do, but the first was not. Instead we can rearrange things as:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-4-6-3-1">
+\begin{equation*}
+\begin{aligned} 97 + 28 -17 - 8 \amp = (97-17)+(28-8) \amp\amp\text{rearrange for compatible numbers} \\ \amp = 80 +20 \\ \amp = 100 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-4-6-4">and all of these operations are relatively easy to do.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Compatible Numbers"><a href="#sect-thinking-strategies-4-6" title="Copy heading and permalink for Paragraphs: Compatible Numbers" aria-label="Copy heading and permalink for Paragraphs: Compatible Numbers">🔗</a></div></section><article class="example example-like" id="sect-thinking-strategies-4-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para logical" id="sect-thinking-strategies-4-7-1-1">
+<div class="para">Evaluate the following subtraction problems using compensation:</div>
+<ol class="decimal" id="sect-thinking-strategies-4-7-1-1-1">
+<li id="sect-thinking-strategies-4-7-1-1-1-1">
+<div class="para" id="sect-thinking-strategies-4-7-1-1-1-1-1">
+<span class="process-math">\(\displaystyle 54 - 37\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-7-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-thinking-strategies-4-7-1-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-4-7-1-1-1-2">
+<div class="para" id="sect-thinking-strategies-4-7-1-1-1-2-1">
+<span class="process-math">\(\displaystyle 92 - 43\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-7-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-thinking-strategies-4-7-1-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sect-thinking-strategies-4-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-thinking-strategies-4-7-2-1">
+<ol class="decimal" id="sect-thinking-strategies-4-7-2-1-1">
+<li id="sect-thinking-strategies-4-7-2-1-1-1">
+<div class="para logical" id="sect-thinking-strategies-4-7-2-1-1-1-1">
+<div class="para"><span class="process-math">\(54-37\)</span></div>
+<div class="displaymath process-math" id="sect-thinking-strategies-4-7-2-1-1-1-1-2">
+\begin{equation*}
+\stackrel{+3}{54} - \stackrel{+3}{37}= 57-40 = 17
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-7-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-thinking-strategies-4-7-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-4-7-2-1-1-2">
+<div class="para logical" id="sect-thinking-strategies-4-7-2-1-1-2-1">
+<div class="para"><span class="process-math">\(92-43\)</span></div>
+<div class="displaymath process-math" id="sect-thinking-strategies-4-7-2-1-1-2-1-2">
+\begin{equation*}
+\stackrel{-3}{92} - \stackrel{-3}{43} = 89 - 40 = 49
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-7-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-4-7-2-1-1-2-2">
+<div class="para">Notice that this one requires <span class="process-math">\(92-3\)</span> to be done which isn’t too bad using counting down. However, alternatively, one can do this problem using:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-4-7-2-1-1-2-2-2">
+\begin{equation*}
+\stackrel{+7}{92} - \stackrel{+7}{43} = 99 - 50 = 49
+\end{equation*}
+</div>
+<div class="para">with the same result and this doesn’t require an unbundling.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-7-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-thinking-strategies-4-7-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.1.2.1"><a href="#sect-thinking-strategies-4-7-2" title="Copy heading and permalink for Solution 4.1.2.1" aria-label="Copy heading and permalink for Solution 4.1.2.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.1.2"><a href="#sect-thinking-strategies-4-7" title="Copy heading and permalink for Example 4.1.2" aria-label="Copy heading and permalink for Example 4.1.2">🔗</a></div></article><div class="para" id="sect-thinking-strategies-4-8">Let’s look at a diagram to show why this works. We’ll consider the last problem<span class="process-math">\(92-43\)</span> and will add 7 to both the minuend and subtrahend. To see this most easily, we’ll use a stacked bar diagram like:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-thinking-strategies-4-9.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-thinking-strategies-4-10">To demonstrate the compensation, we’ll add 7 to the end of both bars. Visually, this will be easier if we do so on the left end:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-thinking-strategies-4-11.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-thinking-strategies-4-12">And the reason this works is because the difference (the ?) hasn’t changed by adding the same amount to each end of the bars.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-4-13">Subtraction compensation allows for subtracting the same amount as well. This would be seen visually by removing the same amount off each bar.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 4.1.2: Thinking Strategies for Subtraction"><a href="#sect-thinking-strategies-4" title="Copy heading and permalink for Subsection 4.1.2: Thinking Strategies for Subtraction" aria-label="Copy heading and permalink for Subsection 4.1.2: Thinking Strategies for Subtraction">🔗</a></div></section><section class="subsection" id="sect-thinking-strategies-5"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thinking Strategies for Multiplication</span>
+</h3>
+<div class="para" id="sect-thinking-strategies-5-2">Recall that there are three properties of multiplication that we saw in <a href="sect-multiplication-division.html" class="internal" title="Section 2.3: Multiplication and Division">Section 2.3</a> as well as the distributive property. If <span class="process-math">\(a,b\)</span> and <span class="process-math">\(c\)</span> are whole numbers then<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-5-3">
+<dl class="description-list wide">
+<dt id="sect-thinking-strategies-5-3-1-1">Multiplicative Identity<div class="autopermalink" data-description="Item: Multiplicative Identity"><a href="#sect-thinking-strategies-5-3-1-1" title="Copy heading and permalink for Item: Multiplicative Identity" aria-label="Copy heading and permalink for Item: Multiplicative Identity">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sect-thinking-strategies-5-3-1-1-2">
+<div class="displaymath process-math" id="prop-multiplicative-identity">
+\begin{equation}
+1 \times a = a\tag{4.1.4}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-3-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-thinking-strategies-5-3-1-2">Multiplicative Commutative<div class="autopermalink" data-description="Item: Multiplicative Commutative"><a href="#sect-thinking-strategies-5-3-1-2" title="Copy heading and permalink for Item: Multiplicative Commutative" aria-label="Copy heading and permalink for Item: Multiplicative Commutative">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sect-thinking-strategies-5-3-1-2-2">
+<div class="displaymath process-math" id="prop-multiplicative-commutative">
+\begin{equation}
+a \times b = b \times a\tag{4.1.5}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-3-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-thinking-strategies-5-3-1-3">Multiplicative Associative<div class="autopermalink" data-description="Item: Multiplicative Associative"><a href="#sect-thinking-strategies-5-3-1-3" title="Copy heading and permalink for Item: Multiplicative Associative" aria-label="Copy heading and permalink for Item: Multiplicative Associative">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sect-thinking-strategies-5-3-1-3-2">
+<div class="displaymath process-math" id="prop-multiplicative-Associative">
+\begin{equation}
+(a \times b) \times c = a \times (b \times c)\tag{4.1.6}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-3-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+<dt id="sect-thinking-strategies-5-3-1-4">Distributive Property<div class="autopermalink" data-description="Item: Distributive Property"><a href="#sect-thinking-strategies-5-3-1-4" title="Copy heading and permalink for Item: Distributive Property" aria-label="Copy heading and permalink for Item: Distributive Property">🔗</a></div>
+</dt>
+<dd><div class="para logical" id="sect-thinking-strategies-5-3-1-4-2">
+<div class="displaymath process-math" id="prop-distributive">
+\begin{equation}
+(a+b) \times c = a \times c + b \times c\tag{4.1.7}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-3-1-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-thinking-strategies-5-4">
+<div class="para">There are 3 standard stages for teaching mathematics which we will cover. Before this, a student should be proficient at:</div>
+<ul class="disc" id="sect-thinking-strategies-5-4-1">
+<li id="sect-thinking-strategies-5-4-1-1">
+<div class="para" id="sect-thinking-strategies-5-4-1-1-1">counting to 100,<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-4-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-thinking-strategies-5-4-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-5-4-1-2">
+<div class="para" id="sect-thinking-strategies-5-4-1-2-1">addition doubles from <span class="process-math">\(1+1\)</span> to <span class="process-math">\(10 + 10\text{,}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-4-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-thinking-strategies-5-4-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-5-4-1-3">
+<div class="para" id="sect-thinking-strategies-5-4-1-3-1">skip counting by 2, 3, 5 and 10.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-4-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-thinking-strategies-5-4-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<section class="paragraphs" id="sect-thinking-strategies-5-5"><h4 class="heading"><span class="title">Compatible Numbers and Any-Order Multiplication.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-5-2">
+<div class="para">Similar to that of addition, we can use any-order multiplication to do operations. Consider <span class="process-math">\(3 \times 5 \times 7 \times 4\text{.}\)</span> Although we can go left to right in multiplication, it is simpler if we collect by compatible numbers. In this case, note that <span class="process-math">\(5 \times 4=20\text{,}\)</span> which is an easy number to multiply.</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-5-2-3">
+\begin{equation*}
+\begin{aligned} 3 \times 5 \times 7 \times 4 \amp = (4 \times 5) \times (3 \times 7) \amp\amp\text{Use any-order property} \\ \amp = 20 \times 21 = 420 \amp\amp\text{think of doubling 21 then multiply by 10} \ \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Compatible Numbers and Any-Order Multiplication"><a href="#sect-thinking-strategies-5-5" title="Copy heading and permalink for Paragraphs: Compatible Numbers and Any-Order Multiplication" aria-label="Copy heading and permalink for Paragraphs: Compatible Numbers and Any-Order Multiplication">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-6"><h4 class="heading"><span class="title">Compensation with Multiplication.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-6-2">
+<div class="para">Compensation is a good thinking strategy for pairs of numbers that can be done easier in a little different form. For example, if have <span class="process-math">\(36 \times 15\text{,}\)</span> we can write <span class="process-math">\(36 = 18 \times 2\)</span> and then use the associative property.</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-6-2-3">
+\begin{equation*}
+24 \times 15 = 12 \times 2 \times 15 = 12 \times 30 = 360
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-5-6-3">The following show a few other examples:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-thinking-strategies-5-6-4"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para logical" id="sect-thinking-strategies-5-6-4-1-1">
+<div class="para">Find the following using compensation:</div>
+<ol class="decimal" id="sect-thinking-strategies-5-6-4-1-1-1">
+<li id="sect-thinking-strategies-5-6-4-1-1-1-1">
+<div class="para" id="sect-thinking-strategies-5-6-4-1-1-1-1-1">
+<span class="process-math">\(\displaystyle 50 \times 14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-thinking-strategies-5-6-4-1-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-5-6-4-1-1-1-2">
+<div class="para" id="sect-thinking-strategies-5-6-4-1-1-1-2-1">
+<span class="process-math">\(\displaystyle 555 \times 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-thinking-strategies-5-6-4-1-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="sect-thinking-strategies-5-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-thinking-strategies-5-6-4-2-1">
+<ol class="decimal" id="sect-thinking-strategies-5-6-4-2-1-1">
+<li id="sect-thinking-strategies-5-6-4-2-1-1-1">
+<div class="para logical" id="sect-thinking-strategies-5-6-4-2-1-1-1-1">
+<div class="displaymath process-math" id="sect-thinking-strategies-5-6-4-2-1-1-1-1-1">
+\begin{equation*}
+50 \times 14 = 50 \times 2 \times 7 = 100 \times 7 = 700
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-thinking-strategies-5-6-4-2-1-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-thinking-strategies-5-6-4-2-1-1-2">
+<div class="para logical" id="sect-thinking-strategies-5-6-4-2-1-1-2-1">
+<div class="displaymath process-math" id="sect-thinking-strategies-5-6-4-2-1-1-2-1-1">
+\begin{equation*}
+555 \times 6 = 111 \times 5 \times 6 = 111 \times 30 = 3330
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-4-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-thinking-strategies-5-6-4-2-1-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.1.3.1"><a href="#sect-thinking-strategies-5-6-4-2" title="Copy heading and permalink for Solution 4.1.3.1" aria-label="Copy heading and permalink for Solution 4.1.3.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 4.1.3"><a href="#sect-thinking-strategies-5-6-4" title="Copy heading and permalink for Example 4.1.3" aria-label="Copy heading and permalink for Example 4.1.3">🔗</a></div></article><div class="para logical" id="sect-thinking-strategies-5-6-5">
+<div class="para">Why does compensation work for multiplication? It is basically the associative multiplicative property. In general, if we have the number <span class="process-math">\(n\)</span> and <span class="process-math">\(m\)</span> such that <span class="process-math">\(n \cdot m = p\text{,}\)</span><details class="ptx-footnote" aria-live="polite" id="sect-thinking-strategies-5-6-5-4"><summary class="ptx-footnote__number" title="Footnote 4.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sect-thinking-strategies-5-6-5-4">Note that since we are using variables here, we use a <span class="process-math">\(\cdot\)</span> to denote multiplication instead of the <span class="process-math">\(\times\)</span> symbol.</div></details> then</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-6-5-5">
+\begin{equation*}
+n \cdot m = (j \cdot k) \cdot m = j \cdot (k \cdot m)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-5-6-6">The following diagram also shows compensation for multiplication of <span class="process-math">\(5 \times 14 = 10 \times 7\text{.}\)</span> We first start with a grid showing <span class="process-math">\(5 \times 14\text{.}\)</span> We’ll color half as orange and half as blue.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-thinking-strategies-5-6-7.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-thinking-strategies-5-6-8">Restacking the blocks as:<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="image-box" style="width: 40%; margin-left: 30%; margin-right: 30%;"><img src="generated/latex-image/sect-thinking-strategies-5-6-9.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-thinking-strategies-5-6-10">results a grid of lengths 7 and 10, showing that <span class="process-math">\(14 \times 5 = 7 \times 10\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-6-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Compensation with Multiplication"><a href="#sect-thinking-strategies-5-6" title="Copy heading and permalink for Paragraphs: Compensation with Multiplication" aria-label="Copy heading and permalink for Paragraphs: Compensation with Multiplication">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-7"><h4 class="heading"><span class="title">Multiplying by 4,5,8,9,10,25,100.</span></h4>
+<div class="para" id="sect-thinking-strategies-5-7-2">The numbers 4,5,8,9,10,25,100 are easier to multiply than other numbers. When you see these, take advantage of the following strategies.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Multiplying by 4,5,8,9,10,25,100"><a href="#sect-thinking-strategies-5-7" title="Copy heading and permalink for Paragraphs: Multiplying by 4,5,8,9,10,25,100" aria-label="Copy heading and permalink for Paragraphs: Multiplying by 4,5,8,9,10,25,100">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-8"><h4 class="heading"><span class="title">Multiply by 4.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-8-2">
+<div class="para">Just double the number twice. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-8-2-1">
+\begin{equation*}
+\begin{aligned} 4 \times 14 \amp= 2 \times 28 = 56 \\ 4 \times 130 \amp = 2 \times 260 = 520 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Multiply by 4"><a href="#sect-thinking-strategies-5-8" title="Copy heading and permalink for Paragraphs: Multiply by 4" aria-label="Copy heading and permalink for Paragraphs: Multiply by 4">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-9"><h4 class="heading"><span class="title">Multiply by 5.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-9-2">
+<div class="para">Take the number and halve then multiply by 10 (or flip the order of this). For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-9-2-1">
+\begin{equation*}
+\begin{aligned} 18 \times 5 \amp = 9 \times 10 = 90 \\ 540 \times 5 \amp = 270 \times 10 = 2700 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-9-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Multiply by 5"><a href="#sect-thinking-strategies-5-9" title="Copy heading and permalink for Paragraphs: Multiply by 5" aria-label="Copy heading and permalink for Paragraphs: Multiply by 5">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-10"><h4 class="heading"><span class="title">Multiply by 9.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-10-2">
+<div class="para">Use the rule <span class="process-math">\(9x=10x-x\text{.}\)</span> That is multiply by 10 then subtract the number. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-10-2-2">
+\begin{equation*}
+\begin{aligned} 35 \times 9 \amp = 350 - 35 = 315 \\ 87 \times 9 \amp = \stackrel{+13}{870} - \stackrel{13}{87}\amp\amp\text{Use compensation} \\ \amp = 883-100 = 783 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Multiply by 9"><a href="#sect-thinking-strategies-5-10" title="Copy heading and permalink for Paragraphs: Multiply by 9" aria-label="Copy heading and permalink for Paragraphs: Multiply by 9">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-11"><h4 class="heading"><span class="title">Multiply by 10.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-11-2">
+<div class="para">Append a 0 to the end of the number. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-11-2-1">
+\begin{equation*}
+\begin{aligned} 91 \times 10 \amp = 910 \\ 87392 \times 10 \amp = 873920 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Multiply by 10"><a href="#sect-thinking-strategies-5-11" title="Copy heading and permalink for Paragraphs: Multiply by 10" aria-label="Copy heading and permalink for Paragraphs: Multiply by 10">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-12"><h4 class="heading"><span class="title">Multiply by 25.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-12-2">
+<div class="para">Multiply the number by 100 and divide by 4 (or flip the order). Note: we will see division by 4 below, but you can divide by 2 twice. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-12-2-1">
+\begin{equation*}
+\begin{aligned} 44 \times 25 \amp = 11 \times 100 = 1100\amp\amp\text{Recall $44\div 4 = 22 \div 2 = 11$}\\ 164 \times 25 \amp = 41 \times 100 = 4100\amp\amp\text{Note that $164\div 4 = 82 \div 2 = 41$} \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Multiply by 25"><a href="#sect-thinking-strategies-5-12" title="Copy heading and permalink for Paragraphs: Multiply by 25" aria-label="Copy heading and permalink for Paragraphs: Multiply by 25">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-5-13"><h4 class="heading"><span class="title">Multiply by 100.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-5-13-2">
+<div class="para">Append two zeros to the end of the number. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-5-13-2-1">
+\begin{equation*}
+\begin{aligned} 25 \times 100 \amp = 2500 \\ 5836 \times 100 \amp = 583600 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-5-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Multiply by 100"><a href="#sect-thinking-strategies-5-13" title="Copy heading and permalink for Paragraphs: Multiply by 100" aria-label="Copy heading and permalink for Paragraphs: Multiply by 100">🔗</a></div></section><div class="autopermalink" data-description="Subsection 4.1.3: Thinking Strategies for Multiplication"><a href="#sect-thinking-strategies-5" title="Copy heading and permalink for Subsection 4.1.3: Thinking Strategies for Multiplication" aria-label="Copy heading and permalink for Subsection 4.1.3: Thinking Strategies for Multiplication">🔗</a></div></section><section class="subsection" id="sect-thinking-strategies-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.1.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Thinking Strategies for Division</span>
+</h3>
+<section class="paragraphs" id="sect-thinking-strategies-6-2"><h4 class="heading"><span class="title">Compensation.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-6-2-2">
+<div class="para">Compensation for division uses properties of division and we’ll assume that the result of the division has no remainder. Let <span class="process-math">\(n = k \cdot a\text{,}\)</span> that is that <span class="process-math">\(n\)</span> is a multiple of <span class="process-math">\(a\text{,}\)</span> the divisor. Also, assume that <span class="process-math">\(n\)</span> and <span class="process-math">\(a\)</span> have a common factor, <span class="process-math">\(m\text{,}\)</span> that is <span class="process-math">\(n=i \cdot m\)</span> and <span class="process-math">\(a = j \cdot m\text{,}\)</span> therefore we can write:</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-6-2-2-9">
+\begin{equation*}
+n \div a = (i \cdot m) \div (j \cdot m)  = i \div j
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-thinking-strategies-6-2-3">There are a number of common places where compensation is nice to do with division as the following examples show.<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-6-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Compensation"><a href="#sect-thinking-strategies-6-2" title="Copy heading and permalink for Paragraphs: Compensation" aria-label="Copy heading and permalink for Paragraphs: Compensation">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-6-3"><h4 class="heading"><span class="title">Divide by 4.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-6-3-2">
+<div class="para">Halve twice. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-6-3-2-1">
+\begin{equation*}
+48 \div 4 = 24 \div 2 = 12
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Divide by 4"><a href="#sect-thinking-strategies-6-3" title="Copy heading and permalink for Paragraphs: Divide by 4" aria-label="Copy heading and permalink for Paragraphs: Divide by 4">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-6-4"><h4 class="heading"><span class="title">Divide by 5.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-6-4-2">
+<div class="para">Double then divide by 10. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-6-4-2-1">
+\begin{equation*}
+\begin{aligned} 270 \div 5 = 540 \div 10 = 54 \\ 405 \div 5 = 810 \div 10 = 81 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-6-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Divide by 5"><a href="#sect-thinking-strategies-6-4" title="Copy heading and permalink for Paragraphs: Divide by 5" aria-label="Copy heading and permalink for Paragraphs: Divide by 5">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-6-5"><h4 class="heading"><span class="title">Divide by 10.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-6-5-2">
+<div class="para">Remove a zero from the end of the number. For example,</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-6-5-2-1">
+\begin{equation*}
+\begin{aligned} 1850 \div 10 = 185 \\ 2840 \div 10 = 284 \end{aligned}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Divide by 10"><a href="#sect-thinking-strategies-6-5" title="Copy heading and permalink for Paragraphs: Divide by 10" aria-label="Copy heading and permalink for Paragraphs: Divide by 10">🔗</a></div></section><section class="paragraphs" id="sect-thinking-strategies-6-6"><h4 class="heading"><span class="title">Divide by 25.</span></h4>
+<div class="para logical" id="sect-thinking-strategies-6-6-2">
+<div class="para">Multiply by 4 then divide by 100. This is generally easiest to think of doubling twice. The following examples show an good way to think about this.</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-6-6-2-1">
+\begin{equation*}
+175 \div 25 = 350 \div 50 = 700 \div 100 = 7
+\end{equation*}
+</div>
+<div class="para">or</div>
+<div class="displaymath process-math" id="sect-thinking-strategies-6-6-2-2">
+\begin{equation*}
+2050 \div 25 = 4100 \div 50 = 8200 \div 100 = 82
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-thinking-strategies-6-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Divide by 25"><a href="#sect-thinking-strategies-6-6" title="Copy heading and permalink for Paragraphs: Divide by 25" aria-label="Copy heading and permalink for Paragraphs: Divide by 25">🔗</a></div></section><div class="autopermalink" data-description="Subsection 4.1.4: Thinking Strategies for Division"><a href="#sect-thinking-strategies-6" title="Copy heading and permalink for Subsection 4.1.4: Thinking Strategies for Division" aria-label="Copy heading and permalink for Subsection 4.1.4: Thinking Strategies for Division">🔗</a></div></section><div class="autopermalink" data-description="Section 4.1: Thinking Strategies"><a href="#sect-thinking-strategies" title="Copy heading and permalink for Section 4.1: Thinking Strategies" aria-label="Copy heading and permalink for Section 4.1: Thinking Strategies">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="ch-thinking-strategies.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sect-mental-math.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

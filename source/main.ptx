@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- we first include a file which contains the docinfo element: -->
+  <xi:include href="./docinfo.ptx" />
+  <book xml:id="math-elementary-educators">
+    <title>Mathematics for Elementary Educators</title>
+
+    <subtitle>The foundational mathematics for future teachers</subtitle>
+    <!-- Include frontmatter -->
+    <xi:include href="./frontmatter.ptx" />
+    <!-- Include chapters -->
+     <xi:include href="./ch-preliminary.ptx" />
+    <xi:include href="./numbers/ch-numbers.ptx" />
+    <xi:include href="./models/ch-models.ptx" />
+    <xi:include href="./thinking-strategies/ch-thinking-strategies.ptx" />
+    <xi:include href="./algorithms/ch-algorithms.ptx" />
+    <xi:include href="./primes/ch-primes.ptx" />
+    <xi:include href="./fractions/ch-fractions.ptx" />
+    <xi:include href="./decimals/ch-decimals.ptx" />
+    <xi:include href="./integers/ch-integers.ptx" />
+    <!-- Include backmatter -->
+    <xi:include href="./backmatter.ptx" />
+  </book>
+</pretext>

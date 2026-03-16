@@ -1,0 +1,273 @@
+<chapter xml:id="ch-preliminary">
+  <title>Preliminary Material</title>
+
+  <introduction>
+    <p>
+      This chapter has some basic information that is helpful to remember in your mathematical journey, especially as a teacher.
+    </p>
+  </introduction>
+
+  <section>
+    <title>Mathematical Logic</title>
+
+    <introduction>
+      <p>
+        This section covers some basics of mathematical logic.
+        I’m using this term in a relatively informal way in that Logic is a huge field requiring quite a bit more mathematical background than required for this text.
+        Instead, I’m using logic in a way in that the mathematics that we are covering in this course should <em>make sense</em> in the context of the material.
+        There are two things that we’ll cover here: 1) mathematical equations and using the equals sign correctly and 2) mathematical statements and counterexamples.
+      </p>
+    </introduction>
+
+
+    <subsection>
+      <title>Mathematical Equations and Identities</title>
+
+      <p>
+        A <alert>mathematical equation</alert> is any mathematical statement containing an equals sign <m>=</m>.
+        This can include a simple arithmetic statement like
+        <men xml:id="eq-simple">
+          4+5 = 9
+        </men>
+      </p>
+
+      <p>
+        or as more-complicated algebraic equation like
+        <men xml:id="eq-quad">
+          x^{2}-3x+2 = 0
+        </men>
+      </p>
+
+      <p>
+        In each case, the main idea is that left side of the equation equals the right side.
+        In the case of <xref ref="eq-simple" />, it’s clear doing the addition on the left side results in the right side or 9.
+      </p>
+
+      <p>
+        In the case of <xref ref="eq-quad" />, it’s not clear what value or values of <m>x</m> makes this true.
+        This is a quadratic equation and the two standard techniques to solve this is a) factoring or b) the quadratic equation.
+        We’ll talk more about factoring below.
+        Using either of these techniques, you should find that <m>x=1</m> is a solution and plugging this value into the equation results in <m>0=0</m>, a true statement.
+      </p>
+    </subsection>
+
+
+    <subsection>
+      <title>Mathematical Identities</title>
+
+      <p>
+        Let’s return to <xref ref="eq-quad" /> above and factor the left side of the equation.
+        The result will be
+        <men xml:id="eq-id1">
+          x^{2}-3x+2 = (x-1)(x-2)
+        </men>
+        which by definition is a mathematical equation because it has an equals sign.
+        However, this is more than just an equation.
+        It is called a <term>mathematical identity</term>.
+      </p>
+
+      <definition>
+        <statement>
+          <p>
+            A <alert>mathematical identity</alert> is a mathematical equation with one or more variables in which the equation is true for all values of the variables where defined.
+          </p>
+        </statement>
+      </definition>
+
+      <p>
+        The equation in <xref ref="eq-id1"/> is an identity because it is true for all <m>x</m>.
+        For example, let <m>x=1</m>, you should see <m>0=0</m>, when <m>x=4</m> you should see <m>6=6</m>.
+        Try a few others.
+      </p>
+
+      <p>
+        Identities often arise from mathematic properties and other simplifying techniques from algebra like factoring that was used in <xref ref="eq-id1" />.
+      </p>
+    </subsection>
+
+
+    <subsection>
+      <title>Using the Equals Sign correctly</title>
+
+      <p>
+        Often, students (at many different levels) will use the equals sign incorrectly.
+        Here’s a classic example.
+        Let’s say that you are asked to solve <m>10 + 20 + 40</m> and the student does:
+      </p>
+
+
+      <paragraphs>
+        <title>Incorrect Use of Equals Sign</title>
+
+        <p>
+          <me>
+            10 + 20 = 30 + 40 = 70
+          </me>
+          Notice that there are two equals signs here.
+        </p>
+
+        <p>
+          It is fine to use multiple equals signs in a series of mathematical steps and is encouraged, however each of them must be equal.
+          If we simplify the equation on the right from <m>30+40=70</m> to <m>70 = 70</m>, so this clearly uses the equals sign correctly.
+          The left one however says that <m>10+20 = 30+40</m>, resulting in <m>30=70</m> which isn’t right.
+        </p>
+
+        <p>
+          From the example above in the box, the thinking is correct in that the student is breaking down the problem into multiple steps and doing <m>10+20=30</m> first and then adding 40 to the result to get 70.
+          However, we will show a way to both include the steps to solving and using the equals sign correctly below.
+        </p>
+
+        <p>
+          Alternatively, students sometimes use an arrow instead of an equals sign.
+          Another common way to solve this problem would be
+        </p>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Use of Arrows for Steps</title>
+
+        <p>
+          What if you show the calculation above with the following steps?
+          <me>
+            10 + 20 = 30 \;\; \Longrightarrow \;\;30 + 40 = 70
+          </me>
+        </p>
+
+        <p>
+          Each of the equations are correct and the result is correct, but this requires the reader to put the pieces together since the original problem is <m>10+20+40</m>.
+          In short, the equations in this are correct, but this is still hard to follow.
+        </p>
+
+        <p>
+          Instead, we will start with the given problem and correctly use equals signs throughout.
+        </p>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Correct Version of the Problem</title>
+
+        <p>
+          <me>
+            10 + 20 + 40= 30 + 40 = 70
+          </me>
+          Notice in this case, we start with the full problem asked to do.
+          The first equals sign (first step) adds <m>10</m> and <m>20</m> and keeps the <m>40</m> along for the ride.
+          The second equals sign (second step) adds the <m>30</m> to <m>40</m> to get the final answer.This is better because the original problem is the very left addition problem and the very right is the answer.
+        </p>
+      </paragraphs>
+    </subsection>
+  </section>
+
+  <section>
+    <title>Counterexamples</title>
+
+    <p>
+      We all make mathematical mistakes.
+      Even I (the author), who has been teaching for more than 20 years still makes little errors.
+      I often catch them however, and this is an important skill.
+    </p>
+
+    <p>
+      One big set of catching errors is the use of a <alert>counterexample</alert>, which is an example that shows something is not true.
+    </p>
+
+    <p>
+      For example, if a student says that for all <m>a</m> and <m>b</m> that
+      <me>
+        \sqrt{a+b}= \sqrt{a}+\sqrt{b}
+      </me>
+    </p>
+
+    <p>
+      Hopefully, you question this.
+      Although it may seem right, let’s check a couple of examples.
+      First let’s find an <m>a</m> and a <m>b</m> such that the square root is “nice” or an integer.
+      Let’s say <m>a=9</m> and <m>b=4</m>.
+      then
+      <me>
+        \sqrt{9+4}= \sqrt{9}+ \sqrt{4}
+      </me>
+    </p>
+
+    <p>
+      on the right side we get <m>\sqrt{13}</m> and on the left we get <m>3+2</m>.
+      Since 13 is not a perfect square, then <m>\sqrt{13}</m> is not an integer (it’s a little less than 4) and the right side is 5.
+      Since this isn’t true, this is a counterexample.
+    </p>
+
+    <p>
+      Be careful.
+      If we choose <m>a=0</m> and <m>b=1</m>, then we would get
+      <me>
+        \sqrt{0+1} = \sqrt{0}+ \sqrt{1}
+      </me>
+    </p>
+
+    <p>
+      which is a true statement.
+      Often incorrect identities are true when plugging in 0 or 1, so avoid using those.
+    </p>
+
+
+    <paragraphs>
+      <title> Looking for a Counterexample</title>
+
+      <p>
+        If you have a possible identity that you are checking if it is true, then you should plug one more values into it.
+        As soon as you find one example that makes the equation false, then you are done and that is a <term>counterexample</term>.Note: even if you check a few examples that are all true, that doesn’t make it an identity.
+        That requires a proof.
+      </p>
+
+      <p>
+        Let’s look at another example.
+        This time involving prime numbers.
+        Recall that a number is <em>prime</em> if the only factors are 1 and itself.
+        We will spend some good time with these in <xref ref="ch-primes" />, but this is a nice example using a counterexample.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            A student claims that
+            <me>
+              4n^{2} -2n+1
+            </me>
+            is prime for all positive whole numbers <m>n</m>.
+            Provide a counterexample.
+          </p>
+
+          <p>
+            First, if you don’t recall, perform a little internet search to get a listing of prime numbers less than 100.
+            Now if we let <m>n=1, 2, 3, 4</m>, then plugging in, we get
+            <me>
+              \begin{aligned}n\amp= 1\amp4-2+1\amp= 3 \\ n\amp= 2\amp4\cdot 4 - 4 + 1\amp= 13 \\ n\amp= 3\amp4\cdot 9 - 6 + 1\amp= 31 \\ n\amp= 4\amp= 4 \cdot 16 - 8 + 1\amp= 58 + 1 = 59 \\\end{aligned}
+            </me>
+            and all of these are prime.
+            Does that imply the statement is true?
+          </p>
+
+          <p>
+            The answer however is no, because the next one:
+            <me>
+              \begin{aligned}n\amp= 5\amp= 5 \cdot 25 - 10 + 1\amp= 91\end{aligned}
+            </me>
+            is not prime since <m>91=13 \cdot 7</m>.
+            Therefore <m>n=5</m> is a counterexample to this statement.
+          </p>
+
+          <p>
+            The moral of this is to be skeptical.
+            Sometimes it take a few tries to find the counterexample.
+          </p>
+        </statement>
+      </example>
+
+      <p>
+        These are just a couple of examples, but good teachers have counterexamples in their toolkit to help students.
+        We’ll see others in the course as well.
+      </p>
+      </paragraphs>
+    </section>
+  </chapter>

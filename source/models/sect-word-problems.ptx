@@ -1,0 +1,223 @@
+<section xml:id="sect-word-problems">
+  <title>Word Problems</title>
+
+  <introduction>
+    <p>
+      There are many important reasons for using word problems in learning mathematics.
+      In short, mathematics comes from real-world problems and we need to develop techniques to solve these.
+      However, there are other important reasons.
+    </p>
+
+
+    <paragraphs>
+      <title>Keep Student Attention</title>
+
+      <p>
+        Although knowing how to do arithmetic operations is incredibly important, they can get a boring after a while.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Showing Students How Math is Useful</title>
+
+      <p>
+        Students can begin to see how problems that just arise can be solved with mathematics.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Reinforcing Mathematical Skills</title>
+
+      <p>
+        Understanding word problems with different operations shows students.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Help Develop Problem-Solving Skills</title>
+
+      <p>
+        Problem solving skills are important independent of mathematics, and such skills don't occur innately; they need to be taught and word problems in key in doing this.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Develop Abstract Thinking</title>
+
+      <p>
+        Creating a diagram and writing down a  mathematical version of a word problem is helpful in developing abstract thinking.
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Developing Multi-step Problem Solving</title>
+
+      <p>
+        As word problems get more complex, these can help in understanding the mathematics and works on solving harder problems.
+      </p>
+    </paragraphs>
+  </introduction>
+
+
+  <subsection>
+    <title>Writing Good Word Problems</title>
+
+    <p>
+      If you are trying to write a good word problem or evaluate some from another source, there are a number of things to think about:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            <em>The problem should be appropriate for what is being taught.</em>Think about the skills that you want the student to take away.  Focus on problems that develop those skills.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>The problem should be appropriate for the age-level of the student.</em>  Use stickers and toy cars and dolls for example for younger kids.  You can branch out to money in bank accounts for older students.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>The problem should be as succinct as possible.</em>  State a problem with the information needed to solve the problem and not too much more.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>Make the problem interesting.</em>  Develop a problem with items that students find interesting<mdash/>not too childish and not too adult.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>The problem should be realistic.</em>  Don't have the student question if a problem isn't real.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <em>The problem should have a single solution or not require knowledge outside the problem.</em>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          The following word problems don't satisfy all of the aspects of <em>good</em> word problem.
+          What isn't right about each one and try to find a fix.
+        </p>
+
+        <p>
+          <ol>
+            <li>
+              <p>
+                He has 8 things and gives 3 to her.
+                How many things does he have left?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                Catherine and her friends Gloria, Lydia and Delilah are baking sugar cookies and chocolate chip cookies and oatmeal raisin cookies.
+                The cookies are for a bake sale for her school.
+                The PTA is trying to raise money for new books for the school library.
+                Catherine and her friends makes a total of 120 cookies and sells <m>\frac{3}{4}</m> of them.
+                If each cookie sold for $2, how much money did they raise for the books for the school library?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                I am a multiple of 3 less than 30, but not a multiple of 9.
+                What number am I?
+              </p>
+            </li>
+
+            <li>
+              <p>
+                A recipe of rum cookies has the ratio of 2:3:5 of tablespoons of rum to eggs to cups of flour? If you use 6 eggs, how much rum did you use?
+              </p>
+            </li>
+          </ol>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          <ol>
+            <li>
+              <p>
+                This isn't an interesting problem.
+                Spice it up.
+                Name the two people.
+                Use an actual item instead of the generic ``thing.'' Instead use:
+              </p>
+
+              <p>
+                <em>Jordan has 8 toy cars and gives 3 to his sister. How many cars does Jordan have left?</em>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                This problem wanders all over the place and is not succinct.
+                There is a lot of information here that is not relevant including the types of cookies, the names of all of her friends and where the specifics of the money is going to.
+                Consider the following instead:
+              </p>
+
+              <p>
+                <em>Catherine is baking cookies for a school fundraiser. She makes a total of 120 cookies and sells <m>\frac{3}{4}</m> of them. If each cookie sold for $2, how much money did she raise?</em>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                This problem doesn't have a unique solution.
+                The answer 6, 12, 15, 21, 24 all satisfy the conditions.
+                Perhaps a better question may be:
+              </p>
+
+              <p>
+                <em>I am a multiple of 3 between 20 and 30, but not a multiple of 7 or 9. What number am I?</em>
+              </p>
+            </li>
+
+            <li>
+              <p>
+                This problem isn't so appropriate for kids at all.
+                We can find a recipe without alcohol.
+                How about:
+              </p>
+
+              <p>
+               <em>A recipe of sugar cookies has the ratio of 2:3:5 of cups of sugar to eggs to cups of flour? If you use 6 eggs, how much sugar did you use?</em>
+              </p>
+            </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+
+  </subsection>
+<subsection>
+  <title>Covering All Interpretations</title>
+
+  <p>
+    From a teacher’s point of view, it is important that you are covering problems with all interpretations.
+    Recall that for subtraction there are three interpretations.
+    When writing or assigning problems, ensure that take-away, part-whole and comparison problems are used.
+    For division, make sure that word problems that use both partitive and measurement division are selected.
+  </p>
+</subsection>
+</section>

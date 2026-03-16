@@ -1,0 +1,13 @@
+<chapter xml:id="ch-algorithms" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Algorithms</title>
+  
+  <introduction>
+  <p>
+    Put an introduction here.
+  </p>
+</introduction>
+<xi:include href="./sect-addition-algorithms.ptx" />
+<xi:include href="./sect-subtraction-algorithms.ptx" />
+<xi:include href="./sect-multiplication-algorithms.ptx" />
+<xi:include href="./sect-long-division.ptx" />
+</chapter>

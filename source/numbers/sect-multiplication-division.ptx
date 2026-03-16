@@ -1,0 +1,676 @@
+<section xml:id="sect-multiplication-division">
+  <title>Multiplication and Division</title>
+
+  <introduction>
+    <p>
+      The other two standard arithmetic operations are multiplication and division.
+      These are tied together much like addition and subtraction are.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Multiplication</title>
+
+    <introduction>
+      <p>
+        Multiplication is defined as repeated addition.
+        The result of <m>a \times b</m> is the second number <m>b</m> added to itself <m>a</m> times.
+        For example
+        <me>
+          4 \times 6 = \underbrace{6+6+6+6}_{\text{4 times}}
+        </me>
+      </p>
+
+      <p>
+        In multiplication, the numbers are called the <alert>factors</alert> and the result is the <alert>product</alert>.
+        For example,
+        <me>
+          \underbrace{4}_{\text{factor}}\times \underbrace{6}_{\text{factor}} = \underbrace{24}_{\text{product}}
+        </me>
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              The notation for multiplication in early elementary school is <m>\times</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              In higher levels, a dot is used instead, for example <m>4\cdot6</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+
+      <paragraphs>
+        <title>Set Model</title>
+
+        <p>
+          Use the Set model, the product $4 \times 6$ is interpreted as 4 groups of 6 objects.
+          For example, if you have 4 bags each containing 6 oranges.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                \foreach \y in {0,1.5,3} {
+                  \foreach \x in {0,1.5,...,10.5} \draw (\x,\y) pic[scale=0.5] {orange}; 
+                  }
+                  \foreach \i in {0,1,2,3} 
+                    \draw[dashed] ({-0.6+\i*3},-0.6) rectangle ({2.1+\i*3},3.7);
+                  \end{tikzpicture}
+                ]]>
+          </latex-image>
+        </image>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Measurement Model</title>
+
+        <p>
+          In this model, $4 \times 6$ is interpreted as 4 hops on the number line each hop of length 6.
+          An example, is that if you have 4 pieces of string, each piece is 6 inches.
+          How long in total is the string?
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=0.4]
+                \draw[->] (-1,0) -- (25,0); 
+                \foreach \x in {0,1,...,24} {\draw (\x,-0.2) -- (\x,0.2);} 
+                \foreach \x in {0,6,12,...,24} {\draw (\x,-0.2) node [below] {$\x$};} \foreach \x in {0,6,12,...,18} {
+                  \draw[->] (\x,0) .. controls ({\x+2},1) and ({\x+4},1) ..
+                      ({\x+6},0);}
+                \end{tikzpicture}
+                ]]>
+          </latex-image>
+        </image>
+      </paragraphs>
+
+
+      <paragraphs>
+        <title>Array Model</title>
+
+        <p>
+          Another model to show multiplication is using a rectangular grid or rectangular array.
+          The example $4 \times 6$ is illustrated in each of the following ways:
+        </p>
+
+        <sidebyside>
+          <image width="75%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=0.6]
+                  \foreach \x in {1,...,6} { \foreach \y in {1,...,4} { \fill (\x,\y) circle (3pt);}}
+                \end{tikzpicture} 
+                ]]>
+            </latex-image>
+          </image>
+
+          <image width="75%">
+            <shortdescription>
+            </shortdescription>
+            <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=0.6]
+                \draw (0,0) grid (6,4);
+                \end{tikzpicture}
+                ]]>
+            </latex-image>
+          </image>
+        </sidebyside>
+
+        <p>
+          Note: be careful of using the interpretation of multiplication as area until the appropriate age.
+          Multiplication is learned quite early, whereas the notation of area is delayed a year or two.
+        </p>
+      </paragraphs>
+    </introduction>
+
+    <subsubsection>
+      <title>Properties of Multiplication</title>
+
+      <axiom xml:id="prop-multiplication">
+        <statement>
+          <p>
+            The following are the axiomatic properties of multiplication, which holds for all whole numbers <m>a,b</m> and <m>c</m>:
+          </p>
+
+          <p>
+            <dl>
+            <li>
+              <title>Multiplicative Identity</title>
+
+              <p>
+                <m>1 \times a = a</m>
+              </p>
+            </li>
+
+            <li>
+              <title>Commutative Property:</title>
+
+              <p>
+                <m>a \times b = b \times a</m>
+              </p>
+            </li>
+
+            <li>
+              <title>Associative Property</title>
+
+              <p>
+                <m>a \times (b \times c) = (a \times b) \times c</m>
+              </p>
+            </li>
+            </dl>
+          </p>
+        </statement>
+      </axiom>
+
+      <p>
+        Let's look at these properties more in depth.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              Recalling that multiplication is repeated addition, <m>1 \times a</m> means adding <m>a</m> one time, so the answer is <m>a</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              This makes sense since you can regroup objects.
+              4 groups of 5 oranges is the same as 5 groups of 4 oranges.
+              A nice way to show this is with a set model.
+              The following shows 4 groups of 5 as:
+            </p>
+
+            <image width="80%">
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \y in {0,1.5,3,4.5} \foreach \x in {0,1.5,3,4.5,6} \draw (\x,\y) pic [scale=0.5] {orange}; 
+                  \foreach \i in {0,1,2,3} \draw[dashed] (-0.5,{-0.6+\i*1.5}) rectangle (6.7,{0.6+\i*1.5});
+                \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              and the following shows 5 groups of 4.
+            </p>
+
+            <image width="80%">
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \y in {0,1.5,3,4.5} \foreach \x in {0,1.5,3,4.5,6} \draw (\x,\y) pic [scale=0.5]{orange}; 
+                  \foreach \i in {0,1,2,3,4} \draw[dashed] ({-0.6+\i*1.5},-0.6) rectangle ({0.6+\i*1.5},5.2);
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              Notice in this that the oranges (objects) were not rearranged in anyway, but instead the grouping was done.
+              This is important.
+            </p>
+
+            <p>
+              Using the Rectangular Array model, you can interchange the rows and columns to explain the commutative identity, since the total number of boxes (dots) stay the same.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The Associative property adds another level of groups.
+              The operation <m>3 \times (4 \times 5)</m> can be thought of 3 boxes each containing 4 bags each with 5 apples.
+              The following diagram shows this.
+            </p>
+
+            <image width="80%">
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=0.6]
+                  \foreach \k in {0,1,2} {
+                    \foreach \y in {0,1.5,3,4.5,6.0} \foreach \x in {0,1.5,3,4.5} \draw ({\x+7*\k},\y) pic[scale=0.5] {apple}; 
+                    \foreach \i in {0,1,2,3} \draw[dashed] ({-0.6+\i*1.5+\k*7},-0.6) rectangle ({0.6+\i*1.5+\k*7},6.7);
+                    \draw[thick, rounded corners] ({-0.8+\k*7},-0.8) rectangle ({5.5+\k*7},7);
+                  }
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              This is identical to <m>(3 \times 4) \times 5</m> or 5 boxes, each containing 3 bags of 4 apples which can be showed with
+            </p>
+
+            <image width="80%">
+              <shortdescription>
+              </shortdescription>
+              <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=0.6]
+                  \foreach \y in {0,2,...,8} {
+                    \foreach \k in {0,1,2} {
+                      \foreach \x in {0,1.5,3,4.5} \draw ({\x+7*\k},\y) pic[scale=0.5] {apple}; 
+                    \draw[dashed] ({7*\k-0.6},{\y-0.6}) rectangle ({7*\k+5},{\y+0.7});
+                    }
+                    \draw[thick, rounded corners] (-0.8,{\y-0.8}) rectangle(19.5,{\y+0.9}); }
+                  \end{tikzpicture}
+                ]]>
+              </latex-image>
+            </image>
+
+            <p>
+              This shows the result 5 groups of 3 groups of 4 or
+              <me>
+                3 \times (4 \times 5) = (3 \times 4) \times 5
+              </me>
+              which shows the associative property.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            What property is each of the following?
+            <ul>
+              <li>
+                <p>
+                  <m>2 \times (6 \times 4) = (2 \times 6) \times 4</m>. This is the multiplicative associative property.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>1 \times 6 = 6</m>. This is the multiplicative identity.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <m>3 \times 7 = 7 \times 3</m>. This is the multiplicative associative property.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </example>
+
+      <lemma>
+        <title>Any-Order property of Multiplication</title>
+
+        <statement>
+          <p>
+            The operation <m>a \times b \times c</m> can be done in any order.
+            In fact, the product of any number of factors can be done in any order.
+          </p>
+        </statement>
+      </lemma>
+
+      <axiom xml:id="prop-distributive-multiplication">
+        <title>Distributive Property of Multiplication</title>
+
+        <statement>
+          <p>
+            If <m>a, b</m> and <m>c</m> are whole numbers then
+            <me>
+              a \times (b + c) = a \times b + a \times c
+            </me>
+          </p>
+        </statement>
+      </axiom>
+    </subsubsection>
+
+    <subsubsection>
+      <title>Thinking Strategies for Multiplication</title>
+
+      <p>
+        As with the previous operations, there are some important ways to think about multiplication.
+        There are a few concepts.
+      </p>
+
+      <p>
+        <dl>
+        <li>
+          <title>Addition Doubles</title>
+
+          <p>
+            This uses the knowledge of doubles like $2+2=4, 5+5=10$ to introduce multiplication by 2.
+          </p>
+        </li>
+
+        <li>
+          <title>Skip Counting</title>
+
+          <p>
+            This starts students in understanding multiplication consider skip counting by 2, 3 and 5 such as
+            <me>
+              \begin{aligned} 2, 4, 6, 8, 10, 12, 14, \ldots \\ 3, 6, 9, 12, 15, 18, 21, \ldots \\ 5, 10, 15, 20, 25, 30, 37, \ldots \end{aligned}
+            </me>
+            and these are precisely multiplying by 2, 3 and 5.
+          </p>
+        </li>
+
+        <li>
+          <title>Multiplication Table</title>
+
+          <p>
+            Eventually, students need to <em>know</em> the multiplication table within 12.
+            This should be introduced slowly, using skip counting and the knowledge of the easier rows.
+          </p>
+        </li>
+        </dl>
+      </p>
+    </subsubsection>
+
+    <subsubsection>
+      <title>Multiplying by tens or multiples of 10s</title>
+
+      <p>
+        A place-value system like our Hindu-Arabic numbers make multiplying by powers of 10 quite easy.
+      </p>
+
+      <p>
+        The HA number system makes multiplying by 10, 100, 1000, … or multiples of these quite easy.
+        <me>
+          \begin{aligned}3 \times 10\amp= \text{3 tens}= 30, \\ 42 \times 10\amp= \text{42 tens}= 420, \\ 8 \times 100\amp= \text{8 hundreds}= 800, \\ 192 \times 10\amp= (\text{1 hundred}+ \text{9 tens}+ \text{2 ones}) \times 10 \\\amp= (\text{10 hundreds}+ \text{9 hundreds}+ \text{2 tens}) \\\amp= 1920\end{aligned}
+        </me>
+      </p>
+    </subsubsection>
+  </subsection>
+
+
+  <subsection xml:id="sect-division">
+    <title>Division</title>
+
+    <introduction>
+      <p>
+        Division of whole numbers is defined in terms of multiplication.
+      </p>
+
+      <p>
+        The number <m>54 \div 6</m> is defined as the number missing in the multiplication <m>6 \times \boxed{\phantom{X}}= 54</m>.
+        <me>
+          \underbrace{54}_{\text{dividend}}\div \underbrace{9}_{\text{divisor}} = \underbrace{6}_{\text{quotient}}
+        </me>
+      </p>
+
+      <p>
+        There are two distinct ways of thinking about division because of the commutative properties of multiplication.
+        The division problem <m>18 \div 3</m> can be thought of as either
+        <me>
+          \begin{aligned} 18\amp= 3 \times \boxed{\phantom{x}}\amp\amp\text{or}\amp18\amp= \boxed{\phantom{x}}\times 3\end{aligned}
+        </me>
+      </p>
+
+      <p>
+        The answer to either of these is the same, 6, but can be interpreted a bit differently.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              The first is “18 is three groups of what size?” (partitive division)
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The second is “18 is how many groups of size 3” (measurement division)
+            </p>
+          </li>
+        </ul>
+      </p>
+    </introduction>
+
+    <subsubsection>
+      <title>Set Model for partitive and measurement</title>
+
+      <p>
+        Division with a set model is interpreted as taking some objects and splitting them into groups.
+        The following two diagrams shows <m>18 \div 3</m> with the two interpretations.
+        The <em>partitive interpretation</em> means we take the objects and put them in three groups.
+        This diagrams shows that:
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=1.25]
+                  \foreach \y in {1,2,3}
+                  \foreach \x in {1,2,...,6}  {
+                  \begin{scope}[yshift=\y cm, xshift =\x cm] \penguin[scale=0.4] \end{scope}
+                  \draw[dashed, rounded corners] (0.6,{\y}) rectangle (6.4,{\y+0.9});
+                  }
+                  \end{tikzpicture}
+                ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        showing three groups of penguins.
+        The quotient (which is 6) is the number of penguins in each group.
+        Alternatively, the <em>measurement interpretation</em> would be to put the penguins in groups of 3.
+        The following diagram shows this:
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}[scale=1.25]
+                    \foreach \x in {1,2,...,6}
+                    \foreach \y in {1,2,3}
+                      {
+                    \begin{scope}[yshift=\y cm, xshift =\x cm] \penguin[scale=0.4] \end{scope}
+                    \draw[dashed, rounded corners] ({\x-0.4},1) rectangle ({\x+0.4},4);
+                    }
+                  \end{tikzpicture}
+                ]]>
+        </latex-image>
+      </image>
+    </subsubsection>
+
+    <subsubsection>
+      <title>Division Interpretation and Word Problems</title>
+
+      <p>
+        Word problems clearly have a division interpretation with them.
+        The following example shows two problems with <em>partitive</em> interpretation
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  Eight juice boxes with a total of 48 ounces come in a multi-pack.
+                  How many ounces is each box? Ans: <m>48 \div 8 = 6</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  A string of length 21 inches is divided into 3 equal pieces.
+                  How long is each piece? Ans: <m>21 \div 3=7</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </example>
+
+      <p>
+        The follow example shows two word problems with <em>measurement</em> interpretation.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  One case holds ten juice boxes.
+                  How many cases hold 120 juice boxes.
+                  Ans: <m>120 \div 10 = 12</m>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  A case of juice boxes have a total of 96 ounces of juice.
+                  If each boxes contains 6 ounces of juice, how many boxes are there? Ans: <m>96 \div 6 = 16</m>.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </statement>
+      </example>
+    </subsubsection>
+
+    <subsubsection>
+      <title>Division with Remainders</title>
+
+      <p>
+        Consider the problem of the number of dozens of eggs in 30 eggs.
+        There are an even number of dozens of 30 eggs.
+        Two dozen is 24 eggs and three dozen is 36 eggs, so 30 eggs is two dozen plus some left over.
+        <me>
+          30 = (12 \times \underbrace{\boxed{\phantom{x}}}_{\text{quotient}}) + \underbrace{\boxed{\phantom{x}}}_{\text{remainder}}
+        </me>
+        and in this case the quotient is 2 and the remainder is 6.
+      </p>
+
+      <p>
+        Models with division and remainders are quite helpful.
+        Below, we show 3 eggs and 2 groups of 12 (dashed) and the remainder of 6.
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+                <![CDATA[ 
+                \begin{tikzpicture}
+                  \foreach \y in {1,2} {
+                    \foreach \x in {0,...,11} \draw (\x,\y) pic[scale=0.15] {egg}; 
+                    \draw[dashed, rounded corners] (-0.5,{\y-0.4}) rectangle (11.5,{\y+0.5}); 
+                    }
+                  \foreach \x in {0,...,5} \draw (\x,0) pic[scale=0.15] {egg}; 
+                  \end{tikzpicture}
+                ]]>
+        </latex-image>
+      </image>
+
+      <theorem>
+        <statement>
+          <p>
+            Quotient-Remainder Theorem For any two whole numbers <m>A</m> and <m>k</m> with <m>k\neq 0</m>, there are unique whole numbers <m>q</m> (the quotient) and <m>r</m> (the remainder) such that
+            <me>
+              A = (k \times q) + r
+            </me>
+            and <m>0 \leq r \lt k</m>.
+          </p>
+        </statement>
+      </theorem>
+
+      <p>
+        This can be demonstrated in a general way with the following rectangular model.
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.25]
+            \draw (0,0) rectangle (5,3); \draw (5,1.25) rectangle (5.5,3); 
+            \draw (0.5,0) -- (0.5,3); \draw(4.5,0) -- (4.5,3); 
+            \draw (0,0.5) -- (5,0.5); \draw (0,2.5) -- (5.5,2.5); 
+            \draw (1,0) -- (1,0.5); \draw (4,0) -- (4,0.5); 
+            \draw (1,2.5) -- (1,3); \draw (4,2.5) -- (4,3); 
+            \draw (5,1.75) -- (5.5,1.75); \draw (5.25,2.25) node {$\vdots$}; 
+            \draw (2.5,0.25) node {$\cdots$}; \draw (2.5,2.75) node {$\cdots$}; 
+            \draw (0.25,1.5) node {$\vdots$};
+            \draw[brace] (-0.1,0) -- (-0.1,3) node[bracelabel=left] {$k$}; 
+            \draw[brace] (5,-0.1) -- (0,-0.1) node[bracelabel=below] {$q$};
+            \draw[brace] (5.6,3) -- (5.6,1.25) node[bracelabel=right] {$r$};
+            \draw (2.5,1.5) node {$A$ total squares}; 
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        where the <m>\cdots</m> throughout the diagram indicates that there are an indeterminate number of boxes.
+        Note that the number of rows is the divisor and that the remainder <m>r</m> is the number of boxes that don’t fit into a complete row.
+      </p>
+
+      <p>
+        This is a visual way to see the quotient-remainder theorem, especially the statements that <m>0 \leq r \lt k</m>, that is the number of extra boxes (the remainder) can be 0 and up to (but not including) the number of rows.
+      </p>
+    </subsubsection>
+
+    <subsubsection>
+      <title>Division by Zero</title>
+
+      <p>
+        What is <m>6 \div 0</m>? Using the definition of division, it is the missing factor.
+        That is, we can write this as
+        <me>
+          6= 0 \times \boxed{\phantom{x}}.
+        </me>
+      </p>
+
+      <p>
+        Since nothing can go in the box to make this equation work, the answer to this is <alert>undefined</alert>.
+      </p>
+
+      <p>
+        We can also think of this in the division interpretation.
+        From a <em>partitive</em> interpretation, <m>6 \div 0</m> represents the size of the group if 6 is split into 0 groups.
+        Alternatively, from a <em>measurement</em> interpretation, the result is the number of groups of size 0.
+        In either case, these don’t make sense.
+      </p>
+
+      <p>
+        What about <m>0 \div 0</m>? Write this as
+        <me>
+          0 = 0 \times \boxed{\phantom{x}}
+        </me>
+        and now in this case, any number works, but we still say this is <alert>undefined</alert>.
+      </p>
+    </subsubsection>
+  </subsection>
+</section>

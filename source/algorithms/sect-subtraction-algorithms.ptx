@@ -1,0 +1,666 @@
+<section xml:id="sect-subtraction-algorithm">
+  <title>Subtraction Algorithms</title>
+
+  <introduction>
+    <p>
+      Since subtraction is finding the missing addend in a summation problem, it is not surprising that the subtraction algorithm is similar to the addition algorithm.
+      Let's see an example with two 3-digit numbers.
+    </p>
+
+    <p>
+      Consider the subtraction algorithm <m>478-253</m>.
+      We can write this in expand form as
+      <me>
+        \begin{aligned} 478 - 253\amp= (400 + 70 + 8) - (200 + 50 + 3) \\ \amp= (400-200) + (70 - 50) + (8 -3 ) \\ \amp = 200 + 20 + 5 = 225.
+        \end{aligned}
+      </me>
+      or can be viewed in column format as
+    </p>
+
+    <p>
+      COLUMN SUBTRACTION for 478-253
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Coin Model</title>
+
+    <p>
+      Recall that a coin model for this problem is using the take-away interpretation.
+      Practically, this means that put the minuend down in coins and cross out the subtrahend.
+      This could look like:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=0.75]
+            \foreach \i in {0.5,1.5} \foreach \j in {1,2} 
+              \draw (\i,\j) node [draw,circle,inner sep=0pt,scale=0.75] {100};
+            \foreach \i in {0.5,1.5} \foreach \j in {1}
+              \draw[thick, MaterialIndigo] ({\i-0.35},{\j-0.35}) -- ({\i+0.35},{\j + 0.35});
+            \foreach \i in {3,4} \foreach \j in {0.5,1.5,2.5} 
+              \draw (\i,\j) node [draw,circle,inner sep=1pt,scale=0.75] {10};
+            \draw (5,1.5) node [draw,circle,inner sep=1pt,scale=0.75] {10};
+            \foreach \i in {0.5,1.5} \foreach \j in {1}
+              \draw[thick, MaterialIndigo] ({\i-0.35},{\j-0.35}) -- ({\i+0.35},{\j + 0.35});
+            % Cross Out
+            \foreach \i in {3,4,5} \foreach \j in {1.5}
+              \draw[thick, MaterialIndigo] ({\i-0.35},{\j-0.35}) -- ({\i+0.35},{\j + 0.35});
+            \foreach \i in {3,4} \foreach \j in {0.5}
+              \draw[thick, MaterialIndigo] ({\i-0.35},{\j-0.35}) -- ({\i+0.35},{\j + 0.35});
+            % Draw the ones
+            \foreach \i in {6.5,7.5,8.5} \foreach \j in {0.5,1.5} 
+              \draw (\i,\j) node [draw,circle,inner sep=2pt,scale=0.75] {1};
+            \foreach \i in {6.5,7.5} \foreach \j in {2.5} 
+              \draw (\i,\j) node [draw,circle,inner sep=2pt,scale=0.75] {1};
+            % Cross out
+            \foreach \i in {6.5, 7.5,8.5} \foreach \j in {0.5}
+              \draw[thick, MaterialIndigo] ({\i-0.35},{\j-0.35}) -- ({\i+0.35},{\j + 0.35});
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And the chips that are left are 2 hundreds, 2 tens and 5 ones or 225.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chip Model for Subtraction</title>
+
+    <p>
+      We now apply the chip model for subtraction.
+      We will put the minuend as coins in a table labeled with the chip value in each column.
+      This will look like:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,1.25) rectangle (8,3); 
+            \draw (2,2.5)--(8,2.5);
+            \foreach \x in {2,4,6} \draw (\x,1.25) -- (\x,3);
+            \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,4} \fill[MaterialBlue] ({2+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({4+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({4+0.3*\x},1.8) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({6+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({6+0.3*\x},1.8) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      And then subtracting the subtrahend or 253 would be to cross out 2 hundreds chips, 5 tens chips and 3 ones chips.
+      Because there is enough of each of those, this can be done as
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,1.25) rectangle (8,3); 
+            \draw (2,2.5)--(8,2.5);
+            \foreach \x in {2,4,6} \draw (\x,1.25) -- (\x,3);
+            \foreach \x/\lab in {3/100s,5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,4} \fill[MaterialBlue] ({2+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({4+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({4+0.3*\x},1.8) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({6+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({6+0.3*\x},1.8) circle[radius=2.5pt];
+            %% cross out 1s chips
+            \foreach \x in {1,...,3} \draw[thick] ({6+0.3*\x-0.1},2.1) -- ({6+0.3*\x+0.1},2.3);
+            %% cross out 10s chips
+            \foreach \x in {1,...,5} \draw[thick] ({4+0.3*\x-0.1},2.1) -- ({4+0.3*\x+0.1},2.3);
+            %% cross out 100s chips 
+            \foreach \x in {1,...,2} \draw[thick] ({2+0.3*\x-0.1},1.9) -- ({2+0.3*\x+0.1},2.1);
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      The result from this is identical to the coin model or 2 hundreds, 3 tens and 5 ones or 235.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Subtraction with Unbundling</title>
+
+    <p>
+      The next important step is to perform a subtraction problem with unbundling.
+      We'll see it first in a chip model for <m>53-28</m>.
+      Let's first examine this in expand form:
+      <me>
+        \begin{aligned} 53 - 28 \amp = (50+3)- (20+8) \\ \amp = (50-20) + (3-8) \end{aligned}
+      </me>
+      and the problem with this is that at grades for doing subtraction <m>3-8</m> doesn't make sense.
+      We can't take 8 away from 3.
+      So the 50 needs to be written as <m>40+10</m> and then write the 10 with the ones as:
+      <me>
+        \begin{aligned} \phantom{53-28} \amp= (40 -20) + (10+3-8) \\ \amp= 20 + 5 =25 \end{aligned}
+      </me>
+    </p>
+
+    <p>
+      What we have done is <em>unbundled a ten</em> to make 10 ones.
+      We can unbundle any denomination more than ones to make 10 smaller denominators.
+      For example, we can unbundle a 1000 as 10 hundreds.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chip Model of Subtraction with Unbundling</title>
+
+    <p>
+      We now turn to the chip model for the problem <m>53-28</m>.
+      Again, we will start with writing the chips for the minuend <m>53</m> or
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (4,1) rectangle (8,3); 
+            \draw (4,2.5)--(8,2.5);
+            \foreach \x in {6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({6+0.3*\x},2) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and our goal is to remove 2 tens and 8 ones, however, there are only 3 ones to remove in the ones column.
+      We take one of the chips in the tens column and turn it into 10 ones chips like:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (4,1) rectangle (8,3); 
+            \draw (4,2.5)--(8,2.5);
+            \foreach \x in {6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({6+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({6+0.3*\x},1.3) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({6+0.3*\x},1.6) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900,dashed] (6.1,1.1) rectangle (7.7,1.8); 
+            %% cross out the ten to unbundle
+            \foreach \x in {5} \draw[thick] ({4+0.3*\x-0.1},1.9) -- ({4+0.3*\x+0.1},2.1);
+            \draw[->] (5.7,1.95) -- (6.1,1.8);
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and notice that we have removed a ten (by crossing it out) and putting down ten chips in the ones column (red) and clearly show how the chip was unbundled.
+    </p>
+
+    <p>
+      The last step is to cross out the subtrahend or 2 tens and 8 ones.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (4,1) rectangle (8,3); 
+            \draw (4,2.5)--(8,2.5);
+            \foreach \x in {6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({6+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({6+0.3*\x},1.3) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({6+0.3*\x},1.6) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900,dashed] (6.1,1.1) rectangle (7.7,1.8); 
+            %% cross out the ten to unbundle
+            \foreach \x in {5} \draw[thick] ({4+0.3*\x-0.1},1.9) -- ({4+0.3*\x+0.1},2.1);
+            \draw[->] (5.7,1.95) -- (6.1,1.8);
+            %% cross out the ones
+            \foreach \x in {1,...,5} \draw[thick] ({6+0.3*\x-0.1},1.5) -- ({6+0.3*\x+0.1},1.7);
+            \foreach \x in {1,...,3} \draw[thick] ({6+0.3*\x-0.1},1.2) -- ({6+0.3*\x+0.1},1.4);
+            %% cross out the tens
+            \foreach \x in {1,...,2} \draw[thick] ({4+0.3*\x-0.1},1.9) -- ({4+0.3*\x+0.1},2.1);
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and the diagram above shows that the result is 2 tens and 5 ones or 25.
+    </p>
+
+    <remark>
+      <p>
+        Here's a few things that make a clear subtraction chip model with take-away interpretation and are recommended:
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              Only put the minuend on the chart with the chips.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Recall that you are only going to cross out the subtrahend.
+              <em>Don't put the subtrahend on the diagram/chart.</em>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Make sure that you have enough chips to cross out.
+              If you don't have enough for a particular place value (1s, 10s, 100s, etc.), unbundle a chip from a higher place value, placing 10 chips in the slot you need them in.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Cross out the subtrahend from the diagram.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Count the result.
+              Note the difference should be clear on the diagram from what is <alert>not</alert> crossed out.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </remark>
+
+    <p>
+      The chip models in this section were designed to teach how to make the model.
+      You can do all of the necessary steps on a single diagram, that is, the last diagram in the steps clearly shows the steps.
+    </p>
+
+    <p>
+      The next example shows a challenging subtraction problem using chip models.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Use a chip model to demonstrate <m>3019-2852</m> using a chip model.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First, start with the minuend, <m>3019</m> on a chart:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,1) rectangle (8,3); 
+            \draw (0,2.5)--(8,2.5);
+            \foreach \x in {2,4,6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            % Minuend chips in the 1s, 10s, 100s, 1000s place
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({0+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,1} \fill[MaterialBlue] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({6+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,4} \fill[MaterialBlue] ({6+0.3*\x},1.8) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          and notice that we won't have enough hundreds or tens to cross out, so first unbundle 1 thousand into 10 hundreds and then 1 hundred into 10 tens:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+              \draw (0,1) rectangle (8,3); 
+              \draw (0,2.5)--(8,2.5);
+              \foreach \x in {2,4,6} \draw (\x,1) -- (\x,3);
+              \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,2.75) node {\lab};
+              % Minuend chips in the 1s, 10s, 100s, 1000s place
+              \foreach \x in {1,...,3} \fill[MaterialBlue] ({0+0.3*\x},2.2) circle[radius=2.5pt];
+              \foreach \x in {1,...,1} \fill[MaterialBlue] ({4+0.3*\x},2.2) circle[radius=2.5pt];
+              \foreach \x in {1,...,5} \fill[MaterialBlue] ({6+0.3*\x},2.2) circle[radius=2.5pt];
+              \foreach \x in {1,...,4} \fill[MaterialBlue] ({6+0.3*\x},1.8) circle[radius=2.5pt];
+              % unbundled hundreds:
+              \foreach \x in {1,...,5} \fill[MaterialRed900] ({2+0.3*\x},2.2) circle[radius=2.5pt];
+              \foreach \x in {1,...,5} \fill[MaterialRed900] ({2+0.3*\x},1.8) circle[radius=2.5pt];
+              \draw[rounded corners, MaterialRed900, dashed] (2.1,1.65) rectangle (3.7,2.35); 
+              \draw[->,thick] (1,2.2)--(2.05,2.2); 
+              \foreach \x in {3} \draw[thick] ({0+0.3*\x-0.1},2.1) -- ({0+0.3*\x+0.1},2.3);
+              % unbundled tens:
+              \foreach \x in {1,...,5} \fill[MaterialRed900] ({4+0.3*\x},1.7) circle[radius=2.5pt];
+              \foreach \x in {1,...,5} \fill[MaterialRed900] ({4+0.3*\x},1.3) circle[radius=2.5pt];
+              \draw[rounded corners, MaterialRed900, dashed] (4.1,1.15) rectangle (5.7,1.85); 
+              \draw[->,thick] (3.8,1.8)--(4.05,1.8); 
+              \foreach \x in {5} \draw[thick] ({2+0.3*\x-0.1},1.7) -- ({2+0.3*\x+0.1},1.9);
+              \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          At this point, there is enough chips to cross out (take-away) from the subtrahend.
+          The last step is to do this.
+          This crosses out 2 thousands chips, 8 hundreds chips, 5 tens chips and 2 ones chips or
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,1) rectangle (8,3); 
+            \draw (0,2.5)--(8,2.5);
+            \foreach \x in {2,4,6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            % Minuend chips in the 1s, 10s, 100s, 1000s place
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({0+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,1} \fill[MaterialBlue] ({4+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialBlue] ({6+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,4} \fill[MaterialBlue] ({6+0.3*\x},1.8) circle[radius=2.5pt];
+            % unbundled hundreds:
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({2+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({2+0.3*\x},1.8) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900, dashed] (2.1,1.65) rectangle (3.7,2.35); 
+            \draw[->,thick] (1,2.2)--(2.05,2.2); 
+            \foreach \x in {3} \draw[thick] ({0+0.3*\x-0.1},2.1) -- ({0+0.3*\x+0.1},2.3);
+            % unbundled tens:
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({4+0.3*\x},1.7) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({4+0.3*\x},1.3) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900, dashed] (4.1,1.15) rectangle (5.7,1.85); 
+            \draw[->,thick] (3.8,1.8)--(4.05,1.8); 
+            \foreach \x in {5} \draw[thick] ({2+0.3*\x-0.1},1.7) -- ({2+0.3*\x+0.1},1.9);
+            %% cross out ones
+            \foreach \x in {1,2} \draw[thick] ({6+0.3*\x-0.1},2.1) -- ({6+0.3*\x+0.1},2.3);
+            %% cross out tens
+            \foreach \x in {1,...,5} \draw[thick] ({4+0.3*\x-0.1},1.2) -- ({4+0.3*\x+0.1},1.4);
+            %% cross out hundreds
+            \foreach \x in {1,...,5} \draw[thick] ({2+0.3*\x-0.1},2.1) -- ({2+0.3*\x+0.1},2.3);
+            \foreach \x in {1,...,3} \draw[thick] ({2+0.3*\x-0.1},1.7) -- ({2+0.3*\x+0.1},1.9);
+            %% cross out thousands
+            \foreach \x in {1,2} \draw[thick] ({0+0.3*\x-0.1},2.1) -- ({0+0.3*\x+0.1},2.3);
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And the difference (result) is the chips remaining.
+          This shows 167.
+        </p>
+
+        <p>
+          The following is the column algorithm for <m>3019-2852</m>
+        </p>
+
+        <p>
+          COLUMN ALGORITHM for 3019-2852
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      As discussed, there are many reasons for knowing the algorithms for addition and subtraction.
+      The following example shows that we need to think a bit more abstractly to find the solution (and not let the addition and subtraction get in the way).
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Produce a Teacher's Solution to the following word problem: <em> One week, a candy company produced a total of 5327 pieces of candy (red, blue and yellow).
+          If 2378 pieces are red and 1263 are blue, how many were yellow? </em>
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          This is a two-step word problem that we can do as a single diagram as the following:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (4,0.5); \node[left] at (0,0.25) {blue};
+            \draw[brace] (4,-0.1) -- (0,-0.1) node[bracelabel=below] {1263};
+            \draw (0,1.5) rectangle (8,2); \node[left] at (0,1.75) {red};
+            \draw[brace] (8,1.4) -- (0,1.4) node[bracelabel=below] {2378};
+            \draw (0,3) rectangle (5,3.5); \node[left] at (0,3.25) {yellow};
+            \draw[brace] (5,2.9) -- (0,2.9) node[bracelabel=below] {?};
+            \draw[brace] (8.2,3.5) -- (8.2,0) node[bracelabel=right] {5327};
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+
+        <p>
+          And first, we need to find <m>1263+2378</m> and we'll use the column algorithm
+        </p>
+
+        <p>
+          COLUMN ALGORITHM for 1263+2378
+        </p>
+
+        <p>
+          For the next step subtract the result 3641 from 5327 and again we'll use the column algorithm:
+        </p>
+
+        <p>
+          COLUMN ALGORITHM for 5727-3641
+        </p>
+
+        <p>
+          There were 1686 pieces of yellow candy made in that week.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Note that we didn't use the chip model in the Teacher's solution.
+      The chip model is helpful for understanding the column algorithms for subtraction and addition, but is not needed once learned well.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Base-5 Subtraction</title>
+
+    <p>
+      We will first use a coin model to understand base-5 subtraction.
+      This works exactly like decimal subtraction we just saw.
+    </p>
+
+    <p>
+      Let's try <m>3024_{\text{5}}-1341_{\text{5}}</m>.
+      Recall that do use the chip model we only put the subtrahend on the diagram at first.
+      Then we will cross off the minuend.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,1) rectangle (8,3); 
+            \draw (0,2.5)--(8,2.5);
+            \foreach \x in {2,4,6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialBlue] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,4} \fill[MaterialBlue] ({6+0.3*\x},2) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      Since we wish to cross on one 125s, three 25s, two 5s and 1 one, but there aren't enough 25s and 5s, so we unbundle one each of these, remember that each chip's value is 5 of the smaller chip.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,1) rectangle (8,3); 
+            \draw (0,2.5)--(8,2.5);
+            \foreach \x in {2,4,6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialBlue] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,4} \fill[MaterialBlue] ({6+0.3*\x},2) circle[radius=2.5pt];
+            % unbundled 125s:
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({2+0.3*\x},1.8) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900, dashed] (2.1,1.65) rectangle (3.7,2); 
+            \draw[->,thick] (1,2)--(2.05,1.95); 
+            \foreach \x in {3} \draw[thick] ({0+0.3*\x-0.1},1.9) -- ({0+0.3*\x+0.1},2.1);
+            % unbundled tens:
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({4+0.3*\x},1.6) circle[radius=2.5pt];
+            %\foreach \x in {1,...,5} \fill[MaterialRed900] ({4+0.3*\x},1.3) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900, dashed] (4.1,1.45) rectangle (5.7,1.75); 
+            \draw[->,thick] (3.8,1.8)--(4.05,1.75); 
+            \foreach \x in {5} \draw[thick] ({2+0.3*\x-0.1},1.7) -- ({2+0.3*\x+0.1},1.9);
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      Now for the last step, we cross out the subtrahend:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,1) rectangle (8,3); 
+            \draw (0,2.5)--(8,2.5);
+            \foreach \x in {2,4,6} \draw (\x,1) -- (\x,3);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,...,3} \fill[MaterialBlue] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialBlue] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,4} \fill[MaterialBlue] ({6+0.3*\x},2) circle[radius=2.5pt];
+            % unbundled 125s:
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({2+0.3*\x},1.8) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900, dashed] (2.1,1.65) rectangle (3.7,2); 
+            \draw[->,thick] (1,2)--(2.05,1.95); 
+            \foreach \x in {3} \draw[thick] ({0+0.3*\x-0.1},1.9) -- ({0+0.3*\x+0.1},2.1);
+            % unbundled 25s:
+            \foreach \x in {1,...,5} \fill[MaterialRed900] ({4+0.3*\x},1.6) circle[radius=2.5pt];
+            \draw[rounded corners, MaterialRed900, dashed] (4.1,1.45) rectangle (5.7,1.75); 
+            \draw[->,thick] (3.8,1.8)--(4.05,1.75); 
+            \foreach \x in {5} \draw[thick] ({2+0.3*\x-0.1},1.7) -- ({2+0.3*\x+0.1},1.9);
+            %% cross out ones
+            \foreach \x in {1,1} \draw[thick] ({6+0.3*\x-0.1},1.9) -- ({6+0.3*\x+0.1},2.1);
+            %% cross out 5s
+            \foreach \x in {1,...,4} \draw[thick] ({4+0.3*\x-0.1},1.5) -- ({4+0.3*\x+0.1},1.7);
+            %% cross out 25s
+            \foreach \x in {1,...,3} \draw[thick] ({2+0.3*\x-0.1},1.7) -- ({2+0.3*\x+0.1},1.9);
+            %% cross out 125s
+            \foreach \x in {1} \draw[thick] ({0+0.3*\x-0.1},1.9) -- ({0+0.3*\x+0.1},2.1);
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      The result is 1 fiftoon, 1 quarter, 3 nickels and 3 pennies or <m>1133_{\text{5}}</m>.
+    </p>
+
+    <p>
+      We can also do this with the column algorithm:
+    </p>
+
+    <p>
+      Start with the subtrahend and minuend stacked:
+      <me>
+        \begin{aligned}\begin{array}{rrrrr}\amp3\amp0\amp2\amp4 \\ -\amp1\amp3\amp4\amp1 \\ \hline\end{array}\end{aligned}
+      </me>
+    </p>
+
+    <p>
+      We can subtract the rightmost column:
+      <me>
+        \begin{aligned}\begin{array}{rrrrr}\amp3\amp0\amp2\amp4 \\ -\amp1\amp3\amp4\amp1 \\ \hline \amp\amp\amp\amp3\end{array}\end{aligned}
+      </me>
+    </p>
+
+    <p>
+      The 2nd rightmost column needs more so rebundle, except we can’t, so to the leftmost column:
+      <me>
+        \begin{aligned}\begin{array}{rrrrr}\amp {\scriptstyle 2} \amp{\scriptstyle 10}\amp\amp \\ \amp\cancel{3}\amp\cancel{0}\amp2\amp4 \\ -\amp1\amp3\amp4\amp1 \\ \hline \amp\amp\amp\amp3\end{array}\end{aligned}
+      </me>
+      where <m>10</m> means <m>10_{\text{5}}</m> or 5 in decimal.
+      We can now rebundle from the 2nd column to the 3rd:
+      <me>
+        \begin{aligned}\begin{array}{rrrrr}\amp \amp {\scriptstyle 4}\amp \\ \amp {\scriptstyle 2} \amp{\cancel{\scriptstyle 10}}\amp{\scriptstyle 12}\amp \\ \amp\cancel{3}\amp\cancel{0}\amp\cancel{2}\amp4 \\ -\amp1\amp3\amp4\amp1 \\ \hline \amp\amp\amp\amp3\end{array}\end{aligned}
+      </me>
+    </p>
+
+    <p>
+      and once again <m>12</m> means <m>12_{\text{5}}</m> or 1 five and 2 ones or 7 in decimal.
+      Now we can subtract in each column:
+      <me>
+        \begin{aligned}\begin{array}{rrrrr}\amp \amp {\scriptstyle 4}\amp \\ \amp {\scriptstyle 2} \amp{\cancel{\scriptstyle 10}}\amp{\scriptstyle 12}\amp \\ \amp\cancel{3}\amp\cancel{0}\amp\cancel{2}\amp4 \\ -\amp1\amp3\amp4\amp1 \\ \hline \amp1\amp1\amp3\amp3\end{array}\end{aligned}
+      </me>
+      and the result is <m>1133_{\text{5}}</m>, just like we saw with the chip model.
+    </p>
+  </subsection>
+
+  <exercises xml:id="basics-s-sample-exercises">
+  <exercise>
+    <statement>
+      <p>
+        First exercise.
+        
+      </p>
+    </statement>
+  </exercise>
+
+  </exercises>
+</section>

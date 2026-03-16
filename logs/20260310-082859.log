@@ -1,0 +1,22 @@
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Generating any needed assets.
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : converting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx to svg graphics for placement in /Users/pstaab/code/informal-number-theory-book/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'publisher': '/Users/pstaab/code/informal-number-theory-book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-72_0_smk
+INFO    : Finished generating assets.
+
+INFO    : Finished generating assets successfully.
+
+INFO    : 

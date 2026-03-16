@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-numbers" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Numbers: the essence of mathematics</title>
+
+  <introduction>
+    <p>
+      All of mathematics arises from numbers, and so it makes sense to start with the teaching and understanding numbers. The number system that we use most of the time is called the Hindu-Arabic system, we will explain other number systems and  why this system is a pretty good system to use.  The standard four arithmetic operations of addition, subtraction, multiplication and division will be defined here.  We will also examine useful models for these operations.  Lastly, we will study some other number systems and other bases to put the Hindu-Arabic number system in better context.  
+
+    </p>
+  </introduction>
+  <!-- include sections -->
+  <xi:include href="./sect-hindu-arabic-numbers.ptx" />
+  <xi:include href="./sect-addition-subtraction.ptx" />
+  <xi:include href="./sect-multiplication-division.ptx" />
+  <xi:include href="./sect-alt-numbers.ptx" />
+</chapter>

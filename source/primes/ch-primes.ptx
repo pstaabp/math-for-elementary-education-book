@@ -1,0 +1,22 @@
+<chapter xml:id="ch-primes" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Factors, Primes and Proofs</title>
+
+  <introduction>
+    <p>
+      This chapter delves deeper into whole numbers and their properties.
+      We will see that we can write whole numbers as products of other numbers.
+      Recall that if a number can be written as the product between 1 and itself then it is prime.
+      Understanding how to break down any whole number into its prime factors is a key mathematical concept and in a practical sense will help when we tackle adding fractions in Chapter \ref{ch:fractions}.
+    </p>
+
+    <p>
+      As we build up the concepts of prime numbers and their properties, we also will spend some time on formal and informal mathematical \textbf{proofs}.
+    </p>
+  </introduction>
+
+  <xi:include href="./sect-even-odd.ptx" />
+  <xi:include href="./sect-divisibility-tests.ptx" />
+  <xi:include href="./sect-primes-fund-thm-arith.ptx" />
+  <xi:include href="./sect-gcf-lcm.ptx" />
+  <xi:include href="./sect-divisibility-proofs.ptx" />
+</chapter>

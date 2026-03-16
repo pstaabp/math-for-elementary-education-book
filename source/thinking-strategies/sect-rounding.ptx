@@ -1,0 +1,425 @@
+<section xml:id="sect-rounding">
+  <title>Estimation and Rounding</title>
+
+  <introduction>
+    <p>
+      This section is all about getting approximations to numbers.
+      It is often the case that we need to know ``about'' what the answer is, not exactly the answer.
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Rounding</title>
+
+    <p>
+      An important skill will be to find a number to the nearest multiple of 10, 100, 1000, etc.
+      For small numbers this is relatively straightforward, but for larger numbers a grasp of place value is key.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Round 73 to the nearest ten.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          First note that 73 could either be rounded up to 80 or down to 70.
+          Because 73 is closer to 70, then this is the answer.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      The following is the rounding algorithm that is typically used.
+    </p>
+
+    <note>
+      <title>Rounding Algorithm</title>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              To round a number to the nearest ten, if the ones digit is 0,1,2,3,4 round down, and 5,6,7,8,9 round up.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To round a number to the nearest hundred, if the tens digit is 0,1,2,3,4 round down, if the tens digit is 5,6,7,8,9 round up.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              To round a number to the nearest thousand, if the hundreds digit is 0,1,2,3,4 round down, if the hundreds digit is 5,6,7,8,9 round up.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Rounding to higher denominations is similar.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </note>
+
+    <p>
+      This can be understood visually with a number line.
+      Consider the problem of rounding 73 to the nearest ten.
+      We'll draw the number line with 73 with the two options 70 and 80.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[xscale=0.8]
+            \draw[->] (68,0) -- (82,0);
+            \foreach \x in {69,...,81} \draw (\x,0.1) -- (\x,-0.1);
+            \foreach \x in {73} \draw (\x,-0.1) node [below] {\x};
+            \foreach \x in {70,80} \draw (\x,0.2) -- (\x,-0.2) node [below] {\x}; 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      The two options 70 and 80 are 3 units and 7 units away from 73 as shown with:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[xscale=0.8]
+              \draw[->] (68,0) -- (82,0);
+              \foreach \x in {69,...,81} \draw (\x,0.1) -- (\x,-0.1);
+              \foreach \x in {73} \draw (\x,-0.1) node [below] {\x};
+              \foreach \x in {70,80} \draw (\x,0.2) -- (\x,-0.2) node [below] {\x}; 
+              \draw[->,thick] (73,0.25) .. controls (72,0.5) and (71,0.5) .. (70,0.25) node [midway,above] {3};
+              \draw[->,thick] (73,0.25) .. controls (75,0.5) and (78,0.5) .. (80,0.25) node [midway,above] {7};
+              \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      If a number's ones digit is 5 and you are asked to round to the nearest ten, then this might be a bit of a puzzle.
+      Consider rounding 55 to the nearest ten.
+      If we plot on the number line similar to above:
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[xscale=0.8]
+            \draw[->] (48,0) -- (62,0);
+            \foreach \x in {49,...,61} \draw (\x,0.1) -- (\x,-0.1);
+            \foreach \x in {55} \draw (\x,-0.1) node [below] {\x};
+            \foreach \x in {50,60} \draw (\x,0.2) -- (\x,-0.2) node [below] {\x}; 
+            \draw[->,thick] (55,0.25) .. controls (54,0.5) and (51,0.5) .. (50,0.25) node [midway,above] {5};
+            \draw[->,thick] (55,0.25) .. controls (56,0.5) and (59,0.5) .. (60,0.25) node [midway,above] {5};
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      This is clear that 55 is equally close to 50 or 60.
+      The convention is that if the rounding digit is a 5 that we <em>round up</em>.
+    </p>
+
+
+    <paragraphs>
+      <title>Rounding Decimals</title>
+
+      <p>
+        Rounding is also important with decimals and we will see how to do this in <xref ref="ch-decimals"/>.
+      </p>
+    </paragraphs>
+  </subsection>
+
+
+  <subsection xml:id="sect-estimation">
+    <title>Estimation</title>
+
+    <p>
+      Estimation is the process of quickly finding an operation that is close but not necessary the exact answer.
+    </p>
+
+    <p>
+      Why is this a good skill to learn?
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            Helps with learning place value.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Reinforces mental math.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Determines if answers are probably correct.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Helps in long division.
+          </p>
+        </li>
+      </ul>
+    </p>
+
+
+    <paragraphs>
+      <title>Rounding</title>
+
+      <p>
+        Rounding By rounding numbers to the nearest ten (or power of ten), we can get a good idea of the size of a number.
+      </p>
+
+      <example>
+        <statement>
+          <p>
+            Find <m>38 \times 19</m>.
+            Since <m>38 \approx 40</m> and <m>19 \approx 20</m>, <m>38 \times 19\approx 40 \times 20 =800</m>.
+          </p>
+        </statement>
+      </example>
+    </paragraphs>
+
+    <p>
+      We now look at some important steps for students to work through in estimation:
+    </p>
+
+
+    <paragraphs>
+      <title>Step 1:</title>
+
+      <p>
+        Rounding to 1-digit arithmetic skills:
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              <m>768+121 \approx 800+100=900</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>1589-425 \approx 1600-400=1200</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>31.5 \times 7.2 \approx 30 \times 7 = 210</m>.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>476 \div 6 \approx 480 \div 6 = 80</m>.
+            </p>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Step 2:</title>
+
+      <p>
+        Keep track of place value.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              <m>8105 \times 714 \approx 8000 \times 700 = 56 \times 1000 \times 100 = 5,600,000</m>
+            </p>
+          </li>
+
+          <li>
+            <p>
+              <m>71034 \div 910 \approx 72000 \div 900 = 720 \div 9 = 80.</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </paragraphs>
+  </subsection>
+
+
+  <subsection>
+    <title>What is a good estimation?</title>
+
+    <p>
+      Is all estimation good? For example, if we try to find <m>17 \times 65</m>.
+      Here are some possible answers:
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <p>
+            <m>17 \times 65 \approx 20 \times 60 = 1200</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>17 \times 65 \approx 20 \times 70 = 1400</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>17 \times 65 \approx 15 \times 70 = 1050</m>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <m>17 \times 65 \approx 15 \times 60 = 900</m>
+          </p>
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Although any one if these is a reasonable estimate, The second one rounded both factors up and the resulting approximation is larger than the actual answer.
+      The fourth rounded both factors down and the resulting approximation is smaller than the actual answer.
+    </p>
+
+    <p>
+      Perhaps if you’re trying to get close, use one that rounds one up and one down, so either the first or third.
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Range Estimates</title>
+
+    <p>
+      As we saw above, what we mean by a good estimate depends on what we want.
+      However, it’s common to want to have both a high and low estimate so we know where our answer lies.
+      For example as shown above, <m>17 \times 65</m> is between 900 and 1400.
+      A <alert>range estimate</alert> is a pair of estimates: one too high, and one too low.
+    </p>
+
+    <p>
+      Finding range estimates depends on the operation.
+      We saw in the example above, for multiplication, a high estimate rounds both factors up and a low one rounds both down.
+      This idea also works for addition.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Range Estimate for Addition
+        </p>
+
+        <p>
+          Find a range estimate for <m>478 + 931</m> to the nearest 50.
+        </p>
+      </statement>
+
+      <solution>
+        <p>
+          For addition a high estimate will round both up to the nearest 50
+          <me>
+            478 + 931 \approx 500 + 950 = 1450
+          </me>
+        </p>
+
+        <p>
+          and we have used compensation mental math to do the last calculation.
+          A <em>low estimate</em> is
+          <me>
+            478 + 931 \approx 450 + 900 = 1350
+          </me>
+        </p>
+
+        <p>
+          This allows us to know that the actual value is between 1350 and 1450.
+        </p>
+      </solution>
+    </example>
+
+    <p>
+      Because of the nature of both subtraction and division, range estimates a bit more difficult for these operations.
+      Although there is a specific rule to doing high and low estimates, let’s think it through first.
+    </p>
+
+    <p>
+      Find a range estimate of <m>18 \times 315</m>.
+    </p>
+
+    <p>
+      FINISH THIS EXAMPLE
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Teaching Estimates</title>
+
+    <p>
+      Teaching estimates requires that we teach students why to estimate as well as what makes a good estimate.
+      Often, we can use problems with clear results to emphasize this.
+    </p>
+
+    <example>
+      <statement>
+        <p>
+          Approximate <m>9.8 \times 37.5</m> to the nearest multiple of ten.
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Is <m>7891 \div 13</m> closest to 61, 6.1 or 0.61?
+        </p>
+      </statement>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Claire has $20 to buy groceries.
+          If she buys products that cost $1.99, $1.25, $4.95, $8.15 and $0.95, does she have enough? What if she also has to pay 5%sales tax.
+        </p>
+      </statement>
+    </example>
+
+    <p>
+      <alert> <em>Needs more discussion here.</em> </alert>
+    </p>
+  </subsection>
+</section>

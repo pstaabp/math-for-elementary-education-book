@@ -1,0 +1,579 @@
+<section xml:id="sect-addition-algorithms">
+  <title>Addition Algorithms</title>
+
+  <introduction>
+    <p>
+      The addition algorithm is primarily used for numbers of 2 or more digits than can’t be easily done with mental math.
+      A simple example is <m>426+172</m>.
+      First, recall the expanded form of these with place-value:
+      <me>
+        \begin{aligned}426 + 172\amp= (400 + 20 + 6) + (100 + 70 + 2) \\\amp= (400 + 100) + (20 + 70) + (6 + 2) \\\amp= (4 + 1) \times 100 + (2+7) \times 10 + (6+2) \\\amp= 5\times 100 + 9\times 10 + 8 = 500+90+8 = 598\end{aligned}
+      </me>
+    </p>
+
+    <p>
+      Alternatively, we can see this in a column addition format:
+      <me>
+        \begin{aligned}\begin{array}{rr}\amp 400 \\ + \amp 100 \\ \hline \amp 500\end{array}\amp\amp\begin{array}{rr}\amp 20 \\ + \amp 70 \\ \hline \amp 90\end{array}\amp\amp\begin{array}{rr}\amp 6 \\ + \amp 2 \\ \hline \amp 8\end{array}\amp\amp\Longrightarrow\amp\amp\begin{array}{rr}\amp 426 \\ + \amp 172 \\ \hline \amp 598\end{array}\end{aligned}
+      </me>
+    </p>
+
+    <p>
+      When any of the sums within any place value is greater than 9, this operation becomes a little more difficult.
+      Consider
+      <me>
+        \begin{aligned} 265 + 372 \amp = (200 + 60 + 5) + (300 + 70 + 2) \\ \amp = (200 + 300) + (60 + 70) + (5 + 2) \\ \amp = 500 + 130 + 7 \qquad \text{write 130 as $100 + 30$ }\\ \amp = 500 + 100 + 30 + 7 \\ \amp = 600 + 30 + 7 = 637 \end{aligned}
+      </me>
+    </p>
+  </introduction>
+
+
+  <subsection>
+    <title>Prerequisite for Column Addition with Bundling</title>
+
+    <p>
+      There are a number of skills that students need to know to handle any addition problem with bundling.
+      These skills include
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            the one-digit addition for all numbers <m>0</m> through 9,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            the Place-value system of numbers from Ch.
+            1.
+          </p>
+        </li>
+      </ol>
+    </p>
+
+    <p>
+      And more specifically, they must be able to
+    </p>
+
+    <p>
+      <ol>
+        <li>
+          <p>
+            write numbers in expanded form: <m>372 = 300 + 70 + 2</m> and <m>800 + 20 + 4 = 824</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            add multiples of 10s, 100s, 1000s: <m>7+2=9</m>, <m>50+30=80</m>, <m>600 + 200=800</m>, and add a multiple of 10 to other numbers <m>53 + 30 = 83</m>,
+          </p>
+        </li>
+
+        <li>
+          <p>
+            compose a ten (bundling), which means taking 10 ones and making 1 ten or 10 tens and making 1 hundred.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Chip Models For Addition</title>
+
+    <p>
+      Recall that the chip model seen in Chapter <xref ref="ch-numbers" text="global" /> is that of a coin model where coins of the same denominator are placed in columns.
+      Consider 325, which as a coin model would look like:
+    </p>
+
+    <image width="50%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=2]
+            \foreach \x in {1,1.5,2} \draw (\x,1) node[draw, circle,inner sep=2pt] {100};
+            \foreach \x in {1,1.5} \draw (\x,0.5) node[draw, circle,inner sep=2pt] {10};
+            \foreach \x in {1,1.5,...,3} \draw (\x,0) node[draw, circle,inner sep=2pt] {1}; 
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      and the location of the coins doesn’t really matter.
+    </p>
+
+    <p>
+      Instead, we will put the coins in a chart as follows.
+      This is 325 as a chip model.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (6,2.5); 
+            \draw (0,2)--(6,2);
+            \foreach \x in {2,4} \draw (\x,0) -- (\x,2.5);
+            \foreach \x/\lab in {1/100s,3/10s,5/1s} \draw (\x,2.25) node {\lab};
+            \foreach \x in {1,2,3} \fill[MaterialIndigo] ({0+0.3*\x},1.3) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({2+0.3*\x},1.3) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialIndigo] ({4+0.3*\x},1.3) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+
+    <paragraphs>
+      <title>Chip Model with no bundling</title>
+
+      <p>
+        Let's look at an addition problem with the chip model.
+        Consider the problem <m>325+213</m>, which has no bundling within any place value.
+        We can develop this model with:
+      </p>
+
+      <image width="80%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \draw (0,0) rectangle (6,3); 
+            \draw (0,2.5)--(6,2.5);
+            \draw[dashed] (0,1.25) -- (6,1.25); 
+            \foreach \x in {2,4} \draw (\x,0) -- (\x,3);
+            \foreach \x/\lab in {1/100s,3/10s,5/1s} \draw (\x,2.75) node {\lab};
+            \foreach \x in {1,2,3} \fill[MaterialIndigo] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({2+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialIndigo] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2}\fill[MaterialIndigo] ({0+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,1}\fill[MaterialIndigo] ({2+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,3}\fill[MaterialIndigo] ({4+0.3*\x},0.5) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        And lastly, we will just total the chips in each column.
+        The result is 5 hundreds chips, 3 tens chips and 8 ones, so 538 is the result.
+        Use of the addition algorithm shows
+      </p>
+
+      <p>
+        COLUMN ALGORITHM SHOWN HERE
+      </p>
+    </paragraphs>
+
+
+    <paragraphs>
+      <title>Chip Model with Bundling</title>
+
+      <p>
+        Let’s look at another chip model for addition, where the sum within a place value exceeds 9.
+        Consider the example <m>27 + 46</m>.
+      </p>
+
+      <image width="60%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1]
+            \draw (2,0) rectangle (6,3); 
+            \draw (2,2.5)--(6,2.5);
+            \draw[dashed] (2,1.25) -- (6,1.25); 
+            \foreach \x in {4} \draw (\x,0) -- (\x,3);
+            \foreach \x/\lab in {3/10s,5/1s} \draw (\x,2.75) node {\lab};
+            %\foreach \x in {1,2,3} \fill[MaterialIndigo] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({2+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialIndigo] ({4+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({4+0.3*\x},1.8) circle[radius=2.5pt];
+            %\foreach \x in {1,...,2}\fill[MaterialIndigo] ({0+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,4}\fill[MaterialIndigo] ({2+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,5}\fill[MaterialIndigo] ({4+0.3*\x},0.7) circle[radius=2.5pt];
+            \foreach \x in {1,...,1}\fill[MaterialIndigo] ({4+0.3*\x},0.3) circle[radius=2.5pt];
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        If we simply counted up all of the chips in a given columns there are 6 tens and 13 ones.
+        This again is a case, where we need to bundle 10 ones chips and make a ten chip.
+        Note: this is the identical coin model where we cashed in 10 pennies for a dime.
+      </p>
+
+      <p>
+        To illustrate this on the diagram, we will draw a loop around 10 ones and produce a new ten chip.
+        The ones chips that are exchanged should be crossed out.
+      </p>
+
+      <image width="60%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (2,0) rectangle (6,3); 
+            \draw (2,2.5)--(6,2.5);
+            \draw[dashed] (2,1.25) -- (6,1.25); 
+            \foreach \x in {4} \draw (\x,0) -- (\x,3);
+            \foreach \x/\lab in {3/10s,5/1s} \draw (\x,2.75) node {\lab};
+            %\foreach \x in {1,2,3} \fill[MaterialIndigo] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({2+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialIndigo] ({4+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({4+0.3*\x},1.8) circle[radius=2.5pt];
+            %\foreach \x in {1,...,2}\fill[MaterialIndigo] ({0+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,4}\fill[MaterialIndigo] ({2+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,5}\fill[MaterialIndigo] ({4+0.3*\x},0.7) circle[radius=2.5pt];
+            \foreach \x in {1,...,1}\fill[MaterialIndigo] ({4+0.3*\x},0.3) circle[radius=2.5pt];
+            \draw[dashed, MaterialRed900, rounded corners] (4.1,0.1) -- (4.1,2.4) -- (5.8,2.4) -- (5.8,1.5) -- (4.75,1.5) -- (4.75,0.1) --  cycle; 
+            \foreach \x in {1,...,5} \draw[thick] ({4+0.3*\x-0.1},2.1) -- ({4+0.3*\x+0.1},{2.3});
+            \foreach \x in {1,...,2} \draw[thick] ({4+0.3*\x-0.1},1.7) -- ({4+0.3*\x+0.1},{1.9});
+            \foreach \x in {1,...,2} \draw[thick] ({4+0.3*\x-0.1},0.6) -- ({4+0.3*\x+0.1},0.8);
+            \foreach \x in {1,...,1} \draw[thick] ({4+0.3*\x-0.1},0.2) -- ({4+0.3*\x+0.1},0.4);
+            \fill[MaterialRed900](3.5,1) circle[radius=2.5pt];
+            \draw[->] (4.1,1) -- (3.6,1); 
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        And now the number in each column is less than 10, so this is complete.
+        Now we count 7 tens chips and 3 ones chips for a total of 73.
+      </p>
+
+      <p>
+        The column algorithm version of this uses numbers for chips, but the result is the same.
+      </p>
+
+      <p>
+        COLUMN ADDITION FOR 27+46
+      </p>
+
+      <p>
+        where the small 1 in the tens column is the bundled chip from the tens column in the model above.
+      </p>
+
+      <p>
+        This procedure is often called <em>carrying</em>, however that term is a bit misleading in that it sounds like digits are moved from one column to another, which is not true, they are <em>rebundled</em>.
+        Worse yet, is the term <em>borrow</em> when we get to subtraction (when is it returned?) This term will be called <em>unbundling.</em>
+      </p>
+
+      <p>
+        Mastery of adding two 2-digit numbers results in more difficult problems with bundling.
+        In increasing order of difficulty:
+      </p>
+
+      <p>
+        <ol>
+          <li>
+            <p>
+              3-digit plus 2-digit (bundle ones),
+            </p>
+          </li>
+
+          <li>
+            <p>
+              3-digit plus 3-digit (bundle ones),
+            </p>
+          </li>
+
+          <li>
+            <p>
+              3-digit plus 3-digit (bundle tens),
+            </p>
+          </li>
+
+          <li>
+            <p>
+              3-digit plus 3-digit (bundle both ones and tens and or hundreds).
+            </p>
+          </li>
+
+          <li>
+            <p>
+              4 or more digit numbers with bundling.
+            </p>
+          </li>
+        </ol>
+      </p>
+
+      <p>
+        We show one more example that is relatively difficult, $637+528$ using the chip model.
+        First, we note that we will need a thousands column in the chart as well.
+      </p>
+
+      <image width="50%">
+        <shortdescription>
+        </shortdescription>
+        <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,3); 
+            \draw (0,2.5)--(8,2.5);
+            \draw[dashed] (0,1.25) -- (8,1.25); 
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,3);
+            \foreach \x/\lab in {1/1000s,3/100s,5/10s,7/1s} \draw (\x,2.75) node {\lab};
+            %\foreach \x in {1,2,3} \fill[MaterialIndigo] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialIndigo] ({2+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialIndigo] ({2+0.3*\x},1.8) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialIndigo] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,5} \fill[MaterialIndigo] ({6+0.3*\x},2.2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({6+0.3*\x},1.8) circle[radius=2.5pt];
+            %\foreach \x in {1,...,2}\fill[MaterialIndigo] ({0+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,5}\fill[MaterialIndigo] ({2+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,2}\fill[MaterialIndigo] ({4+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,4}\fill[MaterialIndigo] ({6+0.3*\x},0.7) circle[radius=2.5pt];
+            \foreach \x in {1,...,4}\fill[MaterialIndigo] ({6+0.3*\x},0.3) circle[radius=2.5pt];
+            \draw[dashed, MaterialRed900, rounded corners] (6.1,0.1) rectangle (7.4,2); 
+            \fill[MaterialRed900](5.5,1) circle[radius=2.5pt];
+            \draw[->] (6.1,1) -- (5.6,1); 
+            \draw[dashed, MaterialRed900, rounded corners] (2.1,0.1) rectangle (3.35,2.5); 
+            \fill[MaterialRed900](1.5,1) circle[radius=2.5pt];
+            \draw[->] (2.1,1) -- (1.6,1); 
+            %% cross out 1s chips
+            \foreach \x in {1,...,2} \draw[thick] ({6+0.3*\x-0.1},1.7) -- ({6+0.3*\x+0.1},{1.9});
+            \foreach \x in {1,...,4} \draw[thick] ({6+0.3*\x-0.1},0.6) -- ({6+0.3*\x+0.1},0.8);
+            \foreach \x in {1,...,4} \draw[thick] ({6+0.3*\x-0.1},0.2) -- ({6+0.3*\x+0.1},0.4);
+            %% cross out 100s chips
+            \foreach \x in {1,...,3} \draw[thick] ({2+0.3*\x-0.1},2.1) -- ({2+0.3*\x+0.1},2.3);
+            \foreach \x in {1,...,3} \draw[thick] ({2+0.3*\x-0.1},1.7) -- ({2+0.3*\x+0.1},1.9);
+            \foreach \x in {1,...,4} \draw[thick] ({2+0.3*\x-0.1},0.4) -- ({2+0.3*\x+0.1},0.6);
+            \end{tikzpicture}
+          ]]>
+        </latex-image>
+      </image>
+
+      <p>
+        When we bundle chips, you should work from the smaller to larger place values (columns), since bundling of chips in smaller denominations may affect those in larger ones.
+      </p>
+
+      <p>
+        When we bundle chips, you should work from the smaller to larger place values (columns), since bundling of chips in smaller denominations may affect those in larger ones.
+      </p>
+
+      <p>
+        With the bundling done, this results in 1 thousands, 1 hundred, 6 tens and 5 ones, which shows that <m>637+528=1165</m>.
+      </p>
+
+      <p>
+        COLUMN ADDITION FOR 637+528
+      </p>
+
+      <p>
+        And note that the bundled chip in the tens column is the same as the 1 in the tens column in the diagram about.
+        The bundled chip in the 1000s place is the extra 1 in the thousands column in the answer.
+      </p>
+    </paragraphs>
+
+    <remark>
+      <p>
+        Tips for creating good Addition Chip Models A chip model should clearly show the addition process with any bundling needed.
+        Here are some features of your model that you should use.
+      </p>
+
+      <p>
+        <ul>
+          <li>
+            <p>
+              Clearly put all addends on the diagram.
+              Note you could have more than 2.
+              It’s clearer if you separate each addend with a dashed line.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              Show the bundling process in any of the columns that needs it.
+              This includes circling and crossing out the bundled chips and using an arrow to show where those chips are bundled to.
+            </p>
+          </li>
+
+          <li>
+            <p>
+              The result should be clear.
+              That is, all chips that are not crossed out should be your result.
+            </p>
+          </li>
+        </ul>
+      </p>
+
+      <p>
+        Note: all the chip models above are good to study and to see that the tips above are included.
+        Although the models in this book were produced with computer software, hand-drawn ones can work well.
+        The colored chips are nice, but not required, but you should consider placing the bundled chips in locations that separate them from the addends.
+      </p>
+    </remark>
+  </subsection>
+
+
+  <subsection>
+    <title>Lattice Addition</title>
+
+    <p>
+      There are alternatives to performing addition in the standard way using the column algorithm.
+      One of these is called <em>lattice addition</em>.
+      We will show this in multiple steps with the example, <m>736+867</m>.
+    </p>
+
+    <p>
+      <dl>
+      <li>
+        <title>Step 1:</title>
+
+        <p>
+          Write the addends in stacked column form with a lattice as shown below:
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x/\d in {4.5/7,5.5/3,6.5/6} \draw (\x,4) node {\d}; 
+            \foreach \x/\d in {4.5/8,5.5/6,6.5/7} \draw (\x,3.5) node {\d}; 
+            \draw (3.5,3.5) node {$+$};
+            \draw (4,2) grid (7,3); 
+            \foreach \x in {4,5,6} \draw[dashed] (\x,2) -- ({\x+1},3); 
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+      </li>
+
+      <li>
+        <title>Step 2:</title>
+
+        <p>
+          Add down the columns and place the ones digit below the diagonal and the tens above the diagonal.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x/\d in {0/7,1/3,2/6} \draw ({\x+4.5},4) node {\d}; 
+            \foreach \x/\d in {0/8,1/6,2/7} \draw ({\x+4.5},3.5) node {\d}; 
+            \draw (3.5,3.5) node {$+$};
+            \draw (4,2) grid (7,3); 
+            \foreach \x in {4,5,6} \draw[dashed] (\x,2) -- ({\x+1},3);
+            \foreach \x/\d in {0/1,1/0,2/1} \draw({\x+4.5},2.5) node [above left] {\d};
+            \foreach \x/\d in {0/5,1/9,2/3} \draw({\x+4.5},2.5) node [below right] {\d}; 
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+      </li>
+
+      <li>
+        <title>Step 3:</title>
+
+        <p>
+          Extend the dashed diagonal lines to the down and right.
+          Then add down the diagonal and do any bundling that is needed.
+        </p>
+
+        <p>
+          For example on the second slot (with the 1 and 9 in it), the sum is 10 so write a 0, then the bundled 1 (shown below in red) in the next column.
+        </p>
+
+        <image width="80%">
+          <shortdescription>
+          </shortdescription>
+          <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}
+            \foreach \x/\d in {0/7,1/3,2/6} \draw ({\x+4.5},4) node {\d}; 
+            \foreach \x/\d in {0/8,1/6,2/7} \draw ({\x+4.5},3.5) node {\d}; 
+            \draw (3.5,3.5) node {$+$};
+            \draw (4,2) grid (7,3); 
+            \foreach \x in {3,4,5,6} \draw[dashed] ({\x-1},1) -- ({\x+1},3);
+            \draw[dashed] (7,2) --(6,1); 
+            \foreach \x/\d in {0/1,1/0,2/1} \draw({\x+4.5},2.5) node [above left] {\d};
+            \foreach \x/\d in {0/5,1/9,2/3} \draw({\x+4.5},2.5) node [below right] {\d}; 
+            \foreach \x/\d in {0/1,1/6,2/0,3/3} \draw ({\x+2.7},1) node [above] {\d};
+            \draw[MaterialRed900] (4.4,1.8) node {\footnotesize 1};  
+            \end{tikzpicture}
+          ]]>
+          </latex-image>
+        </image>
+      </li>
+      </dl>
+    </p>
+  </subsection>
+
+
+  <subsection>
+    <title>Base-5 Addition</title>
+
+    <p>
+      We are going to apply the addition algorithm to base-5 numbers.
+      First, let’s do this using the chip or coin model.
+      Let’s do <m>1023_{\text{five}}+ 2342_{\text{five}}</m>.
+      First in a similar way to that of the chip model of addition in base-5, we add the chips for each number to the chart.
+    </p>
+
+    <image width="80%">
+      <shortdescription>
+      </shortdescription>
+      <latex-image>
+          <![CDATA[ 
+          \begin{tikzpicture}[scale=1.3]
+            \draw (0,0) rectangle (8,3); 
+            \draw (0,2.5)--(8,2.5);
+            \draw[dashed] (0,1.25) -- (8,1.25); 
+            \foreach \x in {2,4,6} \draw (\x,0) -- (\x,3);
+            \foreach \x/\lab in {1/125s,3/25s,5/5s,7/1s} \draw (\x,2.75) node {\lab};
+            %\foreach \x in {1,2,3} \fill[MaterialIndigo] ({0+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,1} \fill[MaterialIndigo] ({0+0.3*\x},2) circle[radius=2.5pt];
+            %\foreach \x in {1,...,0} \fill[MaterialIndigo] ({2+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2} \fill[MaterialIndigo] ({4+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,3} \fill[MaterialIndigo] ({6+0.3*\x},2) circle[radius=2.5pt];
+            \foreach \x in {1,...,2}\fill[MaterialIndigo] ({0+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,3}\fill[MaterialIndigo] ({2+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,4}\fill[MaterialIndigo] ({4+0.3*\x},0.5) circle[radius=2.5pt];
+            \foreach \x in {1,...,2}\fill[MaterialIndigo] ({6+0.3*\x},0.5) circle[radius=2.5pt];
+            \draw[dashed, MaterialRed900, rounded corners] (6.1,0.1) rectangle (7,2.2); 
+            \fill[MaterialRed900](5.5,1) circle[radius=2.5pt];
+            \draw[->] (6.1,1) -- (5.6,1); 
+            \draw[dashed, MaterialRed900, rounded corners] (4.1,0.1) rectangle (5,2.2); 
+            \fill[MaterialRed900](3.5,1) circle[radius=2.5pt];
+            \draw[->] (4.1,1) -- (3.6,1); 
+            %% cross out 1s chips
+            \foreach \x in {1,...,3} \draw[thick] ({6+0.3*\x-0.1},1.9) -- ({6+0.3*\x+0.1},2.1);
+            \foreach \x in {1,...,2} \draw[thick] ({6+0.3*\x-0.1},0.4) -- ({6+0.3*\x+0.1},0.6);
+            %% cross out 5s chips
+            \foreach \x in {1,...,2} \draw[thick] ({4+0.3*\x-0.1},1.9) -- ({4+0.3*\x+0.1},2.1);
+            \foreach \x in {1,...,3} \draw[thick] ({4+0.3*\x-0.1},0.4) -- ({4+0.3*\x+0.1},0.6);
+            %\foreach \x in {1,...,4} \draw[thick] ({2+0.3*\x-0.1},0.4) -- ({2+0.3*\x+0.1},0.6);
+            \end{tikzpicture}
+          ]]>
+      </latex-image>
+    </image>
+
+    <p>
+      Notice that when we bundle, the size of the bundle is 5 (since it is base-5).
+      After the bundling step, just count.
+      The result is <m>3420_{\text{five}}</m>
+    </p>
+
+    <p>
+      Another thing to note is that the chip model in base-5 is the same as the chip model from above (in base-10) with the only true difference being that any number of chips more than 4 need to be bundled.
+      This is precisely what we mean by base-5.
+    </p>
+  </subsection>
+</section>

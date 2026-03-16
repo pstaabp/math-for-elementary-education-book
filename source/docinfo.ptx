@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The docinfo block is the analogue to the latex preamble -->
+<!-- This is where you can define macros and other book-wide -->
+<!-- settings. -->
+<docinfo xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- A unique name for the book in a catalog; for example, see https://pretextbook.org/catalog.html and https://runestone.academy/ns/books/index. It contains a simple lowercase string with no dashes or other special characters. See https://pretextbook.org/doc/guide/html/sec-publishing-to-runestone-academy.html for more information. -->
+  <document-id>changeme</document-id>
+  <!-- A brief description for the book in a catalog; see the links above. The @shelf is used only when publishing to Runestone; see https://runestone.academy/ns/books/index for a list of valid values. You must copy these @shelf names exactly, including capitalization. -->
+  <blurb shelf="AP Computer Science"> A simple string (no markup is allowed) to describe your book. </blurb>
+
+<math-package mathjax-name="ams" />
+
+  <!-- The next three lines are likely for mature projects only: -->
+
+  <!-- <brandlogo url="" source="images/cover.png"/> -->
+  <!-- <covers front="images/front.pdf" back="images/back.pdf"/> -->
+  <!-- <document-id>unique-book-id</document-id> -->
+
+  <!-- macros for defining latex math shortcuts. It is good practice -->
+  <!-- to define these semantically, so that the macro relates to what-->
+  <!-- it defines. -->
+  <macros> \newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R} </macros>
+
+  <!-- If you put any latex-image elements you can include preambles -->
+  <!-- for those in the next element. -->
+  <latex-image-preamble> 
+    \usepackage{xcolor-material}
+    \usepackage{tikz, pgfplots} 
+    \usepackage{tikzlings-penguins}
+    \pgfplotsset{compat=1.18}
+    \usetikzlibrary{positioning,matrix,arrows} 
+    \usetikzlibrary{shapes,decorations,shadows,fadings,patterns} 
+    \usetikzlibrary{decorations.markings} 
+    \usetikzlibrary{decorations.pathreplacing}
+    \usetikzlibrary{shapes.geometric}
+    \usepackage{hieroglf}
+
+    \tikzset{brace/.style={decorate,decoration={brace,amplitude=5}}}
+    \tikzset{bracelabel/.style={midway,#1=2pt+3pt}}
+
+    
+    \tikzset{
+   apple/.pic={
+\begin{scope}[scale=0.5]
+\fill [MaterialBrown] (-1/8,0) 
+  arc (180:120:1 and 3/2) coordinate [pos=3/5] (@)-- ++(1/6,-1/7) 
+  arc (120:180:5/4 and 3/2) -- cycle;
+\fill [MaterialLightGreen500] (0,-9/10) 
+  .. controls ++(180:1/8) and ++(  0:1/4) .. (-1/3,  -1)
+  .. controls ++(180:1/3) and ++(270:1/2) .. (  -1,   0)
+  .. controls ++( 90:1/3) and ++(180:1/3) .. (-1/2, 3/4)
+  .. controls ++(  0:1/8) and ++(135:1/8) .. (   0, 4/7)
+  .. controls ++( 45:1/8) and ++(180:1/8) .. ( 1/2, 3/4)
+  .. controls ++(  0:1/3) and ++( 90:1/3) .. (   1,   0)
+  .. controls ++(270:1/2) and ++(  0:1/3) .. ( 1/3,  -1)
+  .. controls ++(180:1/4) and ++(  0:1/8) .. cycle;
+\fill [MaterialLightGreen600] (0, 4/7)
+  .. controls ++( 45:1/8) and ++(180:1/8) .. ( 1/2, 3/4)
+  .. controls ++(  0:1/3) and ++( 90:1/3) .. (   1,   0)
+  .. controls ++(270:1/2) and ++(  0:1/3) .. ( 1/3,  -1)
+  .. controls ++(180:1/4) and ++(  0:1/8) .. (   0,-9/10);
+\fill [MaterialGreen500, shift={(@)}, rotate=-30] 
+  (0,0) arc (45:135:3/4 and 3/5) arc (225:315:3/4 and 3/5);
+\fill [MaterialGreen700, shift={(@)}, rotate=-30] 
+  (0,0) arc (315:225:3/4 and 3/5) -- cycle;
+\end{scope}
+},
+orange/.pic={
+\begin{scope}[scale=0.5]
+\fill [MaterialOrange500] (0,0) circle [radius=1];
+\fill [MaterialOrange600] (0,0) -- (45:1) arc (45:-135:1) -- cycle;
+\fill [MaterialOrange700, shift={(0,3/4)}] coordinate (@)
+ellipse [x radius=1/4, y radius=1/8];
+\begin{scope}
+\clip (0,0) circle [radius=1];
+\fill [MaterialOrange700, shift=(@)] (90:1/4 and 1/8) 
+  \foreach \i [evaluate={\j=mod(\i,2)+1/4;}]in {0,...,12}{
+  -- (90+\i*30:\j*3/4 and \j*3/8) } -- cycle;
+\end{scope}
+\fill [MaterialBrown] (-1/16, 3/4) -- ++(0,1/4) arc (180:0:1/16 and 1/32)
+   -- ++(0,-1/4) arc (360:180:1/16 and 1/32) -- cycle;
+\fill [MaterialGreen500, shift=(@), rotate=-150] 
+  (0,0) arc (45:135:1/2 and 4/5) arc (225:315:1/2 and 3/5);
+\fill [MaterialGreen700, shift=(@), rotate=-150] 
+  (0,0) arc (45:135:1/2 and 4/5) -- cycle;
+\end{scope}  
+},
+lemon/.pic={
+\begin{scope}[scale=0.5]
+\tikzset{rotate=-45}
+\fill [MaterialYellow500] (0, 0) ellipse [x radius=1/3, y radius=  1];
+\fill [MaterialYellow500] (0, 0) ellipse [x radius=3/4, y radius=7/8];
+\fill [MaterialYellow600] (270:1/3 and   1) arc (270:450:1/3 and   1);
+\fill [MaterialYellow600] (270:3/4 and 7/8) arc (270:450:3/4 and 7/8);
+\begin{scope}[shift=(90:9/10), rotate=-135]
+\fill [MaterialGreen500] 
+  (0,0) arc (45:135:1/2 and 4/5) arc (225:315:1/2 and 3/5);
+\fill [MaterialGreen700] 
+  (0,0) arc (45:135:1/2 and 4/5) -- cycle;
+\tikzset{rotate=90, scale=3/4}
+\fill [MaterialGreen500] 
+  (0,0) arc (45:135:1/2 and 4/5) arc (225:315:1/2 and 3/5);
+\fill [MaterialGreen700] 
+  (0,0) arc (45:135:1/2 and 4/5) -- cycle;
+\end{scope}
+\end{scope}
+},
+cherry/.pic={
+\begin{scope}[scale=0.5]
+\foreach \i in {1,2}{
+\tikzset{shift={(-1+\i*3/4, -3/5+\i/5)},scale=1/2, rotate=15-\i*10}
+\fill [MaterialRed700] (0,19/20) 
+  .. controls ++(180:1/8) and ++(  0:1/4) .. (-1/3,  1)
+  .. controls ++(180:1/3) and ++( 90:1/2) .. (  -1,  0)
+  .. controls ++(270:1/2) and ++(180:1/2) .. (   0, -1)
+  .. controls ++(  0:1/2) and ++(270:1/2) .. (   1,  0)
+  .. controls ++( 90:1/2) and ++(  0:1/3) .. ( 1/3,  1)
+  .. controls ++(180:1/4) and ++(  0:1/8) .. cycle;
+\fill [MaterialRed800] (0, -1)
+  .. controls ++(  0:1/2) and ++(270:1/2) .. (   1,  0)
+  .. controls ++( 90:1/2) and ++(  0:1/3) .. ( 1/3,  1)
+  .. controls ++(180:1/4) and ++(  0:1/8) .. (   0,19/20) -- cycle;
+\fill [MaterialRed900] (0,3/4) coordinate (@\i) 
+  ellipse [x radius=1/4, y radius=1/8];
+}
+\fill [MaterialBrown]
+  (1/4,11/8) -- (3/8,11/8) coordinate (@)
+  .. controls ++(270:1/2) and ++(135:1/3) .. (@1)
+  .. controls ++(135:1/2) and ++(270:1/2) .. cycle;
+\fill [MaterialBrown]
+  (1/4,11/8) -- (3/8,11/8)
+  .. controls ++(315:1/2) and ++(45:1/2) .. (@2)
+  .. controls ++(60:1/2) and ++(315:1/2) .. cycle;
+\fill [MaterialGreen500, shift={(@)}, rotate=20] 
+  (0,0) arc (45:135:3/4 and 3/5) arc (225:315:3/4 and 3/5);
+\fill [MaterialGreen700, shift={(@)}, rotate=20] 
+  (0,0) arc (315:225:3/4 and 3/5) -- cycle;
+\end{scope}
+}}
+
+\tikzset{ egg/.pic={
+  \draw[looseness=0.75,ball color=orange!70!gray] (-2,0) arc (180:360:2) to[out=90,in=0] (0,3) to[out=180,in=90] (-2,0) -- cycle;
+
+  }
+}
+
+\tikzset{
+    % The Stroke (1)
+    pics/egy1/.style={
+        code={
+            \draw[line width=1pt, cap=round] (0,0) -- (0,0.8);
+        }
+    },
+    % The Heel Bone (10)
+    pics/egy10/.style={
+        code={
+            \draw[line width=1pt, cap=round] 
+                (0.2,0) .. controls (0.2,0.75) and (-0.2,0.75) .. (-0.2,0);
+        }
+    },
+    % The Authentic Coil of Rope (100)
+    pics/egy100/.style={
+        code={
+            \draw[thick, cap=round] 
+                % Starting at the bottom tail
+                (0.5,0) 
+                % Curving up and left
+                .. controls (0.5,0.1) and (0.1,0.3) .. (0.1,0.6)
+                % The outer top of the spiral
+                .. controls (0.1,1.0) and (0.65,1.0) .. (0.65,0.6)
+                % The inner curl
+                .. controls (0.65,0.4) and (0.3,0.4) .. (0.3,0.65);
+        }
+    },
+       % The Lotus (1,000)
+    pics/egy1000/.style={
+        code={
+          \draw[thick] (-0.2,0) -- (0,0.25) -- (0.2,0) -- cycle;
+          \draw[thick] (0,0.25) -- (0,0.6);
+          \draw[thick] (-0.3,0.3) -- (0,0.25) -- (0.3,0.3);
+          \draw [thick] ({0.2*cos(30)},{0.8+0.2*sin(30)}) arc [radius = 0.2, start angle = 30, end angle = 330]
+           -- (0,0.8) -- cycle;
+          
+        }
+    },
+    % The Finger (10,000) - A slightly bent tall digit
+    pics/egy10000/.style={
+        code={
+            \draw[line width=1.2pt, cap=round] 
+                (0,0) -- (0,0.7) 
+                .. controls (0,0.85) and (0.15,0.85) .. (0.15,0.75)
+                -- (0.15,0.7);
+        }
+    },
+    % The Tadpole (100,000) - A simple curved body and tail
+    pics/egy100000/.style={
+        code={
+            \draw[line width=1pt, fill=black!10] 
+                (0,0.3) ellipse (0.15 and 0.1); % Body
+            \draw[line width=1pt, cap=round] 
+                (0.12,0.25) .. controls (0.3,0.1) and (0.1,-0.1) .. (0.3,-0.2); % Tail
+        }
+    }
+}
+ 
+
+  </latex-image-preamble>
+
+  <!-- It is possible to rename elements: -->
+  <!-- <rename element="assemblage" xml:lang="en-US">Summary</rename> -->
+
+  <!-- Specify the default type of cross reference: -->
+  <!-- <cross-references text="type-global" /> -->
+
+
+</docinfo>

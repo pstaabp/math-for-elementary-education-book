@@ -1,0 +1,121 @@
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : converting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx to svg graphics for placement in /Users/pstaab/code/informal-number-theory-book/generated-assets/latex-image
+INFO    : extracting latex-image pictures from /Users/pstaab/code/informal-number-theory-book/source/main.ptx
+INFO    : string parameters passed to extraction stylesheet: {'cli.version': '2.37', 'publisher': '/Users/pstaab/code/informal-number-theory-book/publication/publication.ptx'}
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/extract-latex-image.xsl
+INFO    : converting fig-dlb-02-2.tex to fig-dlb-02-2.pdf
+INFO    : cropping fig-dlb-02-2.pdf to cropped-fig-dlb-02-2.pdf
+INFO    : renaming cropped-fig-dlb-02-2.pdf to fig-dlb-02-2.pdf
+INFO    : converting fig-dlb-02-2.pdf to fig-dlb-02-2.svg
+INFO    : converting fig-asdf-2.tex to fig-asdf-2.pdf
+INFO    : cropping fig-asdf-2.pdf to cropped-fig-asdf-2.pdf
+INFO    : renaming cropped-fig-asdf-2.pdf to fig-asdf-2.pdf
+INFO    : converting fig-asdf-2.pdf to fig-asdf-2.svg
+INFO    : converting fig-number-line-2.tex to fig-number-line-2.pdf
+INFO    : cropping fig-number-line-2.pdf to cropped-fig-number-line-2.pdf
+INFO    : renaming cropped-fig-number-line-2.pdf to fig-number-line-2.pdf
+INFO    : converting fig-number-line-2.pdf to fig-number-line-2.svg
+INFO    : converting fig-dots-2.tex to fig-dots-2.pdf
+INFO    : cropping fig-dots-2.pdf to cropped-fig-dots-2.pdf
+INFO    : renaming cropped-fig-dots-2.pdf to fig-dots-2.pdf
+INFO    : converting fig-dots-2.pdf to fig-dots-2.svg
+INFO    : converting fig-dlb-01-2.tex to fig-dlb-01-2.pdf
+INFO    : cropping fig-dlb-01-2.pdf to cropped-fig-dlb-01-2.pdf
+INFO    : renaming cropped-fig-dlb-01-2.pdf to fig-dlb-01-2.pdf
+INFO    : converting fig-dlb-01-2.pdf to fig-dlb-01-2.svg
+INFO    : converting fig-number-line-02-2.tex to fig-number-line-02-2.pdf
+INFO    : cropping fig-number-line-02-2.pdf to cropped-fig-number-line-02-2.pdf
+INFO    : renaming cropped-fig-number-line-02-2.pdf to fig-number-line-02-2.pdf
+INFO    : converting fig-number-line-02-2.pdf to fig-number-line-02-2.svg
+INFO    : converting fig-ha-coin-model-2.tex to fig-ha-coin-model-2.pdf
+INFO    : cropping fig-ha-coin-model-2.pdf to cropped-fig-ha-coin-model-2.pdf
+INFO    : renaming cropped-fig-ha-coin-model-2.pdf to fig-ha-coin-model-2.pdf
+INFO    : converting fig-ha-coin-model-2.pdf to fig-ha-coin-model-2.svg
+INFO    : converting fig-fish-2.tex to fig-fish-2.pdf
+INFO    : cropping fig-fish-2.pdf to cropped-fig-fish-2.pdf
+INFO    : renaming cropped-fig-fish-2.pdf to fig-fish-2.pdf
+INFO    : converting fig-fish-2.pdf to fig-fish-2.svg
+INFO    : converting fig-bar-diagram-01-2.tex to fig-bar-diagram-01-2.pdf
+ERROR   : LaTeX compilation of fig-bar-diagram-01-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-bar-diagram-01-2.tex failed
+INFO    : converting fig-measuring-cup-2.tex to fig-measuring-cup-2.pdf
+INFO    : cropping fig-measuring-cup-2.pdf to cropped-fig-measuring-cup-2.pdf
+INFO    : renaming cropped-fig-measuring-cup-2.pdf to fig-measuring-cup-2.pdf
+INFO    : converting fig-measuring-cup-2.pdf to fig-measuring-cup-2.svg
+INFO    : converting fig-bar-diagram-simple-2.tex to fig-bar-diagram-simple-2.pdf
+INFO    : cropping fig-bar-diagram-simple-2.pdf to cropped-fig-bar-diagram-simple-2.pdf
+INFO    : renaming cropped-fig-bar-diagram-simple-2.pdf to fig-bar-diagram-simple-2.pdf
+INFO    : converting fig-bar-diagram-simple-2.pdf to fig-bar-diagram-simple-2.svg
+INFO    : converting fig-pencils-2.tex to fig-pencils-2.pdf
+ERROR   : LaTeX compilation of fig-pencils-2.tex failed.
+Re-run, requesting "source" as the format, to analyze the image.
+Likely creating the entire document as PDF will fail similarly.
+The transcript of the LaTeX run follows.
+WARNING : LaTeX compilation of fig-pencils-2.tex failed
+INFO    : converting fig-number-line-fractions-2.tex to fig-number-line-fractions-2.pdf
+INFO    : cropping fig-number-line-fractions-2.pdf to cropped-fig-number-line-fractions-2.pdf
+INFO    : renaming cropped-fig-number-line-fractions-2.pdf to fig-number-line-fractions-2.pdf
+INFO    : converting fig-number-line-fractions-2.pdf to fig-number-line-fractions-2.svg
+INFO    : converting fig-dlb-2.tex to fig-dlb-2.pdf
+INFO    : cropping fig-dlb-2.pdf to cropped-fig-dlb-2.pdf
+INFO    : renaming cropped-fig-dlb-2.pdf to fig-dlb-2.pdf
+INFO    : converting fig-dlb-2.pdf to fig-dlb-2.svg
+ERROR   : Unable to generate some latex-image assets:
+ LaTeX compilation failed for 2 "latex-image"(s).
+Review the log for error messages, and LaTeX transcripts.
+Images are:
+  fig-bar-diagram-01-2.tex
+  fig-pencils-2.tex
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-3xsvtjaw
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /Users/pstaab/code/informal-number-theory-book/output/web.
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../generated-assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/generated-assets
+INFO    : verifying and expanding input directory: /Users/pstaab/code/informal-number-theory-book/source/../assets
+INFO    : input directory expanded to absolute path: /Users/pstaab/code/informal-number-theory-book/assets
+INFO    : discovering source file's directory name: /Users/pstaab/code/informal-number-theory-book/source
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 7.11.17
+INFO    : Downloading Runestone Services, version 7.11.17
+INFO    : Extracting Runestone Services from archive file
+INFO    : Building custom css theme: theme-default-modern
+INFO    : converting /Users/pstaab/code/informal-number-theory-book/source/main.ptx to HTML in /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-wvhh8q70
+INFO    : XSL conversion of /Users/pstaab/code/informal-number-theory-book/source/main.ptx by /Users/pstaab/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking all deprecated elements.
+ERROR   : * PTX:ERROR:   a cross-reference ("xref") uses references [section-diagrams-models] that do not point to any target, or perhaps point to multiple targets.  Maybe you typed an @xml:id value wrong, maybe the target of the @xml:id is nonexistent, or maybe you temporarily removed the target from your source, or maybe an auxiliary file contains a duplicate.  Your output will contain some placeholder text that you will not want to distribute to your readers.
+INFO    : *              located within: "Bar Diagrams" (title)
+INFO    : successful application of /Users/pstaab/.ptx/2.37.1/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-wvhh8q70
+INFO    : Removing temporary directory /var/folders/mh/bf69w49d3j9265n3xzmx9t5c0000gq/T/ptx-n1uz2vfg
+INFO    : 
+Finished build for target web. Run `pretext view web` to see the results.
+
+CRITICAL: There were errors during the build.  See above.
+INFO    : ------------------------
+CRITICAL: Failed to build without errors.  Exiting...
+INFO    : 
+----------------------------------------------------
+INFO    : While running pretext, the following errors occurred:
+
+INFO    : (see log messages above or in the 'logs' folder for more information)
+INFO    : ----------------------------------------------------
