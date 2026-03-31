@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="16" height="20" viewBox="0 0 16 20">
-<path transform="matrix(1.00006,0,0,-1.00006,8.064346,18.359442)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0"/>
-<path transform="matrix(1.00006,0,0,-1.00006,8.064346,18.359442)" stroke-width=".99628" stroke-linecap="round" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M5.66927 0C5.66927 21.2601-5.66927 21.2601-5.66927 0"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="16" height="28" viewBox="0 0 16 28">
+<path transform="matrix(1.00006,0,0,-1.00005,8.064346,26.44572)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0"/>
+<path transform="matrix(1.00006,0,0,-1.00005,8.064346,26.44572)" stroke-width=".99628" stroke-linecap="round" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M5.66927 0V14.17339C5.66927 28.3468-5.66927 28.3468-5.66927 14.17339V0"/>
 </svg>

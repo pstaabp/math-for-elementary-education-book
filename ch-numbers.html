@@ -19,6 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="source/custom-style.css">
 <script>
 var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
 window.MathJax = {
@@ -78,7 +79,7 @@ window.MathJax = {
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Mathematics for Elementary Educators">
-<meta property="book:author" content="You">
+<meta property="book:author" content="Peter Staab">
 <script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
 <!--** Runestone components to run locally in reader's browser **-->
 <!--** No external communication:                              **-->
@@ -101,22 +102,22 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.19';
+eBookConfig.runestone_version = '7.12.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.998c9d9ee2a5e7ac.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.98ef3b0c170cd180.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.d2d4c56cb9826035.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a4a209ed3a55c515.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
-<body id="changeme" class="pretext book ignore-math">
+<body id="math-elem-education" class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
 <h1 class="heading"><a href="math-elementary-educators.html"><span class="title">Mathematics for Elementary Educators</span> <span class="subtitle">The foundational mathematics for future teachers</span></a></h1>
-<p class="byline">You</p>
+<p class="byline">Peter Staab</p>
 </div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
 <button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
 <div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
@@ -163,59 +164,55 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-3" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Counting</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-4" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Model and Diagrams</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-ha-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Hindu-Arabic Number System, Egyptian numbers and the Place Value System</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#exercises-" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sect-addition-subtraction.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition and Subtraction</span></a></div>
+<div class="toc-title-box"><a href="sect-addition.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Subtraction</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-3" class="internal"><span class="codenumber">2.2.4.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-4" class="internal"><span class="codenumber">2.2.4.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-5" class="internal"><span class="codenumber">2.2.4.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-6" class="internal"><span class="codenumber">2.2.4.4</span> <span class="title">Thinking Strategies</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-7" class="internal"><span class="codenumber">2.2.4.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-8" class="internal"><span class="codenumber">2.2.4.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-addition-subtraction.html#sect-addition-subtraction-6-9" class="internal"><span class="codenumber">2.2.4.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
-</ul>
-</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sect-multiplication-division.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Multiplication and Division</span></a></div>
+<div class="toc-title-box"><a href="sect-subtraction.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subtraction</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Multiplication</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-3" class="internal"><span class="codenumber">2.3.1.1</span> <span class="title">Properties of Multiplication</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-4" class="internal"><span class="codenumber">2.3.1.2</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-multiplication-division-3-5" class="internal"><span class="codenumber">2.3.1.3</span> <span class="title">Multiplying by tens or multiples of 10s</span></a></div></li>
-</ul>
-</li>
-<li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Division</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-3" class="internal"><span class="codenumber">2.3.2.1</span> <span class="title">Set Model for partitive and measurement</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-4" class="internal"><span class="codenumber">2.3.2.2</span> <span class="title">Division Interpretation and Word Problems</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-5" class="internal"><span class="codenumber">2.3.2.3</span> <span class="title">Division with Remainders</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-multiplication-division.html#sect-division-6" class="internal"><span class="codenumber">2.3.2.4</span> <span class="title">Division by Zero</span></a></div></li>
-</ul>
-</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-6" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-7" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-8" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-9" class="internal"><span class="codenumber">2.3.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Alternative Number Systems</span></a></div>
+<div class="toc-title-box"><a href="sect-multiplication.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Multiplication</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Tallies</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Egyptian Numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-roman-numbers" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Roman Numerals</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-babylonian" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Babylonian Number System</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-mayan-system" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Mayan Numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-base-five" class="internal"><span class="codenumber">2.4.6</span> <span class="title">Base-5 Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Models of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Properties of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-5" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-division.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-3" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Set Model for partitive and measurement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-4" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Division Interpretation and Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-5" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Division with Remainders</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-6" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division by Zero</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Alternative Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-3" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Tallies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-4" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Egyptian Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-roman-numbers" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-babylonian" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Babylonian Number System</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-mayan-system" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Mayan Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-base-five" class="internal"><span class="codenumber">2.6.6</span> <span class="title">Base-5 Numbers</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -395,9 +392,11 @@ eBookConfig.enable_chatcodes =  false;
 <section class="introduction" id="ch-numbers-2"><div class="para" id="ch-numbers-2-1">All of mathematics arises from numbers, and so it makes sense to start with the teaching and understanding numbers. The number system that we use most of the time is called the Hindu-Arabic system, we will explain other number systems and  why this system is a pretty good system to use.  The standard four arithmetic operations of addition, subtraction, multiplication and division will be defined here.  We will also examine useful models for these operations.  Lastly, we will study some other number systems and other bases to put the Hindu-Arabic number system in better context.<div class="autopermalink" data-description="Paragraph"><a href="#ch-numbers-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section><nav class="summary-links"><ul>
 <li><a href="sect-hindu-arabic-numbers.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Hindu-Arabic Numbers and Models for Arithmetic</span></a></li>
-<li><a href="sect-addition-subtraction.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition and Subtraction</span></a></li>
-<li><a href="sect-multiplication-division.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Multiplication and Division</span></a></li>
-<li><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Alternative Number Systems</span></a></li>
+<li><a href="sect-addition.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition</span></a></li>
+<li><a href="sect-subtraction.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subtraction</span></a></li>
+<li><a href="sect-multiplication.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Multiplication</span></a></li>
+<li><a href="sect-division.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Division</span></a></li>
+<li><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Alternative Number Systems</span></a></li>
 </ul></nav><div class="autopermalink" data-description="Chapter 2: Numbers: the essence of mathematics"><a href="#ch-numbers" title="Copy heading and permalink for Chapter 2: Numbers: the essence of mathematics" aria-label="Copy heading and permalink for Chapter 2: Numbers: the essence of mathematics">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-preliminary-4.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sect-hindu-arabic-numbers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
