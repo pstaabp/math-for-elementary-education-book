@@ -20,62 +20,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="source/custom-style.css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Mathematics for Elementary Educators">
@@ -102,15 +54,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.12.2';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d2d4c56cb9826035.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a4a209ed3a55c515.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -172,19 +124,21 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-place-value" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-addition.html#exercises-sect-addition" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-subtraction.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subtraction</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-6" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-set-models" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-measurement-models" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-thinking-strategies-subtraction" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-7" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-8" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-9" class="internal"><span class="codenumber">2.3.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction.html#exercises-sect-subtraction" class="internal"><span class="codenumber">2.3.8</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -193,6 +147,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Models of Multiplication</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Properties of Multiplication</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-5" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-multiplication.html#exercises-multiplication" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -224,19 +179,19 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sect-diagrams-models.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Diagrams and Models</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-set-diagram" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Set Diagram</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
+<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-8" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -355,7 +310,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-factor-trees" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Prime Factorization and Factor Trees</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-5" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -381,15 +337,73 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fraction-basics.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Fraction Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Fractions and Units</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Fraction Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-5" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Ordering of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-6" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Fraction Equivalents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-7" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Improper Fractions and Mixed Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-4.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Addition and Subtraction of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Addition and Subtracting with same denominators</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Word Problems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-4-3" class="internal"><span class="codenumber">7.2.2.1</span> <span class="title">The relationship between division and fractions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-5" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Adding Fractions with unlike Denominators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-6" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Algebraic Form for Adding/Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-7" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Finding a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-8" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Using the Lowest Common Multiple to find a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-9" class="internal"><span class="codenumber">7.2.7</span> <span class="title">Adding and Subtracting Mixed Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-5.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Multiplication of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-3" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication of a whole number and a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-4" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Fraction times a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-5" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Fraction times a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-6" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Mixed number times mixed number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-7" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Factoring Fractions and Canceling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-8" class="internal"><span class="codenumber">7.3.6</span> <span class="title">Word Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-6.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Division of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-3" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Review of Partitive and Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-4" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Drawing a Partitive Division Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-5" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Dividing a whole number by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-6" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Dividing a fraction by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-7" class="internal"><span class="codenumber">7.4.5</span> <span class="title">Dividing a whole number by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-8" class="internal"><span class="codenumber">7.4.6</span> <span class="title">Dividing a fraction by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-9" class="internal"><span class="codenumber">7.4.7</span> <span class="title">Fraction Division Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-10" class="internal"><span class="codenumber">7.4.8</span> <span class="title">Word Problem for Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-11" class="internal"><span class="codenumber">7.4.9</span> <span class="title">Word Problem for Partitive Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-12" class="internal"><span class="codenumber">7.4.10</span> <span class="title">2-step fraction word problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-decimals.html" class="internal"><span class="codenumber">8</span> <span class="title">Decimals</span></a></div></li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-integers.html" class="internal"><span class="codenumber">9</span> <span class="title">Integers</span></a></div></li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sect-subtraction-algorithm"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sect-subtraction-algorithm">
+<h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Subtraction Algorithms</span>
 </h2>
-<section class="introduction" id="sect-subtraction-algorithm-2"><div class="para" id="sect-subtraction-algorithm-2-1">Since subtraction is finding the missing addend in a summation problem, it is not surprising that the subtraction algorithm is similar to the addition algorithm. Let’s see an example with two 3-digit numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sect-subtraction-algorithm-2">
+<div class="para" id="sect-subtraction-algorithm-2-1">Since subtraction is finding the missing addend in a summation problem, it is not surprising that the subtraction algorithm is similar to the addition algorithm. Let’s see an example with two 3-digit numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sect-subtraction-algorithm-2-2">
 <div class="para">Consider the subtraction algorithm <span class="process-math">\(478-253\text{.}\)</span> We can write this in expand form as</div>
@@ -403,7 +417,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-subtraction-algorithm-2-3">COLUMN SUBTRACTION for 478-253<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="sect-subtraction-algorithm-3"><h3 class="heading hide-type">
+</div></section>
+<section class="subsection" id="sect-subtraction-algorithm-3">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Coin Model</span>
 </h3>
 <div class="para" id="sect-subtraction-algorithm-3-2">Recall that a coin model for this problem is using the take-away interpretation. Practically, this means that put the minuend down in coins and cross out the subtrahend. This could look like:<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -411,7 +427,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-subtraction-algorithm-3-3.svg" role="img" class="contained" alt=""></div>
 <div class="para" id="sect-subtraction-algorithm-3-4">And the chips that are left are 2 hundreds, 2 tens and 5 ones or 225.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 5.2.1: Coin Model"><a href="#sect-subtraction-algorithm-3" title="Copy heading and permalink for Subsection 5.2.1: Coin Model" aria-label="Copy heading and permalink for Subsection 5.2.1: Coin Model">🔗</a></div></section><section class="subsection" id="sect-subtraction-algorithm-4"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection 5.2.1: Coin Model"><a href="#sect-subtraction-algorithm-3" title="Copy heading and permalink for Subsection 5.2.1: Coin Model" aria-label="Copy heading and permalink for Subsection 5.2.1: Coin Model">🔗</a></div>
+</section>
+<section class="subsection" id="sect-subtraction-algorithm-4">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chip Model for Subtraction</span>
 </h3>
 <div class="para" id="sect-subtraction-algorithm-4-2">We now apply the chip model for subtraction. We will put the minuend as coins in a table labeled with the chip value in each column. This will look like:<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -422,7 +441,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-subtraction-algorithm-4-5.svg" role="img" class="contained" alt=""></div>
 <div class="para" id="sect-subtraction-algorithm-4-6">The result from this is identical to the coin model or 2 hundreds, 3 tens and 5 ones or 235.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 5.2.2: Chip Model for Subtraction"><a href="#sect-subtraction-algorithm-4" title="Copy heading and permalink for Subsection 5.2.2: Chip Model for Subtraction" aria-label="Copy heading and permalink for Subsection 5.2.2: Chip Model for Subtraction">🔗</a></div></section><section class="subsection" id="sect-subtraction-algorithm-5"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection 5.2.2: Chip Model for Subtraction"><a href="#sect-subtraction-algorithm-4" title="Copy heading and permalink for Subsection 5.2.2: Chip Model for Subtraction" aria-label="Copy heading and permalink for Subsection 5.2.2: Chip Model for Subtraction">🔗</a></div>
+</section>
+<section class="subsection" id="sect-subtraction-algorithm-5">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Subtraction with Unbundling</span>
 </h3>
 <div class="para logical" id="sect-subtraction-algorithm-5-2">
@@ -442,7 +464,10 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="sect-subtraction-algorithm-5-3">What we have done is <em class="emphasis">unbundled a ten</em> to make 10 ones. We can unbundle any denomination more than ones to make 10 smaller denominators. For example, we can unbundle a 1000 as 10 hundreds.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 5.2.3: Subtraction with Unbundling"><a href="#sect-subtraction-algorithm-5" title="Copy heading and permalink for Subsection 5.2.3: Subtraction with Unbundling" aria-label="Copy heading and permalink for Subsection 5.2.3: Subtraction with Unbundling">🔗</a></div></section><section class="subsection" id="sect-subtraction-algorithm-6"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection 5.2.3: Subtraction with Unbundling"><a href="#sect-subtraction-algorithm-5" title="Copy heading and permalink for Subsection 5.2.3: Subtraction with Unbundling" aria-label="Copy heading and permalink for Subsection 5.2.3: Subtraction with Unbundling">🔗</a></div>
+</section>
+<section class="subsection" id="sect-subtraction-algorithm-6">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Chip Model of Subtraction with Unbundling</span>
 </h3>
 <div class="para" id="sect-subtraction-algorithm-6-2">We now turn to the chip model for the problem <span class="process-math">\(53-28\text{.}\)</span> Again, we will start with writing the chips for the minuend <span class="process-math">\(53\)</span> or<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -493,7 +518,9 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-10-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 5.2.1"><a href="#sect-subtraction-algorithm-6-10" title="Copy heading and permalink for Remark 5.2.1" aria-label="Copy heading and permalink for Remark 5.2.1">🔗</a></div></article><div class="para" id="sect-subtraction-algorithm-6-11">The chip models in this section were designed to teach how to make the model. You can do all of the necessary steps on a single diagram, that is, the last diagram in the steps clearly shows the steps.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Remark 5.2.1"><a href="#sect-subtraction-algorithm-6-10" title="Copy heading and permalink for Remark 5.2.1" aria-label="Copy heading and permalink for Remark 5.2.1">🔗</a></div>
+</article>
+<div class="para" id="sect-subtraction-algorithm-6-11">The chip models in this section were designed to teach how to make the model. You can do all of the necessary steps on a single diagram, that is, the last diagram in the steps clearly shows the steps.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-subtraction-algorithm-6-12">The next example shows a challenging subtraction problem using chip models.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -502,7 +529,9 @@ eBookConfig.enable_chatcodes =  false;
 </h4>
 <div class="para" id="sect-subtraction-algorithm-6-13-1-1">Use a chip model to demonstrate <span class="process-math">\(3019-2852\)</span> using a chip model.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sect-subtraction-algorithm-6-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="sect-subtraction-algorithm-6-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para" id="sect-subtraction-algorithm-6-13-2-1">First, start with the minuend, <span class="process-math">\(3019\)</span> on a chart:<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-subtraction-algorithm-6-13-2-2.svg" role="img" class="contained" alt=""></div>
@@ -519,15 +548,20 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sect-subtraction-algorithm-6-13-2-9">COLUMN ALGORITHM for 3019-2852<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-13-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 5.2.2.1"><a href="#sect-subtraction-algorithm-6-13-2" title="Copy heading and permalink for Solution 5.2.2.1" aria-label="Copy heading and permalink for Solution 5.2.2.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Example 5.2.2"><a href="#sect-subtraction-algorithm-6-13" title="Copy heading and permalink for Example 5.2.2" aria-label="Copy heading and permalink for Example 5.2.2">🔗</a></div></article><div class="para" id="sect-subtraction-algorithm-6-14">As discussed, there are many reasons for knowing the algorithms for addition and subtraction. The following example shows that we need to think a bit more abstractly to find the solution (and not let the addition and subtraction get in the way).<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 5.2.2"><a href="#sect-subtraction-algorithm-6-13" title="Copy heading and permalink for Example 5.2.2" aria-label="Copy heading and permalink for Example 5.2.2">🔗</a></div>
+</article>
+<div class="para" id="sect-subtraction-algorithm-6-14">As discussed, there are many reasons for knowing the algorithms for addition and subtraction. The following example shows that we need to think a bit more abstractly to find the solution (and not let the addition and subtraction get in the way).<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="sect-subtraction-algorithm-6-15"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-subtraction-algorithm-6-15-1-1">Produce a Teacher’s Solution to the following word problem: <em class="emphasis">One week, a candy company produced a total of 5327 pieces of candy (red, blue and yellow). If 2378 pieces are red and 1263 are blue, how many were yellow?</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sect-subtraction-algorithm-6-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="sect-subtraction-algorithm-6-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para" id="sect-subtraction-algorithm-6-15-2-1">This is a two-step word problem that we can do as a single diagram as the following:<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-subtraction-algorithm-6-15-2-2.svg" role="img" class="contained" alt=""></div>
@@ -542,10 +576,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para" id="sect-subtraction-algorithm-6-15-2-7">There were 1686 pieces of yellow candy made in that week.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-15-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 5.2.3.1"><a href="#sect-subtraction-algorithm-6-15-2" title="Copy heading and permalink for Solution 5.2.3.1" aria-label="Copy heading and permalink for Solution 5.2.3.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Example 5.2.3"><a href="#sect-subtraction-algorithm-6-15" title="Copy heading and permalink for Example 5.2.3" aria-label="Copy heading and permalink for Example 5.2.3">🔗</a></div></article><div class="para" id="sect-subtraction-algorithm-6-16">Note that we didn’t use the chip model in the Teacher’s solution. The chip model is helpful for understanding the column algorithms for subtraction and addition, but is not needed once learned well.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details>
 </div>
-<div class="autopermalink" data-description="Subsection 5.2.4: Chip Model of Subtraction with Unbundling"><a href="#sect-subtraction-algorithm-6" title="Copy heading and permalink for Subsection 5.2.4: Chip Model of Subtraction with Unbundling" aria-label="Copy heading and permalink for Subsection 5.2.4: Chip Model of Subtraction with Unbundling">🔗</a></div></section><section class="subsection" id="sect-subtraction-algorithm-7"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Example 5.2.3"><a href="#sect-subtraction-algorithm-6-15" title="Copy heading and permalink for Example 5.2.3" aria-label="Copy heading and permalink for Example 5.2.3">🔗</a></div>
+</article>
+<div class="para" id="sect-subtraction-algorithm-6-16">Note that we didn’t use the chip model in the Teacher’s solution. The chip model is helpful for understanding the column algorithms for subtraction and addition, but is not needed once learned well.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-6-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.2.4: Chip Model of Subtraction with Unbundling"><a href="#sect-subtraction-algorithm-6" title="Copy heading and permalink for Subsection 5.2.4: Chip Model of Subtraction with Unbundling" aria-label="Copy heading and permalink for Subsection 5.2.4: Chip Model of Subtraction with Unbundling">🔗</a></div>
+</section>
+<section class="subsection" id="sect-subtraction-algorithm-7">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Base-5 Subtraction</span>
 </h3>
 <div class="para" id="sect-subtraction-algorithm-7-2">We will first use a coin model to understand base-5 subtraction. This works exactly like decimal subtraction we just saw.<div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -606,13 +646,20 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">and the result is <span class="process-math">\(1133_{\text{5}}\text{,}\)</span> just like we saw with the chip model.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-subtraction-algorithm-7-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 5.2.5: Base-5 Subtraction"><a href="#sect-subtraction-algorithm-7" title="Copy heading and permalink for Subsection 5.2.5: Base-5 Subtraction" aria-label="Copy heading and permalink for Subsection 5.2.5: Base-5 Subtraction">🔗</a></div></section><section class="exercises" id="basics-s-sample-exercises"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection 5.2.5: Base-5 Subtraction"><a href="#sect-subtraction-algorithm-7" title="Copy heading and permalink for Subsection 5.2.5: Base-5 Subtraction" aria-label="Copy heading and permalink for Subsection 5.2.5: Base-5 Subtraction">🔗</a></div>
+</section>
+<section class="exercises" id="basics-s-sample-exercises">
+<h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">5.2.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="basics-s-sample-exercises-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
 <div class="para" id="basics-s-sample-exercises-1-1-1">First exercise.<div class="autopermalink" data-description="Paragraph"><a href="#basics-s-sample-exercises-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 5.2.6.1"><a href="#basics-s-sample-exercises-1" title="Copy heading and permalink for Exercise 5.2.6.1" aria-label="Copy heading and permalink for Exercise 5.2.6.1">🔗</a></div></article><div class="autopermalink" data-description="Exercises 5.2.6"><a href="#basics-s-sample-exercises" title="Copy heading and permalink for Exercises 5.2.6" aria-label="Copy heading and permalink for Exercises 5.2.6">🔗</a></div></section><div class="autopermalink" data-description="Section 5.2: Subtraction Algorithms"><a href="#sect-subtraction-algorithm" title="Copy heading and permalink for Section 5.2: Subtraction Algorithms" aria-label="Copy heading and permalink for Section 5.2: Subtraction Algorithms">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercise 5.2.6.1"><a href="#basics-s-sample-exercises-1" title="Copy heading and permalink for Exercise 5.2.6.1" aria-label="Copy heading and permalink for Exercise 5.2.6.1">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises 5.2.6"><a href="#basics-s-sample-exercises" title="Copy heading and permalink for Exercises 5.2.6" aria-label="Copy heading and permalink for Exercises 5.2.6">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 5.2: Subtraction Algorithms"><a href="#sect-subtraction-algorithm" title="Copy heading and permalink for Section 5.2: Subtraction Algorithms" aria-label="Copy heading and permalink for Section 5.2: Subtraction Algorithms">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sect-addition-algorithms.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sect-multiplication-algorithm.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

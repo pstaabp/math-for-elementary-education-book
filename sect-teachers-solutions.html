@@ -20,62 +20,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="source/custom-style.css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Mathematics for Elementary Educators">
@@ -102,15 +54,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.12.2';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d2d4c56cb9826035.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a4a209ed3a55c515.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -172,19 +124,21 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-place-value" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-addition.html#exercises-sect-addition" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-subtraction.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subtraction</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-6" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-set-models" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-measurement-models" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-thinking-strategies-subtraction" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-7" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-8" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-9" class="internal"><span class="codenumber">2.3.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction.html#exercises-sect-subtraction" class="internal"><span class="codenumber">2.3.8</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -193,6 +147,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Models of Multiplication</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Properties of Multiplication</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-5" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-multiplication.html#exercises-multiplication" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -224,19 +179,19 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sect-diagrams-models.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Diagrams and Models</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-set-diagram" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Set Diagram</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
+<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-8" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -355,7 +310,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-factor-trees" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Prime Factorization and Factor Trees</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-5" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -381,15 +337,73 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fraction-basics.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Fraction Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Fractions and Units</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Fraction Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-5" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Ordering of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-6" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Fraction Equivalents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-7" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Improper Fractions and Mixed Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-4.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Addition and Subtraction of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Addition and Subtracting with same denominators</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Word Problems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-4-3" class="internal"><span class="codenumber">7.2.2.1</span> <span class="title">The relationship between division and fractions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-5" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Adding Fractions with unlike Denominators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-6" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Algebraic Form for Adding/Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-7" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Finding a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-8" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Using the Lowest Common Multiple to find a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-9" class="internal"><span class="codenumber">7.2.7</span> <span class="title">Adding and Subtracting Mixed Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-5.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Multiplication of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-3" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication of a whole number and a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-4" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Fraction times a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-5" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Fraction times a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-6" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Mixed number times mixed number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-7" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Factoring Fractions and Canceling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-8" class="internal"><span class="codenumber">7.3.6</span> <span class="title">Word Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-6.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Division of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-3" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Review of Partitive and Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-4" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Drawing a Partitive Division Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-5" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Dividing a whole number by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-6" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Dividing a fraction by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-7" class="internal"><span class="codenumber">7.4.5</span> <span class="title">Dividing a whole number by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-8" class="internal"><span class="codenumber">7.4.6</span> <span class="title">Dividing a fraction by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-9" class="internal"><span class="codenumber">7.4.7</span> <span class="title">Fraction Division Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-10" class="internal"><span class="codenumber">7.4.8</span> <span class="title">Word Problem for Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-11" class="internal"><span class="codenumber">7.4.9</span> <span class="title">Word Problem for Partitive Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-12" class="internal"><span class="codenumber">7.4.10</span> <span class="title">2-step fraction word problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-decimals.html" class="internal"><span class="codenumber">8</span> <span class="title">Decimals</span></a></div></li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-integers.html" class="internal"><span class="codenumber">9</span> <span class="title">Integers</span></a></div></li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sect-teachers-solutions"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sect-teachers-solutions">
+<h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Teacher’s Solutions</span>
 </h2>
-<section class="introduction" id="sect-teachers-solutions-2"><div class="para" id="sect-teachers-solutions-2-1">Understanding word problems from an educator’s side is a crucial skill and it requires understanding a problem at a deep level. Because of this, a common task to ensure that the word problems is known well is to develop a Teacher’s Solution, which require three specific parts:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sect-teachers-solutions-2">
+<div class="para" id="sect-teachers-solutions-2-1">Understanding word problems from an educator’s side is a crucial skill and it requires understanding a problem at a deep level. Because of this, a common task to ensure that the word problems is known well is to develop a Teacher’s Solution, which require three specific parts:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="note remark-like" id="sect-teachers-solutions-2-2"><h3 class="heading">
 <span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Steps for a Teacher’s Solution.</span>
@@ -415,7 +429,10 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 3.3.1: Steps for a Teacher’s Solution"><a href="#sect-teachers-solutions-2-2" title="Copy heading and permalink for Note 3.3.1: Steps for a Teacher’s Solution" aria-label="Copy heading and permalink for Note 3.3.1: Steps for a Teacher’s Solution">🔗</a></div></article></section><section class="subsection" id="sect-teachers-solutions-3"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Note 3.3.1: Steps for a Teacher’s Solution"><a href="#sect-teachers-solutions-2-2" title="Copy heading and permalink for Note 3.3.1: Steps for a Teacher’s Solution" aria-label="Copy heading and permalink for Note 3.3.1: Steps for a Teacher’s Solution">🔗</a></div>
+</article></section>
+<section class="subsection" id="sect-teachers-solutions-3">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Word Problems</span>
 </h3>
 <div class="para" id="sect-teachers-solutions-3-2">As discussed above, solving word problems is difficult and there is algorithmic (step-by-step) way to do this will any word problem. Here’s a few ideas about this.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -447,27 +464,38 @@ eBookConfig.enable_chatcodes =  false;
 </h4>
 <div class="para" id="sect-teachers-solutions-3-5-1-1">Develop a Teacher’s Solution for the following: <em class="emphasis">Patrick has 12 marbles. He gives away 5 of them? How many does he have left?</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sect-teachers-solutions-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="sect-teachers-solutions-3-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para" id="sect-teachers-solutions-3-5-2-1">First we need a diagram. Since the numbers are small, a set diagram may be the right thing to do here. Since this is a take-away interpretation, we will draw 12 marbles and then cross out 5. In this case, this is simple enough not to need a ?. The following is a possible Teacher’s Solution:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="sect-teachers-solutions-3-5-2-2"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-teachers-solutions-3-5-2-2-1.svg" role="img" class="contained" alt=""></div>
 <div class="para" id="sect-teachers-solutions-3-5-2-2-2">The answer is <span class="process-math">\(12-5=7\text{.}\)</span> Patrick has 7 marbles left.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-5-2-2" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div></article><div class="para" id="sect-teachers-solutions-3-5-2-3">Alternatively, we could have used the following as a Teacher’s solution:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-5-2-2" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div>
+</article>
+<div class="para" id="sect-teachers-solutions-3-5-2-3">Alternatively, we could have used the following as a Teacher’s solution:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="sect-teachers-solutions-3-5-2-4"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-teachers-solutions-3-5-2-4-1.svg" role="img" class="contained" alt=""></div>
 <div class="para" id="sect-teachers-solutions-3-5-2-4-2">Which shows that Patrick has <span class="process-math">\(12-5\)</span> or 7 marbles left.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-2-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-5-2-4" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div></article><div class="para" id="sect-teachers-solutions-3-5-2-5">This would have been preferable if the number of marbles were larger—that is if it tedious to draw or difficult to count.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-5-2-4" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div>
+</article>
+<div class="para" id="sect-teachers-solutions-3-5-2-5">This would have been preferable if the number of marbles were larger—that is if it tedious to draw or difficult to count.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-5-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 3.3.2.1"><a href="#sect-teachers-solutions-3-5-2" title="Copy heading and permalink for Solution 3.3.2.1" aria-label="Copy heading and permalink for Solution 3.3.2.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Example 3.3.2"><a href="#sect-teachers-solutions-3-5" title="Copy heading and permalink for Example 3.3.2" aria-label="Copy heading and permalink for Example 3.3.2">🔗</a></div></article><article class="example example-like" id="sect-teachers-solutions-3-6"><h4 class="heading">
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 3.3.2"><a href="#sect-teachers-solutions-3-5" title="Copy heading and permalink for Example 3.3.2" aria-label="Copy heading and permalink for Example 3.3.2">🔗</a></div>
+</article>
+<article class="example example-like" id="sect-teachers-solutions-3-6"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-teachers-solutions-3-6-1-1">Develop a Teacher’s Solution for the following: <em class="emphasis">A bakery made 60 muffins on Monday and 50 on Tuesday. How many did they make altogether?</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sect-teachers-solutions-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="sect-teachers-solutions-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para" id="sect-teachers-solutions-3-6-2-1">For this since the numbers are larger, use a bar diagram instead of a set diagram. Also, the context of this problem is important. It is probable that students are learning how to add multiples of 10 and that this should be done with some mental math (see <a href="ch-thinking-strategies.html" class="internal" title="Chapter 4: Thinking Strategies and Mental Math">Chapter 4</a> for details), so the column algorithm (see <a href="ch-algorithms.html" class="internal" title="Chapter 5: Algorithms">Chapter 5</a> for details) would not be needed.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-teachers-solutions-3-6-2-2">The following is a possible Teacher’s Solution:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -475,31 +503,46 @@ eBookConfig.enable_chatcodes =  false;
 <article class="assemblage assemblage-like" id="sect-teachers-solutions-3-6-2-3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-teachers-solutions-3-6-2-3-1.svg" role="img" class="contained" alt=""></div>
 <div class="para" id="sect-teachers-solutions-3-6-2-3-2">There are a total of <span class="process-math">\(50+60=110\)</span> muffins. The bakery make 110 muffins on Monday and Tuesday.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-6-2-3" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div></article><div class="para" id="sect-teachers-solutions-3-6-2-4">Note: this could have been done with a stacked bar diagram and labelled Monday and Tuesday like:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-6-2-3" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div>
+</article>
+<div class="para" id="sect-teachers-solutions-3-6-2-4">Note: this could have been done with a stacked bar diagram and labelled Monday and Tuesday like:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="sect-teachers-solutions-3-6-2-5"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/sect-teachers-solutions-3-6-2-5-1.svg" role="img" class="contained" alt=""></div>
 <div class="para" id="sect-teachers-solutions-3-6-2-5-2">This shows that there are <span class="process-math">\(50+60=110\)</span> muffins made.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-6-2-5" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div></article><div class="para" id="sect-teachers-solutions-3-6-2-6">The second solution shows the same result and is a bit nicer that it includes the days.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-6-2-5" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div>
+</article>
+<div class="para" id="sect-teachers-solutions-3-6-2-6">The second solution shows the same result and is a bit nicer that it includes the days.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-6-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 3.3.3.1"><a href="#sect-teachers-solutions-3-6-2" title="Copy heading and permalink for Solution 3.3.3.1" aria-label="Copy heading and permalink for Solution 3.3.3.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Example 3.3.3"><a href="#sect-teachers-solutions-3-6" title="Copy heading and permalink for Example 3.3.3" aria-label="Copy heading and permalink for Example 3.3.3">🔗</a></div></article><div class="para" id="sect-teachers-solutions-3-7">The next example shows a Teacher’s solution involving division.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 3.3.3"><a href="#sect-teachers-solutions-3-6" title="Copy heading and permalink for Example 3.3.3" aria-label="Copy heading and permalink for Example 3.3.3">🔗</a></div>
+</article>
+<div class="para" id="sect-teachers-solutions-3-7">The next example shows a Teacher’s solution involving division.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="sect-teachers-solutions-3-8"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-teachers-solutions-3-8-1-1">Find a Teacher’s Solution to<em class="emphasis">Margaret has 80 muffins and puts them in packages of 5. How many packages can she make?</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sect-teachers-solutions-3-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="sect-teachers-solutions-3-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para" id="sect-teachers-solutions-3-8-2-1">Although this may seem straightforward, we first need a diagram. This happens to be a measurement division problem because we know the size of the groups (packages) and are looking for the number of groups (packages):<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="sect-teachers-solutions-3-8-2-2"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-teachers-solutions-3-8-2-2-1.svg" role="img" class="contained" alt=""></div>
 <div class="para" id="sect-teachers-solutions-3-8-2-2-2">The number of packages is <span class="process-math">\(80 \div 5 = 16\text{.}\)</span> Margaret can make 16 packages of muffins.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-3-8-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-8-2-2" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div></article><div class="autopermalink" data-description="Solution 3.3.4.1"><a href="#sect-teachers-solutions-3-8-2" title="Copy heading and permalink for Solution 3.3.4.1" aria-label="Copy heading and permalink for Solution 3.3.4.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Example 3.3.4"><a href="#sect-teachers-solutions-3-8" title="Copy heading and permalink for Example 3.3.4" aria-label="Copy heading and permalink for Example 3.3.4">🔗</a></div></article><div class="autopermalink" data-description="Subsection 3.3.1: Solving Word Problems"><a href="#sect-teachers-solutions-3" title="Copy heading and permalink for Subsection 3.3.1: Solving Word Problems" aria-label="Copy heading and permalink for Subsection 3.3.1: Solving Word Problems">🔗</a></div></section><section class="subsection" id="sect-teachers-solutions-4"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Assemblage"><a href="#sect-teachers-solutions-3-8-2-2" title="Copy heading and permalink for Assemblage" aria-label="Copy heading and permalink for Assemblage">🔗</a></div>
+</article><div class="autopermalink" data-description="Solution 3.3.4.1"><a href="#sect-teachers-solutions-3-8-2" title="Copy heading and permalink for Solution 3.3.4.1" aria-label="Copy heading and permalink for Solution 3.3.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 3.3.4"><a href="#sect-teachers-solutions-3-8" title="Copy heading and permalink for Example 3.3.4" aria-label="Copy heading and permalink for Example 3.3.4">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 3.3.1: Solving Word Problems"><a href="#sect-teachers-solutions-3" title="Copy heading and permalink for Subsection 3.3.1: Solving Word Problems" aria-label="Copy heading and permalink for Subsection 3.3.1: Solving Word Problems">🔗</a></div>
+</section>
+<section class="subsection" id="sect-teachers-solutions-4">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Unitary Method and Multi-step problems</span>
 </h3>
 <div class="para" id="sect-teachers-solutions-4-2">Multi-step problems are important for developing students mathematical skills in that it requires the ability to think about more complex problems. This section goes over some techniques of solving harder word problems.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -540,12 +583,16 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="sect-teachers-solutions-4-7-4">Note that the unitary method does the same steps as the algebraic method, so in a way it is a prealgebra type method. It visually builds up the relationship instead of algebraically. Knowing which method with the appropriate age group is important.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-7-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Unitary Method"><a href="#sect-teachers-solutions-4-7" title="Copy heading and permalink for Paragraphs: Unitary Method" aria-label="Copy heading and permalink for Paragraphs: Unitary Method">🔗</a></div></section><article class="example example-like" id="sect-teachers-solutions-4-8"><h4 class="heading">
+<div class="autopermalink" data-description="Paragraphs: Unitary Method"><a href="#sect-teachers-solutions-4-7" title="Copy heading and permalink for Paragraphs: Unitary Method" aria-label="Copy heading and permalink for Paragraphs: Unitary Method">🔗</a></div>
+</section>
+<article class="example example-like" id="sect-teachers-solutions-4-8"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-teachers-solutions-4-8-1-1">Find a Teacher’s solution to the following problem using the Unitary method: <em class="emphasis">Jordan weighs 7 pounds less than Charlie. Albert weighs twice that of Charlie, if they weigh 193 pounds altogether, how much does Jordan weigh?</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sect-teachers-solutions-4-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="sect-teachers-solutions-4-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para" id="sect-teachers-solutions-4-8-2-1">First a diagram. Since there are three people in this problem we’ll do a stacked bar diagram with 3 bars.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-teachers-solutions-4-8-2-2.svg" role="img" class="contained" alt=""></div>
@@ -560,15 +607,20 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 3.3.5.1"><a href="#sect-teachers-solutions-4-8-2" title="Copy heading and permalink for Solution 3.3.5.1" aria-label="Copy heading and permalink for Solution 3.3.5.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Example 3.3.5"><a href="#sect-teachers-solutions-4-8" title="Copy heading and permalink for Example 3.3.5" aria-label="Copy heading and permalink for Example 3.3.5">🔗</a></div></article><div class="para" id="sect-teachers-solutions-4-9">Note in the solution above, we added some to make 4 equivalent boxes (units) and then performed steps with the units. The following shows an similar type solution:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 3.3.5"><a href="#sect-teachers-solutions-4-8" title="Copy heading and permalink for Example 3.3.5" aria-label="Copy heading and permalink for Example 3.3.5">🔗</a></div>
+</article>
+<div class="para" id="sect-teachers-solutions-4-9">Note in the solution above, we added some to make 4 equivalent boxes (units) and then performed steps with the units. The following shows an similar type solution:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="sect-teachers-solutions-4-10"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">3.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-teachers-solutions-4-10-1-1">Find a Teacher’s solution to the following problem. Use the Unitary method: <em class="emphasis">José has $240 and Maria has $180. How much should José give to Maria so then each have the same amount?</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="solutions"><details id="sect-teachers-solutions-4-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="solutions">
+<details id="sect-teachers-solutions-4-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
 <div class="para" id="sect-teachers-solutions-4-10-2-1">We’ll start with a stacked bar diagram:<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-teachers-solutions-4-10-2-2.svg" role="img" class="contained" alt=""></div>
@@ -586,10 +638,16 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-10-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 3.3.6.1"><a href="#sect-teachers-solutions-4-10-2" title="Copy heading and permalink for Solution 3.3.6.1" aria-label="Copy heading and permalink for Solution 3.3.6.1">🔗</a></div>
-</div></details></div>
-<div class="autopermalink" data-description="Example 3.3.6"><a href="#sect-teachers-solutions-4-10" title="Copy heading and permalink for Example 3.3.6" aria-label="Copy heading and permalink for Example 3.3.6">🔗</a></div></article><div class="para" id="sect-teachers-solutions-4-11">Note that in this example, you needed to understand that the difference in their money needs to be divided by 2.  This makes two equal sized boxes (units) and hence the unitary method works.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></details>
 </div>
-<div class="autopermalink" data-description="Subsection 3.3.2: The Unitary Method and Multi-step problems"><a href="#sect-teachers-solutions-4" title="Copy heading and permalink for Subsection 3.3.2: The Unitary Method and Multi-step problems" aria-label="Copy heading and permalink for Subsection 3.3.2: The Unitary Method and Multi-step problems">🔗</a></div></section><div class="autopermalink" data-description="Section 3.3: Teacher’s Solutions"><a href="#sect-teachers-solutions" title="Copy heading and permalink for Section 3.3: Teacher’s Solutions" aria-label="Copy heading and permalink for Section 3.3: Teacher’s Solutions">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Example 3.3.6"><a href="#sect-teachers-solutions-4-10" title="Copy heading and permalink for Example 3.3.6" aria-label="Copy heading and permalink for Example 3.3.6">🔗</a></div>
+</article>
+<div class="para" id="sect-teachers-solutions-4-11">Note that in this example, you needed to understand that the difference in their money needs to be divided by 2.  This makes two equal sized boxes (units) and hence the unitary method works.<div class="autopermalink" data-description="Paragraph"><a href="#sect-teachers-solutions-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 3.3.2: The Unitary Method and Multi-step problems"><a href="#sect-teachers-solutions-4" title="Copy heading and permalink for Subsection 3.3.2: The Unitary Method and Multi-step problems" aria-label="Copy heading and permalink for Subsection 3.3.2: The Unitary Method and Multi-step problems">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 3.3: Teacher’s Solutions"><a href="#sect-teachers-solutions" title="Copy heading and permalink for Section 3.3: Teacher’s Solutions" aria-label="Copy heading and permalink for Section 3.3: Teacher’s Solutions">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sect-word-problems.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-thinking-strategies.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

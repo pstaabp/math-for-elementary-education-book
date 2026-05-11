@@ -20,62 +20,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="source/custom-style.css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
 <meta property="book:title" content="Mathematics for Elementary Educators">
@@ -102,15 +54,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.12.2';
+eBookConfig.runestone_version = '8.0.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.d2d4c56cb9826035.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.a4a209ed3a55c515.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.b12a7b3f0773ebcd.css">
+<script src="_static/prefix-runtime.ce7e0a2163cb330f.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.f4a2ffb04bb978bb.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -172,19 +124,21 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-5" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-place-value" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-addition.html#exercises-sect-addition" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-subtraction.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subtraction</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-3" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-4" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-5" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-6" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-set-models" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-measurement-models" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-thinking-strategies-subtraction" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-7" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-8" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-9" class="internal"><span class="codenumber">2.3.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction.html#exercises-sect-subtraction" class="internal"><span class="codenumber">2.3.8</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -193,6 +147,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-3" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Models of Multiplication</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-4" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Properties of Multiplication</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-5" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-multiplication.html#exercises-multiplication" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -224,19 +179,19 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sect-diagrams-models.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Diagrams and Models</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-set-diagram" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Set Diagram</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-4" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
 <li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
+<div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-3" class="internal"><span class="codenumber">3.1.4.1</span> <span class="title">Addition</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-4" class="internal"><span class="codenumber">3.1.4.2</span> <span class="title">Subtraction</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-5" class="internal"><span class="codenumber">3.1.4.3</span> <span class="title">Multiplication</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-6" class="internal"><span class="codenumber">3.1.4.4</span> <span class="title">Division</span></a></div></li>
+<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7-7" class="internal"><span class="codenumber">3.1.4.5</span> <span class="title">Other uses of Bar Diagrams</span></a></div></li>
 </ul>
 </li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-8" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -355,7 +310,8 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-factor-trees" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Prime Factorization and Factor Trees</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-5" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -381,15 +337,73 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 </ul>
 </li>
-<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fraction-basics.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Fraction Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Fractions and Units</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Fraction Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-5" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Ordering of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-6" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Fraction Equivalents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-7" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Improper Fractions and Mixed Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-4.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Addition and Subtraction of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Addition and Subtracting with same denominators</span></a></div></li>
+<li class="toc-item toc-subsection">
+<div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Word Problems</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-4-3" class="internal"><span class="codenumber">7.2.2.1</span> <span class="title">The relationship between division and fractions</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-5" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Adding Fractions with unlike Denominators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-6" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Algebraic Form for Adding/Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-7" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Finding a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-8" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Using the Lowest Common Multiple to find a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-9" class="internal"><span class="codenumber">7.2.7</span> <span class="title">Adding and Subtracting Mixed Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-5.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Multiplication of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-3" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication of a whole number and a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-4" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Fraction times a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-5" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Fraction times a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-6" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Mixed number times mixed number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-7" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Factoring Fractions and Canceling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-5.html#ch-fractions-5-8" class="internal"><span class="codenumber">7.3.6</span> <span class="title">Word Problems</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-6.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Division of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-3" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Review of Partitive and Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-4" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Drawing a Partitive Division Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-5" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Dividing a whole number by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-6" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Dividing a fraction by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-7" class="internal"><span class="codenumber">7.4.5</span> <span class="title">Dividing a whole number by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-8" class="internal"><span class="codenumber">7.4.6</span> <span class="title">Dividing a fraction by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-9" class="internal"><span class="codenumber">7.4.7</span> <span class="title">Fraction Division Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-10" class="internal"><span class="codenumber">7.4.8</span> <span class="title">Word Problem for Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-11" class="internal"><span class="codenumber">7.4.9</span> <span class="title">Word Problem for Partitive Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-12" class="internal"><span class="codenumber">7.4.10</span> <span class="title">2-step fraction word problems</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-decimals.html" class="internal"><span class="codenumber">8</span> <span class="title">Decimals</span></a></div></li>
 <li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-integers.html" class="internal"><span class="codenumber">9</span> <span class="title">Integers</span></a></div></li>
 <li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sect-divisibility-proofs"><h2 class="heading hide-type">
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sect-divisibility-proofs">
+<h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Prime Number and Divisibility Proofs</span>
 </h2>
-<section class="introduction" id="sect-divisibility-proofs-2"><div class="para" id="sect-divisibility-proofs-2-1">This section dives deeper into many of the proofs in this chapter.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sect-divisibility-proofs-2">
+<div class="para" id="sect-divisibility-proofs-2-1">This section dives deeper into many of the proofs in this chapter.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-divisibility-proofs-2-2">This Chapter covers more properties of numbers, specifically integers. In <a href="ch-numbers.html" class="internal" title="Chapter 2: Numbers: the essence of mathematics">Chapter 2</a> many properties like the distributive and associative were seen. Technically, these are actually <em class="emphasis">mathematical axioms</em> or statements that we assume are true. We show that they hold true using diagrams, however there is no formal mathematical proof of these, but we assume them to hold.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -399,24 +413,34 @@ eBookConfig.enable_chatcodes =  false;
 <dl class="description-list">
 <dt id="sect-divisibility-proofs-2-4-1-1">Axioms<div class="autopermalink" data-description="Item: Axioms"><a href="#sect-divisibility-proofs-2-4-1-1" title="Copy heading and permalink for Item: Axioms" aria-label="Copy heading and permalink for Item: Axioms">🔗</a></div>
 </dt>
-<dd><div class="para" id="sect-divisibility-proofs-2-4-1-1-2">When constructing an argument, we use a sequence of known facts to make those arguments. Many times, these are properties of arithmetic like the distributive and commutative properties. Other times these are other theorems or lemmas that have been proven.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="sect-divisibility-proofs-2-4-1-1-2">When constructing an argument, we use a sequence of known facts to make those arguments. Many times, these are properties of arithmetic like the distributive and commutative properties. Other times these are other theorems or lemmas that have been proven.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-4-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
 <dt id="sect-divisibility-proofs-2-4-1-2">Definitions<div class="autopermalink" data-description="Item: Definitions"><a href="#sect-divisibility-proofs-2-4-1-2" title="Copy heading and permalink for Item: Definitions" aria-label="Copy heading and permalink for Item: Definitions">🔗</a></div>
 </dt>
-<dd><div class="para" id="sect-divisibility-proofs-2-4-1-2-2">Because of the precise nature of mathematics, defining our terms is crucial. We all need to agree that we are thinking of the same things.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-4-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="sect-divisibility-proofs-2-4-1-2-2">Because of the precise nature of mathematics, defining our terms is crucial. We all need to agree that we are thinking of the same things.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-4-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
 <dt id="sect-divisibility-proofs-2-4-1-3">Theorems and Lemmas<div class="autopermalink" data-description="Item: Theorems and Lemmas"><a href="#sect-divisibility-proofs-2-4-1-3" title="Copy heading and permalink for Item: Theorems and Lemmas" aria-label="Copy heading and permalink for Item: Theorems and Lemmas">🔗</a></div>
 </dt>
-<dd><div class="para" id="sect-divisibility-proofs-2-4-1-3-2">A theorem (important result) or a lemma (minor result) allows us to make a general statement. It is proved using mathematical facts and logic.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-4-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></dd>
+<dd>
+<div class="para" id="sect-divisibility-proofs-2-4-1-3-2">A theorem (important result) or a lemma (minor result) allows us to make a general statement. It is proved using mathematical facts and logic.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-4-1-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
 </dl>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></section><section class="subsection" id="sect-divisibility-proofs-3"><h3 class="heading hide-type">
+</div></section>
+<section class="subsection" id="sect-divisibility-proofs-3">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Divisibility Lemma</span>
 </h3>
-<div class="para" id="sect-divisibility-proofs-3-2">Recall that the <a href="sect-divisibility-tests.html#lem-divisibility" class="xref" data-knowl="./knowl/xref/lem-divisibility.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 6.2.5">Lemma 6.2.5</a> take a number and splits it into the sum of two numbers to help determine if a number is divisible by another.  The following is the proof of that lemma.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-divisibility-proofs-3-2">Recall that the <a href="sect-divisibility-tests.html#lem-divisibility" class="xref" data-knowl="./knowl/xref/lem-divisibility.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 6.2.5">Lemma 6.2.5</a> take a number and splits it into the sum of two numbers to help determine if a number is divisible by another. The following is the proof of that lemma.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="sect-divisibility-proofs-3-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the Divisibility Lemma.</span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="sect-divisibility-proofs-3-3-2">
+<details id="sect-divisibility-proofs-3-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the Divisibility Lemma.</span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sect-divisibility-proofs-3-3-2">
 <div class="para">First, we will show that if <span class="process-math">\(B\)</span> is divisible by <span class="process-math">\(k\text{,}\)</span> then <span class="process-math">\(A+B\)</span> is divisible by <span class="process-math">\(k\text{.}\)</span> We know that <span class="process-math">\(k\)</span> divides <span class="process-math">\(A\text{,}\)</span> so that means that <span class="process-math">\(A\)</span> can be written <span class="process-math">\(A=a\cdot k\text{.}\)</span> Also, since <span class="process-math">\(k\)</span> divides <span class="process-math">\(B\text{,}\)</span> that <span class="process-math">\(B\)</span> can be written <span class="process-math">\(B=b\cdot k\text{.}\)</span> We will see if <span class="process-math">\(k\)</span> divides <span class="process-math">\(A+B\text{.}\)</span>
 </div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-3-3-2-15">
@@ -441,27 +465,37 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="sect-divisibility-proofs-3-3-6">since <span class="process-math">\(c\)</span> and <span class="process-math">\(a\)</span> are whole numbers with <span class="process-math">\(c\)</span> larger than <span class="process-math">\(a\text{,}\)</span> then <span class="process-math">\(B\)</span> is divisible by <span class="process-math">\(k\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-3-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.1.1: Proof of the Divisibility Lemma"><a href="#sect-divisibility-proofs-3-3" title="Copy heading and permalink for Proof 6.5.1.1: Proof of the Divisibility Lemma" aria-label="Copy heading and permalink for Proof 6.5.1.1: Proof of the Divisibility Lemma">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 6.5.1: The Divisibility Lemma"><a href="#sect-divisibility-proofs-3" title="Copy heading and permalink for Subsection 6.5.1: The Divisibility Lemma" aria-label="Copy heading and permalink for Subsection 6.5.1: The Divisibility Lemma">🔗</a></div></section><section class="subsection" id="sect-divisibility-proofs-4"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Proof 6.5.1.1: Proof of the Divisibility Lemma"><a href="#sect-divisibility-proofs-3-3" title="Copy heading and permalink for Proof 6.5.1.1: Proof of the Divisibility Lemma" aria-label="Copy heading and permalink for Proof 6.5.1.1: Proof of the Divisibility Lemma">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.5.1: The Divisibility Lemma"><a href="#sect-divisibility-proofs-3" title="Copy heading and permalink for Subsection 6.5.1: The Divisibility Lemma" aria-label="Copy heading and permalink for Subsection 6.5.1: The Divisibility Lemma">🔗</a></div>
+</section>
+<section class="subsection" id="sect-divisibility-proofs-4">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Divisibility Test Proofs</span>
 </h3>
 <div class="para" id="sect-divisibility-proofs-4-2">Next, we revisiting the divisibility tests of 3, 4, 9 and 11 that are stated in <a href="sect-divisibility-tests.html#thm-divisibility-tests" class="xref" data-knowl="./knowl/xref/thm-divisibility-tests.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 6.2.8">Theorem 6.2.8</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<details id="sect-divisibility-proofs-4-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the Divisibility Test by 4.</span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="sect-divisibility-proofs-4-3-2">
+<details id="sect-divisibility-proofs-4-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the Divisibility Test by 4.</span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sect-divisibility-proofs-4-3-2">
 <div class="para">Let a whole number <span class="process-math">\(N\)</span> be written as</div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-4-3-2-2">
 \begin{equation*}
-\begin{aligned}N\amp = 100 a + b\end{aligned}
+N = 100 a + b
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-divisibility-proofs-4-3-3">(why can it be written this way?) Since <span class="process-math">\(100a\)</span> can be written as <span class="process-math">\(4 \cdot (25a)\text{,}\)</span> it is divisible by 4. In addition, <span class="process-math">\(b\)</span> is divisible by 2 if and only if <span class="process-math">\(b\)</span> is divisible by 4. By the divisibility theorem, <span class="process-math">\(N\)</span> is divisible by 2 if and only if <span class="process-math">\(100a\)</span> and <span class="process-math">\(b\)</span> are divisible by 4.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.2.1: Proof of the Divisibility Test by 4"><a href="#sect-divisibility-proofs-4-3" title="Copy heading and permalink for Proof 6.5.2.1: Proof of the Divisibility Test by 4" aria-label="Copy heading and permalink for Proof 6.5.2.1: Proof of the Divisibility Test by 4">🔗</a></div></article></details><details id="sect-divisibility-proofs-4-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the Divisibility of a 3-digit number by 3 and 9.</span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="sect-divisibility-proofs-4-4-2">
+<div class="autopermalink" data-description="Proof 6.5.2.1: Proof of the Divisibility Test by 4"><a href="#sect-divisibility-proofs-4-3" title="Copy heading and permalink for Proof 6.5.2.1: Proof of the Divisibility Test by 4" aria-label="Copy heading and permalink for Proof 6.5.2.1: Proof of the Divisibility Test by 4">🔗</a></div>
+</article></details>
+<details id="sect-divisibility-proofs-4-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the Divisibility of a 3-digit number by 3 and 9.</span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sect-divisibility-proofs-4-4-2">
 <div class="para">Let <span class="process-math">\(N\)</span> be a three-digit number and let it be written:</div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-4-4-2-2">
 \begin{equation*}
-\begin{aligned}N\amp = 100 a + 10 b + c.\end{aligned}
+N = 100 a + 10 b + c.
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -470,18 +504,22 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Write <span class="process-math">\(100a=99a+a\)</span> and <span class="process-math">\(10b=9b+b\)</span> or</div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-4-4-3-3">
 \begin{equation*}
-\begin{aligned}N\amp = 99a + 9b + (a+b+c)\end{aligned}
+N = 99a + 9b + (a+b+c)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-divisibility-proofs-4-4-4">The term <span class="process-math">\(99a=9b=9(11a+b)\)</span> is divisible by both 3 and 9. By the Divisibility lemma, <span class="process-math">\(N\)</span> is divisible by 3 (or 9) if and only if <span class="process-math">\(a+b+c\)</span> is divisible by 3 (or 9).<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.2.2: Proof of the Divisibility of a 3-digit number by 3 and 9"><a href="#sect-divisibility-proofs-4-4" title="Copy heading and permalink for Proof 6.5.2.2: Proof of the Divisibility of a 3-digit number by 3 and 9" aria-label="Copy heading and permalink for Proof 6.5.2.2: Proof of the Divisibility of a 3-digit number by 3 and 9">🔗</a></div></article></details><details id="sect-divisibility-proofs-4-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the divisibility test by 11.</span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="sect-divisibility-proofs-4-5-2">
+<div class="autopermalink" data-description="Proof 6.5.2.2: Proof of the Divisibility of a 3-digit number by 3 and 9"><a href="#sect-divisibility-proofs-4-4" title="Copy heading and permalink for Proof 6.5.2.2: Proof of the Divisibility of a 3-digit number by 3 and 9" aria-label="Copy heading and permalink for Proof 6.5.2.2: Proof of the Divisibility of a 3-digit number by 3 and 9">🔗</a></div>
+</article></details>
+<details id="sect-divisibility-proofs-4-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Proof of the divisibility test by 11.</span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sect-divisibility-proofs-4-5-2">
 <div class="para">Consider a six-digit number (other sized numbers are similar), <span class="process-math">\(N\text{.}\)</span> Write <span class="process-math">\(N\)</span> as</div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-4-5-2-3">
 \begin{equation*}
-\begin{aligned}N\amp = 100,000a + 10, 000 b + 1,000c + 100d + 10 e + f\end{aligned}
+N = 100,000a + 10, 000 b + 1,000c + 100d + 10 e + f
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -490,7 +528,13 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">Rewrite <span class="process-math">\(N\)</span> as follows:</div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-4-5-3-2">
 \begin{equation*}
-\begin{aligned}N\amp = 100,001a + 1,001c + 11e + 9999b + 99d + (b+d+f) - (a+c+e) \intertext{which can be written}\amp = 11 (9091a+91c+e) + 11(9090b+9d) + (b+c+f)- (a+c+e)\end{aligned}
+N = 100,001a + 1,001c + 11e + 9999b + 99d + (b+d+f) - (a+c+e)
+\end{equation*}
+</div>
+<div class="para">which can be written as</div>
+<div class="displaymath process-math" id="sect-divisibility-proofs-4-5-3-3">
+\begin{equation*}
+N =  11 (9091a+91c+e) + 11(9090b+9d) + (b+c+f)- (a+c+e)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -506,7 +550,11 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="sect-divisibility-proofs-4-5-5">is divisible by 11, which is the same as the statement of the theorem.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-4-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.2.3: Proof of the divisibility test by 11"><a href="#sect-divisibility-proofs-4-5" title="Copy heading and permalink for Proof 6.5.2.3: Proof of the divisibility test by 11" aria-label="Copy heading and permalink for Proof 6.5.2.3: Proof of the divisibility test by 11">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 6.5.2: Divisibility Test Proofs"><a href="#sect-divisibility-proofs-4" title="Copy heading and permalink for Subsection 6.5.2: Divisibility Test Proofs" aria-label="Copy heading and permalink for Subsection 6.5.2: Divisibility Test Proofs">🔗</a></div></section><section class="subsection" id="sect-divisibility-proofs-5"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Proof 6.5.2.3: Proof of the divisibility test by 11"><a href="#sect-divisibility-proofs-4-5" title="Copy heading and permalink for Proof 6.5.2.3: Proof of the divisibility test by 11" aria-label="Copy heading and permalink for Proof 6.5.2.3: Proof of the divisibility test by 11">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.5.2: Divisibility Test Proofs"><a href="#sect-divisibility-proofs-4" title="Copy heading and permalink for Subsection 6.5.2: Divisibility Test Proofs" aria-label="Copy heading and permalink for Subsection 6.5.2: Divisibility Test Proofs">🔗</a></div>
+</section>
+<section class="subsection" id="sect-divisibility-proofs-5">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Prime Number Proofs</span>
 </h3>
 <article class="lemma theorem-like" id="lem-multiple-prime"><h4 class="heading">
@@ -514,24 +562,34 @@ eBookConfig.enable_chatcodes =  false;
 </h4>
 <div class="para" id="lem-multiple-prime-1-1">Every whole number <span class="process-math">\(N \gt 1\)</span> is a multiple of a prime.<div class="autopermalink" data-description="Paragraph"><a href="#lem-multiple-prime-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Lemma 6.5.1"><a href="#lem-multiple-prime" title="Copy heading and permalink for Lemma 6.5.1" aria-label="Copy heading and permalink for Lemma 6.5.1">🔗</a></div></article><article class="example example-like" id="sect-divisibility-proofs-5-3"><h4 class="heading">
+<div class="autopermalink" data-description="Lemma 6.5.1"><a href="#lem-multiple-prime" title="Copy heading and permalink for Lemma 6.5.1" aria-label="Copy heading and permalink for Lemma 6.5.1">🔗</a></div>
+</article>
+<article class="example example-like" id="sect-divisibility-proofs-5-3"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-divisibility-proofs-5-3-1-1">Let’s try this with <span class="process-math">\(N=56\text{.}\)</span> All of its factors are <span class="process-math">\(\{1,2,4,7,8,28,56\}\text{.}\)</span> We note that 2 is a prime factor (also 7 is). We will use this in the proof below.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 6.5.2"><a href="#sect-divisibility-proofs-5-3" title="Copy heading and permalink for Example 6.5.2" aria-label="Copy heading and permalink for Example 6.5.2">🔗</a></div></article><details id="sect-divisibility-proofs-5-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sect-divisibility-proofs-5-4-1">List all of the factors of <span class="process-math">\(N\)</span> and call <span class="process-math">\(p\)</span> the smallest factor greater than <span class="process-math">\(1\text{.}\)</span> We will show that <span class="process-math">\(p\)</span> is prime and therefore <span class="process-math">\(N\)</span> is a multiple of a prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.5.2"><a href="#sect-divisibility-proofs-5-3" title="Copy heading and permalink for Example 6.5.2" aria-label="Copy heading and permalink for Example 6.5.2">🔗</a></div>
+</article>
+<details id="sect-divisibility-proofs-5-4" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="sect-divisibility-proofs-5-4-1">List all of the factors of <span class="process-math">\(N\)</span> and call <span class="process-math">\(p\)</span> the smallest factor greater than <span class="process-math">\(1\text{.}\)</span> We will show that <span class="process-math">\(p\)</span> is prime and therefore <span class="process-math">\(N\)</span> is a multiple of a prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-divisibility-proofs-5-4-2">This will be shown by a technique called proof by contradiction. In short, we make an assumption that contradicts what we are trying to show, resulting in an absurd statement, thus the original statement must be correct.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sect-divisibility-proofs-5-4-3">Assume that <span class="process-math">\(p\)</span> is not prime. Then we can write <span class="process-math">\(p=rs\text{,}\)</span> however both <span class="process-math">\(r&lt;p\)</span> and <span class="process-math">\(s&lt;p\text{,}\)</span> but this is not possible because <span class="process-math">\(p\)</span> is the smallest factor greater than 1, which contradicts the fact that <span class="process-math">\(p\)</span> is smallest factor.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-4-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.3.1"><a href="#sect-divisibility-proofs-5-4" title="Copy heading and permalink for Proof 6.5.3.1" aria-label="Copy heading and permalink for Proof 6.5.3.1">🔗</a></div></article></details><details id="sect-divisibility-proofs-5-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sect-divisibility-proofs-5-5-1">(of the fundamental theorem of arithmetic)<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Proof 6.5.3.1"><a href="#sect-divisibility-proofs-5-4" title="Copy heading and permalink for Proof 6.5.3.1" aria-label="Copy heading and permalink for Proof 6.5.3.1">🔗</a></div>
+</article></details>
+<details id="sect-divisibility-proofs-5-5" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="sect-divisibility-proofs-5-5-1">(of the fundamental theorem of arithmetic)<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sect-divisibility-proofs-5-5-2">
 <div class="para">By <a href="sect-divisibility-proofs.html#lem-multiple-prime" class="xref" data-knowl="./knowl/xref/lem-multiple-prime.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 6.5.1">Lemma 6.5.1</a>, write</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/lem-multiple-prime.html" id="sect-divisibility-proofs-5-5-2-2">
 \begin{equation*}
-N\amp = p_{1} n_{1}
+N = p_{1} n_{1}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -576,10 +634,18 @@ N = p_{1} p_{2} p_{3} \cdots p_{k}
 </div>
 <div class="para" id="sect-divisibility-proofs-5-5-8">To prove that this is a unique factorization, we need a little more background and thus will see this in 5.5.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.3.2"><a href="#sect-divisibility-proofs-5-5" title="Copy heading and permalink for Proof 6.5.3.2" aria-label="Copy heading and permalink for Proof 6.5.3.2">🔗</a></div></article></details><div class="para" id="sect-divisibility-proofs-5-6"><div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<details id="sect-divisibility-proofs-5-7" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Of the Largest Factor Lemma.</span></h4></summary><article class="hiddenproof knowl__content"><div class="para" id="sect-divisibility-proofs-5-7-2">Let <span class="process-math">\(N=pn\text{,}\)</span> where <span class="process-math">\(p\)</span> is prime by the Smallest Factor Lemma. The Since <span class="process-math">\(p \leq n\)</span> and therefore <span class="process-math">\(p^{2} \leq np=N\text{.}\)</span> Thus <span class="process-math">\(p \leq \sqrt{N}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Proof 6.5.3.2"><a href="#sect-divisibility-proofs-5-5" title="Copy heading and permalink for Proof 6.5.3.2" aria-label="Copy heading and permalink for Proof 6.5.3.2">🔗</a></div>
+</article></details>
+<div class="para" id="sect-divisibility-proofs-5-6"><div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<details id="sect-divisibility-proofs-5-7" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="title">Of the Largest Factor Lemma.</span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para" id="sect-divisibility-proofs-5-7-2">Let <span class="process-math">\(N=pn\text{,}\)</span> where <span class="process-math">\(p\)</span> is prime by the Smallest Factor Lemma. The Since <span class="process-math">\(p \leq n\)</span> and therefore <span class="process-math">\(p^{2} \leq np=N\text{.}\)</span> Thus <span class="process-math">\(p \leq \sqrt{N}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-5-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.3.3: Of the Largest Factor Lemma"><a href="#sect-divisibility-proofs-5-7" title="Copy heading and permalink for Proof 6.5.3.3: Of the Largest Factor Lemma" aria-label="Copy heading and permalink for Proof 6.5.3.3: Of the Largest Factor Lemma">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 6.5.3: Prime Number Proofs"><a href="#sect-divisibility-proofs-5" title="Copy heading and permalink for Subsection 6.5.3: Prime Number Proofs" aria-label="Copy heading and permalink for Subsection 6.5.3: Prime Number Proofs">🔗</a></div></section><section class="subsection" id="sect-divisibility-proofs-6"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Proof 6.5.3.3: Of the Largest Factor Lemma"><a href="#sect-divisibility-proofs-5-7" title="Copy heading and permalink for Proof 6.5.3.3: Of the Largest Factor Lemma" aria-label="Copy heading and permalink for Proof 6.5.3.3: Of the Largest Factor Lemma">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.5.3: Prime Number Proofs"><a href="#sect-divisibility-proofs-5" title="Copy heading and permalink for Subsection 6.5.3: Prime Number Proofs" aria-label="Copy heading and permalink for Subsection 6.5.3: Prime Number Proofs">🔗</a></div>
+</section>
+<section class="subsection" id="sect-divisibility-proofs-6">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">How many primes are there?</span>
 </h3>
 <article class="theorem theorem-like" id="sect-divisibility-proofs-6-2"><h4 class="heading">
@@ -587,7 +653,11 @@ N = p_{1} p_{2} p_{3} \cdots p_{k}
 </h4>
 <div class="para" id="sect-divisibility-proofs-6-2-1-1">There are an infinite number of prime numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.5.3"><a href="#sect-divisibility-proofs-6-2" title="Copy heading and permalink for Theorem 6.5.3" aria-label="Copy heading and permalink for Theorem 6.5.3">🔗</a></div></article><details id="sect-divisibility-proofs-6-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="sect-divisibility-proofs-6-3-1">
+<div class="autopermalink" data-description="Theorem 6.5.3"><a href="#sect-divisibility-proofs-6-2" title="Copy heading and permalink for Theorem 6.5.3" aria-label="Copy heading and permalink for Theorem 6.5.3">🔗</a></div>
+</article>
+<details id="sect-divisibility-proofs-6-3" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sect-divisibility-proofs-6-3-1">
 <div class="para">Assume that there are a finite number of primes and let <span class="process-math">\(P\)</span> be the largest. Define the number <span class="process-math">\(N\)</span> to be</div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-6-3-1-3">
 \begin{equation*}
@@ -598,7 +668,11 @@ N = 2 \cdot 3 \cdot 5 \cdot 7 \cdots P+1
 </div>
 <div class="para" id="sect-divisibility-proofs-6-3-2">Since <span class="process-math">\(N\)</span> is not divisible by any prime between 2 and <span class="process-math">\(P\text{,}\)</span> it must also be prime and is obviously larger than <span class="process-math">\(P\text{,}\)</span> so there’s a contradiction. Since this violates the assumption that there are a finite number and <span class="process-math">\(P\)</span> is the largest, the result is that there must be an infinite number of primes.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-6-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.4.1"><a href="#sect-divisibility-proofs-6-3" title="Copy heading and permalink for Proof 6.5.4.1" aria-label="Copy heading and permalink for Proof 6.5.4.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 6.5.4: How many primes are there?"><a href="#sect-divisibility-proofs-6" title="Copy heading and permalink for Subsection 6.5.4: How many primes are there?" aria-label="Copy heading and permalink for Subsection 6.5.4: How many primes are there?">🔗</a></div></section><section class="subsection" id="sect-divisibility-proofs-7"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Proof 6.5.4.1"><a href="#sect-divisibility-proofs-6-3" title="Copy heading and permalink for Proof 6.5.4.1" aria-label="Copy heading and permalink for Proof 6.5.4.1">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.5.4: How many primes are there?"><a href="#sect-divisibility-proofs-6" title="Copy heading and permalink for Subsection 6.5.4: How many primes are there?" aria-label="Copy heading and permalink for Subsection 6.5.4: How many primes are there?">🔗</a></div>
+</section>
+<section class="subsection" id="sect-divisibility-proofs-7">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Proof by Contradiction</span>
 </h3>
 <div class="para" id="sect-divisibility-proofs-7-2">The following steps shows the logic for proof by contradiction.<div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -645,19 +719,28 @@ N = 2 \cdot 3 \cdot 5 \cdot 7 \cdots P+1
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-7-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 6.5.5: Proof by Contradiction"><a href="#sect-divisibility-proofs-7" title="Copy heading and permalink for Subsection 6.5.5: Proof by Contradiction" aria-label="Copy heading and permalink for Subsection 6.5.5: Proof by Contradiction">🔗</a></div></section><section class="subsection" id="sect-divisibility-proofs-8"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Subsection 6.5.5: Proof by Contradiction"><a href="#sect-divisibility-proofs-7" title="Copy heading and permalink for Subsection 6.5.5: Proof by Contradiction" aria-label="Copy heading and permalink for Subsection 6.5.5: Proof by Contradiction">🔗</a></div>
+</section>
+<section class="subsection" id="sect-divisibility-proofs-8">
+<h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.5.6</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Greatest Common Factors and Lowest Common Multiples</span>
 </h3>
-<details id="sect-divisibility-proofs-8-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary><article class="hiddenproof knowl__content"><div class="para logical" id="sect-divisibility-proofs-8-2-1">
+<details id="sect-divisibility-proofs-8-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
+<article class="hiddenproof knowl__content">
+<div class="para logical" id="sect-divisibility-proofs-8-2-1">
 <div class="para">(of Euclid’s Algorithm:) Assume that <span class="process-math">\(n\)</span> is a common factor of both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> Since <span class="process-math">\(a=bq+r\text{,}\)</span> and <span class="process-math">\(r=a-bq\text{,}\)</span> then <span class="process-math">\(n\)</span> also a common factor of <span class="process-math">\(r\text{.}\)</span> Let <span class="process-math">\(N\)</span> be the largest common factor of both then</div>
 <div class="displaymath process-math" id="sect-divisibility-proofs-8-2-1-9">
 \begin{equation*}
-\begin{aligned}N\amp = GCF(a,b) = GCF(b,r)\end{aligned}
+N = GCF(a,b) = GCF(b,r)
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-divisibility-proofs-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.5.6.1"><a href="#sect-divisibility-proofs-8-2" title="Copy heading and permalink for Proof 6.5.6.1" aria-label="Copy heading and permalink for Proof 6.5.6.1">🔗</a></div></article></details><div class="autopermalink" data-description="Subsection 6.5.6: The Greatest Common Factors and Lowest Common Multiples"><a href="#sect-divisibility-proofs-8" title="Copy heading and permalink for Subsection 6.5.6: The Greatest Common Factors and Lowest Common Multiples" aria-label="Copy heading and permalink for Subsection 6.5.6: The Greatest Common Factors and Lowest Common Multiples">🔗</a></div></section><div class="autopermalink" data-description="Section 6.5: Prime Number and Divisibility Proofs"><a href="#sect-divisibility-proofs" title="Copy heading and permalink for Section 6.5: Prime Number and Divisibility Proofs" aria-label="Copy heading and permalink for Section 6.5: Prime Number and Divisibility Proofs">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Proof 6.5.6.1"><a href="#sect-divisibility-proofs-8-2" title="Copy heading and permalink for Proof 6.5.6.1" aria-label="Copy heading and permalink for Proof 6.5.6.1">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.5.6: The Greatest Common Factors and Lowest Common Multiples"><a href="#sect-divisibility-proofs-8" title="Copy heading and permalink for Subsection 6.5.6: The Greatest Common Factors and Lowest Common Multiples" aria-label="Copy heading and permalink for Subsection 6.5.6: The Greatest Common Factors and Lowest Common Multiples">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 6.5: Prime Number and Divisibility Proofs"><a href="#sect-divisibility-proofs" title="Copy heading and permalink for Section 6.5: Prime Number and Divisibility Proofs" aria-label="Copy heading and permalink for Section 6.5: Prime Number and Divisibility Proofs">🔗</a></div>
+</section>
+</div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sect-gcf-lcm.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-fractions.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
