@@ -1,4 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="16" height="20" viewBox="0 0 16 20">
-<path transform="matrix(1.00005,0,0,-1.00002,8.164459,18.458149)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0"/>
-<path transform="matrix(1.00005,0,0,-1.00002,8.164459,18.458149)" stroke-width="1.19553" stroke-linecap="round" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M5.66927 0C5.66927 21.2601-5.66927 21.2601-5.66927 0"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="4" height="31" viewBox="0 0 4 31">
+<path transform="matrix(1.00003,0,0,-1,1.859108,29.944)" stroke-width="1.19553" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0V28.3468"/>
 </svg>
