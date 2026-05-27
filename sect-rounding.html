@@ -247,11 +247,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sect-rounding.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Estimation and Rounding</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-3" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Rounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-4" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Rounding</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-estimation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Estimation</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-5" class="internal"><span class="codenumber">4.3.3</span> <span class="title">What is a good estimation?</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-6" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Range Estimates</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-7" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Teaching Estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-6" class="internal"><span class="codenumber">4.3.3</span> <span class="title">What is a good estimation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-7" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Range Estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-8" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Teaching Estimates</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -262,10 +262,11 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-addition-algorithms.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Addition Algorithms</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-3" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Prerequisite for Column Addition with Bundling</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-4" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Chip Models For Addition</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-5" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Lattice Addition</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-6" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Base-5 Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-4" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Prerequisite for Column Addition with Bundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-5" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Chip Models For Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-6" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Lattice Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-7" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Base-5 Addition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-addition-algorithms.html#exercises-addition-algorithm" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -415,78 +416,98 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Estimation and Rounding</span>
 </h2>
-<section class="introduction" id="sect-rounding-2">
-<div class="para" id="sect-rounding-2-1">This section is all about getting approximations to numbers. It is often the case that we need to know ``about’’ what the answer is, not exactly the answer.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="objectives goal-like" id="sect-rounding-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc" id="sect-rounding-2-1">
+<li id="sect-rounding-2-1-1">
+<div class="para" id="sect-rounding-2-1-1-1">Be able to round to nearest power of ten.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-rounding-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="sect-rounding-2-1-2">
+<div class="para" id="sect-rounding-2-1-2-1">Use rounding to quickly perform estimations of numerical expressions.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-rounding-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="sect-rounding-2-1-3">
+<div class="para" id="sect-rounding-2-1-3-1">Use range estimates to know where the actual answer lies as well as use range estimates to solve word problems.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-rounding-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives 4.3"><a href="#sect-rounding-2" title="Copy heading and permalink for Objectives 4.3" aria-label="Copy heading and permalink for Objectives 4.3">🔗</a></div>
+</article>
+<section class="introduction" id="sect-rounding-3">
+<div class="para" id="sect-rounding-3-1">This section is all about getting approximations to numbers. It is often the case that we need to know “about” what the answer is, not exactly the answer.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></section>
-<section class="subsection" id="sect-rounding-3">
+<section class="subsection" id="sect-rounding-4">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rounding</span>
 </h3>
-<div class="para" id="sect-rounding-3-2">An important skill will be to find a number to the nearest multiple of 10, 100, 1000, etc. For small numbers this is relatively straightforward, but for larger numbers a grasp of place value is key.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-4-2">An important skill will be to find a number to the nearest multiple of 10, 100, 1000, etc. For small numbers this is relatively straightforward, but for larger numbers a grasp of place value is key.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-rounding-3-3"><h4 class="heading">
+<article class="example example-like" id="sect-rounding-4-3"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-rounding-3-3-1-1">Round 73 to the nearest ten.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-4-3-1-1">Round 73 to the nearest ten.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-rounding-3-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-rounding-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="sect-rounding-3-3-2-1">First note that 73 could either be rounded up to 80 or down to 70. Because 73 is closer to 70, then this is the answer.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-4-3-2-1">First note that 73 could either be rounded up to 80 or down to 70. Because 73 is closer to 70, then this is the answer.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.1.1"><a href="#sect-rounding-3-3-2" title="Copy heading and permalink for Solution 4.3.1.1" aria-label="Copy heading and permalink for Solution 4.3.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.1.1"><a href="#sect-rounding-4-3-2" title="Copy heading and permalink for Solution 4.3.1.1" aria-label="Copy heading and permalink for Solution 4.3.1.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.3.1"><a href="#sect-rounding-3-3" title="Copy heading and permalink for Example 4.3.1" aria-label="Copy heading and permalink for Example 4.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.3.1"><a href="#sect-rounding-4-3" title="Copy heading and permalink for Example 4.3.1" aria-label="Copy heading and permalink for Example 4.3.1">🔗</a></div>
 </article>
-<div class="para" id="sect-rounding-3-4">The following is the rounding algorithm that is typically used.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-4-4">The following is the rounding algorithm that is typically used.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="sect-rounding-3-5"><h4 class="heading">
+<article class="note remark-like" id="sect-rounding-4-5"><h4 class="heading">
 <span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rounding Algorithm.</span>
 </h4>
-<div class="para logical" id="sect-rounding-3-5-2">
-<ul class="disc" id="sect-rounding-3-5-2-1">
-<li id="sect-rounding-3-5-2-1-1">
-<div class="para" id="sect-rounding-3-5-2-1-1-1">To round a number to the nearest ten, if the ones digit is 0,1,2,3,4 round down, and 5,6,7,8,9 round up.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-rounding-4-5-2">
+<ul class="disc" id="sect-rounding-4-5-2-1">
+<li id="sect-rounding-4-5-2-1-1">
+<div class="para" id="sect-rounding-4-5-2-1-1-1">To round a number to the nearest ten, if the ones digit is 0,1,2,3,4 round down, and 5,6,7,8,9 round up.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-5-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-3-5-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-4-5-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-rounding-3-5-2-1-2">
-<div class="para" id="sect-rounding-3-5-2-1-2-1">To round a number to the nearest hundred, if the tens digit is 0,1,2,3,4 round down, if the tens digit is 5,6,7,8,9 round up.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-rounding-4-5-2-1-2">
+<div class="para" id="sect-rounding-4-5-2-1-2-1">To round a number to the nearest hundred, if the tens digit is 0,1,2,3,4 round down, if the tens digit is 5,6,7,8,9 round up.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-5-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-3-5-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-4-5-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-rounding-3-5-2-1-3">
-<div class="para" id="sect-rounding-3-5-2-1-3-1">To round a number to the nearest thousand, if the hundreds digit is 0,1,2,3,4 round down, if the hundreds digit is 5,6,7,8,9 round up.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-5-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-rounding-4-5-2-1-3">
+<div class="para" id="sect-rounding-4-5-2-1-3-1">To round a number to the nearest thousand, if the hundreds digit is 0,1,2,3,4 round down, if the hundreds digit is 5,6,7,8,9 round up.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-5-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-3-5-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-4-5-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-rounding-3-5-2-1-4">
-<div class="para" id="sect-rounding-3-5-2-1-4-1">Rounding to higher denominations is similar.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-5-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-rounding-4-5-2-1-4">
+<div class="para" id="sect-rounding-4-5-2-1-4-1">Rounding to higher denominations is similar.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-5-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-3-5-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-4-5-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 4.3.2: Rounding Algorithm"><a href="#sect-rounding-3-5" title="Copy heading and permalink for Note 4.3.2: Rounding Algorithm" aria-label="Copy heading and permalink for Note 4.3.2: Rounding Algorithm">🔗</a></div>
+<div class="autopermalink" data-description="Note 4.3.2: Rounding Algorithm"><a href="#sect-rounding-4-5" title="Copy heading and permalink for Note 4.3.2: Rounding Algorithm" aria-label="Copy heading and permalink for Note 4.3.2: Rounding Algorithm">🔗</a></div>
 </article>
-<div class="para" id="sect-rounding-3-6">This can be understood visually with a number line. Consider the problem of rounding 73 to the nearest ten. We’ll draw the number line with 73 with the two options 70 and 80.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-4-6">This can be understood visually with a number line. Consider the problem of rounding 73 to the nearest ten. We’ll draw the number line with 73 with the two options 70 and 80.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-rounding-3-7.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-rounding-3-8">The two options 70 and 80 are 3 units and 7 units away from 73 as shown with:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-rounding-4-7.svg" role="img" class="contained" alt="A number line from 70 to 80. The number 73 is also marked."></div>
+<div class="para" id="sect-rounding-4-8">The two options 70 and 80 are 3 units and 7 units away from 73 as shown with:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-rounding-3-9.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-rounding-3-10">If a number’s ones digit is 5 and you are asked to round to the nearest ten, then this might be a bit of a puzzle. Consider rounding 55 to the nearest ten. If we plot on the number line similar to above:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-rounding-4-9.svg" role="img" class="contained" alt="A number line from 70 to 80. The number 73 is also marked. There is an arrow from 73 to 70 with the number 3 atop and an arrow from 73 to 80 with the number 7 on top."></div>
+<div class="para" id="sect-rounding-4-10">If a number’s ones digit is 5 and you are asked to round to the nearest ten, then this might be a bit of a puzzle. Consider rounding 55 to the nearest ten. If we plot on the number line similar to above:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-rounding-3-11.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-rounding-3-12">This is clear that 55 is equally close to 50 or 60. The convention is that if the rounding digit is a 5 that we <em class="emphasis">round up</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-rounding-4-11.svg" role="img" class="contained" alt="A number line from 50 to 60. The number 55 is also marked. There is an arrow from 55 to 50 with the number 5 atop and an arrow from 55 to 60 with the number 5 on top."></div>
+<div class="para" id="sect-rounding-4-12">This is clear that 55 is equally close to 50 or 60. The convention is that if the rounding digit is a 5 that we <em class="emphasis">round up</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<section class="paragraphs" id="sect-rounding-3-13"><h4 class="heading"><span class="title">Rounding Decimals.</span></h4>
-<div class="para" id="sect-rounding-3-13-2">Rounding is also important with decimals and we will see how to do this in <a href="ch-decimals.html" class="internal" title="Chapter 8: Decimals">Chapter 8</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-3-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="paragraphs" id="sect-rounding-4-13"><h4 class="heading"><span class="title">Rounding Decimals.</span></h4>
+<div class="para" id="sect-rounding-4-13-2">Rounding is also important with decimals and we will see how to do this in <a href="ch-decimals.html" class="internal" title="Chapter 8: Decimals">Chapter 8</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-4-13-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Rounding Decimals"><a href="#sect-rounding-3-13" title="Copy heading and permalink for Paragraphs: Rounding Decimals" aria-label="Copy heading and permalink for Paragraphs: Rounding Decimals">🔗</a></div>
-</section><div class="autopermalink" data-description="Subsection 4.3.1: Rounding"><a href="#sect-rounding-3" title="Copy heading and permalink for Subsection 4.3.1: Rounding" aria-label="Copy heading and permalink for Subsection 4.3.1: Rounding">🔗</a></div>
+<div class="autopermalink" data-description="Paragraphs: Rounding Decimals"><a href="#sect-rounding-4-13" title="Copy heading and permalink for Paragraphs: Rounding Decimals" aria-label="Copy heading and permalink for Paragraphs: Rounding Decimals">🔗</a></div>
+</section><div class="autopermalink" data-description="Subsection 4.3.1: Rounding"><a href="#sect-rounding-4" title="Copy heading and permalink for Subsection 4.3.1: Rounding" aria-label="Copy heading and permalink for Subsection 4.3.1: Rounding">🔗</a></div>
 </section>
 <section class="subsection" id="sect-estimation">
 <h3 class="heading hide-type">
@@ -527,7 +548,15 @@ eBookConfig.enable_chatcodes =  false;
 <article class="example example-like" id="sect-estimation-5-3"><h5 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h5>
-<div class="para" id="sect-estimation-5-3-1-1">Find <span class="process-math">\(38 \times 19\text{.}\)</span> Since <span class="process-math">\(38 \approx 40\)</span> and <span class="process-math">\(19 \approx 20\text{,}\)</span> <span class="process-math">\(38 \times 19\approx 40 \times 20 =800\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-estimation-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-estimation-5-3-1-1">Find <span class="process-math">\(38 \times 19\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-estimation-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-estimation-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sect-estimation-5-3-2-1">Since <span class="process-math">\(38 \approx 40\)</span> and <span class="process-math">\(19 \approx 20\text{,}\)</span> <span class="process-math">\(38 \times 19\approx 40 \times 20 =800\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-estimation-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.3.1"><a href="#sect-estimation-5-3-2" title="Copy heading and permalink for Solution 4.3.3.1" aria-label="Copy heading and permalink for Solution 4.3.3.1">🔗</a></div>
+</div></details>
 </div>
 <div class="autopermalink" data-description="Example 4.3.3"><a href="#sect-estimation-5-3" title="Copy heading and permalink for Example 4.3.3" aria-label="Copy heading and permalink for Example 4.3.3">🔗</a></div>
 </article><div class="autopermalink" data-description="Paragraphs: Rounding"><a href="#sect-estimation-5" title="Copy heading and permalink for Paragraphs: Rounding" aria-label="Copy heading and permalink for Paragraphs: Rounding">🔗</a></div>
@@ -591,129 +620,439 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Paragraphs: Step 2:"><a href="#sect-estimation-8" title="Copy heading and permalink for Paragraphs: Step 2:" aria-label="Copy heading and permalink for Paragraphs: Step 2:">🔗</a></div>
 </section><div class="autopermalink" data-description="Subsection 4.3.2: Estimation"><a href="#sect-estimation" title="Copy heading and permalink for Subsection 4.3.2: Estimation" aria-label="Copy heading and permalink for Subsection 4.3.2: Estimation">🔗</a></div>
 </section>
-<section class="subsection" id="sect-rounding-5">
+<section class="subsection" id="sect-rounding-6">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">What is a good estimation?</span>
 </h3>
-<div class="para" id="sect-rounding-5-2">Is all estimation good? For example, if we try to find <span class="process-math">\(17 \times 65\text{.}\)</span> Here are some possible answers:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-6-2">Is all estimation good? For example, if we try to find <span class="process-math">\(17 \times 65\text{.}\)</span> Here are some possible answers:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-rounding-5-3">
-<ul class="disc" id="sect-rounding-5-3-1">
-<li id="sect-rounding-5-3-1-1">
-<div class="para" id="sect-rounding-5-3-1-1-1">
-<span class="process-math">\(\displaystyle 17 \times 65 \approx 20 \times 60 = 1200\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-rounding-6-3">
+<ul class="disc" id="sect-rounding-6-3-1">
+<li id="sect-rounding-6-3-1-1">
+<div class="para" id="sect-rounding-6-3-1-1-1">
+<span class="process-math">\(\displaystyle 17 \times 65 \approx 20 \times 60 = 1200\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-5-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-6-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-rounding-5-3-1-2">
-<div class="para" id="sect-rounding-5-3-1-2-1">
-<span class="process-math">\(\displaystyle 17 \times 65 \approx 20 \times 70 = 1400\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-rounding-6-3-1-2">
+<div class="para" id="sect-rounding-6-3-1-2-1">
+<span class="process-math">\(\displaystyle 17 \times 65 \approx 20 \times 70 = 1400\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-5-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-6-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-rounding-5-3-1-3">
-<div class="para" id="sect-rounding-5-3-1-3-1">
-<span class="process-math">\(\displaystyle 17 \times 65 \approx 15 \times 70 = 1050\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-rounding-6-3-1-3">
+<div class="para" id="sect-rounding-6-3-1-3-1">
+<span class="process-math">\(\displaystyle 17 \times 65 \approx 15 \times 70 = 1050\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-5-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-6-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-rounding-5-3-1-4">
-<div class="para" id="sect-rounding-5-3-1-4-1">
-<span class="process-math">\(\displaystyle 17 \times 65 \approx 15 \times 60 = 900\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-rounding-6-3-1-4">
+<div class="para" id="sect-rounding-6-3-1-4-1">
+<span class="process-math">\(\displaystyle 17 \times 65 \approx 15 \times 60 = 900\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-rounding-5-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-rounding-6-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-rounding-5-4">Although any one if these is a reasonable estimate, The second one rounded both factors up and the resulting approximation is larger than the actual answer. The fourth rounded both factors down and the resulting approximation is smaller than the actual answer.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-6-4">Although any one if these is a reasonable estimate, The second one rounded both factors up and the resulting approximation is larger than the actual answer. The fourth rounded both factors down and the resulting approximation is smaller than the actual answer.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-rounding-5-5">Perhaps if you’re trying to get close, use one that rounds one up and one down, so either the first or third.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-6-5">Perhaps if you’re trying to get close, use one that rounds one up and one down, so either the first or third.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 4.3.3: What is a good estimation?"><a href="#sect-rounding-5" title="Copy heading and permalink for Subsection 4.3.3: What is a good estimation?" aria-label="Copy heading and permalink for Subsection 4.3.3: What is a good estimation?">🔗</a></div>
+<div class="autopermalink" data-description="Subsection 4.3.3: What is a good estimation?"><a href="#sect-rounding-6" title="Copy heading and permalink for Subsection 4.3.3: What is a good estimation?" aria-label="Copy heading and permalink for Subsection 4.3.3: What is a good estimation?">🔗</a></div>
 </section>
-<section class="subsection" id="sect-rounding-6">
+<section class="subsection" id="sect-rounding-7">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Range Estimates</span>
 </h3>
-<div class="para" id="sect-rounding-6-2">As we saw above, what we mean by a good estimate depends on what we want. However, it’s common to want to have both a high and low estimate so we know where our answer lies. For example as shown above, <span class="process-math">\(17 \times 65\)</span> is between 900 and 1400. A <em class="alert">range estimate</em> is a pair of estimates: one too high, and one too low.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-7-2">As we saw above, what we mean by a good estimate depends on what we want. However, it’s common to want to have both a high and low estimate so we know where our answer lies. For example as shown above, <span class="process-math">\(17 \times 65\)</span> is between 900 and 1400. A <em class="alert">range estimate</em> is a pair of estimates: one too high, and one too low.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-rounding-6-3">Finding range estimates depends on the operation. We saw in the example above, for multiplication, a high estimate rounds both factors up and a low one rounds both down. This idea also works for addition.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-7-3">Finding range estimates depends on the operation. We saw in the example above, for both addition and multiplication, a high estimate rounds both factors up and a low one rounds both down. However, for subtraction and division, a high estimate rounds the subtrahend and dividend up and then the minuend or divisor down. A low estimate reverses these. We look at end of these with examples.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-rounding-6-4"><h4 class="heading">
+<section class="paragraphs" id="sect-rounding-7-4"><h4 class="heading"><span class="title">Range Estimates for Addition.</span></h4>
+<article class="example example-like" id="sect-rounding-7-4-2"><h5 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="sect-rounding-6-4-1-1">Range Estimate for Addition<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="sect-rounding-6-4-1-2">Find a range estimate for <span class="process-math">\(478 + 931\)</span> to the nearest 50.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-4-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</h5>
+<div class="para" id="sect-rounding-7-4-2-1-1">Find a range estimate for <span class="process-math">\(478 + 931\)</span> to the nearest 50.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-rounding-6-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-rounding-7-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="sect-rounding-6-4-2-1">
+<div class="para logical" id="sect-rounding-7-4-2-2-1">
 <div class="para">For addition a high estimate will round both up to the nearest 50</div>
-<div class="displaymath process-math" id="sect-rounding-6-4-2-1-1">
+<div class="displaymath process-math" id="sect-rounding-7-4-2-2-1-1">
 \begin{equation*}
 478 + 931 \approx 500 + 950 = 1450
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-rounding-6-4-2-2">
+<div class="para logical" id="sect-rounding-7-4-2-2-2">
 <div class="para">and we have used compensation mental math to do the last calculation. A <em class="emphasis">low estimate</em> is</div>
-<div class="displaymath process-math" id="sect-rounding-6-4-2-2-2">
+<div class="displaymath process-math" id="sect-rounding-7-4-2-2-2-2">
 \begin{equation*}
 478 + 931 \approx 450 + 900 = 1350
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-4-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-rounding-6-4-2-3">This allows us to know that the actual value is between 1350 and 1450.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-7-4-2-2-3">This allows us to know that the actual value is between 1350 and 1450.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-4-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 4.3.4.1"><a href="#sect-rounding-6-4-2" title="Copy heading and permalink for Solution 4.3.4.1" aria-label="Copy heading and permalink for Solution 4.3.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 4.3.4.1"><a href="#sect-rounding-7-4-2-2" title="Copy heading and permalink for Solution 4.3.4.1" aria-label="Copy heading and permalink for Solution 4.3.4.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 4.3.4"><a href="#sect-rounding-6-4" title="Copy heading and permalink for Example 4.3.4" aria-label="Copy heading and permalink for Example 4.3.4">🔗</a></div>
-</article>
-<div class="para" id="sect-rounding-6-5">Because of the nature of both subtraction and division, range estimates a bit more difficult for these operations. Although there is a specific rule to doing high and low estimates, let’s think it through first.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sect-rounding-6-6">Find a range estimate of <span class="process-math">\(18 \times 315\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sect-rounding-6-7">FINISH THIS EXAMPLE<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Subsection 4.3.4: Range Estimates"><a href="#sect-rounding-6" title="Copy heading and permalink for Subsection 4.3.4: Range Estimates" aria-label="Copy heading and permalink for Subsection 4.3.4: Range Estimates">🔗</a></div>
+<div class="autopermalink" data-description="Example 4.3.4"><a href="#sect-rounding-7-4-2" title="Copy heading and permalink for Example 4.3.4" aria-label="Copy heading and permalink for Example 4.3.4">🔗</a></div>
+</article><div class="autopermalink" data-description="Paragraphs: Range Estimates for Addition"><a href="#sect-rounding-7-4" title="Copy heading and permalink for Paragraphs: Range Estimates for Addition" aria-label="Copy heading and permalink for Paragraphs: Range Estimates for Addition">🔗</a></div>
 </section>
-<section class="subsection" id="sect-rounding-7">
+<section class="paragraphs" id="sect-rounding-7-5"><h4 class="heading"><span class="title">Range Estimates for Subtraction.</span></h4>
+<div class="para" id="sect-rounding-7-5-2">For subtraction,<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-rounding-7-5-3"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="sect-rounding-7-5-3-1-1">Give a range estimate for <span class="process-math">\(318 - 184\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-rounding-7-5-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sect-rounding-7-5-3-2-1">As mentioned above, because a larger minuend makes for a smaller difference, to find the high and low estimates requires mixing the rounding.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-7-5-3-2-2">
+<dl class="description-list">
+<dt id="sect-rounding-7-5-3-2-2-1-1">High Estimate<div class="autopermalink" data-description="Item: High Estimate"><a href="#sect-rounding-7-5-3-2-2-1-1" title="Copy heading and permalink for Item: High Estimate" aria-label="Copy heading and permalink for Item: High Estimate">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rounding-7-5-3-2-2-1-1-2">
+<div class="para">For this a simple estimate is to round <span class="process-math">\(318\)</span> up to <span class="process-math">\(400\)</span> and then to round the minuend <span class="process-math">\(184\)</span> down to <span class="process-math">\(100\text{.}\)</span> This would result in</div>
+<div class="displaymath process-math" id="sect-rounding-7-5-3-2-2-1-1-2-5">
+\begin{equation*}
+318 - 184 \approx 400 - 100 = 300.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-7-5-3-2-2-1-1-3">
+<div class="para">But this is not a good estimate. Let’s instead round to the nearest ten or</div>
+<div class="displaymath process-math" id="sect-rounding-7-5-3-2-2-1-1-3-1">
+\begin{equation*}
+318 - 184 \approx 320 - 180 = 140
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(320 -180\)</span> can be found easily with compensation as <span class="process-math">\(320-180 = 340 -200 = 140\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-2-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sect-rounding-7-5-3-2-2-1-2">Low Estimate<div class="autopermalink" data-description="Item: Low Estimate"><a href="#sect-rounding-7-5-3-2-2-1-2" title="Copy heading and permalink for Item: Low Estimate" aria-label="Copy heading and permalink for Item: Low Estimate">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rounding-7-5-3-2-2-1-2-2">
+<div class="para">If we round to the nearest 100, then we will round down the subtrahend and up the minuend or</div>
+<div class="displaymath process-math" id="sect-rounding-7-5-3-2-2-1-2-2-1">
+\begin{equation*}
+318 - 184 \approx 300 - 200 = 100
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-7-5-3-2-2-1-2-3">
+<div class="para">This isn’t a great estimate. Let’s try rounding to the nearest tens or</div>
+<div class="displaymath process-math" id="sect-rounding-7-5-3-2-2-1-2-3-1">
+\begin{equation*}
+318 - 184 \approx 310 - 190 = 120
+\end{equation*}
+</div>
+<div class="para">where mentally you can do <span class="process-math">\(310 - 190 = 320 - 200 = 120\)</span> with compensation.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-2-2-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-7-5-3-2-3">Therefore the best estimate puts the range as between 120 and 140, which is a good tight estimate.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.5.1"><a href="#sect-rounding-7-5-3-2" title="Copy heading and permalink for Solution 4.3.5.1" aria-label="Copy heading and permalink for Solution 4.3.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.3.5"><a href="#sect-rounding-7-5-3" title="Copy heading and permalink for Example 4.3.5" aria-label="Copy heading and permalink for Example 4.3.5">🔗</a></div>
+</article><div class="autopermalink" data-description="Paragraphs: Range Estimates for Subtraction"><a href="#sect-rounding-7-5" title="Copy heading and permalink for Paragraphs: Range Estimates for Subtraction" aria-label="Copy heading and permalink for Paragraphs: Range Estimates for Subtraction">🔗</a></div>
+</section>
+<section class="paragraphs" id="sect-rounding-7-6"><h4 class="heading"><span class="title">Range Estimates for Multiplication.</span></h4>
+<article class="example example-like" id="sect-rounding-7-6-2"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="sect-rounding-7-6-2-1-1">Find a range estimate of <span class="process-math">\(18 \times 315\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-rounding-7-6-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-rounding-7-6-2-2-1">
+<div class="para">For this, we will find both a high and low estimate of both numbers. We’ll round 18 to the nearest 10 and 315 to the nearest hundred.</div>
+<dl class="description-list">
+<dt id="sect-rounding-7-6-2-2-1-1-1">Low Estimate<div class="autopermalink" data-description="Item: Low Estimate"><a href="#sect-rounding-7-6-2-2-1-1-1" title="Copy heading and permalink for Item: Low Estimate" aria-label="Copy heading and permalink for Item: Low Estimate">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sect-rounding-7-6-2-2-1-1-1-2">
+<span class="process-math">\(\displaystyle 18 \times 315 \approx 10 \times 300 = 3000. \)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-2-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sect-rounding-7-6-2-2-1-1-2">High Estimate<div class="autopermalink" data-description="Item: High Estimate"><a href="#sect-rounding-7-6-2-2-1-1-2" title="Copy heading and permalink for Item: High Estimate" aria-label="Copy heading and permalink for Item: High Estimate">🔗</a></div>
+</dt>
+<dd>
+<div class="para" id="sect-rounding-7-6-2-2-1-1-2-2">
+<span class="process-math">\(\displaystyle 18 \times 315 \approx 20 \times 400 = 8000\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-2-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-7-6-2-2-2">Because both numbers in the low estimate are smaller than the original, the actual value of <span class="process-math">\(18 \times 315\)</span> must be larger than 3000. Similarly, since both numbers in the high estimate is larger than the original, the actual value is smaller than 8000. We can say then that <span class="process-math">\(18 \times 315\)</span> is between 3000 and 8000.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.6.1"><a href="#sect-rounding-7-6-2-2" title="Copy heading and permalink for Solution 4.3.6.1" aria-label="Copy heading and permalink for Solution 4.3.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.3.6"><a href="#sect-rounding-7-6-2" title="Copy heading and permalink for Example 4.3.6" aria-label="Copy heading and permalink for Example 4.3.6">🔗</a></div>
+</article>
+<div class="para" id="sect-rounding-7-6-3">Looking at the last estimate, you may think that the range 3000 to 8000 is very wide. However, if you are using it to check an answer it could be useful to eliminate errors often associated with place value.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-7-6-4">
+<div class="para">However, what if we want a tighter range estimate. We can round to other values instead. For example, for a low estimate we can round 18 to 15 and 315 to 300 to get</div>
+<div class="displaymath process-math" id="sect-rounding-7-6-4-1">
+\begin{equation*}
+18 \times 315 \approx 15 \times 300 = 4500
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(15 \times 3\)</span> is not too difficult to do mentally. If you’re better at mental math another low estimate could be</div>
+<div class="displaymath process-math" id="sect-rounding-7-6-4-3">
+\begin{equation*}
+18 \times 315 \approx 18 \times 300 = 5400
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-7-6-5">
+<div class="para">On the high estimate, it’s natural to round the 18 to 20, but if we round 315 to 320 instead we get</div>
+<div class="displaymath process-math" id="sect-rounding-7-6-5-1">
+\begin{equation*}
+18 \times 315 \approx 20 \times 320 = 6400
+\end{equation*}
+</div>
+<div class="para">or if you refine those mental math skills</div>
+<div class="displaymath process-math" id="sect-rounding-7-6-5-2">
+\begin{equation*}
+18 \times 315 \approx 20 \times 315 = 6300
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-7-6-6">Thus, a tighter range estimate for this problem is 5400 to 6300.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Paragraphs: Range Estimates for Multiplication"><a href="#sect-rounding-7-6" title="Copy heading and permalink for Paragraphs: Range Estimates for Multiplication" aria-label="Copy heading and permalink for Paragraphs: Range Estimates for Multiplication">🔗</a></div>
+</section>
+<section class="paragraphs" id="sect-rounding-7-7"><h4 class="heading"><span class="title">Range Estimates for Division.</span></h4>
+<div class="para" id="sect-rounding-7-7-2">Similar to subtraction, a range estimate for division requires different rounding for the dividend and divisor. For a high estimate, round the dividend up and the divisor down. For a low estimate, round the dividend down and the divisor up.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-7-7-3">Also, since division either often results in a remainder or as we will see a fraction, estimates with division often require either rounding to compatible numbers, that is ones that either result in a whole number or if there is a remainder, round the remainder up or down.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-rounding-7-7-4"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="sect-rounding-7-7-4-1-1">Find a range estimate for <span class="process-math">\(378 \div 14\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-rounding-7-7-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sect-rounding-7-7-4-2-1">In this case, a dividend in the hundreds and the divisor in the tens will probably result in a quotient in the tens. Thus, we should round the dividend to the nearest tens instead of hundreds.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-7-7-4-2-2">
+<dl class="description-list">
+<dt id="sect-rounding-7-7-4-2-2-1-1">High Estimate<div class="autopermalink" data-description="Item: High Estimate"><a href="#sect-rounding-7-7-4-2-2-1-1" title="Copy heading and permalink for Item: High Estimate" aria-label="Copy heading and permalink for Item: High Estimate">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rounding-7-7-4-2-2-1-1-2">
+<div class="para">For a high estimate, we need to round the dividend up and the divisor down.</div>
+<div class="displaymath process-math" id="sect-rounding-7-7-4-2-2-1-1-2-1">
+\begin{equation*}
+378 \div 14 \approx 380 \div 10 = 38
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-4-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sect-rounding-7-7-4-2-2-1-2">Low Estimate<div class="autopermalink" data-description="Item: Low Estimate"><a href="#sect-rounding-7-7-4-2-2-1-2" title="Copy heading and permalink for Item: Low Estimate" aria-label="Copy heading and permalink for Item: Low Estimate">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rounding-7-7-4-2-2-1-2-2">
+<div class="para">For a low estimate, we need to round the dividend down and the divisor up.</div>
+<div class="displaymath process-math" id="sect-rounding-7-7-4-2-2-1-2-2-1">
+\begin{equation*}
+378 \div 14 \approx 360 \div 20 = 18.
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-4-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-7-7-4-2-3">Thus a range estimate for this is 18 to 38.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-7-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.7.1"><a href="#sect-rounding-7-7-4-2" title="Copy heading and permalink for Solution 4.3.7.1" aria-label="Copy heading and permalink for Solution 4.3.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.3.7"><a href="#sect-rounding-7-7-4" title="Copy heading and permalink for Example 4.3.7" aria-label="Copy heading and permalink for Example 4.3.7">🔗</a></div>
+</article><div class="autopermalink" data-description="Paragraphs: Range Estimates for Division"><a href="#sect-rounding-7-7" title="Copy heading and permalink for Paragraphs: Range Estimates for Division" aria-label="Copy heading and permalink for Paragraphs: Range Estimates for Division">🔗</a></div>
+</section><div class="autopermalink" data-description="Subsection 4.3.4: Range Estimates"><a href="#sect-rounding-7" title="Copy heading and permalink for Subsection 4.3.4: Range Estimates" aria-label="Copy heading and permalink for Subsection 4.3.4: Range Estimates">🔗</a></div>
+</section>
+<section class="subsection" id="sect-rounding-8">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Teaching Estimates</span>
 </h3>
-<div class="para" id="sect-rounding-7-2">Teaching estimates requires that we teach students why to estimate as well as what makes a good estimate. Often, we can use problems with clear results to emphasize this.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-8-2">Teaching estimates requires that we teach students why to estimate as well as what makes a good estimate. Often, we can use problems with clear results to emphasize this.  As with other parts of mathematics, good practical examples are often helpful. We look at a few examples.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-rounding-7-3"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="example example-like" id="sect-rounding-8-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-rounding-7-3-1-1">Approximate <span class="process-math">\(9.8 \times 37.5\)</span> to the nearest multiple of ten.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-8-3-1-1">Johnny and Felix both collect <em class="emphasis">Magic, the Gathering</em> cards.  Johnny has 3 piles and knows that there are 51, 69 and 73 in the piles.  Felix has 4 piles of cards and there are 29, 52, 43 and 35 cards in the piles.  Who has more cards?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 4.3.5"><a href="#sect-rounding-7-3" title="Copy heading and permalink for Example 4.3.5" aria-label="Copy heading and permalink for Example 4.3.5">🔗</a></div>
+<div class="solutions">
+<details id="sect-rounding-8-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sect-rounding-8-3-2-1">As before, we could add up the number for each, but perhaps an estimate is sufficient.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-8-3-2-2">
+<div class="para">We will find a range estimate for both of them.</div>
+<dl class="description-list narrow">
+<dt id="sect-rounding-8-3-2-2-1-1">Johnny<div class="autopermalink" data-description="Item: Johnny"><a href="#sect-rounding-8-3-2-2-1-1" title="Copy heading and permalink for Item: Johnny" aria-label="Copy heading and permalink for Item: Johnny">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rounding-8-3-2-2-1-1-2">
+<div class="para">The low estimate could be</div>
+<div class="displaymath process-math" id="sect-rounding-8-3-2-2-1-1-2-1">
+\begin{equation*}
+51 + 69 + 73 \approx 50 + 60 + 70 = 180
+\end{equation*}
+</div>
+<div class="para">and a high estimate would be</div>
+<div class="displaymath process-math" id="sect-rounding-8-3-2-2-1-1-2-2">
+\begin{equation*}
+51 + 69 + 73 \approx 60 + 70 + 80 = 210 
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-3-2-2-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sect-rounding-8-3-2-2-1-2">Felix<div class="autopermalink" data-description="Item: Felix"><a href="#sect-rounding-8-3-2-2-1-2" title="Copy heading and permalink for Item: Felix" aria-label="Copy heading and permalink for Item: Felix">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rounding-8-3-2-2-1-2-2">
+<div class="para">The low estimate could be</div>
+<div class="displaymath process-math" id="sect-rounding-8-3-2-2-1-2-2-1">
+\begin{equation*}
+29 + 52+42+35 \approx 20 + 50 + 40 + 30 = 140
+\end{equation*}
+</div>
+<div class="para">and a high estimate could be</div>
+<div class="displaymath process-math" id="sect-rounding-8-3-2-2-1-2-2-2">
+\begin{equation*}
+29 + 52+42+35 \approx 30 + 60 + 50 + 40 = 180
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-3-2-2-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-8-3-2-3">We see that Johnny has a least 180 cards and Felix has at most.  If we look at the estimate, there was rounding going on, to this means that Johnny has more cards.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.8.1"><a href="#sect-rounding-8-3-2" title="Copy heading and permalink for Solution 4.3.8.1" aria-label="Copy heading and permalink for Solution 4.3.8.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.3.8"><a href="#sect-rounding-8-3" title="Copy heading and permalink for Example 4.3.8" aria-label="Copy heading and permalink for Example 4.3.8">🔗</a></div>
 </article>
-<article class="example example-like" id="sect-rounding-7-4"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="example example-like" id="sect-rounding-8-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-rounding-7-4-1-1">Is <span class="process-math">\(7891 \div 13\)</span> closest to 61, 6.1 or 0.61?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-8-4-1-1">There are 24 bottles of apple juice in a case.  Each apple juice is 12 ounces. A school needs 1000 ounces of juice for an event.  How many cases would they need?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 4.3.6"><a href="#sect-rounding-7-4" title="Copy heading and permalink for Example 4.3.6" aria-label="Copy heading and permalink for Example 4.3.6">🔗</a></div>
+<div class="solutions">
+<details id="sect-rounding-8-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-rounding-8-4-2-1">
+<div class="para">If we estimate the ounces in a case, then</div>
+<div class="displaymath process-math" id="sect-rounding-8-4-2-1-1">
+\begin{equation*}
+24 \times 12 \approx 24 \times 10 = 240
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-8-4-2-2">And then to determine the number of cases, we would need to estimate <span class="process-math">\(1000 \div 240\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-4-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-8-4-2-3">And this is a little more that 4.  Would the school need to then purchase 5 cases?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-4-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-8-4-2-4">Clearly to be safe that would be wise, however, if the number of ounces in a case is more than 250, then the school would only need 4 cases.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-4-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-8-4-2-5">Notice that by rounding 12 down to 10, we have underestimated by an amount that is <span class="process-math">\(2 \times 24\)</span> or more than 10.  Thus we know that <span class="process-math">\(24 \times 12 \)</span> is greater than 250.  Therefore 4 cases is plenty.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-4-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.9.1"><a href="#sect-rounding-8-4-2" title="Copy heading and permalink for Solution 4.3.9.1" aria-label="Copy heading and permalink for Solution 4.3.9.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.3.9"><a href="#sect-rounding-8-4" title="Copy heading and permalink for Example 4.3.9" aria-label="Copy heading and permalink for Example 4.3.9">🔗</a></div>
 </article>
-<article class="example example-like" id="sect-rounding-7-5"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<div class="para" id="sect-rounding-8-5">The next problem helps with the long division algorithm in <a href="ch-algorithms.html" class="internal" title="Chapter 5: Algorithms">Chapter 5</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-rounding-8-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-rounding-7-5-1-1">Claire has $20 to buy groceries. If she buys products that cost $1.99, $1.25, $4.95, $8.15 and $0.95, does she have enough? What if she also has to pay 5%sales tax.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-rounding-8-6-1-1">Is <span class="process-math">\(7891 \div 13\)</span> closest to 610, 61 or 6.1?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 4.3.7"><a href="#sect-rounding-7-5" title="Copy heading and permalink for Example 4.3.7" aria-label="Copy heading and permalink for Example 4.3.7">🔗</a></div>
+<div class="solutions">
+<details id="sect-rounding-8-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-rounding-8-6-2-1">
+<div class="para">Since we are just looking for closest, we can do just an estimate.</div>
+<div class="displaymath process-math" id="sect-rounding-8-6-2-1-1">
+\begin{equation*}
+7891 \div 13 \approx 7000 \div 10 = 700
+\end{equation*}
+</div>
+<div class="para">and thus 610 is the best answer.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.10.1"><a href="#sect-rounding-8-6-2" title="Copy heading and permalink for Solution 4.3.10.1" aria-label="Copy heading and permalink for Solution 4.3.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.3.10"><a href="#sect-rounding-8-6" title="Copy heading and permalink for Example 4.3.10" aria-label="Copy heading and permalink for Example 4.3.10">🔗</a></div>
 </article>
-<div class="para" id="sect-rounding-7-6">
-<em class="alert"><em class="emphasis">Needs more discussion here.</em></em><div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-7-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="example example-like" id="sect-rounding-8-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">4.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-rounding-8-7-1-1">Claire has $20 to buy groceries. If she buys products that cost $1.99, $1.25, $4.95, $8.15 and $0.95, does she have enough? What if she also has to pay 5% sales tax.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 4.3.5: Teaching Estimates"><a href="#sect-rounding-7" title="Copy heading and permalink for Subsection 4.3.5: Teaching Estimates" aria-label="Copy heading and permalink for Subsection 4.3.5: Teaching Estimates">🔗</a></div>
+<div class="solutions">
+<details id="sect-rounding-8-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sect-rounding-8-7-2-1">Even though we haven’t covered decimals yet, you the student have and should have the ability to understand this problem.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rounding-8-7-2-2">
+<div class="para">Since we want to make sure she has enough, if we produce a high estimate, and it comes in below $20, she will have enough.</div>
+<div class="displaymath process-math" id="sect-rounding-8-7-2-2-1">
+\begin{equation*}
+1.99+ 1.25 + 4.95 + 8.15 + 0.95 \approx 2 + 2 + 5 + 9 + 1 = 19
+\end{equation*}
+</div>
+<div class="para">So it appears she will have enough.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rounding-8-7-2-3">To include the 5% sales tax, note that for $20, 5% is $1, so that would add another dollar to the total.  Again, since this is a high estimate, Claire will have enough money.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rounding-8-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 4.3.11.1"><a href="#sect-rounding-8-7-2" title="Copy heading and permalink for Solution 4.3.11.1" aria-label="Copy heading and permalink for Solution 4.3.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 4.3.11"><a href="#sect-rounding-8-7" title="Copy heading and permalink for Example 4.3.11" aria-label="Copy heading and permalink for Example 4.3.11">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 4.3.5: Teaching Estimates"><a href="#sect-rounding-8" title="Copy heading and permalink for Subsection 4.3.5: Teaching Estimates" aria-label="Copy heading and permalink for Subsection 4.3.5: Teaching Estimates">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 4.3: Estimation and Rounding"><a href="#sect-rounding" title="Copy heading and permalink for Section 4.3: Estimation and Rounding" aria-label="Copy heading and permalink for Section 4.3: Estimation and Rounding">🔗</a></div>
 </section>
 </div>
