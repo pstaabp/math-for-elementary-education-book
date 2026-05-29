@@ -1609,43 +1609,70 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Subtraction Algorithms",
-  "body": " Subtraction Algorithms   Since subtraction is finding the missing addend in a summation problem, it is not surprising that the subtraction algorithm is similar to the addition algorithm. Let's see an example with two 3-digit numbers.  Consider the subtraction algorithm . We can write this in expand form as or can be viewed in column format as  COLUMN SUBTRACTION for 478-253    Coin Model  Recall that a coin model for this problem is using the take-away interpretation. Practically, this means that put the minuend down in coins and cross out the subtrahend. This could look like:       And the chips that are left are 2 hundreds, 2 tens and 5 ones or 225.    Chip Model for Subtraction  We now apply the chip model for subtraction. We will put the minuend as coins in a table labeled with the chip value in each column. This will look like:       And then subtracting the subtrahend or 253 would be to cross out 2 hundreds chips, 5 tens chips and 3 ones chips. Because there is enough of each of those, this can be done as       The result from this is identical to the coin model or 2 hundreds, 3 tens and 5 ones or 235.    Subtraction with Unbundling  The next important step is to perform a subtraction problem with unbundling. We'll see it first in a chip model for . Let's first examine this in expand form: and the problem with this is that at grades for doing subtraction doesn't make sense. We can't take 8 away from 3. So the 50 needs to be written as and then write the 10 with the ones as:   What we have done is unbundled a ten to make 10 ones. We can unbundle any denomination more than ones to make 10 smaller denominators. For example, we can unbundle a 1000 as 10 hundreds.    Chip Model of Subtraction with Unbundling  We now turn to the chip model for the problem . Again, we will start with writing the chips for the minuend or       and our goal is to remove 2 tens and 8 ones, however, there are only 3 ones to remove in the ones column. We take one of the chips in the tens column and turn it into 10 ones chips like:       and notice that we have removed a ten (by crossing it out) and putting down ten chips in the ones column (red) and clearly show how the chip was unbundled.  The last step is to cross out the subtrahend or 2 tens and 8 ones.       and the diagram above shows that the result is 2 tens and 5 ones or 25.   Here's a few things that make a clear subtraction chip model with take-away interpretation and are recommended:     Only put the minuend on the chart with the chips.    Recall that you are only going to cross out the subtrahend. Don't put the subtrahend on the diagram\/chart.     Make sure that you have enough chips to cross out. If you don't have enough for a particular place value (1s, 10s, 100s, etc.), unbundle a chip from a higher place value, placing 10 chips in the slot you need them in.    Cross out the subtrahend from the diagram.    Count the result. Note the difference should be clear on the diagram from what is not crossed out.      The chip models in this section were designed to teach how to make the model. You can do all of the necessary steps on a single diagram, that is, the last diagram in the steps clearly shows the steps.  The next example shows a challenging subtraction problem using chip models.    Use a chip model to demonstrate using a chip model.    First, start with the minuend, on a chart:       and notice that we won't have enough hundreds or tens to cross out, so first unbundle 1 thousand into 10 hundreds and then 1 hundred into 10 tens:       At this point, there is enough chips to cross out (take-away) from the subtrahend. The last step is to do this. This crosses out 2 thousands chips, 8 hundreds chips, 5 tens chips and 2 ones chips or       And the difference (result) is the chips remaining. This shows 167.  The following is the column algorithm for   COLUMN ALGORITHM for 3019-2852    As discussed, there are many reasons for knowing the algorithms for addition and subtraction. The following example shows that we need to think a bit more abstractly to find the solution (and not let the addition and subtraction get in the way).    Produce a Teacher's Solution to the following word problem: One week, a candy company produced a total of 5327 pieces of candy (red, blue and yellow). If 2378 pieces are red and 1263 are blue, how many were yellow?     This is a two-step word problem that we can do as a single diagram as the following:       And first, we need to find and we'll use the column algorithm  COLUMN ALGORITHM for 1263+2378  For the next step subtract the result 3641 from 5327 and again we'll use the column algorithm:  COLUMN ALGORITHM for 5727-3641  There were 1686 pieces of yellow candy made in that week.    Note that we didn't use the chip model in the Teacher's solution. The chip model is helpful for understanding the column algorithms for subtraction and addition, but is not needed once learned well.    Base-5 Subtraction  We will first use a coin model to understand base-5 subtraction. This works exactly like decimal subtraction we just saw.  Let's try . Recall that do use the chip model we only put the subtrahend on the diagram at first. Then we will cross off the minuend.       Since we wish to cross on one 125s, three 25s, two 5s and 1 one, but there aren't enough 25s and 5s, so we unbundle one each of these, remember that each chip's value is 5 of the smaller chip.       Now for the last step, we cross out the subtrahend:       The result is 1 fiftoon, 1 quarter, 3 nickels and 3 pennies or .  We can also do this with the column algorithm:  Start with the subtrahend and minuend stacked:   We can subtract the rightmost column:   The 2nd rightmost column needs more so rebundle, except we can’t, so to the leftmost column: where means or 5 in decimal. We can now rebundle from the 2nd column to the 3rd:   and once again means or 1 five and 2 ones or 7 in decimal. Now we can subtract in each column: and the result is , just like we saw with the chip model.      First exercise.     "
+  "body": " Subtraction Algorithms     Understanding subtraction for larger numbers with place value.    Use a chip model to model subtraction problems with the take-away interpretation.    Develop an understanding of the column algorithm from the chip model.    Perform subtraction in bases other than 10 using the chip model and column algorithm.      Since subtraction is finding the missing addend in a summation problem, it is not surprising that the subtraction algorithm is similar to the addition algorithm. Let's see an example with two 3-digit numbers.  Consider the subtraction algorithm . We can write this in expand form as or can be viewed in column format as   where subtraction is done in each column. Also, note that the top number in each column (place value) is greater than the bottom number in that column, so we can subtract without any issues.    Coin Model  Recall that a coin model for this problem is using the take-away interpretation. Practically, this means that put the minuend down in coins and cross out the subtrahend. This could look like:      And the chips that are left are 3 hundreds, 2 tens and 5 ones or 325.    Chip Model for Subtraction  We now apply the chip model for subtraction. We will put the minuend as coins in a table labeled with the chip value in each column. This will look like:   A grid with a header row of 100s, 10s and 1s. In the 100s column there are 5 chips. In the 10s column there are 7 chips. In the 1s column there are 8 chips.    And then subtracting the subtrahend or 253 would be to cross out 2 hundreds chips, 5 tens chips and 3 ones chips. Because there is enough of each of those, this can be done as   A grid with a header row of 100s, 10s and 1s. In the 100s column there are 5 chips and 2 of them are crossed out. In the 10s column there are 7 chips and 5 of them are crossed out. In the 1s column there are 8 chips and 3 of them are crossed out.    The result from this is identical to the coin model or 3 hundreds, 2 tens and 5 ones or 325.    Subtraction with Unbundling  The next important step is to perform a subtraction problem with unbundling. We'll see it first in a chip model for . Let's first examine this in expand form: and the problem with this is that at grades for doing subtraction doesn't make sense. We can't take 8 away from 3. So the 50 needs to be written as and then write the 10 with the ones as:   What we have done is unbundled a ten to make 10 ones. We can unbundle any denomination more than ones to make 10 smaller denominators. For example, we can unbundle a 1000 as 10 hundreds.    Chip Model of Subtraction with Unbundling  We now turn to the chip model for the problem . Again, we will start with writing the chips for the minuend or   A grid with a header row of 10s and 1s. In the 10s column there are 5 chips. In the 1s column there are 3 chips.    and our goal is to remove 2 tens and 8 ones, however, there are only 3 ones to remove in the ones column. We take one of the chips in the tens column and turn it into 10 ones chips like:   A grid with a header row of 10s and 1s. In the 10s column there are 5 chips. In the 1s column there are 3 chips. One of the 10s chips is crossed out and an arrow points from it to the 1s column. There are 10 chips in a dashed box in the 1s column.    and notice that we have removed a ten (by crossing it out) and putting down ten chips in the ones column (red) and clearly show how the chip was unbundled.  The last step is to cross out the subtrahend or 2 tens and 8 ones.   A grid with a header row of 10s and 1s. In the 10s column there are 5 chips. In the 1s column there are 3 chips. One of the 10s chips is crossed out and an arrow points from it to the 1s column. There are 10 chips in a dashed box in the 1s column. There are two additional 10s chips crossed out and 8 ones chips crossed out. There are two 10s chips and 5 ones chips that are not crossed out.    and the diagram above shows that the result is 2 tens and 5 ones or 25.   Tips for creating good chip models for subtraction  Here's a few things that make a clear subtraction chip model with take-away interpretation and are recommended:     Only put the minuend on the chart with the chips.    Recall that you are only going to cross out the subtrahend. Don't put the subtrahend on the diagram\/chart.     Make sure that you have enough chips to cross out. If you don't have enough for a particular place value (1s, 10s, 100s, etc.), unbundle a chip from a higher place value, placing 10 chips in the slot you need them in.    Cross out the subtrahend from the diagram.    Count the result. Note the difference should be clear on the diagram from what is not crossed out.      The chip model for can now be used to show the subtraction algorithm in column format as and note that in the ones column the 3 is less that 8, so we need to unbundle a ten from the tens column and add it to the 3 in the ones column to get 13. This is shown as follows: And now there are 13 in the ones column and 4 in the tens column, so we can subtract 8 from 13 and 2 from 4 to get the answer of 25.   The chip models in this section were designed to teach how to make the model. You can do all of the necessary steps on a single diagram, that is, the last diagram in the steps clearly shows the steps.  The next example shows a challenging subtraction problem using chip models.    Use a chip model to demonstrate using a chip model.    First, start with the minuend, on a chart:   A grid with a header row of 1000s, 100s, 10s and 1s. In the 1000s column there are 3 chips. In the 100s column there are 0 chips. In the 10s column there are 1 chip. In the 1s column there are 9 chips.    and notice that we won't have enough hundreds or tens to cross out, so first unbundle 1 thousand into 10 hundreds and then 1 hundred into 10 tens:   A grid with a header row of 1000s, 100s, 10s and 1s. In the 1000s column there are 3 chips. In the 100s column there are 0 chips. In the 10s column there are 1 chip. In the 1s column there are 9 chips. One of the 100s chips is crossed out and an arrow points from it to the 10s column. There are 10 chips in a dashed box in the 10s column. One of the 1000s chips is crossed out and an arrow points from it to the 100s column. There are 10 chips in a dashed box in the 100s column.    At this point, there is enough chips to cross out (take-away) from the subtrahend. The last step is to do this. This crosses out 2 thousands chips, 8 hundreds chips, 5 tens chips and 2 ones chips or   A grid with a header row of 1000s, 100s, 10s and 1s. In the 1000s column there are 3 chips. In the 100s column there are 0 chips. In the 10s column there are 1 chip. In the 1s column there are 9 chips. One of the 100s chips is crossed out and an arrow points from it to the 10s column. There are 10 chips in a dashed box in the 10s column. One of the 1000s chips is crossed out and an arrow points from it to the 100s column. There are 10 chips in a dashed box in the 100s column. There are two additional 1000s chips crossed out, 8 hundreds chips crossed out, 5 tens chips crossed out and 2 ones chips crossed out. There are no 1000s chips, 1 100s chips, 6 10s chips and 6 ones chips that are not crossed out.    And the difference (result) is the chips remaining. This shows 167.  Let's now perform the column algorithm for . Start with the problem in column format: and now we subtract from right to left. The ones column has the larger number on top, so we can just subtract: Now for the tens column, since 1 is less than 5, we need to unbundle a hundred from the hundreds column. However, this is not possible, so instead, we need to unbundle a thousand from the thousands column and then unbundle a hundred from the hundreds column. This is shown as follows: Now we can unbundle one of the 100s and add to the tens column as follows: Now each of the columns have the top number larger than the bottom and we can subtract column by column.     Note that the column algorithm is identical to the chip model, but the column algorithm is more efficient than the chip model.    As discussed, there are many reasons for knowing the algorithms for addition and subtraction. The following example shows that we need to think a bit more abstractly to find the solution (and not let the addition and subtraction get in the way).    Produce a Teacher's Solution to the following word problem: One week, a candy company produced a total of 5327 pieces of candy (red, blue and yellow). If 2378 pieces are red and 1263 are blue, how many were yellow?     This is a two-step word problem that we can do as a single diagram as the following:      The first operation is and this would most like be given in a course in which the column algorithm is taught, so we will use the column algorithm to find this sum.   For the next step subtract the result 3641 from 5327 and again we'll use the column algorithm:   There were 1686 pieces of yellow candy made in that week.    Note that we didn't use the chip model in the Teacher's solution. The chip model is helpful for understanding the column algorithms for subtraction and addition, but is not needed once learned well.    Base-5 Subtraction  We continue now with base-5 arithmetic. Recall that the important takeaway from this section is a deeper understanding of subtraction and the subtraction algorithm, so we will use the chip model to understand subtraction in base-5.  We will first use a coin model to understand base-5 subtraction. This works exactly like decimal subtraction we just saw.  Let's try . Recall that do use the chip model we only put the subtrahend on the diagram at first and remember that the headers are powers of 5.   A grid with a header row of 125s, 25s, 5s and 1s. In the 125s column there are 3 chips. In the 25s column there are 0 chips. In the 5s column there are 2 chips. In the 1s column there are 4 chips.    Since we wish to cross on one 125s, three 25s, two 5s and 1 one, but there aren't enough 25s and 5s, so we unbundle one each of these, remember that each chip's value is 5 of the smaller chip.   A grid with a header row of 125s, 25s, 5s and 1s. In the 125s column there are 3 chips. In the 25s column there are 0 chips. In the 5s column there are 2 chips. In the 1s column there are 4 chips. One of the chips in the 125s column is crossed out and an arrow points from it to the 25s column which unbundles it into 5 chips in the 25s column. One of the chips in the 25s column is crossed out and an arrow points from it to the 5s column which unbundles it into 5 chips in the 5s column.    Now for the last step, we cross out the subtrahend:   A grid with a header row of 125s, 25s, 5s and 1s. In the 125s column there are 3 chips. In the 25s column there are 0 chips. In the 5s column there are 2 chips. In the 1s column there are 4 chips. One of the chips in the 125s column is crossed out and an arrow points from it to the 25s column which unbundles it into 5 chips in the 25s column. One of the chips in the 25s column is crossed out and an arrow points from it to the 5s column which unbundles it into 5 chips in the 5s column. One additional chip in the 125s column is crossed out, three chips in the 25s column are crossed out, two chips in the 5s column are crossed out and one chip in the 1s column is crossed out. There is one 125s chip, one 25s chips, three 5s chips and three 1s chips that are not crossed out.    The result is 1 fiftoon, 1 quarter, 3 nickels and 3 pennies or .  We can also do this with the column algorithm:  Start with the subtrahend and minuend stacked:   We can subtract the rightmost column:   The 2nd rightmost column needs more so rebundle, except we can’t, so to the leftmost column: where means or 5 in decimal. We can now rebundle from the 2nd column to the 3rd:   and once again means or 1 five and 2 ones or 7 in decimal. Now we can subtract in each column: and the result is , just like we saw with the chip model.      For each of the following, produce a chip model as above. Make sure that the diagram corresponds to the Also show the column algorithm for the problem.                                  For each of the following, produce a Teacher's Solution. All operations should be done with the column algorithm.     Collette collects stamps. She has 532 stamps in her collection. If 237 of them are from the United States and 126 are from Canada, how many stamps does she have from other countries?      The Sugar Me Up candy company produced 5327 pieces of candy (red, blue and yellow) in one week. If 2378 pieces are red and 1263 are blue, how many were yellow?       For each of the following perform the base-5 (or base-8) subtraction with the chip model and the column algorithm.                          "
 },
 {
-  "id": "sect-subtraction-algorithm-6-10",
+  "id": "sect-subtraction-algorithm-2",
   "level": "2",
-  "url": "sect-subtraction-algorithm.html#sect-subtraction-algorithm-6-10",
+  "url": "sect-subtraction-algorithm.html#sect-subtraction-algorithm-2",
+  "type": "Objectives",
+  "number": "5.2",
+  "title": "",
+  "body": "   Understanding subtraction for larger numbers with place value.    Use a chip model to model subtraction problems with the take-away interpretation.    Develop an understanding of the column algorithm from the chip model.    Perform subtraction in bases other than 10 using the chip model and column algorithm.    "
+},
+{
+  "id": "remark-good-subtraction-chip-model",
+  "level": "2",
+  "url": "sect-subtraction-algorithm.html#remark-good-subtraction-chip-model",
   "type": "Remark",
   "number": "5.2.1",
-  "title": "",
-  "body": " Here's a few things that make a clear subtraction chip model with take-away interpretation and are recommended:     Only put the minuend on the chart with the chips.    Recall that you are only going to cross out the subtrahend. Don't put the subtrahend on the diagram\/chart.     Make sure that you have enough chips to cross out. If you don't have enough for a particular place value (1s, 10s, 100s, etc.), unbundle a chip from a higher place value, placing 10 chips in the slot you need them in.    Cross out the subtrahend from the diagram.    Count the result. Note the difference should be clear on the diagram from what is not crossed out.     "
+  "title": "Tips for creating good chip models for subtraction.",
+  "body": " Tips for creating good chip models for subtraction  Here's a few things that make a clear subtraction chip model with take-away interpretation and are recommended:     Only put the minuend on the chart with the chips.    Recall that you are only going to cross out the subtrahend. Don't put the subtrahend on the diagram\/chart.     Make sure that you have enough chips to cross out. If you don't have enough for a particular place value (1s, 10s, 100s, etc.), unbundle a chip from a higher place value, placing 10 chips in the slot you need them in.    Cross out the subtrahend from the diagram.    Count the result. Note the difference should be clear on the diagram from what is not crossed out.     "
 },
 {
-  "id": "sect-subtraction-algorithm-6-13",
+  "id": "sect-subtraction-algorithm-7-14",
   "level": "2",
-  "url": "sect-subtraction-algorithm.html#sect-subtraction-algorithm-6-13",
+  "url": "sect-subtraction-algorithm.html#sect-subtraction-algorithm-7-14",
   "type": "Example",
   "number": "5.2.2",
   "title": "",
-  "body": "  Use a chip model to demonstrate using a chip model.    First, start with the minuend, on a chart:       and notice that we won't have enough hundreds or tens to cross out, so first unbundle 1 thousand into 10 hundreds and then 1 hundred into 10 tens:       At this point, there is enough chips to cross out (take-away) from the subtrahend. The last step is to do this. This crosses out 2 thousands chips, 8 hundreds chips, 5 tens chips and 2 ones chips or       And the difference (result) is the chips remaining. This shows 167.  The following is the column algorithm for   COLUMN ALGORITHM for 3019-2852   "
+  "body": "  Use a chip model to demonstrate using a chip model.    First, start with the minuend, on a chart:   A grid with a header row of 1000s, 100s, 10s and 1s. In the 1000s column there are 3 chips. In the 100s column there are 0 chips. In the 10s column there are 1 chip. In the 1s column there are 9 chips.    and notice that we won't have enough hundreds or tens to cross out, so first unbundle 1 thousand into 10 hundreds and then 1 hundred into 10 tens:   A grid with a header row of 1000s, 100s, 10s and 1s. In the 1000s column there are 3 chips. In the 100s column there are 0 chips. In the 10s column there are 1 chip. In the 1s column there are 9 chips. One of the 100s chips is crossed out and an arrow points from it to the 10s column. There are 10 chips in a dashed box in the 10s column. One of the 1000s chips is crossed out and an arrow points from it to the 100s column. There are 10 chips in a dashed box in the 100s column.    At this point, there is enough chips to cross out (take-away) from the subtrahend. The last step is to do this. This crosses out 2 thousands chips, 8 hundreds chips, 5 tens chips and 2 ones chips or   A grid with a header row of 1000s, 100s, 10s and 1s. In the 1000s column there are 3 chips. In the 100s column there are 0 chips. In the 10s column there are 1 chip. In the 1s column there are 9 chips. One of the 100s chips is crossed out and an arrow points from it to the 10s column. There are 10 chips in a dashed box in the 10s column. One of the 1000s chips is crossed out and an arrow points from it to the 100s column. There are 10 chips in a dashed box in the 100s column. There are two additional 1000s chips crossed out, 8 hundreds chips crossed out, 5 tens chips crossed out and 2 ones chips crossed out. There are no 1000s chips, 1 100s chips, 6 10s chips and 6 ones chips that are not crossed out.    And the difference (result) is the chips remaining. This shows 167.  Let's now perform the column algorithm for . Start with the problem in column format: and now we subtract from right to left. The ones column has the larger number on top, so we can just subtract: Now for the tens column, since 1 is less than 5, we need to unbundle a hundred from the hundreds column. However, this is not possible, so instead, we need to unbundle a thousand from the thousands column and then unbundle a hundred from the hundreds column. This is shown as follows: Now we can unbundle one of the 100s and add to the tens column as follows: Now each of the columns have the top number larger than the bottom and we can subtract column by column.     Note that the column algorithm is identical to the chip model, but the column algorithm is more efficient than the chip model.   "
 },
 {
-  "id": "sect-subtraction-algorithm-6-15",
+  "id": "sect-subtraction-algorithm-7-16",
   "level": "2",
-  "url": "sect-subtraction-algorithm.html#sect-subtraction-algorithm-6-15",
+  "url": "sect-subtraction-algorithm.html#sect-subtraction-algorithm-7-16",
   "type": "Example",
   "number": "5.2.3",
   "title": "",
-  "body": "  Produce a Teacher's Solution to the following word problem: One week, a candy company produced a total of 5327 pieces of candy (red, blue and yellow). If 2378 pieces are red and 1263 are blue, how many were yellow?     This is a two-step word problem that we can do as a single diagram as the following:       And first, we need to find and we'll use the column algorithm  COLUMN ALGORITHM for 1263+2378  For the next step subtract the result 3641 from 5327 and again we'll use the column algorithm:  COLUMN ALGORITHM for 5727-3641  There were 1686 pieces of yellow candy made in that week.   "
+  "body": "  Produce a Teacher's Solution to the following word problem: One week, a candy company produced a total of 5327 pieces of candy (red, blue and yellow). If 2378 pieces are red and 1263 are blue, how many were yellow?     This is a two-step word problem that we can do as a single diagram as the following:      The first operation is and this would most like be given in a course in which the column algorithm is taught, so we will use the column algorithm to find this sum.   For the next step subtract the result 3641 from 5327 and again we'll use the column algorithm:   There were 1686 pieces of yellow candy made in that week.   "
 },
 {
-  "id": "basics-s-sample-exercises-1",
+  "id": "exercises-subtraction-algorithm-1",
   "level": "2",
-  "url": "sect-subtraction-algorithm.html#basics-s-sample-exercises-1",
+  "url": "sect-subtraction-algorithm.html#exercises-subtraction-algorithm-1",
   "type": "Exercise",
   "number": "5.2.6.1",
   "title": "",
-  "body": "  First exercise.   "
+  "body": "  For each of the following, produce a chip model as above. Make sure that the diagram corresponds to the Also show the column algorithm for the problem.                               "
+},
+{
+  "id": "exercises-subtraction-algorithm-2",
+  "level": "2",
+  "url": "sect-subtraction-algorithm.html#exercises-subtraction-algorithm-2",
+  "type": "Exercise",
+  "number": "5.2.6.2",
+  "title": "",
+  "body": "  For each of the following, produce a Teacher's Solution. All operations should be done with the column algorithm.     Collette collects stamps. She has 532 stamps in her collection. If 237 of them are from the United States and 126 are from Canada, how many stamps does she have from other countries?      The Sugar Me Up candy company produced 5327 pieces of candy (red, blue and yellow) in one week. If 2378 pieces are red and 1263 are blue, how many were yellow?    "
+},
+{
+  "id": "exercises-subtraction-algorithm-3",
+  "level": "2",
+  "url": "sect-subtraction-algorithm.html#exercises-subtraction-algorithm-3",
+  "type": "Exercise",
+  "number": "5.2.6.3",
+  "title": "",
+  "body": "  For each of the following perform the base-5 (or base-8) subtraction with the chip model and the column algorithm.                        "
 },
 {
   "id": "sect-multiplication-algorithm",
@@ -2773,13 +2800,67 @@ var ptx_lunr_docs = [
   "body": "  Develop a Teacher's Solution of the following problem. A roomful of people watched a chess match between Angela and Bryce. 4\/11 of the spectators favored Angela and the rest favored Bryce. If 12 more people favored Bryce over Angela, how many spectators were in the room?          Note that there are a total of 11 squares and there are 4 assigned to Angela. This represents . The remainder or are assigned to Bryce.  We now use the unitary method to solve this:   There are 44 spectators in the room.   "
 },
 {
-  "id": "ch-decimals",
+  "id": "ch-fractions-7",
   "level": "1",
-  "url": "ch-decimals.html",
+  "url": "ch-fractions-7.html",
+  "type": "Section",
+  "number": "7.5",
+  "title": "An Axiomatic View of Understanding Fractions",
+  "body": " An Axiomatic View of Understanding Fractions   This section takes a deeper dive into fractions. In the previous section, we covered the properties of fractions and here we provide algebraic proofs.  We summarize the known arithmetic facts about fractions:           .  Finding common denominators                  Finding common denominators this is the invert and multiply rule:        Product of Reciprocals    Existence of a reciprocal Any nonzero fraction has a reciprocal whose product       A fractional unit is a the multiplicative inverse of a nonzero whole number.    The fractional units are .    A fraction is a whole number times a fractional unit.      Product of Fractions The product of the fraction units is the fraction unit .           Proofs of the 5 Properties  Here we prove the 5 properties above by using only a) the definition of a fraction b) the arithmetic properties from and c) the above lemma.         Proof for :        This is true if and only if whose proof is           and this is true if and only if and the proof of this is: therefore (5) is satisfied.     Proof of the common denominator form of the addition of fractions:        "
+},
+{
+  "id": "ch-fractions-7-3-2",
+  "level": "2",
+  "url": "ch-fractions-7.html#ch-fractions-7-3-2",
+  "type": "Lemma",
+  "number": "7.5.1",
+  "title": "",
+  "body": "  Existence of a reciprocal Any nonzero fraction has a reciprocal whose product    "
+},
+{
+  "id": "ch-fractions-7-3-3",
+  "level": "2",
+  "url": "ch-fractions-7.html#ch-fractions-7-3-3",
+  "type": "Definition",
+  "number": "7.5.2",
+  "title": "",
+  "body": "  A fractional unit is a the multiplicative inverse of a nonzero whole number.   "
+},
+{
+  "id": "ch-fractions-7-3-5",
+  "level": "2",
+  "url": "ch-fractions-7.html#ch-fractions-7-3-5",
+  "type": "Definition",
+  "number": "7.5.3",
+  "title": "",
+  "body": "  A fraction is a whole number times a fractional unit.   "
+},
+{
+  "id": "ch-fractions-7-3-6",
+  "level": "2",
+  "url": "ch-fractions-7.html#ch-fractions-7-3-6",
+  "type": "Lemma",
+  "number": "7.5.4",
+  "title": "",
+  "body": "  Product of Fractions The product of the fraction units is the fraction unit .        "
+},
+{
+  "id": "ch-fractions-7-4-3",
+  "level": "2",
+  "url": "ch-fractions-7.html#ch-fractions-7-4-3",
+  "type": "Proof",
+  "number": "7.5.2.1",
+  "title": "",
+  "body": "       Proof for :        This is true if and only if whose proof is           and this is true if and only if and the proof of this is: therefore (5) is satisfied.     Proof of the common denominator form of the addition of fractions:      "
+},
+{
+  "id": "ch-ratio-percents",
+  "level": "1",
+  "url": "ch-ratio-percents.html",
   "type": "Chapter",
   "number": "8",
-  "title": "Decimals",
-  "body": " Decimals  Put an introduction here.  "
+  "title": "Ratios, Percents and Rates",
+  "body": " Ratios, Percents and Rates  "
 },
 {
   "id": "ch-integers",
@@ -2789,6 +2870,213 @@ var ptx_lunr_docs = [
   "number": "9",
   "title": "Integers",
   "body": " Integers  Put an introduction here.  "
+},
+{
+  "id": "sect-decimals",
+  "level": "1",
+  "url": "sect-decimals.html",
+  "type": "Section",
+  "number": "10.1",
+  "title": "Decimals",
+  "body": " Decimals    Decimals are numbers written as sums of fractions with powers of ten in the denominator,  (picture of 7.132 on the number line)    Introduction of Decimals     Decimals are introduced in grade 4 as a shorthand way to write some fractions.     Introduce decimals with measurement models (metric system), set model using chips and money with a penny as $0.01 and a dime as $0.1.    Rectangular grid models       Operations with Decimals  If we understand place value with whole numbers, then additions\/subtractions work the same way, that is add\/subtract ones, tenths, hundredths, etc. bundling or unbundling as necessary.    Find using a chip model      Find using a chip model      Find using a chip model      Multiplying and Dividing by 10  One of the nice features of the decimal number system is that multiplying or dividing by 10 (or multiples of 10) is quite easy   The same is true for decimals.      Multiplying a decimal number by 10 means shifting the decimal 1 place to the right.    Dividing a decimal number by 10 means shifting the decimal 1 place to the left.       Find by writing as a fraction.           Multi-digit Decimal Multiplication and Division  Although chip models are helpful, they may not be needed for students with a firm grasp of rebundling. An alternative is use fractions to do multiplication and division.    Find using fractions         Multiplication of Decimals Multiplication of decimal numbers can be performed by   Ignore the decimal points and multiply the factors as they are integers.    Insert a decimal point in the product so that the total number of decimal places are equal on both sides.     Alternative ways to find the decimal point     Estimation: , so should have the decimal point to the right of the 16.    Shifting Decimal points: If we seeking out , then we can shift the decimal point in right 3 spaces and 1010 left three spaces or   This works if we write the decimal as a fraction:   And in the case of division, and this works because        Find by estimating then finding the exact value.    1462430      Dividing Decimals  To divide one decimal number by a second decimal number   Shift the decimal point of the divisor to make it a whole number and then shift the decimal point of the dividend the same number of places.    Find the quotient by long division, aligning the decimal points of the quotient and the dividend.       "
+},
+{
+  "id": "sect-decimals-4-3",
+  "level": "2",
+  "url": "sect-decimals.html#sect-decimals-4-3",
+  "type": "Example",
+  "number": "10.1.1",
+  "title": "",
+  "body": "  Find using a chip model   "
+},
+{
+  "id": "sect-decimals-4-4",
+  "level": "2",
+  "url": "sect-decimals.html#sect-decimals-4-4",
+  "type": "Example",
+  "number": "10.1.2",
+  "title": "",
+  "body": "  Find using a chip model   "
+},
+{
+  "id": "sect-decimals-4-5",
+  "level": "2",
+  "url": "sect-decimals.html#sect-decimals-4-5",
+  "type": "Example",
+  "number": "10.1.3",
+  "title": "",
+  "body": "  Find using a chip model   "
+},
+{
+  "id": "sect-decimals-5-5",
+  "level": "2",
+  "url": "sect-decimals.html#sect-decimals-5-5",
+  "type": "Example",
+  "number": "10.1.4",
+  "title": "",
+  "body": "  Find by writing as a fraction.        "
+},
+{
+  "id": "sect-decimals-6-3",
+  "level": "2",
+  "url": "sect-decimals.html#sect-decimals-6-3",
+  "type": "Example",
+  "number": "10.1.5",
+  "title": "",
+  "body": "  Find using fractions        "
+},
+{
+  "id": "sect-decimals-6-7",
+  "level": "2",
+  "url": "sect-decimals.html#sect-decimals-6-7",
+  "type": "Example",
+  "number": "10.1.6",
+  "title": "",
+  "body": "  Find by estimating then finding the exact value.    1462430    "
+},
+{
+  "id": "ch-decimals-4",
+  "level": "1",
+  "url": "ch-decimals-4.html",
+  "type": "Section",
+  "number": "10.2",
+  "title": "Decimals and Rational Numbers",
+  "body": " Decimals and Rational Numbers   There are many decimals that we should know each rational representation in simplest form. For example   If we don't know a given decimal to fraction conversion, we can convert by writing it as we did last section and then reduce a fraction as in Ch. 6:    Convert to a rational number and simplify     and since (13 is prime), then this is in simplest form.      Fractions with denominators  From the examples we've seen, it's fairly clear that in the most straightforward way, the denominator of a decimal is a power of 10 or more generally . Since   This means that any finite decimal has a denominator that is a product of 2's and 5's. All of the above examples fit this. For example has denominator .    Converting a fraction to a decimal using long division  We saw in Chapter 6 the connection between fractions and division. We can use this connection to convert a fraction to a decimal using long division.    Find the decimal representation of using long division     and since the remainder is 0, this shows that     This an all of the other examples of fractions that we have seen so far is called a finite decimal.    A decimal number with only a finite number of digits is called a finite decimal .      Rational-Decimal Fact 1  A rational number in simplest form can be written as a finite decimal if and only if the denominator is a product of 2's and 5's.    If a number is a finite decimal, then we saw that it can be written as which shows the denominator is a product of 2's and 5's.   If a fraction has the form then there are three cases. if , then this can be written: which is a finite decimal found by moving the decimal point on  places to the left and if , then we can write this as which is the finite decimal found by moving the decimal point on  places to the left and finally if , then can be written which is the finite decimal found by moving the decimal point on  places to the left.     Write as a fraction in simplest form.           Write the number as a decimal.          "
+},
+{
+  "id": "ch-decimals-4-2-3",
+  "level": "2",
+  "url": "ch-decimals-4.html#ch-decimals-4-2-3",
+  "type": "Example",
+  "number": "10.2.1",
+  "title": "",
+  "body": "  Convert to a rational number and simplify     and since (13 is prime), then this is in simplest form.   "
+},
+{
+  "id": "ch-decimals-4-4-3",
+  "level": "2",
+  "url": "ch-decimals-4.html#ch-decimals-4-4-3",
+  "type": "Example",
+  "number": "10.2.2",
+  "title": "",
+  "body": "  Find the decimal representation of using long division     and since the remainder is 0, this shows that    "
+},
+{
+  "id": "ch-decimals-4-4-5",
+  "level": "2",
+  "url": "ch-decimals-4.html#ch-decimals-4-4-5",
+  "type": "Definition",
+  "number": "10.2.3",
+  "title": "",
+  "body": "  A decimal number with only a finite number of digits is called a finite decimal .   "
+},
+{
+  "id": "ch-decimals-4-5-3",
+  "level": "2",
+  "url": "ch-decimals-4.html#ch-decimals-4-5-3",
+  "type": "Proof",
+  "number": "10.2.3.1",
+  "title": "",
+  "body": "  If a number is a finite decimal, then we saw that it can be written as which shows the denominator is a product of 2's and 5's.   If a fraction has the form then there are three cases. if , then this can be written: which is a finite decimal found by moving the decimal point on  places to the left and if , then we can write this as which is the finite decimal found by moving the decimal point on  places to the left and finally if , then can be written which is the finite decimal found by moving the decimal point on  places to the left.  "
+},
+{
+  "id": "ch-decimals-4-5-4",
+  "level": "2",
+  "url": "ch-decimals-4.html#ch-decimals-4-5-4",
+  "type": "Example",
+  "number": "10.2.4",
+  "title": "",
+  "body": "  Write as a fraction in simplest form.        "
+},
+{
+  "id": "ch-decimals-4-5-5",
+  "level": "2",
+  "url": "ch-decimals-4.html#ch-decimals-4-5-5",
+  "type": "Example",
+  "number": "10.2.5",
+  "title": "",
+  "body": "  Write the number as a decimal.        "
+},
+{
+  "id": "ch-decimals-5",
+  "level": "1",
+  "url": "ch-decimals-5.html",
+  "type": "Section",
+  "number": "10.3",
+  "title": "Non-finite Decimals",
+  "body": " Non-finite Decimals     Write as a decimal.     311   And notice that the 3 and 6 repeat. This is an example of a repeating decimal. We generally write this as       Write as a decimal.     523900   and we can write this as       The number of digits in the shortest sequence of repeating digits in a repeating decimal is the period .      Write as a decimal and find its period.    We'll use long division until we get a repeat.   17       Rational-Decimal Fact 2    Every rational number can be written as a finite or repeating decimal.    Let be a rational number and without loss of generality, assume that . In any step of long division, the quotient-remainder theorem states that the remainder, on the step has satisfies . If , then the result is a finite decimal and from Rational-Decimal Fact 1, this only occurs if is a product of powers of 2's and 5's. In all other cases, could be one of . Thus there are only choices before the remainder, repeats, therefore the result is a repeating decimal.      The decimal expansion of is a repeating decimal with period 16.      Rational-Decimal Fact 3  Every repeating decimal is a rational number.  We won't prove this, but will show the algorithm in the two examples below. The proof involves showing that the algorithm works in general.    Converting Repeating Decimals to rational numbers    Convert to a rational number.   Let and we will find (because the period is 2) and subtract    So which can be reduced to .      Convert 0.34555555 to a rational number.    We let and notice that the period is 1, so let's find . which would result in , which is not a rational number. However, if we multiply the top and bottom by 100, we get which is.  Alternatively, we can write so that the shifts the repeating part to just right of the decimal point and the other is 10 times this.   So the solution is , which is in simplest form. (Why?)     "
+},
+{
+  "id": "ch-decimals-5-2-1",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-2-1",
+  "type": "Example",
+  "number": "10.3.1",
+  "title": "",
+  "body": "  Write as a decimal.     311   And notice that the 3 and 6 repeat. This is an example of a repeating decimal. We generally write this as    "
+},
+{
+  "id": "ch-decimals-5-2-2",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-2-2",
+  "type": "Example",
+  "number": "10.3.2",
+  "title": "",
+  "body": "  Write as a decimal.     523900   and we can write this as    "
+},
+{
+  "id": "ch-decimals-5-2-3",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-2-3",
+  "type": "Definition",
+  "number": "10.3.3",
+  "title": "",
+  "body": "  The number of digits in the shortest sequence of repeating digits in a repeating decimal is the period .   "
+},
+{
+  "id": "ch-decimals-5-2-4",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-2-4",
+  "type": "Example",
+  "number": "10.3.4",
+  "title": "",
+  "body": "  Write as a decimal and find its period.    We'll use long division until we get a repeat.   17    "
+},
+{
+  "id": "ch-decimals-5-3-2",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-3-2",
+  "type": "Theorem",
+  "number": "10.3.5",
+  "title": "",
+  "body": "  Every rational number can be written as a finite or repeating decimal.    Let be a rational number and without loss of generality, assume that . In any step of long division, the quotient-remainder theorem states that the remainder, on the step has satisfies . If , then the result is a finite decimal and from Rational-Decimal Fact 1, this only occurs if is a product of powers of 2's and 5's. In all other cases, could be one of . Thus there are only choices before the remainder, repeats, therefore the result is a repeating decimal.   "
+},
+{
+  "id": "ch-decimals-5-3-3",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-3-3",
+  "type": "Example",
+  "number": "10.3.6",
+  "title": "",
+  "body": "  The decimal expansion of is a repeating decimal with period 16.   "
+},
+{
+  "id": "ch-decimals-5-5-2",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-5-2",
+  "type": "Example",
+  "number": "10.3.7",
+  "title": "",
+  "body": "  Convert to a rational number.   Let and we will find (because the period is 2) and subtract    So which can be reduced to .   "
+},
+{
+  "id": "ch-decimals-5-5-3",
+  "level": "2",
+  "url": "ch-decimals-5.html#ch-decimals-5-5-3",
+  "type": "Example",
+  "number": "10.3.8",
+  "title": "",
+  "body": "  Convert 0.34555555 to a rational number.    We let and notice that the period is 1, so let's find . which would result in , which is not a rational number. However, if we multiply the top and bottom by 100, we get which is.  Alternatively, we can write so that the shifts the repeating part to just right of the decimal point and the other is 10 times this.   So the solution is , which is in simplest form. (Why?)   "
 },
 {
   "id": "backmatter-2",
