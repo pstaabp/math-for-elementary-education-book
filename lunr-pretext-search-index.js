@@ -2284,7 +2284,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.3",
   "title": "Primes and the Fundamental Theorem of Arithmetic",
-  "body": " Primes and the Fundamental Theorem of Arithmetic     Understand the definition of a prime number.    Understand how the Sieve of Eratosthenes produces prime numbers.    Find the prime factorization of a number using factor trees.    Know how to test numbers for primality.      We can write often whole numbers as products of other whole numbers. For example and we can further write , therefore   The number 2, 3 and 5 can no longer be written as multiples of other numbers and thus called prime numbers.     A prime number is a whole number whose only factors are 1 and . Whole numbers that are not prime are called composite .      The Sieve of Eratosthenes  There are a variety of ways to find prime numbers. One such way is called the sieve of Eratosthenes, a Greek scholar c. 275 – 195 B.C.E. The sieve can be used for finding prime numbers up to any number and the following shows how to find them up to 60. First start with a grid of numbers where the lowest number 2 is written:   Sieve of Eratosthenes                 2  3  4  5  6  7  8  9  10  11  12    13  14  15  16  17  18  19  20  21  22  23  24    25  26  27  28  29  30  31  32  33  34  35  36    37  38  39  40  41  42  43  44  45  46  47  48    49  50  51  52  53  54  55  56  57  58  59  60     Each step has two parts:     Circle the smallest number not crossed out.    Cross out all multiples of that number.     In this first step, nothing is crossed out, so we circle the number 2 and then cross out multiples of 2.                                                                                      For the next step, circle the 3 and cross out all multiples of 3.                                                                                      and notice that some of those crossed out were already crossed out. (What property did the number crossed out twice have?).  The next step will circle the 5 and cross out multiple of 5 (shown in blue):                                                                                      This continues until all numbers are either circled or crossed out, however it is an interesting question to determine when you can stop the process, knowing that the uncrossed ones should all be circled.  The result shows:                                                                                      The circled numbers are prime and the crossed out ones are composite. This shows that the following numbers less than 60 are prime: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59.   Sieve of Eratosthenes  To find a list of prime below a number, using the sieve of Eratosthenes,   Write a grid of numbers starting at 2 and up to . It is nice to use rows of 12 as shown above, and rows of 15 or 18 are nice too, but neither is a requirement.    Circle the lowest uncrossed out number.    Cross out all multiples of that number.    Repeat steps 2 and 3 until all numbers are circled or crossed out.   The circled numbers are prime.    Fundamental Theorem of Arithmetic   Every whole number , can be written as a product of primes and this can only be done one way (except for reordering).    Knowing how to write whole numbers in term of its prime factors is an important step in understanding the structure of whole numbers and operations on them. We show an efficient way to do this in the next section.    Prime Factorization and Factor Trees  In light of the Fundamental Theorem of Arithmetic, because every whole number can be written as a unique, product of primes, it is quite helpful to find this factorization. In general to do this, we will build a factor tree . This is best understood with an example.  If we look for the prime factorization of 60, then we start with 60 and show the two branches.   The number 60 with lines from it to below left and below right.    At the ends of the lines, you find a pair of factors of 60. There are many it doesn't matter what you start with. Let's try 6 and 10 to get   The number 60 with lines from it to below left connected to a 6 and below right connection to a 10.    At this point, write a pair of factors of 6 and a pair for ten as follows:   The number 60 with lines from it to below left connected to a 6 and below right connection to a 10. From the 6 there are lines below it to a 2 and a 3. From the 10 there are lines below it to a 5 and 2.    And note that at this point, all of the ends of the tree You may be why this is called a tree. It doesn't look like a tree (but perhaps it does if it is flipped upside down). The term tree comes from a branch of mathematics called Graph Theory . A tree is a graph (which has nodes and edges) with no internal connections or cycles. That is every node (where the numbers are in our factor trees) branches to two or more. are prime and you write down the factorization as the product of the ends of the tree or where either form is fine and in general the prime factors are written from smallest to largest. The form is called the exponential form because repeated factors are written as exponents.  You may be asking what if I chose a different factor of 60? A mathematical answer is that because of the Fundamental Theorem of Arithmetic, every whole number has a unique factor, so you would get the same answer. If you are not convinced, let's take a look at the next example.    Find an alternative factor tree of 60 and find the resulting factorization.    Let's start with factoring 60 as    The number 60 with lines from it to below left connected to a 2 and below right connection to a 30.    and then factor 30 as or   The number 60 with lines from it to below left connected to a 2 and below right connection to a 30. Below the 30 are lines to a 2 and to a 15. Below the 15 are lines to a 3 and a 5.    The result is the product of the ends of the branches which is the same as above or .    The result of this example shows that it doesn't matter how you perform the factorization. The resulting tree will be different but the factors and thus the factorization will be the same.    Find the prime factorization of , and .    We will use factor trees to do this efficiently:     First, note that , So we write:   The number 56 with lines from it to below left connected to a 8 and below right connection to a 7.    and then note that so we can write the diagram as:   The number 56 with lines from it to below left connected to a 8 and below right connection to a 7. Below the 8 are three lines connected each to a 2.    And now all of the ends of the branches are prime and this shows that and recall that repeated multiplication can be written in exponential form, so this can be written more compactly as     For , we'll start with a tree and recognize using the divisibility rules that 8 is a factor of 288.   The number 288 with lines from it to below left connected to a 8 and below right connection to a 36.    and then factor 8 and 36 as well:   The number 288 with lines from it to below left connected to a 8 and below right connection to a 36. Connected to the 8 are three lines below it each connected to a 2. Connected to the 36 are two lines each connected to a 6.    and finally factor the 6.   The number 288 with lines from it to below left connected to a 8 and below right connection to a 36. Connected to the 8 are three lines below it each connected to a 2. Connected to the 36 are two lines each connected to a 6. Connected to each 6 are a line to a 2 and a line to a 3.    And all of the ends are prime now and this shows that     To find the prime factors of , we will take a less visual approach, but in the same spirit. First, recognize that 25 is a factor and you can use long division to find the other factor therefore   Next, we seek a factor of 561 and using divisibility rules, 11 is a factor and we can write . Lastly, note that 51 is divisible by 3 and . Putting all of this together, we get:        As we stated above, the initial factoring doesn't matter in the result, however if you pick a small factor for each stage, then it may take more steps. For example, on the factoring of 288 shown in the previous example, we could have done resulting in 6 steps instead of the 3 it took in the previous example.    Primality Test  From the last section, we saw using the Sieve of Eratosthenes that we can find the first handful of prime numbers. This is great for finding the first few primes, but what if we want to determine if 1151 is prime? We still need to determine if the only factors are 1 and itself, but we can use the following theorem:   Primality Test   A whole number is prime unless it has a prime factor . Thus to test whether is prime one need only check divisibility by the primes that satisfy .    This theorem can be turned into an algorithm to determine if a number is prime.   Algorithm to Test a Number for Primality  This basically gives use a recipe (called an algorithm) for determining if a number is prime:     Check if 2 is a factor (use the divisibility test).    Check if 3 is a factor (use the divisibility test).    Check if 5 is a factor (use the divisibility test).    Check if 7 is a factor (use the divisibility test if you learned it, the divisibility lemma or long division).    Check if 11 is a factor (use the divisibility test).    Continue for     If any of the primes are a factor, stop, the number is not prime.    If you reach , then stop, the number is prime.      Let's see how this works with an example.    Is 203 prime?    First of all the square root of 203 is between 13 and 15 (since and ), so we need to check if 203 is divisible by 2,3,5,7,11, and 13.     203 isn't divisible by 2 (ends in a 3)    203 is not divisible by 3 (sum of digits is 5)    203 is not divisible by 5 (doesn't end in 0 or 5)    203 is divisible by 7. Double 3 and subtract it from 20 to get , which is a multiple of 7, so 203 is divisible by 7. You can use the divisibility lemma or long division to find the other factor, which is 29, so .     At this point we stop because we found a pair of factors. This shows that , so this isn't prime.    Here's another example    Is 293 prime?     First, let's determine which primes we need to check. Since and , we can check up through 17.     293 isn't divisible by 2 (ends in a 3)    293 is not divisible by 3 (sum of digits is 14, not a multiple of 3)    293 is not divisible by 5 (doesn't end in 0 or 5)    293 is not divisible by 7. If you learned the divisibility test, then double the 3 and subtract it from 29 to get , which is not a multiple of 7, so 293 is not divisible by 7. If you didn't learn the test, then this can be done with the Divisibility Lemma . and since 13 is not divisible by 7, then 293 is not either. Using long division show:     293 is not divisible by 11. Use the divisibility test , which is not a multiple of 11.    Check if 293 is divisible by 13. Using long division, and since there is a nonzero remainder, it is not divisible by 13.    Check if 293 is divisible by 17. Using long division, and since there is a nonzero remainder, it is not divisible by 17.     Since no primes than satisfy , then 293 is prime.      Applications of Prime Factorization  To further understand prime factorization, we look at a interesting function, the factorial. The factorial of a number is the product of all whole from down to . The factorial is written with a ! after the number. For example   In this section, we'll look at the prime factorization of these numbers. To accomplish this, instead of starting at the whole number 120 or 5040, we write out the factorial as the product of whole numbers and factor all composite numbers.    For each of the following factorials, write the prime factorization.     5!    Start with the product of all of the numbers 5 down to 1 (not including, since 1 isn't prime). and then we factor the only composite number there: where in the last step we wrote exponents and rearranged the factors.                 We can also use a nice property of factorials in that we can start writing the product of the terms and stop at any point putting the factorial. Notice that So for example we can write:   And this let's us find larger prime factorization. where the factoization of 7! was found in the previous example. This can be rearranged and written in exponential form as   Notice that the primes less than 12 are in and this will always be true. The number of each factor needs to be found as above.  We'll use the prime factorization in the problems to answer questions.      Find the prime factorization of the following numbers. Write the result in exponential form.     770      1540      69,300      1456       Use the primality test to determine if each of the following is prime.     127      221      233      323      349       The complete list of factors of 30 can be arranged in pairs so that the product of each pair is 30:    1  2  3  5    30  15  10  6       Make similar lists of all of the factors of 56, 84 and 144      Prove that a number has an even number of factors unless it is the square of a whole number. (Hint: Each factor has a partner  unless what is true about ?)       For each following number, provide the prime factorization.                    Is 10! divisible by 10? by 30? by 120? by 1000? (Hint: factor 10, 30 and 120 and determine if the factors are in 10! that you found in the previous problem. )      Find the largest such that is divisible by .      In the prime factorization of , you should notice that there was a and for some . This means that there is a factor of 100 in therefore ends in 2 zeros. Use the number of s in each of the following to determine the number of zeros in each factor. (Note: you do not need to fully factor the number, just determine the number of 5s).                          "
+  "body": " Primes and the Fundamental Theorem of Arithmetic     Understand the definition of a prime number.    Understand how the Sieve of Eratosthenes produces prime numbers.    Find the prime factorization of a number using factor trees.    Know how to test numbers for primality.      We can write often whole numbers as products of other whole numbers. For example and we can further write , therefore   The number 2, 3 and 5 can no longer be written as multiples of other numbers and thus called prime numbers.     A prime number is a whole number whose only factors are 1 and . Whole numbers that are not prime are called composite .      The Sieve of Eratosthenes  There are a variety of ways to find prime numbers. One such way is called the sieve of Eratosthenes, a Greek scholar c. 275 – 195 B.C.E. The sieve can be used for finding prime numbers up to any number and the following shows how to find them up to 60. First start with a grid of numbers where the lowest number 2 is written:   Sieve of Eratosthenes                 2  3  4  5  6  7  8  9  10  11  12    13  14  15  16  17  18  19  20  21  22  23  24    25  26  27  28  29  30  31  32  33  34  35  36    37  38  39  40  41  42  43  44  45  46  47  48    49  50  51  52  53  54  55  56  57  58  59  60     Each step has two parts:     Circle the smallest number not crossed out.    Cross out all multiples of that number.     In this first step, nothing is crossed out, so we circle the number 2 and then cross out multiples of 2.                                                                                      For the next step, circle the 3 and cross out all multiples of 3.                                                                                      and notice that some of those crossed out were already crossed out. (What property did the number crossed out twice have?).  The next step will circle the 5 and cross out multiple of 5 (shown in blue):                                                                                      This continues until all numbers are either circled or crossed out, however it is an interesting question to determine when you can stop the process, knowing that the uncrossed ones should all be circled.  The result shows:                                                                                      The circled numbers are prime and the crossed out ones are composite. This shows that the following numbers less than 60 are prime: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59.   Sieve of Eratosthenes  To find a list of prime below a number, using the sieve of Eratosthenes,   Write a grid of numbers starting at 2 and up to . It is nice to use rows of 12 as shown above, and rows of 15 or 18 are nice too, but neither is a requirement.    Circle the lowest uncrossed out number.    Cross out all multiples of that number.    Repeat steps 2 and 3 until all numbers are circled or crossed out.   The circled numbers are prime.    Fundamental Theorem of Arithmetic   Every whole number , can be written as a product of primes and this can only be done one way (except for reordering).    Knowing how to write whole numbers in term of its prime factors is an important step in understanding the structure of whole numbers and operations on them. We show an efficient way to do this in the next section.    Prime Factorization and Factor Trees  In light of the Fundamental Theorem of Arithmetic, because every whole number can be written as a unique, product of primes, it is quite helpful to find this factorization. In general to do this, we will build a factor tree . This is best understood with an example.  If we look for the prime factorization of 60, then we start with 60 and show the two branches.   The number 60 with lines from it to below left and below right.    At the ends of the lines, you find a pair of factors of 60. There are many it doesn't matter what you start with. Let's try 6 and 10 to get   The number 60 with lines from it to below left connected to a 6 and below right connection to a 10.    At this point, write a pair of factors of 6 and a pair for ten as follows:   The number 60 with lines from it to below left connected to a 6 and below right connection to a 10. From the 6 there are lines below it to a 2 and a 3. From the 10 there are lines below it to a 5 and 2.    And note that at this point, all of the ends of the tree You may be why this is called a tree. It doesn't look like a tree (but perhaps it does if it is flipped upside down). The term tree comes from a branch of mathematics called Graph Theory . A tree is a graph (which has nodes and edges) with no internal connections or cycles. That is every node (where the numbers are in our factor trees) branches to two or more. are prime and you write down the factorization as the product of the ends of the tree or where either form is fine and in general the prime factors are written from smallest to largest. The form is called the exponential form because repeated factors are written as exponents.  You may be asking what if I chose a different factor of 60? A mathematical answer is that because of the Fundamental Theorem of Arithmetic, every whole number has a unique factor, so you would get the same answer. If you are not convinced, let's take a look at the next example.    Find an alternative factor tree of 60 and find the resulting factorization.    Let's start with factoring 60 as    The number 60 with lines from it to below left connected to a 2 and below right connection to a 30.    and then factor 30 as or   The number 60 with lines from it to below left connected to a 2 and below right connection to a 30. Below the 30 are lines to a 2 and to a 15. Below the 15 are lines to a 3 and a 5.    The result is the product of the ends of the branches which is the same as above or .    The result of this example shows that it doesn't matter how you perform the factorization. The resulting tree will be different but the factors and thus the factorization will be the same.    Find the prime factorization of , and .    We will use factor trees to do this efficiently:     First, note that , So we write:   The number 56 with lines from it to below left connected to a 8 and below right connection to a 7.    and then note that so we can write the diagram as:   The number 56 with lines from it to below left connected to a 8 and below right connection to a 7. Below the 8 are three lines connected each to a 2.    And now all of the ends of the branches are prime and this shows that and recall that repeated multiplication can be written in exponential form, so this can be written more compactly as     For , we'll start with a tree and recognize using the divisibility rules that 8 is a factor of 288.   The number 288 with lines from it to below left connected to a 8 and below right connection to a 36.    and then factor 8 and 36 as well:   The number 288 with lines from it to below left connected to a 8 and below right connection to a 36. Connected to the 8 are three lines below it each connected to a 2. Connected to the 36 are two lines each connected to a 6.    and finally factor the 6.   The number 288 with lines from it to below left connected to a 8 and below right connection to a 36. Connected to the 8 are three lines below it each connected to a 2. Connected to the 36 are two lines each connected to a 6. Connected to each 6 are a line to a 2 and a line to a 3.    And all of the ends are prime now and this shows that     To find the prime factors of , we will take a less visual approach, but in the same spirit. First, recognize that 25 is a factor and you can use long division to find the other factor therefore   Next, we seek a factor of 561 and using divisibility rules, 11 is a factor and we can write . Lastly, note that 51 is divisible by 3 and . Putting all of this together, we get:        As we stated above, the initial factoring doesn't matter in the result, however if you pick a small factor for each stage, then it may take more steps. For example, on the factoring of 288 shown in the previous example, we could have done resulting in 6 steps instead of the 3 it took in the previous example.    Primality Test  From the last section, we saw using the Sieve of Eratosthenes that we can find the first handful of prime numbers. This is great for finding the first few primes, but what if we want to determine if 1151 is prime? We still need to determine if the only factors are 1 and itself, but we can use the following theorem:   Primality Test   A whole number is prime unless it has a prime factor . Thus to test whether is prime one need only check divisibility by the primes that satisfy .    This theorem can be turned into an algorithm to determine if a number is prime.   Algorithm to Test a Number for Primality  This basically gives use a recipe (called an algorithm) for determining if a number is prime:     Check if 2 is a factor (use the divisibility test).    Check if 3 is a factor (use the divisibility test).    Check if 5 is a factor (use the divisibility test).    Check if 7 is a factor (use the divisibility test if you learned it, the divisibility lemma or long division).    Check if 11 is a factor (use the divisibility test).    Continue for     If any of the primes are a factor, stop, the number is not prime.    If you reach , then stop, the number is prime.      Let's see how this works with an example.    Is 203 prime?    First of all the square root of 203 is between 13 and 15 (since and ), so we need to check if 203 is divisible by 2,3,5,7,11, and 13.     203 isn't divisible by 2 (ends in a 3)    203 is not divisible by 3 (sum of digits is 5)    203 is not divisible by 5 (doesn't end in 0 or 5)    203 is divisible by 7. Double 3 and subtract it from 20 to get , which is a multiple of 7, so 203 is divisible by 7. You can use the divisibility lemma or long division to find the other factor, which is 29, so .     At this point we stop because we found a pair of factors. This shows that , so this isn't prime.    Here's another example    Is 293 prime?     First, let's determine which primes we need to check. Since and , we can check up through 17.     293 isn't divisible by 2 (ends in a 3)    293 is not divisible by 3 (sum of digits is 14, not a multiple of 3)    293 is not divisible by 5 (doesn't end in 0 or 5)    293 is not divisible by 7. If you learned the divisibility test, then double the 3 and subtract it from 29 to get , which is not a multiple of 7, so 293 is not divisible by 7. If you didn't learn the test, then this can be done with the Divisibility Lemma . and since 13 is not divisible by 7, then 293 is not either. Using long division show:     293 is not divisible by 11. Use the divisibility test , which is not a multiple of 11.    Check if 293 is divisible by 13. Using long division, and since there is a nonzero remainder, it is not divisible by 13.    Check if 293 is divisible by 17. Using long division, and since there is a nonzero remainder, it is not divisible by 17.     Since no primes than satisfy , then 293 is prime.      Applications of Prime Factorization  To further understand prime factorization, we look at a interesting function, the factorial. The factorial of a number is the product of all whole from down to . The factorial is written with a ! after the number. For example   In this section, we'll look at the prime factorization of these numbers. To accomplish this, instead of starting at the whole number 120 or 5040, we write out the factorial as the product of whole numbers and factor all composite numbers.    For each of the following factorials, write the prime factorization.     5!    Start with the product of all of the numbers 5 down to 1 (not including, since 1 isn't prime). and then we factor the only composite number there: where in the last step we wrote exponents and rearranged the factors.                 We can also use a nice property of factorials in that we can start writing the product of the terms and stop at any point putting the factorial. Notice that So for example we can write:   And this let's us find larger prime factorization. where the factoization of 7! was found in the previous example. This can be rearranged and written in exponential form as   Notice that the primes less than 12 are in and this will always be true. The number of each factor needs to be found as above.  We'll use the prime factorization in the problems to answer questions.      Find the prime factorization of the following numbers. Write the result in exponential form.     770      1540      69,300      1456       Use the primality test to determine if each of the following is prime.     127      221      233      323      349       The complete list of factors of 30 can be arranged in pairs so that the product of each pair is 30:    1  2  3  5    30  15  10  6       Make similar lists of all of the factors of 56, 84 and 144      Prove that a number has an even number of factors unless it is the square of a whole number. (Hint: Each factor has a partner  unless what is true about ?)       For each following number, provide the prime factorization.                    Is 10! divisible by 10? by 30? by 120? by 1000? (Hint: factor 10, 30, 120 and 1000 and determine if the factors are in 10! that you found in the previous problem. )      Find the largest such that is divisible by .      In the prime factorization of , you should notice that there was a and for some . This means that there is a factor of 100 in therefore ends in 2 zeros. Use the number of s in each of the following to determine the number of zeros in each factor. (Note: you do not need to fully factor the number, just determine the number of 5s).                          "
 },
 {
   "id": "sect-fundamental-theorem-arithmetic-2",
@@ -2455,7 +2455,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "6.3.5.5",
   "title": "",
-  "body": "  Is 10! divisible by 10? by 30? by 120? by 1000? (Hint: factor 10, 30 and 120 and determine if the factors are in 10! that you found in the previous problem. )   "
+  "body": "  Is 10! divisible by 10? by 30? by 120? by 1000? (Hint: factor 10, 30, 120 and 1000 and determine if the factors are in 10! that you found in the previous problem. )   "
 },
 {
   "id": "exercises-primes-6",
@@ -2482,124 +2482,232 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.4",
   "title": "Greatest Common Factors and Least Common Multiples",
-  "body": " Greatest Common Factors and Least Common Multiples     The Greatest Common Factor of two whole numbers and , written , is the largest whole number which is a factor of both and       Find .   We can list all of the factors of both 24 and 60: and looking at the list, the largest common factor is 12. Therefore .      Calculate     In this case, it awfully difficult to write down all of the factors. Instead, another technique is to write out the prime factorization (recall that to do this you can use the factor trees presented in ) of both: and looking at the common prime factors:       Calculate     In this case, it awfully difficult to write down all of the factors. Instead, another technique is to write out the prime factorization of both: and looking at the common prime factors:       Least Common Multiple   Recall that to find the sum of two fractions, we need a common denominator. The reasons why and details are in , but consider   One way to to get a common denominator is to just multiply the denominators, however, it generally desirable to have a smaller one. A nice denominator is the least common multiple or LCM. In the example above the least common multiple of 18 and 12 is 36. For example:   Note: many people use the term least common denominator for the LCM because of this.    The Least Common Multiple of two nonzero whole numbers and , written is the smallest whole number (other than zero) that is a multiple of both and .      Find            by writing down enough multiples until the smallest one is found.       Write a few multiples of each:   and since the smallest common multiple is 36, .    And for    and you can see that 192 is the smallest multiple common to both, so .       There is a nice way to visualize the LCM using a number line. Consider . We need multiples of both numbers, which we can plot on a number line:       and the LCM will be the point on the number line where the hops first land on the same value.  Similar to the GCF, when the the numbers get larger, finding the LCM using this method is difficult and therefore, it's easy to miss the lowest common multiple. We will, like we did for the GCF, use the prime factorization to find the LCM. The following is an example.    Find     In this case, we will write the prime factorization of both   Note: to find these, you probably need to use a factor tree to find them.  A common multiple is to multiple all factors together, but the least one is the one in which the common factors are only written once:     We can summarize finding the LCM and GCF as follows.    Consider two whole numbers and that can be written as their prime factorization:      To find the GCF, find the smaller power of all common terms.    To find the LCM, find the larger power of all common terms and include all terms that are in each number and .      The following example shows this technique to find the LCM and GCF.    Find both the LCM and GCF of using this technique.    Use a factor tree, you can show that   The GCF is the smallest power of all common terms. Since only powers of are common then , the smaller power of 2.  The LCM is the larger power of all terms, making sure that all terms are included:       Euclid's Algorithm  What if we need to find ? Using the techniques above, we either 1) find all factors and then find the greatest common one or 2) find the prime factorization of each. In either case, this sounds ugly. Fortunately, there is another way called Euclid's Algorithm that isn't too difficult.    Euclid's Algorithm  If then .    What this allows us to do is to reduce the size of the problem. As written is the dividend, is the divisor and the remainder. Since is less than and is less than (why? Think Quotient-Remainder Theorem), the sizes of the number reduces when you do this.  To use Euclid's algorithm, we will find , the remainder of (or ). We then repeat. The following shows an example    Find the GCF using Euclid's Algorithm Find using Euclid's Algorithm:    First, show that (if you need to do long division on this, go ahead). Therefore,   Next, we will repeat and do , which is and no remainder. This shows that and the greatest common factor between 36 and 0 is 36. This shows that .    Let's look at another example.    Find     First find using long division:  3315135  Since    This shows that the original problem .      Relationship between LCM and GCF       First find using Euclid's Algorithm. Then use the above expression to find .  360135  Since    Therefore,       "
+  "body": " Greatest Common Factors and Least Common Multiples     Explain the Greatest Common Factor and be able to find values of it.    Explain the Least Common Multiple and be able to find values of it.    Understand the relationship between the Greatest Common Factor and the Least Common Multiple.      In this section, we introduce the Greatest Common Factor (GCF) and the Least Common Multiple (LCM) which comes up naturally in solving problems. Let's start with a couple of nice word problems that help illustrate these concepts.    A baker has 48 chocolate chip cookies and 64 sugar cookies. They want to pack them into identical boxes for a fundraiser so that every box has the exact same combination of cookies, and no cookies are left over. What is the maximum number of boxes they can make?    Because we are looking for the number of boxes that will evenly fill with chocolate chip and sugar cookies, we are looking for factors of 48 and 64 respectively and since each box will be filled with the same number, then we are looking for a common factor. For example, 8 is a common factor and if we had 8 boxes with 6 chocolate chip and 8 sugar cookies, that will work, however, is this the greatest common factor?    A clockmaker is designing a mechanism for a custom clock using two interlocking gears:   Gear A (the smaller drive gear) has 15 teeth.    Gear B (the larger wheel gear) has 20 teeth.   The clockmaker marks one tooth on Gear A and one tooth on Gear B with a white dot. They mesh the gears together so that the two dotted teeth are touching perfectly at the starting point.   How many teeth on Gear A must pass the interlocking point before the two white dots touch each other again?    How many full rotations will Gear A have made when this happens?    How many full rotations will Gear B have made when this happens?      A model of the gear problem. Gear A (15 teeth) and Gear B (20 teeth) share identical tooth spacing and size, allowing them to mesh cleanly at the contact line.          Greatest Common Factor  We start with the greatest common factor.    The Greatest Common Factor of two whole numbers and , written , is the largest whole number which is a factor of both and     We will see in this section that there are a few ways to calculate this. For the first one, we simply write out all of the factors as shown in the next example.    Find by writing all factors of each number.    We can list all of the factors of both 24 and 60: and looking at the list, the largest common factor is 12. Therefore .    As the numbers get larger, this is an infeasible way to find the GCF. Instead, as shown in the next two examples, we can use prime factorizations.    Find the greatest common factor for each of the following by using prime factorization:     Calculate     Start with the prime factorizations. (Note: if you need to, use a factor tree to do these). and looking at the common prime factors. In each number there are two 2s and two 3s. So       Calculate     Again, write out the prime factorization: .  To find the GCF, we notice the largest number of prime factors that are common to both. This is one 2, one 3 and 2 fives or      It take a long time to find the prime factorization for large numbers, so below, we'll learn even another method for finding the GCF.    Find the solution to the problem in .    In this case, we are looking for . We can either write down all factors or the prime factorization. The latter is easier to do, so and the GCF is the product of the largest common prime factors or , so the number of boxes the baker can make is 16.      Least Common Multiple  Recall that to find the sum of two fractions, we need a common denominator. The reasons why and details are in , but consider   One way to to get a common denominator is to just multiply the denominators, however, it generally desirable to have a smaller one. A nice denominator is the least common multiple or LCM. In the example above the least common multiple of 18 and 12 is 36. For example:   Note: many people use the term least common denominator for the LCM because of this.    The Least Common Multiple of two nonzero whole numbers and , written is the smallest whole number (other than zero) that is a multiple of both and .      Find            by writing down enough multiples until the smallest one is found.       Write a few multiples of each:   and since the smallest common multiple is 36, .    And for    and you can see that 192 is the smallest multiple common to both, so .       There is a nice way to visualize the LCM using a number line. Consider . We need multiples of both numbers, which we can plot on a number line:      and the LCM will be the point on the number line where the hops first land on the same value.  Similar to the GCF, when the the numbers get larger, finding the LCM using this method is difficult and therefore, it's easy to miss the lowest common multiple. We will, like we did for the GCF, use the prime factorization to find the LCM. The following is an example.    Find     In this case, we will write the prime factorization of both   Note: to find these, you probably need to use a factor tree to find them.  A common multiple is to multiple all factors together, but the least one is the one in which the common factors are only written once:      Summary of GCF and LCM  We can summarize finding the LCM and GCF as follows.    Consider two whole numbers and that can be written as their prime factorization:      To find the GCF, find the smaller power of all common terms.    To find the LCM, find the larger power of all common terms and include all terms that are in each number and .      The following example shows this technique to find the LCM and GCF.    Find both the LCM and GCF of using this technique.    Use a factor tree, you can show that   The GCF is the smallest power of all common terms. Since only powers of are common then , the smaller power of 2.  The LCM is the larger power of all terms, making sure that all terms are included:        Euclid's Algorithm  What if we need to find ? Using the techniques above, we either 1) find all factors and then find the greatest common one or 2) find the prime factorization of each. In either case, this sounds ugly. Fortunately, there is another way called Euclid's Algorithm that isn't too difficult.    Euclid's Algorithm  If then .    What this allows us to do is to reduce the size of the problem. As written is the dividend, is the divisor and the remainder. Since is less than and is less than (why? Think Quotient-Remainder Theorem), the sizes of the number reduces when you do this.  To use Euclid's algorithm, we will find , the remainder of (or ). We then repeat. The following shows an example    Find the GCF using Euclid's Algorithm Find using Euclid's Algorithm:    First, show that (if you need to do long division on this, go ahead). Therefore,   Next, we will repeat and do , which is and no remainder. This shows that and the greatest common factor between 36 and 0 is 36. This shows that .    Let's look at another example.    Find     First find using long division:   Since    This shows that the original problem .      Relationship between LCM and GCF       First find using Euclid's Algorithm. Then use the above expression to find .    First, to find the remainder of , we'll use long division:   Since    Therefore,         Use the method of writing out all factors to find                    Use prime factorization to find                    Use the method of writing out enough factors to find     LCM(18,24)      LCM(20,45)       Use prime factorization to find     LCM(200,180)      LCM(144,180)       Use Euclid's method to find each of the following. Write out the steps carefully like in the examples above.                    Use Euclid's Algorithm and to find                    If is a prime number, then explain why for any number .      Two gears in a machine are aligned by a mark that is drawn from the center of the first gear to the center of the second gear. If there are 192 teeth on the first gear and 320 teeth on the second gear, how many revolutions of the first gear are needed to realign the mark.      The gymnastics club is having an event and they want to group all the participants neatly in rows. However, whether they try to use rows of 2, 3, 4, 5, 6, 7 or 8, there is always one gymnast left over. If there are fewer than 1000 gymnasts, how many are there? (Hint: what happens if one gymnast leaves the room, and use knowledge in this section.)     "
 },
 {
-  "id": "sect-gcf-lcm-2-1",
+  "id": "sect-gcf-lcm-2",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-2-1",
-  "type": "Definition",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-2",
+  "type": "Objectives",
+  "number": "6.4",
+  "title": "",
+  "body": "   Explain the Greatest Common Factor and be able to find values of it.    Explain the Least Common Multiple and be able to find values of it.    Understand the relationship between the Greatest Common Factor and the Least Common Multiple.    "
+},
+{
+  "id": "ex-gcf-baker",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#ex-gcf-baker",
+  "type": "Example",
   "number": "6.4.1",
+  "title": "",
+  "body": "  A baker has 48 chocolate chip cookies and 64 sugar cookies. They want to pack them into identical boxes for a fundraiser so that every box has the exact same combination of cookies, and no cookies are left over. What is the maximum number of boxes they can make?   "
+},
+{
+  "id": "sect-gcf-lcm-3-4",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-4",
+  "type": "Example",
+  "number": "6.4.2",
+  "title": "",
+  "body": "  A clockmaker is designing a mechanism for a custom clock using two interlocking gears:   Gear A (the smaller drive gear) has 15 teeth.    Gear B (the larger wheel gear) has 20 teeth.   The clockmaker marks one tooth on Gear A and one tooth on Gear B with a white dot. They mesh the gears together so that the two dotted teeth are touching perfectly at the starting point.   How many teeth on Gear A must pass the interlocking point before the two white dots touch each other again?    How many full rotations will Gear A have made when this happens?    How many full rotations will Gear B have made when this happens?      A model of the gear problem. Gear A (15 teeth) and Gear B (20 teeth) share identical tooth spacing and size, allowing them to mesh cleanly at the contact line.       "
+},
+{
+  "id": "sect-gcf-lcm-4-3",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-4-3",
+  "type": "Definition",
+  "number": "6.4.4",
   "title": "",
   "body": "  The Greatest Common Factor of two whole numbers and , written , is the largest whole number which is a factor of both and    "
 },
 {
-  "id": "sect-gcf-lcm-2-2",
+  "id": "sect-gcf-lcm-4-5",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-2-2",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-4-5",
   "type": "Example",
-  "number": "6.4.2",
-  "title": "",
-  "body": "  Find .   We can list all of the factors of both 24 and 60: and looking at the list, the largest common factor is 12. Therefore .   "
-},
-{
-  "id": "sect-gcf-lcm-2-3",
-  "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-2-3",
-  "type": "Example",
-  "number": "6.4.3",
-  "title": "",
-  "body": "  Calculate     In this case, it awfully difficult to write down all of the factors. Instead, another technique is to write out the prime factorization (recall that to do this you can use the factor trees presented in ) of both: and looking at the common prime factors:    "
-},
-{
-  "id": "sect-gcf-lcm-2-4",
-  "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-2-4",
-  "type": "Example",
-  "number": "6.4.4",
-  "title": "",
-  "body": "  Calculate     In this case, it awfully difficult to write down all of the factors. Instead, another technique is to write out the prime factorization of both: and looking at the common prime factors:    "
-},
-{
-  "id": "sect-gcf-lcm-3-2-4",
-  "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-2-4",
-  "type": "Definition",
   "number": "6.4.5",
+  "title": "",
+  "body": "  Find by writing all factors of each number.    We can list all of the factors of both 24 and 60: and looking at the list, the largest common factor is 12. Therefore .   "
+},
+{
+  "id": "sect-gcf-lcm-4-7",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-4-7",
+  "type": "Example",
+  "number": "6.4.6",
+  "title": "",
+  "body": "  Find the greatest common factor for each of the following by using prime factorization:     Calculate     Start with the prime factorizations. (Note: if you need to, use a factor tree to do these). and looking at the common prime factors. In each number there are two 2s and two 3s. So       Calculate     Again, write out the prime factorization: .  To find the GCF, we notice the largest number of prime factors that are common to both. This is one 2, one 3 and 2 fives or     "
+},
+{
+  "id": "sect-gcf-lcm-4-9",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-4-9",
+  "type": "Example",
+  "number": "6.4.7",
+  "title": "",
+  "body": "  Find the solution to the problem in .    In this case, we are looking for . We can either write down all factors or the prime factorization. The latter is easier to do, so and the GCF is the product of the largest common prime factors or , so the number of boxes the baker can make is 16.   "
+},
+{
+  "id": "sect-gcf-lcm-5-5",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-5-5",
+  "type": "Definition",
+  "number": "6.4.8",
   "title": "",
   "body": "  The Least Common Multiple of two nonzero whole numbers and , written is the smallest whole number (other than zero) that is a multiple of both and .   "
 },
 {
-  "id": "sect-gcf-lcm-3-2-5",
+  "id": "sect-gcf-lcm-5-6",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-2-5",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-5-6",
   "type": "Example",
-  "number": "6.4.6",
+  "number": "6.4.9",
   "title": "",
   "body": "  Find            by writing down enough multiples until the smallest one is found.       Write a few multiples of each:   and since the smallest common multiple is 36, .    And for    and you can see that 192 is the smallest multiple common to both, so .      "
 },
 {
-  "id": "sect-gcf-lcm-3-2-10",
+  "id": "sect-gcf-lcm-5-11",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-2-10",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-5-11",
   "type": "Example",
-  "number": "6.4.7",
+  "number": "6.4.10",
   "title": "",
   "body": "  Find     In this case, we will write the prime factorization of both   Note: to find these, you probably need to use a factor tree to find them.  A common multiple is to multiple all factors together, but the least one is the one in which the common factors are only written once:    "
 },
 {
-  "id": "sect-gcf-lcm-3-2-12",
+  "id": "sect-gcf-lcm-5-12-3",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-2-12",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-5-12-3",
   "type": "Note",
-  "number": "6.4.8",
+  "number": "6.4.11",
   "title": ".",
   "body": "  Consider two whole numbers and that can be written as their prime factorization:      To find the GCF, find the smaller power of all common terms.    To find the LCM, find the larger power of all common terms and include all terms that are in each number and .     "
 },
 {
-  "id": "sect-gcf-lcm-3-2-14",
+  "id": "sect-gcf-lcm-5-12-5",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-2-14",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-5-12-5",
   "type": "Example",
-  "number": "6.4.9",
+  "number": "6.4.12",
   "title": "",
   "body": "  Find both the LCM and GCF of using this technique.    Use a factor tree, you can show that   The GCF is the smallest power of all common terms. Since only powers of are common then , the smaller power of 2.  The LCM is the larger power of all terms, making sure that all terms are included:    "
 },
 {
-  "id": "sect-gcf-lcm-3-3-3",
+  "id": "sect-gcf-lcm-6-3",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-3-3",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-6-3",
   "type": "Lemma",
-  "number": "6.4.10",
+  "number": "6.4.13",
   "title": "",
   "body": "  Euclid's Algorithm  If then .   "
 },
 {
-  "id": "sect-gcf-lcm-3-3-6",
+  "id": "sect-gcf-lcm-6-6",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-3-6",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-6-6",
   "type": "Example",
-  "number": "6.4.11",
+  "number": "6.4.14",
   "title": "",
   "body": "  Find the GCF using Euclid's Algorithm Find using Euclid's Algorithm:    First, show that (if you need to do long division on this, go ahead). Therefore,   Next, we will repeat and do , which is and no remainder. This shows that and the greatest common factor between 36 and 0 is 36. This shows that .   "
 },
 {
-  "id": "sect-gcf-lcm-3-3-8",
+  "id": "sect-gcf-lcm-6-8",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-3-8",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-6-8",
   "type": "Example",
-  "number": "6.4.12",
+  "number": "6.4.15",
   "title": "",
-  "body": "  Find     First find using long division:  3315135  Since    This shows that the original problem .   "
+  "body": "  Find     First find using long division:   Since    This shows that the original problem .   "
 },
 {
-  "id": "sect-gcf-lcm-3-4-3",
+  "id": "sect-gcf-lcm-7-3",
   "level": "2",
-  "url": "sect-gcf-lcm.html#sect-gcf-lcm-3-4-3",
+  "url": "sect-gcf-lcm.html#sect-gcf-lcm-7-3",
   "type": "Example",
-  "number": "6.4.13",
+  "number": "6.4.16",
   "title": "",
-  "body": "  First find using Euclid's Algorithm. Then use the above expression to find .  360135  Since    Therefore,    "
+  "body": "  First find using Euclid's Algorithm. Then use the above expression to find .    First, to find the remainder of , we'll use long division:   Since    Therefore,    "
+},
+{
+  "id": "exercises-gcf-lcm-1",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-1",
+  "type": "Exercise",
+  "number": "6.4.5.1",
+  "title": "",
+  "body": "  Use the method of writing out all factors to find                 "
+},
+{
+  "id": "exercises-gcf-lcm-2",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-2",
+  "type": "Exercise",
+  "number": "6.4.5.2",
+  "title": "",
+  "body": "  Use prime factorization to find                 "
+},
+{
+  "id": "exercises-gcf-lcm-3",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-3",
+  "type": "Exercise",
+  "number": "6.4.5.3",
+  "title": "",
+  "body": "  Use the method of writing out enough factors to find     LCM(18,24)      LCM(20,45)    "
+},
+{
+  "id": "exercises-gcf-lcm-4",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-4",
+  "type": "Exercise",
+  "number": "6.4.5.4",
+  "title": "",
+  "body": "  Use prime factorization to find     LCM(200,180)      LCM(144,180)    "
+},
+{
+  "id": "exercises-gcf-lcm-5",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-5",
+  "type": "Exercise",
+  "number": "6.4.5.5",
+  "title": "",
+  "body": "  Use Euclid's method to find each of the following. Write out the steps carefully like in the examples above.                 "
+},
+{
+  "id": "exercises-gcf-lcm-6",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-6",
+  "type": "Exercise",
+  "number": "6.4.5.6",
+  "title": "",
+  "body": "  Use Euclid's Algorithm and to find                 "
+},
+{
+  "id": "exercises-gcf-lcm-7",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-7",
+  "type": "Exercise",
+  "number": "6.4.5.7",
+  "title": "",
+  "body": "  If is a prime number, then explain why for any number .   "
+},
+{
+  "id": "exercises-gcf-lcm-8",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-8",
+  "type": "Exercise",
+  "number": "6.4.5.8",
+  "title": "",
+  "body": "  Two gears in a machine are aligned by a mark that is drawn from the center of the first gear to the center of the second gear. If there are 192 teeth on the first gear and 320 teeth on the second gear, how many revolutions of the first gear are needed to realign the mark.   "
+},
+{
+  "id": "exercises-gcf-lcm-9",
+  "level": "2",
+  "url": "sect-gcf-lcm.html#exercises-gcf-lcm-9",
+  "type": "Exercise",
+  "number": "6.4.5.9",
+  "title": "",
+  "body": "  The gymnastics club is having an event and they want to group all the participants neatly in rows. However, whether they try to use rows of 2, 3, 4, 5, 6, 7 or 8, there is always one gymnast left over. If there are fewer than 1000 gymnasts, how many are there? (Hint: what happens if one gymnast leaves the room, and use knowledge in this section.)   "
 },
 {
   "id": "sect-divisibility-proofs",

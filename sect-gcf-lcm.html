@@ -341,13 +341,13 @@ eBookConfig.enable_chatcodes =  false;
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sect-gcf-lcm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Greatest Common Factors and Least Common Multiples</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection">
-<div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Least Common Multiple</span></a></div>
-<ul class="structural toc-item-list">
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-3" class="internal"><span class="codenumber">6.4.1.1</span> <span class="title">Euclid’s Algorithm</span></a></div></li>
-<li class="toc-item toc-subsubsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-3-4" class="internal"><span class="codenumber">6.4.1.2</span> <span class="title">Relationship between LCM and GCF</span></a></div></li>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-4" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Greatest Common Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-5" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Least Common Multiple</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-6" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Euclid’s Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-7" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Relationship between LCM and GCF</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-gcf-lcm.html#exercises-gcf-lcm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
-</li></ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-divisibility-proofs.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Prime Number and Divisibility Proofs</span></a></div>
@@ -464,361 +464,497 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Greatest Common Factors and Least Common Multiples</span>
 </h2>
-<section class="introduction" id="sect-gcf-lcm-2">
-<article class="definition definition-like" id="sect-gcf-lcm-2-1"><h3 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3>
-<div class="para" id="sect-gcf-lcm-2-1-1-1">The <em class="alert">Greatest Common Factor</em> of two whole numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> written <span class="process-math">\(GCF(a,b)\text{,}\)</span> is the largest whole number which is a factor of both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="objectives goal-like" id="sect-gcf-lcm-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc" id="sect-gcf-lcm-2-1">
+<li id="sect-gcf-lcm-2-1-1">
+<div class="para" id="sect-gcf-lcm-2-1-1-1">Explain the Greatest Common Factor and be able to find values of it.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 6.4.1"><a href="#sect-gcf-lcm-2-1" title="Copy heading and permalink for Definition 6.4.1" aria-label="Copy heading and permalink for Definition 6.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-gcf-lcm-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="sect-gcf-lcm-2-1-2">
+<div class="para" id="sect-gcf-lcm-2-1-2-1">Explain the Least Common Multiple and be able to find values of it.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-gcf-lcm-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="sect-gcf-lcm-2-1-3">
+<div class="para" id="sect-gcf-lcm-2-1-3-1">Understand the relationship between the Greatest Common Factor and the Least Common Multiple.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-gcf-lcm-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives 6.4"><a href="#sect-gcf-lcm-2" title="Copy heading and permalink for Objectives 6.4" aria-label="Copy heading and permalink for Objectives 6.4">🔗</a></div>
 </article>
-<article class="example example-like" id="sect-gcf-lcm-2-2"><h3 class="heading">
+<section class="introduction" id="sect-gcf-lcm-3">
+<div class="para" id="sect-gcf-lcm-3-1">In this section, we introduce the Greatest Common Factor (GCF) and the Least Common Multiple (LCM) which comes up naturally in solving problems. Let’s start with a couple of nice word problems that help illustrate these concepts.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="ex-gcf-baker"><h3 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h3>
+<div class="para" id="ex-gcf-baker-1-1">A baker has 48 chocolate chip cookies and 64 sugar cookies. They want to pack them into identical boxes for a fundraiser so that every box has the exact same combination of cookies, and no cookies are left over. What is the maximum number of boxes they can make?<div class="autopermalink" data-description="Paragraph"><a href="#ex-gcf-baker-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 6.4.1"><a href="#ex-gcf-baker" title="Copy heading and permalink for Example 6.4.1" aria-label="Copy heading and permalink for Example 6.4.1">🔗</a></div>
+</article>
+<div class="para" id="sect-gcf-lcm-3-3">Because we are looking for the number of boxes that will evenly fill with chocolate chip and sugar cookies, we are looking for factors of 48 and 64 respectively and since each box will be filled with the same number, then we are looking for a common factor. For example, 8 is a common factor and if we had 8 boxes with 6 chocolate chip and 8 sugar cookies, that will work, however, is this the greatest common factor?<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-gcf-lcm-3-4"><h3 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sect-gcf-lcm-2-2-1-1">Find <span class="process-math">\(GCF(24,60)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-gcf-lcm-3-4-1-1">
+<div class="para">A clockmaker is designing a mechanism for a custom clock using two interlocking gears:</div>
+<ul class="disc" id="sect-gcf-lcm-3-4-1-1-1">
+<li id="sect-gcf-lcm-3-4-1-1-1-1">
+<div class="para" id="sect-gcf-lcm-3-4-1-1-1-1-1">Gear A (the smaller drive gear) has 15 teeth.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-4-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-gcf-lcm-3-4-1-1-1-2">
+<div class="para" id="sect-gcf-lcm-3-4-1-1-1-2-1">Gear B (the larger wheel gear) has 20 teeth.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-4-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">The clockmaker marks one tooth on Gear A and one tooth on Gear B with a white dot. They mesh the gears together so that the two dotted teeth are touching perfectly at the starting point.</div>
+<ol class="decimal" id="sect-gcf-lcm-3-4-1-1-2">
+<li id="sect-gcf-lcm-3-4-1-1-2-1">
+<div class="para" id="sect-gcf-lcm-3-4-1-1-2-1-1">How many teeth on Gear A must pass the interlocking point before the two white dots touch each other again?<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-1-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-gcf-lcm-3-4-1-1-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="sect-gcf-lcm-3-4-1-1-2-2">
+<div class="para" id="sect-gcf-lcm-3-4-1-1-2-2-1">How many full rotations will Gear A have made when this happens?<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-1-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-gcf-lcm-3-4-1-1-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sect-gcf-lcm-3-4-1-1-2-3">
+<div class="para" id="sect-gcf-lcm-3-4-1-1-2-3-1">How many full rotations will Gear B have made when this happens?<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-1-1-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sect-gcf-lcm-3-4-1-1-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="sect-gcf-lcm-2-2-1-2"><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div> 
-<div class="para logical" id="sect-gcf-lcm-2-2-1-3">
+<figure class="figure figure-like" id="fig-lcm-perfect-gears"><div class="image-box" style="width: 85%; margin-left: 7.5%; margin-right: 7.5%;"><img src="generated/latex-image/fig-lcm-perfect-gears-2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A model of the gear problem. Gear A (15 teeth) and Gear B (20 teeth) share identical tooth spacing and size, allowing them to mesh cleanly at the contact line.<div class="autopermalink" data-description="Figure 6.4.3"><a href="#fig-lcm-perfect-gears" title="Copy heading and permalink for Figure 6.4.3" aria-label="Copy heading and permalink for Figure 6.4.3">🔗</a></div></figcaption>
+</figure><div class="autopermalink" data-description="Example 6.4.2"><a href="#sect-gcf-lcm-3-4" title="Copy heading and permalink for Example 6.4.2" aria-label="Copy heading and permalink for Example 6.4.2">🔗</a></div>
+</article></section>
+<section class="subsection" id="sect-gcf-lcm-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Greatest Common Factor</span>
+</h3>
+<div class="para" id="sect-gcf-lcm-4-2">We start with the greatest common factor.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="sect-gcf-lcm-4-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-gcf-lcm-4-3-1-1">The <em class="alert">Greatest Common Factor</em> of two whole numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> written <span class="process-math">\(GCF(a,b)\text{,}\)</span> is the largest whole number which is a factor of both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 6.4.4"><a href="#sect-gcf-lcm-4-3" title="Copy heading and permalink for Definition 6.4.4" aria-label="Copy heading and permalink for Definition 6.4.4">🔗</a></div>
+</article>
+<div class="para" id="sect-gcf-lcm-4-4">We will see in this section that there are a few ways to calculate this. For the first one, we simply write out all of the factors as shown in the next example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-gcf-lcm-4-5"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-gcf-lcm-4-5-1-1">Find <span class="process-math">\(GCF(24,60)\)</span> by writing all factors of each number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-gcf-lcm-4-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-gcf-lcm-4-5-2-1">
 <div class="para">We can list all of the factors of both 24 and 60:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-2-2-1-3-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-4-5-2-1-1">
 \begin{equation*}
 \begin{aligned}\text{Factors of 24:}\amp \qquad \qquad 1,2,3,4,6,8,12,24\\ \text{Factors of 60:}\amp \qquad \qquad 1,2,3,4,5,6,10,12,15,20,30,60\end{aligned}
 \end{equation*}
 </div>
 <div class="para">and looking at the list, the largest common factor is 12. Therefore <span class="process-math">\(GCF(24,60)=12\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 6.4.2"><a href="#sect-gcf-lcm-2-2" title="Copy heading and permalink for Example 6.4.2" aria-label="Copy heading and permalink for Example 6.4.2">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.5.1"><a href="#sect-gcf-lcm-4-5-2" title="Copy heading and permalink for Solution 6.4.5.1" aria-label="Copy heading and permalink for Solution 6.4.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.4.5"><a href="#sect-gcf-lcm-4-5" title="Copy heading and permalink for Example 6.4.5" aria-label="Copy heading and permalink for Example 6.4.5">🔗</a></div>
 </article>
-<article class="example example-like" id="sect-gcf-lcm-2-3"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3>
-<div class="para" id="sect-gcf-lcm-2-3-1-1">Calculate <span class="process-math">\(GCF(144,180)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-4-6">As the numbers get larger, this is an infeasible way to find the GCF. Instead, as shown in the next two examples, we can use prime factorizations.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-gcf-lcm-4-7"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="introduction" id="sect-gcf-lcm-4-7-1">
+<div class="para" id="sect-gcf-lcm-4-7-1-1">Find the greatest common factor for each of the following by using prime factorization:<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="sect-gcf-lcm-4-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="sect-gcf-lcm-4-7-2-1-1">Calculate <span class="process-math">\(GCF(144,180)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-gcf-lcm-2-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-gcf-lcm-4-7-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="sect-gcf-lcm-2-3-2-1">
-<div class="para">In this case, it awfully difficult to write down all of the factors. Instead, another technique is to write out the prime factorization (recall that to do this you can use the factor trees presented in ) of both:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-2-3-2-1-1">
+<div class="para logical" id="sect-gcf-lcm-4-7-2-2-1">
+<div class="para">Start with the prime factorizations. (Note: if you need to, use a factor tree to do these).</div>
+<div class="displaymath process-math" id="sect-gcf-lcm-4-7-2-2-1-1">
 \begin{equation*}
 \begin{aligned}144\amp = 2\cdot 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3 \\ 180\amp = 2 \cdot 2 \cdot 3 \cdot 3 \cdot 5\end{aligned}
 \end{equation*}
 </div>
-<div class="para">and looking at the common prime factors:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-2-3-2-1-2">
+<div class="para">and looking at the common prime factors. In each number there are two 2s and two 3s. So</div>
+<div class="displaymath process-math" id="sect-gcf-lcm-4-7-2-2-1-2">
 \begin{equation*}
-\begin{aligned}GCF(144,180)\amp = 2 \cdot 2 \cdot 3 \cdot 3 = 36\end{aligned}
+GCF(144,180) = 2 \cdot 2 \cdot 3 \cdot 3 = 36
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.4.3.1"><a href="#sect-gcf-lcm-2-3-2" title="Copy heading and permalink for Solution 6.4.3.1" aria-label="Copy heading and permalink for Solution 6.4.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.6.a.1"><a href="#sect-gcf-lcm-4-7-2-2" title="Copy heading and permalink for Solution 6.4.6.a.1" aria-label="Copy heading and permalink for Solution 6.4.6.a.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.4.3"><a href="#sect-gcf-lcm-2-3" title="Copy heading and permalink for Example 6.4.3" aria-label="Copy heading and permalink for Example 6.4.3">🔗</a></div>
+<div class="autopermalink" data-description="Task 6.4.6.a"><a href="#sect-gcf-lcm-4-7-2" title="Copy heading and permalink for Task 6.4.6.a" aria-label="Copy heading and permalink for Task 6.4.6.a">🔗</a></div>
 </article>
-<article class="example example-like" id="sect-gcf-lcm-2-4"><h3 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h3>
-<div class="para" id="sect-gcf-lcm-2-4-1-1">Calculate <span class="process-math">\(GCF(2400,450)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="task exercise-like" id="sect-gcf-lcm-4-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="sect-gcf-lcm-4-7-3-1-1">Calculate <span class="process-math">\(GCF(2400,450)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-gcf-lcm-2-4-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-gcf-lcm-4-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="sect-gcf-lcm-2-4-2-1">
-<div class="para">In this case, it awfully difficult to write down all of the factors. Instead, another technique is to write out the prime factorization of both:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-2-4-2-1-1">
+<div class="para logical" id="sect-gcf-lcm-4-7-3-2-1">
+<div class="para">Again, write out the prime factorization:</div>
+<div class="displaymath process-math" id="sect-gcf-lcm-4-7-3-2-1-1">
+\begin{align*}
+2400\amp = 2^{5} \cdot 3 \cdot 5^{2} \\
+450\amp = 2 \cdot 3^{2} \cdot 5^{2} \text{.}
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-gcf-lcm-4-7-3-2-2">
+<div class="para">To find the GCF, we notice the largest number of prime factors that are common to both. This is one 2, one 3 and 2 fives or</div>
+<div class="displaymath process-math" id="sect-gcf-lcm-4-7-3-2-2-1">
 \begin{equation*}
-\begin{aligned}2400\amp = 2^{5} \cdot 3 \cdot 5^{2} \\ 450\amp = 2 \cdot 3^{2} \cdot 5^{2}\end{aligned}
+GCF(2400,450)= 2 \cdot 3 \cdot 5^{2} = 3 \cdot 50 = 150
 \end{equation*}
 </div>
-<div class="para">and looking at the common prime factors:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-2-4-2-1-2">
-\begin{equation*}
-\begin{aligned}GCF(2400,450)\amp = 2 \cdot 3 \cdot 5^{2} = 3 \cdot 50 = 150\end{aligned}
-\end{equation*}
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-7-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-2-4-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.4.4.1"><a href="#sect-gcf-lcm-2-4-2" title="Copy heading and permalink for Solution 6.4.4.1" aria-label="Copy heading and permalink for Solution 6.4.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.6.b.1"><a href="#sect-gcf-lcm-4-7-3-2" title="Copy heading and permalink for Solution 6.4.6.b.1" aria-label="Copy heading and permalink for Solution 6.4.6.b.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.4.4"><a href="#sect-gcf-lcm-2-4" title="Copy heading and permalink for Example 6.4.4" aria-label="Copy heading and permalink for Example 6.4.4">🔗</a></div>
-</article></section>
-<section class="subsection" id="sect-gcf-lcm-3">
+<div class="autopermalink" data-description="Task 6.4.6.b"><a href="#sect-gcf-lcm-4-7-3" title="Copy heading and permalink for Task 6.4.6.b" aria-label="Copy heading and permalink for Task 6.4.6.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Example 6.4.6"><a href="#sect-gcf-lcm-4-7" title="Copy heading and permalink for Example 6.4.6" aria-label="Copy heading and permalink for Example 6.4.6">🔗</a></div>
+</article>
+<div class="para" id="sect-gcf-lcm-4-8">It take a long time to find the prime factorization for large numbers, so below, we’ll learn even another method for finding the GCF.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-gcf-lcm-4-9"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-gcf-lcm-4-9-1-1">Find the solution to the problem in <a href="sect-gcf-lcm.html#ex-gcf-baker" class="xref" data-knowl="./knowl/xref/ex-gcf-baker.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 6.4.1">Example 6.4.1</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-gcf-lcm-4-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-gcf-lcm-4-9-2-1">
+<div class="para">In this case, we are looking for <span class="process-math">\(GCF(48,64)\text{.}\)</span> We can either write down all factors or the prime factorization. The latter is easier to do, so</div>
+<div class="displaymath process-math" id="sect-gcf-lcm-4-9-2-1-2">
+\begin{align*}
+48 \amp = 2^4 \cdot 3 \\
+64 \amp = 2^6 
+\end{align*}
+</div>
+<div class="para">and the GCF is the product of the largest common prime factors or <span class="process-math">\(2^4=16\text{,}\)</span> so the number of boxes the baker can make is 16.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-4-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.4.7.1"><a href="#sect-gcf-lcm-4-9-2" title="Copy heading and permalink for Solution 6.4.7.1" aria-label="Copy heading and permalink for Solution 6.4.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.4.7"><a href="#sect-gcf-lcm-4-9" title="Copy heading and permalink for Example 6.4.7" aria-label="Copy heading and permalink for Example 6.4.7">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 6.4.1: Greatest Common Factor"><a href="#sect-gcf-lcm-4" title="Copy heading and permalink for Subsection 6.4.1: Greatest Common Factor" aria-label="Copy heading and permalink for Subsection 6.4.1: Greatest Common Factor">🔗</a></div>
+</section>
+<section class="subsection" id="sect-gcf-lcm-5">
 <h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Least Common Multiple</span>
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Least Common Multiple</span>
 </h3>
-<section class="introduction" id="sect-gcf-lcm-3-2">
-<div class="para logical" id="sect-gcf-lcm-3-2-1">
+<div class="para logical" id="sect-gcf-lcm-5-2">
 <div class="para">Recall that to find the sum of two fractions, we need a common denominator. The reasons why and details are in <a href="ch-fractions.html" class="internal" title="Chapter 7: Fractions">Chapter 7</a>, but consider</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ch-fractions.html" id="sect-gcf-lcm-3-2-1-2">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/ch-fractions.html" id="sect-gcf-lcm-5-2-2">
 \begin{equation*}
 \begin{aligned}\frac{1}{18}+ \frac{5}{12}\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-gcf-lcm-3-2-2">
+<div class="para logical" id="sect-gcf-lcm-5-3">
 <div class="para">One way to to get a common denominator is to just multiply the denominators, however, it generally desirable to have a smaller one. A nice denominator is the least common multiple or LCM. In the example above the least common multiple of 18 and 12 is 36. For example:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-2-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-3-1">
 \begin{equation*}
 \begin{aligned}\frac{1}{18}+ \frac{5}{12}\amp = \frac{2}{36}+ \frac{5\cdot 3}{36}= \frac{17}{36}\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-2-3">Note: many people use the term <em class="emphasis">least common denominator</em> for the LCM because of this.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-4">Note: many people use the term <em class="emphasis">least common denominator</em> for the LCM because of this.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="sect-gcf-lcm-3-2-4"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="definition definition-like" id="sect-gcf-lcm-5-5"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-gcf-lcm-3-2-4-1-1">The <em class="alert">Least Common Multiple</em> of two nonzero whole numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> written <span class="process-math">\(LCM(a,b)\)</span> is the smallest whole number (other than zero) that is a multiple of both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-5-1-1">The <em class="alert">Least Common Multiple</em> of two nonzero whole numbers <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> written <span class="process-math">\(LCM(a,b)\)</span> is the smallest whole number (other than zero) that is a multiple of both <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 6.4.5"><a href="#sect-gcf-lcm-3-2-4" title="Copy heading and permalink for Definition 6.4.5" aria-label="Copy heading and permalink for Definition 6.4.5">🔗</a></div>
+<div class="autopermalink" data-description="Definition 6.4.8"><a href="#sect-gcf-lcm-5-5" title="Copy heading and permalink for Definition 6.4.8" aria-label="Copy heading and permalink for Definition 6.4.8">🔗</a></div>
 </article>
-<article class="example example-like" id="sect-gcf-lcm-3-2-5"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="example example-like" id="sect-gcf-lcm-5-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para logical" id="sect-gcf-lcm-3-2-5-1-1">
+<div class="para logical" id="sect-gcf-lcm-5-6-1-1">
 <div class="para">Find</div>
-<ul class="disc" id="sect-gcf-lcm-3-2-5-1-1-1">
-<li id="sect-gcf-lcm-3-2-5-1-1-1-1">
-<div class="para" id="sect-gcf-lcm-3-2-5-1-1-1-1-1">
-<span class="process-math">\(\displaystyle LCM(12,18)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="sect-gcf-lcm-5-6-1-1-1">
+<li id="sect-gcf-lcm-5-6-1-1-1-1">
+<div class="para" id="sect-gcf-lcm-5-6-1-1-1-1-1">
+<span class="process-math">\(\displaystyle LCM(12,18)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-1-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-2-5-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-5-6-1-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-gcf-lcm-3-2-5-1-1-1-2">
-<div class="para" id="sect-gcf-lcm-3-2-5-1-1-1-2-1">
-<span class="process-math">\(\displaystyle LCM(24,64)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-gcf-lcm-5-6-1-1-1-2">
+<div class="para" id="sect-gcf-lcm-5-6-1-1-1-2-1">
+<span class="process-math">\(\displaystyle LCM(24,64)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-1-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-2-5-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-5-6-1-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
 <div class="para">by writing down enough multiples until the smallest one is found.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-gcf-lcm-3-2-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-gcf-lcm-5-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="sect-gcf-lcm-3-2-5-2-1">
-<ul class="disc" id="sect-gcf-lcm-3-2-5-2-1-1">
-<li id="sect-gcf-lcm-3-2-5-2-1-1-1">
-<div class="para logical" id="sect-gcf-lcm-3-2-5-2-1-1-1-1">
+<div class="para logical" id="sect-gcf-lcm-5-6-2-1">
+<ul class="disc" id="sect-gcf-lcm-5-6-2-1-1">
+<li id="sect-gcf-lcm-5-6-2-1-1-1">
+<div class="para logical" id="sect-gcf-lcm-5-6-2-1-1-1-1">
 <div class="para">Write a few multiples of each:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-5-2-1-1-1-1-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-6-2-1-1-1-1-1">
 \begin{equation*}
 \begin{aligned}\text{Multiples of 12}\amp \qquad \qquad 12,24,36,48,60,72, \ldots \\ \text{Multiples of 18}\amp \qquad \qquad 18,36,54,72, \dots\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-2-1-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-2-5-2-1-1-1-2">and since the smallest common multiple is 36, <span class="process-math">\(LCM(12,18)=36\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-6-2-1-1-1-2">and since the smallest common multiple is 36, <span class="process-math">\(LCM(12,18)=36\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-2-1-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-2-5-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-5-6-2-1-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-gcf-lcm-3-2-5-2-1-1-2">
-<div class="para logical" id="sect-gcf-lcm-3-2-5-2-1-1-2-1">
+<li id="sect-gcf-lcm-5-6-2-1-1-2">
+<div class="para logical" id="sect-gcf-lcm-5-6-2-1-1-2-1">
 <div class="para">And for <span class="process-math">\(LCM(24,64)\)</span>
 </div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-5-2-1-1-2-1-2">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-6-2-1-1-2-1-2">
 \begin{equation*}
 \begin{aligned}\text{Multiples of 24:}\amp \quad 24, 48, 72, 96, 120, 144, 168, 192 \\ \text{Multiples of 64:}\amp \quad 64, 128, 192, 256,\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-2-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-2-5-2-1-1-2-2">and you can see that 192 is the smallest multiple common to both, so <span class="process-math">\(LCM(24,64)=192\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-6-2-1-1-2-2">and you can see that 192 is the smallest multiple common to both, so <span class="process-math">\(LCM(24,64)=192\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-2-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-2-5-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-5-6-2-1-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.4.6.1"><a href="#sect-gcf-lcm-3-2-5-2" title="Copy heading and permalink for Solution 6.4.6.1" aria-label="Copy heading and permalink for Solution 6.4.6.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.9.1"><a href="#sect-gcf-lcm-5-6-2" title="Copy heading and permalink for Solution 6.4.9.1" aria-label="Copy heading and permalink for Solution 6.4.9.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.4.6"><a href="#sect-gcf-lcm-3-2-5" title="Copy heading and permalink for Example 6.4.6" aria-label="Copy heading and permalink for Example 6.4.6">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.4.9"><a href="#sect-gcf-lcm-5-6" title="Copy heading and permalink for Example 6.4.9" aria-label="Copy heading and permalink for Example 6.4.9">🔗</a></div>
 </article>
-<div class="para" id="sect-gcf-lcm-3-2-6">There is a nice way to visualize the LCM using a number line. Consider <span class="process-math">\(LCM(24,30)\text{.}\)</span> We need multiples of both numbers, which we can plot on a number line:<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-7">There is a nice way to visualize the LCM using a number line. Consider <span class="process-math">\(LCM(24,30)\text{.}\)</span> We need multiples of both numbers, which we can plot on a number line:<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-gcf-lcm-3-2-7.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-gcf-lcm-3-2-8">and the LCM will be the point on the number line where the hops first land on the same value.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-gcf-lcm-5-8.svg" role="img" class="contained" alt=""></div>
+<div class="para" id="sect-gcf-lcm-5-9">and the LCM will be the point on the number line where the hops first land on the same value.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-2-9">Similar to the GCF, when the the numbers get larger, finding the LCM using this method is difficult and therefore, it’s easy to miss the lowest common multiple. We will, like we did for the GCF, use the prime factorization to find the LCM. The following is an example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-10">Similar to the GCF, when the the numbers get larger, finding the LCM using this method is difficult and therefore, it’s easy to miss the lowest common multiple. We will, like we did for the GCF, use the prime factorization to find the LCM. The following is an example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-gcf-lcm-3-2-10"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="example example-like" id="sect-gcf-lcm-5-11"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-gcf-lcm-3-2-10-1-1">Find <span class="process-math">\(LCM(72,150)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-11-1-1">Find <span class="process-math">\(LCM(72,150)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-gcf-lcm-3-2-10-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-gcf-lcm-5-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="sect-gcf-lcm-3-2-10-2-1">
+<div class="para logical" id="sect-gcf-lcm-5-11-2-1">
 <div class="para">In this case, we will write the prime factorization of both</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-10-2-1-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-11-2-1-1">
 \begin{equation*}
 \begin{aligned}72\amp = 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3 \\ 150\amp = 2 \cdot 3 \cdot 5 \cdot 5\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-10-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-2-10-2-2">Note: to find these, you probably need to use a factor tree to find them.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-10-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-11-2-2">Note: to find these, you probably need to use a factor tree to find them.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-11-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-gcf-lcm-3-2-10-2-3">
+<div class="para logical" id="sect-gcf-lcm-5-11-2-3">
 <div class="para">A common multiple is to multiple all factors together, but the least one is the one in which the common factors are only written once:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-10-2-3-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-11-2-3-1">
 \begin{equation*}
 \begin{aligned}LCM(72,150)\amp = \underbrace{2 \cdot 3}_{\text{common factors}}\cdot \underbrace{2 \cdot 2 \cdot 3}_{\text{other factors of 72}}\cdot \underbrace{5 \cdot 5}_{\text{other factors of 150}}= 1800\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-10-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-11-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.4.7.1"><a href="#sect-gcf-lcm-3-2-10-2" title="Copy heading and permalink for Solution 6.4.7.1" aria-label="Copy heading and permalink for Solution 6.4.7.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.10.1"><a href="#sect-gcf-lcm-5-11-2" title="Copy heading and permalink for Solution 6.4.10.1" aria-label="Copy heading and permalink for Solution 6.4.10.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.4.7"><a href="#sect-gcf-lcm-3-2-10" title="Copy heading and permalink for Example 6.4.7" aria-label="Copy heading and permalink for Example 6.4.7">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.4.10"><a href="#sect-gcf-lcm-5-11" title="Copy heading and permalink for Example 6.4.10" aria-label="Copy heading and permalink for Example 6.4.10">🔗</a></div>
 </article>
-<div class="para" id="sect-gcf-lcm-3-2-11">We can summarize finding the LCM and GCF as follows.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="paragraphs" id="sect-gcf-lcm-5-12"><h4 class="heading"><span class="title">Summary of GCF and LCM.</span></h4>
+<div class="para" id="sect-gcf-lcm-5-12-2">We can summarize finding the LCM and GCF as follows.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="sect-gcf-lcm-3-2-12"><h4 class="heading">
-<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">.</span>
-</h4>
-<div class="para logical" id="sect-gcf-lcm-3-2-12-2">
+<article class="note remark-like" id="sect-gcf-lcm-5-12-3"><h5 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">.</span>
+</h5>
+<div class="para logical" id="sect-gcf-lcm-5-12-3-2">
 <div class="para">Consider two whole numbers <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> that can be written as their prime factorization:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-12-2-3">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-12-3-2-3">
 \begin{equation*}
 \begin{aligned}m\amp = 2^{i}3^{j} \cdots \\ n\amp = 2^{k}3^{\ell}\cdots \\\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-12-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-gcf-lcm-3-2-12-3">
-<ul class="disc" id="sect-gcf-lcm-3-2-12-3-1">
-<li id="sect-gcf-lcm-3-2-12-3-1-1">
-<div class="para" id="sect-gcf-lcm-3-2-12-3-1-1-1">To find the GCF, find the smaller power of all common terms.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-12-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-gcf-lcm-5-12-3-3">
+<ul class="disc" id="sect-gcf-lcm-5-12-3-3-1">
+<li id="sect-gcf-lcm-5-12-3-3-1-1">
+<div class="para" id="sect-gcf-lcm-5-12-3-3-1-1-1">To find the GCF, find the smaller power of all common terms.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-3-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-2-12-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-5-12-3-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-gcf-lcm-3-2-12-3-1-2">
-<div class="para" id="sect-gcf-lcm-3-2-12-3-1-2-1">To find the LCM, find the larger power of all common terms and include all terms that are in each number <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-12-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-gcf-lcm-5-12-3-3-1-2">
+<div class="para" id="sect-gcf-lcm-5-12-3-3-1-2-1">To find the LCM, find the larger power of all common terms and include all terms that are in each number <span class="process-math">\(m\)</span> and <span class="process-math">\(n\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-3-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-3-2-12-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-gcf-lcm-5-12-3-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-12-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 6.4.8: "><a href="#sect-gcf-lcm-3-2-12" title="Copy heading and permalink for Note 6.4.8: " aria-label="Copy heading and permalink for Note 6.4.8: ">🔗</a></div>
+<div class="autopermalink" data-description="Note 6.4.11: "><a href="#sect-gcf-lcm-5-12-3" title="Copy heading and permalink for Note 6.4.11: " aria-label="Copy heading and permalink for Note 6.4.11: ">🔗</a></div>
 </article>
-<div class="para" id="sect-gcf-lcm-3-2-13">The following example shows this technique to find the LCM and GCF.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-12-4">The following example shows this technique to find the LCM and GCF.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-gcf-lcm-3-2-14"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="sect-gcf-lcm-3-2-14-1-1">Find both the LCM and GCF of <span class="process-math">\(80,36\)</span> using this technique.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="example example-like" id="sect-gcf-lcm-5-12-5"><h5 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h5>
+<div class="para" id="sect-gcf-lcm-5-12-5-1-1">Find both the LCM and GCF of <span class="process-math">\(80,36\)</span> using this technique.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-gcf-lcm-3-2-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-gcf-lcm-5-12-5-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="sect-gcf-lcm-3-2-14-2-1">
+<div class="para logical" id="sect-gcf-lcm-5-12-5-2-1">
 <div class="para">Use a factor tree, you can show that</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-14-2-1-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-12-5-2-1-1">
 \begin{equation*}
 \begin{aligned}80\amp = 2^{4} \cdot 5 \\ 36\amp = 2^{2} \cdot 3^{2}\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-5-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-2-14-2-2">The GCF is the smallest power of all common terms. Since only powers of <span class="process-math">\(2\)</span> are common then <span class="process-math">\(GCF(80,36) = 2^{2}=4\text{,}\)</span> the smaller power of 2.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-14-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-5-12-5-2-2">The GCF is the smallest power of all common terms. Since only powers of <span class="process-math">\(2\)</span> are common then <span class="process-math">\(GCF(80,36) = 2^{2}=4\text{,}\)</span> the smaller power of 2.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-5-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-gcf-lcm-3-2-14-2-3">
+<div class="para logical" id="sect-gcf-lcm-5-12-5-2-3">
 <div class="para">The LCM is the larger power of all terms, making sure that all terms are included:</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-2-14-2-3-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-5-12-5-2-3-1">
 \begin{equation*}
 \begin{aligned}LCM(36,80)\amp = 2^{4} \cdot 3^{2} \cdot 5 = 720\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-2-14-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-5-12-5-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.4.9.1"><a href="#sect-gcf-lcm-3-2-14-2" title="Copy heading and permalink for Solution 6.4.9.1" aria-label="Copy heading and permalink for Solution 6.4.9.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.12.1"><a href="#sect-gcf-lcm-5-12-5-2" title="Copy heading and permalink for Solution 6.4.12.1" aria-label="Copy heading and permalink for Solution 6.4.12.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.4.9"><a href="#sect-gcf-lcm-3-2-14" title="Copy heading and permalink for Example 6.4.9" aria-label="Copy heading and permalink for Example 6.4.9">🔗</a></div>
-</article></section>
-<section class="subsubsection" id="sect-gcf-lcm-3-3">
-<h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Euclid’s Algorithm</span>
+<div class="autopermalink" data-description="Example 6.4.12"><a href="#sect-gcf-lcm-5-12-5" title="Copy heading and permalink for Example 6.4.12" aria-label="Copy heading and permalink for Example 6.4.12">🔗</a></div>
+</article><div class="autopermalink" data-description="Paragraphs: Summary of GCF and LCM"><a href="#sect-gcf-lcm-5-12" title="Copy heading and permalink for Paragraphs: Summary of GCF and LCM" aria-label="Copy heading and permalink for Paragraphs: Summary of GCF and LCM">🔗</a></div>
+</section><div class="autopermalink" data-description="Subsection 6.4.2: Least Common Multiple"><a href="#sect-gcf-lcm-5" title="Copy heading and permalink for Subsection 6.4.2: Least Common Multiple" aria-label="Copy heading and permalink for Subsection 6.4.2: Least Common Multiple">🔗</a></div>
+</section>
+<section class="subsection" id="sect-gcf-lcm-6">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Euclid’s Algorithm</span>
+</h3>
+<div class="para" id="sect-gcf-lcm-6-2">What if we need to find <span class="process-math">\(GCF(18000,96525)\text{?}\)</span> Using the techniques above, we either 1) find all factors and then find the greatest common one or 2) find the prime factorization of each. In either case, this sounds ugly. Fortunately, there is another way called Euclid’s Algorithm that isn’t too difficult.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="lemma theorem-like" id="sect-gcf-lcm-6-3"><h4 class="heading">
+<span class="type">Lemma</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-gcf-lcm-3-3-2">What if we need to find <span class="process-math">\(GCF(18000,96525)\text{?}\)</span> Using the techniques above, we either 1) find all factors and then find the greatest common one or 2) find the prime factorization of each. In either case, this sounds ugly. Fortunately, there is another way called Euclid’s Algorithm that isn’t too difficult.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="lemma theorem-like" id="sect-gcf-lcm-3-3-3"><h5 class="heading">
-<span class="type">Lemma</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5>
-<div class="para" id="sect-gcf-lcm-3-3-3-1-1">Euclid’s Algorithm<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-6-3-1-1">Euclid’s Algorithm<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> 
-<div class="para" id="sect-gcf-lcm-3-3-3-1-2">If <span class="process-math">\(a = bq +r\)</span> then <span class="process-math">\(GCF(a,b)=GCF(b,r)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-6-3-1-2">If <span class="process-math">\(a = bq +r\)</span> then <span class="process-math">\(GCF(a,b)=GCF(b,r)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Lemma 6.4.10"><a href="#sect-gcf-lcm-3-3-3" title="Copy heading and permalink for Lemma 6.4.10" aria-label="Copy heading and permalink for Lemma 6.4.10">🔗</a></div>
+<div class="autopermalink" data-description="Lemma 6.4.13"><a href="#sect-gcf-lcm-6-3" title="Copy heading and permalink for Lemma 6.4.13" aria-label="Copy heading and permalink for Lemma 6.4.13">🔗</a></div>
 </article>
-<div class="para" id="sect-gcf-lcm-3-3-4">What this allows us to do is to reduce the size of the problem. As written <span class="process-math">\(a\)</span> is the dividend, <span class="process-math">\(b\)</span> is the divisor and <span class="process-math">\(r\)</span> the remainder. Since <span class="process-math">\(b\)</span> is less than <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> is less than <span class="process-math">\(b\)</span> (why? Think Quotient-Remainder Theorem), the sizes of the number reduces when you do this.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-6-4">What this allows us to do is to reduce the size of the problem. As written <span class="process-math">\(a\)</span> is the dividend, <span class="process-math">\(b\)</span> is the divisor and <span class="process-math">\(r\)</span> the remainder. Since <span class="process-math">\(b\)</span> is less than <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> is less than <span class="process-math">\(b\)</span> (why? Think Quotient-Remainder Theorem), the sizes of the number reduces when you do this.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-3-5">To use Euclid’s algorithm, we will find <span class="process-math">\(r\text{,}\)</span> the remainder of <span class="process-math">\(a \div b\)</span> (or <span class="process-math">\(b \div a\)</span>). We then repeat. The following shows an example<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-6-5">To use Euclid’s algorithm, we will find <span class="process-math">\(r\text{,}\)</span> the remainder of <span class="process-math">\(a \div b\)</span> (or <span class="process-math">\(b \div a\)</span> ). We then repeat. The following shows an example<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-gcf-lcm-3-3-6"><h5 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5>
-<div class="para" id="sect-gcf-lcm-3-3-6-1-1">Find the GCF using Euclid’s Algorithm Find <span class="process-math">\(GCF(144,180)\)</span> using Euclid’s Algorithm:<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="example example-like" id="sect-gcf-lcm-6-6"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.14</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-gcf-lcm-6-6-1-1">Find the GCF using Euclid’s Algorithm Find <span class="process-math">\(GCF(144,180)\)</span> using Euclid’s Algorithm:<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-gcf-lcm-3-3-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-gcf-lcm-6-6-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para logical" id="sect-gcf-lcm-3-3-6-2-1">
+<div class="para logical" id="sect-gcf-lcm-6-6-2-1">
 <div class="para">First, show that <span class="process-math">\(180 \div 144 = 1 R\;36\)</span> (if you need to do long division on this, go ahead). Therefore,</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-3-6-2-1-2">
+<div class="displaymath process-math" id="sect-gcf-lcm-6-6-2-1-2">
 \begin{equation*}
 \begin{aligned}GCF(180,144) = GCF(144,36)\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-6-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-gcf-lcm-3-3-6-2-2">
+<div class="para logical" id="sect-gcf-lcm-6-6-2-2">
 <div class="para">Next, we will repeat and do <span class="process-math">\(144 \div 36\text{,}\)</span> which is <span class="process-math">\(4\)</span> and no remainder. This shows that</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-3-6-2-2-3">
+<div class="displaymath process-math" id="sect-gcf-lcm-6-6-2-2-3">
 \begin{equation*}
 GCF(144,36) = GCF(36,0)
 \end{equation*}
 </div>
 <div class="para">and the greatest common factor between 36 and 0 is 36. This shows that <span class="process-math">\(GCF(180,144) = 36\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-6-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.4.11.1"><a href="#sect-gcf-lcm-3-3-6-2" title="Copy heading and permalink for Solution 6.4.11.1" aria-label="Copy heading and permalink for Solution 6.4.11.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.14.1"><a href="#sect-gcf-lcm-6-6-2" title="Copy heading and permalink for Solution 6.4.14.1" aria-label="Copy heading and permalink for Solution 6.4.14.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.4.11"><a href="#sect-gcf-lcm-3-3-6" title="Copy heading and permalink for Example 6.4.11" aria-label="Copy heading and permalink for Example 6.4.11">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.4.14"><a href="#sect-gcf-lcm-6-6" title="Copy heading and permalink for Example 6.4.14" aria-label="Copy heading and permalink for Example 6.4.14">🔗</a></div>
 </article>
-<div class="para" id="sect-gcf-lcm-3-3-7">Let’s look at another example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-6-7">Let’s look at another example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-gcf-lcm-3-3-8"><h5 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.12</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5>
-<div class="para" id="sect-gcf-lcm-3-3-8-1-1">Find <span class="process-math">\(GCF(3315,135)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="example example-like" id="sect-gcf-lcm-6-8"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.15</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-gcf-lcm-6-8-1-1">Find <span class="process-math">\(GCF(3315,135)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-gcf-lcm-3-3-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-gcf-lcm-6-8-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="sect-gcf-lcm-3-3-8-2-1">First find <span class="process-math">\(3315 \div 135\)</span> using long division:<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-gcf-lcm-6-8-2-1">
+<div class="para">First find <span class="process-math">\(3315 \div 135\)</span> using long division:</div>
+<div class="displaymath process-math" id="sect-gcf-lcm-6-8-2-1-2">
+\begin{equation*}
+\begin{aligned}
+2 \;\; 4\amp \\ 
+135\;)\!\!\overline{\;\;3\;\;3\;\;1\;\;5}\amp\\
+\underline{\; 2\;\;7\;\;0}\;\;\phantom{0}\amp\\
+6\;\;1\;\;5\amp\\
+\underline{\; 5\;\;4\;\;0}\amp\\
+\phantom{0}\;\;7\;\;5\amp\\
+\end{aligned}
+\end{equation*}
 </div>
-<div class="para" id="sect-gcf-lcm-3-3-8-2-2">3315135<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-gcf-lcm-3-3-8-2-3">
+<div class="para logical" id="sect-gcf-lcm-6-8-2-2">
 <div class="para">Since <span class="process-math">\(3315 \div 135=24 R75\)</span>
 </div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-3-8-2-3-2">
+<div class="displaymath process-math" id="sect-gcf-lcm-6-8-2-2-2">
 \begin{equation*}
 \begin{aligned}
 GCF(3315,135)\amp =GCF(135,75) \qquad \qquad \text{and since $135 \div 75 = 1 R 60$} \\
@@ -827,58 +963,199 @@ GCF(3315,135)\amp =GCF(135,75) \qquad \qquad \text{and since $135 \div 75 = 1 R 
 \amp = GCF(15,0) = 15\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-gcf-lcm-3-3-8-2-4">This shows that the original problem <span class="process-math">\(GCF(3315,135)=15\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-3-8-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-gcf-lcm-6-8-2-3">This shows that the original problem <span class="process-math">\(GCF(3315,135)=15\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-6-8-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.4.12.1"><a href="#sect-gcf-lcm-3-3-8-2" title="Copy heading and permalink for Solution 6.4.12.1" aria-label="Copy heading and permalink for Solution 6.4.12.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.15.1"><a href="#sect-gcf-lcm-6-8-2" title="Copy heading and permalink for Solution 6.4.15.1" aria-label="Copy heading and permalink for Solution 6.4.15.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.4.12"><a href="#sect-gcf-lcm-3-3-8" title="Copy heading and permalink for Example 6.4.12" aria-label="Copy heading and permalink for Example 6.4.12">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsubsection 6.4.1.1: Euclid’s Algorithm"><a href="#sect-gcf-lcm-3-3" title="Copy heading and permalink for Subsubsection 6.4.1.1: Euclid’s Algorithm" aria-label="Copy heading and permalink for Subsubsection 6.4.1.1: Euclid’s Algorithm">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.4.15"><a href="#sect-gcf-lcm-6-8" title="Copy heading and permalink for Example 6.4.15" aria-label="Copy heading and permalink for Example 6.4.15">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 6.4.3: Euclid’s Algorithm"><a href="#sect-gcf-lcm-6" title="Copy heading and permalink for Subsection 6.4.3: Euclid’s Algorithm" aria-label="Copy heading and permalink for Subsection 6.4.3: Euclid’s Algorithm">🔗</a></div>
 </section>
-<section class="subsubsection" id="sect-gcf-lcm-3-4">
-<h4 class="heading hide-type">
-<span class="type">Subsubsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Relationship between LCM and GCF</span>
+<section class="subsection" id="sect-gcf-lcm-7">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Relationship between LCM and GCF</span>
+</h3>
+<div class="para logical" id="sect-gcf-lcm-7-2">
+<div class="displaymath process-math" id="eq-lcm-gcf">
+\begin{equation}
+\begin{aligned}LCM(a,b)\amp = \frac{ab}{GCF(a,b)}\end{aligned}\tag{6.4.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-gcf-lcm-7-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.16</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para logical" id="sect-gcf-lcm-3-4-2">
-<div class="displaymath process-math" id="sect-gcf-lcm-3-4-2-1">
+<div class="para" id="sect-gcf-lcm-7-3-1-1">First find <span class="process-math">\(GCF(360,135)\)</span> using Euclid’s Algorithm. Then use the above expression to find <span class="process-math">\(LCM(360,135)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-gcf-lcm-7-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-gcf-lcm-7-3-2-1">
+<div class="para">First, to find the remainder of <span class="process-math">\(360 \div 135\text{,}\)</span> we’ll use long division:</div>
+<div class="displaymath process-math" id="sect-gcf-lcm-7-3-2-1-2">
 \begin{equation*}
-\begin{aligned}LCM(a,b)\amp = \frac{ab}{GCF(a,b)}\end{aligned}
+\begin{aligned}
+2\;\;\phantom{0}\amp \\
+135\;)\!\!\overline{\;\;3\;\;6\;\;0}\amp\\
+\underline{\; 2\;\;7}\;\;\phantom{0}\amp\\
+9\;\;0\amp\\
+\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-7-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-gcf-lcm-3-4-3"><h5 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.13</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h5>
-<div class="para" id="sect-gcf-lcm-3-4-3-1-1">First find <span class="process-math">\(GCF(360,135)\)</span> using Euclid’s Algorithm. Then use the above expression to find <span class="process-math">\(LCM(360,135)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para" id="sect-gcf-lcm-3-4-3-1-2">360135<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="sect-gcf-lcm-3-4-3-1-3">
+<div class="para logical" id="sect-gcf-lcm-7-3-2-2">
 <div class="para">Since <span class="process-math">\(360 \div 135=2 R90\)</span>
 </div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-4-3-1-3-2">
+<div class="displaymath process-math" id="sect-gcf-lcm-7-3-2-2-2">
 \begin{equation*}
 \begin{aligned}GCF(360,135)\amp =GCF(135,90) \quad  \text{and since $135 \div 90 = 1 R 45$} \\
 \amp = GCF(90,45) = 45\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-3-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> 
-<div class="para logical" id="sect-gcf-lcm-3-4-3-1-4">
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-7-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-gcf-lcm-7-3-2-3">
 <div class="para">Therefore,</div>
-<div class="displaymath process-math" id="sect-gcf-lcm-3-4-3-1-4-1">
+<div class="displaymath process-math" id="sect-gcf-lcm-7-3-2-3-1">
 \begin{equation*}
 \begin{aligned}LCM(360,135) = \frac{ 360 \cdot 135}{45}= 360 \cdot 3 = 1080\end{aligned}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-3-4-3-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-gcf-lcm-7-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Example 6.4.13"><a href="#sect-gcf-lcm-3-4-3" title="Copy heading and permalink for Example 6.4.13" aria-label="Copy heading and permalink for Example 6.4.13">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsubsection 6.4.1.2: Relationship between LCM and GCF"><a href="#sect-gcf-lcm-3-4" title="Copy heading and permalink for Subsubsection 6.4.1.2: Relationship between LCM and GCF" aria-label="Copy heading and permalink for Subsubsection 6.4.1.2: Relationship between LCM and GCF">🔗</a></div>
-</section><div class="autopermalink" data-description="Subsection 6.4.1: Least Common Multiple"><a href="#sect-gcf-lcm-3" title="Copy heading and permalink for Subsection 6.4.1: Least Common Multiple" aria-label="Copy heading and permalink for Subsection 6.4.1: Least Common Multiple">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.4.16.1"><a href="#sect-gcf-lcm-7-3-2" title="Copy heading and permalink for Solution 6.4.16.1" aria-label="Copy heading and permalink for Solution 6.4.16.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.4.16"><a href="#sect-gcf-lcm-7-3" title="Copy heading and permalink for Example 6.4.16" aria-label="Copy heading and permalink for Example 6.4.16">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 6.4.4: Relationship between LCM and GCF"><a href="#sect-gcf-lcm-7" title="Copy heading and permalink for Subsection 6.4.4: Relationship between LCM and GCF" aria-label="Copy heading and permalink for Subsection 6.4.4: Relationship between LCM and GCF">🔗</a></div>
+</section>
+<section class="exercises" id="exercises-gcf-lcm">
+<h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.4.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-gcf-lcm-1-1">
+<div class="para" id="exercises-gcf-lcm-1-1-1">Use the method of writing out all factors to find<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-gcf-lcm-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-gcf-lcm-1-2-1-1">
+<span class="process-math">\(GCF(24,36)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.1.a"><a href="#exercises-gcf-lcm-1-2" title="Copy heading and permalink for Task 6.4.5.1.a" aria-label="Copy heading and permalink for Task 6.4.5.1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-gcf-lcm-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-gcf-lcm-1-3-1-1">
+<span class="process-math">\(GCF(60,80)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.1.b"><a href="#exercises-gcf-lcm-1-3" title="Copy heading and permalink for Task 6.4.5.1.b" aria-label="Copy heading and permalink for Task 6.4.5.1.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.4.5.1"><a href="#exercises-gcf-lcm-1" title="Copy heading and permalink for Exercise 6.4.5.1" aria-label="Copy heading and permalink for Exercise 6.4.5.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-gcf-lcm-2-1">
+<div class="para" id="exercises-gcf-lcm-2-1-1">Use prime factorization to find<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-gcf-lcm-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-gcf-lcm-2-2-1-1">
+<span class="process-math">\(GCF(144,180)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.2.a"><a href="#exercises-gcf-lcm-2-2" title="Copy heading and permalink for Task 6.4.5.2.a" aria-label="Copy heading and permalink for Task 6.4.5.2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-gcf-lcm-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-gcf-lcm-2-3-1-1">
+<span class="process-math">\(GCF(1800,850)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.2.b"><a href="#exercises-gcf-lcm-2-3" title="Copy heading and permalink for Task 6.4.5.2.b" aria-label="Copy heading and permalink for Task 6.4.5.2.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.4.5.2"><a href="#exercises-gcf-lcm-2" title="Copy heading and permalink for Exercise 6.4.5.2" aria-label="Copy heading and permalink for Exercise 6.4.5.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-gcf-lcm-3-1">
+<div class="para" id="exercises-gcf-lcm-3-1-1">Use the method of writing out enough factors to find<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-gcf-lcm-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-gcf-lcm-3-2-1-1">LCM(18,24)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.3.a"><a href="#exercises-gcf-lcm-3-2" title="Copy heading and permalink for Task 6.4.5.3.a" aria-label="Copy heading and permalink for Task 6.4.5.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-gcf-lcm-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-gcf-lcm-3-3-1-1">LCM(20,45)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.3.b"><a href="#exercises-gcf-lcm-3-3" title="Copy heading and permalink for Task 6.4.5.3.b" aria-label="Copy heading and permalink for Task 6.4.5.3.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.4.5.3"><a href="#exercises-gcf-lcm-3" title="Copy heading and permalink for Exercise 6.4.5.3" aria-label="Copy heading and permalink for Exercise 6.4.5.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-gcf-lcm-4-1">
+<div class="para" id="exercises-gcf-lcm-4-1-1">Use prime factorization to find<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-gcf-lcm-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-gcf-lcm-4-2-1-1">LCM(200,180)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.4.a"><a href="#exercises-gcf-lcm-4-2" title="Copy heading and permalink for Task 6.4.5.4.a" aria-label="Copy heading and permalink for Task 6.4.5.4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-gcf-lcm-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-gcf-lcm-4-3-1-1">LCM(144,180)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.4.b"><a href="#exercises-gcf-lcm-4-3" title="Copy heading and permalink for Task 6.4.5.4.b" aria-label="Copy heading and permalink for Task 6.4.5.4.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.4.5.4"><a href="#exercises-gcf-lcm-4" title="Copy heading and permalink for Exercise 6.4.5.4" aria-label="Copy heading and permalink for Exercise 6.4.5.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-gcf-lcm-5-1">
+<div class="para" id="exercises-gcf-lcm-5-1-1">Use Euclid’s method to find each of the following.  Write out the steps carefully like in the examples above.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-gcf-lcm-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-gcf-lcm-5-2-1-1">
+<span class="process-math">\(GCF(1560,45)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.5.a"><a href="#exercises-gcf-lcm-5-2" title="Copy heading and permalink for Task 6.4.5.5.a" aria-label="Copy heading and permalink for Task 6.4.5.5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-gcf-lcm-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-gcf-lcm-5-3-1-1">
+<span class="process-math">\(GCF(2160, 2664)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.5.b"><a href="#exercises-gcf-lcm-5-3" title="Copy heading and permalink for Task 6.4.5.5.b" aria-label="Copy heading and permalink for Task 6.4.5.5.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.4.5.5"><a href="#exercises-gcf-lcm-5" title="Copy heading and permalink for Exercise 6.4.5.5" aria-label="Copy heading and permalink for Exercise 6.4.5.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-gcf-lcm-6-1">
+<div class="para" id="exercises-gcf-lcm-6-1-1">Use Euclid’s Algorithm and <a href="sect-gcf-lcm.html#eq-lcm-gcf" class="xref" data-knowl="./knowl/xref/eq-lcm-gcf.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 6.4.1">(6.4.1)</a> to find<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-gcf-lcm-6-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-gcf-lcm-6-2-1-1">
+<span class="process-math">\(LCM(810,720)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-6-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.6.a"><a href="#exercises-gcf-lcm-6-2" title="Copy heading and permalink for Task 6.4.5.6.a" aria-label="Copy heading and permalink for Task 6.4.5.6.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-gcf-lcm-6-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-gcf-lcm-6-3-1-1">
+<span class="process-math">\(LCM(184,32)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-6-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.4.5.6.b"><a href="#exercises-gcf-lcm-6-3" title="Copy heading and permalink for Task 6.4.5.6.b" aria-label="Copy heading and permalink for Task 6.4.5.6.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.4.5.6"><a href="#exercises-gcf-lcm-6" title="Copy heading and permalink for Exercise 6.4.5.6" aria-label="Copy heading and permalink for Exercise 6.4.5.6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-gcf-lcm-7-1-1">If <span class="process-math">\(N\)</span> is a prime number, then explain why <span class="process-math">\(GCF(N,p) = 1\)</span> for any number <span class="process-math">\(p \lt N\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.4.5.7"><a href="#exercises-gcf-lcm-7" title="Copy heading and permalink for Exercise 6.4.5.7" aria-label="Copy heading and permalink for Exercise 6.4.5.7">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-8"><h4 class="heading"><span class="codenumber">8<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-gcf-lcm-8-1-1">Two gears in a machine are aligned by a mark that is drawn from the center of the first gear to the center of the second gear.  If there are 192 teeth on the first gear and 320 teeth on the second gear, how many revolutions of the first gear are needed to realign the mark.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.4.5.8"><a href="#exercises-gcf-lcm-8" title="Copy heading and permalink for Exercise 6.4.5.8" aria-label="Copy heading and permalink for Exercise 6.4.5.8">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-gcf-lcm-9"><h4 class="heading"><span class="codenumber">9<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-gcf-lcm-9-1-1">The gymnastics club is having an event and they want to group all the participants neatly in rows.  However, whether they try to use rows of 2, 3, 4, 5, 6, 7 or 8, there is always one gymnast left over.  If there are fewer than 1000 gymnasts, how many are there?  (Hint: what happens if one gymnast leaves the room, and use knowledge in this section.)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-gcf-lcm-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.4.5.9"><a href="#exercises-gcf-lcm-9" title="Copy heading and permalink for Exercise 6.4.5.9" aria-label="Copy heading and permalink for Exercise 6.4.5.9">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises 6.4.5"><a href="#exercises-gcf-lcm" title="Copy heading and permalink for Exercises 6.4.5" aria-label="Copy heading and permalink for Exercises 6.4.5">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 6.4: Greatest Common Factors and Least Common Multiples"><a href="#sect-gcf-lcm" title="Copy heading and permalink for Section 6.4: Greatest Common Factors and Least Common Multiples" aria-label="Copy heading and permalink for Section 6.4: Greatest Common Factors and Least Common Multiples">🔗</a></div>
 </section>
 </div>
