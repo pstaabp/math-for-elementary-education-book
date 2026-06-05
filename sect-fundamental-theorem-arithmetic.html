@@ -83,7 +83,11 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sect-divisibility-tests.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-primes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sect-gcf-lcm.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}  \newcommand{\N}{\mathbb N} 
+  \newcommand{\Z}{\mathbb Z} 
+  \newcommand{\Q}{\mathbb Q} 
+  \newcommand{\R}{\mathbb R} 
+\newcommand{\numc}[1]{\bigcirc\llap{\scriptsize{#1}\kern.3em}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -298,8 +302,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-4" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long Division with 1-digit divisors</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-5" class="internal"><span class="codenumber">5.4.2</span> <span class="title">The long division algorithm and the Quotient Remainder Theorem</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-6" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Extending the Long Division method to multiple-digit divisors</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-7" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Long Division using estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-estimation" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Long Division using estimation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-8" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Base-5 Long Division</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-long-division.html#exercises-long-division" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -309,23 +314,29 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-even-odd.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Even and Odd Numbers</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-even-odd-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-lemmas-theorem-proofs" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-even-odd.html#exercises-even-odd" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-divisibility-tests.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Tests</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-3" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for 11</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#subsect-divisibility-tests" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for small whole numbers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-divisibility-tests.html#exercises-divisibility-tests" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-factor-trees" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Prime Factorization and Factor Trees</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-5" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-6" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#subsec-prime-applications" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Applications of Prime Factorization</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#exercises-primes" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -453,115 +464,496 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Primes and the Fundamental Theorem of Arithmetic</span>
 </h2>
-<section class="introduction" id="sect-fundamental-theorem-arithmetic-2">
-<div class="para logical" id="sect-fundamental-theorem-arithmetic-2-1">
+<article class="objectives goal-like" id="sect-fundamental-theorem-arithmetic-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc" id="sect-fundamental-theorem-arithmetic-2-1">
+<li id="sect-fundamental-theorem-arithmetic-2-1-1">
+<div class="para" id="sect-fundamental-theorem-arithmetic-2-1-1-1">Understand the definition of a prime number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-fundamental-theorem-arithmetic-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-2-1-2">
+<div class="para" id="sect-fundamental-theorem-arithmetic-2-1-2-1">Understand how the Sieve of Eratosthenes produces prime numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-fundamental-theorem-arithmetic-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-2-1-3">
+<div class="para" id="sect-fundamental-theorem-arithmetic-2-1-3-1">Find the prime factorization of a number using factor trees.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-fundamental-theorem-arithmetic-2-1-3" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-2-1-4">
+<div class="para" id="sect-fundamental-theorem-arithmetic-2-1-4-1">Know how to test numbers for primality.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-fundamental-theorem-arithmetic-2-1-4" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Objectives 6.3"><a href="#sect-fundamental-theorem-arithmetic-2" title="Copy heading and permalink for Objectives 6.3" aria-label="Copy heading and permalink for Objectives 6.3">🔗</a></div>
+</article>
+<section class="introduction" id="sect-fundamental-theorem-arithmetic-3">
+<div class="para logical" id="sect-fundamental-theorem-arithmetic-3-1">
 <div class="para">We can write often whole numbers as products of other whole numbers. For example</div>
-<div class="displaymath process-math" id="sect-fundamental-theorem-arithmetic-2-1-1">
+<div class="displaymath process-math" id="sect-fundamental-theorem-arithmetic-3-1-1">
 \begin{equation*}
 30 = 6 \cdot 5
 \end{equation*}
 </div>
 <div class="para">and we can further write <span class="process-math">\(6=2 \cdot 3\text{,}\)</span> therefore</div>
-<div class="displaymath process-math" id="sect-fundamental-theorem-arithmetic-2-1-3">
+<div class="displaymath process-math" id="sect-fundamental-theorem-arithmetic-3-1-3">
 \begin{equation*}
 30  = 2 \cdot 3 \cdot 5
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-2-2">The number 2, 3 and 5 can no longer be written as multiples of other numbers and thus called <em class="alert">prime numbers.</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-3-2">The number 2, 3 and 5 can no longer be written as multiples of other numbers and thus called <em class="alert">prime numbers.</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="sect-fundamental-theorem-arithmetic-2-3"><h3 class="heading">
+<article class="definition definition-like" id="sect-fundamental-theorem-arithmetic-3-3"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sect-fundamental-theorem-arithmetic-2-3-1-1">A <dfn class="terminology">prime number</dfn> is a whole number <span class="process-math">\(P \gt 1\)</span> whose only factors are 1 and <span class="process-math">\(P\text{.}\)</span> Whole numbers <span class="process-math">\(N\geq 2\)</span> that are not prime are called <dfn class="terminology">composite</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-3-3-1-1">A <dfn class="terminology">prime number</dfn> is a whole number <span class="process-math">\(P \gt 1\)</span> whose only factors are 1 and <span class="process-math">\(P\text{.}\)</span> Whole numbers <span class="process-math">\(N\geq 2\)</span> that are not prime are called <dfn class="terminology">composite</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 6.3.1"><a href="#sect-fundamental-theorem-arithmetic-2-3" title="Copy heading and permalink for Definition 6.3.1" aria-label="Copy heading and permalink for Definition 6.3.1">🔗</a></div>
+<div class="autopermalink" data-description="Definition 6.3.1"><a href="#sect-fundamental-theorem-arithmetic-3-3" title="Copy heading and permalink for Definition 6.3.1" aria-label="Copy heading and permalink for Definition 6.3.1">🔗</a></div>
 </article></section>
-<section class="subsection" id="sect-fundamental-theorem-arithmetic-3">
+<section class="subsection" id="sect-fundamental-theorem-arithmetic-4">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">The Sieve of Eratosthenes</span>
 </h3>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-2">There are a variety of ways to find prime numbers. One such way is called the sieve of Eratosthenes, a Greek scholar c. 275 – 195 B.C.E. The sieve can be used for finding prime numbers up to any number and the following shows how to find them up to 60. First start with a grid of numbers where the lowest number 2 is written:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-2">There are a variety of ways to find prime numbers. One such way is called the sieve of Eratosthenes, a Greek scholar c. 275 – 195 B.C.E. The sieve can be used for finding prime numbers up to any number and the following shows how to find them up to 60. First start with a grid of numbers where the lowest number 2 is written:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-fundamental-theorem-arithmetic-3-3.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-4">Each step has two parts:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="table table-like" id="table-numbers-1-60"><figcaption><span class="type">Table</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>Sieve of Eratosthenes<div class="autopermalink" data-description="Table 6.3.2: Sieve of Eratosthenes"><a href="#table-numbers-1-60" title="Copy heading and permalink for Table 6.3.2: Sieve of Eratosthenes" aria-label="Copy heading and permalink for Table 6.3.2: Sieve of Eratosthenes">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines">2</td>
+<td class="c m b0 r0 l0 t0 lines">3</td>
+<td class="c m b0 r0 l0 t0 lines">4</td>
+<td class="c m b0 r0 l0 t0 lines">5</td>
+<td class="c m b0 r0 l0 t0 lines">6</td>
+<td class="c m b0 r0 l0 t0 lines">7</td>
+<td class="c m b0 r0 l0 t0 lines">8</td>
+<td class="c m b0 r0 l0 t0 lines">9</td>
+<td class="c m b0 r0 l0 t0 lines">10</td>
+<td class="c m b0 r0 l0 t0 lines">11</td>
+<td class="c m b0 r0 l0 t0 lines">12</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">13</td>
+<td class="c m b0 r0 l0 t0 lines">14</td>
+<td class="c m b0 r0 l0 t0 lines">15</td>
+<td class="c m b0 r0 l0 t0 lines">16</td>
+<td class="c m b0 r0 l0 t0 lines">17</td>
+<td class="c m b0 r0 l0 t0 lines">18</td>
+<td class="c m b0 r0 l0 t0 lines">19</td>
+<td class="c m b0 r0 l0 t0 lines">20</td>
+<td class="c m b0 r0 l0 t0 lines">21</td>
+<td class="c m b0 r0 l0 t0 lines">22</td>
+<td class="c m b0 r0 l0 t0 lines">23</td>
+<td class="c m b0 r0 l0 t0 lines">24</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">25</td>
+<td class="c m b0 r0 l0 t0 lines">26</td>
+<td class="c m b0 r0 l0 t0 lines">27</td>
+<td class="c m b0 r0 l0 t0 lines">28</td>
+<td class="c m b0 r0 l0 t0 lines">29</td>
+<td class="c m b0 r0 l0 t0 lines">30</td>
+<td class="c m b0 r0 l0 t0 lines">31</td>
+<td class="c m b0 r0 l0 t0 lines">32</td>
+<td class="c m b0 r0 l0 t0 lines">33</td>
+<td class="c m b0 r0 l0 t0 lines">34</td>
+<td class="c m b0 r0 l0 t0 lines">35</td>
+<td class="c m b0 r0 l0 t0 lines">36</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">37</td>
+<td class="c m b0 r0 l0 t0 lines">38</td>
+<td class="c m b0 r0 l0 t0 lines">39</td>
+<td class="c m b0 r0 l0 t0 lines">40</td>
+<td class="c m b0 r0 l0 t0 lines">41</td>
+<td class="c m b0 r0 l0 t0 lines">42</td>
+<td class="c m b0 r0 l0 t0 lines">43</td>
+<td class="c m b0 r0 l0 t0 lines">44</td>
+<td class="c m b0 r0 l0 t0 lines">45</td>
+<td class="c m b0 r0 l0 t0 lines">46</td>
+<td class="c m b0 r0 l0 t0 lines">47</td>
+<td class="c m b0 r0 l0 t0 lines">48</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">49</td>
+<td class="c m b0 r0 l0 t0 lines">50</td>
+<td class="c m b0 r0 l0 t0 lines">51</td>
+<td class="c m b0 r0 l0 t0 lines">52</td>
+<td class="c m b0 r0 l0 t0 lines">53</td>
+<td class="c m b0 r0 l0 t0 lines">54</td>
+<td class="c m b0 r0 l0 t0 lines">55</td>
+<td class="c m b0 r0 l0 t0 lines">56</td>
+<td class="c m b0 r0 l0 t0 lines">57</td>
+<td class="c m b0 r0 l0 t0 lines">58</td>
+<td class="c m b0 r0 l0 t0 lines">59</td>
+<td class="c m b0 r0 l0 t0 lines">60</td>
+</tr>
+</table></div>
+</figure>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-4">Each step has two parts:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-fundamental-theorem-arithmetic-3-5">
-<ol class="decimal" id="sect-fundamental-theorem-arithmetic-3-5-1">
-<li id="sect-fundamental-theorem-arithmetic-3-5-1-1">
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-5-1-1-1">Circle the smallest number not crossed out.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-fundamental-theorem-arithmetic-4-5">
+<ol class="decimal" id="sect-fundamental-theorem-arithmetic-4-5-1">
+<li id="sect-fundamental-theorem-arithmetic-4-5-1-1">
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-5-1-1-1">Circle the smallest number not crossed out.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-5-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#sect-fundamental-theorem-arithmetic-3-5-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-fundamental-theorem-arithmetic-4-5-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-3-5-1-2">
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-5-1-2-1">Cross out all multiples of that number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-4-5-1-2">
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-5-1-2-1">Cross out all multiples of that number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-5-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#sect-fundamental-theorem-arithmetic-3-5-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-fundamental-theorem-arithmetic-4-5-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-6">In this first step, nothing is crossed out, so we circle the number 2 and then cross out multiples of 2.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-6">In this first step, nothing is crossed out, so we circle the number 2 and then cross out multiples of 2.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-fundamental-theorem-arithmetic-3-7.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-8">For the next step, circle the 3 and cross out multiple of 3 (shown in red).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{2}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{4}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{6}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{8}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(9\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{10}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(11\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{1}2\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(13\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{14}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(15\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{16}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(17\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{18}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(19\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{20}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(21\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{22}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(23\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{24}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{26}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(27\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{28}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(29\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{30}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(31\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{32}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(33\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{34}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(35\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{36}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(37\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{38}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(39\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{40}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(41\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{42}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(43\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{44}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(45\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{46}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(47\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{48}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(49\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{50}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(51\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{52}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(53\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{54}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(55\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{56}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(57\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{58}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(59\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{60}\)</span></td>
+</tr>
+</table></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-8">For the next step, circle the 3 and cross out all multiples of 3.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-fundamental-theorem-arithmetic-3-9.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-10">and notice that some of those crossed out were already crossed out. (What property did the number crossed out twice have?).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{2}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{3}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{4}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{6}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{8}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{9}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{10}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(11\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{1}2\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(13\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{14}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{15}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{16}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(17\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{18}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(19\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{20}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{21}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{22}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(23\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{24}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(25\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{26}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{27}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{28}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(29\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{30}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(31\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{32}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{33}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{34}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(35\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{36}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(37\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{38}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{39}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{40}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(41\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{42}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(43\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{44}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{45}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{46}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(47\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{48}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(49\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{50}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{51}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{52}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(53\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{54}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(55\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{56}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{57}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{58}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(59\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{60}\)</span></td>
+</tr>
+</table></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-10">and notice that some of those crossed out were already crossed out. (What property did the number crossed out twice have?).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-11">The next step will circle the 5 and cross out multiple of 5 (shown in blue):<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-11">The next step will circle the 5 and cross out multiple of 5 (shown in blue):<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-fundamental-theorem-arithmetic-3-12.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-13">This continues until all numbers are either circled or crossed out, however it is an interesting question to determine when you can stop the process, knowing that the uncrossed ones should all be circled.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{2}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{3}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{4}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{5}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{6}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{8}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{9}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{1}0\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(11\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{1}2\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(13\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{14}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{15}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{16}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(17\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{18}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(19\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{20}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{21}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{22}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(23\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{24}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{25}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{26}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(27\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{28}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(29\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{30}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(31\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{32}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(33\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{34}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{35}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{36}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(37\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{38}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(39\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{40}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(41\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{42}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(43\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{44}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(45\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{46}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(47\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{48}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(49\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{50}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(51\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{52}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(53\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{54}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{55}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{56}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(57\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{58}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(59\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{60}\)</span></td>
+</tr>
+</table></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-13">This continues until all numbers are either circled or crossed out, however it is an interesting question to determine when you can stop the process, knowing that the uncrossed ones should all be circled.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-14">The result shows:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-14">The result shows:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-fundamental-theorem-arithmetic-3-15.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-16">The circled numbers are prime and the crossed out ones are composite. This shows that the following numbers less than 60 are prime: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c m b0 r0 l0 t0 lines"></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{2}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{3}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{4}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{5}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{6}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{7}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{8}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{9}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{10}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{11}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{1}2\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{13}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{14}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{15}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{16}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{17}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{18}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{19}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{20}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{21}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{22}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{23}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{24}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{25}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{26}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{27}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{28}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{29}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{30}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{31}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{32}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{33}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{34}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{35}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{36}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{37}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{38}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{39}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{40}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{41}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{42}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{43}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{44}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{45}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{46}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{47}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{48}\)</span></td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{49}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{50}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{51}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{52}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{53}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{54}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{55}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{56}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{57}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{58}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\numc{59}\)</span></td>
+<td class="c m b0 r0 l0 t0 lines"><span class="process-math">\(\cancel{60}\)</span></td>
+</tr>
+</table></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-16">The circled numbers are prime and the crossed out ones are composite. This shows that the following numbers less than 60 are prime: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="remark remark-like" id="sect-fundamental-theorem-arithmetic-3-17"><h4 class="heading">
-<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sieve of Eratosthenes.</span>
+<article class="remark remark-like" id="sect-fundamental-theorem-arithmetic-4-17"><h4 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Sieve of Eratosthenes.</span>
 </h4>
-<div class="para logical" id="sect-fundamental-theorem-arithmetic-3-17-2">
+<div class="para logical" id="sect-fundamental-theorem-arithmetic-4-17-2">
 <div class="para">To find a list of prime below a number, <span class="process-math">\(N\)</span> using the sieve of Eratosthenes,</div>
-<ol class="decimal" id="sect-fundamental-theorem-arithmetic-3-17-2-2">
-<li id="sect-fundamental-theorem-arithmetic-3-17-2-2-1">
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-17-2-2-1-1">Write a grid of numbers starting at 2 and up to <span class="process-math">\(N\text{.}\)</span> It is nice to use rows of 12 as shown above, and rows of 15 or 18 are nice too, but neither is a requirement.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="decimal" id="sect-fundamental-theorem-arithmetic-4-17-2-2">
+<li id="sect-fundamental-theorem-arithmetic-4-17-2-2-1">
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-17-2-2-1-1">Write a grid of numbers starting at 2 and up to <span class="process-math">\(N\text{.}\)</span> It is nice to use rows of 12 as shown above, and rows of 15 or 18 are nice too, but neither is a requirement.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-3-17-2-2-2">
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-17-2-2-2-1">Circle the lowest uncrossed out number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-4-17-2-2-2">
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-17-2-2-2-1">Circle the lowest uncrossed out number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-3-17-2-2-3">
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-17-2-2-3-1">Cross out all multiples of that number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-4-17-2-2-3">
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-17-2-2-3-1">Cross out all multiples of that number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-3-17-2-2-4">
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-17-2-2-4-1">Repeat steps 2 and 3 until all numbers are circled or cross out<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-4-17-2-2-4">
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-17-2-2-4-1">Repeat steps 2 and 3 until all numbers are circled or crossed out.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4"><a href="#sect-fundamental-theorem-arithmetic-3-17-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+<div class="autopermalink" data-description="Item 4"><a href="#sect-fundamental-theorem-arithmetic-4-17-2-2-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 </ol>
 <div class="para">The circled numbers are prime.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-17-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-17-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Remark 6.3.2: Sieve of Eratosthenes"><a href="#sect-fundamental-theorem-arithmetic-3-17" title="Copy heading and permalink for Remark 6.3.2: Sieve of Eratosthenes" aria-label="Copy heading and permalink for Remark 6.3.2: Sieve of Eratosthenes">🔗</a></div>
+<div class="autopermalink" data-description="Remark 6.3.3: Sieve of Eratosthenes"><a href="#sect-fundamental-theorem-arithmetic-4-17" title="Copy heading and permalink for Remark 6.3.3: Sieve of Eratosthenes" aria-label="Copy heading and permalink for Remark 6.3.3: Sieve of Eratosthenes">🔗</a></div>
 </article>
-<article class="theorem theorem-like" id="sect-fundamental-theorem-arithmetic-3-18"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamental Theorem of Arithmetic.</span>
+<article class="theorem theorem-like" id="sect-fundamental-theorem-arithmetic-4-18"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Fundamental Theorem of Arithmetic.</span>
 </h4>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-18-2-1">Every whole number <span class="process-math">\(N \gt 1\text{,}\)</span> can be written as a product of primes and this can only be done one way (except for reordering).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-18-2-1">Every whole number <span class="process-math">\(N \gt 1\text{,}\)</span> can be written as a product of primes and this can only be done one way (except for reordering).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-18-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.3.3: Fundamental Theorem of Arithmetic"><a href="#sect-fundamental-theorem-arithmetic-3-18" title="Copy heading and permalink for Theorem 6.3.3: Fundamental Theorem of Arithmetic" aria-label="Copy heading and permalink for Theorem 6.3.3: Fundamental Theorem of Arithmetic">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 6.3.4: Fundamental Theorem of Arithmetic"><a href="#sect-fundamental-theorem-arithmetic-4-18" title="Copy heading and permalink for Theorem 6.3.4: Fundamental Theorem of Arithmetic" aria-label="Copy heading and permalink for Theorem 6.3.4: Fundamental Theorem of Arithmetic">🔗</a></div>
 </article>
-<div class="para" id="sect-fundamental-theorem-arithmetic-3-19">Knowing how to write whole numbers in term of its prime factors is an important step in understanding the structure of whole numbers and operations on them. We show an efficient way to do this in the next section.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-3-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-4-19">Knowing how to write whole numbers in term of its prime factors is an important step in understanding the structure of whole numbers and operations on them. We show an efficient way to do this in the next section.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-4-19" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 6.3.1: The Sieve of Eratosthenes"><a href="#sect-fundamental-theorem-arithmetic-3" title="Copy heading and permalink for Subsection 6.3.1: The Sieve of Eratosthenes" aria-label="Copy heading and permalink for Subsection 6.3.1: The Sieve of Eratosthenes">🔗</a></div>
+<div class="autopermalink" data-description="Subsection 6.3.1: The Sieve of Eratosthenes"><a href="#sect-fundamental-theorem-arithmetic-4" title="Copy heading and permalink for Subsection 6.3.1: The Sieve of Eratosthenes" aria-label="Copy heading and permalink for Subsection 6.3.1: The Sieve of Eratosthenes">🔗</a></div>
 </section>
 <section class="subsection" id="sect-factor-trees">
 <h3 class="heading hide-type">
@@ -571,15 +963,15 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="sect-factor-trees-3">If we look for the prime factorization of 60, then we start with 60 and show the two branches.<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="generated/latex-image/sect-factor-trees-4.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="generated/latex-image/sect-factor-trees-4.svg" role="img" class="contained" alt="The number 60 with lines from it to below left and below right."></div>
 <div class="para" id="sect-factor-trees-5">At the ends of the lines, you find a pair of factors of 60. There are many it doesn’t matter what you start with. Let’s try 6 and 10 to get<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="generated/latex-image/sect-factor-trees-6.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="generated/latex-image/sect-factor-trees-6.svg" role="img" class="contained" alt="The number 60 with lines from it to below left connected to a 6 and below right connection to a 10."></div>
 <div class="para" id="sect-factor-trees-7">At this point, write a pair of factors of 6 and a pair for ten as follows:<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-factor-trees-8.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-factor-trees-8.svg" role="img" class="contained" alt="The number 60 with lines from it to below left connected to a 6 and below right connection to a 10. From the 6 there are lines below it to a 2 and a 3. From the 10 there are lines below it to a 5 and 2."></div>
 <div class="para logical" id="sect-factor-trees-9">
-<div class="para">And note that at this point, all of the ends of the tree<details class="ptx-footnote" aria-live="polite" id="sect-factor-trees-9-1"><summary class="ptx-footnote__number" title="Footnote 6.3.1"><sup> 1 </sup></summary>
+<div class="para">And note that at this point, all of the ends of the tree <details class="ptx-footnote" aria-live="polite" id="sect-factor-trees-9-1"><summary class="ptx-footnote__number" title="Footnote 6.3.1"><sup> 1 </sup></summary>
 <div class="ptx-footnote__contents" id="sect-factor-trees-9-1">You may be why this is called a tree. It doesn’t look like a tree (but perhaps it does if it is flipped upside down). The term <dfn class="terminology">tree</dfn> comes from a branch of mathematics called <em class="emphasis">Graph Theory</em>. A tree is a graph (which has nodes and edges) with no internal connections or cycles. That is every node (where the numbers are in our factor trees) branches to two or more.
 </div></details> are prime and you write down the factorization as the product of the ends of the tree or</div>
 <div class="displaymath process-math" id="sect-factor-trees-9-2">
@@ -590,10 +982,10 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">where either form is fine and in general the prime factors are written from smallest to largest. The form <span class="process-math">\(2^2 \cdot 3 \cdot 5\)</span> is called the <dfn class="terminology">exponential form</dfn> because repeated factors are written as exponents.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-factor-trees-10">You may be asking what if I chose a different factor of 60?  A mathematical answer is that because of the Fundamental Theorem of Arithmetic, every whole number has a <em class="emphasis">unique</em> factor, so you would get the same answer. If you are not convinced, let’s take a look at the next example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-factor-trees-10">You may be asking what if I chose a different factor of 60? A mathematical answer is that because of the Fundamental Theorem of Arithmetic, every whole number has a <em class="emphasis">unique</em> factor, so you would get the same answer. If you are not convinced, let’s take a look at the next example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="sect-factor-trees-11"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-factor-trees-11-1-1">Find an alternative factor tree of 60 and find the resulting factorization.<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -602,28 +994,28 @@ eBookConfig.enable_chatcodes =  false;
 <div class="solution solution-like knowl__content">
 <div class="para" id="sect-factor-trees-11-2-1">Let’s start with factoring 60 as <span class="process-math">\(2 \cdot 30\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="generated/latex-image/sect-factor-trees-11-2-2.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 35%; margin-left: 32.5%; margin-right: 32.5%;"><img src="generated/latex-image/sect-factor-trees-11-2-2.svg" role="img" class="contained" alt="The number 60 with lines from it to below left connected to a 2 and below right connection to a 30."></div>
 <div class="para" id="sect-factor-trees-11-2-3">and then factor 30 as <span class="process-math">\(2 \cdot 15\)</span> or<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-11-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-factor-trees-11-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-factor-trees-11-2-4.svg" role="img" class="contained" alt="The number 60 with lines from it to below left connected to a 2 and below right connection to a 30. Below the 30 are lines to a 2 and to a 15. Below the 15 are lines to a 3 and a 5."></div>
 <div class="para logical" id="sect-factor-trees-11-2-5">
 <div class="para">The result is the product of the ends of the branches which is the same as above or</div>
 <div class="displaymath process-math" id="sect-factor-trees-11-2-5-1">
 \begin{equation*}
-60 = 2^2 \cdot 3 \cdot 5
+60 = 2^2 \cdot 3 \cdot 5\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-11-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.3.4.1"><a href="#sect-factor-trees-11-2" title="Copy heading and permalink for Solution 6.3.4.1" aria-label="Copy heading and permalink for Solution 6.3.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.3.5.1"><a href="#sect-factor-trees-11-2" title="Copy heading and permalink for Solution 6.3.5.1" aria-label="Copy heading and permalink for Solution 6.3.5.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.3.4"><a href="#sect-factor-trees-11" title="Copy heading and permalink for Example 6.3.4" aria-label="Copy heading and permalink for Example 6.3.4">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.3.5"><a href="#sect-factor-trees-11" title="Copy heading and permalink for Example 6.3.5" aria-label="Copy heading and permalink for Example 6.3.5">🔗</a></div>
 </article>
 <div class="para" id="sect-factor-trees-12">The result of this example shows that it doesn’t matter how you perform the factorization. The resulting tree will be different but the factors and thus the factorization will be the same.<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="sect-factor-trees-13"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="sect-factor-trees-13-1-1">Find the prime factorization of <span class="process-math">\(56\text{,}\)</span> <span class="process-math">\(288\)</span> and <span class="process-math">\(14025\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -637,10 +1029,10 @@ eBookConfig.enable_chatcodes =  false;
 <li id="sect-factor-trees-13-2-2-1-1">
 <div class="para" id="sect-factor-trees-13-2-2-1-1-1">First, note that <span class="process-math">\(56=7\cdot 8\text{,}\)</span> So we write:<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-13-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-1-2.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-1-2.svg" role="img" class="contained" alt="The number 56 with lines from it to below left connected to a 8 and below right connection to a 7."></div>
 <div class="para" id="sect-factor-trees-13-2-2-1-1-3">and then note that <span class="process-math">\(8=2\cdot 2 \cdot 2\)</span> so we can write the diagram as:<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-13-2-2-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-1-4.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-1-4.svg" role="img" class="contained" alt="The number 56 with lines from it to below left connected to a 8 and below right connection to a 7. Below the 8 are three lines connected each to a 2."></div>
 <div class="para logical" id="sect-factor-trees-13-2-2-1-1-5">
 <div class="para">And now all of the ends of the branches are prime and this shows that</div>
 <div class="displaymath process-math" id="sect-factor-trees-13-2-2-1-1-5-1">
@@ -661,13 +1053,13 @@ eBookConfig.enable_chatcodes =  false;
 <li id="sect-factor-trees-13-2-2-1-2">
 <div class="para" id="sect-factor-trees-13-2-2-1-2-1">For <span class="process-math">\(288\text{,}\)</span> we’ll start with a tree and recognize using the divisibility rules that 8 is a factor of 288.<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-13-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-2-2.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-2-2.svg" role="img" class="contained" alt="The number 288 with lines from it to below left connected to a 8 and below right connection to a 36."></div>
 <div class="para" id="sect-factor-trees-13-2-2-1-2-3">and then factor 8 and 36 as well:<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-13-2-2-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-2-4.svg" role="img" class="contained" alt="The number 288 with lines from it to below left connected to a 8 and below right connection to a 36. Connected to the 8 are three lines below it each connected to a 2. Connected to the 36 are two lines each connected to a 6."></div>
 <div class="para" id="sect-factor-trees-13-2-2-1-2-5">and finally factor the 6.<div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-13-2-2-1-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-2-6.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-factor-trees-13-2-2-1-2-6.svg" role="img" class="contained" alt="The number 288 with lines from it to below left connected to a 8 and below right connection to a 36. Connected to the 8 are three lines below it each connected to a 2. Connected to the 36 are two lines each connected to a 6. Connected to each 6 are a line to a 2 and a line to a 3."></div>
 <div class="para logical" id="sect-factor-trees-13-2-2-1-2-7">
 <div class="para">And all of the ends are prime now and this shows that</div>
 <div class="displaymath process-math" id="sect-factor-trees-13-2-2-1-2-7-1">
@@ -703,16 +1095,23 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sect-factor-trees-13-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.3.5.1"><a href="#sect-factor-trees-13-2" title="Copy heading and permalink for Solution 6.3.5.1" aria-label="Copy heading and permalink for Solution 6.3.5.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.3.6.1"><a href="#sect-factor-trees-13-2" title="Copy heading and permalink for Solution 6.3.6.1" aria-label="Copy heading and permalink for Solution 6.3.6.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.3.5"><a href="#sect-factor-trees-13" title="Copy heading and permalink for Example 6.3.5" aria-label="Copy heading and permalink for Example 6.3.5">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.3.6"><a href="#sect-factor-trees-13" title="Copy heading and permalink for Example 6.3.6" aria-label="Copy heading and permalink for Example 6.3.6">🔗</a></div>
 </article>
 <div class="para logical" id="sect-factor-trees-14">
 <div class="para">As we stated above, the initial factoring doesn’t matter in the result, however if you pick a small factor for each stage, then it may take more steps. For example, on the factoring of 288 shown in the previous example, we could have done</div>
 <div class="displaymath process-math" id="sect-factor-trees-14-1">
 \begin{equation*}
-\begin{aligned} 288 \amp = 2 \cdot 144 \\ \amp  = 2 \cdot 2 \cdot 72 \\ \amp = 2 \cdot 2 \cdot 2 \cdot 36 \\ \amp = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 18 \\ \amp = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 9 \\ \amp = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3 \\ \end{aligned}
+\begin{aligned} 
+288 \amp = 2 \cdot 144 \\ 
+\amp  = 2 \cdot 2 \cdot 72 \\ 
+\amp = 2 \cdot 2 \cdot 2 \cdot 36 \\ 
+\amp = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 18 \\ 
+\amp = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 9 \\ 
+\amp = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 3 \cdot 3
+\end{aligned}
 \end{equation*}
 </div>
 <div class="para">resulting in 6 steps instead of the 3 it took in the previous example.</div>
@@ -720,177 +1119,431 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="autopermalink" data-description="Subsection 6.3.2: Prime Factorization and Factor Trees"><a href="#sect-factor-trees" title="Copy heading and permalink for Subsection 6.3.2: Prime Factorization and Factor Trees" aria-label="Copy heading and permalink for Subsection 6.3.2: Prime Factorization and Factor Trees">🔗</a></div>
 </section>
-<section class="subsection" id="sect-fundamental-theorem-arithmetic-5">
+<section class="subsection" id="sect-fundamental-theorem-arithmetic-6">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.3</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Primality Test</span>
 </h3>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-2">From the last section, we saw using the Sieve of Eratosthenes that we can find the first handful of prime numbers. This is great for finding the first few primes, but what if we want to determine if 1151 is prime? We still need to determine if the only factors are 1 and itself, but we can use the following theorem:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-2">From the last section, we saw using the Sieve of Eratosthenes that we can find the first handful of prime numbers. This is great for finding the first few primes, but what if we want to determine if 1151 is prime? We still need to determine if the only factors are 1 and itself, but we can use the following theorem:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="theorem theorem-like" id="sect-fundamental-theorem-arithmetic-5-3"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Primality Test.</span>
+<article class="theorem theorem-like" id="sect-fundamental-theorem-arithmetic-6-3"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Primality Test.</span>
 </h4>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-3-2-1">A whole number <span class="process-math">\(N \gt 1\)</span> is prime unless it has a prime factor <span class="process-math">\(p \leq \sqrt{N}\text{.}\)</span> Thus to test whether <span class="process-math">\(N\)</span> is prime one need only check divisibility by the primes <span class="process-math">\(p=2,3,5,\ldots\)</span> that satisfy <span class="process-math">\(p^{2}\leq N\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-3-2-1">A whole number <span class="process-math">\(N \gt 1\)</span> is prime unless it has a prime factor <span class="process-math">\(p \leq \sqrt{N}\text{.}\)</span> Thus to test whether <span class="process-math">\(N\)</span> is prime one need only check divisibility by the primes <span class="process-math">\(p=2,3,5,\ldots\)</span> that satisfy <span class="process-math">\(p^{2}\leq N\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.3.6: Primality Test"><a href="#sect-fundamental-theorem-arithmetic-5-3" title="Copy heading and permalink for Theorem 6.3.6: Primality Test" aria-label="Copy heading and permalink for Theorem 6.3.6: Primality Test">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 6.3.7: Primality Test"><a href="#sect-fundamental-theorem-arithmetic-6-3" title="Copy heading and permalink for Theorem 6.3.7: Primality Test" aria-label="Copy heading and permalink for Theorem 6.3.7: Primality Test">🔗</a></div>
 </article>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-4">This theorem can be turned into an algorithm to determine if a number is prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-4">This theorem can be turned into an algorithm to determine if a number is prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="note remark-like" id="sect-fundamental-theorem-arithmetic-5-5"><h4 class="heading">
-<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algorithm to Test a Number for Primality.</span>
+<article class="note remark-like" id="sect-fundamental-theorem-arithmetic-6-5"><h4 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Algorithm to Test a Number for Primality.</span>
 </h4>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-2">This basically gives use a recipe (called an algorithm) for determining if a number <span class="process-math">\(N\)</span> is prime:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-2">This basically gives use a recipe (called an algorithm) for determining if a number <span class="process-math">\(N\)</span> is prime:<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-fundamental-theorem-arithmetic-5-5-3">
-<ol class="decimal" id="sect-fundamental-theorem-arithmetic-5-5-3-1">
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-1">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-1-1">Check if 2 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-fundamental-theorem-arithmetic-6-5-3">
+<ol class="decimal" id="sect-fundamental-theorem-arithmetic-6-5-3-1">
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-1">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-1-1">Check if 2 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 1"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-2">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-2-1">Check if 3 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-2">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-2-1">Check if 3 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-3">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-3-1">Check if 5 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-3">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-3-1">Check if 5 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="autopermalink" data-description="Item 3"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-4">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-4-1">Check if 7 is a factor (there is no divisibility test, so use the divisibility lemma or long division).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-4">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-4-1">Check if 7 is a factor (use the divisibility test if you learned it, the divisibility lemma or long division).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+<div class="autopermalink" data-description="Item 4"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-5">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-5-1">Check if 11 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-5">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-5-1">Check if 11 is a factor (use the divisibility test).<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 5"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
+<div class="autopermalink" data-description="Item 5"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-5" title="Copy heading and permalink for Item 5" aria-label="Copy heading and permalink for Item 5">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-6">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-6-1">Continue for <span class="process-math">\(p=13, 17, \ldots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-6">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-6-1">Continue for <span class="process-math">\(p=13, 17, \ldots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 6"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
+<div class="autopermalink" data-description="Item 6"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-6" title="Copy heading and permalink for Item 6" aria-label="Copy heading and permalink for Item 6">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-7">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-7-1">If any of the primes are a factor, stop, the number <span class="process-math">\(N\)</span> is not prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-7">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-7-1">If any of the primes are a factor, stop, the number <span class="process-math">\(N\)</span> is not prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 7"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
+<div class="autopermalink" data-description="Item 7"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-7" title="Copy heading and permalink for Item 7" aria-label="Copy heading and permalink for Item 7">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-5-3-1-8">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-5-3-1-8-1">If you reach <span class="process-math">\(p^{2} \gt; N\text{,}\)</span> then stop, the number is prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-5-3-1-8">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-5-3-1-8-1">If you reach <span class="process-math">\(p^{2} \gt; N\text{,}\)</span> then stop, the number is prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-8-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8"><a href="#sect-fundamental-theorem-arithmetic-5-5-3-1-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
+<div class="autopermalink" data-description="Item 8"><a href="#sect-fundamental-theorem-arithmetic-6-5-3-1-8" title="Copy heading and permalink for Item 8" aria-label="Copy heading and permalink for Item 8">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-5-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 6.3.7: Algorithm to Test a Number for Primality"><a href="#sect-fundamental-theorem-arithmetic-5-5" title="Copy heading and permalink for Note 6.3.7: Algorithm to Test a Number for Primality" aria-label="Copy heading and permalink for Note 6.3.7: Algorithm to Test a Number for Primality">🔗</a></div>
+<div class="autopermalink" data-description="Note 6.3.8: Algorithm to Test a Number for Primality"><a href="#sect-fundamental-theorem-arithmetic-6-5" title="Copy heading and permalink for Note 6.3.8: Algorithm to Test a Number for Primality" aria-label="Copy heading and permalink for Note 6.3.8: Algorithm to Test a Number for Primality">🔗</a></div>
 </article>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-6">Let’s see how this works with an example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-6">Let’s see how this works with an example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="example example-like" id="sect-fundamental-theorem-arithmetic-5-7"><h4 class="heading">
-<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
-</h4>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-7-1-1">Is 203 prime?<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="solutions">
-<details id="sect-fundamental-theorem-arithmetic-5-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
-<div class="solution solution-like knowl__content">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-7-2-1">First of all the square root of 203 is between 13 and 15 (since <span class="process-math">\(13^{2}=169\)</span> and <span class="process-math">\(15^{2}=225\)</span>), so we need to check if 203 is divisible by 2,3,5,7,11, and 13.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para logical" id="sect-fundamental-theorem-arithmetic-5-7-2-2">
-<ul class="disc" id="sect-fundamental-theorem-arithmetic-5-7-2-2-1">
-<li id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-1">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-1-1">203 isn’t divisible by 2 (ends in a 3)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-2">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-2-1">203 is not divisible by 3 (sum of digits is 5)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-3">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-3-1">203 is not divisible by 5 (doesn’t end in 0 or 5)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-4">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-7-2-2-1-4-1">203 is divisible by 7. This can be checked with some mental math or long division.  Using the <a href="sect-divisibility-tests.html#lem-divisibility" class="xref" data-knowl="./knowl/xref/lem-divisibility.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 6.2.5: Divisibility Lemma">Divisibility Lemma</a>, <span class="process-math">\(203 = 210 - 7 = 7 \cdot (30 -1 ) = 7 \cdot 29\text{.}\)</span>  Using long division, <span class="process-math">\(203 \div 7 = 29 R0\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-7-2-3">At this point we stop because we found a pair of factors.  This shows that <span class="process-math">\(203=7 \cdot 29\text{,}\)</span> so this isn’t prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Solution 6.3.8.1"><a href="#sect-fundamental-theorem-arithmetic-5-7-2" title="Copy heading and permalink for Solution 6.3.8.1" aria-label="Copy heading and permalink for Solution 6.3.8.1">🔗</a></div>
-</div></details>
-</div>
-<div class="autopermalink" data-description="Example 6.3.8"><a href="#sect-fundamental-theorem-arithmetic-5-7" title="Copy heading and permalink for Example 6.3.8" aria-label="Copy heading and permalink for Example 6.3.8">🔗</a></div>
-</article>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-8">Here’s another example<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="example example-like" id="sect-fundamental-theorem-arithmetic-5-9"><h4 class="heading">
+<article class="example example-like" id="sect-fundamental-theorem-arithmetic-6-7"><h4 class="heading">
 <span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-1-1">Is 293 prime?<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-7-1-1">Is 203 prime?<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="solutions">
-<details id="sect-fundamental-theorem-arithmetic-5-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<details id="sect-fundamental-theorem-arithmetic-6-7-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
 <div class="solution solution-like knowl__content">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-2">First, let’s determine which primes we need to check. Since <span class="process-math">\(17^{2}=289\)</span> and <span class="process-math">\(23^{2}=529\text{,}\)</span> we can check up through 17.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-7-2-1">First of all the square root of 203 is between 13 and 15 (since <span class="process-math">\(13^{2}=169\)</span> and <span class="process-math">\(15^{2}=225\)</span> ), so we need to check if 203 is divisible by 2,3,5,7,11, and 13.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-fundamental-theorem-arithmetic-5-9-2-3">
-<ul class="disc" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1">
-<li id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-1">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-1-1">293 isn’t divisible by 2 (ends in a 3)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para logical" id="sect-fundamental-theorem-arithmetic-6-7-2-2">
+<ul class="disc" id="sect-fundamental-theorem-arithmetic-6-7-2-2-1">
+<li id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-1">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-1-1">203 isn’t divisible by 2 (ends in a 3)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-2">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-2-1">293 is not divisible by 3 (sum of digits is 14, not a multiple of 3)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-2">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-2-1">203 is not divisible by 3 (sum of digits is 5)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-3">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-3-1">293 is not divisible by 5 (doesn’t end in 0 or 5)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-3">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-3-1">203 is not divisible by 5 (doesn’t end in 0 or 5)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-4">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-4-1">293 is not divisible by 7: This can either be done with long division or using the <a href="sect-divisibility-tests.html#lem-divisibility" class="xref" data-knowl="./knowl/xref/lem-divisibility.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 6.2.5: Divisibility Lemma">Divisibility Lemma 6.2.5</a>. <span class="process-math">\(293 = 280 + 13 = 7 \cdot 40 + 13 \)</span> and since 13 is not divisible by 7, then 293 is not either. Using long division show: <span class="process-math">\(293 = 41 R 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-4">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-7-2-2-1-4-1">203 is divisible by 7. Double 3 and subtract it from 20 to get <span class="process-math">\(20-6=14\text{,}\)</span> which is a multiple of 7, so 203 is divisible by 7. You can use the divisibility lemma or long division to find the other factor, which is 29, so <span class="process-math">\(203=7 \cdot 29\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-5">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-5-1">293 is not divisible by 11. Use the divisibility test <span class="process-math">\(2+3-9 = 5-9=-4\text{,}\)</span> which is not a multiple of 11.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-6">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-6-1">Check if 293 is divisible by 13. Using long division, <span class="process-math">\(293 \div 13 = 22 R 7\)</span> and since there is a nonzero remainder, it is not divisible by 13.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-7">
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-3-1-7-1">Check if 293 is divisible by 17. Using long division, <span class="process-math">\(293 \div 17 = 17 R 4\)</span> and since there is a nonzero remainder, it is not divisible by 17.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-fundamental-theorem-arithmetic-5-9-2-4">Since no primes <span class="process-math">\(p\)</span> than satisfy <span class="process-math">\(p^2 \lt N\text{,}\)</span> then 293 is prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-5-9-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-7-2-3">At this point we stop because we found a pair of factors. This shows that <span class="process-math">\(203=7 \cdot 29\text{,}\)</span> so this isn’t prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-7-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Solution 6.3.9.1"><a href="#sect-fundamental-theorem-arithmetic-5-9-2" title="Copy heading and permalink for Solution 6.3.9.1" aria-label="Copy heading and permalink for Solution 6.3.9.1">🔗</a></div>
+<div class="autopermalink" data-description="Solution 6.3.9.1"><a href="#sect-fundamental-theorem-arithmetic-6-7-2" title="Copy heading and permalink for Solution 6.3.9.1" aria-label="Copy heading and permalink for Solution 6.3.9.1">🔗</a></div>
 </div></details>
 </div>
-<div class="autopermalink" data-description="Example 6.3.9"><a href="#sect-fundamental-theorem-arithmetic-5-9" title="Copy heading and permalink for Example 6.3.9" aria-label="Copy heading and permalink for Example 6.3.9">🔗</a></div>
-</article><div class="autopermalink" data-description="Subsection 6.3.3: Primality Test"><a href="#sect-fundamental-theorem-arithmetic-5" title="Copy heading and permalink for Subsection 6.3.3: Primality Test" aria-label="Copy heading and permalink for Subsection 6.3.3: Primality Test">🔗</a></div>
+<div class="autopermalink" data-description="Example 6.3.9"><a href="#sect-fundamental-theorem-arithmetic-6-7" title="Copy heading and permalink for Example 6.3.9" aria-label="Copy heading and permalink for Example 6.3.9">🔗</a></div>
+</article>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-8">Here’s another example<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-fundamental-theorem-arithmetic-6-9"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-1-1">Is 293 prime?<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-fundamental-theorem-arithmetic-6-9-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-1"><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-2">First, let’s determine which primes we need to check. Since <span class="process-math">\(17^{2}=289\)</span> and <span class="process-math">\(23^{2}=529\text{,}\)</span> we can check up through 17.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-fundamental-theorem-arithmetic-6-9-2-3">
+<ul class="disc" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1">
+<li id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-1">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-1-1">293 isn’t divisible by 2 (ends in a 3)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-2">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-2-1">293 is not divisible by 3 (sum of digits is 14, not a multiple of 3)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-3">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-3-1">293 is not divisible by 5 (doesn’t end in 0 or 5)<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-3" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-4">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-4-1">293 is not divisible by 7. If you learned the divisibility test, then double the 3 and subtract it from 29 to get <span class="process-math">\(29-6=23\text{,}\)</span> which is not a multiple of 7, so 293 is not divisible by 7. If you didn’t learn the test, then this can be done with the <a href="sect-divisibility-tests.html#lem-divisibility" class="xref" data-knowl="./knowl/xref/lem-divisibility.html" data-reveal-label="Reveal" data-close-label="Close" title="Lemma 6.2.5: Divisibility Lemma">Divisibility Lemma 6.2.5</a>. <span class="process-math">\(293 = 280 + 13 = 7 \cdot 40 + 13 \)</span> and since 13 is not divisible by 7, then 293 is not either. Using long division show: <span class="process-math">\(293 = 41 R 6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-4" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-5">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-5-1">293 is not divisible by 11. Use the divisibility test <span class="process-math">\(2+3-9 = 5-9=-4\text{,}\)</span> which is not a multiple of 11.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-5-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-5" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-6">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-6-1">Check if 293 is divisible by 13. Using long division, <span class="process-math">\(293 \div 13 = 22 R 7\)</span> and since there is a nonzero remainder, it is not divisible by 13.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-6-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-6" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-7">
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-3-1-7-1">Check if 293 is divisible by 17. Using long division, <span class="process-math">\(293 \div 17 = 17 R 4\)</span> and since there is a nonzero remainder, it is not divisible by 17.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-7-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3-1-7" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-fundamental-theorem-arithmetic-6-9-2-4">Since no primes <span class="process-math">\(p\)</span> than satisfy <span class="process-math">\(p^2 \lt N\text{,}\)</span> then 293 is prime.<div class="autopermalink" data-description="Paragraph"><a href="#sect-fundamental-theorem-arithmetic-6-9-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.10.1"><a href="#sect-fundamental-theorem-arithmetic-6-9-2" title="Copy heading and permalink for Solution 6.3.10.1" aria-label="Copy heading and permalink for Solution 6.3.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 6.3.10"><a href="#sect-fundamental-theorem-arithmetic-6-9" title="Copy heading and permalink for Example 6.3.10" aria-label="Copy heading and permalink for Example 6.3.10">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 6.3.3: Primality Test"><a href="#sect-fundamental-theorem-arithmetic-6" title="Copy heading and permalink for Subsection 6.3.3: Primality Test" aria-label="Copy heading and permalink for Subsection 6.3.3: Primality Test">🔗</a></div>
+</section>
+<section class="subsection" id="subsec-prime-applications">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Applications of Prime Factorization</span>
+</h3>
+<div class="para logical" id="subsec-prime-applications-2">
+<div class="para">To further understand prime factorization, we look at a interesting function, the factorial. The factorial of a number <span class="process-math">\(n\)</span> is the product of all whole from <span class="process-math">\(n\)</span> down to <span class="process-math">\(1\text{.}\)</span> The factorial is written with a ! after the number. For example</div>
+<div class="displaymath process-math" id="subsec-prime-applications-2-4">
+\begin{align*}
+5! \amp =5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 120\\
+7! \amp  = 7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \cdot 1 = 5040 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-prime-applications-3">In this section, we’ll look at the prime factorization of these numbers. To accomplish this, instead of starting at the whole number 120 or 5040, we write out the factorial as the product of whole numbers and factor all composite numbers.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsec-prime-applications-4"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="introduction" id="subsec-prime-applications-4-1">
+<div class="para" id="subsec-prime-applications-4-1-1">For each of the following factorials, write the prime factorization.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="subsec-prime-applications-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="subsec-prime-applications-4-2-1-1">5!<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-prime-applications-4-2-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-prime-applications-4-2-2-1">
+<div class="para">Start with the product of all of the numbers 5 down to 1 (not including, since 1 isn’t prime).</div>
+<div class="displaymath process-math" id="subsec-prime-applications-4-2-2-1-1">
+\begin{equation*}
+5! = 5 \cdot 4 \cdot 3 \cdot 2
+\end{equation*}
+</div>
+<div class="para">and then we factor <span class="process-math">\(4\)</span> the only composite number there:</div>
+<div class="displaymath process-math" id="subsec-prime-applications-4-2-2-1-3">
+\begin{equation*}
+5! = 5 \cdot (2 \cdot 2) \cdot 3 \cdot 2  = 2^3 \cdot 3 \cdot 5
+\end{equation*}
+</div>
+<div class="para">where in the last step we wrote exponents and rearranged the factors.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-4-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.11.a.1"><a href="#subsec-prime-applications-4-2-2" title="Copy heading and permalink for Solution 6.3.11.a.1" aria-label="Copy heading and permalink for Solution 6.3.11.a.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 6.3.11.a"><a href="#subsec-prime-applications-4-2" title="Copy heading and permalink for Task 6.3.11.a" aria-label="Copy heading and permalink for Task 6.3.11.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="subsec-prime-applications-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="subsec-prime-applications-4-3-1-1">
+<span class="process-math">\(7!\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsec-prime-applications-4-3-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="subsec-prime-applications-4-3-2-1">
+<div class="displaymath process-math" id="subsec-prime-applications-4-3-2-1-1">
+\begin{align*}
+7! \amp =7 \cdot 6 \cdot 5 \cdot 4 \cdot 3 \cdot 2 \\
+\amp =  7 \cdot (2 \cdot 3) \cdot 5 \cdot (2 \cdot 2) \cdot 3 \cdot 2 \\
+\amp 2^4 \cdot 3^2 \cdot 5 \cdot 7
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-4-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 6.3.11.b.1"><a href="#subsec-prime-applications-4-3-2" title="Copy heading and permalink for Solution 6.3.11.b.1" aria-label="Copy heading and permalink for Solution 6.3.11.b.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Task 6.3.11.b"><a href="#subsec-prime-applications-4-3" title="Copy heading and permalink for Task 6.3.11.b" aria-label="Copy heading and permalink for Task 6.3.11.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Example 6.3.11"><a href="#subsec-prime-applications-4" title="Copy heading and permalink for Example 6.3.11" aria-label="Copy heading and permalink for Example 6.3.11">🔗</a></div>
+</article>
+<div class="para logical" id="subsec-prime-applications-5">
+<div class="para">We can also use a nice property of factorials in that we can start writing the product of the terms and stop at any point putting the factorial.  Notice that</div>
+<div class="displaymath process-math" id="subsec-prime-applications-5-1">
+\begin{equation*}
+7!  =7 \cdot 6 \cdot \underbrace{5 \cdot 4 \cdot 3 \cdot 2}_{5!} = 7 \cdot 6 \cdot 5!
+\end{equation*}
+</div>
+<div class="para">So for example we can write:</div>
+<div class="displaymath process-math" id="subsec-prime-applications-5-2">
+\begin{equation*}
+12! = 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 !
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsec-prime-applications-6">
+<div class="para">And this let’s us find larger prime factorization.</div>
+<div class="displaymath process-math" id="subsec-prime-applications-6-1">
+\begin{align*}
+12! \amp = 12 \cdot 11 \cdot 10 \cdot 9 \cdot 8 \cdot 7 ! \\
+\amp = (2 \cdot 2 \cdot 3) \cdot 11 \cdot (5 \cdot 2) \cdot (3 \cdot 3) \cdot (2 \cdot 2 \cdot 2) \cdot (2^4 \cdot 3^2 \cdot 5 \cdot 7) 
+\end{align*}
+</div>
+<div class="para">where the factoization of 7! was found in the previous example. This can be rearranged and written in exponential form as</div>
+<div class="displaymath process-math" id="subsec-prime-applications-6-2">
+\begin{equation*}
+12! = 2^{10} \cdot 3^5 \cdot 5^2 \cdot 7 \cdot 11
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-prime-applications-7">Notice that the primes less than 12 are in <span class="process-math">\(12!\)</span> and this will always be true.  The number of each factor needs to be found as above.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsec-prime-applications-8">We’ll use the prime factorization in the problems to answer questions.<div class="autopermalink" data-description="Paragraph"><a href="#subsec-prime-applications-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 6.3.4: Applications of Prime Factorization"><a href="#subsec-prime-applications" title="Copy heading and permalink for Subsection 6.3.4: Applications of Prime Factorization" aria-label="Copy heading and permalink for Subsection 6.3.4: Applications of Prime Factorization">🔗</a></div>
+</section>
+<section class="exercises" id="exercises-primes">
+<h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.3.5</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercises-primes-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-primes-1-1">
+<div class="para" id="exercises-primes-1-1-1">Find the prime factorization of the following numbers. Write the result in exponential form.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-primes-1-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-primes-1-2-1-1">770<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-1-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.1.a"><a href="#exercises-primes-1-2" title="Copy heading and permalink for Task 6.3.5.1.a" aria-label="Copy heading and permalink for Task 6.3.5.1.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-1-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-primes-1-3-1-1">1540<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.1.b"><a href="#exercises-primes-1-3" title="Copy heading and permalink for Task 6.3.5.1.b" aria-label="Copy heading and permalink for Task 6.3.5.1.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-1-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="exercises-primes-1-4-1-1">69,300<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-1-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.1.c"><a href="#exercises-primes-1-4" title="Copy heading and permalink for Task 6.3.5.1.c" aria-label="Copy heading and permalink for Task 6.3.5.1.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-1-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="exercises-primes-1-5-1-1">1456<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-1-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.1.d"><a href="#exercises-primes-1-5" title="Copy heading and permalink for Task 6.3.5.1.d" aria-label="Copy heading and permalink for Task 6.3.5.1.d">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.3.5.1"><a href="#exercises-primes-1" title="Copy heading and permalink for Exercise 6.3.5.1" aria-label="Copy heading and permalink for Exercise 6.3.5.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-primes-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-primes-2-1">
+<div class="para" id="exercises-primes-2-1-1">Use the primality test to determine if each of the following is prime.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-primes-2-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-primes-2-2-1-1">127<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-2-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.2.a"><a href="#exercises-primes-2-2" title="Copy heading and permalink for Task 6.3.5.2.a" aria-label="Copy heading and permalink for Task 6.3.5.2.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-2-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-primes-2-3-1-1">221<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-2-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.2.b"><a href="#exercises-primes-2-3" title="Copy heading and permalink for Task 6.3.5.2.b" aria-label="Copy heading and permalink for Task 6.3.5.2.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-2-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="exercises-primes-2-4-1-1">233<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-2-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.2.c"><a href="#exercises-primes-2-4" title="Copy heading and permalink for Task 6.3.5.2.c" aria-label="Copy heading and permalink for Task 6.3.5.2.c">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-2-5"><h5 class="heading"><span class="codenumber">(d)</span></h5>
+<div class="para" id="exercises-primes-2-5-1-1">323<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.2.d"><a href="#exercises-primes-2-5" title="Copy heading and permalink for Task 6.3.5.2.d" aria-label="Copy heading and permalink for Task 6.3.5.2.d">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-2-6"><h5 class="heading"><span class="codenumber">(e)</span></h5>
+<div class="para" id="exercises-primes-2-6-1-1">349<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-2-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.2.e"><a href="#exercises-primes-2-6" title="Copy heading and permalink for Task 6.3.5.2.e" aria-label="Copy heading and permalink for Task 6.3.5.2.e">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.3.5.2"><a href="#exercises-primes-2" title="Copy heading and permalink for Exercise 6.3.5.2" aria-label="Copy heading and permalink for Exercise 6.3.5.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-primes-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-primes-3-1">
+<div class="para" id="exercises-primes-3-1-1">The complete list of factors of 30 can be arranged in pairs so that the product of each pair is 30:<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b0 r0 l0 t0 lines">1</td>
+<td class="l m b0 r0 l0 t0 lines">2</td>
+<td class="l m b0 r0 l0 t0 lines">3</td>
+<td class="l m b0 r0 l0 t0 lines">5</td>
+</tr>
+<tr>
+<td class="l m b0 r0 l0 t0 lines">30</td>
+<td class="l m b0 r0 l0 t0 lines">15</td>
+<td class="l m b0 r0 l0 t0 lines">10</td>
+<td class="l m b0 r0 l0 t0 lines">6</td>
+</tr>
+</table></div>
+</div>
+<article class="task exercise-like" id="exercises-primes-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-primes-3-2-1-1">Make similar lists of all of the factors of 56, 84 and 144<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.3.a"><a href="#exercises-primes-3-2" title="Copy heading and permalink for Task 6.3.5.3.a" aria-label="Copy heading and permalink for Task 6.3.5.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-primes-3-3-1-1">Prove that a number <span class="process-math">\(N\)</span> has an even number of factors unless it is the square of a whole number. (Hint: Each factor <span class="process-math">\(a\)</span> has a “partner” <span class="process-math">\(b=N/a\)</span> unless what is true about <span class="process-math">\(N\text{?}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.3.b"><a href="#exercises-primes-3-3" title="Copy heading and permalink for Task 6.3.5.3.b" aria-label="Copy heading and permalink for Task 6.3.5.3.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.3.5.3"><a href="#exercises-primes-3" title="Copy heading and permalink for Exercise 6.3.5.3" aria-label="Copy heading and permalink for Exercise 6.3.5.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-primes-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-primes-4-1">
+<div class="para" id="exercises-primes-4-1-1">For each following number, provide the prime factorization.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-primes-4-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-primes-4-2-1-1">
+<span class="process-math">\(10!\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-4-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.4.a"><a href="#exercises-primes-4-2" title="Copy heading and permalink for Task 6.3.5.4.a" aria-label="Copy heading and permalink for Task 6.3.5.4.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-4-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-primes-4-3-1-1">
+<span class="process-math">\(15!\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.4.b"><a href="#exercises-primes-4-3" title="Copy heading and permalink for Task 6.3.5.4.b" aria-label="Copy heading and permalink for Task 6.3.5.4.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.3.5.4"><a href="#exercises-primes-4" title="Copy heading and permalink for Exercise 6.3.5.4" aria-label="Copy heading and permalink for Exercise 6.3.5.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-primes-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-primes-5-1-1">Is 10! divisible by 10? by 30? by 120? by 1000? (Hint: factor 10, 30 and 120 and determine if the factors are in 10! that you found in the previous problem. )<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.3.5.5"><a href="#exercises-primes-5" title="Copy heading and permalink for Exercise 6.3.5.5" aria-label="Copy heading and permalink for Exercise 6.3.5.5">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-primes-6"><h4 class="heading"><span class="codenumber">6<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-primes-6-1-1">Find the largest <span class="process-math">\(N\)</span> such that <span class="process-math">\(18!\)</span> is divisible by <span class="process-math">\(12^N\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-6-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.3.5.6"><a href="#exercises-primes-6" title="Copy heading and permalink for Exercise 6.3.5.6" aria-label="Copy heading and permalink for Exercise 6.3.5.6">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-primes-7"><h4 class="heading"><span class="codenumber">7<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-primes-7-1">
+<div class="para" id="exercises-primes-7-1-1">In the prime factorization of <span class="process-math">\(10!\text{,}\)</span> you should notice that there was a <span class="process-math">\(5^2\)</span> and <span class="process-math">\(2^k\)</span> for some <span class="process-math">\(k \gt 2\text{.}\)</span>  This means that there is a factor of 100 in <span class="process-math">\(10!\)</span> therefore <span class="process-math">\(10!\)</span> ends in 2 zeros.  Use the number of <span class="process-math">\(5\)</span>s in each of the following to determine the number of zeros in each factor.  (Note: you do not need to fully factor the number, just determine the number of 5s).<div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-7-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-primes-7-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-primes-7-2-1-1">
+<span class="process-math">\(20!\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.7.a"><a href="#exercises-primes-7-2" title="Copy heading and permalink for Task 6.3.5.7.a" aria-label="Copy heading and permalink for Task 6.3.5.7.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-7-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-primes-7-3-1-1">
+<span class="process-math">\(50!\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-7-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.7.b"><a href="#exercises-primes-7-3" title="Copy heading and permalink for Task 6.3.5.7.b" aria-label="Copy heading and permalink for Task 6.3.5.7.b">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-primes-7-4"><h5 class="heading"><span class="codenumber">(c)</span></h5>
+<div class="para" id="exercises-primes-7-4-1-1">
+<span class="process-math">\(100!\)</span><div class="autopermalink" data-description="Paragraph"><a href="#exercises-primes-7-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.3.5.7.c"><a href="#exercises-primes-7-4" title="Copy heading and permalink for Task 6.3.5.7.c" aria-label="Copy heading and permalink for Task 6.3.5.7.c">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.3.5.7"><a href="#exercises-primes-7" title="Copy heading and permalink for Exercise 6.3.5.7" aria-label="Copy heading and permalink for Exercise 6.3.5.7">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises 6.3.5"><a href="#exercises-primes" title="Copy heading and permalink for Exercises 6.3.5" aria-label="Copy heading and permalink for Exercises 6.3.5">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 6.3: Primes and the Fundamental Theorem of Arithmetic"><a href="#sect-fundamental-theorem-arithmetic" title="Copy heading and permalink for Section 6.3: Primes and the Fundamental Theorem of Arithmetic" aria-label="Copy heading and permalink for Section 6.3: Primes and the Fundamental Theorem of Arithmetic">🔗</a></div>
 </section>
 </div>

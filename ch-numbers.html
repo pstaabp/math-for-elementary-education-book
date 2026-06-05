@@ -83,7 +83,11 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sect-mathematical-curiosity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="math-elementary-educators.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sect-hindu-arabic-numbers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}  \newcommand{\N}{\mathbb N} 
+  \newcommand{\Z}{\mathbb Z} 
+  \newcommand{\Q}{\mathbb Q} 
+  \newcommand{\R}{\mathbb R} 
+\newcommand{\numc}[1]{\bigcirc\llap{\scriptsize{#1}\kern.3em}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -298,8 +302,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-4" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long Division with 1-digit divisors</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-5" class="internal"><span class="codenumber">5.4.2</span> <span class="title">The long division algorithm and the Quotient Remainder Theorem</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-6" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Extending the Long Division method to multiple-digit divisors</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-7" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Long Division using estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-estimation" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Long Division using estimation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-8" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Base-5 Long Division</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-long-division.html#exercises-long-division" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -309,23 +314,29 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-even-odd.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Even and Odd Numbers</span></a></div>
-<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-even-odd-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li></ul>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-lemmas-theorem-proofs" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-even-odd.html#exercises-even-odd" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-divisibility-tests.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Tests</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-3" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for 11</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#subsect-divisibility-tests" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for small whole numbers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-divisibility-tests.html#exercises-divisibility-tests" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-factor-trees" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Prime Factorization and Factor Trees</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-5" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-6" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#subsec-prime-applications" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Applications of Prime Factorization</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#exercises-primes" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">

@@ -83,7 +83,11 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 </div>
 <span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="ch-primes.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-primes.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sect-divisibility-tests.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
-</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}  \newcommand{\N}{\mathbb N} 
+  \newcommand{\Z}{\mathbb Z} 
+  \newcommand{\Q}{\mathbb Q} 
+  \newcommand{\R}{\mathbb R} 
+\newcommand{\numc}[1]{\bigcirc\llap{\scriptsize{#1}\kern.3em}}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -298,8 +302,9 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-4" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long Division with 1-digit divisors</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-5" class="internal"><span class="codenumber">5.4.2</span> <span class="title">The long division algorithm and the Quotient Remainder Theorem</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-6" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Extending the Long Division method to multiple-digit divisors</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-7" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Long Division using estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-estimation" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Long Division using estimation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-8" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Base-5 Long Division</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-long-division.html#exercises-long-division" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -309,23 +314,29 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sect-even-odd.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Even and Odd Numbers</span></a></div>
-<ul class="structural toc-item-list active"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-even-odd-3" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li></ul>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-lemmas-theorem-proofs" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-even-odd.html#exercises-even-odd" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-divisibility-tests.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Tests</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-3" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for 11</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#subsect-divisibility-tests" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for small whole numbers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-divisibility-tests.html#exercises-divisibility-tests" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-3" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-factor-trees" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Prime Factorization and Factor Trees</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-5" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-6" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#subsec-prime-applications" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Applications of Prime Factorization</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#exercises-primes" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -453,134 +464,155 @@ eBookConfig.enable_chatcodes =  false;
 <h2 class="heading hide-type">
 <span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Even and Odd Numbers</span>
 </h2>
-<section class="introduction" id="sect-even-odd-2">
-<div class="para" id="sect-even-odd-2-1">Let’s look at this through a lens of even and odd numbers. There are a few ways to describe an <em class="alert">even number</em> including:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<article class="objectives goal-like" id="sect-even-odd-2"><h3 class="heading"><span class="type">Objectives</span></h3>
+<ul class="disc" id="sect-even-odd-2-1">
+<li id="sect-even-odd-2-1-1">
+<div class="para" id="sect-even-odd-2-1-1-1">Know the definition of even and odd numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sect-even-odd-2-2">
-<ol class="decimal" id="sect-even-odd-2-2-1">
-<li id="sect-even-odd-2-2-1-1">
-<div class="para" id="sect-even-odd-2-2-1-1-1">An even number is any number that you can get by skip counting by twos. For example <span class="process-math">\(2,4,6,8,10, \ldots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 1"><a href="#sect-even-odd-2-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-even-odd-2-1-1" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
-<li id="sect-even-odd-2-2-1-2">
-<div class="para" id="sect-even-odd-2-2-1-2-1">An even number of objects can always be paired up (and none left unpaired).<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-even-odd-2-1-2">
+<div class="para" id="sect-even-odd-2-1-2-1">Use picture proofs and algebraic proofs to prove properties of even and odd numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 2"><a href="#sect-even-odd-2-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+<div class="autopermalink" data-description="Objective"><a href="#sect-even-odd-2-1-2" title="Copy heading and permalink for Objective" aria-label="Copy heading and permalink for Objective">🔗</a></div>
 </li>
-<li id="sect-even-odd-2-2-1-3">
-<div class="para" id="sect-even-odd-2-2-1-3-1">A number which is twice a whole number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</ul>
+<div class="autopermalink" data-description="Objectives 6.1"><a href="#sect-even-odd-2" title="Copy heading and permalink for Objectives 6.1" aria-label="Copy heading and permalink for Objectives 6.1">🔗</a></div>
+</article>
+<section class="introduction" id="sect-even-odd-3">
+<div class="para" id="sect-even-odd-3-1">Let’s look at this through a lens of even and odd numbers. There are a few ways to describe an <em class="alert">even number</em> including:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 3"><a href="#sect-even-odd-2-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+<div class="para logical" id="sect-even-odd-3-2">
+<ol class="decimal" id="sect-even-odd-3-2-1">
+<li id="sect-even-odd-3-2-1-1">
+<div class="para" id="sect-even-odd-3-2-1-1-1">An even number is any number that you can get by skip counting by twos. For example <span class="process-math">\(2,4,6,8,10, \ldots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#sect-even-odd-3-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
 </li>
-<li id="sect-even-odd-2-2-1-4">
-<div class="para" id="sect-even-odd-2-2-1-4-1">A number whose last digit is 0,2,4,6, or 8.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sect-even-odd-3-2-1-2">
+<div class="para" id="sect-even-odd-3-2-1-2-1">An even number of objects can always be paired up (and none left unpaired).<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4"><a href="#sect-even-odd-2-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
+<div class="autopermalink" data-description="Item 2"><a href="#sect-even-odd-3-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="sect-even-odd-3-2-1-3">
+<div class="para" id="sect-even-odd-3-2-1-3-1">A number which is twice a whole number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#sect-even-odd-3-2-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+<li id="sect-even-odd-3-2-1-4">
+<div class="para" id="sect-even-odd-3-2-1-4-1">A number whose last digit is 0,2,4,6, or 8.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4"><a href="#sect-even-odd-3-2-1-4" title="Copy heading and permalink for Item 4" aria-label="Copy heading and permalink for Item 4">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-2-3">On the surface, these are all reasonable possibilities, and they seem be consistent with what we think of with even numbers. However, from a mathematical point of view in order to prove properties of even numbers, it is important that we have a simple <em class="alert">mathematical definition</em> that will be useful.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-even-odd-3-3">On the surface, these are all reasonable possibilities, and they seem be consistent with what we think of with even numbers. However, from a mathematical point of view in order to prove properties of even numbers, it is important that we have a simple <em class="alert">mathematical definition</em> that will be useful.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-2-4">Therefore, we will use the following definition:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-even-odd-3-4">Therefore, we will use the following definition:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="sect-even-odd-2-5"><h3 class="heading">
+<article class="definition definition-like" id="sect-even-odd-3-5"><h3 class="heading">
 <span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sect-even-odd-2-5-1-1">An <dfn class="terminology">even number</dfn> is number which is twice a whole number. An <dfn class="terminology">odd number</dfn> is one which is 1 more than twice a whole number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-even-odd-3-5-1-1">An <dfn class="terminology">even number</dfn> is number which is twice a whole number. An <dfn class="terminology">odd number</dfn> is one which is 1 more than twice a whole number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 6.1.1"><a href="#sect-even-odd-2-5" title="Copy heading and permalink for Definition 6.1.1" aria-label="Copy heading and permalink for Definition 6.1.1">🔗</a></div>
+<div class="autopermalink" data-description="Definition 6.1.1"><a href="#sect-even-odd-3-5" title="Copy heading and permalink for Definition 6.1.1" aria-label="Copy heading and permalink for Definition 6.1.1">🔗</a></div>
 </article>
-<div class="para" id="sect-even-odd-2-6">The main reason for choosing this as a definition over others is that is it easier to use to show or prove the other statements. For example, we will use this definition to show that if a number’s last digit is 0, 2, 4, 6 or 8 then the number is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-even-odd-3-6">The main reason for choosing this as a definition over others is that is it easier to use to show or prove the other statements. For example, we will use this definition to show that if a number’s last digit is 0, 2, 4, 6 or 8 then the number is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-2-7">Before getting proofs, we can also examine some diagrams of even and odd numbers. Since the notion of even numbers is twice a whole number (or the equivalent of pairing of objects), the following diagrams for 6 and 18 are helpful:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-even-odd-3-7">Before getting proofs, we can also examine some diagrams of even and odd numbers. Since the notion of even numbers is twice a whole number (or the equivalent of pairing of objects), the following diagrams for 6 and 18 are helpful:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-2-8.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-even-odd-2-9">and the important notation is that there are 2 rows of boxes, indicating that it is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="fig-even-diagrams"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/fig-even-diagrams-2.svg" role="img" class="contained" alt="Two rectangular grids. The first is 2 rows and 3 columns. The second is 2 rows and 9 columns."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A diagram of 6 and 18 shown with rectangular grids.<div class="autopermalink" data-description="Figure 6.1.2"><a href="#fig-even-diagrams" title="Copy heading and permalink for Figure 6.1.2" aria-label="Copy heading and permalink for Figure 6.1.2">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sect-even-odd-3-9">and the important notation is that there are 2 rows of boxes, indicating that it is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="remark remark-like" id="sect-even-odd-2-10"><h3 class="heading">
-<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="remark remark-like" id="sect-even-odd-3-10"><h3 class="heading">
+<span class="type">Remark</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h3>
-<div class="para" id="sect-even-odd-2-10-1">Why doesn’t the following diagram show that 18 is even?<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-even-odd-3-10-1">Why doesn’t the following diagram show that 18 is even?<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-10-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-10-2.svg" role="img" class="contained" alt=""></div>
-<div class="autopermalink" data-description="Remark 6.1.2"><a href="#sect-even-odd-2-10" title="Copy heading and permalink for Remark 6.1.2" aria-label="Copy heading and permalink for Remark 6.1.2">🔗</a></div>
+<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-3-10-2.svg" role="img" class="contained" alt="A rectangular grid with 3 rows and 6 columns."></div>
+<div class="autopermalink" data-description="Remark 6.1.3"><a href="#sect-even-odd-3-10" title="Copy heading and permalink for Remark 6.1.3" aria-label="Copy heading and permalink for Remark 6.1.3">🔗</a></div>
 </article>
-<div class="para" id="sect-even-odd-2-11">How can we show that 78 is even? We could do a diagram with 78 boxes, however, 1) it would be hard to get it accurate–you’d probably need to double or triple count to make sure, and 2) it’s easier to not have to count. We can take a lead from writing bar diagrams with multiplication that we saw in <a href="ch-models.html" class="internal" title="Chapter 3: Models">Chapter 3</a> as<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-even-odd-3-11">How can we show that 78 is even? We could do a diagram with 78 boxes, however, 1) it would be hard to get it accurate–you’d probably need to double or triple count to make sure, and 2) it’s easier to not have to count. We can take a lead from writing bar diagrams with multiplication that we saw in <a href="ch-models.html" class="internal" title="Chapter 3: Models">Chapter 3</a> as<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-11" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-12.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-even-odd-2-13">and note that it is clear that there are two equal rows of boxes. We can also show odd numbers by adding an extra box to the end. First, consider some small odd numbers. The following diagrams show 7 and 15:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<figure class="figure figure-like" id="fig-even-rectangular-grid"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/fig-even-rectangular-grid-2.svg" role="img" class="contained" alt="A rectangular grid with two rows. The first few pairs of boxes are shown, then in the middle ***78*** is shown, then pairs of boxes at the end."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A rectangular grid showing 78 as a even number with two rows of boxes.<div class="autopermalink" data-description="Figure 6.1.4"><a href="#fig-even-rectangular-grid" title="Copy heading and permalink for Figure 6.1.4" aria-label="Copy heading and permalink for Figure 6.1.4">🔗</a></div></figcaption>
+</figure>
+<div class="para" id="sect-even-odd-3-13">and note that it is clear that there are two equal rows of boxes. We can also show odd numbers by adding an extra box to the end. First, consider some small odd numbers. The following diagrams show 7 and 15:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-14.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-even-odd-2-15">And the following shows the odd number 37:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-2-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-3-14.svg" role="img" class="contained" alt="Two rectangular grid models. The first has two rows. The top has 4 boxes and the bottom has 3 boxes. The other grid model has two rows. The top with 8 boxes and the bottom with 7 boxes."></div>
+<div class="para" id="sect-even-odd-3-15">And the following shows the odd number 37:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-15" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/sect-even-odd-2-16.svg" role="img" class="contained" alt=""></div></section>
-<section class="subsection" id="sect-even-odd-3">
+<figure class="figure figure-like" id="fig-odd-rectangular-grid"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/latex-image/fig-odd-rectangular-grid-2.svg" role="img" class="contained" alt="A rectangular grid with two rows. The top row has one more box than the 2nd row. Within the middle, ...37... is depicted."></div>
+<figcaption><span class="type">Figure</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span><span class="space heading-divison-mark heading-divison-mark__space"> </span>A rectangular grid model of 37. Note because 37 is odd there is an extra box at the end.<div class="autopermalink" data-description="Figure 6.1.5"><a href="#fig-odd-rectangular-grid" title="Copy heading and permalink for Figure 6.1.5" aria-label="Copy heading and permalink for Figure 6.1.5">🔗</a></div></figcaption>
+</figure></section>
+<section class="subsection" id="sect-lemmas-theorem-proofs">
 <h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Lemmas, Theorems and Proofs</span>
 </h3>
-<div class="para" id="sect-even-odd-3-2">We have seen a few theorems and lemmas in this text. For example, the Quotient-Remainder theorem is key to handling integer division. We call the result a <em class="alert">theorem</em> because it is a provable statement with an important result. For more minor results, we call such a statement a <em class="alert">lemma</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-2">We have seen a few theorems and lemmas in this text. For example, the Quotient-Remainder theorem is key to handling integer division. We call the result a <em class="alert">theorem</em> because it is a provable statement with an important result. For more minor results, we call such a statement a <em class="alert">lemma</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="sect-even-odd-3-3"><h4 class="heading">
-<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="definition definition-like" id="sect-lemmas-theorem-proofs-3"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-even-odd-3-3-1-1">A <em class="alert">proof</em> of a statement is a detailed explanation of how that statement follows logically from other statements accepted as true.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-3-1-1">A <em class="alert">proof</em> of a statement is a detailed explanation of how that statement follows logically from other statements accepted as true.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 6.1.3"><a href="#sect-even-odd-3-3" title="Copy heading and permalink for Definition 6.1.3" aria-label="Copy heading and permalink for Definition 6.1.3">🔗</a></div>
+<div class="autopermalink" data-description="Definition 6.1.6"><a href="#sect-lemmas-theorem-proofs-3" title="Copy heading and permalink for Definition 6.1.6" aria-label="Copy heading and permalink for Definition 6.1.6">🔗</a></div>
 </article>
-<div class="para" id="sect-even-odd-3-4">The proofs that we will see in this section will be approached from two different avenues: a diagram proof and an algebraic proof.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-4">The proofs that we will see in this section will be approached from two different avenues: a diagram proof and an algebraic proof.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<section class="paragraphs" id="sect-even-odd-3-5"><h4 class="heading"><span class="title">Diagram Proof.</span></h4>
-<div class="para" id="sect-even-odd-3-5-2">We will use diagrams to illustrate the argument. For example, we can show an even number and an odd number using the following two diagrams:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="paragraphs" id="sect-lemmas-theorem-proofs-5"><h4 class="heading"><span class="title">Diagram Proof.</span></h4>
+<div class="para" id="sect-lemmas-theorem-proofs-5-2">We will use diagrams to illustrate the argument. For example, we can show an even number and an odd number using the following two diagrams:<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-5-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-3-5-3.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-even-odd-3-5-4">The <span class="process-math">\(\cdots\)</span> keep these diagrams very general. They work for any even or odd number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-lemmas-theorem-proofs-5-3.svg" role="img" class="contained" alt="Two grid diagrams. The left one shows an even number grid diagram with two rows and an number of columns with ...          shown. The right side shows an odd number with the same as the even number with an extra box at the end."></div>
+<div class="para" id="sect-lemmas-theorem-proofs-5-4">The <span class="process-math">\(\cdots\)</span> keep these diagrams very general. They work for any even or odd number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-5-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-3-5-5">We will use such diagrams below to prove statements about even and odd numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-5-5">We will use such diagrams below to prove statements about even and odd numbers.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-5-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Diagram Proof"><a href="#sect-even-odd-3-5" title="Copy heading and permalink for Paragraphs: Diagram Proof" aria-label="Copy heading and permalink for Paragraphs: Diagram Proof">🔗</a></div>
+<div class="autopermalink" data-description="Paragraphs: Diagram Proof"><a href="#sect-lemmas-theorem-proofs-5" title="Copy heading and permalink for Paragraphs: Diagram Proof" aria-label="Copy heading and permalink for Paragraphs: Diagram Proof">🔗</a></div>
 </section>
-<section class="paragraphs" id="sect-even-odd-3-6"><h4 class="heading"><span class="title">Algebraic Proofs.</span></h4>
-<div class="para" id="sect-even-odd-3-6-2">In these proofs, we use letters to denote even and odd numbers. Typically, we will say “Let <span class="process-math">\(k\)</span> be a whole number. Then <span class="process-math">\(2k\)</span> is an even number and <span class="process-math">\(2k+1\)</span> is an odd number.”<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<section class="paragraphs" id="sect-lemmas-theorem-proofs-6"><h4 class="heading"><span class="title">Algebraic Proofs.</span></h4>
+<div class="para" id="sect-lemmas-theorem-proofs-6-2">In these proofs, we use letters to denote even and odd numbers. Typically, we will say “Let <span class="process-math">\(k\)</span> be a whole number. Then <span class="process-math">\(2k\)</span> is an even number and <span class="process-math">\(2k+1\)</span> is an odd number.”<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-6-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-3-6-3">We will the use statements we know to be true about whole numbers to prove things.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-6-3">We will the use statements we know to be true about whole numbers to prove things.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-6-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Paragraphs: Algebraic Proofs"><a href="#sect-even-odd-3-6" title="Copy heading and permalink for Paragraphs: Algebraic Proofs" aria-label="Copy heading and permalink for Paragraphs: Algebraic Proofs">🔗</a></div>
+<div class="autopermalink" data-description="Paragraphs: Algebraic Proofs"><a href="#sect-lemmas-theorem-proofs-6" title="Copy heading and permalink for Paragraphs: Algebraic Proofs" aria-label="Copy heading and permalink for Paragraphs: Algebraic Proofs">🔗</a></div>
 </section>
-<div class="para" id="sect-even-odd-3-7">We will see how a proof is presented using even and odd numbers. We will soon prove the following theorem:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-7">We will see how a proof is presented using even and odd numbers. We will soon prove the following theorem:<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="theorem theorem-like" id="sect-even-odd-3-8"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<article class="theorem theorem-like" id="sect-lemmas-theorem-proofs-8"><h4 class="heading">
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
-<div class="para" id="sect-even-odd-3-8-1-1">The sum of any two even numbers is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-8-1-1">The sum of any two even numbers is even.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.1.4"><a href="#sect-even-odd-3-8" title="Copy heading and permalink for Theorem 6.1.4" aria-label="Copy heading and permalink for Theorem 6.1.4">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 6.1.7"><a href="#sect-lemmas-theorem-proofs-8" title="Copy heading and permalink for Theorem 6.1.7" aria-label="Copy heading and permalink for Theorem 6.1.7">🔗</a></div>
 </article>
-<details id="sect-even-odd-3-8-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
+<details id="sect-lemmas-theorem-proofs-8-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
 <article class="hiddenproof knowl__content">
-<div class="para" id="sect-even-odd-3-8-2-1">First, we will show a <em class="alert">diagram proof</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-8-2-1">First, we will show a <em class="alert">diagram proof</em>.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-8-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-3-8-2-2">Consider two even numbers as shown in the diagram below:<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-8-2-2">Consider two even numbers as shown in the diagram below:<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-8-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-3-8-2-3.svg" role="img" class="contained" alt=""></div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-even-odd-3-8-2-4.svg" role="img" class="contained" alt=""></div>
-<div class="para" id="sect-even-odd-3-8-2-5">There are many important parts of this diagram proof. First, the two numbers (in light green and blue) are general even numbers. We don’t shows specifically the sizes of these numbers with the <span class="process-math">\(\cdots\text{.}\)</span> The result is even because there two rows of the same size. This also clearly shows that the result is the sum of the two numbers. Note: the colors help, but could be done with shading.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-lemmas-theorem-proofs-8-2-3.svg" role="img" class="contained" alt="A pair of diagrams. The left one shows an even number grid diagram with two rows and an number of columns with ... shown. The right side shows an even number grid diagram with two rows and an number of columns with ... shown. There is a ? with a brace under both diagrams."></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/sect-lemmas-theorem-proofs-8-2-4.svg" role="img" class="contained" alt="This diagram shows the two grid diagrams together which shows two rows with ... pairs of boxes."></div>
+<div class="para" id="sect-lemmas-theorem-proofs-8-2-5">There are many important parts of this diagram proof. First, the two numbers (in light green and blue) are general even numbers. We don’t shows specifically the sizes of these numbers with the <span class="process-math">\(\cdots\text{.}\)</span> The result is even because there two rows of the same size. This also clearly shows that the result is the sum of the two numbers. Note: the colors help, but could be done with shading.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-8-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-3-8-2-6">Next, we’ll show an <em class="alert">algebraic proof.</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-8-2-6">Next, we’ll show an <em class="alert">algebraic proof.</em><div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-8-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sect-even-odd-3-8-2-7">Let <span class="process-math">\(m\)</span> be any whole number. Then <span class="process-math">\(2m\)</span> is an even number. Let <span class="process-math">\(k\)</span> be another whole number, with <span class="process-math">\(2k\)</span> another even number. Since <span class="process-math">\(2k+2m=2(k+m)\)</span> by the distributive property, <span class="process-math">\(k+m\)</span> is a whole number and <span class="process-math">\(2(k+m)\)</span> is twice a whole number, the result <span class="process-math">\(2k+2m\)</span> is an even number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-8-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-8-2-7">Let <span class="process-math">\(m\)</span> be any whole number. Then <span class="process-math">\(2m\)</span> is an even number. Let <span class="process-math">\(k\)</span> be another whole number, with <span class="process-math">\(2k\)</span> another even number. Since <span class="process-math">\(2k+2m=2(k+m)\)</span> by the distributive property, <span class="process-math">\(k+m\)</span> is a whole number and <span class="process-math">\(2(k+m)\)</span> is twice a whole number, the result <span class="process-math">\(2k+2m\)</span> is an even number.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-8-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.1.4.1"><a href="#sect-even-odd-3-8-2" title="Copy heading and permalink for Proof 6.1.4.1" aria-label="Copy heading and permalink for Proof 6.1.4.1">🔗</a></div>
+<div class="autopermalink" data-description="Proof 6.1.7.1"><a href="#sect-lemmas-theorem-proofs-8-2" title="Copy heading and permalink for Proof 6.1.7.1" aria-label="Copy heading and permalink for Proof 6.1.7.1">🔗</a></div>
 </article></details>
-<div class="para" id="sect-even-odd-3-9">Next, we will show that the sum of an even number and an odd number is odd.<div class="autopermalink" data-description="Paragraph"><a href="#sect-even-odd-3-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sect-lemmas-theorem-proofs-9">Next, we will show that the sum of an even number and an odd number is odd.<div class="autopermalink" data-description="Paragraph"><a href="#sect-lemmas-theorem-proofs-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="theorem theorem-like" id="thm-even-plus-odd"><h4 class="heading">
-<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+<span class="type">Theorem</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
 </h4>
 <div class="para" id="thm-even-plus-odd-1-1">The sum of an even number and a odd number is an odd number.<div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Theorem 6.1.5"><a href="#thm-even-plus-odd" title="Copy heading and permalink for Theorem 6.1.5" aria-label="Copy heading and permalink for Theorem 6.1.5">🔗</a></div>
+<div class="autopermalink" data-description="Theorem 6.1.8"><a href="#thm-even-plus-odd" title="Copy heading and permalink for Theorem 6.1.8" aria-label="Copy heading and permalink for Theorem 6.1.8">🔗</a></div>
 </article>
 <details id="thm-even-plus-odd-2" class="hiddenproof born-hidden-knowl"><summary class="knowl__link"><h4 class="heading"><span class="type">Proof<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4></summary>
 <article class="hiddenproof knowl__content">
@@ -589,8 +621,8 @@ eBookConfig.enable_chatcodes =  false;
 </div>
 <div class="para" id="thm-even-plus-odd-2-2">Consider an even and odd number:<div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/thm-even-plus-odd-2-3.svg" role="img" class="contained" alt=""></div>
-<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/thm-even-plus-odd-2-4.svg" role="img" class="contained" alt=""></div>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/latex-image/thm-even-plus-odd-2-3.svg" role="img" class="contained" alt="A pair of diagrams. The left one shows an even number grid diagram with two rows and an number of columns with ... shown. The right side shows an odd number with the same as the even number with an extra box at the end. There is a ? with a brace under both diagrams."></div>
+<div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="generated/latex-image/thm-even-plus-odd-2-4.svg" role="img" class="contained" alt="This diagram shows the two grid diagrams together which shows two rows with ... pairs of boxes with an extra box at the end."></div>
 <div class="para" id="thm-even-plus-odd-2-5">
 <em class="alert">Algebraic Proof:</em><div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -604,8 +636,62 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">The term <span class="process-math">\(k+m\)</span> in the parentheses is whole, because the sum of two whole number is whole. And lastly, <span class="process-math">\(2(k+m)+1\)</span> is an odd number.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#thm-even-plus-odd-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Proof 6.1.5.1"><a href="#thm-even-plus-odd-2" title="Copy heading and permalink for Proof 6.1.5.1" aria-label="Copy heading and permalink for Proof 6.1.5.1">🔗</a></div>
-</article></details><div class="autopermalink" data-description="Subsection 6.1.1: Lemmas, Theorems and Proofs"><a href="#sect-even-odd-3" title="Copy heading and permalink for Subsection 6.1.1: Lemmas, Theorems and Proofs" aria-label="Copy heading and permalink for Subsection 6.1.1: Lemmas, Theorems and Proofs">🔗</a></div>
+<div class="autopermalink" data-description="Proof 6.1.8.1"><a href="#thm-even-plus-odd-2" title="Copy heading and permalink for Proof 6.1.8.1" aria-label="Copy heading and permalink for Proof 6.1.8.1">🔗</a></div>
+</article></details><div class="autopermalink" data-description="Subsection 6.1.1: Lemmas, Theorems and Proofs"><a href="#sect-lemmas-theorem-proofs" title="Copy heading and permalink for Subsection 6.1.1: Lemmas, Theorems and Proofs" aria-label="Copy heading and permalink for Subsection 6.1.1: Lemmas, Theorems and Proofs">🔗</a></div>
+</section>
+<section class="exercises" id="exercises-even-odd">
+<h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">6.1.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="exercises-even-odd-1"><h4 class="heading"><span class="codenumber">1<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-even-odd-1-1-1">Illustrate <span class="process-math">\(14 + 18\)</span> with diagram as in <a href="sect-even-odd.html#fig-even-diagrams" class="xref" data-knowl="./knowl/xref/fig-even-diagrams.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.1.2">Figure 6.1.2</a>. Do the same for <span class="process-math">\(152 + 68\)</span> using <span class="process-math">\(\cdots\)</span> instead of showing every box.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.1.2.1"><a href="#exercises-even-odd-1" title="Copy heading and permalink for Exercise 6.1.2.1" aria-label="Copy heading and permalink for Exercise 6.1.2.1">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-even-odd-2"><h4 class="heading"><span class="codenumber">2<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-even-odd-2-1-1">Illustrate <span class="process-math">\(246 + 147\)</span> using diagrams as in <a href="sect-even-odd.html#fig-even-rectangular-grid" class="xref" data-knowl="./knowl/xref/fig-even-rectangular-grid.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.1.4">Figure 6.1.4</a> and <a href="sect-even-odd.html#fig-odd-rectangular-grid" class="xref" data-knowl="./knowl/xref/fig-odd-rectangular-grid.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 6.1.5">Figure 6.1.5</a>.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.1.2.2"><a href="#exercises-even-odd-2" title="Copy heading and permalink for Exercise 6.1.2.2" aria-label="Copy heading and permalink for Exercise 6.1.2.2">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-even-odd-3"><h4 class="heading"><span class="codenumber">3<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-even-odd-3-1">
+<div class="para" id="exercises-even-odd-3-1-1">Prove that that sum of two odd numbers is even using<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-even-odd-3-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-even-odd-3-2-1-1">a picture proof.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-3-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.1.2.3.a"><a href="#exercises-even-odd-3-2" title="Copy heading and permalink for Task 6.1.2.3.a" aria-label="Copy heading and permalink for Task 6.1.2.3.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-even-odd-3-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-even-odd-3-3-1-1">an algebraic proof.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.1.2.3.b"><a href="#exercises-even-odd-3-3" title="Copy heading and permalink for Task 6.1.2.3.b" aria-label="Copy heading and permalink for Task 6.1.2.3.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.1.2.3"><a href="#exercises-even-odd-3" title="Copy heading and permalink for Exercise 6.1.2.3" aria-label="Copy heading and permalink for Exercise 6.1.2.3">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-even-odd-4"><h4 class="heading"><span class="codenumber">4<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="para" id="exercises-even-odd-4-1-1">Use the <a href="sect-division.html#thm-quotient-remainder" class="xref" data-knowl="./knowl/xref/thm-quotient-remainder.html" data-reveal-label="Reveal" data-close-label="Close" title="Theorem 2.5.3: Quotient-Remainder Theorem">Quotient-Remainder Theorem</a> to explain why every whole number A can be modeled by one of the following two diagrams:<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="generated/latex-image/exercises-even-odd-4-1-2.svg" role="img" class="contained" alt=""></div> 
+<div class="para" id="exercises-even-odd-4-1-3">(Hint: when we write <span class="process-math">\(A = 2q + r\text{,}\)</span> what are the possibilities for <span class="process-math">\(r\text{?}\)</span>)<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-4-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 6.1.2.4"><a href="#exercises-even-odd-4" title="Copy heading and permalink for Exercise 6.1.2.4" aria-label="Copy heading and permalink for Exercise 6.1.2.4">🔗</a></div>
+</article>
+<article class="exercise exercise-like" id="exercises-even-odd-5"><h4 class="heading"><span class="codenumber">5<span class="period heading-divison-mark heading-divison-mark__period">.</span></span></h4>
+<div class="introduction" id="exercises-even-odd-5-1">
+<div class="para" id="exercises-even-odd-5-1-1">Give algebraic proofs of the following two statements about whole numbers:<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-5-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+<article class="task exercise-like" id="exercises-even-odd-5-2"><h5 class="heading"><span class="codenumber">(a)</span></h5>
+<div class="para" id="exercises-even-odd-5-2-1-1">Suppose <span class="process-math">\(A\)</span> is even. If <span class="process-math">\(B\)</span> is even, then <span class="process-math">\(A+B\)</span> is even.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-5-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.1.2.5.a"><a href="#exercises-even-odd-5-2" title="Copy heading and permalink for Task 6.1.2.5.a" aria-label="Copy heading and permalink for Task 6.1.2.5.a">🔗</a></div>
+</article>
+<article class="task exercise-like" id="exercises-even-odd-5-3"><h5 class="heading"><span class="codenumber">(b)</span></h5>
+<div class="para" id="exercises-even-odd-5-3-1-1">Suppose <span class="process-math">\(A\)</span> is even. If <span class="process-math">\(A+B\)</span> is even, then <span class="process-math">\(B\)</span> is even.<div class="autopermalink" data-description="Paragraph"><a href="#exercises-even-odd-5-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 6.1.2.5.b"><a href="#exercises-even-odd-5-3" title="Copy heading and permalink for Task 6.1.2.5.b" aria-label="Copy heading and permalink for Task 6.1.2.5.b">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercise 6.1.2.5"><a href="#exercises-even-odd-5" title="Copy heading and permalink for Exercise 6.1.2.5" aria-label="Copy heading and permalink for Exercise 6.1.2.5">🔗</a></div>
+</article><div class="autopermalink" data-description="Exercises 6.1.2"><a href="#exercises-even-odd" title="Copy heading and permalink for Exercises 6.1.2" aria-label="Copy heading and permalink for Exercises 6.1.2">🔗</a></div>
 </section><div class="autopermalink" data-description="Section 6.1: Even and Odd Numbers"><a href="#sect-even-odd" title="Copy heading and permalink for Section 6.1: Even and Odd Numbers" aria-label="Copy heading and permalink for Section 6.1: Even and Odd Numbers">🔗</a></div>
 </section>
 </div>
