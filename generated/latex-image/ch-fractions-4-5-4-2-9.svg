@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="131" height="67" viewBox="0 0 131 67">
-<path transform="matrix(1.00002,0,0,-1.00006,1.4607277,64.98284)" d="M76.53716 0V42.5202H127.56192V0ZM127.56192 42.5202" fill="#e57373"/>
-<path transform="matrix(1.00002,0,0,-1.00006,1.4607277,64.98284)" d="M102.04953 42.5202V63.7803H127.56192V42.5202ZM127.56192 63.7803" fill="#e57373"/>
-<path transform="matrix(1.00002,0,0,-1.00006,1.4607277,64.98284)" d="M0 0V63.7803H51.02477V0ZM51.02477 63.7803" fill="#64b5f6"/>
-<path transform="matrix(1.00002,0,0,-1.00006,1.4607277,64.98284)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0H127.56192M0 21.2601H127.56192M0 42.5202H127.56192M0 63.77284H127.56192M0 0V63.7803M25.51237 0V63.7803M51.02477 0V63.7803M76.53716 0V63.7803M102.04953 0V63.7803M127.55894 0V63.7803M127.56192 63.7803"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" width="428" height="173" viewBox="0 0 428 173">
+<path transform="matrix(1.00005,0,0,-1.00003,1.4608193,171.28311)" d="M255.12128 0V170.08086H425.20213V0ZM425.20213 170.08086" fill="#ffcc80"/>
+<path transform="matrix(1.00005,0,0,-1.00003,1.4608193,171.28311)" d="M340.1617 113.38724V170.08086H425.20213V113.38724ZM425.20213 170.08086" fill="#ffcc80"/>
+<path transform="matrix(1.00005,0,0,-1.00003,1.4608193,171.28311)" d="M0 0V170.08086H170.08086V0ZM170.08086 170.08086" fill="#ce93d8"/>
+<path transform="matrix(1.00005,0,0,-1.00003,1.4608193,171.28311)" stroke-width=".3985" stroke-linecap="butt" stroke-miterlimit="10" stroke-linejoin="miter" fill="none" stroke="#000000" d="M0 0H425.20213M0 56.69362H425.20213M0 113.38724H425.20213M0 170.07089H425.20213M0 0V170.08086M85.04042 0V170.08086M170.08086 0V170.08086M255.12128 0V170.08086M340.1617 0V170.08086M425.19218 0V170.08086M425.20213 170.08086"/>
 </svg>

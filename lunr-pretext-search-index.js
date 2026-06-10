@@ -2833,16 +2833,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.1",
   "title": "Fraction Basics",
-  "body": " Fraction Basics   Before we get into operations with fractions, there are some basics of fractions that we will study.    Fractions and Units  Until the abstract concept of a number is understood, it is always advantageous to think of a number with units (5 toys, 6 miles, 3 ounces) and with fractions this is no different. In fact, we will use units to emphasize the notion of a fraction. Consider 2\/3 of a foot. where is the number of parts one the whole (1 foot) and the numerator (2) is the number of the fractional parts.  If we have an understanding of a third, then is 2 ''thirds'' and we can handle it    Fraction Models  As with other numbers and operations in mathematics, models are very important in understanding fractions. Models then help with operations involving fractions.  One pitfall is that the models for fractions are often very similar to those of multiplication and division and so it is important to be very clear about what is being asked for.     Area or regional model  The following models are useful for describing fractions. The shaded area relative to the total area represents the fraction. In each case, the fraction is 3\/4.         Linear Measurement Model  This uses the number line. This is helpful for word problems with length or distance for example.         Set Model  A set model can be used as long as it is clear what is asked. In the following, if we have red and blue marbles and ask what fraction are red, you can see that the picture represents 3\/5. Be careful with this, because we often use the same model for either multiplication ( ) or division ( ).            Ordering of Fractions     In counting by fractional units ( one-fourth, two-fourths, three-fourths,  ) they count both verbally and in writing.    In ordering (which in general is saved until later), we do two easier concepts:   Ordering with the same denominator. For example, .         The same numerator:          Using an intermediate fraction: Compare and . Since neither the numerators or denominators are equal, we can't use the above methods, but we know that and , so .          Fraction Equivalents  The next big understanding with fractions is to note that many different fractions represent the same value. For example can be written as .  The following two models represents in multiple ways:     A fractional strip:         A subdivided area (rectangular model):   A series of rectangles in which each has the bottom 2\/3 shaded with two shaded rectangles. The top rectangle shows 2\/3. The second rectangle has a line dividing the two boxes into 4. This is to denote 4\/6. The third rectangle has two lines dividing the original two boxes into 6 and this denotes 6\/9. The bottom rectangles has many vertical lines and labels n vertical boxes thus showing 2n\/3n.      Numbers: Once you understand the above pictures, you can fill in the missing values:      We summarize the results of the above models with the following:   Equivalent Fractions and Reducing Fractions   Let and be positive whole numbers. Then     We will see that the two most important reasons for understanding equivalent fractions are   Finding a common denominator for addition and subtraction of fractions.    Reducing a fraction to a simpler form.     We will see the first item here in the next section of the text, But the following shows a few examples on how to reduce a fraction or shows that a fraction is in reduced form.   Fraction in Simple Form   A Fraction in Reduce or Simplest Form A fraction is in reduced form or simplest form if     This is a rule that can check if a fraction is in simplest form. If a fraction is not in reduced form and , then factoring out of the numerator and denominator will result in a fraction in reduced form.    Determine if the following fractions are in reduced form.          The prime factorization of 144 is and the prime factorization of 195 is . Since they have a common factor of 3, then , so this is not in reduced form.           In this case, since 53 is a prime number, then and this is in reduced form.     We now show some examples that if , how to reduce the fraction. That is if we have a fraction in the form that we reduce it to     Reduce the following fractions to simplest form:          In this case, the numerator and denominator are small, so noticing a common factor is where the fraction on the right is in simplest form because there is no other factor (other than 1) between 4 and 9.           As we saw in the example above, So we can write the original fraction as and there is a common value , so we write this as      We can also use equivalent fractions for the following problem in which we compare two fractions.   Comparing Fractions   Which of the following is larger: or ?    We saw above that it is relatively straightforward to determine which of two fractions is larger if the two denominators are the same or if the two numerators are the same. This example doesn't fit either of these. We'll use equivalent fractions to determine this.  We'll make the two denominators the same by multiplying the first by the factor and the second by  and now it is clear that the one with the larger numerator is the larger fraction so       Improper Fractions and Mixed Numbers  \"How much sliced cheese would you like,\" asks the person behind the deli counter? \"A pound and a quarter\" you say.  The fraction in the exchange above is a mixed number and often write it as and this is used in many situations. Below we define this as well as \"regular\" fractions which are either proper or improper.    Mixed Numbers, Improper and Proper Fractions If and are whole numbers, then   A mixed number is a fraction expressed as the sum of a whole number and a fraction.    An improper fraction is a fraction with .    A proper fraction is a fraction with .        Proper and Improper Fractions and Mixed Numbers      The number is a mixed number and is shorthand notation for .    The number is an improper fraction because the top is greater than the bottom.    The number is a proper fraction because the top is smaller than the bottom.        Converting between mixed numbers and improper fractions    Use an area model to convert to an improper fraction.    For this, we'll use circles, but other shapes work the same. Draw two full circles plus a third of another:       And each whole can be subdivided into 3 pieces to get       This shows that is equal to . This can be done arithmetically by , so       Use long division to write as a mixed number. Since , then       "
+  "body": " Fraction Basics   Before we get into operations with fractions, there are some basics of fractions that we will study.    Fractions and Units  Until the abstract concept of a number is understood, it is always advantageous to think of a number with units (5 toys, 6 miles, 3 ounces) and with fractions this is no different. In fact, we will use units to emphasize the notion of a fraction. Consider 2\/3 of a foot. where is the number of parts one the whole (1 foot) and the numerator (2) is the number of the fractional parts.  If we have an understanding of a third, then is 2 ''thirds'' and we can handle it    Fraction Models  As with other numbers and operations in mathematics, models are very important in understanding fractions. Models then help with operations involving fractions.  One pitfall is that the models for fractions are often very similar to those of multiplication and division and so it is important to be very clear about what is being asked for.     Area or regional model  The following models are useful for describing fractions. The shaded area relative to the total area represents the fraction. In each case, the fraction is 3\/4.   Three area models. On the left is a circle cut into 4 equal pieces with 3 of the pieces shaded. The model in the middle is a box with 4 equally-spaced slices. Three of the slices are shaded. The rightmost model is a box with lines from opposite corners that divide the box into four equal sized pieces. Three of the slices are shaded.      Linear Measurement Model  This uses the number line. This is helpful for word problems with length or distance for example.   A number line with the numbers 0\/4, 1\/4, up to 5\/4 below the line and a box stretching from 0\/4 to 3\/4 above the line.      Set Model  A set model can be used as long as it is clear what is asked. In the following, if we have red and blue marbles and ask what fraction are red, you can see that the picture represents 3\/5. Be careful with this, because we often use the same model for either multiplication ( ) or division ( ).   An array of 20 circles with 4 rows and 5 columns. On the left is 4 by 3 array of circles shaded red and on the right is 4 by 2 circles shaded blue.         Ordering of Fractions     In counting by fractional units ( one-fourth, two-fourths, three-fourths,  ) they count both verbally and in writing.    In ordering (which in general is saved until later), we do two easier concepts:   Ordering with the same denominator. This shows that .   Two area models. On the left is a circular area model with 3 of 4 pieces shaded. On the right is a circular area model with 1 of 4 pieces shaded.      If you have the same numerator, then the fraction with the smaller denominator is larger. The model below shows that    Two area models with horizontal strips. The top model shows 2 of 5 shaded. The bottom model shows 2 of 7 shaded.      Using an intermediate fraction: Compare and . Since neither the numerators or denominators are equal, we can't use the above methods, but we know that and , so .          Fraction Equivalents  The next big understanding with fractions is to note that many different fractions represent the same value. For example can be written as .  The following two models represents in multiple ways:     A fractional strip:   Four area models that each represent the same number. Each are horizontal strips with a fraction of the strip shaded. The top model shows 2 of 3 strips shaded. The second model shows 4 or 6 strips shaded. The third model shows 6 of 9 strips shaded. The bottom model shows 8 of 12 strips shaded. All three show the same area.      A subdivided area (rectangular model):   A series of rectangles in which each has the bottom 2\/3 shaded with two shaded rectangles. The top rectangle shows 2\/3. The second rectangle has a line dividing the two boxes into 4. This is to denote 4\/6. The third rectangle has two lines dividing the original two boxes into 6 and this denotes 6\/9. The bottom rectangles has many vertical lines and labels n vertical boxes thus showing 2n\/3n.      Numbers: Once you understand the above pictures, you can fill in the missing values:      We summarize the results of the above models with the following:   Equivalent Fractions   Let and be positive whole numbers. Then     We will see that the two most important reasons for understanding equivalent fractions are   Finding a common denominator for addition and subtraction of fractions.    Reducing a fraction to a simpler form.     We will see the first item here in the next section of the text, But the following shows a few examples on how to reduce a fraction or shows that a fraction is in reduced form.   Fraction in Simple Form   A Fraction in Reduce or Simplest Form A fraction is in reduced form or simplest form if     This is a rule that can check if a fraction is in simplest form. If a fraction is not in reduced form and , then factoring out of the numerator and denominator will result in a fraction in reduced form.    Determine if the following fractions are in reduced form.          The prime factorization of 144 is and the prime factorization of 195 is . Since they have a common factor of 3, then , so this is not in reduced form.           In this case, since 53 is a prime number, then and this is in reduced form.     We now show some examples that if , how to reduce the fraction. That is if we have a fraction in the form that we reduce it to     Reduce the following fractions to simplest form:          In this case, the numerator and denominator are small, so noticing a common factor is where the fraction on the right is in simplest form because there is no other factor (other than 1) between 4 and 9.           As we saw in the example above, So we can write the original fraction as and there is a common value , so we write this as      We can also use equivalent fractions for the following problem in which we compare two fractions.   Comparing Fractions   Which of the following is larger: or ?    We saw above that it is relatively straightforward to determine which of two fractions is larger if the two denominators are the same or if the two numerators are the same. This example doesn't fit either of these. We'll use equivalent fractions to determine this.  We'll make the two denominators the same by multiplying the first by the factor and the second by  and now it is clear that the one with the larger numerator is the larger fraction so       Improper Fractions and Mixed Numbers  \"How much sliced cheese would you like,\" asks the person behind the deli counter? \"A pound and a quarter\" you say.  The fraction in the exchange above is a mixed number and often write it as and this is used in many situations. Below we define this as well as \"regular\" fractions which are either proper or improper.    Mixed Numbers, Improper and Proper Fractions If and are whole numbers, then   A mixed number is a fraction expressed as the sum of a whole number and a fraction.    An improper fraction is a fraction with .    A proper fraction is a fraction with .        Proper and Improper Fractions and Mixed Numbers      The number is a mixed number and is shorthand notation for .    The number is an improper fraction because the top is greater than the bottom.    The number is a proper fraction because the top is smaller than the bottom.        Converting between mixed numbers and improper fractions    Use an area model to convert to an improper fraction.    For this, we'll use circles, but other shapes work the same. Draw two full circles plus a third of another:      And each whole can be subdivided into 3 pieces to get      This shows that is equal to . This can be done arithmetically by , so       Use long division to write as a mixed number. Since , then        Teachers' Solutions  Word problems are key to understand fractions. We use fractions in common language and its helpful to show students how we use fractions in this context.  Any type of model that we have shown in this section can be used in a Teacher's Solution and it's easiest to see this with specific questions.    Produce a Teacher's Solution on the following problem: Jack drank of a carton of orange juice. His sister Sarah drank of the carton. How much of the carton did they drink altogether?     We can use any type of model, but an area model may be most helpful. We will use a rectangle one (since this looks like a carton) with vertical slices.      And the total area shaded is .  Jack and Sarah together drank of the carton of orange juice.      Produce a Teacher's Solution on the following problem: Derek had 9 bananas. He ate of them. How many bananas did he have left?     For this, let's use a set model since bananas are discrete (we can count them). We could use pictures of bananas, but students who are working with fractions have some abstract skills and we'll just use circles.      The bananas that he ate are shaded red and those he didn't each, are shaded blue.  He has 6 bananas left.    As word problems get more difficult, the needed diagrams get more difficult as well. The following shows an example of a two-step word problem.    Develop a Teacher's Solution to the following: Mrs. Murphy has a bowl of 300 marbles. of them are red and the rest are blue. She handed out of the red marbles. How many marbles are left in the bowl?     As stated above, this is a two-step word problem. One way to solve this is to first find the number of red and blue marbles, then determine the number handed out and from that, the number left can be determined. We can represent this with a two-step diagram as follows:      In the top diagram, because the fraction of marbles in the bowl is given in fifths, we divide the bar into 5 equal pieces. Each square in the top is marbles so there are two squares worth of red marbles or red marbles.  The second step is only in terms of the red marbles, so we use an arrow to denote that the red marbles in the top is the same as that in the bottom diagram. Because in the second step, there is , we divide the bottom diagram in 4 equal pieces. The 4 squares in the bottom diagram represents 120 marbles, so each square in the bottom diagram is marbles. The 3 shaded is marbles. and the red marbles left is one square or 30 marbles.  There were blue marbles in the diagram and together with the 30 red marbles, means there are marbles left in the bowl.    The last example was a bit more complicated and we'll see more like this later in the text. We will use this technique of dividing a bar into sections in other fraction problems as well as ratio and proportions in .      For each of the following fraction, show the given model      Using a horizontal strip.       using a area model with a circle.       using a set model shading in the way consistent with the fraction.       Use any type of model shown in this section to demonstrate the following inequalities.                    Explain using any type of model why       A student claims that cannot be equal to because while How do you respond?      Produce a Teacher's Solution for each of the following word problem. Use the requested type of model in the solution.     Javier used of a bottle of oil for a recipe, where the bottle holds . How much oil did the bottle hold? (Use an area model)       of all students in a class wore t-shirt on the field trip. If there were children on the field trip, how many wore t-shirts. (Use a measurement model).      Catherine had 12 donut holes. She gave of them to friends. How many donut holes did she give away. (use a set model.)      Teresa had 200 stickers. of the stickers had dinosaurs on them. If she gave away of her dinosaur stickers to Damian. How many stickers did she give away (two-step bar diagram.)      "
 },
 {
-  "id": "sect-fraction-basics-6-6",
+  "id": "prop-equivalent-fractions",
   "level": "2",
-  "url": "sect-fraction-basics.html#sect-fraction-basics-6-6",
+  "url": "sect-fraction-basics.html#prop-equivalent-fractions",
   "type": "Property",
   "number": "7.1.1",
-  "title": "Equivalent Fractions and Reducing Fractions.",
-  "body": " Equivalent Fractions and Reducing Fractions   Let and be positive whole numbers. Then    "
+  "title": "Equivalent Fractions.",
+  "body": " Equivalent Fractions   Let and be positive whole numbers. Then    "
 },
 {
   "id": "sect-fraction-basics-6-9",
@@ -2905,7 +2905,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.1.8",
   "title": "",
-  "body": "  Use an area model to convert to an improper fraction.    For this, we'll use circles, but other shapes work the same. Draw two full circles plus a third of another:       And each whole can be subdivided into 3 pieces to get       This shows that is equal to . This can be done arithmetically by , so    "
+  "body": "  Use an area model to convert to an improper fraction.    For this, we'll use circles, but other shapes work the same. Draw two full circles plus a third of another:      And each whole can be subdivided into 3 pieces to get      This shows that is equal to . This can be done arithmetically by , so    "
 },
 {
   "id": "sect-fraction-basics-7-6-3",
@@ -2917,31 +2917,103 @@ var ptx_lunr_docs = [
   "body": "  Use long division to write as a mixed number. Since , then    "
 },
 {
+  "id": "subsec-teachers-solutions-4",
+  "level": "2",
+  "url": "sect-fraction-basics.html#subsec-teachers-solutions-4",
+  "type": "Example",
+  "number": "7.1.10",
+  "title": "",
+  "body": "  Produce a Teacher's Solution on the following problem: Jack drank of a carton of orange juice. His sister Sarah drank of the carton. How much of the carton did they drink altogether?     We can use any type of model, but an area model may be most helpful. We will use a rectangle one (since this looks like a carton) with vertical slices.      And the total area shaded is .  Jack and Sarah together drank of the carton of orange juice.   "
+},
+{
+  "id": "subsec-teachers-solutions-5",
+  "level": "2",
+  "url": "sect-fraction-basics.html#subsec-teachers-solutions-5",
+  "type": "Example",
+  "number": "7.1.11",
+  "title": "",
+  "body": "  Produce a Teacher's Solution on the following problem: Derek had 9 bananas. He ate of them. How many bananas did he have left?     For this, let's use a set model since bananas are discrete (we can count them). We could use pictures of bananas, but students who are working with fractions have some abstract skills and we'll just use circles.      The bananas that he ate are shaded red and those he didn't each, are shaded blue.  He has 6 bananas left.   "
+},
+{
+  "id": "subsec-teachers-solutions-7",
+  "level": "2",
+  "url": "sect-fraction-basics.html#subsec-teachers-solutions-7",
+  "type": "Example",
+  "number": "7.1.12",
+  "title": "",
+  "body": "  Develop a Teacher's Solution to the following: Mrs. Murphy has a bowl of 300 marbles. of them are red and the rest are blue. She handed out of the red marbles. How many marbles are left in the bowl?     As stated above, this is a two-step word problem. One way to solve this is to first find the number of red and blue marbles, then determine the number handed out and from that, the number left can be determined. We can represent this with a two-step diagram as follows:      In the top diagram, because the fraction of marbles in the bowl is given in fifths, we divide the bar into 5 equal pieces. Each square in the top is marbles so there are two squares worth of red marbles or red marbles.  The second step is only in terms of the red marbles, so we use an arrow to denote that the red marbles in the top is the same as that in the bottom diagram. Because in the second step, there is , we divide the bottom diagram in 4 equal pieces. The 4 squares in the bottom diagram represents 120 marbles, so each square in the bottom diagram is marbles. The 3 shaded is marbles. and the red marbles left is one square or 30 marbles.  There were blue marbles in the diagram and together with the 30 red marbles, means there are marbles left in the bowl.   "
+},
+{
+  "id": "exercises-fraction-basics-1",
+  "level": "2",
+  "url": "sect-fraction-basics.html#exercises-fraction-basics-1",
+  "type": "Exercise",
+  "number": "7.1.7.1",
+  "title": "",
+  "body": "  For each of the following fraction, show the given model      Using a horizontal strip.       using a area model with a circle.       using a set model shading in the way consistent with the fraction.    "
+},
+{
+  "id": "exercises-fraction-basics-2",
+  "level": "2",
+  "url": "sect-fraction-basics.html#exercises-fraction-basics-2",
+  "type": "Exercise",
+  "number": "7.1.7.2",
+  "title": "",
+  "body": "  Use any type of model shown in this section to demonstrate the following inequalities.                 "
+},
+{
+  "id": "exercises-fraction-basics-3",
+  "level": "2",
+  "url": "sect-fraction-basics.html#exercises-fraction-basics-3",
+  "type": "Exercise",
+  "number": "7.1.7.3",
+  "title": "",
+  "body": "  Explain using any type of model why    "
+},
+{
+  "id": "exercises-fraction-basics-4",
+  "level": "2",
+  "url": "sect-fraction-basics.html#exercises-fraction-basics-4",
+  "type": "Exercise",
+  "number": "7.1.7.4",
+  "title": "",
+  "body": "  A student claims that cannot be equal to because while How do you respond?   "
+},
+{
+  "id": "exercises-fraction-basics-5",
+  "level": "2",
+  "url": "sect-fraction-basics.html#exercises-fraction-basics-5",
+  "type": "Exercise",
+  "number": "7.1.7.5",
+  "title": "",
+  "body": "  Produce a Teacher's Solution for each of the following word problem. Use the requested type of model in the solution.     Javier used of a bottle of oil for a recipe, where the bottle holds . How much oil did the bottle hold? (Use an area model)       of all students in a class wore t-shirt on the field trip. If there were children on the field trip, how many wore t-shirts. (Use a measurement model).      Catherine had 12 donut holes. She gave of them to friends. How many donut holes did she give away. (use a set model.)      Teresa had 200 stickers. of the stickers had dinosaurs on them. If she gave away of her dinosaur stickers to Damian. How many stickers did she give away (two-step bar diagram.)    "
+},
+{
   "id": "ch-fractions-4",
   "level": "1",
   "url": "ch-fractions-4.html",
   "type": "Section",
   "number": "7.2",
   "title": "Addition and Subtraction of Fractions",
-  "body": " Addition and Subtraction of Fractions   Since clearly that fractions are numbers, we seek to perform the same operations that we did with whole numbers. We first start with addition and subtraction of fractions. This is done is two stages. The first stage shows and explains how to add and subtract with the same denominators and then it is moved onto the more-difficult addition and subtraction with unlike denominators.    Addition and Subtracting with same denominators  We move on to introducing addition and subtraction. We move from understanding that              as long as we are talking about keeping the unit consistent that       and that adding and subtracting fractions in a common unit is identical to whole number addition and subtraction with units. That is,    Fraction Rule 2: Addition and Subtraction of Fractions   Let and be positive whole numbers. Then      Models for Addition and Subtraction  Of course, when done correctly, models are important. For example, look at the model for         which clearly shows that the result is .    Word Problems     Bernie had a candy bar and gave his sister Flo of it to eat. He ate of it. How much was left?    We start with a diagram for this.       The amount that Bernie and Flo ate is found with of the candy bar. The remaining part is found by subtraction or So there is of the candy bar left.      The relationship between division and fractions    Partitive division example: If 8 kids share 3 pizzas equally, how much should each get?   We can solve this with area models and in this case, use circles. The three pizzas are       And each whole can be subdivided into 8 pieces to get       And now we have (or 24 slices) of a pizza and each child would get slices or of a pizza.     Fraction Rule 3: Fraction-Division Equivalence   Let and be positive whole numbers, then.     This rule shows that division is the same as a fraction and this allows students to be able to solve fraction problems via division and division problems via ideas from fractions.    If 5 people equally share a 32 oz. soda, how much does each get?    Knowing this is a division problem and there are four possible answers to this:                          Which is the correct (or best) way to write the answer. The first is probably incorrect, because that would mean removing 2 ounces from the soda and then splitting the remaining 30 oz. This doesn't make too much sense, because we can divide 2 ounces of soda equally.  The 2nd answer, although more correct, is difficult to think of. How do you measure ounces?  The 3rd and fourth are good solutions to this. Each would depend on how to measure the ounces. Some measuring cup may list fractions of ounces as fractions and other may list them as decimals.       Adding Fractions with unlike Denominators  We know how to add fractions with like denominators (from Rule #2), however if they are the same, then we need to write them with the same denominator. In short, we will use Rule #1 to rewrite each fraction as necessary.  First, we will show with a model how this is done, then we will progress to using fraction rules in a more abstract way.    Find     If we produce a diagram with this as       Since the denominators are not the same, the ''units'' are not the same, so we need to break up the top into another 5ths and the bottoms into thirds to get:       and these are equivalent fractions and we can see that   Alternatively, we can divide the two fractions using the following subdivided area models for and respectively.              which we can combine to get:       The result shows that there are 11 shaded boxes out of 15, so the answer is .    Note that the shading and subdivision need to be in opposite directions.    Find using a rectangular grid.    First, we need to create a grid that shows fourths in one direction and thirds in the other, like:       and we will use a take-away model so put the minuend on the grid:       We need to remove (take-way) 2\/3 of the grid, so we rearrange the squares to get:       and lastly we cross out 2\/3 of the grid like:           Algebraic Form for Adding\/Subtracting Fractions  The two examples above can be summarized as the rule for adding\/subtraction with unlike denominators. In short we need a common denominator and following shows how to achieve this for the previous two examples:    Addition with Unlike Denominators  Use equivalent fractions to find .   Not surprisingly, from the diagrams above, the common denominator is the product of the denominators or in this case . We can write So we can write:       Subtraction with Unlike Denominators  Use equivalent fractions to find .   Again, we find a common denominator which is just and find equivalent fractions with this denominator: which is the same that we found with the diagrams above.    This can be summarized as the following rule.   Adding and Subtracting Fractions with Unlike Denominators   Let and be positive whole numbers, then       Finding a Common Denominator  The above examples showed how to find a common denominator by just multiplying the two denominators. In many cases, we can find a simpler example.    Find     A straightforward way to do this is to just multiply to find the common denominator as above. In this case, and this is fine, but notice we probably need to use the algorithms to do although is reasonably done with mental math.   This result isn't in simplest form.      Using the Lowest Common Multiple to find a Common Denominator  Since a common denominator is a multiple of each of the two denominators, it is natural to think of using the least common multiple (LCM) for the common denominator. We'll do the previous example above first by noting that and and we repeat the same steps as above except with the common denominator 72 instead of 432.  So we can write and this is in simplest form because (and 41 is prime). We show another example in which we use subtraction and the LCM.    Find     First note that and we'll use this to find the lowest common multiple. and   And although this is correct, it is not in reduced form. Factoring out shows that   Some mental math was used to do some of the calculations above. If needed, you can use the algorithm instead to calculate and .      Adding and Subtracting Mixed Numbers  We finish up this section with the addition and subtraction of mixed numbers. Consider   First, let's look at this on a number line and use the counting up skill. Start at on the number line and count up until we reach .       where we have first done a hop of , then 3 hops of size 1 and then a hop of size . The total amount counted up was .  Alternatively, we can represent these as area models. We first start with as the following.       And as we have seen often the take-away interpretation is used for subtraction. We'll shade areas to be removed. We need to shade 1 full circle however, we need to break up one of the circles into 3 pieces to remove two. The following shows this.       and if the shaded areas are removed (from subtraction), what is left is .   "
+  "body": " Addition and Subtraction of Fractions   Since clearly that fractions are numbers, we seek to perform the same operations that we did with whole numbers. We first start with addition and subtraction of fractions. This is done is two stages. The first stage shows and explains how to add and subtract with the same denominators and then it is moved onto the more-difficult addition and subtraction with unlike denominators.    Addition and Subtracting with same denominators  We move on to introducing addition and subtraction. We move from understanding that              as long as we are talking about keeping the unit consistent that       and that adding and subtracting fractions in a common unit is identical to whole number addition and subtraction with units. That is,   This leads to the following fraction rule with the same denominator.   Addition and Subtraction of Fractions with Like Denominators   Let and be positive whole numbers. Then      Models for Addition and Subtraction  Of course, when done correctly, models are important. For example, look at the model for    A circle area model divided into 4 equal parts. Two of the parts are shaded blue and one shaded red.     which clearly shows that the result is .    Word Problems    Bernie had a candy bar and gave his sister Flo of it to eat. He ate of it. How much was left?    We start with a diagram for this.   A bar diagram divided into 5 equal pieces. The first two are labeled with Bernie and one piece is labelled with Flo.    The amount that Bernie and Flo ate is 3 of the pieces with shows that of the candy bar. The remaining part is two pieces or .  So there is of the candy bar left.     The relationship between division and fractions    Partitive division example: If 8 kids share 3 pizzas equally, how much should each get?   We can solve this with area models and in this case, use circles. The three pizzas are   An image of three circles.    And each whole can be subdivided into 8 pieces to get   Three circles, each divided into 8 equal pieces.    And now we have (or 24 slices) of a pizza and each child would get slices or of a pizza.     Fraction-Division Equivalence   Let and be positive whole numbers, then.     This rule shows that division is the same as a fraction and this allows students to be able to solve fraction problems via division and division problems via ideas from fractions.    If 5 people equally share a 32 oz. soda, how much does each get?    Knowing this is a division problem and there are four possible answers to this:                          Which is the correct (or best) way to write the answer. The first is probably incorrect, because that would mean removing 2 ounces from the soda and then splitting the remaining 30 oz. This doesn't make too much sense, because we can divide 2 ounces of soda equally.  The 2nd answer, although more correct, is difficult to think of. How do you measure ounces?  The 3rd and fourth are good solutions to this. Each would depend on how to measure the ounces. Some measuring cup may list fractions of ounces as fractions and other may list them as decimals.       Adding Fractions with unlike Denominators  We know how to add fractions with like denominators using , however if they are the same, then we need to write them with the same denominator. In short, we will use to rewrite each fraction as necessary.  First, we will show with a model how this is done, then we will progress to using fraction rules in a more abstract way.    Find     If we produce a diagram with this as   Two bar diagrams. On top, the bar is divided into 5 equal pieces and 2 are shaded. On the bottom, the bar is divided into 3 equal pieces and 1 is shaded.    Since the denominators are not the same, the units are not the same, so we need to break up the top into another 5ths and the bottoms into thirds to get:   Two bar diagrams. On top, the bar is divided into 15 equal pieces and 6 are shaded. On the bottom, the bar is divided into 15 equal pieces and 5 is shaded.    and these are equivalent fractions and we can see that   Alternatively, we can divide the two fractions using the following subdivided area models for and respectively.    A subdivided area model with a grid of 3 squares tall by 5 squares wide. There are 2 wide and 3 high on the left that are shaded.     A subdivided area model with a grid of 3 squares tall by 5 squares wide. The bottom 1 high by 5 wide is shaded.     which we can combine to get:   A subdivided area model with a grid of 3 squares tall by 5 squares wide. There is the same 3 high by 2 wide shaded on the left and the 5 other squares rearranged and on the right.    The result shows that there are 11 shaded boxes out of 15, so the answer is .    Note that the shading and subdivision need to be in opposite directions.    Find using a rectangular grid.    First, we need to create a grid that shows fourths in one direction and thirds in the other, like:   A grid of squares that is 4 wide and 3 high.    and we will use a take-away model so put the minuend on the grid:   A grid of squares that is 4 wide and 3 high. The leftmost 3 high by 3 wide is shaded.    We need to remove (take-way) 2\/3 of the grid, so we rearrange the squares to get:   A grid of squares that is 4 wide and 3 high. The top left square is shaded and the bottom two rows (4 wide by 2 high) is also shaded.    and lastly we cross out 2\/3 of the grid like:   A grid of squares that is 4 wide and 3 high. The top left square is shaded and the bottom two rows (4 wide by 2 high) is also shaded.    There is only 1 shaded grid that isn't crossed out. This shows and this diagram shows       Algebraic Form for Adding\/Subtracting Fractions  The two examples above can be summarized as the rule for adding\/subtraction with unlike denominators. In short we need a common denominator and following shows how to achieve this for the previous two examples:   Addition with Unlike Denominators   Use equivalent fractions to find .   Not surprisingly, from the diagrams above, the common denominator is the product of the denominators or in this case . We can write So we can write:      Subtraction with Unlike Denominators   Use equivalent fractions to find .   Again, we find a common denominator which is just and find equivalent fractions with this denominator: which is the same that we found with the diagrams above.    This can be summarized as the following rule.   Adding and Subtracting Fractions with Unlike Denominators   Let and be positive whole numbers, then       Finding a Common Denominator  The above examples showed how to find a common denominator by just multiplying the two denominators. In many cases, we can find a simpler example.    Find     A straightforward way to do this is to just multiply to find the common denominator as above. In this case, and this is fine, but notice we probably need to use the algorithms to do although is reasonably done with mental math.   This result isn't in simplest form. You can further reduce the fraction using , but as we will see, often we can to better.      Using the Lowest Common Multiple to find a Common Denominator  Since a common denominator is a multiple of each of the two denominators, it is natural to think of using the least common multiple (LCM) for the common denominator. We'll do the previous example above first by noting that and and we repeat the same steps as above except with the common denominator 72 instead of 432.  So we can write and this is in simplest form because (and 41 is prime). We show another example in which we use subtraction and the LCM.    Find     First note that and we'll use this to find the lowest common multiple. and   And although this is correct, it is not in reduced form. Factoring out shows that   Some mental math was used to do some of the calculations above. If needed, you can use the algorithm instead to calculate and .      Adding and Subtracting Mixed Numbers  We finish up this section with the addition and subtraction of mixed numbers. Consider   First, let's look at this on a number line and use the counting up skill. Start at on the number line and count up until we reach .   A number line with ticks labeled from 0 to 6. In between each whole number, there are 2 equally-spaced ticks. Starting at 1 2\/3, a hop to the right is made to 2, then 3 hops of size 1, then a hop of size 1\/3 ending at 5 1\/3.    where we have first done a hop of , then 3 hops of size 1 and then a hop of size . The total amount counted up was .  Alternatively, we can represent these as area models. We first start with as the following.   Five circles and one third of a circle.    And as we have seen often the take-away interpretation is used for subtraction. We'll shade areas to be removed. We need to shade 1 full circle however, we need to break up one of the circles into 3 pieces to remove two. The following shows this.   Five circles and one third of a circle. The leftmost circle is shaded. The rightmost full circle is divided into 3 equal pieces with one shaded. The remaining one third of a circle is shaded.    and if the shaded areas are removed (from subtraction), what is left is .      Use long division to convert each of the following to a mixed number.                    Convert the following mixed numbers to an improper fraction                           Use Euclid's Algorithm to reduce (Hint: find )      Use Euclid's Algorithm to show that the fraction is in reduce form. (Hint: find )     "
 },
 {
-  "id": "fraction-rule-addition-subtraction",
+  "id": "fraction-rule-addition-subtraction-like-denominators",
   "level": "2",
-  "url": "ch-fractions-4.html#fraction-rule-addition-subtraction",
+  "url": "ch-fractions-4.html#fraction-rule-addition-subtraction-like-denominators",
   "type": "Property",
   "number": "7.2.1",
-  "title": "Fraction Rule 2: Addition and Subtraction of Fractions.",
-  "body": " Fraction Rule 2: Addition and Subtraction of Fractions   Let and be positive whole numbers. Then    "
+  "title": "Addition and Subtraction of Fractions with Like Denominators.",
+  "body": " Addition and Subtraction of Fractions with Like Denominators   Let and be positive whole numbers. Then    "
 },
 {
-  "id": "ch-fractions-4-4-2-1",
+  "id": "ch-fractions-4-4-2",
   "level": "2",
-  "url": "ch-fractions-4.html#ch-fractions-4-4-2-1",
+  "url": "ch-fractions-4.html#ch-fractions-4-4-2",
   "type": "Example",
   "number": "7.2.2",
   "title": "",
-  "body": "  Bernie had a candy bar and gave his sister Flo of it to eat. He ate of it. How much was left?    We start with a diagram for this.       The amount that Bernie and Flo ate is found with of the candy bar. The remaining part is found by subtraction or So there is of the candy bar left.   "
+  "body": "  Bernie had a candy bar and gave his sister Flo of it to eat. He ate of it. How much was left?    We start with a diagram for this.   A bar diagram divided into 5 equal pieces. The first two are labeled with Bernie and one piece is labelled with Flo.    The amount that Bernie and Flo ate is 3 of the pieces with shows that of the candy bar. The remaining part is two pieces or .  So there is of the candy bar left.   "
 },
 {
   "id": "ch-fractions-4-4-3-2",
@@ -2950,16 +3022,16 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.2.3",
   "title": "",
-  "body": "  Partitive division example: If 8 kids share 3 pizzas equally, how much should each get?   We can solve this with area models and in this case, use circles. The three pizzas are       And each whole can be subdivided into 8 pieces to get       And now we have (or 24 slices) of a pizza and each child would get slices or of a pizza.   "
+  "body": "  Partitive division example: If 8 kids share 3 pizzas equally, how much should each get?   We can solve this with area models and in this case, use circles. The three pizzas are   An image of three circles.    And each whole can be subdivided into 8 pieces to get   Three circles, each divided into 8 equal pieces.    And now we have (or 24 slices) of a pizza and each child would get slices or of a pizza.   "
 },
 {
-  "id": "axiom-",
+  "id": "prop-fraction-division-equivalence",
   "level": "2",
-  "url": "ch-fractions-4.html#axiom-",
+  "url": "ch-fractions-4.html#prop-fraction-division-equivalence",
   "type": "Property",
   "number": "7.2.4",
-  "title": "Fraction Rule 3: Fraction-Division Equivalence.",
-  "body": " Fraction Rule 3: Fraction-Division Equivalence   Let and be positive whole numbers, then.    "
+  "title": "Fraction-Division Equivalence.",
+  "body": " Fraction-Division Equivalence   Let and be positive whole numbers, then.    "
 },
 {
   "id": "ch-fractions-4-4-3-5",
@@ -2977,7 +3049,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.2.6",
   "title": "",
-  "body": "  Find     If we produce a diagram with this as       Since the denominators are not the same, the ''units'' are not the same, so we need to break up the top into another 5ths and the bottoms into thirds to get:       and these are equivalent fractions and we can see that   Alternatively, we can divide the two fractions using the following subdivided area models for and respectively.              which we can combine to get:       The result shows that there are 11 shaded boxes out of 15, so the answer is .   "
+  "body": "  Find     If we produce a diagram with this as   Two bar diagrams. On top, the bar is divided into 5 equal pieces and 2 are shaded. On the bottom, the bar is divided into 3 equal pieces and 1 is shaded.    Since the denominators are not the same, the units are not the same, so we need to break up the top into another 5ths and the bottoms into thirds to get:   Two bar diagrams. On top, the bar is divided into 15 equal pieces and 6 are shaded. On the bottom, the bar is divided into 15 equal pieces and 5 is shaded.    and these are equivalent fractions and we can see that   Alternatively, we can divide the two fractions using the following subdivided area models for and respectively.    A subdivided area model with a grid of 3 squares tall by 5 squares wide. There are 2 wide and 3 high on the left that are shaded.     A subdivided area model with a grid of 3 squares tall by 5 squares wide. The bottom 1 high by 5 wide is shaded.     which we can combine to get:   A subdivided area model with a grid of 3 squares tall by 5 squares wide. There is the same 3 high by 2 wide shaded on the left and the 5 other squares rearranged and on the right.    The result shows that there are 11 shaded boxes out of 15, so the answer is .   "
 },
 {
   "id": "ch-fractions-4-5-6",
@@ -2986,7 +3058,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.2.7",
   "title": "",
-  "body": "  Find using a rectangular grid.    First, we need to create a grid that shows fourths in one direction and thirds in the other, like:       and we will use a take-away model so put the minuend on the grid:       We need to remove (take-way) 2\/3 of the grid, so we rearrange the squares to get:       and lastly we cross out 2\/3 of the grid like:        "
+  "body": "  Find using a rectangular grid.    First, we need to create a grid that shows fourths in one direction and thirds in the other, like:   A grid of squares that is 4 wide and 3 high.    and we will use a take-away model so put the minuend on the grid:   A grid of squares that is 4 wide and 3 high. The leftmost 3 high by 3 wide is shaded.    We need to remove (take-way) 2\/3 of the grid, so we rearrange the squares to get:   A grid of squares that is 4 wide and 3 high. The top left square is shaded and the bottom two rows (4 wide by 2 high) is also shaded.    and lastly we cross out 2\/3 of the grid like:   A grid of squares that is 4 wide and 3 high. The top left square is shaded and the bottom two rows (4 wide by 2 high) is also shaded.    There is only 1 shaded grid that isn't crossed out. This shows and this diagram shows    "
 },
 {
   "id": "ch-fractions-4-6-3",
@@ -2994,8 +3066,8 @@ var ptx_lunr_docs = [
   "url": "ch-fractions-4.html#ch-fractions-4-6-3",
   "type": "Example",
   "number": "7.2.8",
-  "title": "",
-  "body": "  Addition with Unlike Denominators  Use equivalent fractions to find .   Not surprisingly, from the diagrams above, the common denominator is the product of the denominators or in this case . We can write So we can write:    "
+  "title": "Addition with Unlike Denominators.",
+  "body": " Addition with Unlike Denominators   Use equivalent fractions to find .   Not surprisingly, from the diagrams above, the common denominator is the product of the denominators or in this case . We can write So we can write:    "
 },
 {
   "id": "ch-fractions-4-6-4",
@@ -3003,13 +3075,13 @@ var ptx_lunr_docs = [
   "url": "ch-fractions-4.html#ch-fractions-4-6-4",
   "type": "Example",
   "number": "7.2.9",
-  "title": "",
-  "body": "  Subtraction with Unlike Denominators  Use equivalent fractions to find .   Again, we find a common denominator which is just and find equivalent fractions with this denominator: which is the same that we found with the diagrams above.   "
+  "title": "Subtraction with Unlike Denominators.",
+  "body": " Subtraction with Unlike Denominators   Use equivalent fractions to find .   Again, we find a common denominator which is just and find equivalent fractions with this denominator: which is the same that we found with the diagrams above.   "
 },
 {
-  "id": "rule-general-fraction-addition-subtraction",
+  "id": "rule-fraction-addition-subtraction-unlike-denominators",
   "level": "2",
-  "url": "ch-fractions-4.html#rule-general-fraction-addition-subtraction",
+  "url": "ch-fractions-4.html#rule-fraction-addition-subtraction-unlike-denominators",
   "type": "Property",
   "number": "7.2.10",
   "title": "Adding and Subtracting Fractions with Unlike Denominators.",
@@ -3022,7 +3094,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.2.11",
   "title": "",
-  "body": "  Find     A straightforward way to do this is to just multiply to find the common denominator as above. In this case, and this is fine, but notice we probably need to use the algorithms to do although is reasonably done with mental math.   This result isn't in simplest form.   "
+  "body": "  Find     A straightforward way to do this is to just multiply to find the common denominator as above. In this case, and this is fine, but notice we probably need to use the algorithms to do although is reasonably done with mental math.   This result isn't in simplest form. You can further reduce the fraction using , but as we will see, often we can to better.   "
 },
 {
   "id": "ch-fractions-4-8-4",
@@ -3034,13 +3106,49 @@ var ptx_lunr_docs = [
   "body": "  Find     First note that and we'll use this to find the lowest common multiple. and   And although this is correct, it is not in reduced form. Factoring out shows that   Some mental math was used to do some of the calculations above. If needed, you can use the algorithm instead to calculate and .   "
 },
 {
+  "id": "exercises-adding-subtracting-fractions-1",
+  "level": "2",
+  "url": "ch-fractions-4.html#exercises-adding-subtracting-fractions-1",
+  "type": "Exercise",
+  "number": "7.2.8.1",
+  "title": "",
+  "body": "  Use long division to convert each of the following to a mixed number.                 "
+},
+{
+  "id": "exercises-adding-subtracting-fractions-2",
+  "level": "2",
+  "url": "ch-fractions-4.html#exercises-adding-subtracting-fractions-2",
+  "type": "Exercise",
+  "number": "7.2.8.2",
+  "title": "",
+  "body": "  Convert the following mixed numbers to an improper fraction                        "
+},
+{
+  "id": "exercises-adding-subtracting-fractions-3",
+  "level": "2",
+  "url": "ch-fractions-4.html#exercises-adding-subtracting-fractions-3",
+  "type": "Exercise",
+  "number": "7.2.8.3",
+  "title": "",
+  "body": "  Use Euclid's Algorithm to reduce (Hint: find )   "
+},
+{
+  "id": "exercises-adding-subtracting-fractions-4",
+  "level": "2",
+  "url": "ch-fractions-4.html#exercises-adding-subtracting-fractions-4",
+  "type": "Exercise",
+  "number": "7.2.8.4",
+  "title": "",
+  "body": "  Use Euclid's Algorithm to show that the fraction is in reduce form. (Hint: find )   "
+},
+{
   "id": "ch-fractions-5",
   "level": "1",
   "url": "ch-fractions-5.html",
   "type": "Section",
   "number": "7.3",
   "title": "Multiplication of Fractions",
-  "body": " Multiplication of Fractions   Multiplication of fractions is done, like much of mathematics in stages, building on what is known. We will first look at a whole numbers times a fraction, move to multiplication of proper fractions and last speak to multiplication of mixed numbers or improper fractions.  As we will see, diagrams will play a huge role, both grid and bar diagrams are generally the most helpful.    Multiplication of a whole number and a fraction  If we return to the interpretation of multiplication, is the number added to itself times. It can also be interpreted as groups of items each size and jumps on the number line of size . We can think of each of these interpretations. For example, consider .   A nice way to think about a whole number times a fraction is to use the number like to do the whole number of hops of size the fraction. Here's :         Fraction times a whole number  We need to rethink this a bit. Consider . What does groups of size 4 mean. What is a 1\/5 of a step of size 4 mean? We will interpret this as of 4.       The total shaded part is of unit so .  All you astute readers out there said, I already know that because  and this is because the commutative property holds for fractions too.    Fraction times a fraction  Our next step in fractionland is a fraction times a fraction (we'll just consider proper fractions right now). As an example, let's look at and we'll interpret this as of . Let's think of this as a diagram like where we'll break up into 5 equal pieces and shade three of them:       and the shaded area represents .  Since we seek to find of this, then we also break the unit into fourths in the other direction:       and each box in the grid above is . The light red shaded area represents the answer or . This shows that    Fraction Multiplication   Let and be positive whole numbers, then        and       Mixed number times mixed number  Similar to that of addition and subtraction, we can multiply mixed numbers. However, it is quite difficult to do so directly because of how a mixed number is interpreted. For example can be written as and you would have to apply the distributive properties. Instead, a much easier way to convert to improper numbers first as is shown in the next example.    Multiplying Mixed Numbers  Find     First, we can write and and then where the last step used equivalent fractions to simplify.      Factoring Fractions and Canceling     can be more easily done by factoring first:       Word Problems  The following are two different word problems involving multiplication with fractions.     Develop a Teacher's solution of the following: Mrs. Baker had lb of sugar. She used of it in a recipe. How much sugar did she use?    The answer is of as this is most easily shown as the following bar diagram:       The amount of sugar used is the product of and    Mrs. Baker used of a pound of sugar.     "
+  "body": " Multiplication of Fractions   Multiplication of fractions is done, like much of mathematics in stages, building on what is known. We will first look at a whole numbers times a fraction, move to multiplication of proper fractions and last speak to multiplication of mixed numbers or improper fractions.  As we will see, diagrams will play a huge role, both grid and bar diagrams are generally the most helpful.    Multiplication of a whole number and a fraction  If we return to the interpretation of multiplication, is the number added to itself times. It can also be interpreted as groups of items each size and jumps on the number line of size . We can think of each of these interpretations. For example, consider .   A nice way to think about a whole number times a fraction is to use the number like to do the whole number of hops of size the fraction. Here's :   A number lines from 0 to 1 with fractions of 1\/5, 2\/5, 3\/5, 4\/5 as well. There are four hops shown from 0 up to 4\/5.    This shows that .    Fraction times a whole number  We can use a grid model to show multiplication, but you need to be careful with it. Consider . The fraction can be a unit where 1 of 5 parts is shaded. In the other direction the 4 can just be 4 units as shown below:   A grid diagram that is 5 units high by 4 wide. The horizontal is labelled as 4 units. The vertical side is labelled as 1 unit.    There are 4 shaded squares and note that a single square is , so this shows that .  This could also be interpreted as and noting that this would show that so the commutative property of integers also seems to hold for fractions as well.    Fraction times a fraction  Our next step in fractionland is a fraction times a fraction (we'll just consider proper fractions right now). As an example, let's look at and we'll interpret this as of . Let's think of this as a diagram like where we'll break up into 5 equal pieces and shade three of them:   A bar diagram with the bar of length 1 unit divided into 5 equal parts.    and the shaded area represents .  Since we seek to find of this, then we also break the unit into fourths in the other direction:   A grid diagram that is 4 squares high and 5 squares wide. The entire width is labelled 1 unit and the entire height is labelled 1 unit. One vertical square is labelled 1\/4 unit. One horizontal square is labelled 1\/5 unit. The left 4 high by 3 wide squares is shaded blue. Within that, the bottom 3 squares is shaded red.    and each box in the grid above is . The red shaded area represents the answer or . This shows that    Fraction Multiplication   Let and be positive whole numbers, then             Notice that a common denominator is not needed for multiplication, only for addition and subtraction.     Mixed number times mixed number  Similar to that of addition and subtraction, we can multiply mixed numbers. However, it is quite difficult to do so directly because of how a mixed number is interpreted. For example can be written as and you would have to apply the distributive properties. Instead, a much easier way to convert to improper numbers first as is shown in the next example.    Multiplying Mixed Numbers  Find     First, we can write and and then where the last step used equivalent fractions to reduce it.      Factoring Fractions and Canceling  The previous example performed some cancelling to reduce the answer. There are often two different ways to perform a multiplication for example we find using two different techniques.     No factoring   .  If you you need to reduce the fraction and generally that is the best, then at this step you'll need to note that     Reduce first  Instead, if we reduce the fraction before multiplying      Almost always, it's easier to perform reducing the fraction before multiplying. This is because the resulting number is smaller.    Word Problems  The following are two different word problems involving multiplication with fractions.    Develop a Teacher's solution of the following: Mrs. Baker had lb of sugar. She used of it in a recipe. How much sugar did she use?     The answer is of as this is most easily shown as the following bar diagram:   A bar diagram with 4 equal parts and 3 of them are shaded. Above the bar, there is a brace over the entire length labelled with \"2\/3 pound\". Below the bar there is a brace across the 3 shaded parts labelled with a ?.    The amount of sugar used is the product of and    Mrs. Baker used of a pound of sugar.        Perform the following multiplications. If there is a mixed number, then convert it to an improper fraction first.                                  For each of the following multiplications, find the product in reduce form. (Hint: reduce the fraction first before multiplying as shown in ).                    One common student error is to write Explain how the student arrived at his answer, and explain the correct answer using a rectangular grid model.      Develop Teacher's Solutions to the following multiplication word problems     Paul filled a bowl with 80 ounces of punch. If of the bowl was filled, find the capacity of the bowl.      Lucia made 40 cupcakes for a party. of the cupcakes were eaten. How many cupcakes were left?       of a class wore a t-shirt on a field trip.   What fraction of the students did not wear a t-shirt?    If 24 students wore a t-shirt, how many children are there altogether?    How many more students wore t-shirts than didn't?         "
 },
 {
   "id": "axiom-fraction-multiplication",
@@ -3058,25 +3166,25 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.3.2",
   "title": "",
-  "body": "   and    "
+  "body": "      "
+},
+{
+  "id": "ch-fractions-5-5-10",
+  "level": "2",
+  "url": "ch-fractions-5.html#ch-fractions-5-5-10",
+  "type": "Note",
+  "number": "7.3.3",
+  "title": "",
+  "body": " Notice that a common denominator is not needed for multiplication, only for addition and subtraction.  "
 },
 {
   "id": "ch-fractions-5-6-3",
   "level": "2",
   "url": "ch-fractions-5.html#ch-fractions-5-6-3",
   "type": "Example",
-  "number": "7.3.3",
-  "title": "",
-  "body": "  Multiplying Mixed Numbers  Find     First, we can write and and then where the last step used equivalent fractions to simplify.   "
-},
-{
-  "id": "ch-fractions-5-7-2",
-  "level": "2",
-  "url": "ch-fractions-5.html#ch-fractions-5-7-2",
-  "type": "Example",
   "number": "7.3.4",
   "title": "",
-  "body": "   can be more easily done by factoring first:    "
+  "body": "  Multiplying Mixed Numbers  Find     First, we can write and and then where the last step used equivalent fractions to reduce it.   "
 },
 {
   "id": "ch-fractions-5-8-3",
@@ -3085,7 +3193,43 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.3.5",
   "title": "",
-  "body": "   Develop a Teacher's solution of the following: Mrs. Baker had lb of sugar. She used of it in a recipe. How much sugar did she use?    The answer is of as this is most easily shown as the following bar diagram:       The amount of sugar used is the product of and    Mrs. Baker used of a pound of sugar.   "
+  "body": "  Develop a Teacher's solution of the following: Mrs. Baker had lb of sugar. She used of it in a recipe. How much sugar did she use?     The answer is of as this is most easily shown as the following bar diagram:   A bar diagram with 4 equal parts and 3 of them are shaded. Above the bar, there is a brace over the entire length labelled with \"2\/3 pound\". Below the bar there is a brace across the 3 shaded parts labelled with a ?.    The amount of sugar used is the product of and    Mrs. Baker used of a pound of sugar.   "
+},
+{
+  "id": "exercises-fraction-multiplication-1",
+  "level": "2",
+  "url": "ch-fractions-5.html#exercises-fraction-multiplication-1",
+  "type": "Exercise",
+  "number": "7.3.7.1",
+  "title": "",
+  "body": "  Perform the following multiplications. If there is a mixed number, then convert it to an improper fraction first.                               "
+},
+{
+  "id": "exercises-fraction-multiplication-2",
+  "level": "2",
+  "url": "ch-fractions-5.html#exercises-fraction-multiplication-2",
+  "type": "Exercise",
+  "number": "7.3.7.2",
+  "title": "",
+  "body": "  For each of the following multiplications, find the product in reduce form. (Hint: reduce the fraction first before multiplying as shown in ).                 "
+},
+{
+  "id": "exercises-fraction-multiplication-3",
+  "level": "2",
+  "url": "ch-fractions-5.html#exercises-fraction-multiplication-3",
+  "type": "Exercise",
+  "number": "7.3.7.3",
+  "title": "",
+  "body": "  One common student error is to write Explain how the student arrived at his answer, and explain the correct answer using a rectangular grid model.   "
+},
+{
+  "id": "exercises-fraction-multiplication-4",
+  "level": "2",
+  "url": "ch-fractions-5.html#exercises-fraction-multiplication-4",
+  "type": "Exercise",
+  "number": "7.3.7.4",
+  "title": "",
+  "body": "  Develop Teacher's Solutions to the following multiplication word problems     Paul filled a bowl with 80 ounces of punch. If of the bowl was filled, find the capacity of the bowl.      Lucia made 40 cupcakes for a party. of the cupcakes were eaten. How many cupcakes were left?       of a class wore a t-shirt on a field trip.   What fraction of the students did not wear a t-shirt?    If 24 students wore a t-shirt, how many children are there altogether?    How many more students wore t-shirts than didn't?       "
 },
 {
   "id": "ch-fractions-6",
@@ -3094,7 +3238,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "7.4",
   "title": "Division of Fractions",
-  "body": " Division of Fractions   Although dividing two fractions in proper or improper form is quite straightforward, division is difficult in terms of word problems. So we start with a reminder of the difference between partitive and measurement division.    Review of Partitive and Measurement Division     Measurement Division  If you know the size, and are determining the number of parts. 15 is how many of size 3?     Partitive Division  If you know the number of parts and are determining the size. 15 is 3 groups of what size?      Also remember that the following bar diagrams are very useful for these:     Measurement Division  This shows with measurement division interpretation.         Partitive Division  This shows with a measurement division interpretation.           Partitive Word Problems  The following is a number of word problems that are partitive. Remember that the important part is that the divisor represents the number of parts.     Eddie has 15 marbles. He puts them equally in 3 bags. How many marbles are in each bag?    Sally has 3 pizzas. She gives each of 8 friends the same amount of pizza. How much pizza does each friend get?    The perimeter of a square flower bed is m. Find the length of each side in meters.    Steven drank 4\/5 of a carton of milk. If he drank 8 oz. of milk, how big was the carton? 4\/5 of what is 8 oz.?        Measurement Word Problems  The following is a number of word problems that are measurement. Remember that the important part is that the divisor represents the size of each part.     Elizabeth has 15 cookies. She gives each of her friends 3 cookies. How many friends does she give cookies?    Matthew has a rope that is 8 meters long. He cuts a piece of it off that is 3 meters long. How much of the rope did he cut?    5 is 3\/4 of what number?    Tallulah rode her bike to her Grandmother's house. She stopped 3 miles along the way and was 3\/4 of the way to her Grandmother's house. When she got to the house, how far did she ride?    Mr. Taylor is building a fence. Each board is 5\/6 of foot. How many boards does he need to build a fence that is 13 1\/3 feet long?    A rope of length feet is cut into pieces of length of a foot. How many pieces of rope were there?        Drawing a Partitive Division Diagram  Draw a diagram for 7 is of what size?      This can be interpreted as .    We are looking for a bar of some length:         Shade in of the bar:         The problem says 7 is of what size? That is we label the shaded area.         To finish the problem, each segment is length . Thus, the total length is 4 times this or      Let's take a look at an example.    Draw a diagram for 6 is of what size?      Again, this is a diagram for .    This time, the unknown is smaller than 6:         And the entire bar is shaded.    Since there are 5 units, each unit is in length and we are looking for 4 of these so        This is most complicated (both mechanically and conceptually) of the four operations involving fractions.  Recall that the definition of two numbers if The number is the divisor, is the dividend, and is the quotient.    Dividing a whole number by a whole number  Although a problem like is relatively easy, what happens if the dividend is not a multiple of the divisor? The following example uses visuals to explain.    Eight children share 3 pizzas equally. How much pizza does each child get?   This is a partitive division problem and the result is . We saw this with the diagram:       And each whole can be subdivided into 8 pieces to get       So each child gets of a pizza.      Dividing a fraction by a whole number    Three-fourths of a pizza is divided equally between 6 people. What fraction of a pizza does each person get?    Let's start with a diagram and since we're using pizzas, we will use a circular area diagram. Divide into 4 area and shade 3 of them.       and since the shaded area is now divided into 6 equally-sized pieces, then each person receives of the pizza. So       Show using an bar diagram    We first start representing 2\/3 as shading 2 of 3 parts of a bar diagram. Then each area is divided into 5 equal pieces.           Show using a rectangular grid model.    First, let's produce a diagram that shows .       If we then subdivide by 5 vertically to get:       where the light red shows the result and the fraction shaded is .      Dividing a whole number by a fraction  The next step to understanding fraction division is dividing a whole number by a fraction. Consider . This can be represented by the following diagram showing the measurement interpretation.       Another interpretation of this is with the following word problem.    Joey cut four cookies in half. How many halves did he have?    The following area model shows this:       and you can see 8 halves from the diagram so       Dividing a fraction by a fraction  The last stage in fraction division is dividing a fraction by a fraction. Let's look at the following example:    A stick of length of a meter, stretches of the way across a table. How wide is the table?    Imagine laying the stick on top of the table. This situation can be seen in this diagram:       In this case, we can see that one unit would be . Therefore the entire length is , so the table width is of a meter.   Alternative Solution       of the table width is of a meter. Divide by 2:     of the table width if of a meter. Multiply by 5:    1 of the table width is of a meter.      Prealgebra Solution   Let be the width of the table, then       Find .    Let's first assume that this a measurement interpretation. The we can create a diagram that shows the total length (10\/3 or the dividend) and the length of the part (2\/3 or the divisor)       From this diagram, it would take 5 units to make the length of , so the answer is 5.  If instead, we do partitive division, then this can be interpreted as is of what size?        From this diagram, 2 units have length so 1 unit is . To get one full length is 3 units or , the same answer as above.      Fraction Division Rule  The last arithmetic operation we have not seen as a rule is that of division.   Fraction Division        This rule can actually be used for any division of fractions and notice that there are two interpretations. The one on the left results in another division, the one on the right is a fraction. Either is correct and which to use often depends on the context.   Proof of the Fraction Division Rule  We can interpret using a measurement division. That is, let be divided into pieces of size . The total number of pieces is .       If we rescaled the picture, to a total length of and piece size , the number of pieces is the same. That is, the number of pieces is .       This shows that      Use to evaluate the following division problems:          Using the Fraction Division property and note that this is the same as .           Note that to use , a common denominator must be found. This is and we write both and with a denominator of 12. Since and , where we have used the fraction version of division in this case since 2 does not divide 9.     We will see a more general division rule below, but first some other terminology.    Recall that the reciprocal of a fraction is the fraction found by switching the numerator and denominator. It is also called the inverse of the fraction         The reciprocal of is     The reciprocal of is     The reciprocal of is .       The next property uses a different format of fraction division and is more general than because a common denominator does not need to be found.   Fraction Division: Invert and Multiply   Let and be positive whole numbers,      Explaining the Invert and Multiply Rule  Why does this work? We use a particular example with partitive interpretation, measurement interpretation and some prealgebra to help explain this property.     Partitive Interpretation  Consider the problem 12 is of what number which is the operation .       This can be solved by considering that the number is of the number is 6, then the number is 18. This means that can be found by first multiplying by , then multiplying by 3 or     Measurement Interpretation  How many units of size is 12. Counting in thirds, is 36 thirds, so how many units of size is 36. The answer is 18.       This is the same as changing units:       In both cases, we have shown that     Prealgebra  Recall that the division problem can be thought of as times something equals 12 or         Word Problem for Measurement Division    Develop a word problem for .       Interpret this as is how many pieces of length ?    Diagram         The answer is     Choose a unit. (inches) So we're dividing up something of length into pieces of length . Licorice string.     A long piece of licorice is inches long. If it is divided up into pieces that are inches long, how many pieces are there?          Word Problem for Partitive Division    Develop a word problem for       We can often this of these problems as 60 is of what number?    A diagram for this is:         And the answer is     Although money is a good use for these problems, let's use boys and girls for the two fractions of things.    Problem: 60 boys attended a summer camp and of the campers are boys. How many children were there?          Develop a two-step fraction word problem based on the following diagram:         This shows that of the total things (let's say t-shirts) are blue and the rest are red. This also shows there are 30 more red t-shirts than blue ones. The following is a good problem:    of a stack of t-shirts are blue. The rest are red. If there are 30 more red t-shirts, how many t-shirts are there altogether?       2-step fraction word problems  A 2-step word problem with fractions can be difficult. Here is a couple of examples with these. Note: in both of these examples we use a unitary method, however, the unit can change.   2-step Teacher's Solution   Develop a Teacher's solution of this problem: 3\/5 of Sollie's marble collection are blue. She gave 3\/4 of her blue marbles to her sister which is 45 marbles. How many marbles did Sollie start with?     We first start with showing a bar diagram with 3\/5 (which represents the blue marbles).       To solve this, we use the unitary method keeping track of the top and bottom units are different:     Bottom Diagram       Top Diagram  Since the full bar on the bottom is identical to 3 units on the top bar then:   So the top bar is 100.     Sollie had 100 marbles to start with.      Develop a Teacher's Solution of the following problem. A roomful of people watched a chess match between Angela and Bryce. 4\/11 of the spectators favored Angela and the rest favored Bryce. If 12 more people favored Bryce over Angela, how many spectators were in the room?          Note that there are a total of 11 squares and there are 4 assigned to Angela. This represents . The remainder or are assigned to Bryce.  We now use the unitary method to solve this:   There are 44 spectators in the room.     "
+  "body": " Division of Fractions   Although dividing two fractions in proper or improper form is quite straightforward, division is difficult in terms of word problems. So we start with a reminder of the difference between partitive and measurement division.    Review of Partitive and Measurement Division     Measurement Division  If you know the size, and are determining the number of parts. 15 is how many of size 3?     Partitive Division  If you know the number of parts and are determining the size. 15 is 3 groups of what size?      Also remember that the following bar diagrams are very useful for these:     Measurement Division  This shows with measurement division interpretation.   A bar diagram with the length labelled 15. There are two squares to the right and the left part is labelled ...?... One of the square is denoted of length 3.      Partitive Division  This shows with a measurement division interpretation.   A bar diagram of 3 equal parts. The length of the bar is 15 and one square is labelled with a ?.        Partitive Word Problems  The following is a number of word problems that are partitive. Remember that the important part is that the divisor represents the number of parts.     Eddie has 15 marbles. He puts them equally in 3 bags. How many marbles are in each bag?    Sally has 3 pizzas. She gives each of 8 friends the same amount of pizza. How much pizza does each friend get?    The perimeter of a square flower bed is m. Find the length of each side in meters.    Steven drank 4\/5 of a carton of milk. If he drank 8 oz. of milk, how big was the carton? 4\/5 of what is 8 oz.?        Measurement Word Problems  The following is a number of word problems that are measurement. Remember that the important part is that the divisor represents the size of each part.     Elizabeth has 15 cookies. She gives each of her friends 3 cookies. How many friends does she give cookies?    Matthew has a rope that is 8 meters long. He cuts a piece of it off that is 3 meters long. How much of the rope did he cut?    5 is 3\/4 of what number?    Tallulah rode her bike to her Grandmother's house. She stopped 3 miles along the way and was 3\/4 of the way to her Grandmother's house. When she got to the house, how far did she ride?    Mr. Taylor is building a fence. Each board is 5\/6 of foot. How many boards does he need to build a fence that is 13 1\/3 feet long?    A rope of length feet is cut into pieces of length of a foot. How many pieces of rope were there?        Drawing a Partitive Division Diagram  Draw a diagram for 7 is of what size?      This can be interpreted as .    We are looking for a bar of some length:   A bar diagram with length labelled with a ?      Shade in of the bar:   A bar diagram of 4 equal parts and 3 are shaded. The length is labelled with a ?      The problem says 7 is of what size? That is we label the shaded area.   A bar diagram of 4 equal parts and 3 are shaded. The length is labelled with a ?. The length of shaded parts is labelled with a 7.      To finish the problem, each segment is length . Thus, the total length is 4 times this or      Let's take a look at an example.    Draw a diagram for 6 is of what size?      Again, this is a diagram for .    This time, the unknown is smaller than 6:   A bar diagram of 5 equal parts and all are shaded. The length is labelled with a 6. The length of shaded parts is labelled with a ?.      And the entire bar is shaded.    Since there are 5 units, each unit is in length and we are looking for 4 of these so        This is most complicated (both mechanically and conceptually) of the four operations involving fractions.  Recall that the definition of two numbers if The number is the divisor, is the dividend, and is the quotient.    Dividing a whole number by a whole number  Although a problem like is relatively easy, what happens if the dividend is not a multiple of the divisor? The following example uses visuals to explain.    Eight children share 3 pizzas equally. How much pizza does each child get?   This is a partitive division problem and the result is . We saw this with the diagram:   A digram with 3 circles.    And each whole can be subdivided into 8 pieces to get   A diagram with 3 circles, each are divided into 8 equal pieces.    So each child gets of a pizza.      Dividing a fraction by a whole number    Three-fourths of a pizza is divided equally between 6 people. What fraction of a pizza does each person get?    Let's start with a diagram and since we're using pizzas, we will use a circular area diagram. Divide into 4 area and shade 3 of them.   A circle is divided into 4 equal pieces and 3 of them are shaded. A second circle with the same shading and the shaded area is divided into 8 equal pieces.    and since the shaded area is now divided into 6 equally-sized pieces, then each person receives of the pizza. So       Show using an bar diagram    We first start representing 2\/3 as shading 2 of 3 parts of a bar diagram. Then each area is divided into 5 equal pieces.   A bar diagram with 3 equal parts and 2 are shaded. A second bar diagram with 3 equal parts and 2 are shaded and each part is divided into 5 equal pieces. Each bar diagram has length 1 unit.    The result shows      Show using a rectangular grid model.    First, let's produce a diagram that shows .   A bar diagram with 3 equal parts and 2 are shaded. This is shown with the bar vertical. The full height is labeled \"1 unit\".    If we then subdivide by 5 vertically to get:   The diagram from above subdivided vertically as well. The diagram is a 3 high by 5 wide grid with the two squares in the left column (bottom 2) shaded red and the remaining 4 columns in the bottom two row shaded blue.    where the light red shows the result and the fraction shaded is .      Dividing a whole number by a fraction  The next step to understanding fraction division is dividing a whole number by a fraction. Consider . This can be represented by the following diagram showing the measurement interpretation.   A bar diagram denoted length 4 and showing a few subdivided squares and the remaining with a ...?... One of the squares is labelled with length 1\/2.    Another interpretation of this is with the following word problem.    Joey cut four cookies in half. How many halves did he have?    The following area model shows this:   A diagram with 4 circles and each circle cut vertically into 2 equal halves.    and you can see 8 halves from the diagram so       Dividing a fraction by a fraction  The last stage in fraction division is dividing a fraction by a fraction. Let's look at the following example:    A stick of length of a meter, stretches of the way across a table. How wide is the table?    Imagine laying the stick on top of the table. This situation can be seen in this diagram:   A bar diagram with 5 equal parts. The length is labelled with a ? and two of the parts is labelled with length 1\/4.    In this case, we can see that one unit would be . Therefore the entire length is , so the table width is of a meter.   Alternative Solution       of the table width is of a meter. Divide by 2:     of the table width if of a meter. Multiply by 5:    1 of the table width is of a meter.      Prealgebra Solution   Let be the width of the table, then       Find .    Let's first assume that this a measurement interpretation. The we can create a diagram that shows the total length (10\/3 or the dividend) and the length of the part (2\/3 or the divisor)   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is 10\/3 and one of the parts is 2\/3.    From this diagram, it would take 5 units to make the length of , so the answer is 5.  If instead, we do partitive division, then this can be interpreted as is of what size?    A bar diagram with 3 equal parts. The length is labelled with a ? and two of the parts is labelled with length 10\/3.    From this diagram, 2 units have length so 1 unit is . To get one full length is 3 units or , the same answer as above.      Fraction Division Rule  The last arithmetic operation we have not seen as a rule is that of division.   Fraction Division        This rule can actually be used for any division of fractions and notice that there are two interpretations. The one on the left results in another division, the one on the right is a fraction. Either is correct and which to use often depends on the context.   Picture Proof of the Fraction Division Rule  We can interpret using a measurement division. That is, let be divided into pieces of size . The total number of pieces is .   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is a\/b and one of the parts is c\/b.    If we rescaled the picture, to a total length of and piece size , the number of pieces is the same. That is, the number of pieces is .   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is a and one of the parts is c.    Since the number of parts is the same in both pictures, then .     Use to evaluate the following division problems:          Using the Fraction Division property and note that this is the same as .           Note that to use , a common denominator must be found. This is and we write both and with a denominator of 12. Since and , where we have used the fraction version of division in this case since 2 does not divide 9.     We will see a more general division rule below, but first some other terminology.    The reciprocal of a fraction is the fraction found by switching the numerator and denominator. It is also called the inverse of the fraction.         The reciprocal of is     The reciprocal of is     The reciprocal of is .       The next property uses a different format of fraction division and is more general than because a common denominator does not need to be found.   Fraction Division: Invert and Multiply   Let and be positive whole numbers,      Explaining the Invert and Multiply Rule  Why does this work? We use a particular example with partitive interpretation, measurement interpretation and some prealgebra to help explain this property.     Partitive Interpretation  Consider the problem 12 is of what number which is the operation .   A bar diagram with three equal parts and the total length is labelled ?. Two of the parts have length 12.    Since two parts is 12, then one part is 6. The total length is three parts or . This means that can be found by first multiplying by , then multiplying by 3 or     Measurement Interpretation  How many units of size is 12. Counting in thirds, is 36 thirds, so how many units of size is 36. The answer is 18.   A bar length with 18 equal parts. The entire length is labelled 12. One part is labelled 2\/3.    This is the same as changing units:   A bar length with 18 equal parts. The entire length is labelled 36. One part is labelled 2.    In both cases, we have shown that     Prealgebra  Recall that the division problem can be thought of as times something equals 12 or         Word Problem for Measurement Division    Develop a word problem for .       Interpret this as is how many pieces of length ?    Diagram   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is 36 3\/4 and one of the parts is 1 3\/4.      The answer is     Choose a unit. (inches) So we're dividing up something of length into pieces of length . Licorice string.     A long piece of licorice is inches long. If it is divided up into pieces that are inches long, how many pieces are there?          Word Problem for Partitive Division    Develop a word problem for        We can often this of these problems as 60 is of what number?    A diagram for this is:   A bar of with 5 equal sized parts. 4 of the parts are shaded and the shaded parts have length 60. The entire bar is denoted ?.      And the answer is     Although money is a good use for these problems, let's use boys and girls for the two fractions of things.    Problem: 60 boys attended a summer camp and of the campers are boys. How many children were there?          Develop a two-step fraction word problem based on the following diagram:   A stacked bar diagram. The top diagram has 5 equal parts and is shaded red and label at the \"red\" diagram. The bottom diagram has two equal parts, in which each part is the same length as a part in the top diagram. along the left side, there is a brace covering both bars and there is a ?. The difference in the length has a brace that is labelled as 30.      This shows that of the total things (let's say t-shirts) are blue and the rest are red. This also shows there are 30 more red t-shirts than blue ones. The following is a good problem:    of a stack of t-shirts are blue. The rest are red. If there are 30 more red t-shirts, how many t-shirts are there altogether?       2-step fraction word problems  A 2-step word problem with fractions can be difficult. Here is a couple of examples with these. Note: in both of these examples we use a unitary method, however, the unit can change.   2-step Teacher's Solution   Develop a Teacher's solution of this problem: 3\/5 of Sollie's marble collection are blue. She gave 3\/4 of her blue marbles to her sister which is 45 marbles. How many marbles did Sollie start with?     We first start with showing a bar diagram with 3\/5 (which represents the blue marbles).   A stacked bar diagram. The top diagram has 5 equal parts. Three of them are shaded blue and the total length is labelled ?. There is a arrow from the three shaded parts to a second bar diagram with four equal parts and three of them are shaded green. The three parts shaded green have a brace denoting they contain 45.    To solve this, we use the unitary method keeping track of the top and bottom units are different:     Bottom Diagram       Top Diagram  Since the full bar on the bottom is identical to 3 units on the top bar then:   So the top bar is 100.     Sollie had 100 marbles to start with.      Develop a Teacher's Solution of the following problem. A roomful of people watched a chess match between Angela and Bryce. 4\/11 of the spectators favored Angela and the rest favored Bryce. If 12 more people favored Bryce over Angela, how many spectators were in the room?      A stacked bar diagram. The top diagram is labelled Angela and has 4 equal parts. The bottom diagram is labelled Bryce and has 7 equal parts. The size of each part for both diagrams are the same. The difference in length between the two diagrams is labelled 12. There is a brace covering both braces on the right and is labelled with a ?.    The three squares that differ between the lengths are 12. We now use the unitary method to solve this:   There are 44 spectators in the room.        Use to find the following division problems                    Use to find the following fraction division problems. Write the result in reduced form. (Hint: for (d) rewrite the mixed number as an improper fraction.)                                  Illustrate the following division problems with a bar diagram and solve the problem.     Measurement division for       Measurement division for       Partitive division for       Partitive division for        Develop Teacher's Solutions for each of the following word problems.     A string of length m is cut into 2 equal pieces. What is the length of each piece?       of the money collected at a garage sale was divided early among 4 clubs. What fractions did each club receive?      6 packets of cookies weigh kg. Find the weight of 1 packet of cookies.      Sara poured quarts of fruit juice equally into 4 cups. How much fruit juice was there in each cup?      The perimeter of a square flower bed is m. Find the length of each side in meters.       Make up short word problems for each of the following type specified.     measurement division for       partitive division for       measurement division for       partitive division for       partitive division for        Make up a 2-step fraction word problem such that the bar diagram in the Teacher's Solution is the following:       A stacked bar diagram with the top labelled \"women\" with 5 equal parts and the bottom labelled \"Men\" with two equal parts. The difference in lengths of the two bars is labelled 72 and there is a brace on the right side covering both bars labelled ?.          A two-step bar diagram. The top diagram has 3 equal parts and the total length is labelled 450 with the first part shaded red. The latter two parts have a arrow down to a bar with the same length as the two parts. The lower bar has 5 equal parts with the first two part shaded and the last three parts with a ? underneath.           A staked bar diagram with the top bar labelled \"Shirt\" and has two equal parts, the first part shaded purple. The bottom bar labelled hat as three equal parts with the first part shaded orange. Below these is a bar diagram with 6 equal parts. The first three are shaded purple and the next two are labelled orange. The first 5 have a brace with label \"$30\" and the last part is labeled with ?        "
 },
 {
   "id": "ch-fractions-6-3-5",
@@ -3121,7 +3265,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.3",
   "title": "",
-  "body": "  Draw a diagram for 6 is of what size?      Again, this is a diagram for .    This time, the unknown is smaller than 6:         And the entire bar is shaded.    Since there are 5 units, each unit is in length and we are looking for 4 of these so       "
+  "body": "  Draw a diagram for 6 is of what size?      Again, this is a diagram for .    This time, the unknown is smaller than 6:   A bar diagram of 5 equal parts and all are shaded. The length is labelled with a 6. The length of shaded parts is labelled with a ?.      And the entire bar is shaded.    Since there are 5 units, each unit is in length and we are looking for 4 of these so       "
 },
 {
   "id": "ch-fractions-6-5-3",
@@ -3130,7 +3274,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.4",
   "title": "",
-  "body": "  Eight children share 3 pizzas equally. How much pizza does each child get?   This is a partitive division problem and the result is . We saw this with the diagram:       And each whole can be subdivided into 8 pieces to get       So each child gets of a pizza.   "
+  "body": "  Eight children share 3 pizzas equally. How much pizza does each child get?   This is a partitive division problem and the result is . We saw this with the diagram:   A digram with 3 circles.    And each whole can be subdivided into 8 pieces to get   A diagram with 3 circles, each are divided into 8 equal pieces.    So each child gets of a pizza.   "
 },
 {
   "id": "ch-fractions-6-6-2",
@@ -3139,7 +3283,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.5",
   "title": "",
-  "body": "  Three-fourths of a pizza is divided equally between 6 people. What fraction of a pizza does each person get?    Let's start with a diagram and since we're using pizzas, we will use a circular area diagram. Divide into 4 area and shade 3 of them.       and since the shaded area is now divided into 6 equally-sized pieces, then each person receives of the pizza. So    "
+  "body": "  Three-fourths of a pizza is divided equally between 6 people. What fraction of a pizza does each person get?    Let's start with a diagram and since we're using pizzas, we will use a circular area diagram. Divide into 4 area and shade 3 of them.   A circle is divided into 4 equal pieces and 3 of them are shaded. A second circle with the same shading and the shaded area is divided into 8 equal pieces.    and since the shaded area is now divided into 6 equally-sized pieces, then each person receives of the pizza. So    "
 },
 {
   "id": "ch-fractions-6-6-3",
@@ -3148,7 +3292,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.6",
   "title": "",
-  "body": "  Show using an bar diagram    We first start representing 2\/3 as shading 2 of 3 parts of a bar diagram. Then each area is divided into 5 equal pieces.        "
+  "body": "  Show using an bar diagram    We first start representing 2\/3 as shading 2 of 3 parts of a bar diagram. Then each area is divided into 5 equal pieces.   A bar diagram with 3 equal parts and 2 are shaded. A second bar diagram with 3 equal parts and 2 are shaded and each part is divided into 5 equal pieces. Each bar diagram has length 1 unit.    The result shows   "
 },
 {
   "id": "ch-fractions-6-6-4",
@@ -3157,7 +3301,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.7",
   "title": "",
-  "body": "  Show using a rectangular grid model.    First, let's produce a diagram that shows .       If we then subdivide by 5 vertically to get:       where the light red shows the result and the fraction shaded is .   "
+  "body": "  Show using a rectangular grid model.    First, let's produce a diagram that shows .   A bar diagram with 3 equal parts and 2 are shaded. This is shown with the bar vertical. The full height is labeled \"1 unit\".    If we then subdivide by 5 vertically to get:   The diagram from above subdivided vertically as well. The diagram is a 3 high by 5 wide grid with the two squares in the left column (bottom 2) shaded red and the remaining 4 columns in the bottom two row shaded blue.    where the light red shows the result and the fraction shaded is .   "
 },
 {
   "id": "ch-fractions-6-7-5",
@@ -3166,7 +3310,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.8",
   "title": "",
-  "body": "  Joey cut four cookies in half. How many halves did he have?    The following area model shows this:       and you can see 8 halves from the diagram so    "
+  "body": "  Joey cut four cookies in half. How many halves did he have?    The following area model shows this:   A diagram with 4 circles and each circle cut vertically into 2 equal halves.    and you can see 8 halves from the diagram so    "
 },
 {
   "id": "ch-fractions-6-8-3",
@@ -3175,7 +3319,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.9",
   "title": "",
-  "body": "  A stick of length of a meter, stretches of the way across a table. How wide is the table?    Imagine laying the stick on top of the table. This situation can be seen in this diagram:       In this case, we can see that one unit would be . Therefore the entire length is , so the table width is of a meter.   Alternative Solution       of the table width is of a meter. Divide by 2:     of the table width if of a meter. Multiply by 5:    1 of the table width is of a meter.      Prealgebra Solution   Let be the width of the table, then    "
+  "body": "  A stick of length of a meter, stretches of the way across a table. How wide is the table?    Imagine laying the stick on top of the table. This situation can be seen in this diagram:   A bar diagram with 5 equal parts. The length is labelled with a ? and two of the parts is labelled with length 1\/4.    In this case, we can see that one unit would be . Therefore the entire length is , so the table width is of a meter.   Alternative Solution       of the table width is of a meter. Divide by 2:     of the table width if of a meter. Multiply by 5:    1 of the table width is of a meter.      Prealgebra Solution   Let be the width of the table, then    "
 },
 {
   "id": "ex-fraction-division",
@@ -3184,7 +3328,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.10",
   "title": "",
-  "body": "  Find .    Let's first assume that this a measurement interpretation. The we can create a diagram that shows the total length (10\/3 or the dividend) and the length of the part (2\/3 or the divisor)       From this diagram, it would take 5 units to make the length of , so the answer is 5.  If instead, we do partitive division, then this can be interpreted as is of what size?        From this diagram, 2 units have length so 1 unit is . To get one full length is 3 units or , the same answer as above.   "
+  "body": "  Find .    Let's first assume that this a measurement interpretation. The we can create a diagram that shows the total length (10\/3 or the dividend) and the length of the part (2\/3 or the divisor)   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is 10\/3 and one of the parts is 2\/3.    From this diagram, it would take 5 units to make the length of , so the answer is 5.  If instead, we do partitive division, then this can be interpreted as is of what size?    A bar diagram with 3 equal parts. The length is labelled with a ? and two of the parts is labelled with length 10\/3.    From this diagram, 2 units have length so 1 unit is . To get one full length is 3 units or , the same answer as above.   "
 },
 {
   "id": "prop-fraction-division",
@@ -3201,8 +3345,8 @@ var ptx_lunr_docs = [
   "url": "ch-fractions-6.html#ch-fractions-6-9-5",
   "type": "Proof",
   "number": "7.4.7.1",
-  "title": "Proof of the Fraction Division Rule.",
-  "body": " Proof of the Fraction Division Rule  We can interpret using a measurement division. That is, let be divided into pieces of size . The total number of pieces is .       If we rescaled the picture, to a total length of and piece size , the number of pieces is the same. That is, the number of pieces is .       This shows that   "
+  "title": "Picture Proof of the Fraction Division Rule.",
+  "body": " Picture Proof of the Fraction Division Rule  We can interpret using a measurement division. That is, let be divided into pieces of size . The total number of pieces is .   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is a\/b and one of the parts is c\/b.    If we rescaled the picture, to a total length of and piece size , the number of pieces is the same. That is, the number of pieces is .   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is a and one of the parts is c.    Since the number of parts is the same in both pictures, then .  "
 },
 {
   "id": "ch-fractions-6-9-6",
@@ -3220,7 +3364,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "7.4.13",
   "title": "",
-  "body": "  Recall that the reciprocal of a fraction is the fraction found by switching the numerator and denominator. It is also called the inverse of the fraction   "
+  "body": "  The reciprocal of a fraction is the fraction found by switching the numerator and denominator. It is also called the inverse of the fraction.   "
 },
 {
   "id": "ch-fractions-6-9-9",
@@ -3247,7 +3391,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.16",
   "title": "",
-  "body": "  Develop a word problem for .       Interpret this as is how many pieces of length ?    Diagram         The answer is     Choose a unit. (inches) So we're dividing up something of length into pieces of length . Licorice string.     A long piece of licorice is inches long. If it is divided up into pieces that are inches long, how many pieces are there?       "
+  "body": "  Develop a word problem for .       Interpret this as is how many pieces of length ?    Diagram   A bar diagram with a few equal parts shown and ...?... on the rest. The total length is 36 3\/4 and one of the parts is 1 3\/4.      The answer is     Choose a unit. (inches) So we're dividing up something of length into pieces of length . Licorice string.     A long piece of licorice is inches long. If it is divided up into pieces that are inches long, how many pieces are there?       "
 },
 {
   "id": "ch-fractions-6-11-2",
@@ -3256,7 +3400,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.17",
   "title": "",
-  "body": "  Develop a word problem for       We can often this of these problems as 60 is of what number?    A diagram for this is:         And the answer is     Although money is a good use for these problems, let's use boys and girls for the two fractions of things.    Problem: 60 boys attended a summer camp and of the campers are boys. How many children were there?       "
+  "body": "  Develop a word problem for        We can often this of these problems as 60 is of what number?    A diagram for this is:   A bar of with 5 equal sized parts. 4 of the parts are shaded and the shaded parts have length 60. The entire bar is denoted ?.      And the answer is     Although money is a good use for these problems, let's use boys and girls for the two fractions of things.    Problem: 60 boys attended a summer camp and of the campers are boys. How many children were there?       "
 },
 {
   "id": "ch-fractions-6-11-3",
@@ -3265,7 +3409,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.18",
   "title": "",
-  "body": "  Develop a two-step fraction word problem based on the following diagram:         This shows that of the total things (let's say t-shirts) are blue and the rest are red. This also shows there are 30 more red t-shirts than blue ones. The following is a good problem:    of a stack of t-shirts are blue. The rest are red. If there are 30 more red t-shirts, how many t-shirts are there altogether?    "
+  "body": "  Develop a two-step fraction word problem based on the following diagram:   A stacked bar diagram. The top diagram has 5 equal parts and is shaded red and label at the \"red\" diagram. The bottom diagram has two equal parts, in which each part is the same length as a part in the top diagram. along the left side, there is a brace covering both bars and there is a ?. The difference in the length has a brace that is labelled as 30.      This shows that of the total things (let's say t-shirts) are blue and the rest are red. This also shows there are 30 more red t-shirts than blue ones. The following is a good problem:    of a stack of t-shirts are blue. The rest are red. If there are 30 more red t-shirts, how many t-shirts are there altogether?    "
 },
 {
   "id": "ch-fractions-6-12-3",
@@ -3274,7 +3418,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.19",
   "title": "2-step Teacher’s Solution.",
-  "body": " 2-step Teacher's Solution   Develop a Teacher's solution of this problem: 3\/5 of Sollie's marble collection are blue. She gave 3\/4 of her blue marbles to her sister which is 45 marbles. How many marbles did Sollie start with?     We first start with showing a bar diagram with 3\/5 (which represents the blue marbles).       To solve this, we use the unitary method keeping track of the top and bottom units are different:     Bottom Diagram       Top Diagram  Since the full bar on the bottom is identical to 3 units on the top bar then:   So the top bar is 100.     Sollie had 100 marbles to start with.   "
+  "body": " 2-step Teacher's Solution   Develop a Teacher's solution of this problem: 3\/5 of Sollie's marble collection are blue. She gave 3\/4 of her blue marbles to her sister which is 45 marbles. How many marbles did Sollie start with?     We first start with showing a bar diagram with 3\/5 (which represents the blue marbles).   A stacked bar diagram. The top diagram has 5 equal parts. Three of them are shaded blue and the total length is labelled ?. There is a arrow from the three shaded parts to a second bar diagram with four equal parts and three of them are shaded green. The three parts shaded green have a brace denoting they contain 45.    To solve this, we use the unitary method keeping track of the top and bottom units are different:     Bottom Diagram       Top Diagram  Since the full bar on the bottom is identical to 3 units on the top bar then:   So the top bar is 100.     Sollie had 100 marbles to start with.   "
 },
 {
   "id": "ch-fractions-6-12-4",
@@ -3283,7 +3427,61 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "7.4.20",
   "title": "",
-  "body": "  Develop a Teacher's Solution of the following problem. A roomful of people watched a chess match between Angela and Bryce. 4\/11 of the spectators favored Angela and the rest favored Bryce. If 12 more people favored Bryce over Angela, how many spectators were in the room?          Note that there are a total of 11 squares and there are 4 assigned to Angela. This represents . The remainder or are assigned to Bryce.  We now use the unitary method to solve this:   There are 44 spectators in the room.   "
+  "body": "  Develop a Teacher's Solution of the following problem. A roomful of people watched a chess match between Angela and Bryce. 4\/11 of the spectators favored Angela and the rest favored Bryce. If 12 more people favored Bryce over Angela, how many spectators were in the room?      A stacked bar diagram. The top diagram is labelled Angela and has 4 equal parts. The bottom diagram is labelled Bryce and has 7 equal parts. The size of each part for both diagrams are the same. The difference in length between the two diagrams is labelled 12. There is a brace covering both braces on the right and is labelled with a ?.    The three squares that differ between the lengths are 12. We now use the unitary method to solve this:   There are 44 spectators in the room.   "
+},
+{
+  "id": "exercises-fraction-division-1",
+  "level": "2",
+  "url": "ch-fractions-6.html#exercises-fraction-division-1",
+  "type": "Exercise",
+  "number": "7.4.11.1",
+  "title": "",
+  "body": "  Use to find the following division problems                 "
+},
+{
+  "id": "exercises-fraction-division-2",
+  "level": "2",
+  "url": "ch-fractions-6.html#exercises-fraction-division-2",
+  "type": "Exercise",
+  "number": "7.4.11.2",
+  "title": "",
+  "body": "  Use to find the following fraction division problems. Write the result in reduced form. (Hint: for (d) rewrite the mixed number as an improper fraction.)                               "
+},
+{
+  "id": "exercises-fraction-division-3",
+  "level": "2",
+  "url": "ch-fractions-6.html#exercises-fraction-division-3",
+  "type": "Exercise",
+  "number": "7.4.11.3",
+  "title": "",
+  "body": "  Illustrate the following division problems with a bar diagram and solve the problem.     Measurement division for       Measurement division for       Partitive division for       Partitive division for     "
+},
+{
+  "id": "exercises-fraction-division-4",
+  "level": "2",
+  "url": "ch-fractions-6.html#exercises-fraction-division-4",
+  "type": "Exercise",
+  "number": "7.4.11.4",
+  "title": "",
+  "body": "  Develop Teacher's Solutions for each of the following word problems.     A string of length m is cut into 2 equal pieces. What is the length of each piece?       of the money collected at a garage sale was divided early among 4 clubs. What fractions did each club receive?      6 packets of cookies weigh kg. Find the weight of 1 packet of cookies.      Sara poured quarts of fruit juice equally into 4 cups. How much fruit juice was there in each cup?      The perimeter of a square flower bed is m. Find the length of each side in meters.    "
+},
+{
+  "id": "exercises-fraction-division-5",
+  "level": "2",
+  "url": "ch-fractions-6.html#exercises-fraction-division-5",
+  "type": "Exercise",
+  "number": "7.4.11.5",
+  "title": "",
+  "body": "  Make up short word problems for each of the following type specified.     measurement division for       partitive division for       measurement division for       partitive division for       partitive division for     "
+},
+{
+  "id": "exercises-fraction-division-6",
+  "level": "2",
+  "url": "ch-fractions-6.html#exercises-fraction-division-6",
+  "type": "Exercise",
+  "number": "7.4.11.6",
+  "title": "",
+  "body": "  Make up a 2-step fraction word problem such that the bar diagram in the Teacher's Solution is the following:       A stacked bar diagram with the top labelled \"women\" with 5 equal parts and the bottom labelled \"Men\" with two equal parts. The difference in lengths of the two bars is labelled 72 and there is a brace on the right side covering both bars labelled ?.          A two-step bar diagram. The top diagram has 3 equal parts and the total length is labelled 450 with the first part shaded red. The latter two parts have a arrow down to a bar with the same length as the two parts. The lower bar has 5 equal parts with the first two part shaded and the last three parts with a ? underneath.           A staked bar diagram with the top bar labelled \"Shirt\" and has two equal parts, the first part shaded purple. The bottom bar labelled hat as three equal parts with the first part shaded orange. Below these is a bar diagram with 6 equal parts. The first three are shaded purple and the next two are labelled orange. The first 5 have a brace with label \"$30\" and the last part is labeled with ?      "
 },
 {
   "id": "ch-fractions-7",
@@ -3340,22 +3538,382 @@ var ptx_lunr_docs = [
   "body": "       Proof for :        This is true if and only if whose proof is           and this is true if and only if and the proof of this is: therefore (5) is satisfied.     Proof of the common denominator form of the addition of fractions:      "
 },
 {
-  "id": "ch-ratio-percents",
+  "id": "sect-ratios-proportions",
   "level": "1",
-  "url": "ch-ratio-percents.html",
-  "type": "Chapter",
-  "number": "8",
-  "title": "Ratios, Percents and Rates",
-  "body": " Ratios, Percents and Rates  "
+  "url": "sect-ratios-proportions.html",
+  "type": "Section",
+  "number": "8.1",
+  "title": "Ratios and Proportions",
+  "body": " Ratios and Proportions   When we measure things, it is extremely important to use units. Add 3 milk to 2 flours makes no sense in a recipe. Did you mean cups? bags? For a particular recipe the exact amount is crucial, however, we can scale a recipe (double it, half it, for example) easily and if so, the relative amounts are important. We can say that a recipe calls for twice as much flour as sugar and we extend this to the idea of proportional and ratios.    We say that the ratio between two quantities is if there is a unit so that the first quantity measures units and the second measure units.  However, in writing the ratio, one does not specify the unit.    We will often compare two things in the same unit and then the ratio is the numbers (without the units) of each.       A recipe calls for 2 cups of flour and 1 cup of sugar. The ratio of flour to sugar is .    If a recipe calls for 3 cups of milk and 2 cups of flour, then the ratio of milk to flour is .       We can build a ratio for any pair of quantities. Consider the following example.    Bernard has 3 marbles for every 2 that Zara has. This means that the ratio of Bernard's marbles to Zara's is 3:2.      Extending Ratios  We can also extend ratios to more than two quantities.    Art, Beth and Cheryl each has some money in their pockets. Art has $20, Beth has $10 and Cheryl has $40. The ratio of the amount of money that Art has to Beth to Cheryl is 20:10:40.    Astute readers will note that the above ratio is not the simplest and we will address this next.    Equivalent Ratios    Two ratios are equivalent (are equal ratios ) if one obtained from the other by multiplying or dividing all of the measurements by the same nonzero number. That is, the ratio is equivalent to for all positive whole numbers and .      The ratios 3:2 and 6:4 are equivalent because multiplying both 3 and 2 by 2 gives the second ratio.      Word Problems  This section, more than others, depends on word problems due to the nature of the way that ratios are used. That is, they tend to be used in applications rather than in more pure mathematical sense.    Mary and her brother shared $28 in a 3:4 ratio. How much money did Mary have?   We first start with a diagram      This type (and most ratio problems) naturally fit the unitary method. We start with the 7 units and try to get to 3 units.   This shows that Mary has 3 units. Therefore, Mary has $12.    The next word problem shows an extended ratio.    John, Tom and David share a sum of money in the ratio 4:5:6. If David receives $60 more than John, find the sum of money shared by the three boys.   Again, start with a diagram.      Again, we'll use the unitary method and start with 2 units, because we know that is $60. The total number of units is , so we try to get to 15 units.   The sum of money shared by all three boys is $450.      Proportions  A proportion is a statement that two ratios are equal.    In order to make play dough, the following table is used to determine the amount of flour and salt to use:         cups of Flour  2  4  8  10    cups of Salt  1  2  4  5    The ratio of flour to salt is 2:1 or 4:2 or 8:4. This discusses the proportion of flour to salt.    We will often use proportions (or equivalent ratios) to solve problems.    The two unequal sides of a rectangle has a ratio of 2:3. If the shorter side is 10 cm, find the longer side.   In this case, we use the equivalent ratios to solve this problem with as the length of the longer side.   We note that since , then . The length of the longer side is 15.      The ratio of blue marbles to green marbles in a jar is 2:5. If there are 24 blue marbles, how many marbles are there altogether?  In this case, we'll solve this first using proportions, then as bar diagrams.     Using Proportions  In this case the number of blue marbles to green marbles is proportional to 2:5 or we can say that where is the number of green marbles. Since these are equivalent, multiplying 2 by 12 gives 24, therefore multiplying 5 by 12 gives so . The total number of marbles is .    Using a bar diagram  Again, start with a diagram.      We'll use the unitary method start with 2 units being 24 and get to units.     There are 84 marbles.         Changing Ratios  Another common problem with ratios is that of changing ratios. There is some situation where the ratio is given and items are added or removed and we want to know the new ratio. This is solved in the same way as before, but often a second diagram is needed.   Changing Ratios   48 marbles are in a bag with a ratio of 2:1 white to red marbles. If 4 more white marbles are added, what is the new ratio of white to red marbles? Write the ratio in reduced form.    First, we'll do a diagram with the situation before marbles are added. We'll need to know the number of white and red marbles.      We'll use the unitary method with 3 units being 48.   And this shows that there are 16 red marbles and 32 white marbles.  If 4 more white marbles are added then the ratio of white to red marbles is 36:16. To reduce this note that so the new ratio of white to red is 9:4.     "
 },
 {
-  "id": "ch-integers",
+  "id": "sect-ratios-proportions-2-2",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-2-2",
+  "type": "Definition",
+  "number": "8.1.1",
+  "title": "",
+  "body": "  We say that the ratio between two quantities is if there is a unit so that the first quantity measures units and the second measure units.  However, in writing the ratio, one does not specify the unit.   "
+},
+{
+  "id": "sect-ratios-proportions-2-4",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-2-4",
+  "type": "Example",
+  "number": "8.1.2",
+  "title": "",
+  "body": "     A recipe calls for 2 cups of flour and 1 cup of sugar. The ratio of flour to sugar is .    If a recipe calls for 3 cups of milk and 2 cups of flour, then the ratio of milk to flour is .      "
+},
+{
+  "id": "sect-ratios-proportions-2-6",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-2-6",
+  "type": "Example",
+  "number": "8.1.3",
+  "title": "",
+  "body": "  Bernard has 3 marbles for every 2 that Zara has. This means that the ratio of Bernard's marbles to Zara's is 3:2.   "
+},
+{
+  "id": "sect-ratios-proportions-3-3",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-3-3",
+  "type": "Example",
+  "number": "8.1.4",
+  "title": "",
+  "body": "  Art, Beth and Cheryl each has some money in their pockets. Art has $20, Beth has $10 and Cheryl has $40. The ratio of the amount of money that Art has to Beth to Cheryl is 20:10:40.   "
+},
+{
+  "id": "sect-ratios-proportions-4-2",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-4-2",
+  "type": "Definition",
+  "number": "8.1.5",
+  "title": "",
+  "body": "  Two ratios are equivalent (are equal ratios ) if one obtained from the other by multiplying or dividing all of the measurements by the same nonzero number. That is, the ratio is equivalent to for all positive whole numbers and .   "
+},
+{
+  "id": "sect-ratios-proportions-4-3",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-4-3",
+  "type": "Example",
+  "number": "8.1.6",
+  "title": "",
+  "body": "  The ratios 3:2 and 6:4 are equivalent because multiplying both 3 and 2 by 2 gives the second ratio.   "
+},
+{
+  "id": "sect-ratios-proportions-5-3",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-5-3",
+  "type": "Example",
+  "number": "8.1.7",
+  "title": "",
+  "body": "  Mary and her brother shared $28 in a 3:4 ratio. How much money did Mary have?   We first start with a diagram      This type (and most ratio problems) naturally fit the unitary method. We start with the 7 units and try to get to 3 units.   This shows that Mary has 3 units. Therefore, Mary has $12.   "
+},
+{
+  "id": "sect-ratios-proportions-5-5",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-5-5",
+  "type": "Example",
+  "number": "8.1.8",
+  "title": "",
+  "body": "  John, Tom and David share a sum of money in the ratio 4:5:6. If David receives $60 more than John, find the sum of money shared by the three boys.   Again, start with a diagram.      Again, we'll use the unitary method and start with 2 units, because we know that is $60. The total number of units is , so we try to get to 15 units.   The sum of money shared by all three boys is $450.   "
+},
+{
+  "id": "sect-ratios-proportions-6-3",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-6-3",
+  "type": "Example",
+  "number": "8.1.9",
+  "title": "",
+  "body": "  In order to make play dough, the following table is used to determine the amount of flour and salt to use:         cups of Flour  2  4  8  10    cups of Salt  1  2  4  5    The ratio of flour to salt is 2:1 or 4:2 or 8:4. This discusses the proportion of flour to salt.   "
+},
+{
+  "id": "sect-ratios-proportions-6-5",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-6-5",
+  "type": "Example",
+  "number": "8.1.10",
+  "title": "",
+  "body": "  The two unequal sides of a rectangle has a ratio of 2:3. If the shorter side is 10 cm, find the longer side.   In this case, we use the equivalent ratios to solve this problem with as the length of the longer side.   We note that since , then . The length of the longer side is 15.   "
+},
+{
+  "id": "sect-ratios-proportions-6-6",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-6-6",
+  "type": "Example",
+  "number": "8.1.11",
+  "title": "",
+  "body": "  The ratio of blue marbles to green marbles in a jar is 2:5. If there are 24 blue marbles, how many marbles are there altogether?  In this case, we'll solve this first using proportions, then as bar diagrams.     Using Proportions  In this case the number of blue marbles to green marbles is proportional to 2:5 or we can say that where is the number of green marbles. Since these are equivalent, multiplying 2 by 12 gives 24, therefore multiplying 5 by 12 gives so . The total number of marbles is .    Using a bar diagram  Again, start with a diagram.      We'll use the unitary method start with 2 units being 24 and get to units.     There are 84 marbles.      "
+},
+{
+  "id": "sect-ratios-proportions-7-3",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-7-3",
+  "type": "Example",
+  "number": "8.1.12",
+  "title": "Changing Ratios.",
+  "body": " Changing Ratios   48 marbles are in a bag with a ratio of 2:1 white to red marbles. If 4 more white marbles are added, what is the new ratio of white to red marbles? Write the ratio in reduced form.    First, we'll do a diagram with the situation before marbles are added. We'll need to know the number of white and red marbles.      We'll use the unitary method with 3 units being 48.   And this shows that there are 16 red marbles and 32 white marbles.  If 4 more white marbles are added then the ratio of white to red marbles is 36:16. To reduce this note that so the new ratio of white to red is 9:4.   "
+},
+{
+  "id": "sect-percents",
   "level": "1",
-  "url": "ch-integers.html",
-  "type": "Chapter",
-  "number": "9",
-  "title": "Integers",
-  "body": " Integers  Put an introduction here.  "
+  "url": "sect-percents.html",
+  "type": "Section",
+  "number": "8.2",
+  "title": "Percentages",
+  "body": " Percentages   Percentages are ubiquitous throughout anything with numbers. For example   Shopping   Shoes are now 35% off! Buy one, get the second for 50%off.     Grades   Your final grade is 85%.     Sports   Her shooting percentage is 65%. (basketball) or The quarterback's completion percent is 78%. (football)     Money   Earn 2.1% on this savings account. Your tax rate is 18%. The interest rate on your credit card is 15.5%.       Percentage   A percentage is a fraction with the denominator of 100. That is % is the fraction .    For example 36% and 50% or . It is important to have a firm idea of fractions, especially equivalent fractions to handle percentages.    A farmer has chickens and after collecting eggs, she finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we start as the fraction . We then use equivalent fractions to write this with a denominator of 100. so 84% of the eggs are brown.      Percentages and the Whole Unit  Since percentages are a fraction with the bottom 100, it is key to understanding percentages to understand what the whole unit is. In the example of the eggs above. The whole unit is total number of eggs. The 84% is relative to the whole unit.  In this case, this is relatively straightforward, but often in percentages a comparison is made and when that happens, the quantity being compared to is the whole unit. The following tables shows a number of examples:      Phrase  Whole Unit (100%)    Johanna scored 5% more than Charlie on the exam.  Charlie's score on the exam.    Fred's income will rise 3%next year.  Fred's current income.    Becky's bake sales sold 10%fewer cookies than Faye's  Number of cookies Faye's bake sale sold.    With a coupon, the price of the shirt will be reduce an additional 25%off the sales price.  the sales price of the shirt     Knowing the whole unit is key  It can't be emphasized enough to understand the whole unit in a percentage problem. Because they can be tricky, only thinking this through clearly will you consistently know how to solve these.    Bar Diagrams and Percentages  A very helpful way to understand percentage problems is with a diagram and in most situations, a bar diagram will be the best to use. When you do this, include a percentage scale on the top of the bar diagram. The bar below shows that the whole unit is 100%.   A horizontal line with 10 tick marks. The leftmost one is labeled 0%, the one in the middle is 50% and the rightmost one is labelled 100%. Below the line is a bar with the word \"whole\" inside.     Good Diagrams with Percentages  It can be tricky to produce an accurate diagram for a percentage problems. Here's some ideas that will help:   Make sure you identify what is 100%.    Often percent problems compare two quantities. If so, use a stacked bar diagram.    All percentages and any sought after percentages should go on the percent scale.    Any quantities that you know or are looking for should go on the bars, not on the percent scale.      We present a few examples of word problems with diagrams in the following.    Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's Rope is the length of Jonathan's rope?    As we discussed above, the key is to understand what is 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we mark the length of Kendra's bar at 100%. Because we are seeking a percentage, we label the ? on the percentage scale. This goes directly above the length of Jonathan's bar.   This is a stacked bar diagram with two bars and a percent scale. The percent scale goes from 0% even with the left ends of the bars to beyond 100% which is even with the top bar (labelled Jonathan). The end of the percent scale is labelled with a ?. The top bar is labelled Jonathan and has length 420cm. The bottom bar is labelled Kendra and has length 350cm.    In this case, the fraction of the length of Jonathan's rope over Kendra's is   So the length of Jonathan's Rope is 120% the length of Kendra's rope.      There are 400 spaces in a parking lot. 320 spaces had vehicles parked in them. How many percent fewer empty spots were there than filled spots?    We make two bars, one for the filled spots and one for the empty spots. The filled bar has length 320 and we label the sum of the two bars as 400 to the right. Since 100% represents the number of filled spots, we label the percent scale of 100% at the end of the filled bar.  Since the question is what percent fewer, then it is the amount below 100% on the filled bar.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"filled\" and has length 320. The bottom bar is labelled \"empty\". Together the two bars have a brace on the right and labelled 400. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"filled\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"empty\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"?%\".    The number of empty spaces is and the fraction of empty spaces (to those filled) is which is 25%, thus the percent fewer empty spots to those filled slots is        The Unitary Method  We used the unitary method in specifically when we had clearly units in solving Teacher's solutions. This is a modified version of the unitary method with percentages. As an example, we'll return to the example above with Jonathan and Kendra and their ropes.  From the diagram, we notice that there is a percentage associated with a length. We'll start with that and then multiply and divide by numbers to get the answer we seek.  In this case, we note that 100% is 3.5meters and we are trying to determine what 4.2 meters is. and now we are at the point of 420 cm, so this represents 120%.    The price of an ounce of gold is $500. If it rises by 200%, find the new price.    In this case, the current price of gold is $500 per ounce represents 100%. We will also use a stacked bar diagram since there is a comparison being made.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    We'll use the unitary method and start with $500 is 100%. We seek 300%.   The new price of gold is $1500 per ounce.      Mary bought a dress at a discount of 25%. If the discount was $15, how much did she pay for the dress?    First, 100% represents the full price of the dress. We're looking for the discounted price of the dress, so we use the following diagram:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To find the solution, we'll use the unitary method starting with the known relationship between price and percent:   The full price of the dress is $60.      Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?    We start with a diagram and note that Xavier's number of stickers is 100%. 10% and 420 is also labelled on the diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    We then use the unitary method to find the answer. Since Alfred has 110% and Xavier is 100%, together they have 210% and that total is 420. We start with this and get to 110%.   Thus, Alfred has 220 stickers.      If a price is reduced by 20% and then the sale price is further reduced by 30%, what percent is the overall reduction?    This is a tricky problem in that the two percentages are referring to different whole units. Note also that the question is the overall reduction. Since percent is the fraction out of 100, we will use the original price of $100 and then sale prices will be percents.  To get started, the first percent of 20% is relative to the original price.      This is a relatively easy calculation in that the first sale is or in terms of dollars, $80.  We repeat this now using the first sale price as 100% or      In this case the 100% is $80. Reducing by 30% means that the second sale price is 70% of the first sale price. This means that the cost is . The second sale price is $56.  This means that new sale price is 56% of the original price or . Since we took the original price of $100, then the total percent reduction is 44%.     "
+},
+{
+  "id": "sect-percents-2-2",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-2-2",
+  "type": "Definition",
+  "number": "8.2.1",
+  "title": "Percentage.",
+  "body": " Percentage   A percentage is a fraction with the denominator of 100. That is % is the fraction .   "
+},
+{
+  "id": "sect-percents-2-4",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-2-4",
+  "type": "Example",
+  "number": "8.2.2",
+  "title": "",
+  "body": "  A farmer has chickens and after collecting eggs, she finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we start as the fraction . We then use equivalent fractions to write this with a denominator of 100. so 84% of the eggs are brown.   "
+},
+{
+  "id": "sect-percents-3-5",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-3-5",
+  "type": "Note",
+  "number": "8.2.3",
+  "title": "Knowing the whole unit is key.",
+  "body": " Knowing the whole unit is key  It can't be emphasized enough to understand the whole unit in a percentage problem. Because they can be tricky, only thinking this through clearly will you consistently know how to solve these.  "
+},
+{
+  "id": "sect-percents-3-6-4",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-3-6-4",
+  "type": "Note",
+  "number": "8.2.4",
+  "title": "Good Diagrams with Percentages.",
+  "body": " Good Diagrams with Percentages  It can be tricky to produce an accurate diagram for a percentage problems. Here's some ideas that will help:   Make sure you identify what is 100%.    Often percent problems compare two quantities. If so, use a stacked bar diagram.    All percentages and any sought after percentages should go on the percent scale.    Any quantities that you know or are looking for should go on the bars, not on the percent scale.     "
+},
+{
+  "id": "sect-percents-3-6-6",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-3-6-6",
+  "type": "Example",
+  "number": "8.2.5",
+  "title": "",
+  "body": "  Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's Rope is the length of Jonathan's rope?    As we discussed above, the key is to understand what is 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we mark the length of Kendra's bar at 100%. Because we are seeking a percentage, we label the ? on the percentage scale. This goes directly above the length of Jonathan's bar.   This is a stacked bar diagram with two bars and a percent scale. The percent scale goes from 0% even with the left ends of the bars to beyond 100% which is even with the top bar (labelled Jonathan). The end of the percent scale is labelled with a ?. The top bar is labelled Jonathan and has length 420cm. The bottom bar is labelled Kendra and has length 350cm.    In this case, the fraction of the length of Jonathan's rope over Kendra's is   So the length of Jonathan's Rope is 120% the length of Kendra's rope.   "
+},
+{
+  "id": "sect-percents-3-6-7",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-3-6-7",
+  "type": "Example",
+  "number": "8.2.6",
+  "title": "",
+  "body": "  There are 400 spaces in a parking lot. 320 spaces had vehicles parked in them. How many percent fewer empty spots were there than filled spots?    We make two bars, one for the filled spots and one for the empty spots. The filled bar has length 320 and we label the sum of the two bars as 400 to the right. Since 100% represents the number of filled spots, we label the percent scale of 100% at the end of the filled bar.  Since the question is what percent fewer, then it is the amount below 100% on the filled bar.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"filled\" and has length 320. The bottom bar is labelled \"empty\". Together the two bars have a brace on the right and labelled 400. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"filled\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"empty\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"?%\".    The number of empty spaces is and the fraction of empty spaces (to those filled) is which is 25%, thus the percent fewer empty spots to those filled slots is    "
+},
+{
+  "id": "sect-percents-4-5",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-4-5",
+  "type": "Example",
+  "number": "8.2.7",
+  "title": "",
+  "body": "  The price of an ounce of gold is $500. If it rises by 200%, find the new price.    In this case, the current price of gold is $500 per ounce represents 100%. We will also use a stacked bar diagram since there is a comparison being made.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    We'll use the unitary method and start with $500 is 100%. We seek 300%.   The new price of gold is $1500 per ounce.   "
+},
+{
+  "id": "sect-percents-4-6",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-4-6",
+  "type": "Example",
+  "number": "8.2.8",
+  "title": "",
+  "body": "  Mary bought a dress at a discount of 25%. If the discount was $15, how much did she pay for the dress?    First, 100% represents the full price of the dress. We're looking for the discounted price of the dress, so we use the following diagram:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To find the solution, we'll use the unitary method starting with the known relationship between price and percent:   The full price of the dress is $60.   "
+},
+{
+  "id": "sect-percents-4-7",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-4-7",
+  "type": "Example",
+  "number": "8.2.9",
+  "title": "",
+  "body": "  Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?    We start with a diagram and note that Xavier's number of stickers is 100%. 10% and 420 is also labelled on the diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    We then use the unitary method to find the answer. Since Alfred has 110% and Xavier is 100%, together they have 210% and that total is 420. We start with this and get to 110%.   Thus, Alfred has 220 stickers.   "
+},
+{
+  "id": "sect-percents-4-8",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-4-8",
+  "type": "Example",
+  "number": "8.2.10",
+  "title": "",
+  "body": "  If a price is reduced by 20% and then the sale price is further reduced by 30%, what percent is the overall reduction?    This is a tricky problem in that the two percentages are referring to different whole units. Note also that the question is the overall reduction. Since percent is the fraction out of 100, we will use the original price of $100 and then sale prices will be percents.  To get started, the first percent of 20% is relative to the original price.      This is a relatively easy calculation in that the first sale is or in terms of dollars, $80.  We repeat this now using the first sale price as 100% or      In this case the 100% is $80. Reducing by 30% means that the second sale price is 70% of the first sale price. This means that the cost is . The second sale price is $56.  This means that new sale price is 56% of the original price or . Since we took the original price of $100, then the total percent reduction is 44%.   "
+},
+{
+  "id": "sect-convert-units",
+  "level": "1",
+  "url": "sect-convert-units.html",
+  "type": "Section",
+  "number": "8.3",
+  "title": "Converting Units",
+  "body": " Converting Units   If we want to know how many feet are in 5 miles, we need to know the number of feet in a mile, which is 5280, but do we multiply or divide? Thinking through the two sizes and knowing that the answer should be large you might result in which is correct, but what if we have units that we aren't as familiar with. How many milliliters are in 8 gallons? We will use a method that works for any unit conversion.    Dimensional Analysis  Since 1 mile is the same as 5280 feet, then both of the following fractions are 1: and this will always work for any unit. To use this to convert 5 miles to feet we actually will do and the important part here is that the units work out. That is the miles in the top and bottom cancel or   This method also extends to combining units which the next example shows.    Convert 8 gallons to milliliters. Use the following: 1 gallon is 4 quarts, 1 quart is 0.94635 liters and 1 liter is 1000 milliliters.   We start with 8 gallons, because that's what we want to convert from. Then we use each factor with the units set to cancel:   Note: it is okay to use a calculator on these problems. The point of this is to do unit conversion and not on the arithmetic operations.    There is a conversion from inches to miles, but we don't need that if we know the number of inches in a foot and the number of feet in a mile.    Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.   We start with what is given and that is 316,800 inches. We then use the two unit conversions as fractions to cancel the units. and notice that all of the units cancel except for miles, which is what we want.      Advanced Dimensional Analysis  A basketball court is 4700 square feet. What is it's area in square meters?  There are two ways to approach this problem. First, if we know how many square meter are one square foot, then we can calculate this just like above. For example, if we know then we can use dimensional analysis to do this with    "
+},
+{
+  "id": "subsect-dimensional-analysis-4",
+  "level": "2",
+  "url": "sect-convert-units.html#subsect-dimensional-analysis-4",
+  "type": "Example",
+  "number": "8.3.1",
+  "title": "",
+  "body": "  Convert 8 gallons to milliliters. Use the following: 1 gallon is 4 quarts, 1 quart is 0.94635 liters and 1 liter is 1000 milliliters.   We start with 8 gallons, because that's what we want to convert from. Then we use each factor with the units set to cancel:   Note: it is okay to use a calculator on these problems. The point of this is to do unit conversion and not on the arithmetic operations.   "
+},
+{
+  "id": "subsect-dimensional-analysis-6",
+  "level": "2",
+  "url": "sect-convert-units.html#subsect-dimensional-analysis-6",
+  "type": "Example",
+  "number": "8.3.2",
+  "title": "",
+  "body": "  Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.   We start with what is given and that is 316,800 inches. We then use the two unit conversions as fractions to cancel the units. and notice that all of the units cancel except for miles, which is what we want.   "
+},
+{
+  "id": "sect-negative-numbers",
+  "level": "1",
+  "url": "sect-negative-numbers.html",
+  "type": "Section",
+  "number": "9.1",
+  "title": "Negative Numbers",
+  "body": " Negative Numbers   (Negative numbers are introduced around the same time as algebra, 6-7 grades)  Negative numbers are most easily introduced with the number line   a number line from -6 to 6      The integers are the numbers and the number greater than zero are called positive numbers and those less than 0 are called negative .      Models for the integers  Temperature In the two standard ways of measuring temperature (Fahrenheit and Celsius), there are both negative and positive temperature and using a scale like a thermometer shows the relationship. One should note though that temperature (like any measurement) does not have to just be an integer and any real number is possible.Elevation We typically take the elevation of a point on land (measured in either feet or meters) as positive for those points above sea level and depths in the ocean as negative number.Money We will see this later.    Basics of Integers      is difficult because it uses two symbols (one the same as subtraction) to denote a number.    We order all integers in the same way that we order all whole numbers. If is to the right of on the number line, then we say . If is to the left of , then we say .    The absolute value of an integer , denoted is the distance from to the point zero on the number line. and .    Every integer has an opposite, which we denote . The number is the same distance from 0 as but is located in the opposite direction as .  The number is opposite of and the number is opposite .     Rule 1:  for any integer .     This means that the opposite of the opposite of any number is itself.    Don't forget that this also applies to negative numbers. that is if , then .    Don't read this rule as saying . This isn't talking about multiplication.          Integer Addition  How do we do addition with integers (positive and negatives). There are four cases and we go through each in detail:   Positive Positive:  We've done this already. Typically, recall that we can think of this as counting on and the number line. Find         Negative Positive  This works the same way because the second number is positive. We start at the first number and again ``count on''. The figure below shows $-4+3=-1$        Positive Negative  If we think of the ``count on'' again with this, let's see what happens. Try so we start at 5 and count up and to determine this, we use the notion that is the opposite of , so we interpret as start at 5 and count down 3.      We will use this model to also explain that $5+(-3)=5-3$.    Negative Negative:  Once we understand the previous case, this is interpreted the same way. Consider $-3+(-2)$. This means start at $-3$ and count down $2$.         Another Fundamental Rule of Integers   Rule 2:  for any two integers .    Other models for Integers    Vector Model  Each number is represented as a vector (arrow) along the number line. The following shows $5+(-3)$.       Chip Model  In this case chips can be used (one color for positive numbers and another for negative numbers) and combine the opposite colors and remove.  This can be a problem if you can't remember which color represents positive\/negative.    Money Model       "
+},
+{
+  "id": "sect-negative-numbers-2-4",
+  "level": "2",
+  "url": "sect-negative-numbers.html#sect-negative-numbers-2-4",
+  "type": "Definition",
+  "number": "9.1.1",
+  "title": "",
+  "body": "  The integers are the numbers and the number greater than zero are called positive numbers and those less than 0 are called negative .   "
+},
+{
+  "id": "sect-arithmetic-integers",
+  "level": "1",
+  "url": "sect-arithmetic-integers.html",
+  "type": "Section",
+  "number": "9.2",
+  "title": "Arithmetic With Integers",
+  "body": " Arithmetic With Integers    Opposite of a Negative                                Commutative: ,     Associative: ,       Distributive:     Identities: ,   .       For each integer , there exists a unique integer called the opposite of denoted by which satisfies       Arithmetic Proofs   Proof of Rule 1       Proof of Rule 2  missing factor of or   Answer: so the missing factor is , therefore     Proof of Rule 3       Proof of Rule 5  Let , then . We need to show that    Since then so     "
+},
+{
+  "id": "axiom-negative-opposite",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#axiom-negative-opposite",
+  "type": "Property",
+  "number": "9.2.1",
+  "title": "Opposite of a Negative.",
+  "body": " Opposite of a Negative       "
+},
+{
+  "id": "axiom-subtraction-integers",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#axiom-subtraction-integers",
+  "type": "Property",
+  "number": "9.2.2",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "axiom-product-integers",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#axiom-product-integers",
+  "type": "Property",
+  "number": "9.2.3",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "axiom-negative-fractions",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#axiom-negative-fractions",
+  "type": "Property",
+  "number": "9.2.4",
+  "title": "",
+  "body": "      "
+},
+{
+  "id": "axiom-additive-inverse",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#axiom-additive-inverse",
+  "type": "Property",
+  "number": "9.2.5",
+  "title": "",
+  "body": "  For each integer , there exists a unique integer called the opposite of denoted by which satisfies    "
+},
+{
+  "id": "subsec-arithmetic-proofs-2",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-2",
+  "type": "Proof",
+  "number": "9.2.1.1",
+  "title": "Proof of Rule 1.",
+  "body": " Proof of Rule 1     "
+},
+{
+  "id": "subsec-arithmetic-proofs-3",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-3",
+  "type": "Proof",
+  "number": "9.2.1.2",
+  "title": "Proof of Rule 2.",
+  "body": " Proof of Rule 2  missing factor of or   Answer: so the missing factor is , therefore   "
+},
+{
+  "id": "subsec-arithmetic-proofs-4",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-4",
+  "type": "Proof",
+  "number": "9.2.1.3",
+  "title": "Proof of Rule 3.",
+  "body": " Proof of Rule 3     "
+},
+{
+  "id": "subsec-arithmetic-proofs-5",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-5",
+  "type": "Proof",
+  "number": "9.2.1.4",
+  "title": "Proof of Rule 5.",
+  "body": " Proof of Rule 5  Let , then . We need to show that    Since then so   "
+},
+{
+  "id": "ch-integers-5",
+  "level": "1",
+  "url": "ch-integers-5.html",
+  "type": "Section",
+  "number": "9.3",
+  "title": "Order Properties",
+  "body": " Order Properties     For any two numbers and , one and only one of the statements , , is true.    (Transitive Property) If and , then .    Adding a constant to both sides does not change an inequality: if , then for any .    Multiplying by a positive number preserves inequalities: if and , then .       If is a positive integer then is negative.           If and , then .         "
+},
+{
+  "id": "lem-1",
+  "level": "2",
+  "url": "ch-integers-5.html#lem-1",
+  "type": "Lemma",
+  "number": "9.3.1",
+  "title": "",
+  "body": "  If is a positive integer then is negative.        "
+},
+{
+  "id": "lem-",
+  "level": "2",
+  "url": "ch-integers-5.html#lem-",
+  "type": "Lemma",
+  "number": "9.3.2",
+  "title": "",
+  "body": "  If and , then .        "
 },
 {
   "id": "sect-decimals",
