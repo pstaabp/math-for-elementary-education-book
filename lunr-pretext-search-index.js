@@ -3544,115 +3544,160 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.1",
   "title": "Ratios and Proportions",
-  "body": " Ratios and Proportions   When we measure things, it is extremely important to use units. Add 3 milk to 2 flours makes no sense in a recipe. Did you mean cups? bags? For a particular recipe the exact amount is crucial, however, we can scale a recipe (double it, half it, for example) easily and if so, the relative amounts are important. We can say that a recipe calls for twice as much flour as sugar and we extend this to the idea of proportional and ratios.    We say that the ratio between two quantities is if there is a unit so that the first quantity measures units and the second measure units.  However, in writing the ratio, one does not specify the unit.    We will often compare two things in the same unit and then the ratio is the numbers (without the units) of each.       A recipe calls for 2 cups of flour and 1 cup of sugar. The ratio of flour to sugar is .    If a recipe calls for 3 cups of milk and 2 cups of flour, then the ratio of milk to flour is .       We can build a ratio for any pair of quantities. Consider the following example.    Bernard has 3 marbles for every 2 that Zara has. This means that the ratio of Bernard's marbles to Zara's is 3:2.      Extending Ratios  We can also extend ratios to more than two quantities.    Art, Beth and Cheryl each has some money in their pockets. Art has $20, Beth has $10 and Cheryl has $40. The ratio of the amount of money that Art has to Beth to Cheryl is 20:10:40.    Astute readers will note that the above ratio is not the simplest and we will address this next.    Equivalent Ratios    Two ratios are equivalent (are equal ratios ) if one obtained from the other by multiplying or dividing all of the measurements by the same nonzero number. That is, the ratio is equivalent to for all positive whole numbers and .      The ratios 3:2 and 6:4 are equivalent because multiplying both 3 and 2 by 2 gives the second ratio.      Word Problems  This section, more than others, depends on word problems due to the nature of the way that ratios are used. That is, they tend to be used in applications rather than in more pure mathematical sense.    Mary and her brother shared $28 in a 3:4 ratio. How much money did Mary have?   We first start with a diagram      This type (and most ratio problems) naturally fit the unitary method. We start with the 7 units and try to get to 3 units.   This shows that Mary has 3 units. Therefore, Mary has $12.    The next word problem shows an extended ratio.    John, Tom and David share a sum of money in the ratio 4:5:6. If David receives $60 more than John, find the sum of money shared by the three boys.   Again, start with a diagram.      Again, we'll use the unitary method and start with 2 units, because we know that is $60. The total number of units is , so we try to get to 15 units.   The sum of money shared by all three boys is $450.      Proportions  A proportion is a statement that two ratios are equal.    In order to make play dough, the following table is used to determine the amount of flour and salt to use:         cups of Flour  2  4  8  10    cups of Salt  1  2  4  5    The ratio of flour to salt is 2:1 or 4:2 or 8:4. This discusses the proportion of flour to salt.    We will often use proportions (or equivalent ratios) to solve problems.    The two unequal sides of a rectangle has a ratio of 2:3. If the shorter side is 10 cm, find the longer side.   In this case, we use the equivalent ratios to solve this problem with as the length of the longer side.   We note that since , then . The length of the longer side is 15.      The ratio of blue marbles to green marbles in a jar is 2:5. If there are 24 blue marbles, how many marbles are there altogether?  In this case, we'll solve this first using proportions, then as bar diagrams.     Using Proportions  In this case the number of blue marbles to green marbles is proportional to 2:5 or we can say that where is the number of green marbles. Since these are equivalent, multiplying 2 by 12 gives 24, therefore multiplying 5 by 12 gives so . The total number of marbles is .    Using a bar diagram  Again, start with a diagram.      We'll use the unitary method start with 2 units being 24 and get to units.     There are 84 marbles.         Changing Ratios  Another common problem with ratios is that of changing ratios. There is some situation where the ratio is given and items are added or removed and we want to know the new ratio. This is solved in the same way as before, but often a second diagram is needed.   Changing Ratios   48 marbles are in a bag with a ratio of 2:1 white to red marbles. If 4 more white marbles are added, what is the new ratio of white to red marbles? Write the ratio in reduced form.    First, we'll do a diagram with the situation before marbles are added. We'll need to know the number of white and red marbles.      We'll use the unitary method with 3 units being 48.   And this shows that there are 16 red marbles and 32 white marbles.  If 4 more white marbles are added then the ratio of white to red marbles is 36:16. To reduce this note that so the new ratio of white to red is 9:4.     "
+  "body": " Ratios and Proportions     Understand a ratio and proportions.    Be able to create diagrams with ratios and proportions.    Be able to solve problems using ratios.      When we measure things, it is extremely important to use units. Add 3 milk to 2 flours makes no sense in a recipe. Did you mean cups? bags? For a particular recipe the exact amount is crucial, however, we can scale a recipe (double it, half it, for example) easily and if so, the relative amounts are important. We can say that a recipe calls for twice as much flour as sugar and we extend this to the idea of proportional and ratios.    We say that the ratio between two quantities is if there is a unit so that the first quantity measures units and the second measure units.  However, in writing the ratio, one does not specify the unit.    We will often compare two things in the same unit and then the ratio is the numbers (without the units) of each.       A recipe calls for 2 cups of flour and 1 cup of sugar. The ratio of flour to sugar is .    If a recipe calls for 3 cups of milk and 2 cups of flour, then the ratio of milk to flour is .       We can build a ratio for any pair of quantities. Consider the following example.    Bernard has 3 marbles for every 2 that Zara has. This means that the ratio of Bernard's marbles to Zara's is 3:2.      Extending Ratios  We can also extend ratios to more than two quantities.    Art, Beth and Cheryl each has some money in their pockets. Art has 20, Beth has 10 and Cheryl has $40.  The ratio of the amount of money that Art has to Beth to Cheryl is 20:10:40.    Astute readers will note that the above ratio is not the simplest and we will address this next.    Equivalent Ratios    Two ratios are equivalent (are equal ratios ) if one obtained from the other by multiplying or dividing all of the measurements by the same nonzero number. That is, the ratio is equivalent to for all positive whole numbers and .      The ratios 3:2 and 6:4 are equivalent because multiplying both 3 and 2 by 2 gives the second ratio.      Word Problems  This section, more than others, depends on word problems due to the nature of the way that ratios are used. That is, they tend to be used in applications rather than in more pure mathematical sense.    Mary and her brother shared $28 in a 3:4 ratio. How much money did Mary have?    We first start with a diagram   A stacked bar diagram. The top bar is labelled \"Mary\" and has 3 equal parts and the length is labelled with a ?. The bottom bar is 4 equal parts (each part is the same as the above bar) and is labelled \"Mary's Brother\". There is a brace along the left side labelled \"$28\".    This type (and most ratio problems) naturally fit the unitary method. We start with the 7 units and try to get to 3 units.   This shows that Mary has 3 units. Therefore, Mary has $12.    The next word problem shows an extended ratio.    John, Tom and David share a sum of money in the ratio 4:5:6. If David receives $60 more than John, find the sum of money shared by the three boys.    Again, start with a diagram. There are three amounts so we'll make a stacked bar diagram. Since the ratio is given, we'll make the bar lengths in this ratio.   A stacked bar diagram with three horizontal bars with equal parts across the bars. The top bar is labelled \"John\" and has 4 parts. The middle bar is labeled \"Tom\" and has 5 parts. The bottom bar is labeled \"David\" and has 6 parts. The distance between the longest bar (David) and the shortest one (John) is labelled \"$60\". There is a brace along all three bars to the right labelled ?.    Again, we'll use the unitary method and start with 2 units, because we know that is $60. The total number of units is , so we try to get to 15 units.   The sum of money shared by all three boys is $450.      Proportions  A proportion is a statement that two ratios are equal.    In order to make play dough, the following table is used to determine the amount of flour and salt to use:         cups of Flour  2  4  8  10    cups of Salt  1  2  4  5    The ratio of flour to salt is 2:1 or 4:2 or 8:4. This discusses the proportion of flour to salt.    We will often use proportions (or equivalent ratios) to solve problems.    The two unequal sides of a rectangle has a ratio of 2:3. If the shorter side is 10 cm, find the longer side.    In this case, we use the equivalent ratios to solve this problem with as the length of the longer side.   We note that since , then . The length of the longer side is 15.      The ratio of blue marbles to green marbles in a jar is 2:5. If there are 24 blue marbles, how many marbles are there altogether?    In this case, we'll solve this first using proportions, then as bar diagrams.     Using proportions  In this case the number of blue marbles to green marbles is proportional to 2:5 or we can say that where is the number of green marbles. Since these are equivalent, multiplying 2 by 12 gives 24, therefore multiplying 5 by 12 gives so . The total number of marbles is .    Using a bar diagram  Again, start with a diagram. We'll make it stacked with the two colors and the length according to the proportion.   A stacked bar diagram with two horiztonal bars. The top bar is labelled \"blue\" and has length 24. It is also subdivided into two equal parts. The lower bar is labelled \"green\" and is 5 equal parts with the part length the same as the part length in the green bar. There is a brace on the right side covering both bars and labelled with a ?.    We'll use the unitary method start with 2 units being 24 and get to units.     There are 84 marbles.         Changing Ratios  Another common problem with ratios is that of changing ratios. There is some situation where the ratio is given and items are added or removed and we want to know the new ratio. This is solved in the same way as before, but often a second diagram is needed.   Changing Ratios   48 marbles are in a bag with a ratio of 2:1 white to red marbles. If 4 more white marbles are added, what is the new ratio of white to red marbles? Write the ratio in reduced form.    First, we'll do a diagram with the situation before marbles are added. We'll need to know the number of white and red marbles.   A stacked bar diagram with two horizontal bars. The top one is labelled \"red\" and the length is labelled with a ?. The bottom is labelled \"white\" and is twice the length of the red one and the length is labelled with a ?. There is a brace on the right covering both bars and is labelled with a 48.    We'll use the unitary method with 3 units equalling 48.   And this shows that there are 16 red marbles and 32 white marbles.  If 4 more white marbles are added then the ratio of white to red marbles is 36:16. To reduce this note that so the new ratio of white to red is 9:4.        For each of the following, write the ratio is simplest form. (Hint: for (c) find the greatest common factor)                           Provide Teacher's Solutions for the following problems involving ratios:     David cuts a rope 60 m long into two pieces in the ratio of . What is the length of the shorter piece of rope?      Adam and John have stickers with the number in the ratio of . If Adam has 72 stickers, how many stickers does John have?      The ratio of the number of boys to the number of girls is . If there are 100 boys, how many children are there altogether?      The ratio of David's weight to Ryan's weight to Ali's weight is . If Ryan weighs 30 kg, find the total weight of the 3 boys.      3 boys share a sum of money in the ratio . If the smallest share is $30, find the biggest share.       The following word problems involve changing ratios. Develop a Teacher's Solution for each.     Charlotte and Delilah each have some money in the ratio of . Together they have $60. Charlotte spends $5. What is the new ratio of Charlotte's money to Delilah's?      Coen and Jack each have some toy cars. Coen receives four new cars for his birthday and now the ratio of Coen's cars to Jack's is . If altogether, they have 40 cars, what what the ratio of the number of Coen's cars to Jack's originally?       A class is presented with the following problem: In a bag of marbles, the ratio of white marbles to red marbles is 2:3 and the ratio of red to black marbles is 6:11. What is the ratio of white to black marbles?   Conner, who likes fractions, writes and announces, without explanation, that the ratio of white to black marbles is . Explain why he is right. (Hint: taking the number of black marbles to the be whole unit, what fraction are red, and then what fraction are white?)     "
 },
 {
-  "id": "sect-ratios-proportions-2-2",
+  "id": "sect-ratios-proportions-2",
   "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-2-2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-2",
+  "type": "Objectives",
+  "number": "8.1",
+  "title": "",
+  "body": "   Understand a ratio and proportions.    Be able to create diagrams with ratios and proportions.    Be able to solve problems using ratios.    "
+},
+{
+  "id": "sect-ratios-proportions-3-2",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-3-2",
   "type": "Definition",
   "number": "8.1.1",
   "title": "",
   "body": "  We say that the ratio between two quantities is if there is a unit so that the first quantity measures units and the second measure units.  However, in writing the ratio, one does not specify the unit.   "
 },
 {
-  "id": "sect-ratios-proportions-2-4",
+  "id": "sect-ratios-proportions-3-4",
   "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-2-4",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-3-4",
   "type": "Example",
   "number": "8.1.2",
   "title": "",
   "body": "     A recipe calls for 2 cups of flour and 1 cup of sugar. The ratio of flour to sugar is .    If a recipe calls for 3 cups of milk and 2 cups of flour, then the ratio of milk to flour is .      "
 },
 {
-  "id": "sect-ratios-proportions-2-6",
+  "id": "sect-ratios-proportions-3-6",
   "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-2-6",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-3-6",
   "type": "Example",
   "number": "8.1.3",
   "title": "",
   "body": "  Bernard has 3 marbles for every 2 that Zara has. This means that the ratio of Bernard's marbles to Zara's is 3:2.   "
 },
 {
-  "id": "sect-ratios-proportions-3-3",
+  "id": "sect-ratios-proportions-4-3",
   "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-3-3",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-4-3",
   "type": "Example",
   "number": "8.1.4",
   "title": "",
-  "body": "  Art, Beth and Cheryl each has some money in their pockets. Art has $20, Beth has $10 and Cheryl has $40. The ratio of the amount of money that Art has to Beth to Cheryl is 20:10:40.   "
+  "body": "  Art, Beth and Cheryl each has some money in their pockets. Art has 20, Beth has 10 and Cheryl has $40.  The ratio of the amount of money that Art has to Beth to Cheryl is 20:10:40.   "
 },
 {
-  "id": "sect-ratios-proportions-4-2",
+  "id": "sect-ratios-proportions-5-2",
   "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-4-2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-5-2",
   "type": "Definition",
   "number": "8.1.5",
   "title": "",
   "body": "  Two ratios are equivalent (are equal ratios ) if one obtained from the other by multiplying or dividing all of the measurements by the same nonzero number. That is, the ratio is equivalent to for all positive whole numbers and .   "
 },
 {
-  "id": "sect-ratios-proportions-4-3",
+  "id": "sect-ratios-proportions-5-3",
   "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-4-3",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-5-3",
   "type": "Example",
   "number": "8.1.6",
   "title": "",
   "body": "  The ratios 3:2 and 6:4 are equivalent because multiplying both 3 and 2 by 2 gives the second ratio.   "
 },
 {
-  "id": "sect-ratios-proportions-5-3",
-  "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-5-3",
-  "type": "Example",
-  "number": "8.1.7",
-  "title": "",
-  "body": "  Mary and her brother shared $28 in a 3:4 ratio. How much money did Mary have?   We first start with a diagram      This type (and most ratio problems) naturally fit the unitary method. We start with the 7 units and try to get to 3 units.   This shows that Mary has 3 units. Therefore, Mary has $12.   "
-},
-{
-  "id": "sect-ratios-proportions-5-5",
-  "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-5-5",
-  "type": "Example",
-  "number": "8.1.8",
-  "title": "",
-  "body": "  John, Tom and David share a sum of money in the ratio 4:5:6. If David receives $60 more than John, find the sum of money shared by the three boys.   Again, start with a diagram.      Again, we'll use the unitary method and start with 2 units, because we know that is $60. The total number of units is , so we try to get to 15 units.   The sum of money shared by all three boys is $450.   "
-},
-{
   "id": "sect-ratios-proportions-6-3",
   "level": "2",
   "url": "sect-ratios-proportions.html#sect-ratios-proportions-6-3",
   "type": "Example",
-  "number": "8.1.9",
+  "number": "8.1.7",
   "title": "",
-  "body": "  In order to make play dough, the following table is used to determine the amount of flour and salt to use:         cups of Flour  2  4  8  10    cups of Salt  1  2  4  5    The ratio of flour to salt is 2:1 or 4:2 or 8:4. This discusses the proportion of flour to salt.   "
+  "body": "  Mary and her brother shared $28 in a 3:4 ratio. How much money did Mary have?    We first start with a diagram   A stacked bar diagram. The top bar is labelled \"Mary\" and has 3 equal parts and the length is labelled with a ?. The bottom bar is 4 equal parts (each part is the same as the above bar) and is labelled \"Mary's Brother\". There is a brace along the left side labelled \"$28\".    This type (and most ratio problems) naturally fit the unitary method. We start with the 7 units and try to get to 3 units.   This shows that Mary has 3 units. Therefore, Mary has $12.   "
 },
 {
   "id": "sect-ratios-proportions-6-5",
   "level": "2",
   "url": "sect-ratios-proportions.html#sect-ratios-proportions-6-5",
   "type": "Example",
-  "number": "8.1.10",
+  "number": "8.1.8",
   "title": "",
-  "body": "  The two unequal sides of a rectangle has a ratio of 2:3. If the shorter side is 10 cm, find the longer side.   In this case, we use the equivalent ratios to solve this problem with as the length of the longer side.   We note that since , then . The length of the longer side is 15.   "
-},
-{
-  "id": "sect-ratios-proportions-6-6",
-  "level": "2",
-  "url": "sect-ratios-proportions.html#sect-ratios-proportions-6-6",
-  "type": "Example",
-  "number": "8.1.11",
-  "title": "",
-  "body": "  The ratio of blue marbles to green marbles in a jar is 2:5. If there are 24 blue marbles, how many marbles are there altogether?  In this case, we'll solve this first using proportions, then as bar diagrams.     Using Proportions  In this case the number of blue marbles to green marbles is proportional to 2:5 or we can say that where is the number of green marbles. Since these are equivalent, multiplying 2 by 12 gives 24, therefore multiplying 5 by 12 gives so . The total number of marbles is .    Using a bar diagram  Again, start with a diagram.      We'll use the unitary method start with 2 units being 24 and get to units.     There are 84 marbles.      "
+  "body": "  John, Tom and David share a sum of money in the ratio 4:5:6. If David receives $60 more than John, find the sum of money shared by the three boys.    Again, start with a diagram. There are three amounts so we'll make a stacked bar diagram. Since the ratio is given, we'll make the bar lengths in this ratio.   A stacked bar diagram with three horizontal bars with equal parts across the bars. The top bar is labelled \"John\" and has 4 parts. The middle bar is labeled \"Tom\" and has 5 parts. The bottom bar is labeled \"David\" and has 6 parts. The distance between the longest bar (David) and the shortest one (John) is labelled \"$60\". There is a brace along all three bars to the right labelled ?.    Again, we'll use the unitary method and start with 2 units, because we know that is $60. The total number of units is , so we try to get to 15 units.   The sum of money shared by all three boys is $450.   "
 },
 {
   "id": "sect-ratios-proportions-7-3",
   "level": "2",
   "url": "sect-ratios-proportions.html#sect-ratios-proportions-7-3",
   "type": "Example",
+  "number": "8.1.9",
+  "title": "",
+  "body": "  In order to make play dough, the following table is used to determine the amount of flour and salt to use:         cups of Flour  2  4  8  10    cups of Salt  1  2  4  5    The ratio of flour to salt is 2:1 or 4:2 or 8:4. This discusses the proportion of flour to salt.   "
+},
+{
+  "id": "sect-ratios-proportions-7-5",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-7-5",
+  "type": "Example",
+  "number": "8.1.10",
+  "title": "",
+  "body": "  The two unequal sides of a rectangle has a ratio of 2:3. If the shorter side is 10 cm, find the longer side.    In this case, we use the equivalent ratios to solve this problem with as the length of the longer side.   We note that since , then . The length of the longer side is 15.   "
+},
+{
+  "id": "sect-ratios-proportions-7-6",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-7-6",
+  "type": "Example",
+  "number": "8.1.11",
+  "title": "",
+  "body": "  The ratio of blue marbles to green marbles in a jar is 2:5. If there are 24 blue marbles, how many marbles are there altogether?    In this case, we'll solve this first using proportions, then as bar diagrams.     Using proportions  In this case the number of blue marbles to green marbles is proportional to 2:5 or we can say that where is the number of green marbles. Since these are equivalent, multiplying 2 by 12 gives 24, therefore multiplying 5 by 12 gives so . The total number of marbles is .    Using a bar diagram  Again, start with a diagram. We'll make it stacked with the two colors and the length according to the proportion.   A stacked bar diagram with two horiztonal bars. The top bar is labelled \"blue\" and has length 24. It is also subdivided into two equal parts. The lower bar is labelled \"green\" and is 5 equal parts with the part length the same as the part length in the green bar. There is a brace on the right side covering both bars and labelled with a ?.    We'll use the unitary method start with 2 units being 24 and get to units.     There are 84 marbles.      "
+},
+{
+  "id": "sect-ratios-proportions-8-3",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#sect-ratios-proportions-8-3",
+  "type": "Example",
   "number": "8.1.12",
   "title": "Changing Ratios.",
-  "body": " Changing Ratios   48 marbles are in a bag with a ratio of 2:1 white to red marbles. If 4 more white marbles are added, what is the new ratio of white to red marbles? Write the ratio in reduced form.    First, we'll do a diagram with the situation before marbles are added. We'll need to know the number of white and red marbles.      We'll use the unitary method with 3 units being 48.   And this shows that there are 16 red marbles and 32 white marbles.  If 4 more white marbles are added then the ratio of white to red marbles is 36:16. To reduce this note that so the new ratio of white to red is 9:4.   "
+  "body": " Changing Ratios   48 marbles are in a bag with a ratio of 2:1 white to red marbles. If 4 more white marbles are added, what is the new ratio of white to red marbles? Write the ratio in reduced form.    First, we'll do a diagram with the situation before marbles are added. We'll need to know the number of white and red marbles.   A stacked bar diagram with two horizontal bars. The top one is labelled \"red\" and the length is labelled with a ?. The bottom is labelled \"white\" and is twice the length of the red one and the length is labelled with a ?. There is a brace on the right covering both bars and is labelled with a 48.    We'll use the unitary method with 3 units equalling 48.   And this shows that there are 16 red marbles and 32 white marbles.  If 4 more white marbles are added then the ratio of white to red marbles is 36:16. To reduce this note that so the new ratio of white to red is 9:4.   "
+},
+{
+  "id": "exercises-ratios-1",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#exercises-ratios-1",
+  "type": "Exercise",
+  "number": "8.1.6.1",
+  "title": "",
+  "body": "  For each of the following, write the ratio is simplest form. (Hint: for (c) find the greatest common factor)                        "
+},
+{
+  "id": "exercises-ratios-2",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#exercises-ratios-2",
+  "type": "Exercise",
+  "number": "8.1.6.2",
+  "title": "",
+  "body": "  Provide Teacher's Solutions for the following problems involving ratios:     David cuts a rope 60 m long into two pieces in the ratio of . What is the length of the shorter piece of rope?      Adam and John have stickers with the number in the ratio of . If Adam has 72 stickers, how many stickers does John have?      The ratio of the number of boys to the number of girls is . If there are 100 boys, how many children are there altogether?      The ratio of David's weight to Ryan's weight to Ali's weight is . If Ryan weighs 30 kg, find the total weight of the 3 boys.      3 boys share a sum of money in the ratio . If the smallest share is $30, find the biggest share.    "
+},
+{
+  "id": "exercises-ratios-3",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#exercises-ratios-3",
+  "type": "Exercise",
+  "number": "8.1.6.3",
+  "title": "",
+  "body": "  The following word problems involve changing ratios. Develop a Teacher's Solution for each.     Charlotte and Delilah each have some money in the ratio of . Together they have $60. Charlotte spends $5. What is the new ratio of Charlotte's money to Delilah's?      Coen and Jack each have some toy cars. Coen receives four new cars for his birthday and now the ratio of Coen's cars to Jack's is . If altogether, they have 40 cars, what what the ratio of the number of Coen's cars to Jack's originally?    "
+},
+{
+  "id": "exercises-ratios-4",
+  "level": "2",
+  "url": "sect-ratios-proportions.html#exercises-ratios-4",
+  "type": "Exercise",
+  "number": "8.1.6.4",
+  "title": "",
+  "body": "  A class is presented with the following problem: In a bag of marbles, the ratio of white marbles to red marbles is 2:3 and the ratio of red to black marbles is 6:11. What is the ratio of white to black marbles?   Conner, who likes fractions, writes and announces, without explanation, that the ratio of white to black marbles is . Explain why he is right. (Hint: taking the number of black marbles to the be whole unit, what fraction are red, and then what fraction are white?)   "
 },
 {
   "id": "sect-percents",
@@ -3661,97 +3706,133 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Percentages",
-  "body": " Percentages   Percentages are ubiquitous throughout anything with numbers. For example   Shopping   Shoes are now 35% off! Buy one, get the second for 50%off.     Grades   Your final grade is 85%.     Sports   Her shooting percentage is 65%. (basketball) or The quarterback's completion percent is 78%. (football)     Money   Earn 2.1% on this savings account. Your tax rate is 18%. The interest rate on your credit card is 15.5%.       Percentage   A percentage is a fraction with the denominator of 100. That is % is the fraction .    For example 36% and 50% or . It is important to have a firm idea of fractions, especially equivalent fractions to handle percentages.    A farmer has chickens and after collecting eggs, she finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we start as the fraction . We then use equivalent fractions to write this with a denominator of 100. so 84% of the eggs are brown.      Percentages and the Whole Unit  Since percentages are a fraction with the bottom 100, it is key to understanding percentages to understand what the whole unit is. In the example of the eggs above. The whole unit is total number of eggs. The 84% is relative to the whole unit.  In this case, this is relatively straightforward, but often in percentages a comparison is made and when that happens, the quantity being compared to is the whole unit. The following tables shows a number of examples:      Phrase  Whole Unit (100%)    Johanna scored 5% more than Charlie on the exam.  Charlie's score on the exam.    Fred's income will rise 3%next year.  Fred's current income.    Becky's bake sales sold 10%fewer cookies than Faye's  Number of cookies Faye's bake sale sold.    With a coupon, the price of the shirt will be reduce an additional 25%off the sales price.  the sales price of the shirt     Knowing the whole unit is key  It can't be emphasized enough to understand the whole unit in a percentage problem. Because they can be tricky, only thinking this through clearly will you consistently know how to solve these.    Bar Diagrams and Percentages  A very helpful way to understand percentage problems is with a diagram and in most situations, a bar diagram will be the best to use. When you do this, include a percentage scale on the top of the bar diagram. The bar below shows that the whole unit is 100%.   A horizontal line with 10 tick marks. The leftmost one is labeled 0%, the one in the middle is 50% and the rightmost one is labelled 100%. Below the line is a bar with the word \"whole\" inside.     Good Diagrams with Percentages  It can be tricky to produce an accurate diagram for a percentage problems. Here's some ideas that will help:   Make sure you identify what is 100%.    Often percent problems compare two quantities. If so, use a stacked bar diagram.    All percentages and any sought after percentages should go on the percent scale.    Any quantities that you know or are looking for should go on the bars, not on the percent scale.      We present a few examples of word problems with diagrams in the following.    Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's Rope is the length of Jonathan's rope?    As we discussed above, the key is to understand what is 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we mark the length of Kendra's bar at 100%. Because we are seeking a percentage, we label the ? on the percentage scale. This goes directly above the length of Jonathan's bar.   This is a stacked bar diagram with two bars and a percent scale. The percent scale goes from 0% even with the left ends of the bars to beyond 100% which is even with the top bar (labelled Jonathan). The end of the percent scale is labelled with a ?. The top bar is labelled Jonathan and has length 420cm. The bottom bar is labelled Kendra and has length 350cm.    In this case, the fraction of the length of Jonathan's rope over Kendra's is   So the length of Jonathan's Rope is 120% the length of Kendra's rope.      There are 400 spaces in a parking lot. 320 spaces had vehicles parked in them. How many percent fewer empty spots were there than filled spots?    We make two bars, one for the filled spots and one for the empty spots. The filled bar has length 320 and we label the sum of the two bars as 400 to the right. Since 100% represents the number of filled spots, we label the percent scale of 100% at the end of the filled bar.  Since the question is what percent fewer, then it is the amount below 100% on the filled bar.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"filled\" and has length 320. The bottom bar is labelled \"empty\". Together the two bars have a brace on the right and labelled 400. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"filled\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"empty\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"?%\".    The number of empty spaces is and the fraction of empty spaces (to those filled) is which is 25%, thus the percent fewer empty spots to those filled slots is        The Unitary Method  We used the unitary method in specifically when we had clearly units in solving Teacher's solutions. This is a modified version of the unitary method with percentages. As an example, we'll return to the example above with Jonathan and Kendra and their ropes.  From the diagram, we notice that there is a percentage associated with a length. We'll start with that and then multiply and divide by numbers to get the answer we seek.  In this case, we note that 100% is 3.5meters and we are trying to determine what 4.2 meters is. and now we are at the point of 420 cm, so this represents 120%.    The price of an ounce of gold is $500. If it rises by 200%, find the new price.    In this case, the current price of gold is $500 per ounce represents 100%. We will also use a stacked bar diagram since there is a comparison being made.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    We'll use the unitary method and start with $500 is 100%. We seek 300%.   The new price of gold is $1500 per ounce.      Mary bought a dress at a discount of 25%. If the discount was $15, how much did she pay for the dress?    First, 100% represents the full price of the dress. We're looking for the discounted price of the dress, so we use the following diagram:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To find the solution, we'll use the unitary method starting with the known relationship between price and percent:   The full price of the dress is $60.      Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?    We start with a diagram and note that Xavier's number of stickers is 100%. 10% and 420 is also labelled on the diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    We then use the unitary method to find the answer. Since Alfred has 110% and Xavier is 100%, together they have 210% and that total is 420. We start with this and get to 110%.   Thus, Alfred has 220 stickers.      If a price is reduced by 20% and then the sale price is further reduced by 30%, what percent is the overall reduction?    This is a tricky problem in that the two percentages are referring to different whole units. Note also that the question is the overall reduction. Since percent is the fraction out of 100, we will use the original price of $100 and then sale prices will be percents.  To get started, the first percent of 20% is relative to the original price.      This is a relatively easy calculation in that the first sale is or in terms of dollars, $80.  We repeat this now using the first sale price as 100% or      In this case the 100% is $80. Reducing by 30% means that the second sale price is 70% of the first sale price. This means that the cost is . The second sale price is $56.  This means that new sale price is 56% of the original price or . Since we took the original price of $100, then the total percent reduction is 44%.     "
+  "body": " Percentages     Understand what a percentage is and how it relates to fractions.    Understand the importance of the whole unit in percentage problems.    Use bar diagrams to solve percentage problems.    Use the unitary method to solve percentage problems.      Percentages are ubiquitous in any context involving numbers. For example:   Shopping   Shoes are now 35% off! Buy one, get the second for 50% off.     Grades   Your final grade is 85%.     Sports   Her shooting percentage is 65% (basketball) or the quarterback's completion percentage is 78% (football).     Money   Earn 2.1% on this savings account. Your tax rate is 18%. The interest rate on your credit card is 15.5%.       Percentage   A percentage is a fraction with a denominator of 100. That is, is the fraction .    For example, 36% and 50% or . It is important to have a firm grasp of fractions, especially equivalent fractions, to handle percentages effectively.    A farmer collects eggs and finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we express this as the fraction . We then use equivalent fractions to write this with a denominator of 100: . So, 84% of the eggs are brown.      Percentages and the Whole Unit  Since a percentage is a fraction with a denominator of 100, understanding percentages requires identifying what the whole unit is. In the egg example above, the whole unit is the total number of eggs. The 84% value is relative to that whole unit.  While this is straightforward in simple cases, percentages are often used to make comparisons. When that happens, the quantity being compared to serves as the whole unit. The following table shows a number of examples:      Phrase  Whole Unit (100%)    Johanna scored 5% more than Charlie on the exam.  Charlie's score on the exam.    Fred's income will rise 3% next year.  Fred's current income.    Becky's bake sale sold 10% fewer cookies than Faye's.  Number of cookies Faye's bake sale sold.    With a coupon, the price of the shirt will be reduced an additional 25% off the sale price.  The sale price of the shirt.     Knowing the Whole Unit is Key  It cannot be emphasized enough how vital it is to understand the whole unit in a percentage problem. Because these problems can be tricky, you must think clearly to consistently solve them correctly.    Bar Diagrams and Percentages  A very helpful way to visualize percentage problems is with a diagram, and in most situations, a bar diagram works best. When drawing one, always include a percentage scale along the top of the diagram. The bar below demonstrates the whole unit representing 100%.   A horizontal line with 10 tick marks. The leftmost is labeled 0%, the middle is 50%, and the rightmost is 100%. Below the line is a bar containing the word \"Whole\".     Good Diagrams with Percentages  Producing an accurate diagram for percentage problems can be subtle. Here are some core strategies to help:   Clearly identify which quantity represents 100%.    When a problem compares two distinct quantities, use a stacked bar diagram.    All given percentages and sought-after target percentages belong exclusively on the percentage scale.    Any absolute quantities that you know or are searching for belong directly on or inside the bars, never on the percent scale.      We present a few examples of word problems alongside their diagrams below.    Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's rope is the length of Jonathan's rope?    As discussed, the crucial first step is determining what represents 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we align the end of Kendra's bar with 100%. Because we are seeking a percentage, we label the on the percentage scale directly above the end of Jonathan's bar.   Stacked bar diagram with two bars. Percent scale goes from 0 to over 100 percent. The top bar is Jonathan (420cm). The bottom bar is Kendra (350cm aligned to 100%).    The ratio of the length of Jonathan's rope relative to Kendra's rope is:   So, the length of Jonathan's rope is 120% of the length of Kendra's rope.      There are 400 spaces in a parking lot. If 320 spaces have vehicles parked in them, what percentage fewer empty spots are there than filled spots?    We set up two bars: one representing filled spots and one for empty spots. The filled bar has a value of 320, and we denote the total combined capacity of 400 on the right. Since the filled spots act as our baseline comparison (100%), we align 100% on the scale with the end of the filled bar.  Since the problem asks for the percentage change \"fewer than filled\", we measure the missing percentage value below the 100% threshold.   Stacked bar diagram with filled bar (320) and empty bar. A brace on the right groups them to total 400. The percent scale above tracks the relative difference.    The number of empty spaces is , making the fraction of empty spaces relative to filled spots is: Since , the percentage of empty spots compared to filled spots is 25%. Thus, there are fewer empty spots than filled spots.       The Unitary Method  We previously used the unitary method in to help solve problems. Here, we adapt a modified version explicitly tailored for working with percentages. Let's return to the rope problem featuring Jonathan and Kendra.  From our visual model, we notice that a specific quantity is associated directly with a percentage benchmark. We start from that fixed ratio, applying uniform multiplication or division operations across both fields until we arrive at our target value.  In this context, we know that 100% corresponds to 350 cm, and we want to find out what percentage corresponds to 420 cm: Now that we have isolated 420 cm, we can clearly see it represents 120%.   Allowed Operations in the Unitary Method  We can only use multiplication and division when using the Unitary method. Recall that we always begin with a known percentage and it corresponding value. The we manipulate it to find an unknown target scale. Determining the steps efficiently can sometimes be tricky.  Generally, the safest first step is scaling down the values using division. You can divide by the Greatest Common Factor of both sides, though any common factor works. Once you establish a smaller base value, you can easily scale up to your target configuration.   In our rope problem, the GCD of 100 and 350 is 50. Dividing by the full GCD instead would look like this:   Notice that while we arrive at the exact same answer, navigating a step up from 2% to 120% involves slightly larger multipliers, making the mental math a bit more complex.    Teacher's Solutions of Percentage Problems  We will now examine how to develop formal step-by-step Teacher's Solutions for percentage applications. Like our previous models, every solution must include an explicit bar diagram. Remember that the diagram should have a percentage scale along the top, and all percentage values should be placed on that scale. Any values that are quantities should be placed on or inside the bars, never on the percentage scale.    Find a Teacher's Solution to the following problem: The price of an ounce of gold is $500. If it rises by 200%, find the new price.     Here, the base price of $500 represents our initial 100% value. Because an explicit comparative change is occurring, we will model this using a stacked bar diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    Using the unitary method starting with our baseline equation: Thus, the new price of gold is $1500 per ounce.      Find a Teacher's Solution to the following problem: Mary bought a dress at a discount of 25%. If the discount saved her $15, how much did she pay for the dress?     To begin, 100% represents the original full price of the dress. Since we are isolating what she actually paid after the markdown, our diagram looks like this:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To resolve the value, we evaluate our known core relationship using the unitary method: Mary paid $45 for the dress. (Alternatively, finding 100% yields a full price of $60, and evaluating confirms our result.)      Find a Teacher's Solution to the following problem: Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?     We construct the diagram, noting that because Alfred is being compared directly to Xavier, Xavier's stickers represent our 100% base. The 10% delta and the absolute total of 420 are mapped out below:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    Since Alfred's stickers represents 110% of Xavier's stickers and Xavier holds 100%, their combined total represents 210% of our base unit, matching 420 stickers. We apply the unitary method to isolate Alfred's 110%: Thus, Alfred has 220 stickers.      Find a Teacher's Solution to the following problem: If an initial price is reduced by 20% and the resulting sale price is subsequently reduced by an additional 30%, what is the overall total percentage reduction?     This is a classic multi-step problem that catches many students because the two sequential markdown percentages apply to entirely different whole units. To keep things clear and readable, we can assign a hypothetical baseline original price of $100. This ensures our dollar changes map perfectly 1:1 back to overall percentages.  Step 1: The initial markdown of 20% applies directly to our original base unit ($100).   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Original\" and has a length of $100. The bottom bar is labelled \"First Sale\" and has a length of ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Original\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"First Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"20%\".    This initial phase leaves us with of the original price, which translates directly to $80.  Step 2: We re-evaluate the system. The new 30% markdown treats our intermediate $80 value as its new 100% whole unit base.   Stacked diagram displaying the second reduction. There are three horizontal bars and a percent scale above. The top bar is labelled \"Original\" and has a length of $100. The middle bar is labelled \"First Sale\" and has a length of $80. The bottom bar is labelled \"Second Sale\" and has a length of ?. The percent scale is above the three bars. The left is labelled 0% and the right (which is even with the \"First Sale\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Second Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"30%\".    In this secondary scope, our baseline 100% is $80. Slashing that by 30% means the final price retains exactly 70% of that intermediate value: . Our final net price is $56.  This means our new final price is 56% of our absolute starting original price. Evaluating the raw difference yields: . Because we carefully based our initialization on a clean $100 baseline, this absolute loss translates perfectly to a total net reduction of 44%.        Provide a complete Teacher's Solution for each problem below, making sure to explicitly identify what represents the baseline whole unit . We highly recommend utilizing the unitary method. Hint on task (c): The answer is not 10%.     Exactly 36 out of 400 seats in a movie theater are vacant. What percentage of the total seats are vacant?      Exactly of the students enrolled at a school wear prescription glasses. What percentage of the student body wears glasses?      Eva started with 3 m of fabric cloth. She used 75 cm of it to construct a miniature dress for her doll. What percentage of her original cloth stock did she use for the dress?      A total of 45 medals were awarded at a regional band competition. If there were 22 bronze medals and 14 silver medals awarded with the remainder consisting entirely of gold medals, what percentage of the total pool were gold medals?      Kristine spends 30% of her total savings on a luxury watch, and then uses 60% of her remaining savings to purchase a designer dress. What percentage of her original savings is left over?       Provide a complete Teacher's Solution for each problem below. Be careful; some configurations require subtle tracking. Make sure you explicitly state what represents the base whole unit and track your transformations via the unitary method.     There are 200 members in a community club. If 60% of them are male, what percentage more males are there than females?      Exactly 40% of the beads inside a craft box are red, while the remaining balance are yellow. If there are 36 more yellow beads than red beads inside the container, how many total beads are there altogether?      A shop offers variable promotional discounts to different customers. Libby paid $600 for a premium watch at a fixed discount of 20%. Scott purchased the exact same watch model but paid $630. What percentage markdown was given to Scott?      Mary's salary is 10% higher than Alice's salary. If their combined total salary is $4200, what is Mary's individual salary?      John spent 20% of his money on lunch. He then spent of his remaining funds on a toy. If the toy cost exactly $12, how much money did John have originally?      "
 },
 {
-  "id": "sect-percents-2-2",
+  "id": "sect-percents-2",
   "level": "2",
-  "url": "sect-percents.html#sect-percents-2-2",
+  "url": "sect-percents.html#sect-percents-2",
+  "type": "Objectives",
+  "number": "8.2",
+  "title": "",
+  "body": "   Understand what a percentage is and how it relates to fractions.    Understand the importance of the whole unit in percentage problems.    Use bar diagrams to solve percentage problems.    Use the unitary method to solve percentage problems.    "
+},
+{
+  "id": "sect-percents-3-2",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-3-2",
   "type": "Definition",
   "number": "8.2.1",
   "title": "Percentage.",
-  "body": " Percentage   A percentage is a fraction with the denominator of 100. That is % is the fraction .   "
+  "body": " Percentage   A percentage is a fraction with a denominator of 100. That is, is the fraction .   "
 },
 {
-  "id": "sect-percents-2-4",
+  "id": "sect-percents-3-4",
   "level": "2",
-  "url": "sect-percents.html#sect-percents-2-4",
+  "url": "sect-percents.html#sect-percents-3-4",
   "type": "Example",
   "number": "8.2.2",
   "title": "",
-  "body": "  A farmer has chickens and after collecting eggs, she finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we start as the fraction . We then use equivalent fractions to write this with a denominator of 100. so 84% of the eggs are brown.   "
-},
-{
-  "id": "sect-percents-3-5",
-  "level": "2",
-  "url": "sect-percents.html#sect-percents-3-5",
-  "type": "Note",
-  "number": "8.2.3",
-  "title": "Knowing the whole unit is key.",
-  "body": " Knowing the whole unit is key  It can't be emphasized enough to understand the whole unit in a percentage problem. Because they can be tricky, only thinking this through clearly will you consistently know how to solve these.  "
-},
-{
-  "id": "sect-percents-3-6-4",
-  "level": "2",
-  "url": "sect-percents.html#sect-percents-3-6-4",
-  "type": "Note",
-  "number": "8.2.4",
-  "title": "Good Diagrams with Percentages.",
-  "body": " Good Diagrams with Percentages  It can be tricky to produce an accurate diagram for a percentage problems. Here's some ideas that will help:   Make sure you identify what is 100%.    Often percent problems compare two quantities. If so, use a stacked bar diagram.    All percentages and any sought after percentages should go on the percent scale.    Any quantities that you know or are looking for should go on the bars, not on the percent scale.     "
-},
-{
-  "id": "sect-percents-3-6-6",
-  "level": "2",
-  "url": "sect-percents.html#sect-percents-3-6-6",
-  "type": "Example",
-  "number": "8.2.5",
-  "title": "",
-  "body": "  Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's Rope is the length of Jonathan's rope?    As we discussed above, the key is to understand what is 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we mark the length of Kendra's bar at 100%. Because we are seeking a percentage, we label the ? on the percentage scale. This goes directly above the length of Jonathan's bar.   This is a stacked bar diagram with two bars and a percent scale. The percent scale goes from 0% even with the left ends of the bars to beyond 100% which is even with the top bar (labelled Jonathan). The end of the percent scale is labelled with a ?. The top bar is labelled Jonathan and has length 420cm. The bottom bar is labelled Kendra and has length 350cm.    In this case, the fraction of the length of Jonathan's rope over Kendra's is   So the length of Jonathan's Rope is 120% the length of Kendra's rope.   "
-},
-{
-  "id": "sect-percents-3-6-7",
-  "level": "2",
-  "url": "sect-percents.html#sect-percents-3-6-7",
-  "type": "Example",
-  "number": "8.2.6",
-  "title": "",
-  "body": "  There are 400 spaces in a parking lot. 320 spaces had vehicles parked in them. How many percent fewer empty spots were there than filled spots?    We make two bars, one for the filled spots and one for the empty spots. The filled bar has length 320 and we label the sum of the two bars as 400 to the right. Since 100% represents the number of filled spots, we label the percent scale of 100% at the end of the filled bar.  Since the question is what percent fewer, then it is the amount below 100% on the filled bar.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"filled\" and has length 320. The bottom bar is labelled \"empty\". Together the two bars have a brace on the right and labelled 400. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"filled\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"empty\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"?%\".    The number of empty spaces is and the fraction of empty spaces (to those filled) is which is 25%, thus the percent fewer empty spots to those filled slots is    "
+  "body": "  A farmer collects eggs and finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we express this as the fraction . We then use equivalent fractions to write this with a denominator of 100: . So, 84% of the eggs are brown.   "
 },
 {
   "id": "sect-percents-4-5",
   "level": "2",
   "url": "sect-percents.html#sect-percents-4-5",
-  "type": "Example",
-  "number": "8.2.7",
-  "title": "",
-  "body": "  The price of an ounce of gold is $500. If it rises by 200%, find the new price.    In this case, the current price of gold is $500 per ounce represents 100%. We will also use a stacked bar diagram since there is a comparison being made.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    We'll use the unitary method and start with $500 is 100%. We seek 300%.   The new price of gold is $1500 per ounce.   "
+  "type": "Note",
+  "number": "8.2.3",
+  "title": "Knowing the Whole Unit is Key.",
+  "body": " Knowing the Whole Unit is Key  It cannot be emphasized enough how vital it is to understand the whole unit in a percentage problem. Because these problems can be tricky, you must think clearly to consistently solve them correctly.  "
 },
 {
-  "id": "sect-percents-4-6",
+  "id": "sect-percents-4-6-4",
   "level": "2",
-  "url": "sect-percents.html#sect-percents-4-6",
+  "url": "sect-percents.html#sect-percents-4-6-4",
+  "type": "Note",
+  "number": "8.2.4",
+  "title": "Good Diagrams with Percentages.",
+  "body": " Good Diagrams with Percentages  Producing an accurate diagram for percentage problems can be subtle. Here are some core strategies to help:   Clearly identify which quantity represents 100%.    When a problem compares two distinct quantities, use a stacked bar diagram.    All given percentages and sought-after target percentages belong exclusively on the percentage scale.    Any absolute quantities that you know or are searching for belong directly on or inside the bars, never on the percent scale.     "
+},
+{
+  "id": "sect-percents-4-6-6",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-4-6-6",
+  "type": "Example",
+  "number": "8.2.5",
+  "title": "",
+  "body": "  Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's rope is the length of Jonathan's rope?    As discussed, the crucial first step is determining what represents 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we align the end of Kendra's bar with 100%. Because we are seeking a percentage, we label the on the percentage scale directly above the end of Jonathan's bar.   Stacked bar diagram with two bars. Percent scale goes from 0 to over 100 percent. The top bar is Jonathan (420cm). The bottom bar is Kendra (350cm aligned to 100%).    The ratio of the length of Jonathan's rope relative to Kendra's rope is:   So, the length of Jonathan's rope is 120% of the length of Kendra's rope.   "
+},
+{
+  "id": "sect-percents-4-6-7",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-4-6-7",
+  "type": "Example",
+  "number": "8.2.6",
+  "title": "",
+  "body": "  There are 400 spaces in a parking lot. If 320 spaces have vehicles parked in them, what percentage fewer empty spots are there than filled spots?    We set up two bars: one representing filled spots and one for empty spots. The filled bar has a value of 320, and we denote the total combined capacity of 400 on the right. Since the filled spots act as our baseline comparison (100%), we align 100% on the scale with the end of the filled bar.  Since the problem asks for the percentage change \"fewer than filled\", we measure the missing percentage value below the 100% threshold.   Stacked bar diagram with filled bar (320) and empty bar. A brace on the right groups them to total 400. The percent scale above tracks the relative difference.    The number of empty spaces is , making the fraction of empty spaces relative to filled spots is: Since , the percentage of empty spots compared to filled spots is 25%. Thus, there are fewer empty spots than filled spots.   "
+},
+{
+  "id": "sect-percents-5-5",
+  "level": "2",
+  "url": "sect-percents.html#sect-percents-5-5",
+  "type": "Note",
+  "number": "8.2.7",
+  "title": "Allowed Operations in the Unitary Method.",
+  "body": " Allowed Operations in the Unitary Method  We can only use multiplication and division when using the Unitary method. Recall that we always begin with a known percentage and it corresponding value. The we manipulate it to find an unknown target scale. Determining the steps efficiently can sometimes be tricky.  Generally, the safest first step is scaling down the values using division. You can divide by the Greatest Common Factor of both sides, though any common factor works. Once you establish a smaller base value, you can easily scale up to your target configuration.  "
+},
+{
+  "id": "subsect-percent-teacher-solution-3",
+  "level": "2",
+  "url": "sect-percents.html#subsect-percent-teacher-solution-3",
   "type": "Example",
   "number": "8.2.8",
   "title": "",
-  "body": "  Mary bought a dress at a discount of 25%. If the discount was $15, how much did she pay for the dress?    First, 100% represents the full price of the dress. We're looking for the discounted price of the dress, so we use the following diagram:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To find the solution, we'll use the unitary method starting with the known relationship between price and percent:   The full price of the dress is $60.   "
+  "body": "  Find a Teacher's Solution to the following problem: The price of an ounce of gold is $500. If it rises by 200%, find the new price.     Here, the base price of $500 represents our initial 100% value. Because an explicit comparative change is occurring, we will model this using a stacked bar diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    Using the unitary method starting with our baseline equation: Thus, the new price of gold is $1500 per ounce.   "
 },
 {
-  "id": "sect-percents-4-7",
+  "id": "subsect-percent-teacher-solution-4",
   "level": "2",
-  "url": "sect-percents.html#sect-percents-4-7",
+  "url": "sect-percents.html#subsect-percent-teacher-solution-4",
   "type": "Example",
   "number": "8.2.9",
   "title": "",
-  "body": "  Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?    We start with a diagram and note that Xavier's number of stickers is 100%. 10% and 420 is also labelled on the diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    We then use the unitary method to find the answer. Since Alfred has 110% and Xavier is 100%, together they have 210% and that total is 420. We start with this and get to 110%.   Thus, Alfred has 220 stickers.   "
+  "body": "  Find a Teacher's Solution to the following problem: Mary bought a dress at a discount of 25%. If the discount saved her $15, how much did she pay for the dress?     To begin, 100% represents the original full price of the dress. Since we are isolating what she actually paid after the markdown, our diagram looks like this:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To resolve the value, we evaluate our known core relationship using the unitary method: Mary paid $45 for the dress. (Alternatively, finding 100% yields a full price of $60, and evaluating confirms our result.)   "
 },
 {
-  "id": "sect-percents-4-8",
+  "id": "subsect-percent-teacher-solution-5",
   "level": "2",
-  "url": "sect-percents.html#sect-percents-4-8",
+  "url": "sect-percents.html#subsect-percent-teacher-solution-5",
   "type": "Example",
   "number": "8.2.10",
   "title": "",
-  "body": "  If a price is reduced by 20% and then the sale price is further reduced by 30%, what percent is the overall reduction?    This is a tricky problem in that the two percentages are referring to different whole units. Note also that the question is the overall reduction. Since percent is the fraction out of 100, we will use the original price of $100 and then sale prices will be percents.  To get started, the first percent of 20% is relative to the original price.      This is a relatively easy calculation in that the first sale is or in terms of dollars, $80.  We repeat this now using the first sale price as 100% or      In this case the 100% is $80. Reducing by 30% means that the second sale price is 70% of the first sale price. This means that the cost is . The second sale price is $56.  This means that new sale price is 56% of the original price or . Since we took the original price of $100, then the total percent reduction is 44%.   "
+  "body": "  Find a Teacher's Solution to the following problem: Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?     We construct the diagram, noting that because Alfred is being compared directly to Xavier, Xavier's stickers represent our 100% base. The 10% delta and the absolute total of 420 are mapped out below:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    Since Alfred's stickers represents 110% of Xavier's stickers and Xavier holds 100%, their combined total represents 210% of our base unit, matching 420 stickers. We apply the unitary method to isolate Alfred's 110%: Thus, Alfred has 220 stickers.   "
+},
+{
+  "id": "subsect-percent-teacher-solution-6",
+  "level": "2",
+  "url": "sect-percents.html#subsect-percent-teacher-solution-6",
+  "type": "Example",
+  "number": "8.2.11",
+  "title": "",
+  "body": "  Find a Teacher's Solution to the following problem: If an initial price is reduced by 20% and the resulting sale price is subsequently reduced by an additional 30%, what is the overall total percentage reduction?     This is a classic multi-step problem that catches many students because the two sequential markdown percentages apply to entirely different whole units. To keep things clear and readable, we can assign a hypothetical baseline original price of $100. This ensures our dollar changes map perfectly 1:1 back to overall percentages.  Step 1: The initial markdown of 20% applies directly to our original base unit ($100).   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Original\" and has a length of $100. The bottom bar is labelled \"First Sale\" and has a length of ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Original\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"First Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"20%\".    This initial phase leaves us with of the original price, which translates directly to $80.  Step 2: We re-evaluate the system. The new 30% markdown treats our intermediate $80 value as its new 100% whole unit base.   Stacked diagram displaying the second reduction. There are three horizontal bars and a percent scale above. The top bar is labelled \"Original\" and has a length of $100. The middle bar is labelled \"First Sale\" and has a length of $80. The bottom bar is labelled \"Second Sale\" and has a length of ?. The percent scale is above the three bars. The left is labelled 0% and the right (which is even with the \"First Sale\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Second Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"30%\".    In this secondary scope, our baseline 100% is $80. Slashing that by 30% means the final price retains exactly 70% of that intermediate value: . Our final net price is $56.  This means our new final price is 56% of our absolute starting original price. Evaluating the raw difference yields: . Because we carefully based our initialization on a clean $100 baseline, this absolute loss translates perfectly to a total net reduction of 44%.   "
+},
+{
+  "id": "exercises-percentages-1",
+  "level": "2",
+  "url": "sect-percents.html#exercises-percentages-1",
+  "type": "Exercise",
+  "number": "8.2.4.1",
+  "title": "",
+  "body": "  Provide a complete Teacher's Solution for each problem below, making sure to explicitly identify what represents the baseline whole unit . We highly recommend utilizing the unitary method. Hint on task (c): The answer is not 10%.     Exactly 36 out of 400 seats in a movie theater are vacant. What percentage of the total seats are vacant?      Exactly of the students enrolled at a school wear prescription glasses. What percentage of the student body wears glasses?      Eva started with 3 m of fabric cloth. She used 75 cm of it to construct a miniature dress for her doll. What percentage of her original cloth stock did she use for the dress?      A total of 45 medals were awarded at a regional band competition. If there were 22 bronze medals and 14 silver medals awarded with the remainder consisting entirely of gold medals, what percentage of the total pool were gold medals?      Kristine spends 30% of her total savings on a luxury watch, and then uses 60% of her remaining savings to purchase a designer dress. What percentage of her original savings is left over?    "
+},
+{
+  "id": "exercises-percentages-2",
+  "level": "2",
+  "url": "sect-percents.html#exercises-percentages-2",
+  "type": "Exercise",
+  "number": "8.2.4.2",
+  "title": "",
+  "body": "  Provide a complete Teacher's Solution for each problem below. Be careful; some configurations require subtle tracking. Make sure you explicitly state what represents the base whole unit and track your transformations via the unitary method.     There are 200 members in a community club. If 60% of them are male, what percentage more males are there than females?      Exactly 40% of the beads inside a craft box are red, while the remaining balance are yellow. If there are 36 more yellow beads than red beads inside the container, how many total beads are there altogether?      A shop offers variable promotional discounts to different customers. Libby paid $600 for a premium watch at a fixed discount of 20%. Scott purchased the exact same watch model but paid $630. What percentage markdown was given to Scott?      Mary's salary is 10% higher than Alice's salary. If their combined total salary is $4200, what is Mary's individual salary?      John spent 20% of his money on lunch. He then spent of his remaining funds on a toy. If the toy cost exactly $12, how much money did John have originally?    "
 },
 {
   "id": "sect-convert-units",
