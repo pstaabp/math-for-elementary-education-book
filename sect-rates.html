@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Rates, Speed, and Arithmetic with Units</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="source/custom-style.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta name="twitter:title" content="Mathematics for Elementary Educators">
+<meta property="og:title" content="Mathematics for Elementary Educators">
+<meta property="book:title" content="Mathematics for Elementary Educators">
+<meta name="twitter:description" content="The foundational mathematics for future teachers">
+<meta property="og:description" content="The foundational mathematics for future teachers">
+<meta name="twitter:card" content="summary">
+<script src="_static/pretext/js/jquery.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '8.1.2';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.d0616b3d72ab3b06.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.af9055d29ed602c4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="math-elem-education" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="math-elementary-educators.html"><span class="title">Mathematics for Elementary Educators</span> <span class="subtitle">The foundational mathematics for future teachers</span></a></h1>
+<p class="byline">Peter Staab</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sect-convert-units.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-ratio-percents.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-integers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\require{ams}  \newcommand{\N}{\mathbb N} 
+  \newcommand{\Z}{\mathbb Z} 
+  \newcommand{\Q}{\mathbb Q} 
+  \newcommand{\R}{\mathbb R} 
+\newcommand{\numc}[1]{\bigcirc\llap{\scriptsize{#1}\kern.3em}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="front-colophon.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-preliminary.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminary Material</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-preliminary-3.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Mathematical Logic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-3" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Mathematical Equations and Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-4" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Mathematical Identities</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-preliminary-3.html#ch-preliminary-3-5" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Using the Equals Sign correctly</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-preliminary-4.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Counterexamples</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sect-abstraction.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Mathematical Abstraction</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sect-calculators.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Calculators and Computers</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sect-mathematical-curiosity.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Mathematical Curiosity</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-numbers.html" class="internal"><span class="codenumber">2</span> <span class="title">Numbers: the essence of mathematics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Decimal Numbers and Models for Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-4" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Counting</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-hindu-arabic-numbers-5" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Model and Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#sect-ha-numbers" class="internal"><span class="codenumber">2.1.3</span> <span class="title">The Decimal Number System, Egyptian numbers and the Place Value System</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#exercises-" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sect-hindu-arabic-numbers.html#ws-decimal-numbers" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Group Work for Decimal Numbers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Addition</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-props" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Properties of Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-add-strategies" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition.html#sect-addition-place-value" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Addition and Place Value</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-addition.html#exercises-sect-addition" class="internal"><span class="codenumber">2.2.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sect-addition.html#ws-addition" class="internal"><span class="codenumber">2.2.5</span> <span class="title">Group Work for Addition</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-subtraction.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Subtraction</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-4" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Subtraction Interpretations:</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-set-models" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Subtraction Diagrams for Set Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-diagram-measurement-models" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Subtraction Diagrams for Measurement Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-thinking-strategies-subtraction" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Thinking Strategies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-8" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Subtraction and Place Value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-9" class="internal"><span class="codenumber">2.3.6</span> <span class="title">Subtraction with the chip/coin model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction.html#sect-subtraction-10" class="internal"><span class="codenumber">2.3.7</span> <span class="title">Subtraction with the DLB model</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction.html#exercises-sect-subtraction" class="internal"><span class="codenumber">2.3.8</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sect-subtraction.html#ws-subtraction" class="internal"><span class="codenumber">2.3.9</span> <span class="title">Group Work for Subtraction</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Multiplication</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-4" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Models of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-5" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Properties of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication.html#sect-multiplication-6" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-multiplication.html#exercises-multiplication" class="internal"><span class="codenumber">2.4.4</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sect-multiplication.html#ws-multiplication" class="internal"><span class="codenumber">2.4.5</span> <span class="title">Group Work for Multiplication</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-division.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-4" class="internal"><span class="codenumber">2.5.1</span> <span class="title">Set Model for partitive and measurement</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-5" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Division Interpretation and Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-6" class="internal"><span class="codenumber">2.5.3</span> <span class="title">Division with Remainders</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-division.html#sect-division-7" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Division by Zero</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-division.html#exercises-sect-division" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-alt-numbers.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Alternative Number Systems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-4" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Tallies</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-alt-numbers-5" class="internal"><span class="codenumber">2.6.2</span> <span class="title">Egyptian Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-roman-numbers" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Roman Numerals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-mayan-system" class="internal"><span class="codenumber">2.6.4</span> <span class="title">Mayan Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-alt-numbers.html#sect-base-five" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Base-5 Numbers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-alt-numbers.html#exercises-alt-numbers" class="internal"><span class="codenumber">2.6.6</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sect-alt-numbers.html#ws-alt-numbers" class="internal"><span class="codenumber">2.6.7</span> <span class="title">Worksheet</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-models.html" class="internal"><span class="codenumber">3</span> <span class="title">Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-diagrams-models.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Diagrams and Models</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-set-diagram" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Set Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-5" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Rectangular Grids (or Arrays)</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-6" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Number Line Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-7" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Bar Diagrams</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-diagrams-models.html#sect-diagrams-models-8" class="internal"><span class="codenumber">3.1.5</span> <span class="title">Coin/Chip Models</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-diagrams-models.html#exercises-diagrams" class="internal"><span class="codenumber">3.1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-word-problems.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Word Problems</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-4" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Writing Good Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-word-problems.html#sect-word-problems-5" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Covering All Interpretations</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-word-problems.html#exercises-word-problems" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-worksheet"><div class="toc-title-box"><a href="sect-word-problems.html#ws-word-problems" class="internal"><span class="codenumber">3.2.4</span> <span class="title">Worksheet</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-teachers-solutions.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Teacher’s Solutions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-4" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Solving Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-teachers-solutions.html#sect-teachers-solutions-5" class="internal"><span class="codenumber">3.3.2</span> <span class="title">The Unitary Method and Multi-step problems</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-teachers-solutions.html#exercises-teachers-solutions" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-thinking-strategies.html" class="internal"><span class="codenumber">4</span> <span class="title">Thinking Strategies and Mental Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-thinking-strategies.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Thinking Strategies</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-4" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Thinking Strategies for Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-5" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Thinking Strategies for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-6" class="internal"><span class="codenumber">4.1.3</span> <span class="title">Thinking Strategies for Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-7" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Thinking Strategies for Division</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-thinking-strategies.html#sect-thinking-strategies-8" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-mental-math.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Mental Math</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-4" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Writing Mental Math</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-5" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Mimicking the Algorithms</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-6" class="internal"><span class="codenumber">4.2.3</span> <span class="title">Rearranging and Compatible Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#sect-mental-math-7" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Compensation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-mental-math.html#subsec-mental-math-algorithms" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Mental Math and the Algorithms</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-mental-math.html#exercises-mental-math" class="internal"><span class="codenumber">4.2.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-rounding.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Estimation and Rounding</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-4" class="internal"><span class="codenumber">4.3.1</span> <span class="title">Rounding</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-estimation" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-6" class="internal"><span class="codenumber">4.3.3</span> <span class="title">What is a good estimation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-7" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Range Estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rounding.html#sect-rounding-8" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Teaching Estimates</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-algorithms.html" class="internal"><span class="codenumber">5</span> <span class="title">Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-addition-algorithms.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Addition Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-4" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Prerequisite for Column Addition with Bundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-5" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Chip Models For Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-6" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Lattice Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-addition-algorithms.html#sect-addition-algorithms-7" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Base-5 Addition</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-addition-algorithms.html#exercises-addition-algorithm" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-subtraction-algorithm.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Subtraction Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-4" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Coin Model</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-5" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Chip Model for Subtraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-6" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-7" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Chip Model of Subtraction with Unbundling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#sect-subtraction-algorithm-8" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Base-5 Subtraction</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-subtraction-algorithm.html#exercises-subtraction-algorithm" class="internal"><span class="codenumber">5.2.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication-algorithm.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Multiplication Algorithms</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-4" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Stages to Learning Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-5" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Expanded Form of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-6" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Box Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-7" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Chip Models with Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-8" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Lattice Model of Multiplication</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#sect-multiplication-algorithm-9" class="internal"><span class="codenumber">5.3.6</span> <span class="title">Base-5 multiplication</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-multiplication-algorithm.html#exercises-mulitiplication-algorithm" class="internal"><span class="codenumber">5.3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-long-division.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Long Division</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-4" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Long Division with 1-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-5" class="internal"><span class="codenumber">5.4.2</span> <span class="title">The long division algorithm and the Quotient Remainder Theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-6" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Extending the Long Division method to multiple-digit divisors</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-estimation" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Long Division using estimation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-long-division.html#sect-long-division-8" class="internal"><span class="codenumber">5.4.5</span> <span class="title">Base-5 Long Division</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-long-division.html#exercises-long-division" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-primes.html" class="internal"><span class="codenumber">6</span> <span class="title">Factors, Primes and Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-even-odd.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Even and Odd Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-even-odd.html#sect-lemmas-theorem-proofs" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Lemmas, Theorems and Proofs</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-even-odd.html#exercises-even-odd" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-tests.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Divisibility Tests</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-4" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Grid Diagrams for Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-5" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Long Division and Divisibility</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#sect-divisibility-tests-6" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-tests.html#subsect-divisibility-tests" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Divisibility Test for small whole numbers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-divisibility-tests.html#exercises-divisibility-tests" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Primes and the Fundamental Theorem of Arithmetic</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-4" class="internal"><span class="codenumber">6.3.1</span> <span class="title">The Sieve of Eratosthenes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-factor-trees" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Prime Factorization and Factor Trees</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#sect-fundamental-theorem-arithmetic-6" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Primality Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#subsec-prime-applications" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Applications of Prime Factorization</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-fundamental-theorem-arithmetic.html#exercises-primes" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-gcf-lcm.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Greatest Common Factors and Least Common Multiples</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-4" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Greatest Common Factor</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-5" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Least Common Multiple</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-6" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Euclid’s Algorithm</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-gcf-lcm.html#sect-gcf-lcm-7" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Relationship between LCM and GCF</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-gcf-lcm.html#exercises-gcf-lcm" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-divisibility-proofs.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Prime Number and Divisibility Proofs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-3" class="internal"><span class="codenumber">6.5.1</span> <span class="title">The Divisibility Lemma</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-4" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Divisibility Test Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-5" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Prime Number Proofs</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-6" class="internal"><span class="codenumber">6.5.4</span> <span class="title">How many primes are there?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-7" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Proof by Contradiction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-divisibility-proofs.html#sect-divisibility-proofs-8" class="internal"><span class="codenumber">6.5.6</span> <span class="title">The Greatest Common Factors and Lowest Common Multiples</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-fractions.html" class="internal"><span class="codenumber">7</span> <span class="title">Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-fraction-basics.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Fraction Basics</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-3" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Fractions and Units</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-4" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Fraction Models</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-5" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Ordering of Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-6" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Fraction Equivalents</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#sect-fraction-basics-7" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Improper Fractions and Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-fraction-basics.html#subsec-teachers-solutions" class="internal"><span class="codenumber">7.1.6</span> <span class="title">Teachers’ Solutions</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-fraction-basics.html#exercises-fraction-basics" class="internal"><span class="codenumber">7.1.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-4.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Addition and Subtraction of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-3" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Addition and Subtracting with same denominators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-4" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-5" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Adding Fractions with unlike Denominators</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-6" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Algebraic Form for Adding/Subtracting Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-7" class="internal"><span class="codenumber">7.2.5</span> <span class="title">Finding a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-8" class="internal"><span class="codenumber">7.2.6</span> <span class="title">Using the Lowest Common Multiple to find a Common Denominator</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-4.html#ch-fractions-4-9" class="internal"><span class="codenumber">7.2.7</span> <span class="title">Adding and Subtracting Mixed Numbers</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-fractions-4.html#exercises-adding-subtracting-fractions" class="internal"><span class="codenumber">7.2.8</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-multiplication-fractions.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Multiplication of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-fractions.html#sect-multiplication-fractions-3" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Multiplication of a whole number and a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-fractions.html#sect-multiplication-fractions-4" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Fraction times a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-fractions.html#sect-multiplication-fractions-5" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Fraction times a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-fractions.html#sect-multiplication-fractions-6" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Mixed number times mixed number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-fractions.html#subsect-reducing-fraction-products" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Factoring Fractions and Canceling</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-multiplication-fractions.html#sect-multiplication-fractions-8" class="internal"><span class="codenumber">7.3.6</span> <span class="title">Word Problems</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-multiplication-fractions.html#exercises-fraction-multiplication" class="internal"><span class="codenumber">7.3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-6.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Division of Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-3" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Review of Partitive and Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-4" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Drawing a Partitive Division Diagram</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-5" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Dividing a whole number by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-6" class="internal"><span class="codenumber">7.4.4</span> <span class="title">Dividing a fraction by a whole number</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-7" class="internal"><span class="codenumber">7.4.5</span> <span class="title">Dividing a whole number by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-8" class="internal"><span class="codenumber">7.4.6</span> <span class="title">Dividing a fraction by a fraction</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-9" class="internal"><span class="codenumber">7.4.7</span> <span class="title">Fraction Division Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-10" class="internal"><span class="codenumber">7.4.8</span> <span class="title">Word Problem for Measurement Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-11" class="internal"><span class="codenumber">7.4.9</span> <span class="title">Word Problem for Partitive Division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-6.html#ch-fractions-6-12" class="internal"><span class="codenumber">7.4.10</span> <span class="title">2-step fraction word problems</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="ch-fractions-6.html#exercises-fraction-division" class="internal"><span class="codenumber">7.4.11</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-fractions-7.html" class="internal"><span class="codenumber">7.5</span> <span class="title">An Axiomatic View of Understanding Fractions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-7.html#ch-fractions-7-3" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Product of Reciprocals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-fractions-7.html#ch-fractions-7-4" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Proofs of the 5 Properties</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-ratio-percents.html" class="internal"><span class="codenumber">8</span> <span class="title">Ratios, Percents and Rates</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-ratios-proportions.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Ratios and Proportions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-ratios-proportions.html#sect-ratios-proportions-4" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Extending Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-ratios-proportions.html#sect-ratios-proportions-5" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Equivalent Ratios</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-ratios-proportions.html#sect-ratios-proportions-6" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Word Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-ratios-proportions.html#sect-ratios-proportions-7" class="internal"><span class="codenumber">8.1.4</span> <span class="title">Proportions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-ratios-proportions.html#sect-ratios-proportions-8" class="internal"><span class="codenumber">8.1.5</span> <span class="title">Changing Ratios</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-ratios-proportions.html#exercises-ratios" class="internal"><span class="codenumber">8.1.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-percents.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Percentages</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-percents.html#sect-percents-4" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Percentages and the Whole Unit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-percents.html#sect-percents-5" class="internal"><span class="codenumber">8.2.2</span> <span class="title">The Unitary Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-percents.html#subsect-percent-teacher-solution" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Teacher’s Solutions of Percentage Problems</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-percents.html#exercises-percentages" class="internal"><span class="codenumber">8.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-convert-units.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Converting Units</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-convert-units.html#subsect-dimensional-analysis" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Dimensional Analysis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-convert-units.html#subsec-advanced-dimensional-analysis" class="internal"><span class="codenumber">8.3.2</span> <span class="title">Advanced Dimensional Analysis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-convert-units.html#subsec-units" class="internal"><span class="codenumber">8.3.3</span> <span class="title">More Details on Units</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sect-convert-units.html#exercises-unit-conversions" class="internal"><span class="codenumber">8.3.4</span> <span class="title">Unit Conversion Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sect-rates.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Rates, Speed, and Arithmetic with Units</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rates.html#subsect-rates" class="internal"><span class="codenumber">8.4.1</span> <span class="title">Rates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-rates.html#sect-rates-4" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Combining Rates</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-integers.html" class="internal"><span class="codenumber">9</span> <span class="title">Integers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-negative-numbers.html" class="internal"><span class="codenumber">9.1</span> <span class="title">Negative Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-negative-numbers.html#sect-negative-numbers-3" class="internal"><span class="codenumber">9.1.1</span> <span class="title">Models for the integers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-negative-numbers.html#sect-negative-numbers-4" class="internal"><span class="codenumber">9.1.2</span> <span class="title">Basics of Integers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-negative-numbers.html#sect-negative-numbers-5" class="internal"><span class="codenumber">9.1.3</span> <span class="title">Integer Addition</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-negative-numbers.html#sect-negative-numbers-6" class="internal"><span class="codenumber">9.1.4</span> <span class="title">Another Fundamental Rule of Integers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-negative-numbers.html#sect-negative-numbers-7" class="internal"><span class="codenumber">9.1.5</span> <span class="title">Other models for Integers</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-arithmetic-integers.html" class="internal"><span class="codenumber">9.2</span> <span class="title">Arithmetic With Integers</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-arithmetic-integers.html#subsec-arithmetic-proofs" class="internal"><span class="codenumber">9.2.1</span> <span class="title">Arithmetic Proofs</span></a></div></li></ul>
+</li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="ch-integers-5.html" class="internal"><span class="codenumber">9.3</span> <span class="title">Order Properties</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-decimals.html" class="internal"><span class="codenumber">10</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sect-decimals.html" class="internal"><span class="codenumber">10.1</span> <span class="title">Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-decimals.html#sect-decimals-3" class="internal"><span class="codenumber">10.1.1</span> <span class="title">Introduction of Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-decimals.html#sect-decimals-4" class="internal"><span class="codenumber">10.1.2</span> <span class="title">Operations with Decimals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-decimals.html#sect-decimals-5" class="internal"><span class="codenumber">10.1.3</span> <span class="title">Multiplying and Dividing by 10</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sect-decimals.html#sect-decimals-6" class="internal"><span class="codenumber">10.1.4</span> <span class="title">Multi-digit Decimal Multiplication and Division</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-decimals-4.html" class="internal"><span class="codenumber">10.2</span> <span class="title">Decimals and Rational Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-decimals-4.html#ch-decimals-4-3" class="internal"><span class="codenumber">10.2.1</span> <span class="title">Fractions with denominators <span class="process-math">\(10^{n}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-decimals-4.html#ch-decimals-4-4" class="internal"><span class="codenumber">10.2.2</span> <span class="title">Converting a fraction to a decimal using long division</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-decimals-4.html#ch-decimals-4-5" class="internal"><span class="codenumber">10.2.3</span> <span class="title">Rational-Decimal Fact 1</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="ch-decimals-5.html" class="internal"><span class="codenumber">10.3</span> <span class="title">Non-finite Decimals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-decimals-5.html#ch-decimals-5-3" class="internal"><span class="codenumber">10.3.1</span> <span class="title">Rational-Decimal Fact 2</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-decimals-5.html#ch-decimals-5-4" class="internal"><span class="codenumber">10.3.2</span> <span class="title">Rational-Decimal Fact 3</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="ch-decimals-5.html#ch-decimals-5-5" class="internal"><span class="codenumber">10.3.3</span> <span class="title">Converting Repeating Decimals to rational numbers</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content">
+<section class="section" id="sect-rates">
+<h2 class="heading hide-type">
+<span class="type">Section</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rates, Speed, and Arithmetic with Units</span>
+</h2>
+<section class="introduction" id="sect-rates-2">
+<div class="para" id="sect-rates-2-1">I’m sure that you have problems like the following: <em class="emphasis">If you drive 30 miles per hour, how far do you drive in 2 hours?</em>. This is a fairly standard rate problem with the rate 30 miles per hour. To solve this, hopefully intuitively, it is 60 miles (multiply 30 and 2). But other rate problems might require dividing the numbers. How do you know what is appropriate?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rates-2-2">The problems in this section will use the same technique from the previous section on unit conversion and we’ll see why shortly.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></section>
+<section class="subsection" id="subsect-rates">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.1</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Rates</span>
+</h3>
+<div class="para" id="subsect-rates-2">With the example above, you might remember that a <em class="emphasis">rate</em> tells you how fast (or slow) something is occurring in that it is some quantity per some unit of time. The example above is miles per hour, but other rates could in feet per second, or cupcakes per week or gallons per minute.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsect-rates-3">However, we’re going to broaden this idea of rate requiring a unit of time to the following:<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="definition definition-like" id="subsect-rates-4"><h4 class="heading">
+<span class="type">Definition</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.1</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsect-rates-4-1-1">Rate A <em class="alert">rate</em> is a quotient of two quantities with different specified units.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 8.4.1"><a href="#subsect-rates-4" title="Copy heading and permalink for Definition 8.4.1" aria-label="Copy heading and permalink for Definition 8.4.1">🔗</a></div>
+</article>
+<div class="para logical" id="subsect-rates-5">
+<div class="para">Using this definition of rate, 10 feet per second, 500 cupcakes per week and 15 gallons per minutes all fit this definition, however, the following work as well:</div>
+<div class="displaymath process-math" id="subsect-rates-5-1">
+\begin{equation*}
+\frac{10\text{ yd$^{2}$}}{4\text{ shirts}}, \quad \frac{6 \text{ bags of concrete}}{15\text{ cubic feet}}, \quad \frac{1 \text{ pound of sugar}}{2 \text{ gallons}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="subsect-rates-6">How do we solve problems using rates like this. The following explains the general idea of<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="subsect-rates-7"><h4 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.2</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Solving Problems with Rates.</span>
+</h4>
+<div class="para logical" id="subsect-rates-7-2">
+<div class="para">Consider a word problem in which units play a role. There are generally two different pieces of information in the problem.</div>
+<ol class="decimal" id="subsect-rates-7-2-1">
+<li id="subsect-rates-7-2-1-1">
+<div class="para" id="subsect-rates-7-2-1-1-1">
+<em class="emphasis">rates</em> which are often written as sentences that given how a unit represents some other unit.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-7-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsect-rates-7-2-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsect-rates-7-2-1-2">
+<div class="para" id="subsect-rates-7-2-1-2-1">
+<em class="emphasis">given information</em>, which is often in the question of the problem. This should have a unit as well.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-7-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsect-rates-7-2-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-7-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsect-rates-7-3">
+<div class="para">To solve this:</div>
+<ol class="decimal" id="subsect-rates-7-3-1">
+<li id="subsect-rates-7-3-1-1">
+<div class="para" id="subsect-rates-7-3-1-1-1">Write all rates as fractions with the units.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-7-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 1"><a href="#subsect-rates-7-3-1-1" title="Copy heading and permalink for Item 1" aria-label="Copy heading and permalink for Item 1">🔗</a></div>
+</li>
+<li id="subsect-rates-7-3-1-2">
+<div class="para" id="subsect-rates-7-3-1-2-1">Start with the given information (a number with a unit).<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-7-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 2"><a href="#subsect-rates-7-3-1-2" title="Copy heading and permalink for Item 2" aria-label="Copy heading and permalink for Item 2">🔗</a></div>
+</li>
+<li id="subsect-rates-7-3-1-3">
+<div class="para" id="subsect-rates-7-3-1-3-1">Multiply the quantity in #2 by rates, to ensure that the units cancel resulting in the correct unit in the answer.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-7-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 3"><a href="#subsect-rates-7-3-1-3" title="Copy heading and permalink for Item 3" aria-label="Copy heading and permalink for Item 3">🔗</a></div>
+</li>
+</ol>
+<div class="para">Note: this works for all of the unit conversion in section <a href="sect-convert-units.html" class="internal" title="Section 8.3: Converting Units">Section 8.3</a> as well.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-7-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 8.4.2: Solving Problems with Rates"><a href="#subsect-rates-7" title="Copy heading and permalink for Note 8.4.2: Solving Problems with Rates" aria-label="Copy heading and permalink for Note 8.4.2: Solving Problems with Rates">🔗</a></div>
+</article>
+<div class="para" id="subsect-rates-8">The steps above probably seem quite vague, so we spend the rest of this section covering examples in detail.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsect-rates-9"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.3</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsect-rates-9-1-1">If you drive 30 miles per hour, how far do you drive in 2 hours?<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="subsect-rates-9-1-2">
+<div class="para">First, we need to identify the rates and the given information. In this case, the rate is 30 miles per hour and is written:</div>
+<div class="displaymath process-math" id="subsect-rates-9-1-2-1">
+\begin{equation*}
+\frac{30\text{ miles}}{1\text{ hour}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-9-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> 
+<div class="para logical" id="subsect-rates-9-1-3">
+<div class="para">The given information is 2 hours. To solve this, we start with this quantity and multiply by rates:</div>
+<div class="displaymath process-math" id="subsect-rates-9-1-3-1">
+\begin{equation*}
+2\cancel{\text{ hours}}\times \frac{30\text{ miles}}{1\cancel{\text{ hour}}}= 60\text{ miles}
+\end{equation*}
+</div>
+<div class="para">where it is important that the unit “hours” cancels.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-9-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 8.4.3"><a href="#subsect-rates-9" title="Copy heading and permalink for Example 8.4.3" aria-label="Copy heading and permalink for Example 8.4.3">🔗</a></div>
+</article>
+<div class="para" id="subsect-rates-10">Since rates include units, sometimes it’s important to do unit conversion as well. The next couple of examples show this.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsect-rates-11"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.4</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsect-rates-11-1-1">If you drive 40 miles per hour, how far do you drive in 15 minutes? How long would it take to drive 100 miles?<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsect-rates-11-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="subsect-rates-11-2-1">
+<div class="para">Clearly, the main rate given in the problem is</div>
+<div class="displaymath process-math" id="subsect-rates-11-2-1-1">
+\begin{equation*}
+\frac{40\text{ miles}}{1\text{ hour}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-11-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsect-rates-11-2-2">
+<div class="para">However if we start with the given information of 15 minutes, the rate won’t cancel the minutes. We need the conversion 1 hour = 60 minutes as well</div>
+<div class="displaymath process-math" id="subsect-rates-11-2-2-1">
+\begin{equation*}
+15\cancel{\text{ minutes}}\times \frac{1\cancel{\text{ hour}}}{60\cancel{\text{ minutes}}}\times \frac{40\text{ miles}}{1\cancel{\text{ hour}}}= \frac{15 \times 40}{60}\text{ miles}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-11-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsect-rates-11-2-3">
+<div class="para">And the units cancel correctly, but you show also remember from <a href="sect-multiplication-fractions.html" class="internal" title="Section 7.3: Multiplication of Fractions">Section 7.3</a> that an efficient way to find the answer is first cancel common terms and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sect-multiplication-fractions.html" id="subsect-rates-11-2-3-2">
+\begin{equation*}
+\frac{15 \times 40}{60}\text{ miles}= \frac{15 \times 40}{15 \cdot 4}\text{ miles}= \frac{ 40}{4}\text{ miles}= 10 \text{ miles}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-11-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsect-rates-11-2-4">
+<div class="para">For the second question of how long it would take to drive 100 miles, this is the given information, so we start with this and the rate.</div>
+<div class="displaymath process-math" id="subsect-rates-11-2-4-1">
+\begin{equation*}
+100\cancel{\text{ miles}}\times \frac{1\text{ hour}}{40\cancel{\text{ miles}}}
+\end{equation*}
+</div>
+<div class="para">where 1) notice that the units cancel giving the answer in hours and 2) we have used the reciprocal of the rate as given in the problem to get the units to cancel.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-11-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsect-rates-11-2-5">
+<div class="para">The answer is</div>
+<div class="displaymath process-math" id="subsect-rates-11-2-5-1">
+\begin{equation*}
+\frac{100}{40}\text{ miles} = \frac{10}{4}\text{ miles}= \frac{5}{2}\text{ miles}
+\end{equation*}
+</div>
+<div class="para">or probably easier to say <span class="process-math">\(2 \frac{1}{2}\)</span> hours.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-11-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.4.1"><a href="#subsect-rates-11-2" title="Copy heading and permalink for Solution 8.4.4.1" aria-label="Copy heading and permalink for Solution 8.4.4.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.4.4"><a href="#subsect-rates-11" title="Copy heading and permalink for Example 8.4.4" aria-label="Copy heading and permalink for Example 8.4.4">🔗</a></div>
+</article>
+<article class="example example-like" id="subsect-rates-12"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.5</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsect-rates-12-1-1">A bakery makes 60 cupcakes in an hour. The bakery is open 8 hours each day. How many cupcakes can they make in 1 week?<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsect-rates-12-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="subsect-rates-12-2-1">
+<div class="para">There are two rates in this problem. We can write them as</div>
+<div class="displaymath process-math" id="subsect-rates-12-2-1-1">
+\begin{equation*}
+\frac{60\text{ cupcakes}}{1\text{ hour}}, \qquad \frac{8\text{ hours}}{1\text{ day}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-12-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="subsect-rates-12-2-2">
+<div class="para">The starting info is 1 week and from the question, we’re looking for the unit of “cupcakes”. Before we begin, we note that the starting unit of week is not in either of the rates, so we will need standard unit conversion as well.</div>
+<div class="displaymath process-math" id="subsect-rates-12-2-2-2">
+\begin{equation*}
+1\cancel{\text{ week}}\times \frac{7\cancel{\text{ days}}}{1\cancel{\text{ week}}}\times \frac{8\cancel{\text{ hours}}}{1\cancel{\text{ day}}}\times \frac{60\text{ cupcakes}}{1\cancel{\text{ hour}}}= 7 \times 8 \times 60 \text{ cupcakes}
+\end{equation*}
+</div>
+<div class="para">and some mental math or using the algorithm finishes the problem. The bakery can make 3360 cupcakes in a week.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-12-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.5.1"><a href="#subsect-rates-12-2" title="Copy heading and permalink for Solution 8.4.5.1" aria-label="Copy heading and permalink for Solution 8.4.5.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.4.5"><a href="#subsect-rates-12" title="Copy heading and permalink for Example 8.4.5" aria-label="Copy heading and permalink for Example 8.4.5">🔗</a></div>
+</article>
+<div class="para" id="subsect-rates-13">The previous examples used rates with time, however as we noted, any types can work as the next example shows.<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="subsect-rates-14"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.6</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsect-rates-14-1-1">A pattern for a shirt uses fabric. 4 shirts require 10 yd <span class="process-math">\(^{2}\)</span> of fabric. How many shirts can be made with 60 yd <span class="process-math">\(^{2}\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-14-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsect-rates-14-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="subsect-rates-14-2-1">
+<div class="para">First, note that the rate in this problem is</div>
+<div class="displaymath process-math" id="subsect-rates-14-2-1-1">
+\begin{equation*}
+\frac{10 \text{yd}^{2} }{4\text{ shirts} }
+\end{equation*}
+</div>
+<div class="para">and we start with 60 yd <span class="process-math">\(^{2}\)</span> and convert to the unit “shirts”.</div>
+<div class="displaymath process-math" id="subsect-rates-14-2-1-4">
+\begin{equation*}
+60\cancel{\text{ yd$^{2}$}}\times \frac{4\text{ shirts}}{10\cancel{\text{ yd$^{2}$}}}= \frac{240}{10}\text{ shirts}= 24\text{ shirts}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-14-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.6.1"><a href="#subsect-rates-14-2" title="Copy heading and permalink for Solution 8.4.6.1" aria-label="Copy heading and permalink for Solution 8.4.6.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.4.6"><a href="#subsect-rates-14" title="Copy heading and permalink for Example 8.4.6" aria-label="Copy heading and permalink for Example 8.4.6">🔗</a></div>
+</article>
+<article class="example example-like" id="subsect-rates-15"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.7</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="subsect-rates-15-1-1">A hose can fill a 5 gallon bucket in 15 minutes. In how many hours, will it take the hose to fill a 600 gallon pool?<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="subsect-rates-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="subsect-rates-15-2-1">
+<div class="para">In this case we start with 600 gallons and convert to hours. There is also one rate given in the problem.</div>
+<div class="displaymath process-math" id="subsect-rates-15-2-1-1">
+\begin{equation*}
+\frac{5\text{ gal}}{15\text{ min}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" id="subsect-rates-15-2-1-2">
+\begin{equation*}
+600\cancel{\text{ gallons}}\times \frac{15\cancel{\text{ min.}}}{5\cancel{\text{ gallon}}}\times \frac{1\text{ hr}}{60\cancel{\text{ min}}}
+\end{equation*}
+</div>
+<div class="para">and again, use factoring within the fraction to simplify the final operation</div>
+<div class="displaymath process-math" id="subsect-rates-15-2-1-3">
+\begin{equation*}
+\frac{600 \times 15 \times 1}{5 \times 60}= \frac{\cancel{60}\times 10 \times \cancel{5}\times 3}{\cancel{5} \times \cancel{60}}= 30
+\end{equation*}
+</div>
+<div class="para">which shows that it will take 30 hours to fill the pool.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#subsect-rates-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.7.1"><a href="#subsect-rates-15-2" title="Copy heading and permalink for Solution 8.4.7.1" aria-label="Copy heading and permalink for Solution 8.4.7.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.4.7"><a href="#subsect-rates-15" title="Copy heading and permalink for Example 8.4.7" aria-label="Copy heading and permalink for Example 8.4.7">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 8.4.1: Rates"><a href="#subsect-rates" title="Copy heading and permalink for Subsection 8.4.1: Rates" aria-label="Copy heading and permalink for Subsection 8.4.1: Rates">🔗</a></div>
+</section>
+<section class="subsection" id="sect-rates-4">
+<h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.2</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Combining Rates</span>
+</h3>
+<div class="para" id="sect-rates-4-2">Another common problem involving rates is that of combining them, such as if two people are doing the same job, how long will it take if they work together? Consider the following example:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-rates-4-3"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.8</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-rates-4-3-1-1">Paul can do a job in 2 hours, whereas Quinn can do the same job in 1 hour. How long will it take for them to do the job together?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Example 8.4.8"><a href="#sect-rates-4-3" title="Copy heading and permalink for Example 8.4.8" aria-label="Copy heading and permalink for Example 8.4.8">🔗</a></div>
+</article>
+<div class="para logical" id="sect-rates-4-4">
+<div class="para">Maybe these don’t seem like rates, but we can write them as</div>
+<div class="displaymath process-math" id="sect-rates-4-4-1">
+\begin{equation*}
+\frac{\text{1 job}}{\text{2 hours}}\qquad \frac{\text{1 job}}{\text{1 hour}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rates-4-5">Since we want to combine these, it seems natural to add them, but since rates work as written or as flipped there are two possibilities:<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rates-4-6">
+<dl class="description-list">
+<dt id="sect-rates-4-6-1-1">Option A<div class="autopermalink" data-description="Item: Option A"><a href="#sect-rates-4-6-1-1" title="Copy heading and permalink for Item: Option A" aria-label="Copy heading and permalink for Item: Option A">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rates-4-6-1-1-2">
+<div class="displaymath process-math" id="sect-rates-4-6-1-1-2-1">
+\begin{equation*}
+\frac{\text{1 job}}{\text{2 hours}} +\frac{\text{1 job}}{\text{1 hour}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-6-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sect-rates-4-6-1-2">Option B:<div class="autopermalink" data-description="Item: Option B:"><a href="#sect-rates-4-6-1-2" title="Copy heading and permalink for Item: Option B:" aria-label="Copy heading and permalink for Item: Option B:">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rates-4-6-1-2-2">
+<div class="displaymath process-math" id="sect-rates-4-6-1-2-2-1">
+\begin{equation*}
+\frac{\text{2 hours}}{\text{1 job}} +\frac{\text{1 hour}}{\text{1 job}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-6-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="para">and since the units are equal for the two rates (fraction), it’s fine to add them, but remember to add them as fractions. Finding the resulting rate is:</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rates-4-7">
+<dl class="description-list">
+<dt id="sect-rates-4-7-1-1">Option A:<div class="autopermalink" data-description="Item: Option A:"><a href="#sect-rates-4-7-1-1" title="Copy heading and permalink for Item: Option A:" aria-label="Copy heading and permalink for Item: Option A:">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rates-4-7-1-1-2">
+<div class="displaymath process-math" id="sect-rates-4-7-1-1-2-1">
+\begin{equation*}
+\frac{\text{1 job}}{\text{2 hours}} +\frac{\text{1 job}}{\text{1 hour}} = \biggl( \frac{1}{2} + \frac{1}{1} \biggr) \frac{\text{job}}{\text{hour}} = \biggl( \frac{1}{2} + \frac{2}{2} \biggr) \frac{\text{job}}{\text{hour}} = \frac{3}{2} \frac{\text{jobs}}{\text{hour}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-7-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+<dt id="sect-rates-4-7-1-2">Option B:<div class="autopermalink" data-description="Item: Option B:"><a href="#sect-rates-4-7-1-2" title="Copy heading and permalink for Item: Option B:" aria-label="Copy heading and permalink for Item: Option B:">🔗</a></div>
+</dt>
+<dd>
+<div class="para logical" id="sect-rates-4-7-1-2-2">
+<div class="displaymath process-math" id="sect-rates-4-7-1-2-2-1">
+\begin{equation*}
+\frac{\text{2 hours}}{\text{1 job}} +\frac{\text{1 hour}}{\text{1 job}} = \frac{3\text{ hours}}{1 \text{ job}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-7-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</dd>
+</dl>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rates-4-8">Which is the correct combined rates? Let’s think about it a bit. It should be that if two people do a job, that together will be faster than either along. In Option A, they can do <span class="process-math">\(\frac{3}{2}\)</span> jobs (or <span class="process-math">\(1\frac{1}{2}\)</span> jobs) in one hour, which is faster than either by themselves. In Option B, the will take 3 hours to do the job, which is slower. Clearly Option A is correct.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rates-4-9">
+<div class="para">Finally, to finish the problem, we start with the unit 1 job and find the amount of time as we have done with other problems in this section.</div>
+<div class="displaymath process-math" id="sect-rates-4-9-1">
+\begin{equation*}
+1\cancel{\text{ job}}\times \frac{2\cancel{\text{ hours}}}{3\cancel{\text{ jobs}}}\times \frac{60\text{ min.}}{1\cancel{\text{ hour}}}= \frac{120}{3}\text{ minutes}= 40\text{ minutes}
+\end{equation*}
+</div>
+<div class="para">where we have also introduce the unit conversion of hours to minutes.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sect-rates-4-10">Since there are two ways of adding rates (either the rates as given or flipped), here’s a good rule of thumb.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-10" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="note remark-like" id="sect-rates-4-11"><h4 class="heading">
+<span class="type">Note</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.9</span><span class="period heading-divison-mark heading-divison-mark__period">.</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="title">Combining Rates.</span>
+</h4>
+<div class="para" id="sect-rates-4-11-2">If there are two rates that are to be combined in the sense of completing a task, add the rates with the time unit in the denominator.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-11-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Note 8.4.9: Combining Rates"><a href="#sect-rates-4-11" title="Copy heading and permalink for Note 8.4.9: Combining Rates" aria-label="Copy heading and permalink for Note 8.4.9: Combining Rates">🔗</a></div>
+</article>
+<div class="para" id="sect-rates-4-12">This should help us in combining rates and we’ll see this in the following example.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-12" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-rates-4-13"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.10</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-rates-4-13-1-1">Brandon can shovel a driveway in 30 minutes. Eric can shovel the same driveway in 60 minutes. If they work together, how long will it take them?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-13-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-rates-4-13-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-rates-4-13-2-1">
+<div class="para">The rates in this problem are</div>
+<div class="displaymath process-math" id="sect-rates-4-13-2-1-1">
+\begin{equation*}
+\frac{1 \text{~driveway}}{30 \text{~minutes}}, \qquad \frac{1 \text{~driveway}}{60 \text{~minutes}}
+\end{equation*}
+</div>
+<div class="para">and if we take the rule of thumb above, we’ll add them with the minutes in the denominator.</div>
+<div class="displaymath process-math" id="sect-rates-4-13-2-1-2">
+\begin{equation*}
+\frac{1 \text{~driveway}}{30 \text{~minutes}}+ \frac{1 \text{~driveway}}{60 \text{~minutes}}= \frac{3 \text{~driveways}}{60 \text{~minutes}}= \frac{1 \text{~driveway}}{20 \text{~minutes}}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-13-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rates-4-13-2-2">
+<div class="para">Lastly, we’ll start with 1 driveway and convert to minutes:</div>
+<div class="displaymath process-math" id="sect-rates-4-13-2-2-1">
+\begin{equation*}
+1\cancel{\text{ driveway}}\times \frac{20 \text{ minutes}}{1 \cancel{\text{ driveway}}}= 20\text{ minutes}
+\end{equation*}
+</div>
+<div class="para">so it will take them 20 minutes to shovel the driveway.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-13-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.10.1"><a href="#sect-rates-4-13-2" title="Copy heading and permalink for Solution 8.4.10.1" aria-label="Copy heading and permalink for Solution 8.4.10.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.4.10"><a href="#sect-rates-4-13" title="Copy heading and permalink for Example 8.4.10" aria-label="Copy heading and permalink for Example 8.4.10">🔗</a></div>
+</article>
+<div class="para" id="sect-rates-4-14">This last example shows that this also works for more than 2 rates.<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="sect-rates-4-15"><h4 class="heading">
+<span class="type">Example</span><span class="space heading-divison-mark heading-divison-mark__space"> </span><span class="codenumber">8.4.11</span><span class="period heading-divison-mark heading-divison-mark__period">.</span>
+</h4>
+<div class="para" id="sect-rates-4-15-1-1">Bernard can paint a house in 30 hours. Cindy can paint the same house in 20 hours and Declan can do it in 40 hours. How long will it take to paint the house together?<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-15-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions">
+<details id="sect-rates-4-15-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period heading-divison-mark heading-divison-mark__period">.</span></summary>
+<div class="solution solution-like knowl__content">
+<div class="para logical" id="sect-rates-4-15-2-1">
+<div class="para">In this case, there are three rates:</div>
+<div class="displaymath process-math" id="sect-rates-4-15-2-1-1">
+\begin{equation*}
+\frac{1\text{ house}}{30\text{ hours}}, \qquad \frac{1\text{ house}}{20\text{ hours}}, \qquad \frac{1\text{ house}}{40\text{ hours}},
+\end{equation*}
+</div>
+<div class="para">and using the rate combining rule of thumb we’ll add them with hours in the denominator:</div>
+<div class="displaymath process-math" id="sect-rates-4-15-2-1-2">
+\begin{align*}
+\frac{1\text{ house}}{30\text{ hours}}+\frac{1\text{ house}}{20\text{ hours}}+ \frac{1\text{ house}}{40\text{ hours}} \amp = \biggl(\frac{1}{30}+ \frac{1}{20}+ \frac{1}{40}\biggr) \frac{\text{house}}{\text{hour}}\qquad\text{Recall that to make this problem easier use the LCM of these three numbers, or 120}\\
+\amp = \biggl(\frac{4}{120}+ \frac{6}{120}+ \frac{3}{120}\biggr) \frac{\text{house}}{\text{hour}} \\
+\amp = \frac{13}{120}\frac{\text{house}}{\text{hour}}= \frac{120}{13}\text{ hours} 
+\end{align*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-15-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sect-rates-4-15-2-2">
+<div class="para">Finally, to answer the question, we’ll start with 1 house and multiply by the rate:</div>
+<div class="displaymath process-math" id="sect-rates-4-15-2-2-1">
+\begin{equation*}
+1\cancel{\text{ house}}\times \frac{120 \text{ hour}}{13\cancel{\text{ house}}}
+\end{equation*}
+</div>
+<div class="para">and converting this to a mixed number, it will take them <span class="process-math">\(9\frac{3}{13}\)</span> hours to paint the house.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sect-rates-4-15-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.4.11.1"><a href="#sect-rates-4-15-2" title="Copy heading and permalink for Solution 8.4.11.1" aria-label="Copy heading and permalink for Solution 8.4.11.1">🔗</a></div>
+</div></details>
+</div>
+<div class="autopermalink" data-description="Example 8.4.11"><a href="#sect-rates-4-15" title="Copy heading and permalink for Example 8.4.11" aria-label="Copy heading and permalink for Example 8.4.11">🔗</a></div>
+</article><div class="autopermalink" data-description="Subsection 8.4.2: Combining Rates"><a href="#sect-rates-4" title="Copy heading and permalink for Subsection 8.4.2: Combining Rates" aria-label="Copy heading and permalink for Subsection 8.4.2: Combining Rates">🔗</a></div>
+</section><div class="autopermalink" data-description="Section 8.4: Rates, Speed, and Arithmetic with Units"><a href="#sect-rates" title="Copy heading and permalink for Section 8.4: Rates, Speed, and Arithmetic with Units" aria-label="Copy heading and permalink for Section 8.4: Rates, Speed, and Arithmetic with Units">🔗</a></div>
+</section>
+</div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sect-convert-units.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-integers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>

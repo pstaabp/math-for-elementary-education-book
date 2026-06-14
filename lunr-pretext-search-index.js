@@ -3142,9 +3142,9 @@ var ptx_lunr_docs = [
   "body": "  Use Euclid's Algorithm to show that the fraction is in reduce form. (Hint: find )   "
 },
 {
-  "id": "ch-fractions-5",
+  "id": "sect-multiplication-fractions",
   "level": "1",
-  "url": "ch-fractions-5.html",
+  "url": "sect-multiplication-fractions.html",
   "type": "Section",
   "number": "7.3",
   "title": "Multiplication of Fractions",
@@ -3153,43 +3153,43 @@ var ptx_lunr_docs = [
 {
   "id": "axiom-fraction-multiplication",
   "level": "2",
-  "url": "ch-fractions-5.html#axiom-fraction-multiplication",
+  "url": "sect-multiplication-fractions.html#axiom-fraction-multiplication",
   "type": "Property",
   "number": "7.3.1",
   "title": "Fraction Multiplication.",
   "body": " Fraction Multiplication   Let and be positive whole numbers, then    "
 },
 {
-  "id": "ch-fractions-5-5-9",
+  "id": "sect-multiplication-fractions-5-9",
   "level": "2",
-  "url": "ch-fractions-5.html#ch-fractions-5-5-9",
+  "url": "sect-multiplication-fractions.html#sect-multiplication-fractions-5-9",
   "type": "Example",
   "number": "7.3.2",
   "title": "",
   "body": "      "
 },
 {
-  "id": "ch-fractions-5-5-10",
+  "id": "sect-multiplication-fractions-5-10",
   "level": "2",
-  "url": "ch-fractions-5.html#ch-fractions-5-5-10",
+  "url": "sect-multiplication-fractions.html#sect-multiplication-fractions-5-10",
   "type": "Note",
   "number": "7.3.3",
   "title": "",
   "body": " Notice that a common denominator is not needed for multiplication, only for addition and subtraction.  "
 },
 {
-  "id": "ch-fractions-5-6-3",
+  "id": "sect-multiplication-fractions-6-3",
   "level": "2",
-  "url": "ch-fractions-5.html#ch-fractions-5-6-3",
+  "url": "sect-multiplication-fractions.html#sect-multiplication-fractions-6-3",
   "type": "Example",
   "number": "7.3.4",
   "title": "",
   "body": "  Multiplying Mixed Numbers  Find     First, we can write and and then where the last step used equivalent fractions to reduce it.   "
 },
 {
-  "id": "ch-fractions-5-8-3",
+  "id": "sect-multiplication-fractions-8-3",
   "level": "2",
-  "url": "ch-fractions-5.html#ch-fractions-5-8-3",
+  "url": "sect-multiplication-fractions.html#sect-multiplication-fractions-8-3",
   "type": "Example",
   "number": "7.3.5",
   "title": "",
@@ -3198,7 +3198,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercises-fraction-multiplication-1",
   "level": "2",
-  "url": "ch-fractions-5.html#exercises-fraction-multiplication-1",
+  "url": "sect-multiplication-fractions.html#exercises-fraction-multiplication-1",
   "type": "Exercise",
   "number": "7.3.7.1",
   "title": "",
@@ -3207,7 +3207,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercises-fraction-multiplication-2",
   "level": "2",
-  "url": "ch-fractions-5.html#exercises-fraction-multiplication-2",
+  "url": "sect-multiplication-fractions.html#exercises-fraction-multiplication-2",
   "type": "Exercise",
   "number": "7.3.7.2",
   "title": "",
@@ -3216,7 +3216,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercises-fraction-multiplication-3",
   "level": "2",
-  "url": "ch-fractions-5.html#exercises-fraction-multiplication-3",
+  "url": "sect-multiplication-fractions.html#exercises-fraction-multiplication-3",
   "type": "Exercise",
   "number": "7.3.7.3",
   "title": "",
@@ -3225,7 +3225,7 @@ var ptx_lunr_docs = [
 {
   "id": "exercises-fraction-multiplication-4",
   "level": "2",
-  "url": "ch-fractions-5.html#exercises-fraction-multiplication-4",
+  "url": "sect-multiplication-fractions.html#exercises-fraction-multiplication-4",
   "type": "Exercise",
   "number": "7.3.7.4",
   "title": "",
@@ -3706,7 +3706,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.2",
   "title": "Percentages",
-  "body": " Percentages     Understand what a percentage is and how it relates to fractions.    Understand the importance of the whole unit in percentage problems.    Use bar diagrams to solve percentage problems.    Use the unitary method to solve percentage problems.      Percentages are ubiquitous in any context involving numbers. For example:   Shopping   Shoes are now 35% off! Buy one, get the second for 50% off.     Grades   Your final grade is 85%.     Sports   Her shooting percentage is 65% (basketball) or the quarterback's completion percentage is 78% (football).     Money   Earn 2.1% on this savings account. Your tax rate is 18%. The interest rate on your credit card is 15.5%.       Percentage   A percentage is a fraction with a denominator of 100. That is, is the fraction .    For example, 36% and 50% or . It is important to have a firm grasp of fractions, especially equivalent fractions, to handle percentages effectively.    A farmer collects eggs and finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we express this as the fraction . We then use equivalent fractions to write this with a denominator of 100: . So, 84% of the eggs are brown.      Percentages and the Whole Unit  Since a percentage is a fraction with a denominator of 100, understanding percentages requires identifying what the whole unit is. In the egg example above, the whole unit is the total number of eggs. The 84% value is relative to that whole unit.  While this is straightforward in simple cases, percentages are often used to make comparisons. When that happens, the quantity being compared to serves as the whole unit. The following table shows a number of examples:      Phrase  Whole Unit (100%)    Johanna scored 5% more than Charlie on the exam.  Charlie's score on the exam.    Fred's income will rise 3% next year.  Fred's current income.    Becky's bake sale sold 10% fewer cookies than Faye's.  Number of cookies Faye's bake sale sold.    With a coupon, the price of the shirt will be reduced an additional 25% off the sale price.  The sale price of the shirt.     Knowing the Whole Unit is Key  It cannot be emphasized enough how vital it is to understand the whole unit in a percentage problem. Because these problems can be tricky, you must think clearly to consistently solve them correctly.    Bar Diagrams and Percentages  A very helpful way to visualize percentage problems is with a diagram, and in most situations, a bar diagram works best. When drawing one, always include a percentage scale along the top of the diagram. The bar below demonstrates the whole unit representing 100%.   A horizontal line with 10 tick marks. The leftmost is labeled 0%, the middle is 50%, and the rightmost is 100%. Below the line is a bar containing the word \"Whole\".     Good Diagrams with Percentages  Producing an accurate diagram for percentage problems can be subtle. Here are some core strategies to help:   Clearly identify which quantity represents 100%.    When a problem compares two distinct quantities, use a stacked bar diagram.    All given percentages and sought-after target percentages belong exclusively on the percentage scale.    Any absolute quantities that you know or are searching for belong directly on or inside the bars, never on the percent scale.      We present a few examples of word problems alongside their diagrams below.    Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's rope is the length of Jonathan's rope?    As discussed, the crucial first step is determining what represents 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we align the end of Kendra's bar with 100%. Because we are seeking a percentage, we label the on the percentage scale directly above the end of Jonathan's bar.   Stacked bar diagram with two bars. Percent scale goes from 0 to over 100 percent. The top bar is Jonathan (420cm). The bottom bar is Kendra (350cm aligned to 100%).    The ratio of the length of Jonathan's rope relative to Kendra's rope is:   So, the length of Jonathan's rope is 120% of the length of Kendra's rope.      There are 400 spaces in a parking lot. If 320 spaces have vehicles parked in them, what percentage fewer empty spots are there than filled spots?    We set up two bars: one representing filled spots and one for empty spots. The filled bar has a value of 320, and we denote the total combined capacity of 400 on the right. Since the filled spots act as our baseline comparison (100%), we align 100% on the scale with the end of the filled bar.  Since the problem asks for the percentage change \"fewer than filled\", we measure the missing percentage value below the 100% threshold.   Stacked bar diagram with filled bar (320) and empty bar. A brace on the right groups them to total 400. The percent scale above tracks the relative difference.    The number of empty spaces is , making the fraction of empty spaces relative to filled spots is: Since , the percentage of empty spots compared to filled spots is 25%. Thus, there are fewer empty spots than filled spots.       The Unitary Method  We previously used the unitary method in to help solve problems. Here, we adapt a modified version explicitly tailored for working with percentages. Let's return to the rope problem featuring Jonathan and Kendra.  From our visual model, we notice that a specific quantity is associated directly with a percentage benchmark. We start from that fixed ratio, applying uniform multiplication or division operations across both fields until we arrive at our target value.  In this context, we know that 100% corresponds to 350 cm, and we want to find out what percentage corresponds to 420 cm: Now that we have isolated 420 cm, we can clearly see it represents 120%.   Allowed Operations in the Unitary Method  We can only use multiplication and division when using the Unitary method. Recall that we always begin with a known percentage and it corresponding value. The we manipulate it to find an unknown target scale. Determining the steps efficiently can sometimes be tricky.  Generally, the safest first step is scaling down the values using division. You can divide by the Greatest Common Factor of both sides, though any common factor works. Once you establish a smaller base value, you can easily scale up to your target configuration.   In our rope problem, the GCD of 100 and 350 is 50. Dividing by the full GCD instead would look like this:   Notice that while we arrive at the exact same answer, navigating a step up from 2% to 120% involves slightly larger multipliers, making the mental math a bit more complex.    Teacher's Solutions of Percentage Problems  We will now examine how to develop formal step-by-step Teacher's Solutions for percentage applications. Like our previous models, every solution must include an explicit bar diagram. Remember that the diagram should have a percentage scale along the top, and all percentage values should be placed on that scale. Any values that are quantities should be placed on or inside the bars, never on the percentage scale.    Find a Teacher's Solution to the following problem: The price of an ounce of gold is $500. If it rises by 200%, find the new price.     Here, the base price of $500 represents our initial 100% value. Because an explicit comparative change is occurring, we will model this using a stacked bar diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    Using the unitary method starting with our baseline equation: Thus, the new price of gold is $1500 per ounce.      Find a Teacher's Solution to the following problem: Mary bought a dress at a discount of 25%. If the discount saved her $15, how much did she pay for the dress?     To begin, 100% represents the original full price of the dress. Since we are isolating what she actually paid after the markdown, our diagram looks like this:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To resolve the value, we evaluate our known core relationship using the unitary method: Mary paid $45 for the dress. (Alternatively, finding 100% yields a full price of $60, and evaluating confirms our result.)      Find a Teacher's Solution to the following problem: Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?     We construct the diagram, noting that because Alfred is being compared directly to Xavier, Xavier's stickers represent our 100% base. The 10% delta and the absolute total of 420 are mapped out below:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    Since Alfred's stickers represents 110% of Xavier's stickers and Xavier holds 100%, their combined total represents 210% of our base unit, matching 420 stickers. We apply the unitary method to isolate Alfred's 110%: Thus, Alfred has 220 stickers.      Find a Teacher's Solution to the following problem: If an initial price is reduced by 20% and the resulting sale price is subsequently reduced by an additional 30%, what is the overall total percentage reduction?     This is a classic multi-step problem that catches many students because the two sequential markdown percentages apply to entirely different whole units. To keep things clear and readable, we can assign a hypothetical baseline original price of $100. This ensures our dollar changes map perfectly 1:1 back to overall percentages.  Step 1: The initial markdown of 20% applies directly to our original base unit ($100).   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Original\" and has a length of $100. The bottom bar is labelled \"First Sale\" and has a length of ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Original\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"First Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"20%\".    This initial phase leaves us with of the original price, which translates directly to $80.  Step 2: We re-evaluate the system. The new 30% markdown treats our intermediate $80 value as its new 100% whole unit base.   Stacked diagram displaying the second reduction. There are three horizontal bars and a percent scale above. The top bar is labelled \"Original\" and has a length of $100. The middle bar is labelled \"First Sale\" and has a length of $80. The bottom bar is labelled \"Second Sale\" and has a length of ?. The percent scale is above the three bars. The left is labelled 0% and the right (which is even with the \"First Sale\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Second Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"30%\".    In this secondary scope, our baseline 100% is $80. Slashing that by 30% means the final price retains exactly 70% of that intermediate value: . Our final net price is $56.  This means our new final price is 56% of our absolute starting original price. Evaluating the raw difference yields: . Because we carefully based our initialization on a clean $100 baseline, this absolute loss translates perfectly to a total net reduction of 44%.        Provide a complete Teacher's Solution for each problem below, making sure to explicitly identify what represents the baseline whole unit . We highly recommend utilizing the unitary method. Hint on task (c): The answer is not 10%.     Exactly 36 out of 400 seats in a movie theater are vacant. What percentage of the total seats are vacant?      Exactly of the students enrolled at a school wear prescription glasses. What percentage of the student body wears glasses?      Eva started with 3 m of fabric cloth. She used 75 cm of it to construct a miniature dress for her doll. What percentage of her original cloth stock did she use for the dress?      A total of 45 medals were awarded at a regional band competition. If there were 22 bronze medals and 14 silver medals awarded with the remainder consisting entirely of gold medals, what percentage of the total pool were gold medals?      Kristine spends 30% of her total savings on a luxury watch, and then uses 60% of her remaining savings to purchase a designer dress. What percentage of her original savings is left over?       Provide a complete Teacher's Solution for each problem below. Be careful; some configurations require subtle tracking. Make sure you explicitly state what represents the base whole unit and track your transformations via the unitary method.     There are 200 members in a community club. If 60% of them are male, what percentage more males are there than females?      Exactly 40% of the beads inside a craft box are red, while the remaining balance are yellow. If there are 36 more yellow beads than red beads inside the container, how many total beads are there altogether?      A shop offers variable promotional discounts to different customers. Libby paid $600 for a premium watch at a fixed discount of 20%. Scott purchased the exact same watch model but paid $630. What percentage markdown was given to Scott?      Mary's salary is 10% higher than Alice's salary. If their combined total salary is $4200, what is Mary's individual salary?      John spent 20% of his money on lunch. He then spent of his remaining funds on a toy. If the toy cost exactly $12, how much money did John have originally?      "
+  "body": " Percentages     Understand what a percentage is and how it relates to fractions.    Understand the importance of the whole unit in percentage problems.    Use bar diagrams to solve percentage problems.    Use the unitary method to solve percentage problems.      Percentages are ubiquitous in any context involving numbers. For example:   Shopping   Shoes are now 35% off! Buy one, get the second for 50% off.     Grades   Your final grade is 85%.     Sports   Her shooting percentage is 65% (basketball) or the quarterback's completion percentage is 78% (football).     Money   Earn 2.1% on this savings account. Your tax rate is 18%. The interest rate on your credit card is 15.5%.       Percentage   A percentage is a fraction with a denominator of 100. That is, is the fraction .    For example, 36% and 50% or . It is important to have a firm grasp of fractions, especially equivalent fractions, to handle percentages effectively.    A farmer collects eggs and finds that 21 out of 25 eggs are brown. What percentage of the eggs are brown?    First, we express this as the fraction . We then use equivalent fractions to write this with a denominator of 100: . So, 84% of the eggs are brown.      Percentages and the Whole Unit  Since a percentage is a fraction with a denominator of 100, understanding percentages requires identifying what the whole unit is. In the egg example above, the whole unit is the total number of eggs. The 84% value is relative to that whole unit.  While this is straightforward in simple cases, percentages are often used to make comparisons. When that happens, the quantity being compared to serves as the whole unit. The following table shows a number of examples:      Phrase  Whole Unit (100%)    Johanna scored 5% more than Charlie on the exam.  Charlie's score on the exam.    Fred's income will rise 3% next year.  Fred's current income.    Becky's bake sale sold 10% fewer cookies than Faye's.  Number of cookies Faye's bake sale sold.    With a coupon, the price of the shirt will be reduced an additional 25% off the sale price.  The sale price of the shirt.     Knowing the Whole Unit is Key  It cannot be emphasized enough how vital it is to understand the whole unit in a percentage problem. Because these problems can be tricky, you must think clearly to consistently solve them correctly.    Bar Diagrams and Percentages  A very helpful way to visualize percentage problems is with a diagram, and in most situations, a bar diagram works best. When drawing one, always include a percentage scale along the top of the diagram. The bar below demonstrates the whole unit representing 100%.   A horizontal line with 10 tick marks. The leftmost is labeled 0%, the middle is 50%, and the rightmost is 100%. Below the line is a bar containing the word \"Whole\".     Good Diagrams with Percentages  Producing an accurate diagram for percentage problems can be subtle. Here are some core strategies to help:   Clearly identify which quantity represents 100%.    When a problem compares two distinct quantities, use a stacked bar diagram.    All given percentages and sought-after target percentages belong exclusively on the percentage scale.    Any absolute quantities that you know or are searching for belong directly on or inside the bars, never on the percent scale.      We present a few examples of word problems alongside their diagrams below.    Jonathan's rope is 420 cm long and Kendra's is 350 cm long. What percentage of the length of Kendra's rope is the length of Jonathan's rope?    As discussed, the crucial first step is determining what represents 100%. In this case, it is the length of Kendra's rope. On the percentage scale, we align the end of Kendra's bar with 100%. Because we are seeking a percentage, we label the on the percentage scale directly above the end of Jonathan's bar.   Stacked bar diagram with two bars. Percent scale goes from 0 to over 100 percent. The top bar is Jonathan (420cm). The bottom bar is Kendra (350cm aligned to 100%).    The ratio of the length of Jonathan's rope relative to Kendra's rope is:   So, the length of Jonathan's rope is 120% of the length of Kendra's rope.      There are 400 spaces in a parking lot. If 320 spaces have vehicles parked in them, what percentage fewer empty spots are there than filled spots?    We set up two bars: one representing filled spots and one for empty spots. The filled bar has a value of 320, and we denote the total combined capacity of 400 on the right. Since the filled spots act as our baseline comparison (100%), we align 100% on the scale with the end of the filled bar.  Since the problem asks for the percentage change \"fewer than filled\", we measure the missing percentage value below the 100% threshold.   Stacked bar diagram with filled bar (320) and empty bar. A brace on the right groups them to total 400. The percent scale above tracks the relative difference.    The number of empty spaces is , making the fraction of empty spaces relative to filled spots is: Since , the percentage of empty spots compared to filled spots is 25%. Thus, there are fewer empty spots than filled spots.       The Unitary Method  We previously used the unitary method in to help solve problems. Here, we adapt a modified version explicitly tailored for working with percentages. Let's return to the rope problem featuring Jonathan and Kendra.  From our visual model, we notice that a specific quantity is associated directly with a percentage benchmark. We start from that fixed ratio, applying uniform multiplication or division operations across both fields until we arrive at our target value.  In this context, we know that 100% corresponds to 350 cm, and we want to find out what percentage corresponds to 420 cm: Now that we have isolated 420 cm, we can clearly see it represents 120%.   Allowed Operations in the Unitary Method  We can only use multiplication and division when using the Unitary method. Recall that we always begin with a known percentage and it corresponding value. The we manipulate it to find an unknown target scale. Determining the steps efficiently can sometimes be tricky.  Generally, the safest first step is scaling down the values using division. You can divide by the Greatest Common Factor of both sides, though any common factor works. Once you establish a smaller base value, you can easily scale up to your target configuration.   In our rope problem, the GCD of 100 and 350 is 50. Dividing by the full GCD instead would look like this:   Notice that while we arrive at the exact same answer, navigating a step up from 2% to 120% involves slightly larger multipliers, making the mental math a bit more complex.    Teacher's Solutions of Percentage Problems  We will now examine how to develop formal step-by-step Teacher's Solutions for percentage applications. Like our previous models, every solution must include an explicit bar diagram. Remember that the diagram should have a percentage scale along the top, and all percentage values should be placed on that scale. Any values that are quantities should be placed on or inside the bars, never on the percentage scale.    Find a Teacher's Solution to the following problem: The price of an ounce of gold is $500. If it rises by 200%, find the new price.     Here, the base price of $500 represents our initial 100% value. Because an explicit comparative change is occurring, we will model this using a stacked bar diagram.   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"current\" and has length \"$500\". The bottom bar is labelled \"After\" and the length is labelled ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"after\" bar) is labelled 300%. There is a mark on the percent scale even with the length of the \"current\" bar and is labelled 100%. The distance on the percent scale between the 100% mark and the 300% mark is labelled 200%.    Using the unitary method starting with our baseline equation: Thus, the new price of gold is $1500 per ounce.      Find a Teacher's Solution to the following problem: Mary bought a dress at a discount of 25%. If the discount saved her $15, how much did she pay for the dress?     To begin, 100% represents the original full price of the dress. Since we are isolating what she actually paid after the markdown, our diagram looks like this:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"discounted price\" and is labelled ?. The bottom bar is labelled \"full price\". The difference between the two bar lengths is labelled $15. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"full price\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"discounted price\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"25%\".    To resolve the value, we evaluate our known core relationship using the unitary method: Mary paid $45 for the dress. (Alternatively, finding 100% yields a full price of $60, and evaluating confirms our result.)      Find a Teacher's Solution to the following problem: Alfred has 10% more stickers than Xavier. If they have 420 stickers altogether, how many stickers does Alfred have?     We construct the diagram, noting that because Alfred is being compared directly to Xavier, Xavier's stickers represent our 100% base. The 10% delta and the absolute total of 420 are mapped out below:   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Alfred\" and has a label of ? The bottom bar is labelled \"Xavier\". Together the two bars have a brace on the right and labelled \\$420. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Alfred\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Xavier\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"10%\".    Since Alfred's stickers represents 110% of Xavier's stickers and Xavier holds 100%, their combined total represents 210% of our base unit, matching 420 stickers. We apply the unitary method to isolate Alfred's 110%: Thus, Alfred has 220 stickers.      Find a Teacher's Solution to the following problem: If an initial price is reduced by 20% and the resulting sale price is subsequently reduced by an additional 30%, what is the overall total percentage reduction?     This is a classic multi-step problem that catches many students because the two sequential markdown percentages apply to entirely different whole units. To keep things clear and readable, we can assign a hypothetical baseline original price of $100. This ensures our dollar changes map perfectly 1:1 back to overall percentages.  Step 1: The initial markdown of 20% applies directly to our original base unit ($100).   A stacked bar diagram with two bars and a percent scale. The top bar is labelled \"Original\" and has a length of $100. The bottom bar is labelled \"First Sale\" and has a length of ?. The percent scale is above the two bars. The left is labelled 0% and the right (which is even with the \"Original\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"First Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"20%\".    This initial phase leaves us with of the original price, which translates directly to $80.  Step 2: We re-evaluate the system. The new 30% markdown treats our intermediate $80 value as its new 100% whole unit base.   Stacked diagram displaying the second reduction. There are three horizontal bars and a percent scale above. The top bar is labelled \"Original\" and has a length of $100. The middle bar is labelled \"First Sale\" and has a length of $80. The bottom bar is labelled \"Second Sale\" and has a length of ?. The percent scale is above the three bars. The left is labelled 0% and the right (which is even with the \"First Sale\" bar) is labelled 100%. There is a mark on the percent scale even with the length of the \"Second Sale\" bar. The distance on the percent scale with this mark and the 100% mark is labelled \"30%\".    In this secondary scope, our baseline 100% is $80. Slashing that by 30% means the final price retains exactly 70% of that intermediate value: . Our final net price is $56.  This means our new final price is 56% of our absolute starting original price. Evaluating the raw difference yields: . Because we carefully based our initialization on a clean $100 baseline, this absolute loss translates perfectly to a total net reduction of 44%.        Provide a complete Teacher's Solution for each problem below, making sure to explicitly identify what represents the baseline whole unit . It is highly recommended to use the unitary method. Hint on (e): The answer is not 10%.     Exactly 36 out of 400 seats in a movie theater are vacant. What percentage of the total seats are vacant?      Exactly of the students enrolled at a school wear prescription glasses. What percentage of the student body wears glasses?      Eva started with 3 m of fabric cloth. She used 75 cm of it to construct a miniature dress for her doll. What percentage of her original cloth stock did she use for the dress?      A total of 45 medals were awarded at a regional band competition. If there were 22 bronze medals and 14 silver medals awarded with the remainder consisting entirely of gold medals, what percentage of the total were gold medals?      Kristine spends 30% of her total savings on a luxury watch, and then uses 60% of her remaining savings to purchase a designer dress. What percentage of her original savings is left over?       Provide a complete Teacher's Solution for each problem below. Be careful; some configurations require subtle tracking. Make sure you explicitly state what represents the base whole unit and track your transformations via the unitary method.     There are 200 members in a community club. If 60% of them are male, what percentage more males are there than females?      Exactly 40% of the beads inside a craft box are red, while the remaining balance are yellow. If there are 36 more yellow beads than red beads inside the container, how many total beads are there altogether?      A shop offers variable promotional discounts to different customers. Libby paid $600 for a premium watch at a fixed discount of 20%. Scott purchased the exact same watch model but paid $630. What percentage markdown was given to Scott?      Mary's salary is 10% higher than Alice's salary. If their combined total salary is $4200, what is Mary's individual salary?      John spent 20% of his money on lunch. He then spent of his remaining funds on a toy. If the toy cost exactly $12, how much money did John have originally?      "
 },
 {
   "id": "sect-percents-2",
@@ -3823,7 +3823,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.2.4.1",
   "title": "",
-  "body": "  Provide a complete Teacher's Solution for each problem below, making sure to explicitly identify what represents the baseline whole unit . We highly recommend utilizing the unitary method. Hint on task (c): The answer is not 10%.     Exactly 36 out of 400 seats in a movie theater are vacant. What percentage of the total seats are vacant?      Exactly of the students enrolled at a school wear prescription glasses. What percentage of the student body wears glasses?      Eva started with 3 m of fabric cloth. She used 75 cm of it to construct a miniature dress for her doll. What percentage of her original cloth stock did she use for the dress?      A total of 45 medals were awarded at a regional band competition. If there were 22 bronze medals and 14 silver medals awarded with the remainder consisting entirely of gold medals, what percentage of the total pool were gold medals?      Kristine spends 30% of her total savings on a luxury watch, and then uses 60% of her remaining savings to purchase a designer dress. What percentage of her original savings is left over?    "
+  "body": "  Provide a complete Teacher's Solution for each problem below, making sure to explicitly identify what represents the baseline whole unit . It is highly recommended to use the unitary method. Hint on (e): The answer is not 10%.     Exactly 36 out of 400 seats in a movie theater are vacant. What percentage of the total seats are vacant?      Exactly of the students enrolled at a school wear prescription glasses. What percentage of the student body wears glasses?      Eva started with 3 m of fabric cloth. She used 75 cm of it to construct a miniature dress for her doll. What percentage of her original cloth stock did she use for the dress?      A total of 45 medals were awarded at a regional band competition. If there were 22 bronze medals and 14 silver medals awarded with the remainder consisting entirely of gold medals, what percentage of the total were gold medals?      Kristine spends 30% of her total savings on a luxury watch, and then uses 60% of her remaining savings to purchase a designer dress. What percentage of her original savings is left over?    "
 },
 {
   "id": "exercises-percentages-2",
@@ -3841,25 +3841,268 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Converting Units",
-  "body": " Converting Units   If we want to know how many feet are in 5 miles, we need to know the number of feet in a mile, which is 5280, but do we multiply or divide? Thinking through the two sizes and knowing that the answer should be large you might result in which is correct, but what if we have units that we aren't as familiar with. How many milliliters are in 8 gallons? We will use a method that works for any unit conversion.    Dimensional Analysis  Since 1 mile is the same as 5280 feet, then both of the following fractions are 1: and this will always work for any unit. To use this to convert 5 miles to feet we actually will do and the important part here is that the units work out. That is the miles in the top and bottom cancel or   This method also extends to combining units which the next example shows.    Convert 8 gallons to milliliters. Use the following: 1 gallon is 4 quarts, 1 quart is 0.94635 liters and 1 liter is 1000 milliliters.   We start with 8 gallons, because that's what we want to convert from. Then we use each factor with the units set to cancel:   Note: it is okay to use a calculator on these problems. The point of this is to do unit conversion and not on the arithmetic operations.    There is a conversion from inches to miles, but we don't need that if we know the number of inches in a foot and the number of feet in a mile.    Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.   We start with what is given and that is 316,800 inches. We then use the two unit conversions as fractions to cancel the units. and notice that all of the units cancel except for miles, which is what we want.      Advanced Dimensional Analysis  A basketball court is 4700 square feet. What is it's area in square meters?  There are two ways to approach this problem. First, if we know how many square meter are one square foot, then we can calculate this just like above. For example, if we know then we can use dimensional analysis to do this with    "
+  "body": " Converting Units   If we want to know how many feet are in 5 miles, we need to know the number of feet in a mile, which is 5280, but do we multiply or divide? Thinking through the two sizes and knowing that the answer should be large you might result in which is correct, but what if we have units that we aren't as familiar with. How many milliliters are in 8 gallons? How many meters per second are you traveling if you are going 30 miles per hour? The method called Dimensional Analysis is a very general way that using both unit conversions as well as handling problems involving rates in .    Dimensional Analysis  The idea of dimensional analysis is that if you start with some quantity and multiply by 1, then the quantity doesn't change. The idea then is to find a create form of 1 to multiply by.  For example, since 1 mile is the same as 5280 feet, then both of the following fractions are creative forms of 1. and this will always work for any unit. To use this to convert 5 miles to feet we actually will do and the important part here is that the units work out. That is the miles in the top and bottom cancel or   This method also extends to combining units which the next example shows.    Convert 8 quarts to milliliters. You should use the fact that 1 quart is 0.94635 liters and 1 liter is 1000 mL.    First, we are going to start with 8 quarts. The next step is to use a fraction to multiply. These could be either and we select the second one because the unit quart is in the denominator and will cancel the unit that we are starting with. That is,   We now covert liters to milliliters (mL) using the conversion: .  If we need to do multiple steps like this, we can do these in a single step as in the following: .     Using Calculators with Unit Conversion  In the problem above and throughout this section, we have used a calculator to perform the operations (unless it can be done with mental math). The point of this is to do unit conversion and not on the arithmetic operations.   The next shows an example with weight or mass.    Convert 3.25 pounds to grams (g). Use the following: 1 kilogram (kg) is 2.2046 pounds (lb) and 1 kg is 1000 grams (g).    We start with 3.25 pounds, because that's what we want to convert from. Then we use each factor with the units set to cancel:     The following converts a rate, which is a combination of units, and is a common use of dimensional analysis. We will see more with rates in , but as you will see below, we can use the same technique to convert rates from one unit to another.    Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.    We start with what is given and that is 88 feet per second. We have the following relationships We will then use the fraction formed from these to cover to miles per hour. and notice that all of the units cancel except for miles on top and hours on the bottom, which is what we want.    Units don't have to be things that we measure (like length, volume, weight). The following shows that we can use it for currency conversion.    On a given day 1.87382 U.S. Dollar (USD) trades for 1 british pound (£). If you exchange $100 (USD), how many pounds would that be.    In this example, we use the relationship that and then multiply the given amount $100 by the right fraction. which has been rounded next hundredth of a pound (also called a pence).      Advanced Dimensional Analysis  A basketball court is 4700 square feet. What is it's area in square meters?  There are two ways to approach this problem. First, if we know how many square meter are one square foot, then we can calculate this just like above. For example, if we know then we can use dimensional analysis to do this with   The above way to solve this required that we knew the convert from square meters to square feet. However, what if we only had the conversion that 1 foot is 0.3048 meters. We can use this to find the conversion of 4700 square ft.  As before, if we start with 4700 square feet and then use the relationship of with the proper power. Recall that the fraction well since this is 1, we can also square the fraction (including the units) to get and now we use this to do the conversion.   The next example show a volume conversion problem.    The interior of an rectangular cooler is 0.40 m by 0.20 m by 0.25 m on its three sides. Find the number of liters (L) for the cooler. Use the fact that 1 m = 100 cm, 1 mL (milliliter) = 1 and 1000 mL = 1 L.  Note: liters is a common measurement of volume for things like coolers and backpacks.    We first need to calculate the volume of the cooler and this is   We then start with this and multiply by the creative forms of 1 with the unit conversion. and we note that the second term if cubed. Therefore this can be written: so the cooler has a volume of 200 liters.      More Details on Units  Also, recall that there are typically two different unit systems. The U.S. System also known as the imperial system and the Metric or SI (International System). It is common in engineering and business (who sell products throughout the world) to need to convert between these systems.  One of the key features of the metric system is that there are a series of units for a given quantity that are nice relationships to one another. For example, for measuring length, the standard unit is meters (abbreviated m), but also centimeters (cm), kilometers (km) and other units. The following table give   Standard Metric System Prefixes and Multipliers    Prefix  Symbol  Exponential Form  Decimal Scale \/ Word Value    Pico  p   0.000000000001 (One trillionth)    Nano  n   0.000000001 (One billionth)    Micro  µ   0.000001 (One millionth)    Milli  m   0.001 (One thousandth)    Centi  c   0.01 (One hundredth)    Deci  d   0.1 (One tenth)    Base Unit  —   1 (One)    Deka  da   10 (Ten)    Hecto  h   100 (One hundred)    Kilo  k   1,000 (One thousand)    Mega  M   1,000,000 (One million)    Giga  G   1,000,000,000 (One billion)    Tera  T   1,000,000,000,000 (One trillion)    Peta  P   One quadrillion     To use this table, if you have a kilometer (km), it is or 1000 meters. A millimeter is or 0.001 meters.  This works for other types of quantities. For example a micro second ( ) is seconds. A kilogram (kg) is 1000 grams (g).   Length Units  The following tables list some common length units as well as the conversions.   Common Units of Length    System  Unit Name  Abbreviation    SI (Metric)  Millimeter  mm    SI (Metric)  Centimeter  cm    SI (Metric)  Meter  m    SI (Metric)  Kilometer  km    U.S. Customary  Inch  in    U.S. Customary  Foot \/ Feet  ft    U.S. Customary  Mile  mi     And here are some conversions between the two:   Common Length Conversions    Starting Unit  Target Unit  Conversion Factor \/ Exact Value    1 foot ( ft )  Inches     1 yard ( yd )  Feet     1 mile ( mi )  Feet     1 inch ( in )  Centimeters  (Exact)    1 foot ( ft )  Meters  (Exact)    1 mile ( mi )  Kilometers  (Exact)     Note that all of these are exact values. Within the U.S. Customary system, the conversions are exact by definition. The conversions between the U.S. Customary and SI systems are also exact because they are defined to be that way.    Mass and Weight Units   Common Units of Mass and Weight    System  Unit Name  Abbreviation    SI (Metric)  Milligram  mg    SI (Metric)  Gram  g    SI (Metric)  Kilogram  kg    U.S. Customary  Ounce  oz    U.S. Customary  Pound  lb      Common Mass and Weight Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 pound ( lb )  Ounces     1 ton ( ton )  Pounds  (Short ton)    1 ounce ( oz )  Grams     1 pound ( lb )  Kilograms     1 ton ( ton )  Kilograms     1 metric ton ( t )  Pounds        Time Units   Common Units of Time    System  Unit Name  Abbreviation    Universal  Second  s or sec    Universal  Minute  min    Universal  Hour  hr    Universal  Day  d      Common Time Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 minute ( min )  Seconds     1 hour ( hr )  Minutes     1 day ( d )  Hours     1 week ( wk )  Days     1 year ( yr )  Days  (Standard calendar year)    1 year ( yr )  Weeks        Volume Units   Common Units of Volume    System  Unit Name  Abbreviation    SI (Metric)  Milliliter  mL    SI (Metric)  Liter  L    U.S. Customary  Fluid Ounce  fl oz    U.S. Customary  Cup  c    U.S. Customary  Gallon  gal      Common Volume and Capacity Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 tablespoon ( tbsp )  Teaspoons     1 fluid ounce ( fl oz )  Tablespoons     1 cup ( c )  Fluid Ounces     1 pint ( pt )  Cups     1 quart ( qt )  Pints     1 gallon ( gal )  Quarts     1 teaspoon ( tsp )  Milliliters     1 tablespoon ( tbsp )  Milliliters     1 fluid ounce ( fl oz )  Milliliters     1 cup ( c )  Milliliters     1 gallon ( gal )  Liters     1 milliliter ( mL )  Fluid Ounces     1 liter ( L )  Quarts     1 liter ( L )  Gallons     1 milliliter ( mL )  Cubic Centimeters  (Exact)        Unit Conversion Exercises    For each of the following using dimensional analysis to perform the unit conversion.    A piece of lumber is cut to a length of 4.5 feet. Convert this length into inches.    A package weighs 3.5 pounds. How many ounces is this package?    An experiment takes 2.5 hours to run. Convert this duration into minutes.    A recipe calls for 6 tablespoons of olive oil. How many teaspoons of olive oil is this?    A laboratory sample has a mass of 1,250 grams. Express this mass in kilograms.      Perform the following unit conversions. Show all intermediate dimensional analysis steps and express your final answers using appropriate scientific notation or decimal rounding where necessary.     A high-speed maglev train travels at a constant speed of 432 kilometers per hour ( km\/hr ). Convert this speed into feet per second ( ft\/s ).      An industrial cleanroom floor layout measures exactly 180 square meters ( m^2 ). Determine the equivalent surface area of the floor in square inches ( in^2 ).      The density of a specialized polymer compound is determined to be 1.25 grams per cubic centimeter ( g\/cm^3 ). Calculate its equivalent density in pounds per cubic foot ( lb\/ft^3 ).      A water filtration system processes fluid at a rate of 45 gallons per minute ( gal\/min ). Convert this volumetric flow rate into liters per second ( L\/s ).      A microfluidic channel has a total internal volume capacity of 850 cubic millimeters ( mm^3 ). Express this fluid capacity in fluid ounces ( fl oz ).      "
 },
 {
-  "id": "subsect-dimensional-analysis-4",
+  "id": "subsect-dimensional-analysis-5",
   "level": "2",
-  "url": "sect-convert-units.html#subsect-dimensional-analysis-4",
+  "url": "sect-convert-units.html#subsect-dimensional-analysis-5",
   "type": "Example",
   "number": "8.3.1",
   "title": "",
-  "body": "  Convert 8 gallons to milliliters. Use the following: 1 gallon is 4 quarts, 1 quart is 0.94635 liters and 1 liter is 1000 milliliters.   We start with 8 gallons, because that's what we want to convert from. Then we use each factor with the units set to cancel:   Note: it is okay to use a calculator on these problems. The point of this is to do unit conversion and not on the arithmetic operations.   "
+  "body": "  Convert 8 quarts to milliliters. You should use the fact that 1 quart is 0.94635 liters and 1 liter is 1000 mL.    First, we are going to start with 8 quarts. The next step is to use a fraction to multiply. These could be either and we select the second one because the unit quart is in the denominator and will cancel the unit that we are starting with. That is,   We now covert liters to milliliters (mL) using the conversion: .  If we need to do multiple steps like this, we can do these in a single step as in the following: .   "
 },
 {
   "id": "subsect-dimensional-analysis-6",
   "level": "2",
   "url": "sect-convert-units.html#subsect-dimensional-analysis-6",
-  "type": "Example",
+  "type": "Note",
   "number": "8.3.2",
+  "title": "Using Calculators with Unit Conversion.",
+  "body": " Using Calculators with Unit Conversion  In the problem above and throughout this section, we have used a calculator to perform the operations (unless it can be done with mental math). The point of this is to do unit conversion and not on the arithmetic operations.  "
+},
+{
+  "id": "subsect-dimensional-analysis-8",
+  "level": "2",
+  "url": "sect-convert-units.html#subsect-dimensional-analysis-8",
+  "type": "Example",
+  "number": "8.3.3",
   "title": "",
-  "body": "  Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.   We start with what is given and that is 316,800 inches. We then use the two unit conversions as fractions to cancel the units. and notice that all of the units cancel except for miles, which is what we want.   "
+  "body": "  Convert 3.25 pounds to grams (g). Use the following: 1 kilogram (kg) is 2.2046 pounds (lb) and 1 kg is 1000 grams (g).    We start with 3.25 pounds, because that's what we want to convert from. Then we use each factor with the units set to cancel:    "
+},
+{
+  "id": "subsect-dimensional-analysis-10",
+  "level": "2",
+  "url": "sect-convert-units.html#subsect-dimensional-analysis-10",
+  "type": "Example",
+  "number": "8.3.4",
+  "title": "",
+  "body": "  Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.    We start with what is given and that is 88 feet per second. We have the following relationships We will then use the fraction formed from these to cover to miles per hour. and notice that all of the units cancel except for miles on top and hours on the bottom, which is what we want.   "
+},
+{
+  "id": "subsect-dimensional-analysis-12",
+  "level": "2",
+  "url": "sect-convert-units.html#subsect-dimensional-analysis-12",
+  "type": "Example",
+  "number": "8.3.5",
+  "title": "",
+  "body": "  On a given day 1.87382 U.S. Dollar (USD) trades for 1 british pound (£). If you exchange $100 (USD), how many pounds would that be.    In this example, we use the relationship that and then multiply the given amount $100 by the right fraction. which has been rounded next hundredth of a pound (also called a pence).   "
+},
+{
+  "id": "subsec-advanced-dimensional-analysis-7",
+  "level": "2",
+  "url": "sect-convert-units.html#subsec-advanced-dimensional-analysis-7",
+  "type": "Example",
+  "number": "8.3.6",
+  "title": "",
+  "body": "  The interior of an rectangular cooler is 0.40 m by 0.20 m by 0.25 m on its three sides. Find the number of liters (L) for the cooler. Use the fact that 1 m = 100 cm, 1 mL (milliliter) = 1 and 1000 mL = 1 L.  Note: liters is a common measurement of volume for things like coolers and backpacks.    We first need to calculate the volume of the cooler and this is   We then start with this and multiply by the creative forms of 1 with the unit conversion. and we note that the second term if cubed. Therefore this can be written: so the cooler has a volume of 200 liters.   "
+},
+{
+  "id": "table-metric-prefixes",
+  "level": "2",
+  "url": "sect-convert-units.html#table-metric-prefixes",
+  "type": "Table",
+  "number": "8.3.7",
+  "title": "Standard Metric System Prefixes and Multipliers",
+  "body": " Standard Metric System Prefixes and Multipliers    Prefix  Symbol  Exponential Form  Decimal Scale \/ Word Value    Pico  p   0.000000000001 (One trillionth)    Nano  n   0.000000001 (One billionth)    Micro  µ   0.000001 (One millionth)    Milli  m   0.001 (One thousandth)    Centi  c   0.01 (One hundredth)    Deci  d   0.1 (One tenth)    Base Unit  —   1 (One)    Deka  da   10 (Ten)    Hecto  h   100 (One hundred)    Kilo  k   1,000 (One thousand)    Mega  M   1,000,000 (One million)    Giga  G   1,000,000,000 (One billion)    Tera  T   1,000,000,000,000 (One trillion)    Peta  P   One quadrillion    "
+},
+{
+  "id": "table-units-length",
+  "level": "2",
+  "url": "sect-convert-units.html#table-units-length",
+  "type": "Table",
+  "number": "8.3.8",
+  "title": "Common Units of Length",
+  "body": " Common Units of Length    System  Unit Name  Abbreviation    SI (Metric)  Millimeter  mm    SI (Metric)  Centimeter  cm    SI (Metric)  Meter  m    SI (Metric)  Kilometer  km    U.S. Customary  Inch  in    U.S. Customary  Foot \/ Feet  ft    U.S. Customary  Mile  mi    "
+},
+{
+  "id": "table-length-conversions",
+  "level": "2",
+  "url": "sect-convert-units.html#table-length-conversions",
+  "type": "Table",
+  "number": "8.3.9",
+  "title": "Common Length Conversions",
+  "body": " Common Length Conversions    Starting Unit  Target Unit  Conversion Factor \/ Exact Value    1 foot ( ft )  Inches     1 yard ( yd )  Feet     1 mile ( mi )  Feet     1 inch ( in )  Centimeters  (Exact)    1 foot ( ft )  Meters  (Exact)    1 mile ( mi )  Kilometers  (Exact)    "
+},
+{
+  "id": "table-units-mass-weight",
+  "level": "2",
+  "url": "sect-convert-units.html#table-units-mass-weight",
+  "type": "Table",
+  "number": "8.3.10",
+  "title": "Common Units of Mass and Weight",
+  "body": " Common Units of Mass and Weight    System  Unit Name  Abbreviation    SI (Metric)  Milligram  mg    SI (Metric)  Gram  g    SI (Metric)  Kilogram  kg    U.S. Customary  Ounce  oz    U.S. Customary  Pound  lb    "
+},
+{
+  "id": "table-mass-weight-conversions",
+  "level": "2",
+  "url": "sect-convert-units.html#table-mass-weight-conversions",
+  "type": "Table",
+  "number": "8.3.11",
+  "title": "Common Mass and Weight Conversions",
+  "body": " Common Mass and Weight Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 pound ( lb )  Ounces     1 ton ( ton )  Pounds  (Short ton)    1 ounce ( oz )  Grams     1 pound ( lb )  Kilograms     1 ton ( ton )  Kilograms     1 metric ton ( t )  Pounds     "
+},
+{
+  "id": "table-units-time",
+  "level": "2",
+  "url": "sect-convert-units.html#table-units-time",
+  "type": "Table",
+  "number": "8.3.12",
+  "title": "Common Units of Time",
+  "body": " Common Units of Time    System  Unit Name  Abbreviation    Universal  Second  s or sec    Universal  Minute  min    Universal  Hour  hr    Universal  Day  d    "
+},
+{
+  "id": "table-time-conversions",
+  "level": "2",
+  "url": "sect-convert-units.html#table-time-conversions",
+  "type": "Table",
+  "number": "8.3.13",
+  "title": "Common Time Conversions",
+  "body": " Common Time Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 minute ( min )  Seconds     1 hour ( hr )  Minutes     1 day ( d )  Hours     1 week ( wk )  Days     1 year ( yr )  Days  (Standard calendar year)    1 year ( yr )  Weeks     "
+},
+{
+  "id": "table-units-volume",
+  "level": "2",
+  "url": "sect-convert-units.html#table-units-volume",
+  "type": "Table",
+  "number": "8.3.14",
+  "title": "Common Units of Volume",
+  "body": " Common Units of Volume    System  Unit Name  Abbreviation    SI (Metric)  Milliliter  mL    SI (Metric)  Liter  L    U.S. Customary  Fluid Ounce  fl oz    U.S. Customary  Cup  c    U.S. Customary  Gallon  gal    "
+},
+{
+  "id": "table-volume-conversions",
+  "level": "2",
+  "url": "sect-convert-units.html#table-volume-conversions",
+  "type": "Table",
+  "number": "8.3.15",
+  "title": "Common Volume and Capacity Conversions",
+  "body": " Common Volume and Capacity Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 tablespoon ( tbsp )  Teaspoons     1 fluid ounce ( fl oz )  Tablespoons     1 cup ( c )  Fluid Ounces     1 pint ( pt )  Cups     1 quart ( qt )  Pints     1 gallon ( gal )  Quarts     1 teaspoon ( tsp )  Milliliters     1 tablespoon ( tbsp )  Milliliters     1 fluid ounce ( fl oz )  Milliliters     1 cup ( c )  Milliliters     1 gallon ( gal )  Liters     1 milliliter ( mL )  Fluid Ounces     1 liter ( L )  Quarts     1 liter ( L )  Gallons     1 milliliter ( mL )  Cubic Centimeters  (Exact)    "
+},
+{
+  "id": "exercises-unit-conversions-2",
+  "level": "2",
+  "url": "sect-convert-units.html#exercises-unit-conversions-2",
+  "type": "Exercise",
+  "number": "8.3.4.1",
+  "title": "",
+  "body": "  For each of the following using dimensional analysis to perform the unit conversion.    A piece of lumber is cut to a length of 4.5 feet. Convert this length into inches.    A package weighs 3.5 pounds. How many ounces is this package?    An experiment takes 2.5 hours to run. Convert this duration into minutes.    A recipe calls for 6 tablespoons of olive oil. How many teaspoons of olive oil is this?    A laboratory sample has a mass of 1,250 grams. Express this mass in kilograms.   "
+},
+{
+  "id": "exercise-advanced-conversions",
+  "level": "2",
+  "url": "sect-convert-units.html#exercise-advanced-conversions",
+  "type": "Exercise",
+  "number": "8.3.4.2",
+  "title": "",
+  "body": "  Perform the following unit conversions. Show all intermediate dimensional analysis steps and express your final answers using appropriate scientific notation or decimal rounding where necessary.     A high-speed maglev train travels at a constant speed of 432 kilometers per hour ( km\/hr ). Convert this speed into feet per second ( ft\/s ).      An industrial cleanroom floor layout measures exactly 180 square meters ( m^2 ). Determine the equivalent surface area of the floor in square inches ( in^2 ).      The density of a specialized polymer compound is determined to be 1.25 grams per cubic centimeter ( g\/cm^3 ). Calculate its equivalent density in pounds per cubic foot ( lb\/ft^3 ).      A water filtration system processes fluid at a rate of 45 gallons per minute ( gal\/min ). Convert this volumetric flow rate into liters per second ( L\/s ).      A microfluidic channel has a total internal volume capacity of 850 cubic millimeters ( mm^3 ). Express this fluid capacity in fluid ounces ( fl oz ).    "
+},
+{
+  "id": "sect-rates",
+  "level": "1",
+  "url": "sect-rates.html",
+  "type": "Section",
+  "number": "8.4",
+  "title": "Rates, Speed, and Arithmetic with Units",
+  "body": " Rates, Speed, and Arithmetic with Units   I'm sure that you have problems like the following: If you drive 30 miles per hour, how far do you drive in 2 hours? . This is a fairly standard rate problem with the rate 30 miles per hour. To solve this, hopefully intuitively, it is 60 miles (multiply 30 and 2). But other rate problems might require dividing the numbers. How do you know what is appropriate?  The problems in this section will use the same technique from the previous section on unit conversion and we'll see why shortly.    Rates  With the example above, you might remember that a rate tells you how fast (or slow) something is occurring in that it is some quantity per some unit of time. The example above is miles per hour, but other rates could in feet per second, or cupcakes per week or gallons per minute.  However, we're going to broaden this idea of rate requiring a unit of time to the following:    Rate A rate is a quotient of two quantities with different specified units.    Using this definition of rate, 10 feet per second, 500 cupcakes per week and 15 gallons per minutes all fit this definition, however, the following work as well:   How do we solve problems using rates like this. The following explains the general idea of   Solving Problems with Rates  Consider a word problem in which units play a role. There are generally two different pieces of information in the problem.    rates which are often written as sentences that given how a unit represents some other unit.     given information , which is often in the question of the problem. This should have a unit as well.     To solve this:   Write all rates as fractions with the units.    Start with the given information (a number with a unit).    Multiply the quantity in #2 by rates, to ensure that the units cancel resulting in the correct unit in the answer.   Note: this works for all of the unit conversion in section as well.   The steps above probably seem quite vague, so we spend the rest of this section covering examples in detail.    If you drive 30 miles per hour, how far do you drive in 2 hours?  First, we need to identify the rates and the given information. In this case, the rate is 30 miles per hour and is written:   The given information is 2 hours. To solve this, we start with this quantity and multiply by rates: where it is important that the unit hours cancels.    Since rates include units, sometimes it's important to do unit conversion as well. The next couple of examples show this.    If you drive 40 miles per hour, how far do you drive in 15 minutes? How long would it take to drive 100 miles?    Clearly, the main rate given in the problem is   However if we start with the given information of 15 minutes, the rate won't cancel the minutes. We need the conversion 1 hour = 60 minutes as well   And the units cancel correctly, but you show also remember from that an efficient way to find the answer is first cancel common terms and   For the second question of how long it would take to drive 100 miles, this is the given information, so we start with this and the rate. where 1) notice that the units cancel giving the answer in hours and 2) we have used the reciprocal of the rate as given in the problem to get the units to cancel.  The answer is or probably easier to say hours.      A bakery makes 60 cupcakes in an hour. The bakery is open 8 hours each day. How many cupcakes can they make in 1 week?    There are two rates in this problem. We can write them as   The starting info is 1 week and from the question, we're looking for the unit of cupcakes . Before we begin, we note that the starting unit of week is not in either of the rates, so we will need standard unit conversion as well. and some mental math or using the algorithm finishes the problem. The bakery can make 3360 cupcakes in a week.    The previous examples used rates with time, however as we noted, any types can work as the next example shows.    A pattern for a shirt uses fabric. 4 shirts require 10 yd of fabric. How many shirts can be made with 60 yd ?    First, note that the rate in this problem is and we start with 60 yd and convert to the unit shirts .       A hose can fill a 5 gallon bucket in 15 minutes. In how many hours, will it take the hose to fill a 600 gallon pool?    In this case we start with 600 gallons and convert to hours. There is also one rate given in the problem.  and again, use factoring within the fraction to simplify the final operation which shows that it will take 30 hours to fill the pool.      Combining Rates  Another common problem involving rates is that of combining them, such as if two people are doing the same job, how long will it take if they work together? Consider the following example:    Paul can do a job in 2 hours, whereas Quinn can do the same job in 1 hour. How long will it take for them to do the job together?    Maybe these don't seem like rates, but we can write them as   Since we want to combine these, it seems natural to add them, but since rates work as written or as flipped there are two possibilities:     Option A       Option B:      and since the units are equal for the two rates (fraction), it's fine to add them, but remember to add them as fractions. Finding the resulting rate is:     Option A:       Option B:        Which is the correct combined rates? Let's think about it a bit. It should be that if two people do a job, that together will be faster than either along. In Option A, they can do jobs (or jobs) in one hour, which is faster than either by themselves. In Option B, the will take 3 hours to do the job, which is slower. Clearly Option A is correct.  Finally, to finish the problem, we start with the unit 1 job and find the amount of time as we have done with other problems in this section. where we have also introduce the unit conversion of hours to minutes.  Since there are two ways of adding rates (either the rates as given or flipped), here's a good rule of thumb.   Combining Rates  If there are two rates that are to be combined in the sense of completing a task, add the rates with the time unit in the denominator.   This should help us in combining rates and we'll see this in the following example.    Brandon can shovel a driveway in 30 minutes. Eric can shovel the same driveway in 60 minutes. If they work together, how long will it take them?    The rates in this problem are and if we take the rule of thumb above, we'll add them with the minutes in the denominator.   Lastly, we'll start with 1 driveway and convert to minutes: so it will take them 20 minutes to shovel the driveway.    This last example shows that this also works for more than 2 rates.    Bernard can paint a house in 30 hours. Cindy can paint the same house in 20 hours and Declan can do it in 40 hours. How long will it take to paint the house together?    In this case, there are three rates: and using the rate combining rule of thumb we'll add them with hours in the denominator:   Finally, to answer the question, we'll start with 1 house and multiply by the rate: and converting this to a mixed number, it will take them hours to paint the house.     "
+},
+{
+  "id": "subsect-rates-4",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-4",
+  "type": "Definition",
+  "number": "8.4.1",
+  "title": "",
+  "body": "  Rate A rate is a quotient of two quantities with different specified units.   "
+},
+{
+  "id": "subsect-rates-7",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-7",
+  "type": "Note",
+  "number": "8.4.2",
+  "title": "Solving Problems with Rates.",
+  "body": " Solving Problems with Rates  Consider a word problem in which units play a role. There are generally two different pieces of information in the problem.    rates which are often written as sentences that given how a unit represents some other unit.     given information , which is often in the question of the problem. This should have a unit as well.     To solve this:   Write all rates as fractions with the units.    Start with the given information (a number with a unit).    Multiply the quantity in #2 by rates, to ensure that the units cancel resulting in the correct unit in the answer.   Note: this works for all of the unit conversion in section as well.  "
+},
+{
+  "id": "subsect-rates-9",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-9",
+  "type": "Example",
+  "number": "8.4.3",
+  "title": "",
+  "body": "  If you drive 30 miles per hour, how far do you drive in 2 hours?  First, we need to identify the rates and the given information. In this case, the rate is 30 miles per hour and is written:   The given information is 2 hours. To solve this, we start with this quantity and multiply by rates: where it is important that the unit hours cancels.   "
+},
+{
+  "id": "subsect-rates-11",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-11",
+  "type": "Example",
+  "number": "8.4.4",
+  "title": "",
+  "body": "  If you drive 40 miles per hour, how far do you drive in 15 minutes? How long would it take to drive 100 miles?    Clearly, the main rate given in the problem is   However if we start with the given information of 15 minutes, the rate won't cancel the minutes. We need the conversion 1 hour = 60 minutes as well   And the units cancel correctly, but you show also remember from that an efficient way to find the answer is first cancel common terms and   For the second question of how long it would take to drive 100 miles, this is the given information, so we start with this and the rate. where 1) notice that the units cancel giving the answer in hours and 2) we have used the reciprocal of the rate as given in the problem to get the units to cancel.  The answer is or probably easier to say hours.   "
+},
+{
+  "id": "subsect-rates-12",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-12",
+  "type": "Example",
+  "number": "8.4.5",
+  "title": "",
+  "body": "  A bakery makes 60 cupcakes in an hour. The bakery is open 8 hours each day. How many cupcakes can they make in 1 week?    There are two rates in this problem. We can write them as   The starting info is 1 week and from the question, we're looking for the unit of cupcakes . Before we begin, we note that the starting unit of week is not in either of the rates, so we will need standard unit conversion as well. and some mental math or using the algorithm finishes the problem. The bakery can make 3360 cupcakes in a week.   "
+},
+{
+  "id": "subsect-rates-14",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-14",
+  "type": "Example",
+  "number": "8.4.6",
+  "title": "",
+  "body": "  A pattern for a shirt uses fabric. 4 shirts require 10 yd of fabric. How many shirts can be made with 60 yd ?    First, note that the rate in this problem is and we start with 60 yd and convert to the unit shirts .    "
+},
+{
+  "id": "subsect-rates-15",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-15",
+  "type": "Example",
+  "number": "8.4.7",
+  "title": "",
+  "body": "  A hose can fill a 5 gallon bucket in 15 minutes. In how many hours, will it take the hose to fill a 600 gallon pool?    In this case we start with 600 gallons and convert to hours. There is also one rate given in the problem.  and again, use factoring within the fraction to simplify the final operation which shows that it will take 30 hours to fill the pool.   "
+},
+{
+  "id": "sect-rates-4-3",
+  "level": "2",
+  "url": "sect-rates.html#sect-rates-4-3",
+  "type": "Example",
+  "number": "8.4.8",
+  "title": "",
+  "body": "  Paul can do a job in 2 hours, whereas Quinn can do the same job in 1 hour. How long will it take for them to do the job together?   "
+},
+{
+  "id": "sect-rates-4-11",
+  "level": "2",
+  "url": "sect-rates.html#sect-rates-4-11",
+  "type": "Note",
+  "number": "8.4.9",
+  "title": "Combining Rates.",
+  "body": " Combining Rates  If there are two rates that are to be combined in the sense of completing a task, add the rates with the time unit in the denominator.  "
+},
+{
+  "id": "sect-rates-4-13",
+  "level": "2",
+  "url": "sect-rates.html#sect-rates-4-13",
+  "type": "Example",
+  "number": "8.4.10",
+  "title": "",
+  "body": "  Brandon can shovel a driveway in 30 minutes. Eric can shovel the same driveway in 60 minutes. If they work together, how long will it take them?    The rates in this problem are and if we take the rule of thumb above, we'll add them with the minutes in the denominator.   Lastly, we'll start with 1 driveway and convert to minutes: so it will take them 20 minutes to shovel the driveway.   "
+},
+{
+  "id": "sect-rates-4-15",
+  "level": "2",
+  "url": "sect-rates.html#sect-rates-4-15",
+  "type": "Example",
+  "number": "8.4.11",
+  "title": "",
+  "body": "  Bernard can paint a house in 30 hours. Cindy can paint the same house in 20 hours and Declan can do it in 40 hours. How long will it take to paint the house together?    In this case, there are three rates: and using the rate combining rule of thumb we'll add them with hours in the denominator:   Finally, to answer the question, we'll start with 1 house and multiply by the rate: and converting this to a mixed number, it will take them hours to paint the house.   "
 },
 {
   "id": "sect-negative-numbers",
