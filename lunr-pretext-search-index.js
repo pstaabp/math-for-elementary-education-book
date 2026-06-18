@@ -3841,7 +3841,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.3",
   "title": "Converting Units",
-  "body": " Converting Units   If we want to know how many feet are in 5 miles, we need to know the number of feet in a mile, which is 5280, but do we multiply or divide? Thinking through the two sizes and knowing that the answer should be large you might result in which is correct, but what if we have units that we aren't as familiar with. How many milliliters are in 8 gallons? How many meters per second are you traveling if you are going 30 miles per hour? The method called Dimensional Analysis is a very general way that using both unit conversions as well as handling problems involving rates in .    Dimensional Analysis  The idea of dimensional analysis is that if you start with some quantity and multiply by 1, then the quantity doesn't change. The idea then is to find a create form of 1 to multiply by.  For example, since 1 mile is the same as 5280 feet, then both of the following fractions are creative forms of 1. and this will always work for any unit. To use this to convert 5 miles to feet we actually will do and the important part here is that the units work out. That is the miles in the top and bottom cancel or   This method also extends to combining units which the next example shows.    Convert 8 quarts to milliliters. You should use the fact that 1 quart is 0.94635 liters and 1 liter is 1000 mL.    First, we are going to start with 8 quarts. The next step is to use a fraction to multiply. These could be either and we select the second one because the unit quart is in the denominator and will cancel the unit that we are starting with. That is,   We now covert liters to milliliters (mL) using the conversion: .  If we need to do multiple steps like this, we can do these in a single step as in the following: .     Using Calculators with Unit Conversion  In the problem above and throughout this section, we have used a calculator to perform the operations (unless it can be done with mental math). The point of this is to do unit conversion and not on the arithmetic operations.   The next shows an example with weight or mass.    Convert 3.25 pounds to grams (g). Use the following: 1 kilogram (kg) is 2.2046 pounds (lb) and 1 kg is 1000 grams (g).    We start with 3.25 pounds, because that's what we want to convert from. Then we use each factor with the units set to cancel:     The following converts a rate, which is a combination of units, and is a common use of dimensional analysis. We will see more with rates in , but as you will see below, we can use the same technique to convert rates from one unit to another.    Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.    We start with what is given and that is 88 feet per second. We have the following relationships We will then use the fraction formed from these to cover to miles per hour. and notice that all of the units cancel except for miles on top and hours on the bottom, which is what we want.    Units don't have to be things that we measure (like length, volume, weight). The following shows that we can use it for currency conversion.    On a given day 1.87382 U.S. Dollar (USD) trades for 1 british pound (£). If you exchange $100 (USD), how many pounds would that be.    In this example, we use the relationship that and then multiply the given amount $100 by the right fraction. which has been rounded next hundredth of a pound (also called a pence).      Advanced Dimensional Analysis  A basketball court is 4700 square feet. What is it's area in square meters?  There are two ways to approach this problem. First, if we know how many square meter are one square foot, then we can calculate this just like above. For example, if we know then we can use dimensional analysis to do this with   The above way to solve this required that we knew the convert from square meters to square feet. However, what if we only had the conversion that 1 foot is 0.3048 meters. We can use this to find the conversion of 4700 square ft.  As before, if we start with 4700 square feet and then use the relationship of with the proper power. Recall that the fraction well since this is 1, we can also square the fraction (including the units) to get and now we use this to do the conversion.   The next example show a volume conversion problem.    The interior of an rectangular cooler is 0.40 m by 0.20 m by 0.25 m on its three sides. Find the number of liters (L) for the cooler. Use the fact that 1 m = 100 cm, 1 mL (milliliter) = 1 and 1000 mL = 1 L.  Note: liters is a common measurement of volume for things like coolers and backpacks.    We first need to calculate the volume of the cooler and this is   We then start with this and multiply by the creative forms of 1 with the unit conversion. and we note that the second term if cubed. Therefore this can be written: so the cooler has a volume of 200 liters.      More Details on Units  Also, recall that there are typically two different unit systems. The U.S. System also known as the imperial system and the Metric or SI (International System). It is common in engineering and business (who sell products throughout the world) to need to convert between these systems.  One of the key features of the metric system is that there are a series of units for a given quantity that are nice relationships to one another. For example, for measuring length, the standard unit is meters (abbreviated m), but also centimeters (cm), kilometers (km) and other units. The following table give   Standard Metric System Prefixes and Multipliers    Prefix  Symbol  Exponential Form  Decimal Scale \/ Word Value    Pico  p   0.000000000001 (One trillionth)    Nano  n   0.000000001 (One billionth)    Micro  µ   0.000001 (One millionth)    Milli  m   0.001 (One thousandth)    Centi  c   0.01 (One hundredth)    Deci  d   0.1 (One tenth)    Base Unit  —   1 (One)    Deka  da   10 (Ten)    Hecto  h   100 (One hundred)    Kilo  k   1,000 (One thousand)    Mega  M   1,000,000 (One million)    Giga  G   1,000,000,000 (One billion)    Tera  T   1,000,000,000,000 (One trillion)    Peta  P   One quadrillion     To use this table, if you have a kilometer (km), it is or 1000 meters. A millimeter is or 0.001 meters.  This works for other types of quantities. For example a micro second ( ) is seconds. A kilogram (kg) is 1000 grams (g).   Length Units  The following tables list some common length units as well as the conversions.   Common Units of Length    System  Unit Name  Abbreviation    SI (Metric)  Millimeter  mm    SI (Metric)  Centimeter  cm    SI (Metric)  Meter  m    SI (Metric)  Kilometer  km    U.S. Customary  Inch  in    U.S. Customary  Foot \/ Feet  ft    U.S. Customary  Mile  mi     And here are some conversions between the two:   Common Length Conversions    Starting Unit  Target Unit  Conversion Factor \/ Exact Value    1 foot ( ft )  Inches     1 yard ( yd )  Feet     1 mile ( mi )  Feet     1 inch ( in )  Centimeters  (Exact)    1 foot ( ft )  Meters  (Exact)    1 mile ( mi )  Kilometers  (Exact)     Note that all of these are exact values. Within the U.S. Customary system, the conversions are exact by definition. The conversions between the U.S. Customary and SI systems are also exact because they are defined to be that way.    Mass and Weight Units   Common Units of Mass and Weight    System  Unit Name  Abbreviation    SI (Metric)  Milligram  mg    SI (Metric)  Gram  g    SI (Metric)  Kilogram  kg    U.S. Customary  Ounce  oz    U.S. Customary  Pound  lb      Common Mass and Weight Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 pound ( lb )  Ounces     1 ton ( ton )  Pounds  (Short ton)    1 ounce ( oz )  Grams     1 pound ( lb )  Kilograms     1 ton ( ton )  Kilograms     1 metric ton ( t )  Pounds        Time Units   Common Units of Time    System  Unit Name  Abbreviation    Universal  Second  s or sec    Universal  Minute  min    Universal  Hour  hr    Universal  Day  d      Common Time Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 minute ( min )  Seconds     1 hour ( hr )  Minutes     1 day ( d )  Hours     1 week ( wk )  Days     1 year ( yr )  Days  (Standard calendar year)    1 year ( yr )  Weeks        Volume Units   Common Units of Volume    System  Unit Name  Abbreviation    SI (Metric)  Milliliter  mL    SI (Metric)  Liter  L    U.S. Customary  Fluid Ounce  fl oz    U.S. Customary  Cup  c    U.S. Customary  Gallon  gal      Common Volume and Capacity Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 tablespoon ( tbsp )  Teaspoons     1 fluid ounce ( fl oz )  Tablespoons     1 cup ( c )  Fluid Ounces     1 pint ( pt )  Cups     1 quart ( qt )  Pints     1 gallon ( gal )  Quarts     1 teaspoon ( tsp )  Milliliters     1 tablespoon ( tbsp )  Milliliters     1 fluid ounce ( fl oz )  Milliliters     1 cup ( c )  Milliliters     1 gallon ( gal )  Liters     1 milliliter ( mL )  Fluid Ounces     1 liter ( L )  Quarts     1 liter ( L )  Gallons     1 milliliter ( mL )  Cubic Centimeters  (Exact)        Unit Conversion Exercises    For each of the following using dimensional analysis to perform the unit conversion.    A piece of lumber is cut to a length of 4.5 feet. Convert this length into inches.    A package weighs 3.5 pounds. How many ounces is this package?    An experiment takes 2.5 hours to run. Convert this duration into minutes.    A recipe calls for 6 tablespoons of olive oil. How many teaspoons of olive oil is this?    A laboratory sample has a mass of 1,250 grams. Express this mass in kilograms.      Perform the following unit conversions. Show all intermediate dimensional analysis steps and express your final answers using appropriate scientific notation or decimal rounding where necessary.     A high-speed maglev train travels at a constant speed of 432 kilometers per hour ( km\/hr ). Convert this speed into feet per second ( ft\/s ).      An industrial cleanroom floor layout measures exactly 180 square meters ( m^2 ). Determine the equivalent surface area of the floor in square inches ( in^2 ).      The density of a specialized polymer compound is determined to be 1.25 grams per cubic centimeter ( g\/cm^3 ). Calculate its equivalent density in pounds per cubic foot ( lb\/ft^3 ).      A water filtration system processes fluid at a rate of 45 gallons per minute ( gal\/min ). Convert this volumetric flow rate into liters per second ( L\/s ).      A microfluidic channel has a total internal volume capacity of 850 cubic millimeters ( mm^3 ). Express this fluid capacity in fluid ounces ( fl oz ).      "
+  "body": " Converting Units     Understand the dimensional analysis method of converting units.    Understand how dimensional analysis works for powers of unit conversions.    Understand the metric system and how prefix values change the unit quantity.      If we want to know how many feet are in 5 miles, we need to know the number of feet in a mile, which is 5280, but do we multiply or divide? Thinking through the two sizes and knowing that the answer should be large you might result in which is correct, but what if we have units that we aren't as familiar with. How many milliliters are in 8 gallons? How many meters per second are you traveling if you are going 30 miles per hour? The method called Dimensional Analysis is a very general way that using both unit conversions as well as handling problems involving rates in .    Dimensional Analysis  The idea of dimensional analysis is that if you start with some quantity and multiply by 1, then the quantity doesn't change. The idea then is to find a create form of 1 to multiply by.  For example, since 1 mile is the same as 5280 feet, then both of the following fractions are creative forms of 1. and this will always work for any unit. To use this to convert 5 miles to feet we actually will do and the important part here is that the units work out. That is the miles in the top and bottom cancel or   This method also extends to combining units which the next example shows.    Convert 8 quarts to milliliters. You should use the fact that 1 quart is 0.94635 liters and 1 liter is 1000 mL.    First, we are going to start with 8 quarts. The next step is to use a fraction to multiply. These could be either and we select the second one because the unit quart is in the denominator and will cancel the unit that we are starting with. That is,   We now covert liters to milliliters (mL) using the conversion: .  If we need to do multiple steps like this, we can do these in a single step as in the following: .     Using Calculators with Unit Conversion  In the problem above and throughout this section, we have used a calculator to perform the operations (unless it can be done with mental math). The point of this is to do unit conversion and not on the arithmetic operations.   The next shows an example with weight or mass.    Convert 3.25 pounds to grams (g). Use the following: 1 kilogram (kg) is 2.2046 pounds (lb) and 1 kg is 1000 grams (g).    We start with 3.25 pounds, because that's what we want to convert from. Then we use each factor with the units set to cancel:     The following converts a rate, which is a combination of units, and is a common use of dimensional analysis. We will see more with rates in , but as you will see below, we can use the same technique to convert rates from one unit to another.    Convert 88 feet per second to miles per hour. Recall that 60 seconds = 1 minutes, 60 minutes = 1 hour and 5280 feet = 1 mile.    We start with what is given and that is 88 feet per second. We have the following relationships We will then use the fraction formed from these to cover to miles per hour. and notice that all of the units cancel except for miles on top and hours on the bottom, which is what we want.    Units don't have to be things that we measure (like length, volume, weight). The following shows that we can use it for currency conversion.    On a given day 1.87382 U.S. Dollar (USD) trades for 1 british pound (£). If you exchange $100 (USD), how many pounds would that be.    In this example, we use the relationship that and then multiply the given amount $100 by the right fraction. which has been rounded next hundredth of a pound (also called a pence).      Advanced Dimensional Analysis  A basketball court is 4700 square feet. What is it's area in square meters?  There are two ways to approach this problem. First, if we know how many square meter are one square foot, then we can calculate this just like above. For example, if we know then we can use dimensional analysis to do this with   The above way to solve this required that we knew the convert from square meters to square feet. However, what if we only had the conversion that 1 foot is 0.3048 meters. We can use this to find the conversion of 4700 square ft.  As before, if we start with 4700 square feet and then use the relationship of with the proper power. Recall that the fraction well since this is 1, we can also square the fraction (including the units) to get and now we use this to do the conversion.   The next example show a volume conversion problem.    The interior of an rectangular cooler is 0.40 m by 0.20 m by 0.25 m on its three sides. Find the number of liters (L) for the cooler. Use the fact that 1 m = 100 cm, 1 mL (milliliter) = 1 and 1000 mL = 1 L.  Note: liters is a common measurement of volume for things like coolers and backpacks.    We first need to calculate the volume of the cooler and this is   We then start with this and multiply by the creative forms of 1 with the unit conversion. and we note that the second term if cubed. Therefore this can be written: so the cooler has a volume of 200 liters.      More Details on Units  Also, recall that there are typically two different unit systems. The U.S. System also known as the imperial system and the Metric or SI (International System). It is common in engineering and business (who sell products throughout the world) to need to convert between these systems.  One of the key features of the metric system is that there are a series of units for a given quantity that are nice relationships to one another. For example, for measuring length, the standard unit is meters (abbreviated m), but also centimeters (cm), kilometers (km) and other units. The following table give   Standard Metric System Prefixes and Multipliers    Prefix  Symbol  Exponential Form  Decimal Scale \/ Word Value    Pico  p   0.000000000001 (One trillionth)    Nano  n   0.000000001 (One billionth)    Micro  µ   0.000001 (One millionth)    Milli  m   0.001 (One thousandth)    Centi  c   0.01 (One hundredth)    Deci  d   0.1 (One tenth)    Base Unit  —   1 (One)    Deka  da   10 (Ten)    Hecto  h   100 (One hundred)    Kilo  k   1,000 (One thousand)    Mega  M   1,000,000 (One million)    Giga  G   1,000,000,000 (One billion)    Tera  T   1,000,000,000,000 (One trillion)    Peta  P   One quadrillion     To use this table, if you have a kilometer (km), it is or 1000 meters. A millimeter is or 0.001 meters.  This works for other types of quantities. For example a micro second ( ) is seconds. A kilogram (kg) is 1000 grams (g).   Length Units  The following tables list some common length units as well as the conversions.   Common Units of Length    System  Unit Name  Abbreviation    SI (Metric)  Millimeter  mm    SI (Metric)  Centimeter  cm    SI (Metric)  Meter  m    SI (Metric)  Kilometer  km    U.S. Customary  Inch  in    U.S. Customary  Foot \/ Feet  ft    U.S. Customary  Mile  mi     And here are some conversions between the two:   Common Length Conversions    Starting Unit  Target Unit  Conversion Factor \/ Exact Value    1 foot ( ft )  Inches     1 yard ( yd )  Feet     1 mile ( mi )  Feet     1 inch ( in )  Centimeters  (Exact)    1 foot ( ft )  Meters  (Exact)    1 mile ( mi )  Kilometers  (Exact)     Note that all of these are exact values. Within the U.S. Customary system, the conversions are exact by definition. The conversions between the U.S. Customary and SI systems are also exact because they are defined to be that way.    Mass and Weight Units   Common Units of Mass and Weight    System  Unit Name  Abbreviation    SI (Metric)  Milligram  mg    SI (Metric)  Gram  g    SI (Metric)  Kilogram  kg    U.S. Customary  Ounce  oz    U.S. Customary  Pound  lb      Common Mass and Weight Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 pound ( lb )  Ounces     1 ton ( ton )  Pounds  (Short ton)    1 ounce ( oz )  Grams     1 pound ( lb )  Kilograms     1 ton ( ton )  Kilograms     1 metric ton ( t )  Pounds        Time Units   Common Units of Time    System  Unit Name  Abbreviation    Universal  Second  s or sec    Universal  Minute  min    Universal  Hour  hr    Universal  Day  d      Common Time Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 minute ( min )  Seconds     1 hour ( hr )  Minutes     1 day ( d )  Hours     1 week ( wk )  Days     1 year ( yr )  Days  (Standard calendar year)    1 year ( yr )  Weeks        Volume Units   Common Units of Volume    System  Unit Name  Abbreviation    SI (Metric)  Milliliter  mL    SI (Metric)  Liter  L    U.S. Customary  Fluid Ounce  fl oz    U.S. Customary  Cup  c    U.S. Customary  Gallon  gal      Common Volume and Capacity Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 tablespoon ( tbsp )  Teaspoons     1 fluid ounce ( fl oz )  Tablespoons     1 cup ( c )  Fluid Ounces     1 pint ( pt )  Cups     1 quart ( qt )  Pints     1 gallon ( gal )  Quarts     1 fluid ounce ( fl oz )  Milliliters     1 liter ( L )  Quarts     1 milliliter ( mL )  Cubic Centimeters  (Exact)        Exercises    For each of the following using dimensional analysis to perform the unit conversion. Use only the unit conversion in the tables in .    A piece of lumber is cut to a length of 4.5 feet. Convert this length into inches.    A package weighs 3.5 pounds. How many ounces is this package?    An experiment takes 2.5 hours to run. Convert this duration into minutes.    A recipe calls for 6 tablespoons of olive oil. How many teaspoons of olive oil is this?    A laboratory sample has a mass of 1,250 grams. Express this mass in kilograms.      Perform the following unit conversions using dimensional analysis. Use only the unit conversion in the tables in . Note these will take multiple steps.     A high-speed maglev train travels at a constant speed of 432 kilometers per hour ( km\/hr ). Convert this speed into feet per second ( ft\/s ).      An industrial cleanroom floor layout measures exactly 180 square meters ( m^2 ). Determine the equivalent surface area of the floor in square inches ( in^2 ).      The density of a specialized polymer compound is determined to be 1.25 grams per cubic centimeter ( g\/cm^3 ). Calculate its equivalent density in pounds per cubic foot ( lb\/ft^3 ).      A water filtration system processes fluid at a rate of 45 gallons per minute ( gal\/min ). Convert this volumetric flow rate into liters per second ( L\/s ).      A microfluidic channel has a total internal volume capacity of 850 cubic millimeters ( mm^3 ). Express this fluid capacity in fluid ounces ( fl oz ).      "
+},
+{
+  "id": "sect-convert-units-2",
+  "level": "2",
+  "url": "sect-convert-units.html#sect-convert-units-2",
+  "type": "Objectives",
+  "number": "8.3",
+  "title": "",
+  "body": "   Understand the dimensional analysis method of converting units.    Understand how dimensional analysis works for powers of unit conversions.    Understand the metric system and how prefix values change the unit quantity.    "
 },
 {
   "id": "subsect-dimensional-analysis-5",
@@ -3976,7 +3985,7 @@ var ptx_lunr_docs = [
   "type": "Table",
   "number": "8.3.15",
   "title": "Common Volume and Capacity Conversions",
-  "body": " Common Volume and Capacity Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 tablespoon ( tbsp )  Teaspoons     1 fluid ounce ( fl oz )  Tablespoons     1 cup ( c )  Fluid Ounces     1 pint ( pt )  Cups     1 quart ( qt )  Pints     1 gallon ( gal )  Quarts     1 teaspoon ( tsp )  Milliliters     1 tablespoon ( tbsp )  Milliliters     1 fluid ounce ( fl oz )  Milliliters     1 cup ( c )  Milliliters     1 gallon ( gal )  Liters     1 milliliter ( mL )  Fluid Ounces     1 liter ( L )  Quarts     1 liter ( L )  Gallons     1 milliliter ( mL )  Cubic Centimeters  (Exact)    "
+  "body": " Common Volume and Capacity Conversions    Starting Unit  Target Unit  Conversion Factor \/ Value    1 tablespoon ( tbsp )  Teaspoons     1 fluid ounce ( fl oz )  Tablespoons     1 cup ( c )  Fluid Ounces     1 pint ( pt )  Cups     1 quart ( qt )  Pints     1 gallon ( gal )  Quarts     1 fluid ounce ( fl oz )  Milliliters     1 liter ( L )  Quarts     1 milliliter ( mL )  Cubic Centimeters  (Exact)    "
 },
 {
   "id": "exercises-unit-conversions-2",
@@ -3985,7 +3994,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.3.4.1",
   "title": "",
-  "body": "  For each of the following using dimensional analysis to perform the unit conversion.    A piece of lumber is cut to a length of 4.5 feet. Convert this length into inches.    A package weighs 3.5 pounds. How many ounces is this package?    An experiment takes 2.5 hours to run. Convert this duration into minutes.    A recipe calls for 6 tablespoons of olive oil. How many teaspoons of olive oil is this?    A laboratory sample has a mass of 1,250 grams. Express this mass in kilograms.   "
+  "body": "  For each of the following using dimensional analysis to perform the unit conversion. Use only the unit conversion in the tables in .    A piece of lumber is cut to a length of 4.5 feet. Convert this length into inches.    A package weighs 3.5 pounds. How many ounces is this package?    An experiment takes 2.5 hours to run. Convert this duration into minutes.    A recipe calls for 6 tablespoons of olive oil. How many teaspoons of olive oil is this?    A laboratory sample has a mass of 1,250 grams. Express this mass in kilograms.   "
 },
 {
   "id": "exercise-advanced-conversions",
@@ -3994,7 +4003,7 @@ var ptx_lunr_docs = [
   "type": "Exercise",
   "number": "8.3.4.2",
   "title": "",
-  "body": "  Perform the following unit conversions. Show all intermediate dimensional analysis steps and express your final answers using appropriate scientific notation or decimal rounding where necessary.     A high-speed maglev train travels at a constant speed of 432 kilometers per hour ( km\/hr ). Convert this speed into feet per second ( ft\/s ).      An industrial cleanroom floor layout measures exactly 180 square meters ( m^2 ). Determine the equivalent surface area of the floor in square inches ( in^2 ).      The density of a specialized polymer compound is determined to be 1.25 grams per cubic centimeter ( g\/cm^3 ). Calculate its equivalent density in pounds per cubic foot ( lb\/ft^3 ).      A water filtration system processes fluid at a rate of 45 gallons per minute ( gal\/min ). Convert this volumetric flow rate into liters per second ( L\/s ).      A microfluidic channel has a total internal volume capacity of 850 cubic millimeters ( mm^3 ). Express this fluid capacity in fluid ounces ( fl oz ).    "
+  "body": "  Perform the following unit conversions using dimensional analysis. Use only the unit conversion in the tables in . Note these will take multiple steps.     A high-speed maglev train travels at a constant speed of 432 kilometers per hour ( km\/hr ). Convert this speed into feet per second ( ft\/s ).      An industrial cleanroom floor layout measures exactly 180 square meters ( m^2 ). Determine the equivalent surface area of the floor in square inches ( in^2 ).      The density of a specialized polymer compound is determined to be 1.25 grams per cubic centimeter ( g\/cm^3 ). Calculate its equivalent density in pounds per cubic foot ( lb\/ft^3 ).      A water filtration system processes fluid at a rate of 45 gallons per minute ( gal\/min ). Convert this volumetric flow rate into liters per second ( L\/s ).      A microfluidic channel has a total internal volume capacity of 850 cubic millimeters ( mm^3 ). Express this fluid capacity in fluid ounces ( fl oz ).    "
 },
 {
   "id": "sect-rates",
@@ -4003,43 +4012,52 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "8.4",
   "title": "Rates, Speed, and Arithmetic with Units",
-  "body": " Rates, Speed, and Arithmetic with Units   I'm sure that you have problems like the following: If you drive 30 miles per hour, how far do you drive in 2 hours? . This is a fairly standard rate problem with the rate 30 miles per hour. To solve this, hopefully intuitively, it is 60 miles (multiply 30 and 2). But other rate problems might require dividing the numbers. How do you know what is appropriate?  The problems in this section will use the same technique from the previous section on unit conversion and we'll see why shortly.    Rates  With the example above, you might remember that a rate tells you how fast (or slow) something is occurring in that it is some quantity per some unit of time. The example above is miles per hour, but other rates could in feet per second, or cupcakes per week or gallons per minute.  However, we're going to broaden this idea of rate requiring a unit of time to the following:    Rate A rate is a quotient of two quantities with different specified units.    Using this definition of rate, 10 feet per second, 500 cupcakes per week and 15 gallons per minutes all fit this definition, however, the following work as well:   How do we solve problems using rates like this. The following explains the general idea of   Solving Problems with Rates  Consider a word problem in which units play a role. There are generally two different pieces of information in the problem.    rates which are often written as sentences that given how a unit represents some other unit.     given information , which is often in the question of the problem. This should have a unit as well.     To solve this:   Write all rates as fractions with the units.    Start with the given information (a number with a unit).    Multiply the quantity in #2 by rates, to ensure that the units cancel resulting in the correct unit in the answer.   Note: this works for all of the unit conversion in section as well.   The steps above probably seem quite vague, so we spend the rest of this section covering examples in detail.    If you drive 30 miles per hour, how far do you drive in 2 hours?  First, we need to identify the rates and the given information. In this case, the rate is 30 miles per hour and is written:   The given information is 2 hours. To solve this, we start with this quantity and multiply by rates: where it is important that the unit hours cancels.    Since rates include units, sometimes it's important to do unit conversion as well. The next couple of examples show this.    If you drive 40 miles per hour, how far do you drive in 15 minutes? How long would it take to drive 100 miles?    Clearly, the main rate given in the problem is   However if we start with the given information of 15 minutes, the rate won't cancel the minutes. We need the conversion 1 hour = 60 minutes as well   And the units cancel correctly, but you show also remember from that an efficient way to find the answer is first cancel common terms and   For the second question of how long it would take to drive 100 miles, this is the given information, so we start with this and the rate. where 1) notice that the units cancel giving the answer in hours and 2) we have used the reciprocal of the rate as given in the problem to get the units to cancel.  The answer is or probably easier to say hours.      A bakery makes 60 cupcakes in an hour. The bakery is open 8 hours each day. How many cupcakes can they make in 1 week?    There are two rates in this problem. We can write them as   The starting info is 1 week and from the question, we're looking for the unit of cupcakes . Before we begin, we note that the starting unit of week is not in either of the rates, so we will need standard unit conversion as well. and some mental math or using the algorithm finishes the problem. The bakery can make 3360 cupcakes in a week.    The previous examples used rates with time, however as we noted, any types can work as the next example shows.    A pattern for a shirt uses fabric. 4 shirts require 10 yd of fabric. How many shirts can be made with 60 yd ?    First, note that the rate in this problem is and we start with 60 yd and convert to the unit shirts .       A hose can fill a 5 gallon bucket in 15 minutes. In how many hours, will it take the hose to fill a 600 gallon pool?    In this case we start with 600 gallons and convert to hours. There is also one rate given in the problem.  and again, use factoring within the fraction to simplify the final operation which shows that it will take 30 hours to fill the pool.      Combining Rates  Another common problem involving rates is that of combining them, such as if two people are doing the same job, how long will it take if they work together? Consider the following example:    Paul can do a job in 2 hours, whereas Quinn can do the same job in 1 hour. How long will it take for them to do the job together?    Maybe these don't seem like rates, but we can write them as   Since we want to combine these, it seems natural to add them, but since rates work as written or as flipped there are two possibilities:     Option A       Option B:      and since the units are equal for the two rates (fraction), it's fine to add them, but remember to add them as fractions. Finding the resulting rate is:     Option A:       Option B:        Which is the correct combined rates? Let's think about it a bit. It should be that if two people do a job, that together will be faster than either along. In Option A, they can do jobs (or jobs) in one hour, which is faster than either by themselves. In Option B, the will take 3 hours to do the job, which is slower. Clearly Option A is correct.  Finally, to finish the problem, we start with the unit 1 job and find the amount of time as we have done with other problems in this section. where we have also introduce the unit conversion of hours to minutes.  Since there are two ways of adding rates (either the rates as given or flipped), here's a good rule of thumb.   Combining Rates  If there are two rates that are to be combined in the sense of completing a task, add the rates with the time unit in the denominator.   This should help us in combining rates and we'll see this in the following example.    Brandon can shovel a driveway in 30 minutes. Eric can shovel the same driveway in 60 minutes. If they work together, how long will it take them?    The rates in this problem are and if we take the rule of thumb above, we'll add them with the minutes in the denominator.   Lastly, we'll start with 1 driveway and convert to minutes: so it will take them 20 minutes to shovel the driveway.    This last example shows that this also works for more than 2 rates.    Bernard can paint a house in 30 hours. Cindy can paint the same house in 20 hours and Declan can do it in 40 hours. How long will it take to paint the house together?    In this case, there are three rates: and using the rate combining rule of thumb we'll add them with hours in the denominator:   Finally, to answer the question, we'll start with 1 house and multiply by the rate: and converting this to a mixed number, it will take them hours to paint the house.     "
+  "body": " Rates, Speed, and Arithmetic with Units     Understand the notion of a rate.    Find the rate given two quantities.   Use rates in solving problems.    Solving Joint Work Rate Problems.      How would you solve: If you drive 30 miles per hour, how far do you drive in 2 hours? .  This is an example of a rate problem with the rate 30 miles per hour. Hopefully this problem is intuitive enough to realize the answer is 60 miles (multiply 30 and 2). But other rate problems might require dividing the numbers. How do you know what is appropriate?  The problems in this section will use the Dimensional Analysis technique from .    Rates  With the example above, you might remember that a rate tells you how fast (or slow) something is occurring in that it is some quantity per some unit of time. The example above is miles per hour, but other rates could in feet per second, or cupcakes per week or gallons per minute.    Janette can ride her bicycle 3 miles in 20 minutes. What is her speed (rate) is miles per minute? In miles per hour?    However, we're going to broaden this idea of rate requiring a unit of time to the following:   Rate   A rate is a quotient of two quantities with different specified units.    Using this definition of rate, 10 feet per second, 500 cupcakes per week and 15 gallons per minutes all fit this definition, however, the following work as well:   We desire to solve problems that have rates that fit these as well.   Solving Problems with Rates  Consider a word problem in which units play a role. There are generally two different pieces of information in the problem.    rates which are often written as sentences that given how a unit represents some other unit.     given information , which is often in the question of the problem. This should have a unit as well.     To solve this we will use Dimensional Analysis like the previous section as:   Write all rates as fractions with the units.    Start with the given information (a number with a unit).    Multiply the quantity in #2 by rates, to ensure that the units cancel resulting in the correct unit in the answer.      The steps above probably seem quite vague, so we spend the rest of this section covering examples in detail.    If you drive 30 miles per hour, how far do you drive in 2 hours?    First, we need to identify the rates and the given information. In this case, the rate is 30 miles per hour and is written:   The given information is 2 hours. To solve this, we start with this quantity and multiply by rates: where it is important that the unit hours cancels.    Since rates include units, sometimes it's important to do unit conversion as well. The next couple of examples show this.    You are on a road trip and are driving 40 miles per hour.     How far do you drive in 15 minutes?    Clearly, the main rate given in the problem has the relationship:   However if we start with the given information of 15 minutes, the rate doesn't have minutes, so we need the conversion 1 hour = 60 minutes as well   And the units cancel correctly, but you show also remember from that an efficient way to find the answer is first cancel common terms and   So you drive 10 miles in 15 minutes.      How long would it take you to drive 100 miles?    For the second question of how long it would take to drive 100 miles, this is the given information, so we start with this and the rate. where 1) notice that the units cancel giving the answer in hours and 2) we have used the reciprocal of the rate as given in the problem to get the units to cancel.  The answer is or probably easier to say hours.       A bakery makes 60 cupcakes in an hour. The bakery is open 8 hours each day. How many cupcakes can they make in 1 week?    There are two rates in this problem. We can write them as   The starting info is 1 week and from the question, we're looking for the unit of cupcakes . Before we begin, we note that the starting unit of week is not in either of the rates, so we will need the conversion as well. and some mental math or using the algorithm finishes the problem. The bakery can make 3360 cupcakes in a week.      A hose can fill a 5 gallon bucket in 15 minutes. In how many hours, will it take the hose to fill a 600 gallon pool?    In this case we start with 600 gallons and convert to hours. There is also one rate given in the problem. . Note that we need a conversion from minutes to hours so will also need to use . and again, use factoring within the fraction to simplify the final operation which shows that it will take 30 hours to fill the pool.    The previous examples used rates with time, however as we noted, any types can work as the next example shows.    A pattern for a shirt uses fabric. 4 shirts require 10 yd of fabric. How many shirts can be made with 60 yd ?    First, note that the rate in this problem is and we start with 60 yd and convert to the unit shirts .       A brine mixture for a Thanksgiving turkey calls for 1\/3 cup of salt for every quart of water. How much salt is needed for a 4 gallon brine?    The primary rate from the problem is . Note even though both are volume measure, the quantity of salt or water is needed with the unit.  Also, we will need the volume conversion of , then start with the given quantity of and then use the rates in the proper form: or as a mixed number, cups salt.      Joint Work Rate Problems  Another common problem involving rates is that of combining them, such as if two people are doing the same job, how long will it take if they work together? Consider the following example:    Paul can do a job in 2 hours, whereas Quinn can do the same job in 1 hour. How long will it take for them to do the job together?    Maybe these don't seem like rates, but we can write them as   Since we want to combine these, it seems natural to add them, but since rates work as two possible fractions, let's look at both of these.     Option A       Option B:      and since the units are equal for the two rates (fraction), it's fine to add them, but remember to add them as fractions. Finding the resulting rate is:     Option A:       Option B:        Which is the correct combined rates? Let's think about it a bit. It should be that if two people do a job, that together will be faster than either along. In Option A, they can do jobs (or jobs) in one hour, which is faster than either by themselves. In Option B, the will take 3 hours to do the job, which is slower. Clearly Option A is correct.  Finally, to finish the problem, we start with the unit 1 job and find the amount of time as we have done with other problems in this section. where we have also introduce the unit conversion of hours to minutes.  Since there are two ways of adding rates (either the rates as given or flipped), here's a good rule of thumb.   Combining Rates  If there are two rates that are to be combined in the sense of completing a task, add the rates with the time unit in the denominator.   This should help us in combining rates and we'll see this in the following example.    Brandon can shovel a driveway in 30 minutes. Eric can shovel the same driveway in 60 minutes. If they work together, how long will it take them?    The rates in this problem are and if we take the rule of thumb above, we'll add them with the minutes in the denominator.   Lastly, we'll start with 1 driveway and convert to minutes: so it will take them 20 minutes to shovel the driveway.    This last example shows that this also works for more than 2 rates.    Bernard can paint a house in 30 hours. Cindy can paint the same house in 20 hours and Declan can do it in 40 hours. How long will it take to paint the house together?    In this case, there are three rates: and using the rate combining rule of thumb we'll add them with hours in the denominator:   Recall that to make this problem easier use the LCM of these three numbers, or 120   Finally, to answer the question, we'll start with 1 house and multiply by the rate: and converting this to a mixed number, it will take them hours to paint the house.        Solve each of the following introductory rate problems. Ensure your final answers include the correct compound units.     A delivery drone flies a straight-line distance of 24 miles in exactly 45 minutes. Calculate the average speed of the drone in miles per hour ( mi\/hr ).      A garden hose fills a 15-gallon backyard pool in exactly 6 minutes. Determine the volumetric flow rate of the water in gallons per minute ( gal\/min ).      An automated manufacturing assembly line produces 1,800 microchips during an 8-hour shift. Find the production rate of the line in microchips per minute.      A backup generator burns through 12 liters of diesel fuel over the course of 5 hours of continuous operation. What is the generator's fuel consumption rate in liters per hour ( L\/hr )?      A computer network connection downloads a 450-megabyte ( MB ) video file in exactly 12 seconds. Calculate the average data transfer speed in megabytes per second ( MB\/s ).       Use the given rates in each scenario to isolate and calculate the missing non-rate quantity. Pay close attention to unit cancellations.     A commercial airliner cruises at a constant speed of 540 miles per hour ( mi\/hr ). If the flight lasts for exactly 3.5 hours, what is the total distance traveled by the aircraft?      A chemical processing pump dispenses liquid reactant at a steady volumetric flow rate of 2.4 liters per minute ( L\/min ). How many total liters of reactant are pumped into a mixing vat during a 15-minute production cycle?      An automated industrial packaging machine wraps boxes at a consistent rate of 45 boxes per minute. How many minutes will it take for the machine to wrap a bulk order of 1,125 boxes?      A localized irrigation system leaks water into the soil at an average rate of 150 milliliters per hour ( mL\/hr ). If the leak goes unnoticed for exactly 4 days, what is the total volume of water lost in milliliters?      A cloud server uploads backup data over a fiber-optic link at a sustained speed of 18 megabytes per second ( MB\/s ). If the upload process runs continuously for exactly 5 minutes, determine the total size of the uploaded data package in megabytes ( MB ).       Solve each of the following complex rate problems. Each scenario requires performing multi-step dimensional analysis and unit conversions to isolate the requested non-rate quantity.     A research meteorologist tracks a severe storm front advancing at a steady speed of meters per second ( m\/s ). Determine how many total miles ( mi ) the storm front will travel if it maintains this speed for exactly hours.      An industrial drainage pipe discharges wastewater into a holding pond at a rate of gallons per second ( gal\/s ). If the pipe runs continuously for hours, calculate the total volume of water discharged in cubic meters ( ).      A mining conveyor belt loads crushed ore onto a cargo ship at a continuous rate of pounds per minute ( lb\/min ). How many hours ( hr ) will it take for the conveyor system to move a bulk payload weighing exactly metric tons ( t )?      A hospital intravenous (IV) pump is calibrated to deliver a saline solution to a patient at a steady rate of drops per minute. Assuming the IV tubing factor dictates that exactly drops equal milliliter ( mL ), how many total liters ( L ) of solution will the patient receive over a continuous -hour period?      A commercial solar array generates electrical power at an average rate of kilowatts ( kW ), where . Calculate the total amount of energy generated by the array in megajoules ( MJ ) during hours of peak afternoon sunlight.       Solve the following rate problems where the constant rate represents a spatial, structural, or material ratio rather than a change over time.     An agricultural fertilizer mixture calls for milliliter ( mL ) of liquid concentrate for every liters ( L ) of water. How many total milliliters ( mL ) of concentrate are required to mix a large batch containing liters ( L ) of water?      A heavy-duty steel suspension cable has a material linear density rate of ounces ( oz ) of weight for every inches ( in ) of length. Calculate the total weight of this cable in pounds ( lb ) if a construction project requires a continuous span of yards ( yd ).      An industrial asphalt sealant specifies an application rate of gallons ( gal ) of sealant for every square feet ( ft^2 ) of pavement surface area. If a commercial parking lot measuring square meters ( m^2 ) needs to be coated, how many liters ( L ) of sealant must be purchased?      A mechanical winch system pulls in centimeters ( cm ) of steel cable for every complete revolutions of its drive gear. Determine how many total yards ( yd ) of cable will be reeled in if the drive motor spins the gear a total of times.       Solve the following joint work rate problems by determining individual production rates per unit of time and combining them.     Sarah can grade a stack of research papers in hours, while David takes hours to grade the exact same size stack. If they collaborate and grade the single stack of papers together, how many hours will it take them?      Three 3D printers are working on identical manufacturing components. Printer A can finish a part in hours, Printer B takes hours, and Printer C takes hours. If all three printers are turned on simultaneously to manufacture a single component together, how many hours will the print take?      Working together, two automated software scripts can scan a company database for security vulnerabilities in minutes. If Script 1 runs alone, it takes exactly minutes to complete the scan by itself. How many minutes would it take Script 2 to scan the database alone?      Elena can stock the shelves of a grocery store aisle in minutes, and Marcus can stock the same aisle in minutes. Elena begins stocking the aisle alone and works for exactly minutes. At that point, Marcus joins her, and they finish stocking the rest of the aisle together. How many additional minutes will it take them to finish the job after Marcus arrives?      "
 },
 {
-  "id": "subsect-rates-4",
+  "id": "sect-rates-2",
   "level": "2",
-  "url": "sect-rates.html#subsect-rates-4",
-  "type": "Definition",
+  "url": "sect-rates.html#sect-rates-2",
+  "type": "Objectives",
+  "number": "8.4",
+  "title": "",
+  "body": "   Understand the notion of a rate.    Find the rate given two quantities.   Use rates in solving problems.    Solving Joint Work Rate Problems.    "
+},
+{
+  "id": "subsect-rates-3",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-3",
+  "type": "Example",
   "number": "8.4.1",
   "title": "",
-  "body": "  Rate A rate is a quotient of two quantities with different specified units.   "
+  "body": "  Janette can ride her bicycle 3 miles in 20 minutes. What is her speed (rate) is miles per minute? In miles per hour?   "
 },
 {
-  "id": "subsect-rates-7",
+  "id": "subsect-rates-5",
   "level": "2",
-  "url": "sect-rates.html#subsect-rates-7",
-  "type": "Note",
+  "url": "sect-rates.html#subsect-rates-5",
+  "type": "Definition",
   "number": "8.4.2",
-  "title": "Solving Problems with Rates.",
-  "body": " Solving Problems with Rates  Consider a word problem in which units play a role. There are generally two different pieces of information in the problem.    rates which are often written as sentences that given how a unit represents some other unit.     given information , which is often in the question of the problem. This should have a unit as well.     To solve this:   Write all rates as fractions with the units.    Start with the given information (a number with a unit).    Multiply the quantity in #2 by rates, to ensure that the units cancel resulting in the correct unit in the answer.   Note: this works for all of the unit conversion in section as well.  "
+  "title": "Rate.",
+  "body": " Rate   A rate is a quotient of two quantities with different specified units.   "
 },
 {
-  "id": "subsect-rates-9",
+  "id": "subsect-rates-8",
   "level": "2",
-  "url": "sect-rates.html#subsect-rates-9",
-  "type": "Example",
+  "url": "sect-rates.html#subsect-rates-8",
+  "type": "Note",
   "number": "8.4.3",
-  "title": "",
-  "body": "  If you drive 30 miles per hour, how far do you drive in 2 hours?  First, we need to identify the rates and the given information. In this case, the rate is 30 miles per hour and is written:   The given information is 2 hours. To solve this, we start with this quantity and multiply by rates: where it is important that the unit hours cancels.   "
+  "title": "Solving Problems with Rates.",
+  "body": " Solving Problems with Rates  Consider a word problem in which units play a role. There are generally two different pieces of information in the problem.    rates which are often written as sentences that given how a unit represents some other unit.     given information , which is often in the question of the problem. This should have a unit as well.     To solve this we will use Dimensional Analysis like the previous section as:   Write all rates as fractions with the units.    Start with the given information (a number with a unit).    Multiply the quantity in #2 by rates, to ensure that the units cancel resulting in the correct unit in the answer.     "
 },
 {
-  "id": "subsect-rates-11",
+  "id": "subsect-rates-10",
   "level": "2",
-  "url": "sect-rates.html#subsect-rates-11",
+  "url": "sect-rates.html#subsect-rates-10",
   "type": "Example",
   "number": "8.4.4",
   "title": "",
-  "body": "  If you drive 40 miles per hour, how far do you drive in 15 minutes? How long would it take to drive 100 miles?    Clearly, the main rate given in the problem is   However if we start with the given information of 15 minutes, the rate won't cancel the minutes. We need the conversion 1 hour = 60 minutes as well   And the units cancel correctly, but you show also remember from that an efficient way to find the answer is first cancel common terms and   For the second question of how long it would take to drive 100 miles, this is the given information, so we start with this and the rate. where 1) notice that the units cancel giving the answer in hours and 2) we have used the reciprocal of the rate as given in the problem to get the units to cancel.  The answer is or probably easier to say hours.   "
+  "body": "  If you drive 30 miles per hour, how far do you drive in 2 hours?    First, we need to identify the rates and the given information. In this case, the rate is 30 miles per hour and is written:   The given information is 2 hours. To solve this, we start with this quantity and multiply by rates: where it is important that the unit hours cancels.   "
 },
 {
   "id": "subsect-rates-12",
@@ -4048,61 +4066,124 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "8.4.5",
   "title": "",
-  "body": "  A bakery makes 60 cupcakes in an hour. The bakery is open 8 hours each day. How many cupcakes can they make in 1 week?    There are two rates in this problem. We can write them as   The starting info is 1 week and from the question, we're looking for the unit of cupcakes . Before we begin, we note that the starting unit of week is not in either of the rates, so we will need standard unit conversion as well. and some mental math or using the algorithm finishes the problem. The bakery can make 3360 cupcakes in a week.   "
+  "body": "  You are on a road trip and are driving 40 miles per hour.     How far do you drive in 15 minutes?    Clearly, the main rate given in the problem has the relationship:   However if we start with the given information of 15 minutes, the rate doesn't have minutes, so we need the conversion 1 hour = 60 minutes as well   And the units cancel correctly, but you show also remember from that an efficient way to find the answer is first cancel common terms and   So you drive 10 miles in 15 minutes.      How long would it take you to drive 100 miles?    For the second question of how long it would take to drive 100 miles, this is the given information, so we start with this and the rate. where 1) notice that the units cancel giving the answer in hours and 2) we have used the reciprocal of the rate as given in the problem to get the units to cancel.  The answer is or probably easier to say hours.    "
+},
+{
+  "id": "subsect-rates-13",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-13",
+  "type": "Example",
+  "number": "8.4.6",
+  "title": "",
+  "body": "  A bakery makes 60 cupcakes in an hour. The bakery is open 8 hours each day. How many cupcakes can they make in 1 week?    There are two rates in this problem. We can write them as   The starting info is 1 week and from the question, we're looking for the unit of cupcakes . Before we begin, we note that the starting unit of week is not in either of the rates, so we will need the conversion as well. and some mental math or using the algorithm finishes the problem. The bakery can make 3360 cupcakes in a week.   "
 },
 {
   "id": "subsect-rates-14",
   "level": "2",
   "url": "sect-rates.html#subsect-rates-14",
   "type": "Example",
-  "number": "8.4.6",
+  "number": "8.4.7",
+  "title": "",
+  "body": "  A hose can fill a 5 gallon bucket in 15 minutes. In how many hours, will it take the hose to fill a 600 gallon pool?    In this case we start with 600 gallons and convert to hours. There is also one rate given in the problem. . Note that we need a conversion from minutes to hours so will also need to use . and again, use factoring within the fraction to simplify the final operation which shows that it will take 30 hours to fill the pool.   "
+},
+{
+  "id": "subsect-rates-16",
+  "level": "2",
+  "url": "sect-rates.html#subsect-rates-16",
+  "type": "Example",
+  "number": "8.4.8",
   "title": "",
   "body": "  A pattern for a shirt uses fabric. 4 shirts require 10 yd of fabric. How many shirts can be made with 60 yd ?    First, note that the rate in this problem is and we start with 60 yd and convert to the unit shirts .    "
 },
 {
-  "id": "subsect-rates-15",
+  "id": "subsect-rates-17",
   "level": "2",
-  "url": "sect-rates.html#subsect-rates-15",
+  "url": "sect-rates.html#subsect-rates-17",
   "type": "Example",
-  "number": "8.4.7",
+  "number": "8.4.9",
   "title": "",
-  "body": "  A hose can fill a 5 gallon bucket in 15 minutes. In how many hours, will it take the hose to fill a 600 gallon pool?    In this case we start with 600 gallons and convert to hours. There is also one rate given in the problem.  and again, use factoring within the fraction to simplify the final operation which shows that it will take 30 hours to fill the pool.   "
+  "body": "  A brine mixture for a Thanksgiving turkey calls for 1\/3 cup of salt for every quart of water. How much salt is needed for a 4 gallon brine?    The primary rate from the problem is . Note even though both are volume measure, the quantity of salt or water is needed with the unit.  Also, we will need the volume conversion of , then start with the given quantity of and then use the rates in the proper form: or as a mixed number, cups salt.   "
 },
 {
-  "id": "sect-rates-4-3",
+  "id": "sect-rates-5-3",
   "level": "2",
-  "url": "sect-rates.html#sect-rates-4-3",
+  "url": "sect-rates.html#sect-rates-5-3",
   "type": "Example",
-  "number": "8.4.8",
+  "number": "8.4.10",
   "title": "",
   "body": "  Paul can do a job in 2 hours, whereas Quinn can do the same job in 1 hour. How long will it take for them to do the job together?   "
 },
 {
-  "id": "sect-rates-4-11",
+  "id": "sect-rates-5-11",
   "level": "2",
-  "url": "sect-rates.html#sect-rates-4-11",
+  "url": "sect-rates.html#sect-rates-5-11",
   "type": "Note",
-  "number": "8.4.9",
+  "number": "8.4.11",
   "title": "Combining Rates.",
   "body": " Combining Rates  If there are two rates that are to be combined in the sense of completing a task, add the rates with the time unit in the denominator.  "
 },
 {
-  "id": "sect-rates-4-13",
+  "id": "sect-rates-5-13",
   "level": "2",
-  "url": "sect-rates.html#sect-rates-4-13",
+  "url": "sect-rates.html#sect-rates-5-13",
   "type": "Example",
-  "number": "8.4.10",
+  "number": "8.4.12",
   "title": "",
   "body": "  Brandon can shovel a driveway in 30 minutes. Eric can shovel the same driveway in 60 minutes. If they work together, how long will it take them?    The rates in this problem are and if we take the rule of thumb above, we'll add them with the minutes in the denominator.   Lastly, we'll start with 1 driveway and convert to minutes: so it will take them 20 minutes to shovel the driveway.   "
 },
 {
-  "id": "sect-rates-4-15",
+  "id": "sect-rates-5-15",
   "level": "2",
-  "url": "sect-rates.html#sect-rates-4-15",
+  "url": "sect-rates.html#sect-rates-5-15",
   "type": "Example",
-  "number": "8.4.11",
+  "number": "8.4.13",
   "title": "",
-  "body": "  Bernard can paint a house in 30 hours. Cindy can paint the same house in 20 hours and Declan can do it in 40 hours. How long will it take to paint the house together?    In this case, there are three rates: and using the rate combining rule of thumb we'll add them with hours in the denominator:   Finally, to answer the question, we'll start with 1 house and multiply by the rate: and converting this to a mixed number, it will take them hours to paint the house.   "
+  "body": "  Bernard can paint a house in 30 hours. Cindy can paint the same house in 20 hours and Declan can do it in 40 hours. How long will it take to paint the house together?    In this case, there are three rates: and using the rate combining rule of thumb we'll add them with hours in the denominator:   Recall that to make this problem easier use the LCM of these three numbers, or 120   Finally, to answer the question, we'll start with 1 house and multiply by the rate: and converting this to a mixed number, it will take them hours to paint the house.   "
+},
+{
+  "id": "exercise-simple-rate-problems",
+  "level": "2",
+  "url": "sect-rates.html#exercise-simple-rate-problems",
+  "type": "Exercise",
+  "number": "8.4.3.1",
+  "title": "",
+  "body": "  Solve each of the following introductory rate problems. Ensure your final answers include the correct compound units.     A delivery drone flies a straight-line distance of 24 miles in exactly 45 minutes. Calculate the average speed of the drone in miles per hour ( mi\/hr ).      A garden hose fills a 15-gallon backyard pool in exactly 6 minutes. Determine the volumetric flow rate of the water in gallons per minute ( gal\/min ).      An automated manufacturing assembly line produces 1,800 microchips during an 8-hour shift. Find the production rate of the line in microchips per minute.      A backup generator burns through 12 liters of diesel fuel over the course of 5 hours of continuous operation. What is the generator's fuel consumption rate in liters per hour ( L\/hr )?      A computer network connection downloads a 450-megabyte ( MB ) video file in exactly 12 seconds. Calculate the average data transfer speed in megabytes per second ( MB\/s ).    "
+},
+{
+  "id": "exercise-inverse-rate-problems",
+  "level": "2",
+  "url": "sect-rates.html#exercise-inverse-rate-problems",
+  "type": "Exercise",
+  "number": "8.4.3.2",
+  "title": "",
+  "body": "  Use the given rates in each scenario to isolate and calculate the missing non-rate quantity. Pay close attention to unit cancellations.     A commercial airliner cruises at a constant speed of 540 miles per hour ( mi\/hr ). If the flight lasts for exactly 3.5 hours, what is the total distance traveled by the aircraft?      A chemical processing pump dispenses liquid reactant at a steady volumetric flow rate of 2.4 liters per minute ( L\/min ). How many total liters of reactant are pumped into a mixing vat during a 15-minute production cycle?      An automated industrial packaging machine wraps boxes at a consistent rate of 45 boxes per minute. How many minutes will it take for the machine to wrap a bulk order of 1,125 boxes?      A localized irrigation system leaks water into the soil at an average rate of 150 milliliters per hour ( mL\/hr ). If the leak goes unnoticed for exactly 4 days, what is the total volume of water lost in milliliters?      A cloud server uploads backup data over a fiber-optic link at a sustained speed of 18 megabytes per second ( MB\/s ). If the upload process runs continuously for exactly 5 minutes, determine the total size of the uploaded data package in megabytes ( MB ).    "
+},
+{
+  "id": "exercise-advanced-rate-conversion-problems",
+  "level": "2",
+  "url": "sect-rates.html#exercise-advanced-rate-conversion-problems",
+  "type": "Exercise",
+  "number": "8.4.3.3",
+  "title": "",
+  "body": "  Solve each of the following complex rate problems. Each scenario requires performing multi-step dimensional analysis and unit conversions to isolate the requested non-rate quantity.     A research meteorologist tracks a severe storm front advancing at a steady speed of meters per second ( m\/s ). Determine how many total miles ( mi ) the storm front will travel if it maintains this speed for exactly hours.      An industrial drainage pipe discharges wastewater into a holding pond at a rate of gallons per second ( gal\/s ). If the pipe runs continuously for hours, calculate the total volume of water discharged in cubic meters ( ).      A mining conveyor belt loads crushed ore onto a cargo ship at a continuous rate of pounds per minute ( lb\/min ). How many hours ( hr ) will it take for the conveyor system to move a bulk payload weighing exactly metric tons ( t )?      A hospital intravenous (IV) pump is calibrated to deliver a saline solution to a patient at a steady rate of drops per minute. Assuming the IV tubing factor dictates that exactly drops equal milliliter ( mL ), how many total liters ( L ) of solution will the patient receive over a continuous -hour period?      A commercial solar array generates electrical power at an average rate of kilowatts ( kW ), where . Calculate the total amount of energy generated by the array in megajoules ( MJ ) during hours of peak afternoon sunlight.    "
+},
+{
+  "id": "exercise-spatial-non-time-rates",
+  "level": "2",
+  "url": "sect-rates.html#exercise-spatial-non-time-rates",
+  "type": "Exercise",
+  "number": "8.4.3.4",
+  "title": "",
+  "body": "  Solve the following rate problems where the constant rate represents a spatial, structural, or material ratio rather than a change over time.     An agricultural fertilizer mixture calls for milliliter ( mL ) of liquid concentrate for every liters ( L ) of water. How many total milliliters ( mL ) of concentrate are required to mix a large batch containing liters ( L ) of water?      A heavy-duty steel suspension cable has a material linear density rate of ounces ( oz ) of weight for every inches ( in ) of length. Calculate the total weight of this cable in pounds ( lb ) if a construction project requires a continuous span of yards ( yd ).      An industrial asphalt sealant specifies an application rate of gallons ( gal ) of sealant for every square feet ( ft^2 ) of pavement surface area. If a commercial parking lot measuring square meters ( m^2 ) needs to be coated, how many liters ( L ) of sealant must be purchased?      A mechanical winch system pulls in centimeters ( cm ) of steel cable for every complete revolutions of its drive gear. Determine how many total yards ( yd ) of cable will be reeled in if the drive motor spins the gear a total of times.    "
+},
+{
+  "id": "exercise-joint-work-rates",
+  "level": "2",
+  "url": "sect-rates.html#exercise-joint-work-rates",
+  "type": "Exercise",
+  "number": "8.4.3.5",
+  "title": "",
+  "body": "  Solve the following joint work rate problems by determining individual production rates per unit of time and combining them.     Sarah can grade a stack of research papers in hours, while David takes hours to grade the exact same size stack. If they collaborate and grade the single stack of papers together, how many hours will it take them?      Three 3D printers are working on identical manufacturing components. Printer A can finish a part in hours, Printer B takes hours, and Printer C takes hours. If all three printers are turned on simultaneously to manufacture a single component together, how many hours will the print take?      Working together, two automated software scripts can scan a company database for security vulnerabilities in minutes. If Script 1 runs alone, it takes exactly minutes to complete the scan by itself. How many minutes would it take Script 2 to scan the database alone?      Elena can stock the shelves of a grocery store aisle in minutes, and Marcus can stock the same aisle in minutes. Elena begins stocking the aisle alone and works for exactly minutes. At that point, Marcus joins her, and they finish stocking the rest of the aisle together. How many additional minutes will it take them to finish the job after Marcus arrives?    "
 },
 {
   "id": "sect-negative-numbers",
@@ -4111,16 +4192,106 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.1",
   "title": "Negative Numbers",
-  "body": " Negative Numbers   (Negative numbers are introduced around the same time as algebra, 6-7 grades)  Negative numbers are most easily introduced with the number line   a number line from -6 to 6      The integers are the numbers and the number greater than zero are called positive numbers and those less than 0 are called negative .      Models for the integers  Temperature In the two standard ways of measuring temperature (Fahrenheit and Celsius), there are both negative and positive temperature and using a scale like a thermometer shows the relationship. One should note though that temperature (like any measurement) does not have to just be an integer and any real number is possible.Elevation We typically take the elevation of a point on land (measured in either feet or meters) as positive for those points above sea level and depths in the ocean as negative number.Money We will see this later.    Basics of Integers      is difficult because it uses two symbols (one the same as subtraction) to denote a number.    We order all integers in the same way that we order all whole numbers. If is to the right of on the number line, then we say . If is to the left of , then we say .    The absolute value of an integer , denoted is the distance from to the point zero on the number line. and .    Every integer has an opposite, which we denote . The number is the same distance from 0 as but is located in the opposite direction as .  The number is opposite of and the number is opposite .     Rule 1:  for any integer .     This means that the opposite of the opposite of any number is itself.    Don't forget that this also applies to negative numbers. that is if , then .    Don't read this rule as saying . This isn't talking about multiplication.          Integer Addition  How do we do addition with integers (positive and negatives). There are four cases and we go through each in detail:   Positive Positive:  We've done this already. Typically, recall that we can think of this as counting on and the number line. Find         Negative Positive  This works the same way because the second number is positive. We start at the first number and again ``count on''. The figure below shows $-4+3=-1$        Positive Negative  If we think of the ``count on'' again with this, let's see what happens. Try so we start at 5 and count up and to determine this, we use the notion that is the opposite of , so we interpret as start at 5 and count down 3.      We will use this model to also explain that $5+(-3)=5-3$.    Negative Negative:  Once we understand the previous case, this is interpreted the same way. Consider $-3+(-2)$. This means start at $-3$ and count down $2$.         Another Fundamental Rule of Integers   Rule 2:  for any two integers .    Other models for Integers    Vector Model  Each number is represented as a vector (arrow) along the number line. The following shows $5+(-3)$.       Chip Model  In this case chips can be used (one color for positive numbers and another for negative numbers) and combine the opposite colors and remove.  This can be a problem if you can't remember which color represents positive\/negative.    Money Model       "
+  "body": " Negative Numbers     Understanding models for integers.    Understanding negative numbers and some rules associated with negative numbers.      Negative numbers are most easily introduced with the number line   a number line from -6 to 6    which extends the number line backwards (to the left)    The integers are the numbers and the number greater than zero are called positive numbers and those less than 0 are called negative .  The numbers (zero and the positive numbers) are called nonnegative integers. The numbers (the negative numbers and zero) called the nonpositive numbers.      Models for the integers     Temperature  In the two standard ways of measuring temperature (Fahrenheit and Celsius), there are both negative and positive temperature and using a scale like a thermometer shows the relationship.      One should note though that temperature (like any measurement) does not have to just be an integer and any real number is possible.    Elevation  We typically take the elevation of a point on land (measured in either feet or meters) as positive for those points above sea level and depths in the ocean as negative number.     These model will be developed below with details.    Basics of Integers  Understanding the number line is key to understanding integers.   a number line from -6 to 6    First, the numbers to the left of 0 are the negative numbers and the more to the left, the more negative a number is and the bigger the number without the negative sign is.  Also, the negative symbol like is the same number for subtraction and may be difficult for students new to them to understand what this means.   Distance  The notion of how far a number is from zero is quite important. We call this the distance from 0. The numbers and are both 3 from 0. Looking at the number line above, is three steps to the right of 0 and is three steps to the left.  The idea of absolute value is the distance from zero and is introduced about the same time as negative numbers. Using the example above, and .    Opposite Numbers  Every integer has an opposite, which we denote . The number is the same distance from 0 as but is located in the opposite direction, . The number line can help with this:   A number line with the numbers 0, a and -a on the line. There is an arrow from a to -a and another from -a to a.    The number is opposite of and the number is opposite .  We can generalize opposite numbers in the following property of integers.   Additive Inverse Property   For each integer , there exists a unique integer called the opposite of denoted by which satisfies     The diagram above shows the following property of integers:   Opposite Integers    for any integer     From the diagram above, starting at , this says that the opposite of this (which is ) is just . Another way to look at this if we start at , the number on the right, then find the opposite to get to , then take the opposite again, we return to .  A few other things to note about this:     Don't forget that this also applies to negative numbers. that is if , then .    Don't read this rule as saying . This isn't talking about multiplication.       Ordering Integers  We order all integers in the same way that we order all whole numbers. If is to the right of on the number line, then we say . If is to the left of , then we say .     Integer Addition  How do we do addition with integers (positive and negatives). There are four cases and we go through each in detail:   Positive Positive:  We've done this already. Typically, recall that we can think of this as counting on and the number line. Find    A number line from 0 to 10. Starting at 5, there are three hops to the right, ending at 8.      Negative Positive  This works the same way because the second number is positive. We start at the first number and again ``count on''. The figure below shows    A number line from -5 to 5. Starting at -4, there are three hops to the right, ending at -1.      Positive Negative  If we think of the ``count on'' again with this, let's see what happens. Try so we start at 5 and count up and to determine this, we use the notion that is the opposite of , so we interpret as start at 5 and count down 3.   A number line from -5 to 5. Starting at 5, there are three hops to the left, ending at 2.    We will use this model to also explain that .    Negative Negative:  Once we understand the previous case, this is interpreted the same way. Consider . This means start at and count down .   A number line from -5 to 5. Starting at -3, there are two hops to the right, ending at -5.     The last two examples of adding a negative integer results in the following property   Addition of a negative integer    for any two integers .    The idea behind this is that the term is interpreted as the opposite of . If , then starts at on the number line and hops left units. This is the same as subtraction.    Other models for Integers  Above, we had the models of temperature and elevation as ways to understand negative numbers. We end this section we three additional models.   Vector Model  Each number is represented as a vector (arrow) along the number line. The following shows .        Chip Model  In this case chips can be used (one color for positive numbers and another for negative numbers) and combine the opposite colors and remove.  The following can be used to show .   A diagram with 3 red circles and 5 blue circles. There are lines through pairs of opposite colors with two blue circle not crossed out.    The line through the two colors cancel each other out. The result is the two blue (represent ).  This can be a problem if you can't remember which color represents positive\/negative.    Money Model  Money can be used to investigate negative numbers. Money that you have (assets) are generally thought of as positive numbers. Debits (or money that you owe) can be thought of a negative numbers.  This can be shown abstractly with the chip model above, or can be used with manipulative that look like money. In that case, it needs to be clear that the money that a student has in the positive numbers and there is something representing costs like a purchased object.    Patterns in Addition  Our last model is to generate patterns in addition. We will add a number of integers to 4. and looking at the pattern, it appears the last one will be 3. We can continue this a bit further:        Generate a chip model for the following addition problems.             .       Produce a pattern for and show from to .      Use the vector model to show the four operations, , , , . Place each on a separate number line.      Determine if the following are true or false. If it is false, give a counterexample to the statement. If it is true, provide a model (vector or money) and explanation.     Every integer is a whole number.      The sum of two negative numbers is always negative.      A negative number plus a positive number is always negative.      A positive number plus a negative number is always negative.      To add two negative numbers, we find the sum of their absolute values and take the negative sign for the answer.      "
 },
 {
-  "id": "sect-negative-numbers-2-4",
+  "id": "sect-negative-numbers-2",
   "level": "2",
-  "url": "sect-negative-numbers.html#sect-negative-numbers-2-4",
+  "url": "sect-negative-numbers.html#sect-negative-numbers-2",
+  "type": "Objectives",
+  "number": "9.1",
+  "title": "",
+  "body": "   Understanding models for integers.    Understanding negative numbers and some rules associated with negative numbers.    "
+},
+{
+  "id": "sect-negative-numbers-3-4",
+  "level": "2",
+  "url": "sect-negative-numbers.html#sect-negative-numbers-3-4",
   "type": "Definition",
   "number": "9.1.1",
   "title": "",
-  "body": "  The integers are the numbers and the number greater than zero are called positive numbers and those less than 0 are called negative .   "
+  "body": "  The integers are the numbers and the number greater than zero are called positive numbers and those less than 0 are called negative .  The numbers (zero and the positive numbers) are called nonnegative integers. The numbers (the negative numbers and zero) called the nonpositive numbers.   "
+},
+{
+  "id": "sect-negative-numbers-5-6-2",
+  "level": "2",
+  "url": "sect-negative-numbers.html#sect-negative-numbers-5-6-2",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "distance "
+},
+{
+  "id": "sect-negative-numbers-5-6-3",
+  "level": "2",
+  "url": "sect-negative-numbers.html#sect-negative-numbers-5-6-3",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "absolute value "
+},
+{
+  "id": "axiom-additive-inverse",
+  "level": "2",
+  "url": "sect-negative-numbers.html#axiom-additive-inverse",
+  "type": "Property",
+  "number": "9.1.2",
+  "title": "Additive Inverse Property.",
+  "body": " Additive Inverse Property   For each integer , there exists a unique integer called the opposite of denoted by which satisfies    "
+},
+{
+  "id": "axiom-opposite-integers",
+  "level": "2",
+  "url": "sect-negative-numbers.html#axiom-opposite-integers",
+  "type": "Property",
+  "number": "9.1.3",
+  "title": "Opposite Integers.",
+  "body": " Opposite Integers    for any integer    "
+},
+{
+  "id": "axiom-addition-negatives",
+  "level": "2",
+  "url": "sect-negative-numbers.html#axiom-addition-negatives",
+  "type": "Property",
+  "number": "9.1.4",
+  "title": "Addition of a negative integer.",
+  "body": " Addition of a negative integer    for any two integers .   "
+},
+{
+  "id": "exercises-negative-numbers-1",
+  "level": "2",
+  "url": "sect-negative-numbers.html#exercises-negative-numbers-1",
+  "type": "Exercise",
+  "number": "9.1.5.1",
+  "title": "",
+  "body": "  Generate a chip model for the following addition problems.             .    "
+},
+{
+  "id": "exercises-negative-numbers-2",
+  "level": "2",
+  "url": "sect-negative-numbers.html#exercises-negative-numbers-2",
+  "type": "Exercise",
+  "number": "9.1.5.2",
+  "title": "",
+  "body": "  Produce a pattern for and show from to .   "
+},
+{
+  "id": "exercises-negative-numbers-3",
+  "level": "2",
+  "url": "sect-negative-numbers.html#exercises-negative-numbers-3",
+  "type": "Exercise",
+  "number": "9.1.5.3",
+  "title": "",
+  "body": "  Use the vector model to show the four operations, , , , . Place each on a separate number line.   "
+},
+{
+  "id": "exercises-negative-numbers-4",
+  "level": "2",
+  "url": "sect-negative-numbers.html#exercises-negative-numbers-4",
+  "type": "Exercise",
+  "number": "9.1.5.4",
+  "title": "",
+  "body": "  Determine if the following are true or false. If it is false, give a counterexample to the statement. If it is true, provide a model (vector or money) and explanation.     Every integer is a whole number.      The sum of two negative numbers is always negative.      A negative number plus a positive number is always negative.      A positive number plus a negative number is always negative.      To add two negative numbers, we find the sum of their absolute values and take the negative sign for the answer.    "
 },
 {
   "id": "sect-arithmetic-integers",
@@ -4129,23 +4300,14 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.2",
   "title": "Arithmetic With Integers",
-  "body": " Arithmetic With Integers    Opposite of a Negative                                Commutative: ,     Associative: ,       Distributive:     Identities: ,   .       For each integer , there exists a unique integer called the opposite of denoted by which satisfies       Arithmetic Proofs   Proof of Rule 1       Proof of Rule 2  missing factor of or   Answer: so the missing factor is , therefore     Proof of Rule 3       Proof of Rule 5  Let , then . We need to show that    Since then so     "
-},
-{
-  "id": "axiom-negative-opposite",
-  "level": "2",
-  "url": "sect-arithmetic-integers.html#axiom-negative-opposite",
-  "type": "Property",
-  "number": "9.2.1",
-  "title": "Opposite of a Negative.",
-  "body": " Opposite of a Negative       "
+  "body": " Arithmetic With Integers   With the understanding of addition of integers and their models in , we turn to the other arithmetic operations on integers.                          Commutative: ,     Associative: ,       Distributive:     Identities: ,   .       Subtraction of Integers  Knowing how to add negative numbers and the properties gives use the tools that we need to perform subtraction. Let's start with with the example .  As before, subtraction is defined as the missing addend. That is what fits in the box for   Using the number line, we start at and determine the number of hops that results in 4. This can be shown with   A number line from -5 to 5. There are 6 hops starting at -2 and finishing at 4.     Chip Models of Subtraction  In , we also used chip models. These can also be used with subtraction when we use a takeaway interpretation. Returning to , we will start with positive chips and remove 2 negative chips. We start with 4 positive (blue) chips.   A diagram with 3 red circles and 5 blue circles. There are lines through pairs of opposite colors with two blue circle not crossed out.    However, there are no negative chips. We use the to add 0 to the model as . This means including two additional blue and two additional red chips.   A diagram with 2 red circles and 6 blue circles.    And lastly, cross out two negative (red) chips:   A diagram with 2 red circles and 6 blue circles. The two red chips are crossed out.    And the result shows 6 blue (positive) chip, so this shows     Vector Models of Subtraction  A vector model is also recommended to use with subtraction recalling that subtraction switches the direction. For example for , we start with a vector from 0 to 4. To subtract, we general move in the other direction, however, since subtracting , this switches back as a vector in the positive direction.   A number line from -3 to 7. There is a vector (arrow) above the line from 0 to 4. There is a second vector above this from 4 to 6.    This shows that     Patterns in Subtraction  Similar to patterns in addition of integers, we can do the same with subtraction. If we start with what we know from subtracting positive integers and following the pattern into negative integers: and looking at this pattern, it appears the last one will be 5. If we continue     Integer Subtraction Property  From the models above, it appears that subtracting integers results in addition resulting in the following:   Subtraction of Integers Property   For integers and ,        Arithmetic Proofs  This section covers the proofs of the properties that we have seen in this chapter. The crux of these proofs is that of . Since the right hand side of this property is zero, we are often going to add zero to a property that we want to prove.   Proof of  We start with and the the sum of this and 0.       Proof of  missing factor of or   Answer: so the missing factor is , therefore     Proof of   Since we are trying to rewrite a subtraction, we will recall that it is the missing addend. That is is the same as      Proof of Rule 3       Proof of Rule 5  Let , then . We need to show that    Since then so        For each of the following subtraction problems, show with a i) a chip model and ii) a vector model.                   "
 },
 {
   "id": "axiom-subtraction-integers",
   "level": "2",
   "url": "sect-arithmetic-integers.html#axiom-subtraction-integers",
   "type": "Property",
-  "number": "9.2.2",
+  "number": "9.2.1",
   "title": "",
   "body": "      "
 },
@@ -4154,7 +4316,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sect-arithmetic-integers.html#axiom-product-integers",
   "type": "Property",
-  "number": "9.2.3",
+  "number": "9.2.2",
   "title": "",
   "body": "      "
 },
@@ -4163,54 +4325,72 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sect-arithmetic-integers.html#axiom-negative-fractions",
   "type": "Property",
-  "number": "9.2.4",
+  "number": "9.2.3",
   "title": "",
   "body": "      "
 },
 {
-  "id": "axiom-additive-inverse",
+  "id": "axiom-integer-subtraction",
   "level": "2",
-  "url": "sect-arithmetic-integers.html#axiom-additive-inverse",
+  "url": "sect-arithmetic-integers.html#axiom-integer-subtraction",
   "type": "Property",
-  "number": "9.2.5",
-  "title": "",
-  "body": "  For each integer , there exists a unique integer called the opposite of denoted by which satisfies    "
-},
-{
-  "id": "subsec-arithmetic-proofs-2",
-  "level": "2",
-  "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-2",
-  "type": "Proof",
-  "number": "9.2.1.1",
-  "title": "Proof of Rule 1.",
-  "body": " Proof of Rule 1     "
+  "number": "9.2.4",
+  "title": "Subtraction of Integers Property.",
+  "body": " Subtraction of Integers Property   For integers and ,    "
 },
 {
   "id": "subsec-arithmetic-proofs-3",
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-3",
   "type": "Proof",
-  "number": "9.2.1.2",
-  "title": "Proof of Rule 2.",
-  "body": " Proof of Rule 2  missing factor of or   Answer: so the missing factor is , therefore   "
+  "number": "9.2.2.1",
+  "title": "Proof of Opposite Integers.",
+  "body": " Proof of  We start with and the the sum of this and 0.     "
 },
 {
   "id": "subsec-arithmetic-proofs-4",
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-4",
   "type": "Proof",
-  "number": "9.2.1.3",
-  "title": "Proof of Rule 3.",
-  "body": " Proof of Rule 3     "
+  "number": "9.2.2.2",
+  "title": "Proof of Addition of a negative integer.",
+  "body": " Proof of  missing factor of or   Answer: so the missing factor is , therefore   "
 },
 {
   "id": "subsec-arithmetic-proofs-5",
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-5",
   "type": "Proof",
-  "number": "9.2.1.4",
+  "number": "9.2.2.3",
+  "title": "Proof of Subtraction of Integers Property.",
+  "body": " Proof of   Since we are trying to rewrite a subtraction, we will recall that it is the missing addend. That is is the same as    "
+},
+{
+  "id": "subsec-arithmetic-proofs-6",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-6",
+  "type": "Proof",
+  "number": "9.2.2.4",
+  "title": "Proof of Rule 3.",
+  "body": " Proof of Rule 3     "
+},
+{
+  "id": "subsec-arithmetic-proofs-7",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-7",
+  "type": "Proof",
+  "number": "9.2.2.5",
   "title": "Proof of Rule 5.",
   "body": " Proof of Rule 5  Let , then . We need to show that    Since then so   "
+},
+{
+  "id": "exercises-arithmetic-integers-1",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#exercises-arithmetic-integers-1",
+  "type": "Exercise",
+  "number": "9.2.3.1",
+  "title": "",
+  "body": "  For each of the following subtraction problems, show with a i) a chip model and ii) a vector model.                 "
 },
 {
   "id": "ch-integers-5",
