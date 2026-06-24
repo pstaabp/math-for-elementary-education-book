@@ -4300,25 +4300,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "9.2",
   "title": "Arithmetic With Integers",
-  "body": " Arithmetic With Integers   With the understanding of addition of integers and their models in , we turn to the other arithmetic operations on integers.                          Commutative: ,     Associative: ,       Distributive:     Identities: ,   .       Subtraction of Integers  Knowing how to add negative numbers and the properties gives use the tools that we need to perform subtraction. Let's start with with the example .  As before, subtraction is defined as the missing addend. That is what fits in the box for   Using the number line, we start at and determine the number of hops that results in 4. This can be shown with   A number line from -5 to 5. There are 6 hops starting at -2 and finishing at 4.     Chip Models of Subtraction  In , we also used chip models. These can also be used with subtraction when we use a takeaway interpretation. Returning to , we will start with positive chips and remove 2 negative chips. We start with 4 positive (blue) chips.   A diagram with 3 red circles and 5 blue circles. There are lines through pairs of opposite colors with two blue circle not crossed out.    However, there are no negative chips. We use the to add 0 to the model as . This means including two additional blue and two additional red chips.   A diagram with 2 red circles and 6 blue circles.    And lastly, cross out two negative (red) chips:   A diagram with 2 red circles and 6 blue circles. The two red chips are crossed out.    And the result shows 6 blue (positive) chip, so this shows     Vector Models of Subtraction  A vector model is also recommended to use with subtraction recalling that subtraction switches the direction. For example for , we start with a vector from 0 to 4. To subtract, we general move in the other direction, however, since subtracting , this switches back as a vector in the positive direction.   A number line from -3 to 7. There is a vector (arrow) above the line from 0 to 4. There is a second vector above this from 4 to 6.    This shows that     Patterns in Subtraction  Similar to patterns in addition of integers, we can do the same with subtraction. If we start with what we know from subtracting positive integers and following the pattern into negative integers: and looking at this pattern, it appears the last one will be 5. If we continue     Integer Subtraction Property  From the models above, it appears that subtracting integers results in addition resulting in the following:   Subtraction of Integers Property   For integers and ,        Arithmetic Proofs  This section covers the proofs of the properties that we have seen in this chapter. The crux of these proofs is that of . Since the right hand side of this property is zero, we are often going to add zero to a property that we want to prove.   Proof of  We start with and the the sum of this and 0.       Proof of  missing factor of or   Answer: so the missing factor is , therefore     Proof of   Since we are trying to rewrite a subtraction, we will recall that it is the missing addend. That is is the same as      Proof of Rule 3       Proof of Rule 5  Let , then . We need to show that    Since then so        For each of the following subtraction problems, show with a i) a chip model and ii) a vector model.                   "
+  "body": " Arithmetic With Integers   With the understanding of addition of integers and their models in , we turn to the other arithmetic operations on integers.    Subtraction of Integers  Knowing how to add negative numbers and the properties gives use the tools that we need to perform subtraction. Let's start with with the example .  As before, subtraction is defined as the missing addend. That is what fits in the box for   Using the number line, we start at and determine the number of hops that results in 4. This can be shown with   A number line from -5 to 5. There are 6 hops starting at -2 and finishing at 4.     Chip Models of Subtraction  In , we also used chip models. These can also be used with subtraction when we use a takeaway interpretation. Returning to , we will start with positive chips and remove 2 negative chips. We start with 4 positive (blue) chips.   A diagram with 4 blue circles. Each circle contains a + sign.    However, there are no negative chips. We use the to add 0 to the model as . This means including two additional blue and two additional red chips.   A diagram with 2 red circles and 6 blue circles.    And lastly, cross out two negative (red) chips:   A diagram with 2 red circles and 6 blue circles. The two red chips are crossed out.    And the result shows 6 blue (positive) chip, so this shows     Vector Models of Subtraction  A vector model is also recommended to use with subtraction recalling that subtraction switches the direction. For example for , we start with a vector from 0 to 4. To subtract, we general move in the other direction, however, since subtracting , this switches back as a vector in the positive direction.   A number line from -3 to 7. There is a vector (arrow) above the line from 0 to 4. There is a second vector above this from 4 to 6.    This shows that     Patterns in Subtraction  Similar to patterns in addition of integers, we can do the same with subtraction. If we start with what we know from subtracting positive integers and following the pattern into negative integers: and looking at this pattern, it appears the last one will be 5. If we continue     Integer Subtraction Property  From the models above, it appears that subtracting integers results in addition resulting in the following:   Subtraction of Integers Property   For integers and ,        Integer Multiplication  We next look at integer multiplication. We extend the ideas and models of integer addition to understand multiplication. Let's first look at an example of . Recall that we can interpret this as repeated addition as which we know from the is , but using a number line, we can start at zero and perform three hops of size .   A number line from -7 to 3. There are 3 hops from right to left of size 2 starting at 0 and finishing at -6.     Chip Model  We can also use the chip model to show multiplication of integers. To model , we can interpret this as 3 groups of size , and we will use red to model negative numbers.      The result is 6 negative (red) chips so .  Next, let's look at a model for  You as a fantastic mathematics student say to yourself isn't ? and yes this is correct, but we are going to build to that. . We are going to interpret this as removing 2 groups of 3 positive chips. This is a bit strange, but we are going to start with 0 for the model and then remove some chips. And we start with 6 pairs of positive and negative chips.      Now we remove 2 groups of 3 positive chips (this is the ).      And the chips left are 6 negative (red) chips so this shows that .    Vector Model  A vector model, like the chip model, uses the fact that multiplication is repeated addition. The model for uses three arrows, each of length 2, that point in the negative direction.      And as before, this shows that .    Multiplication Properties  The discussion above leads to the following multiplication properties.    Let and be integers. Then        Integer Division  Integer division results in fractions as seen in or when and are whole numbers, but how about if or or both are negative?  Recall that if is the number such that            Arithmetic Properties  We summary the arithmetic properties of the integers here. Let and be integers. Then the following hold:     Additive Commutative       Multiplicative Commutative       Additive Associative       Multiplicative Associative       Distributive       Additive Identity       Multiplicative Identity          Arithmetic Proofs  This section covers the proofs of the properties that we have seen in this chapter. The crux of these proofs is that of . Since the right hand side of this property is zero, we are often going to add zero to a property that we want to prove.   Proof of  We start with and the the sum of this and 0.       Proof of  missing factor of or   Answer: so the missing factor is , therefore     Proof of  Since we are trying to rewrite a subtraction, we will recall that it is the missing addend. That is is the same as      Proof of Rule 3       Proof of Rule 5  Let , then . We need to show that    Since then so        For each of the following subtraction problems, show with a i) a chip model and ii) a vector model.                    Produce a pattern of values of , starting with through .      For each of the multiplication problems listed below, develop a chip model. Note: if the first number is positive, then consider it as repeated addition. If the first number is negative, perform a takeaway interpretation of some number of groups.                           For each of the multiplication problems listed below, develop a vector model. Note: if the first number is positive, then consider it as repeated addition. If the first number is negative, use the opposite notion as shown above.                           Find the resultant integer or fraction of the following division problems. If the result is a fraction, write in reduced form.                                 "
 },
 {
-  "id": "axiom-subtraction-integers",
+  "id": "axiom-integer-subtraction",
   "level": "2",
-  "url": "sect-arithmetic-integers.html#axiom-subtraction-integers",
+  "url": "sect-arithmetic-integers.html#axiom-integer-subtraction",
   "type": "Property",
   "number": "9.2.1",
-  "title": "",
-  "body": "      "
+  "title": "Subtraction of Integers Property.",
+  "body": " Subtraction of Integers Property   For integers and ,    "
 },
 {
-  "id": "axiom-product-integers",
+  "id": "prop-multiplication-integers",
   "level": "2",
-  "url": "sect-arithmetic-integers.html#axiom-product-integers",
+  "url": "sect-arithmetic-integers.html#prop-multiplication-integers",
   "type": "Property",
   "number": "9.2.2",
   "title": "",
-  "body": "      "
+  "body": "  Let and be integers. Then    "
 },
 {
   "id": "axiom-negative-fractions",
@@ -4330,20 +4330,11 @@ var ptx_lunr_docs = [
   "body": "      "
 },
 {
-  "id": "axiom-integer-subtraction",
-  "level": "2",
-  "url": "sect-arithmetic-integers.html#axiom-integer-subtraction",
-  "type": "Property",
-  "number": "9.2.4",
-  "title": "Subtraction of Integers Property.",
-  "body": " Subtraction of Integers Property   For integers and ,    "
-},
-{
   "id": "subsec-arithmetic-proofs-3",
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-3",
   "type": "Proof",
-  "number": "9.2.2.1",
+  "number": "9.2.5.1",
   "title": "Proof of Opposite Integers.",
   "body": " Proof of  We start with and the the sum of this and 0.     "
 },
@@ -4352,7 +4343,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-4",
   "type": "Proof",
-  "number": "9.2.2.2",
+  "number": "9.2.5.2",
   "title": "Proof of Addition of a negative integer.",
   "body": " Proof of  missing factor of or   Answer: so the missing factor is , therefore   "
 },
@@ -4361,16 +4352,16 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-5",
   "type": "Proof",
-  "number": "9.2.2.3",
+  "number": "9.2.5.3",
   "title": "Proof of Subtraction of Integers Property.",
-  "body": " Proof of   Since we are trying to rewrite a subtraction, we will recall that it is the missing addend. That is is the same as    "
+  "body": " Proof of  Since we are trying to rewrite a subtraction, we will recall that it is the missing addend. That is is the same as    "
 },
 {
   "id": "subsec-arithmetic-proofs-6",
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-6",
   "type": "Proof",
-  "number": "9.2.2.4",
+  "number": "9.2.5.4",
   "title": "Proof of Rule 3.",
   "body": " Proof of Rule 3     "
 },
@@ -4379,7 +4370,7 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sect-arithmetic-integers.html#subsec-arithmetic-proofs-7",
   "type": "Proof",
-  "number": "9.2.2.5",
+  "number": "9.2.5.5",
   "title": "Proof of Rule 5.",
   "body": " Proof of Rule 5  Let , then . We need to show that    Since then so   "
 },
@@ -4388,34 +4379,79 @@ var ptx_lunr_docs = [
   "level": "2",
   "url": "sect-arithmetic-integers.html#exercises-arithmetic-integers-1",
   "type": "Exercise",
-  "number": "9.2.3.1",
+  "number": "9.2.6.1",
   "title": "",
   "body": "  For each of the following subtraction problems, show with a i) a chip model and ii) a vector model.                 "
 },
 {
-  "id": "ch-integers-5",
+  "id": "exercises-arithmetic-integers-2",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#exercises-arithmetic-integers-2",
+  "type": "Exercise",
+  "number": "9.2.6.2",
+  "title": "",
+  "body": "  Produce a pattern of values of , starting with through .   "
+},
+{
+  "id": "exercises-arithmetic-integers-3",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#exercises-arithmetic-integers-3",
+  "type": "Exercise",
+  "number": "9.2.6.3",
+  "title": "",
+  "body": "  For each of the multiplication problems listed below, develop a chip model. Note: if the first number is positive, then consider it as repeated addition. If the first number is negative, perform a takeaway interpretation of some number of groups.                        "
+},
+{
+  "id": "exercises-arithmetic-integers-4",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#exercises-arithmetic-integers-4",
+  "type": "Exercise",
+  "number": "9.2.6.4",
+  "title": "",
+  "body": "  For each of the multiplication problems listed below, develop a vector model. Note: if the first number is positive, then consider it as repeated addition. If the first number is negative, use the opposite notion as shown above.                        "
+},
+{
+  "id": "exercises-arithmetic-integers-5",
+  "level": "2",
+  "url": "sect-arithmetic-integers.html#exercises-arithmetic-integers-5",
+  "type": "Exercise",
+  "number": "9.2.6.5",
+  "title": "",
+  "body": "  Find the resultant integer or fraction of the following division problems. If the result is a fraction, write in reduced form.                               "
+},
+{
+  "id": "sect-order-integers",
   "level": "1",
-  "url": "ch-integers-5.html",
+  "url": "sect-order-integers.html",
   "type": "Section",
   "number": "9.3",
-  "title": "Order Properties",
-  "body": " Order Properties     For any two numbers and , one and only one of the statements , , is true.    (Transitive Property) If and , then .    Adding a constant to both sides does not change an inequality: if , then for any .    Multiplying by a positive number preserves inequalities: if and , then .       If is a positive integer then is negative.           If and , then .         "
+  "title": "Order Properties of Integers",
+  "body": " Order Properties of Integers   The last section about integers is that about ordering of the integers. As discussed in , a number is less than or denoted if is to the left of on the number line. A more technical definition of this ordering is given in the following definition.    Let and be integers.    is less than , denoted if there exists a positive number such that .     is greater than , denoted if there exists a positive number such that .       Note there are also definitions for less than or equal to and greater than or equal to. We examine these in the exercises.        For any two numbers and , one and only one of the statements , , is true.    (Transitive Property) If and , then .    Adding a constant to both sides does not change an inequality: if , then for any .    Multiplying by a positive number preserves inequalities: if and , then .       Proofs of Lemmas    If is a positive integer then is negative.           If and , then .          "
+},
+{
+  "id": "def-order-integers",
+  "level": "2",
+  "url": "sect-order-integers.html#def-order-integers",
+  "type": "Definition",
+  "number": "9.3.1",
+  "title": "",
+  "body": "  Let and be integers.    is less than , denoted if there exists a positive number such that .     is greater than , denoted if there exists a positive number such that .      "
 },
 {
   "id": "lem-1",
   "level": "2",
-  "url": "ch-integers-5.html#lem-1",
+  "url": "sect-order-integers.html#lem-1",
   "type": "Lemma",
-  "number": "9.3.1",
+  "number": "9.3.2",
   "title": "",
   "body": "  If is a positive integer then is negative.        "
 },
 {
   "id": "lem-",
   "level": "2",
-  "url": "ch-integers-5.html#lem-",
+  "url": "sect-order-integers.html#lem-",
   "type": "Lemma",
-  "number": "9.3.2",
+  "number": "9.3.3",
   "title": "",
   "body": "  If and , then .        "
 },
